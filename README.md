@@ -1,32 +1,61 @@
-from pathlib import Path
-import json
-from datetime import datetime, timezone
+# Italia TV Hub
 
-ROOT = Path(__file__).resolve().parents[1]
+Aggregatore open source per playlist TV italiane gratuite e pubblicamente accessibili, con supporto a Pluto TV Italia, controlli automatici e dashboard GitHub Pages.
 
-def main():
-    output_dir = ROOT / "output"
-    output_dir.mkdir(exist_ok=True)
+## Stato del progetto
 
-    playlist_path = output_dir / "playlist.m3u"
-    playlist_path.write_text("#EXTM3U\n", encoding="utf-8")
+Versione iniziale: **v0.1.0 — Sprint 0 Foundation**
 
-    report = {
-        "project": "Italia TV Hub",
-        "repository": "italia-tv-hub",
-        "version": "0.1.0",
-        "generated_at": datetime.now(timezone.utc).isoformat(),
-        "status": "foundation_ready",
-        "enabled_sources": 0,
-        "channels": 0
-    }
+## Obiettivi
 
-    (output_dir / "report.json").write_text(
-        json.dumps(report, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8"
-    )
+- raccogliere sorgenti M3U pubbliche e gratuite;
+- normalizzare e deduplicare i canali;
+- verificare la raggiungibilità dei flussi;
+- generare una playlist ordinata;
+- pubblicare report e dashboard tramite GitHub Pages;
+- mantenere invariato il link finale della playlist.
 
-    print("Italia TV Hub: foundation pronta.")
+## Regole
 
-if __name__ == "__main__":
-    main()
+Il progetto deve usare solo flussi pubblici e legittimamente accessibili.
+
+Non deve:
+
+- aggirare DRM;
+- aggirare autenticazioni;
+- bypassare geoblocchi;
+- includere contenuti non autorizzati.
+
+## Link previsti
+
+Playlist:
+
+```text
+https://raw.githubusercontent.com/Mike80p/italia-tv-hub/main/output/playlist.m3u
+```
+
+Dashboard:
+
+```text
+https://mike80p.github.io/italia-tv-hub/
+```
+
+## Struttura
+
+```text
+.github/workflows/   Automazioni GitHub
+src/                 Motore Python
+config/              Configurazioni
+output/              Playlist e report generati
+docs/                Dashboard GitHub Pages
+tests/               Test automatici
+```
+
+## Roadmap
+
+- v0.1 — Foundation
+- v0.2 — Parser M3U
+- v0.3 — Merge e deduplicazione
+- v0.4 — Health check
+- v0.5 — Dashboard dinamica
+- v1.0 — Prima release stabile
