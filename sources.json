@@ -1,0 +1,46 @@
+name: Genera output Italia TV Hub
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 4 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: italia-tv-hub-update
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Scarica repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configura Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Genera output
+        run: python -m src.main
+
+      - name: Pubblica output
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add output/
+
+          if git diff --cached --quiet; then
+            echo "Nessuna modifica da pubblicare"
+            exit 0
+          fi
+
+          git commit -m "Aggiornamento automatico output"
+          git pull --rebase origin main
+          git push origin main
