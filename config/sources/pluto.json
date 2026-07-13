@@ -1,0 +1,11 @@
+{
+  "sources": [
+    {
+      "id": "pluto_it",
+      "name": "Pluto TV Italia",
+      "url": "https://example.invalid/pluto-it.m3u",
+      "enabled": false,
+      "priority": 110
+    }
+  ]
+}

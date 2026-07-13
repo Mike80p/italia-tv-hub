@@ -1,11 +1,7 @@
 {
-  "project_name": "Italia TV Hub",
-  "repository_name": "italia-tv-hub",
   "output_file": "output/playlist.m3u",
   "report_file": "output/report.json",
-  "health_file": "output/health.json",
-  "failure_threshold": 3,
-  "request_timeout_seconds": 12,
-  "max_workers": 12,
-  "user_agent": "Italia-TV-Hub/0.1"
+  "request_timeout_seconds": 20,
+  "retry_count": 2,
+  "user_agent": "Italia-TV-Hub/0.2"
 }

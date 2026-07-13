@@ -1,1 +1,1 @@
-# Sprint 0: nessuna dipendenza esterna
+pytest>=8.0,<9.0

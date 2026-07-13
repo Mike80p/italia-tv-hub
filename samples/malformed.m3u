@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:-1 group-title="TEST",Canale Valido
+https://example.invalid/valid.m3u8
+#EXTINF:-1 SENZA-VIRGOLA
+https://example.invalid/ignored.m3u8

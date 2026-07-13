@@ -1,8 +1,11 @@
 # Changelog
 
-## 0.1.0
+## 0.2.0
+- Core Engine modulare.
+- Catalogo sorgenti.
+- Downloader HTTP/locale.
+- Parser ed exporter M3U.
+- Report e test automatici.
 
-- Creata la foundation di Italia TV Hub.
-- Aggiunta struttura repository.
-- Aggiunti workflow per test, aggiornamento e GitHub Pages.
-- Aggiunta dashboard iniziale.
+## 0.1.0
+- Foundation iniziale.

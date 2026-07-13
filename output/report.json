@@ -1,0 +1,14 @@
+{
+  "project": "Italia TV Hub",
+  "version": "0.2.0",
+  "generated_at": "2026-07-13T10:38:45.520715+00:00",
+  "sources_enabled": 1,
+  "channels": 2,
+  "sources": [
+    {
+      "id": "local_sample",
+      "status": "ok",
+      "channels": 2
+    }
+  ]
+}

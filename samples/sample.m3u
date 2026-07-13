@@ -1,0 +1,6 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="demo.rai1" tvg-name="Rai 1 Demo" group-title="RAI",Rai 1 Demo
+https://example.invalid/rai1-demo.m3u8
+#EXTINF:-1 tvg-id="demo.pluto" group-title="PLUTO TV",Pluto Film Demo
+#EXTVLCOPT:http-user-agent=Italia-TV-Hub-Test
+https://example.invalid/pluto-demo.m3u8

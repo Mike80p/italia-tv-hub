@@ -1,0 +1,11 @@
+{
+  "sources": [
+    {
+      "id": "italy_public",
+      "name": "Catalogo italiano pubblico",
+      "url": "https://example.invalid/italy.m3u",
+      "enabled": false,
+      "priority": 100
+    }
+  ]
+}

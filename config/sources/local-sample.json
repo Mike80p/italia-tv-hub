@@ -1,0 +1,11 @@
+{
+  "sources": [
+    {
+      "id": "local_sample",
+      "name": "Playlist locale di collaudo",
+      "url": "samples/sample.m3u",
+      "enabled": true,
+      "priority": 10
+    }
+  ]
+}
