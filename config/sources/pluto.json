@@ -3,8 +3,8 @@
     {
       "id": "pluto_it",
       "name": "Pluto TV Italia",
-      "url": "https://example.invalid/pluto-it.m3u",
-      "enabled": false,
+      "url": "https://raw.githubusercontent.com/OwnerPlugins/pluto-tv-m3u/main/pluto-live-IT.m3u",
+      "enabled": true,
       "priority": 110
     }
   ]

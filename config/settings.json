@@ -1,7 +1,14 @@
 {
   "output_file": "output/playlist.m3u",
   "report_file": "output/report.json",
+  "health_file": "output/health.json",
+
   "request_timeout_seconds": 20,
   "retry_count": 2,
-  "user_agent": "Italia-TV-Hub/0.2"
+  "user_agent": "Italia-TV-Hub/0.4",
+
+  "health_enabled": false,
+  "health_timeout_seconds": 10,
+  "health_max_workers": 12,
+  "publish_only_online": false
 }

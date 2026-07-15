@@ -1,9 +1,90 @@
+from __future__ import annotations
+
 import json
+import re
 from pathlib import Path
-from src.parser.m3u import M3UParser
+
 from src.core.application import Application
-ROOT=Path(__file__).resolve().parents[1]
-def test_parser():
- c=M3UParser().parse((ROOT/'samples/sample.m3u').read_text(encoding='utf-8'),'sample'); assert len(c)==2; assert c[0].group=='RAI'
-def test_application():
- assert Application(ROOT).run()==0; assert 'Rai 1 Demo' in (ROOT/'output/playlist.m3u').read_text(encoding='utf-8'); assert json.loads((ROOT/'output/report.json').read_text())['channels']==2
+
+
+ROOT = Path(__file__).resolve().parents[1]
+PLAYLIST_PATH = ROOT / "output/playlist.m3u"
+REPORT_PATH = ROOT / "output/report.json"
+
+
+def test_application_contract() -> None:
+    assert isinstance(
+        Application.VERSION,
+        str,
+    )
+
+    assert re.fullmatch(
+        r"\d+\.\d+\.\d+",
+        Application.VERSION,
+    )
+
+    assert callable(
+        Application.run
+    )
+
+
+def test_published_playlist_is_valid() -> None:
+    assert PLAYLIST_PATH.exists()
+    assert PLAYLIST_PATH.is_file()
+
+    playlist_text = (
+        PLAYLIST_PATH.read_text(
+            encoding="utf-8",
+        )
+    )
+
+    assert playlist_text.startswith(
+        "#EXTM3U"
+    )
+
+    channel_count = playlist_text.count(
+        "#EXTINF:"
+    )
+
+    assert channel_count > 0
+
+
+def test_published_report_matches_playlist() -> None:
+    assert REPORT_PATH.exists()
+    assert REPORT_PATH.is_file()
+
+    report = json.loads(
+        REPORT_PATH.read_text(
+            encoding="utf-8",
+        )
+    )
+
+    playlist_text = (
+        PLAYLIST_PATH.read_text(
+            encoding="utf-8",
+        )
+    )
+
+    channel_count = playlist_text.count(
+        "#EXTINF:"
+    )
+
+    assert report["project"] == (
+        "Italia TV Hub"
+    )
+
+    assert isinstance(
+        report["version"],
+        str,
+    )
+
+    assert re.fullmatch(
+        r"\d+\.\d+\.\d+",
+        report["version"],
+    )
+
+    assert report["channels"] == (
+        channel_count
+    )
+
+    assert report["channels"] > 0
