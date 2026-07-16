@@ -75,11 +75,15 @@ class Application:
         1. caricamento e registrazione sorgenti;
         2. download con diagnostica;
         3. parsing normalizzato con diagnostica;
-        4. registrazione e deduplicazione canali;
-        5. merge;
-        6. health check opzionale;
-        7. esportazione;
-        8. report JSON.
+        4. conservazione dei candidati alternativi;
+        5. health check di tutti gli URL candidati;
+        6. merge guidato dagli Health Score;
+        7. filtro dei canali non disponibili;
+        8. esportazione e report JSON.
+
+        Se il merger installato non espone group_candidates(),
+        viene mantenuto il precedente flusso compatibile:
+        merge prima del controllo Health.
         """
 
         if not hasattr(
@@ -108,6 +112,10 @@ class Application:
 
         source_results: list[
             dict[str, object]
+        ] = []
+
+        parsed_candidates: list[
+            Channel
         ] = []
 
         channels_parsed = 0
@@ -178,6 +186,13 @@ class Application:
                     parsed_channels
                 )
 
+                # La lista separata conserva anche i flussi che il
+                # ChannelRegistry può considerare duplicati. Questi
+                # candidati sono necessari per il recupero automatico.
+                parsed_candidates.extend(
+                    parsed_channels
+                )
+
                 channel_batch = (
                     self.registry.add_many(
                         parsed_channels,
@@ -241,32 +256,222 @@ class Application:
                     source_result
                 )
 
-        registry_channels = list(
+        registered_channels = list(
             self.registry.snapshot()
         )
 
+        supports_candidate_groups = callable(
+            getattr(
+                self.merger,
+                "group_candidates",
+                None,
+            )
+        )
+
+        # Con il nuovo merger usiamo tutti i canali parsati.
+        # Con merger legacy manteniamo l'input già registrato.
+        merge_input = (
+            list(parsed_candidates)
+            if supports_candidate_groups
+            else registered_channels
+        )
+
         channels_before_merge = len(
-            registry_channels
+            merge_input
         )
 
         (
-            merged_channels,
-            merger_diagnostics,
-        ) = self._merge_channels(
-            registry_channels,
+            initial_grouping,
+            candidate_group_diagnostics,
+        ) = self._group_candidate_streams(
+            merge_input,
             source_priorities,
         )
 
-        merger_duplicates_removed = (
+        health_results: list[
+            HealthResult
+        ] = []
+
+        health_scores: dict[
+            str,
+            float,
+        ] = {}
+
+        health_result_by_url: dict[
+            str,
+            HealthResult,
+        ] = {}
+
+        recovery_diagnostics = (
+            self._empty_recovery_diagnostics(
+                mode=(
+                    "candidate_health_recovery"
+                    if (
+                        self.settings.health_enabled
+                        and initial_grouping
+                        is not None
+                    )
+                    else (
+                        "legacy_post_merge_health"
+                        if self.settings.health_enabled
+                        else "disabled"
+                    )
+                ),
+                candidate_group_diagnostics=(
+                    candidate_group_diagnostics
+                ),
+            )
+        )
+
+        if (
+            self.settings.health_enabled
+            and initial_grouping is not None
+        ):
+            all_candidate_channels = list(
+                getattr(
+                    initial_grouping,
+                    "channels",
+                    merge_input,
+                )
+            )
+
+            channels_to_check = (
+                self._unique_channels_by_url(
+                    all_candidate_channels
+                )
+            )
+
+            health_results = list(
+                self.health_checker.check_many(
+                    channels_to_check
+                )
+            )
+
+            health_scores = (
+                self._build_health_score_map(
+                    health_results
+                )
+            )
+
+            health_result_by_url = {
+                self._url_key(
+                    result.stream_url
+                ): result
+                for result in health_results
+            }
+
+            (
+                merged_channels,
+                merger_diagnostics,
+            ) = self._merge_channels(
+                merge_input,
+                source_priorities,
+                health_scores=health_scores,
+            )
+
+            (
+                final_grouping,
+                _,
+            ) = self._group_candidate_streams(
+                merge_input,
+                source_priorities,
+                health_scores=health_scores,
+            )
+
+            recovery_diagnostics = (
+                self._build_recovery_diagnostics(
+                    initial_grouping=(
+                        initial_grouping
+                    ),
+                    final_grouping=(
+                        final_grouping
+                    ),
+                    health_result_by_url=(
+                        health_result_by_url
+                    ),
+                    candidate_streams_checked=(
+                        len(channels_to_check)
+                    ),
+                    candidate_group_diagnostics=(
+                        candidate_group_diagnostics
+                    ),
+                )
+            )
+
+        else:
+            (
+                merged_channels,
+                merger_diagnostics,
+            ) = self._merge_channels(
+                merge_input,
+                source_priorities,
+            )
+
+            if self.settings.health_enabled:
+                channels_to_check = (
+                    self._unique_channels_by_url(
+                        merged_channels
+                    )
+                )
+
+                health_results = list(
+                    self.health_checker.check_many(
+                        channels_to_check
+                    )
+                )
+
+                health_scores = (
+                    self._build_health_score_map(
+                        health_results
+                    )
+                )
+
+                health_result_by_url = {
+                    self._url_key(
+                        result.stream_url
+                    ): result
+                    for result in health_results
+                }
+
+                recovery_diagnostics[
+                    "candidate_streams_checked"
+                ] = len(
+                    channels_to_check
+                )
+
+        merger_duplicates_removed = max(
+            0,
             channels_before_merge
-            - len(merged_channels)
+            - len(merged_channels),
+        )
+
+        selected_channels = list(
+            merged_channels
+        )
+
+        if (
+            self.settings.health_enabled
+            and self.settings
+            .publish_only_online
+        ):
+            selected_channels = (
+                self._filter_publishable_channels(
+                    selected_channels,
+                    health_result_by_url,
+                )
+            )
+
+        channels_filtered_unavailable = max(
+            0,
+            len(merged_channels)
+            - len(selected_channels),
         )
 
         self.registry.clear()
 
         post_merge_result = (
             self.registry.add_many(
-                merged_channels,
+                selected_channels,
                 replace=False,
             )
         )
@@ -279,57 +484,18 @@ class Application:
             self.registry
         )
 
-        duplicates_removed = (
+        duplicates_removed = max(
+            0,
             channels_parsed
-            - channels_after_merge
+            - channels_after_merge,
         )
 
-        health_results: list[
-            HealthResult
-        ] = []
-
-        if self.settings.health_enabled:
-            channels_to_check = list(
-                self.registry.snapshot()
-            )
-
-            health_results = (
-                self.health_checker.check_many(
-                    channels_to_check
-                )
-            )
-
-            self._write_health_report(
-                health_results
-            )
-
-            if (
-                self.settings
-                .publish_only_online
-            ):
-                publishable_urls = {
-                    result.stream_url
-                    for result in health_results
-                    if result.status
-                    in {
-                        "online",
-                        "reachable",
-                    }
-                }
-
-                for channel in (
-                    self.registry.snapshot()
-                ):
-                    if (
-                        channel.stream_url
-                        not in publishable_urls
-                    ):
-                        self.registry.remove_by_url(
-                            channel.stream_url
-                        )
-
-        else:
-            self._write_health_report([])
+        self._write_health_report(
+            health_results,
+            recovery_diagnostics=(
+                recovery_diagnostics
+            ),
+        )
 
         output_channels = list(
             self.registry.snapshot()
@@ -478,7 +644,7 @@ class Application:
                 ]
             ),
 
-            # Channel Registry Engine
+            # Channel Registry / Merger Engine
             "channels_parsed": (
                 channels_parsed
             ),
@@ -508,6 +674,9 @@ class Application:
             ),
             "post_merge_duplicates_removed": (
                 post_merge_duplicates_removed
+            ),
+            "channels_filtered_unavailable": (
+                channels_filtered_unavailable
             ),
             "duplicates_removed": (
                 duplicates_removed
@@ -541,6 +710,53 @@ class Application:
                 .publish_only_online
             ),
 
+            # Alternative Stream Recovery Engine
+            "alternative_recovery_enabled": (
+                recovery_diagnostics[
+                    "enabled"
+                ]
+            ),
+            "candidate_groups": (
+                recovery_diagnostics[
+                    "candidate_groups"
+                ]
+            ),
+            "duplicate_candidate_groups": (
+                recovery_diagnostics[
+                    "duplicate_candidate_groups"
+                ]
+            ),
+            "alternative_candidates": (
+                recovery_diagnostics[
+                    "alternative_candidates"
+                ]
+            ),
+            "candidate_streams_checked": (
+                recovery_diagnostics[
+                    "candidate_streams_checked"
+                ]
+            ),
+            "selected_primary": (
+                recovery_diagnostics[
+                    "selected_primary"
+                ]
+            ),
+            "recovered_from_alternative": (
+                recovery_diagnostics[
+                    "recovered_from_alternative"
+                ]
+            ),
+            "upgraded_to_better_alternative": (
+                recovery_diagnostics[
+                    "upgraded_to_better_alternative"
+                ]
+            ),
+            "all_candidates_failed": (
+                recovery_diagnostics[
+                    "all_candidates_failed"
+                ]
+            ),
+
             "channels": len(
                 output_channels
             ),
@@ -569,6 +785,14 @@ class Application:
 
             "parser_summary": (
                 parser_summary
+            ),
+
+            "candidate_groups_summary": (
+                candidate_group_diagnostics
+            ),
+
+            "alternative_recovery": (
+                recovery_diagnostics
             ),
 
             "merger": (
@@ -999,6 +1223,10 @@ class Application:
         self,
         channels: list[Channel],
         source_priorities: dict[str, int],
+        *,
+        health_scores: (
+            dict[str, float] | None
+        ) = None,
     ) -> tuple[
         list[Channel],
         dict[str, object],
@@ -1006,9 +1234,9 @@ class Application:
         """
         Esegue il Merger Quality Engine con diagnostica.
 
-        Usa merge_detailed() quando disponibile e conserva il
-        fallback su merge() per i componenti semplificati usati
-        dai test precedenti.
+        Quando il merger supporta `health_scores`, il ranking finale
+        viene eseguito dopo il controllo di tutti i candidati.
+        I componenti legacy continuano a funzionare senza modifiche.
         """
 
         merge_detailed = getattr(
@@ -1024,13 +1252,21 @@ class Application:
                 )
             )
 
-            return (
-                merged_channels,
+            diagnostics = (
                 self._fallback_merger_diagnostics(
                     channels,
                     merged_channels,
                     source_priorities,
-                ),
+                )
+            )
+
+            diagnostics[
+                "health_ranking"
+            ] = False
+
+            return (
+                merged_channels,
+                diagnostics,
             )
 
         merge_kwargs: dict[
@@ -1064,6 +1300,19 @@ class Application:
             merge_kwargs[
                 "source_priorities"
             ] = source_priorities
+
+        if (
+            health_scores is not None
+            and (
+                not parameters
+                or "health_scores"
+                in parameters
+                or accepts_keyword_arguments
+            )
+        ):
+            merge_kwargs[
+                "health_scores"
+            ] = health_scores
 
         merge_result = merge_detailed(
             channels,
@@ -1137,6 +1386,9 @@ class Application:
             merged_channels,
             {
                 "mode": "detailed",
+                "health_ranking": (
+                    health_scores is not None
+                ),
                 "source_priorities": dict(
                     sorted(
                         source_priorities.items()
@@ -1160,6 +1412,650 @@ class Application:
                     in reported_decisions
                 ],
             },
+        )
+
+    def _group_candidate_streams(
+        self,
+        channels: list[Channel],
+        source_priorities: dict[str, int],
+        *,
+        health_scores: (
+            dict[str, float] | None
+        ) = None,
+    ) -> tuple[
+        object | None,
+        dict[str, object],
+    ]:
+        """
+        Costruisce i gruppi di flussi alternativi quando il merger
+        espone la nuova API `group_candidates()`.
+
+        Non effettua deduplicazione definitiva.
+        """
+
+        group_candidates = getattr(
+            self.merger,
+            "group_candidates",
+            None,
+        )
+
+        if not callable(
+            group_candidates
+        ):
+            return (
+                None,
+                {
+                    "mode": "legacy",
+                    "supported": False,
+                    "stats": {
+                        "input_channels": len(
+                            channels
+                        ),
+                        "groups": 0,
+                        "singleton_groups": 0,
+                        "duplicate_groups": 0,
+                        "alternative_candidates": 0,
+                    },
+                },
+            )
+
+        group_kwargs: dict[
+            str,
+            object,
+        ] = {}
+
+        try:
+            parameters = inspect.signature(
+                group_candidates
+            ).parameters
+        except (
+            TypeError,
+            ValueError,
+        ):
+            parameters = {}
+
+        accepts_keyword_arguments = any(
+            parameter.kind
+            is inspect.Parameter.VAR_KEYWORD
+            for parameter
+            in parameters.values()
+        )
+
+        if (
+            not parameters
+            or "source_priorities"
+            in parameters
+            or accepts_keyword_arguments
+        ):
+            group_kwargs[
+                "source_priorities"
+            ] = source_priorities
+
+        if (
+            health_scores is not None
+            and (
+                not parameters
+                or "health_scores"
+                in parameters
+                or accepts_keyword_arguments
+            )
+        ):
+            group_kwargs[
+                "health_scores"
+            ] = health_scores
+
+        result = group_candidates(
+            channels,
+            **group_kwargs,
+        )
+
+        groups = getattr(
+            result,
+            "groups",
+            None,
+        )
+
+        if groups is None:
+            raise TypeError(
+                "group_candidates() deve "
+                "restituire un risultato con groups"
+            )
+
+        all_channels = getattr(
+            result,
+            "channels",
+            None,
+        )
+
+        if all_channels is None:
+            raise TypeError(
+                "group_candidates() deve "
+                "restituire un risultato con channels"
+            )
+
+        if any(
+            not isinstance(
+                channel,
+                Channel,
+            )
+            for channel in all_channels
+        ):
+            raise TypeError(
+                "I gruppi candidati contengono "
+                "elementi non Channel"
+            )
+
+        return (
+            result,
+            {
+                "mode": "candidate_groups",
+                "supported": True,
+                "health_ranking": (
+                    health_scores is not None
+                ),
+                "stats": self._json_safe(
+                    getattr(
+                        result,
+                        "stats",
+                        {},
+                    )
+                ),
+            },
+        )
+
+    @staticmethod
+    def _url_key(
+        stream_url: str,
+    ) -> str:
+        return str(
+            stream_url
+        ).strip()
+
+    @classmethod
+    def _unique_channels_by_url(
+        cls,
+        channels: list[Channel],
+    ) -> list[Channel]:
+        """
+        Evita richieste HTTP ripetute verso lo stesso URL.
+
+        Il risultato Health viene comunque riutilizzato da tutti i
+        candidati del gruppo che condividono quel collegamento.
+        """
+
+        unique: list[
+            Channel
+        ] = []
+
+        seen: set[
+            str
+        ] = set()
+
+        for channel in channels:
+            key = cls._url_key(
+                channel.stream_url
+            )
+
+            if key in seen:
+                continue
+
+            seen.add(
+                key
+            )
+
+            unique.append(
+                channel
+            )
+
+        return unique
+
+    @staticmethod
+    def _is_publishable_status(
+        status: str,
+    ) -> bool:
+        return status in {
+            "online",
+            "reachable",
+        }
+
+    @classmethod
+    def _build_health_score_map(
+        cls,
+        results: list[
+            HealthResult
+        ],
+    ) -> dict[str, float]:
+        """
+        I risultati non pubblicabili ricevono punteggio zero.
+
+        Per checker legacy che dichiarano un canale online ma non
+        valorizzano health_score, viene usato un minimo di 1.
+        """
+
+        scores: dict[
+            str,
+            float,
+        ] = {}
+
+        for result in results:
+            if not cls._is_publishable_status(
+                result.status
+            ):
+                score = 0.0
+            else:
+                try:
+                    score = float(
+                        result.health_score
+                    )
+                except (
+                    TypeError,
+                    ValueError,
+                ):
+                    score = 0.0
+
+                if score <= 0:
+                    score = 1.0
+
+            scores[
+                cls._url_key(
+                    result.stream_url
+                )
+            ] = score
+
+        return scores
+
+    @classmethod
+    def _filter_publishable_channels(
+        cls,
+        channels: list[Channel],
+        health_result_by_url: dict[
+            str,
+            HealthResult,
+        ],
+    ) -> list[Channel]:
+        return [
+            channel
+            for channel in channels
+            if (
+                (
+                    result := (
+                        health_result_by_url.get(
+                            cls._url_key(
+                                channel.stream_url
+                            )
+                        )
+                    )
+                )
+                is not None
+                and cls._is_publishable_status(
+                    result.status
+                )
+            )
+        ]
+
+    def _empty_recovery_diagnostics(
+        self,
+        *,
+        mode: str,
+        candidate_group_diagnostics: (
+            dict[str, object]
+        ),
+    ) -> dict[str, object]:
+        raw_stats = (
+            candidate_group_diagnostics.get(
+                "stats",
+                {},
+            )
+        )
+
+        stats = (
+            raw_stats
+            if isinstance(
+                raw_stats,
+                dict,
+            )
+            else {}
+        )
+
+        return {
+            "enabled": False,
+            "mode": mode,
+            "candidate_groups": (
+                self._as_int(
+                    stats.get(
+                        "groups",
+                        0,
+                    )
+                )
+            ),
+            "duplicate_candidate_groups": (
+                self._as_int(
+                    stats.get(
+                        "duplicate_groups",
+                        0,
+                    )
+                )
+            ),
+            "alternative_candidates": (
+                self._as_int(
+                    stats.get(
+                        "alternative_candidates",
+                        0,
+                    )
+                )
+            ),
+            "candidate_streams_checked": 0,
+            "selected_primary": 0,
+            "recovered_from_alternative": 0,
+            "upgraded_to_better_alternative": 0,
+            "all_candidates_failed": 0,
+            "decisions_reported": 0,
+            "decisions_truncated": 0,
+            "decisions": [],
+        }
+
+    def _build_recovery_diagnostics(
+        self,
+        *,
+        initial_grouping: object,
+        final_grouping: object | None,
+        health_result_by_url: dict[
+            str,
+            HealthResult,
+        ],
+        candidate_streams_checked: int,
+        candidate_group_diagnostics: (
+            dict[str, object]
+        ),
+    ) -> dict[str, object]:
+        """
+        Confronta il candidato preferito prima e dopo il controllo.
+
+        `recovered_from_alternative` conta solo i casi in cui il
+        candidato iniziale non era disponibile e un'alternativa sì.
+        """
+
+        diagnostics = (
+            self._empty_recovery_diagnostics(
+                mode=(
+                    "candidate_health_recovery"
+                ),
+                candidate_group_diagnostics=(
+                    candidate_group_diagnostics
+                ),
+            )
+        )
+
+        diagnostics["enabled"] = True
+        diagnostics[
+            "candidate_streams_checked"
+        ] = candidate_streams_checked
+
+        initial_groups = {
+            str(
+                getattr(
+                    group,
+                    "group_id",
+                    index,
+                )
+            ): group
+            for index, group in enumerate(
+                getattr(
+                    initial_grouping,
+                    "groups",
+                    (),
+                )
+            )
+        }
+
+        final_groups = {
+            str(
+                getattr(
+                    group,
+                    "group_id",
+                    index,
+                )
+            ): group
+            for index, group in enumerate(
+                getattr(
+                    final_grouping,
+                    "groups",
+                    (),
+                )
+            )
+        } if final_grouping is not None else {}
+
+        decisions: list[
+            dict[str, object]
+        ] = []
+
+        selected_primary = 0
+        recovered = 0
+        upgraded = 0
+        all_failed = 0
+
+        for group_id, initial_group in (
+            initial_groups.items()
+        ):
+            final_group = final_groups.get(
+                group_id,
+                initial_group,
+            )
+
+            initial_channel = getattr(
+                initial_group,
+                "preferred_channel",
+                None,
+            )
+
+            selected_channel = getattr(
+                final_group,
+                "preferred_channel",
+                None,
+            )
+
+            if (
+                not isinstance(
+                    initial_channel,
+                    Channel,
+                )
+                or not isinstance(
+                    selected_channel,
+                    Channel,
+                )
+            ):
+                continue
+
+            group_channels = tuple(
+                getattr(
+                    initial_group,
+                    "channels",
+                    (),
+                )
+            )
+
+            publishable_channels = [
+                channel
+                for channel in group_channels
+                if (
+                    isinstance(
+                        channel,
+                        Channel,
+                    )
+                    and self._health_is_publishable(
+                        health_result_by_url.get(
+                            self._url_key(
+                                channel.stream_url
+                            )
+                        )
+                    )
+                )
+            ]
+
+            initial_result = (
+                health_result_by_url.get(
+                    self._url_key(
+                        initial_channel.stream_url
+                    )
+                )
+            )
+
+            selected_result = (
+                health_result_by_url.get(
+                    self._url_key(
+                        selected_channel.stream_url
+                    )
+                )
+            )
+
+            initial_available = (
+                self._health_is_publishable(
+                    initial_result
+                )
+            )
+
+            selected_available = (
+                self._health_is_publishable(
+                    selected_result
+                )
+            )
+
+            changed = (
+                self._url_key(
+                    selected_channel.stream_url
+                )
+                != self._url_key(
+                    initial_channel.stream_url
+                )
+            )
+
+            outcome = (
+                "selected_primary"
+            )
+
+            if not publishable_channels:
+                all_failed += 1
+                outcome = (
+                    "all_candidates_failed"
+                )
+
+            elif (
+                changed
+                and not initial_available
+                and selected_available
+            ):
+                recovered += 1
+                outcome = (
+                    "recovered_from_alternative"
+                )
+
+            elif (
+                changed
+                and selected_available
+            ):
+                upgraded += 1
+                outcome = (
+                    "upgraded_to_better_alternative"
+                )
+
+            elif selected_available:
+                selected_primary += 1
+
+            else:
+                # Caso difensivo: esiste almeno un candidato
+                # pubblicabile ma il merger non lo ha selezionato.
+                all_failed += 1
+                outcome = (
+                    "selection_not_publishable"
+                )
+
+            if (
+                changed
+                or outcome
+                != "selected_primary"
+            ):
+                decisions.append(
+                    {
+                        "group_id": group_id,
+                        "name": (
+                            selected_channel.name
+                        ),
+                        "outcome": outcome,
+                        "initial_url": (
+                            initial_channel
+                            .stream_url
+                        ),
+                        "initial_status": (
+                            initial_result.status
+                            if initial_result
+                            is not None
+                            else "not_checked"
+                        ),
+                        "selected_url": (
+                            selected_channel
+                            .stream_url
+                        ),
+                        "selected_status": (
+                            selected_result.status
+                            if selected_result
+                            is not None
+                            else "not_checked"
+                        ),
+                        "candidate_count": len(
+                            group_channels
+                        ),
+                        "publishable_candidates": (
+                            len(
+                                publishable_channels
+                            )
+                        ),
+                    }
+                )
+
+        reported = decisions[
+            :self.MERGER_DECISIONS_REPORT_LIMIT
+        ]
+
+        diagnostics.update(
+            {
+                "selected_primary": (
+                    selected_primary
+                ),
+                "recovered_from_alternative": (
+                    recovered
+                ),
+                "upgraded_to_better_alternative": (
+                    upgraded
+                ),
+                "all_candidates_failed": (
+                    all_failed
+                ),
+                "decisions_reported": len(
+                    reported
+                ),
+                "decisions_truncated": max(
+                    0,
+                    len(decisions)
+                    - len(reported),
+                ),
+                "decisions": reported,
+            }
+        )
+
+        return diagnostics
+
+    @classmethod
+    def _health_is_publishable(
+        cls,
+        result: (
+            HealthResult | None
+        ),
+    ) -> bool:
+        return (
+            result is not None
+            and cls._is_publishable_status(
+                result.status
+            )
         )
 
     def _fallback_merger_diagnostics(
@@ -1356,6 +2252,10 @@ class Application:
     def _write_health_report(
         self,
         results: list[HealthResult],
+        *,
+        recovery_diagnostics: (
+            dict[str, object] | None
+        ) = None,
     ) -> None:
         health_path = (
             self.root
@@ -1394,6 +2294,10 @@ class Application:
                 1
                 for result in results
                 if result.status == "offline"
+            ),
+            "alternative_recovery": (
+                recovery_diagnostics
+                or {}
             ),
             "channels": [
                 result.to_dict()
