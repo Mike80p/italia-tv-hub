@@ -2,28 +2,40 @@ name: Aggiorna Italia TV Hub
 
 on:
   workflow_dispatch:
+
+  push:
+    branches:
+      - main
+    paths:
+      - "src/**"
+      - "config/**"
+      - "tests/**"
+      - "requirements.txt"
+      - ".github/workflows/update.yml"
+
   schedule:
-    # Aggiornamento ogni 6 ore.
-    # Gli orari cron di GitHub Actions sono espressi in UTC.
+    # Aggiornamento automatico ogni 6 ore.
+    # GitHub Actions usa il fuso orario UTC.
     - cron: "17 */6 * * *"
 
 permissions:
   contents: write
 
 concurrency:
-  group: aggiorna-italia-tv-hub
+  group: aggiorna-italia-tv-hub-main
   cancel-in-progress: false
 
 jobs:
   generate:
     name: Genera e pubblica playlist
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 60
 
     steps:
       - name: Scarica repository
         uses: actions/checkout@v4
         with:
+          ref: main
           fetch-depth: 0
 
       - name: Configura Python
@@ -33,59 +45,119 @@ jobs:
           cache: pip
 
       - name: Installa dipendenze
+        shell: bash
         run: |
+          set -euo pipefail
+
           python -m pip install --upgrade pip
           python -m pip install -r requirements.txt
 
-      - name: Esegui test
-        run: |
-          python -m pytest -q
-
-      - name: Genera playlist e report
-        run: |
-          python -m src.main
-
-      - name: Verifica output
+      - name: Genera e pubblica output
         shell: bash
+        env:
+          TARGET_BRANCH: main
         run: |
-          test -s output/playlist.m3u
-          test -s output/report.json
+          set -euo pipefail
 
-          first_line="$(head -n 1 output/playlist.m3u | tr -d '\r')"
-
-          if [[ "$first_line" != "#EXTM3U"* ]]; then
-            echo "Errore: output/playlist.m3u non inizia con #EXTM3U."
-            exit 1
-          fi
-
-          channel_count="$(grep -c '^#EXTINF:' output/playlist.m3u || true)"
-
-          if [[ "$channel_count" -lt 1 ]]; then
-            echo "Errore: la playlist non contiene canali."
-            exit 1
-          fi
-
-          echo "Canali generati: $channel_count"
-
-      - name: Pubblica output nel branch main
-        shell: bash
-        run: |
           git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add -f output/playlist.m3u
-          git add -f output/report.json
+          publish_succeeded=false
 
-          if [[ -f output/health.json ]]; then
-            git add -f output/health.json
+          for attempt in 1 2 3; do
+            echo
+            echo "=============================================="
+            echo "Tentativo di pubblicazione: ${attempt}/3"
+            echo "=============================================="
+
+            # Riparte sempre dalla versione più recente del branch remoto.
+            # In questo modo i file generati non vengono mai sottoposti
+            # a pull --rebase dopo il commit.
+            git fetch origin "${TARGET_BRANCH}"
+            git checkout -B \
+              "${TARGET_BRANCH}" \
+              "origin/${TARGET_BRANCH}"
+
+            echo
+            echo "Esecuzione test..."
+            python -m pytest -q
+
+            echo
+            echo "Generazione playlist e report..."
+            python -m src.main
+
+            echo
+            echo "Verifica output..."
+
+            test -s output/playlist.m3u
+            test -s output/report.json
+
+            first_line="$(
+              head -n 1 output/playlist.m3u |
+              tr -d '\r'
+            )"
+
+            if [[ "${first_line}" != "#EXTM3U"* ]]; then
+              echo \
+                "Errore: output/playlist.m3u non inizia con #EXTM3U."
+              exit 1
+            fi
+
+            channel_count="$(
+              grep -c '^#EXTINF:' \
+                output/playlist.m3u ||
+              true
+            )"
+
+            if [[ "${channel_count}" -lt 1 ]]; then
+              echo \
+                "Errore: la playlist non contiene canali."
+              exit 1
+            fi
+
+            echo "Canali generati: ${channel_count}"
+
+            git add -f output/playlist.m3u
+            git add -f output/report.json
+
+            if [[ -f output/health.json ]]; then
+              git add -f output/health.json
+            fi
+
+            if git diff --cached --quiet; then
+              echo
+              echo "Nessuna modifica da pubblicare."
+              publish_succeeded=true
+              break
+            fi
+
+            git commit \
+              -m "Aggiornamento automatico playlist"
+
+            echo
+            echo "Pubblicazione su GitHub..."
+
+            if git push \
+              origin \
+              "HEAD:${TARGET_BRANCH}"
+            then
+              publish_succeeded=true
+              break
+            fi
+
+            echo
+            echo \
+              "Il branch remoto è cambiato durante l'esecuzione."
+            echo \
+              "Il workflow ripartirà dal branch aggiornato."
+
+            sleep "$((attempt * 5))"
+          done
+
+          if [[ "${publish_succeeded}" != "true" ]]; then
+            echo
+            echo \
+              "Errore: pubblicazione non riuscita dopo 3 tentativi."
+            exit 1
           fi
-
-          if git diff --cached --quiet; then
-            echo "Nessuna modifica da pubblicare."
-            exit 0
-          fi
-
-          git commit -m "Aggiornamento automatico playlist"
-
-          git pull --rebase origin main
-          git push origin HEAD:main
