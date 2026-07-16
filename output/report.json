@@ -1,7 +1,7 @@
 {
   "project": "Italia TV Hub",
   "version": "0.8.0",
-  "generated_at": "2026-07-16T03:41:32.685066+00:00",
+  "generated_at": "2026-07-16T06:24:45.430075+00:00",
   "sources_total": 3,
   "sources_enabled": 2,
   "sources_disabled": 1,
@@ -18,7 +18,7 @@
   "download_attempts_total": 2,
   "download_retries_total": 0,
   "download_bytes_total": 363765,
-  "download_time_ms_total": 710,
+  "download_time_ms_total": 652,
   "parser_sources_processed": 2,
   "parser_extinf_records": 449,
   "parser_channels_created": 449,
@@ -56,7 +56,7 @@
     "attempts_total": 2,
     "retries_total": 0,
     "bytes_total": 363765,
-    "time_ms_total": 710
+    "time_ms_total": 652
   },
   "parser_summary": {
     "sources_processed": 2,
@@ -1830,7 +1830,7 @@
       "registered": 329,
       "duplicates_skipped": 0,
       "attempt_count": 1,
-      "download_ms": 315,
+      "download_ms": 179,
       "bytes_downloaded": 76322,
       "http_status": 200,
       "final_url": "https://iptv-org.github.io/iptv/countries/it.m3u",
@@ -1842,7 +1842,7 @@
         {
           "number": 1,
           "status": "success",
-          "elapsed_ms": 315,
+          "elapsed_ms": 179,
           "http_status": 200,
           "error_type": null,
           "error_message": null
@@ -1875,7 +1875,7 @@
       "registered": 120,
       "duplicates_skipped": 0,
       "attempt_count": 1,
-      "download_ms": 395,
+      "download_ms": 473,
       "bytes_downloaded": 287443,
       "http_status": 200,
       "final_url": "https://raw.githubusercontent.com/OwnerPlugins/pluto-tv-m3u/main/pluto-live-IT.m3u",
@@ -1887,7 +1887,7 @@
         {
           "number": 1,
           "status": "success",
-          "elapsed_ms": 394,
+          "elapsed_ms": 473,
           "http_status": 200,
           "error_type": null,
           "error_message": null
