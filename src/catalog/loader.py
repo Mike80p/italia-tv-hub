@@ -7,11 +7,86 @@ from typing import Any
 from src.models.source import Source
 
 
-def _as_text(value: Any) -> str:
+def _as_text(
+    value: Any,
+) -> str:
     if value is None:
         return ""
 
-    return str(value).strip()
+    return str(
+        value
+    ).strip()
+
+
+def _build_source(
+    item: dict[str, Any],
+) -> Source:
+    """
+    Costruisce una Source da una definizione JSON.
+
+    I campi Discovery sono tutti opzionali. In loro assenza vengono
+    applicati i valori predefiniti del modello Source, mantenendo
+    compatibili i vecchi file di configurazione.
+    """
+
+    return Source(
+        id=_as_text(
+            item.get("id")
+        ),
+        name=_as_text(
+            item.get("name")
+        ),
+        url=_as_text(
+            item.get("url")
+        ),
+        enabled=item.get(
+            "enabled",
+            True,
+        ),
+        priority=item.get(
+            "priority",
+            100,
+        ),
+        kind=_as_text(
+            item.get(
+                "kind",
+                "playlist",
+            )
+        )
+        or "playlist",
+        country=_as_text(
+            item.get("country")
+        ),
+        language=_as_text(
+            item.get("language")
+        ),
+        tags=item.get(
+            "tags",
+            (),
+        ),
+        discovery_enabled=item.get(
+            "discovery_enabled",
+            False,
+        ),
+        discovery_mode=_as_text(
+            item.get(
+                "discovery_mode",
+                "static",
+            )
+        )
+        or "static",
+        trust_score=item.get(
+            "trust_score",
+            50,
+        ),
+        refresh_hours=item.get(
+            "refresh_hours",
+            24,
+        ),
+        origin=_as_text(
+            item.get("origin")
+        ),
+    )
 
 
 def load_sources(
@@ -20,29 +95,49 @@ def load_sources(
     """
     Carica le definizioni delle sorgenti dai file JSON.
 
+    Formato atteso:
+
+        {
+          "sources": [
+            {
+              "id": "...",
+              "name": "...",
+              "url": "..."
+            }
+          ]
+        }
+
+    I vecchi JSON con soli id, name, url, enabled e priority
+    continuano a funzionare. I campi Source Discovery sono
+    facoltativi.
+
     Il loader si occupa soltanto di:
 
     - leggere i file;
     - controllare la struttura JSON;
     - costruire gli oggetti Source.
 
-    Validazione, deduplicazione, abilitazione e ordinamento
-    vengono gestiti dal SourceRegistry.
+    Validazione, deduplicazione, abilitazione e ordinamento vengono
+    gestiti dal SourceRegistry.
     """
 
-    sources: list[Source] = []
+    sources: list[
+        Source
+    ] = []
 
     if not directory.exists():
         return sources
 
     if not directory.is_dir():
         raise ValueError(
-            f"Il percorso sorgenti non è una cartella: "
-            f"{directory}"
+            "Il percorso sorgenti non è "
+            f"una cartella: {directory}"
         )
 
     for path in sorted(
-        directory.glob("*.json")
+        directory.glob(
+            "*.json"
+        )
     ):
         try:
             payload = json.loads(
@@ -50,6 +145,13 @@ def load_sources(
                     encoding="utf-8"
                 )
             )
+
+        except UnicodeDecodeError as exc:
+            raise ValueError(
+                "Codifica non valida in "
+                f"{path.name}: richiesto UTF-8"
+            ) from exc
+
         except json.JSONDecodeError as exc:
             raise ValueError(
                 f"JSON non valido in {path.name}: "
@@ -57,9 +159,12 @@ def load_sources(
                 f"colonna {exc.colno}"
             ) from exc
 
-        if not isinstance(payload, dict):
+        if not isinstance(
+            payload,
+            dict,
+        ):
             raise ValueError(
-                f"Struttura non valida in "
+                "Struttura non valida in "
                 f"{path.name}: atteso oggetto JSON"
             )
 
@@ -68,9 +173,12 @@ def load_sources(
             [],
         )
 
-        if not isinstance(raw_sources, list):
+        if not isinstance(
+            raw_sources,
+            list,
+        ):
             raise ValueError(
-                f"Campo 'sources' non valido in "
+                "Campo 'sources' non valido in "
                 f"{path.name}: attesa lista"
             )
 
@@ -78,33 +186,20 @@ def load_sources(
             raw_sources,
             start=1,
         ):
-            if not isinstance(item, dict):
+            if not isinstance(
+                item,
+                dict,
+            ):
                 raise ValueError(
-                    f"Sorgente non valida in "
+                    "Sorgente non valida in "
                     f"{path.name}, elemento {index}: "
-                    f"atteso oggetto JSON"
+                    "atteso oggetto JSON"
                 )
 
-            source = Source(
-                id=_as_text(
-                    item.get("id")
-                ),
-                name=_as_text(
-                    item.get("name")
-                ),
-                url=_as_text(
-                    item.get("url")
-                ),
-                enabled=item.get(
-                    "enabled",
-                    True,
-                ),
-                priority=item.get(
-                    "priority",
-                    100,
-                ),
+            sources.append(
+                _build_source(
+                    item
+                )
             )
-
-            sources.append(source)
 
     return sources
