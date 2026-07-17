@@ -7,12 +7,21 @@ from pathlib import Path
 from typing import Any
 
 from src.catalog.loader import load_sources
-from src.catalog.source_registry import SourceRegistry
+from src.catalog.source_registry import (
+    SourceBatchResult,
+    SourceRegistry,
+)
 from src.core.settings import Settings
 from src.downloader.client import (
     DownloadError,
     DownloadResult,
     PlaylistDownloader,
+)
+from src.discovery.client import (
+    DiscoveryBatchResult,
+    DiscoveryError,
+    DiscoveryStats,
+    SourceDiscoveryClient,
 )
 from src.exporter.m3u import M3UExporter
 from src.health.checker import (
@@ -54,6 +63,18 @@ class Application:
         self.source_registry = SourceRegistry()
         self.registry = ChannelRegistry()
 
+        self.discovery_client = (
+            SourceDiscoveryClient(
+                user_agent=(
+                    self.settings.user_agent
+                ),
+                timeout_seconds=(
+                    self.settings
+                    .request_timeout_seconds
+                ),
+            )
+        )
+
         self.exporter = M3UExporter()
 
         self.health_checker = StreamHealthChecker(
@@ -72,14 +93,16 @@ class Application:
 
         Flusso:
 
-        1. caricamento e registrazione sorgenti;
-        2. download con diagnostica;
-        3. parsing normalizzato con diagnostica;
-        4. conservazione dei candidati alternativi;
-        5. health check di tutti gli URL candidati;
-        6. merge guidato dagli Health Score;
-        7. filtro dei canali non disponibili;
-        8. esportazione e report JSON.
+        1. caricamento delle sorgenti configurate;
+        2. discovery controllata delle sorgenti italiane;
+        3. registrazione e deduplicazione delle sorgenti;
+        4. download con diagnostica;
+        5. parsing normalizzato con diagnostica;
+        6. conservazione dei candidati alternativi;
+        7. health check di tutti gli URL candidati;
+        8. merge guidato dagli Health Score;
+        9. filtro dei canali non disponibili;
+        10. esportazione e report JSON.
 
         Se il merger installato non espone group_candidates(),
         viene mantenuto il precedente flusso compatibile:
@@ -121,16 +144,33 @@ class Application:
         channels_parsed = 0
         registry_duplicates_removed = 0
 
-        raw_sources = load_sources(
+        configured_sources = load_sources(
             self.root / "config/sources"
         )
 
-        source_batch = (
+        configured_source_batch = (
             self.source_registry.add_many(
-                raw_sources,
+                configured_sources,
                 replace_existing=False,
                 strict=False,
             )
+        )
+
+        discovery_result = (
+            self._discover_sources()
+        )
+
+        discovery_source_batch = (
+            self.source_registry.add_many(
+                discovery_result.sources,
+                replace_existing=False,
+                strict=False,
+            )
+        )
+
+        self._write_discovery_report(
+            discovery_result,
+            discovery_source_batch,
         )
 
         source_stats = (
@@ -562,20 +602,93 @@ class Application:
                 for result in source_results
                 if result["status"] == "error"
             ),
+            "configured_sources_loaded": len(
+                configured_sources
+            ),
+            "configured_sources_inserted": (
+                configured_source_batch.inserted
+            ),
+            "discovery_sources_found": len(
+                discovery_result.sources
+            ),
+            "discovery_sources_inserted": (
+                discovery_source_batch.inserted
+            ),
             "source_duplicates_skipped": (
-                source_batch.skipped
+                configured_source_batch.skipped
+                + discovery_source_batch.skipped
             ),
             "source_invalid": (
-                source_batch.invalid
+                configured_source_batch.invalid
+                + discovery_source_batch.invalid
             ),
             "source_registry_errors": [
                 {
+                    "origin": origin,
                     "source_id": (
                         error.source_id
                     ),
                     "error": error.message,
                 }
-                for error in source_batch.errors
+                for origin, batch
+                in (
+                    (
+                        "configured",
+                        configured_source_batch,
+                    ),
+                    (
+                        "discovery",
+                        discovery_source_batch,
+                    ),
+                )
+                for error in batch.errors
+            ],
+
+            # Source Discovery Engine
+            "discovery_enabled": (
+                getattr(
+                    self,
+                    "discovery_client",
+                    None,
+                )
+                is not None
+            ),
+            "discovery_curated_sources": (
+                discovery_result.stats
+                .curated_sources
+            ),
+            "discovery_github_queries": (
+                discovery_result.stats
+                .github_queries
+            ),
+            "discovery_github_items": (
+                discovery_result.stats
+                .github_items
+            ),
+            "discovery_accepted_sources": (
+                discovery_result.stats
+                .accepted_sources
+            ),
+            "discovery_duplicates_skipped": (
+                discovery_result.stats
+                .duplicates_skipped
+            ),
+            "discovery_rejected_items": (
+                discovery_result.stats
+                .rejected_items
+            ),
+            "discovery_error_count": len(
+                discovery_result.errors
+            ),
+            "discovery_github_token_used": (
+                discovery_result.stats
+                .github_token_used
+            ),
+            "discovery_errors": [
+                error.to_dict()
+                for error in (
+                    discovery_result.errors
+                )
             ],
 
             # Download Reliability Engine
@@ -777,6 +890,69 @@ class Application:
                 "local": (
                     source_stats.local
                 ),
+                "discovery": self._as_int(
+                    getattr(
+                        source_stats,
+                        "discovery",
+                        0,
+                    )
+                ),
+                "static": self._as_int(
+                    getattr(
+                        source_stats,
+                        "static",
+                        0,
+                    )
+                ),
+                "trusted": self._as_int(
+                    getattr(
+                        source_stats,
+                        "trusted",
+                        0,
+                    )
+                ),
+                "kinds": dict(
+                    getattr(
+                        source_stats,
+                        "kinds",
+                        (),
+                    )
+                ),
+            },
+
+            "discovery": {
+                "stats": (
+                    discovery_result.stats
+                    .to_dict()
+                ),
+                "registration": {
+                    "inserted": (
+                        discovery_source_batch
+                        .inserted
+                    ),
+                    "replaced": (
+                        discovery_source_batch
+                        .replaced
+                    ),
+                    "skipped": (
+                        discovery_source_batch
+                        .skipped
+                    ),
+                    "invalid": (
+                        discovery_source_batch
+                        .invalid
+                    ),
+                },
+                "errors": [
+                    error.to_dict()
+                    for error in (
+                        discovery_result.errors
+                    )
+                ],
+                "output_file": (
+                    "output/"
+                    "discovered-sources.json"
+                ),
             },
 
             "download_summary": (
@@ -848,6 +1024,169 @@ class Application:
         )
 
         return 0
+
+    def _discover_sources(
+        self,
+    ) -> DiscoveryBatchResult:
+        """
+        Esegue la discovery senza rendere fragile la pipeline.
+
+        Le istanze create normalmente da __init__ possiedono il
+        SourceDiscoveryClient e possono usare GITHUB_TOKEN. Le vecchie
+        fixture di test che costruiscono Application con __new__ non
+        eseguono richieste di rete e ricevono un risultato vuoto.
+        """
+
+        client = getattr(
+            self,
+            "discovery_client",
+            None,
+        )
+
+        if client is None:
+            return self._empty_discovery_result()
+
+        discover = getattr(
+            client,
+            "discover_italian_sources",
+            None,
+        )
+
+        if not callable(discover):
+            return self._empty_discovery_result(
+                error=(
+                    "SourceDiscoveryClient non espone "
+                    "discover_italian_sources()"
+                )
+            )
+
+        try:
+            result = discover()
+
+        except Exception as exc:
+            return self._empty_discovery_result(
+                error=(
+                    "Discovery non disponibile: "
+                    f"{exc}"
+                )
+            )
+
+        if not isinstance(
+            result,
+            DiscoveryBatchResult,
+        ):
+            return self._empty_discovery_result(
+                error=(
+                    "Il Discovery Client ha restituito "
+                    "un risultato non valido"
+                )
+            )
+
+        return result
+
+    @staticmethod
+    def _empty_discovery_result(
+        *,
+        error: str = "",
+    ) -> DiscoveryBatchResult:
+        errors = (
+            (
+                DiscoveryError(
+                    provider="application",
+                    query="",
+                    message=error,
+                ),
+            )
+            if error
+            else ()
+        )
+
+        return DiscoveryBatchResult(
+            sources=(),
+            errors=errors,
+            stats=DiscoveryStats(
+                curated_sources=0,
+                github_queries=0,
+                github_items=0,
+                accepted_sources=0,
+                duplicates_skipped=0,
+                rejected_items=0,
+                errors=len(errors),
+                github_token_used=False,
+            ),
+        )
+
+    def _write_discovery_report(
+        self,
+        result: DiscoveryBatchResult,
+        registration: SourceBatchResult,
+    ) -> None:
+        path = (
+            self.root
+            / "output"
+            / "discovered-sources.json"
+        )
+
+        path.parent.mkdir(
+            parents=True,
+            exist_ok=True,
+        )
+
+        payload = {
+            "project": "Italia TV Hub",
+            "version": self.VERSION,
+            "generated_at": (
+                datetime.now(
+                    timezone.utc
+                ).isoformat()
+            ),
+            "stats": (
+                result.stats.to_dict()
+            ),
+            "registration": {
+                "inserted": (
+                    registration.inserted
+                ),
+                "replaced": (
+                    registration.replaced
+                ),
+                "skipped": (
+                    registration.skipped
+                ),
+                "invalid": (
+                    registration.invalid
+                ),
+                "errors": [
+                    {
+                        "source_id": (
+                            error.source_id
+                        ),
+                        "error": error.message,
+                    }
+                    for error in (
+                        registration.errors
+                    )
+                ],
+            },
+            "errors": [
+                error.to_dict()
+                for error in result.errors
+            ],
+            "sources": [
+                source.to_dict()
+                for source in result.sources
+            ],
+        }
+
+        path.write_text(
+            json.dumps(
+                payload,
+                ensure_ascii=False,
+                indent=2,
+            )
+            + "\n",
+            encoding="utf-8",
+        )
 
     def _download_source(
         self,
