@@ -13,6 +13,9 @@ class M3UExporter:
 
     La classificazione non modifica nome, URL o metadati del canale:
     aggiorna solamente il campo group-title dell'output.
+
+    L'URL EPG è opzionale. Quando viene fornito, viene inserito
+    nell'intestazione M3U tramite l'attributo standard url-tvg.
     """
 
     ORDER = (
@@ -217,6 +220,30 @@ class M3UExporter:
         ),
     )
 
+    def __init__(
+        self,
+        epg_url: str | None = None,
+    ) -> None:
+        """
+        Crea l'esportatore.
+
+        `epg_url=None` mantiene la piena compatibilità con il formato
+        precedente e genera la sola intestazione `#EXTM3U`.
+
+        Quando `epg_url` è valorizzato, l'intestazione diventa:
+
+        #EXTM3U url-tvg="https://.../epg.xml"
+        """
+
+        normalized_epg_url = self._safe_text(
+            epg_url
+        )
+
+        self.epg_url = (
+            normalized_epg_url
+            or None
+        )
+
     def render(
         self,
         channels: Iterable[object],
@@ -226,7 +253,9 @@ class M3UExporter:
             key=self._channel_sort_key,
         )
 
-        lines = ["#EXTM3U"]
+        lines = [
+            self._render_header()
+        ]
 
         for channel in normalized_channels:
             attributes = dict(
@@ -351,6 +380,18 @@ class M3UExporter:
         path.write_text(
             self.render(channels),
             encoding="utf-8",
+        )
+
+    def _render_header(
+        self,
+    ) -> str:
+        if not self.epg_url:
+            return "#EXTM3U"
+
+        return (
+            '#EXTM3U url-tvg="'
+            f"{self._escape_attribute(self.epg_url)}"
+            '"'
         )
 
     @classmethod
