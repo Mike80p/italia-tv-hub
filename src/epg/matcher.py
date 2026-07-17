@@ -5,7 +5,7 @@ import unicodedata
 from collections import defaultdict
 from dataclasses import asdict, dataclass
 from difflib import SequenceMatcher
-from typing import Iterable
+from typing import Callable, Iterable
 
 from src.models.channel import Channel
 
@@ -57,14 +57,16 @@ class EPGChannel:
                 value
             ).strip()
 
+            folded = name.casefold()
+
             if (
                 not name
-                or name in seen
+                or folded in seen
             ):
                 continue
 
             seen.add(
-                name
+                folded
             )
 
             normalized_names.append(
@@ -299,16 +301,19 @@ class EPGMatchBatchResult:
 
 class EPGChannelMatcher:
     """
-    Abbina i canali della playlist ai canali XMLTV.
+    Abbina tutti i canali della playlist ai canali XMLTV.
 
-    Ordine di affidabilità:
+    La normalizzazione è generica e non dipende solo da una lista
+    manuale di emittenti. Gestisce automaticamente:
 
-    1. `tvg-id` identico;
-    2. `tvg-id` normalizzato;
-    3. nome identico normalizzato;
-    4. alias italiano controllato;
-    5. somiglianza testuale conservativa.
+    - suffissi ID come `.it@SD`, `.de@IT`, `@HD`, `@4K`;
+    - qualità, risoluzioni, codec, backup e indicazioni geo-blocked;
+    - punteggiatura, accenti, maiuscole e separatori;
+    - numeri scritti in lettere, come Uno/1, Due/2 e Nove/9;
+    - varianti con o senza TV, Channel, Network, Italia o Italy;
+    - alias italiani controllati per i casi realmente particolari.
 
+    Località, versioni regionali e simbolo `+` vengono conservati.
     Le corrispondenze ambigue non vengono accettate.
     """
 
@@ -318,40 +323,212 @@ class EPGChannelMatcher:
     ALIAS_SCORE = 89.0
     SIMILARITY_MINIMUM = 86.0
 
+    # Compatibilità con il nome della costante esposto in precedenza.
     QUALITY_WORDS = {
+        "144p",
+        "240p",
+        "270p",
+        "288p",
+        "300p",
+        "360p",
+        "404p",
+        "432p",
+        "480p",
+        "540p",
+        "576p",
+        "720p",
+        "900p",
+        "1080p",
+        "1440p",
+        "2160p",
         "4k",
+        "8k",
         "uhd",
         "fhd",
         "fullhd",
         "full",
         "hd",
         "sd",
-        "1080p",
-        "720p",
-        "576p",
-        "480p",
-        "live",
-        "stream",
+        "hq",
+        "lq",
+        "hevc",
+        "h265",
+        "h264",
+        "av1",
+        "mpeg2",
+        "mpeg4",
+    }
+
+    HARD_TECHNICAL_WORDS = (
+        QUALITY_WORDS
+        | {
+            "backup",
+            "mirror",
+            "fallback",
+            "test",
+            "demo",
+            "source",
+            "server",
+            "feed",
+            "geo",
+            "blocked",
+            "geoblocked",
+            "geolocked",
+            "only",
+        }
+    )
+
+    BRACKET_TECHNICAL_WORDS = (
+        HARD_TECHNICAL_WORDS
+        | {
+            "it",
+            "ita",
+            "italian",
+            "italiano",
+            "italy",
+            "eu",
+            "europe",
+            "international",
+            "intl",
+        }
+    )
+
+    SOFT_MEDIA_WORDS = {
+        "tv",
+        "television",
+        "televisione",
+        "channel",
+        "canale",
+        "network",
+        "rete",
+    }
+
+    LOCALE_WORDS = {
         "italia",
         "italy",
+        "italiano",
+        "italiana",
+        "italian",
+    }
+
+    IDENTIFIER_TAGS = {
+        "144p",
+        "240p",
+        "270p",
+        "288p",
+        "300p",
+        "360p",
+        "404p",
+        "432p",
+        "480p",
+        "540p",
+        "576p",
+        "720p",
+        "900p",
+        "1080p",
+        "1440p",
+        "2160p",
+        "4k",
+        "8k",
+        "uhd",
+        "fhd",
+        "fullhd",
+        "hd",
+        "sd",
+        "hq",
+        "lq",
+        "hevc",
+        "h265",
+        "h264",
+        "av1",
+        "backup",
+        "mirror",
+        "fallback",
+        "test",
         "it",
+        "ita",
+        "italy",
+        "italian",
+        "de",
+        "ger",
+        "germany",
+        "fr",
+        "fra",
+        "france",
+        "es",
+        "spa",
+        "spain",
+        "uk",
+        "gb",
+        "gbr",
+        "us",
+        "usa",
+        "ch",
+        "che",
+        "at",
+        "aut",
+        "eu",
+        "europe",
+        "intl",
+        "international",
+    }
+
+    NUMBER_WORDS = {
+        "zero": "0",
+        "uno": "1",
+        "one": "1",
+        "due": "2",
+        "two": "2",
+        "tre": "3",
+        "three": "3",
+        "quattro": "4",
+        "four": "4",
+        "cinque": "5",
+        "five": "5",
+        "sei": "6",
+        "six": "6",
+        "sette": "7",
+        "seven": "7",
+        "otto": "8",
+        "eight": "8",
+        "nove": "9",
+        "nine": "9",
+        "dieci": "10",
+        "ten": "10",
+        "undici": "11",
+        "eleven": "11",
+        "dodici": "12",
+        "twelve": "12",
+        "tredici": "13",
+        "thirteen": "13",
+        "quattordici": "14",
+        "fourteen": "14",
+        "quindici": "15",
+        "fifteen": "15",
+        "sedici": "16",
+        "sixteen": "16",
+        "diciassette": "17",
+        "seventeen": "17",
+        "diciotto": "18",
+        "eighteen": "18",
+        "diciannove": "19",
+        "nineteen": "19",
+        "venti": "20",
+        "twenty": "20",
     }
 
     ITALIAN_ALIASES = {
         "rai1": {
             "rai1",
             "raiuno",
-            "rai1hd",
         },
         "rai2": {
             "rai2",
             "raidue",
-            "rai2hd",
         },
         "rai3": {
             "rai3",
             "raitre",
-            "rai3hd",
         },
         "rainews24": {
             "rainews24",
@@ -378,23 +555,26 @@ class EPGChannelMatcher:
         },
         "raisport": {
             "raisport",
+        },
+        "raisportplus": {
+            "raisportplus",
             "raisportpiu",
+            "raisport+",
         },
         "canale5": {
             "canale5",
-            "canale5hd",
+            "channel5",
         },
         "italia1": {
             "italia1",
             "italiauno",
-            "italia1hd",
         },
         "rete4": {
             "rete4",
             "retequattro",
-            "rete4hd",
         },
         "mediaset20": {
+            "20",
             "20mediaset",
             "mediaset20",
             "ventimediaset",
@@ -434,8 +614,10 @@ class EPGChannelMatcher:
         },
         "nove": {
             "nove",
+            "9",
             "nove9",
             "canale9",
+            "channel9",
         },
         "dmax": {
             "dmax",
@@ -458,7 +640,8 @@ class EPGChannelMatcher:
         "frisbee": {
             "frisbee",
         },
-        "warner tv": {
+        "warnertv": {
+            "warner",
             "warnertv",
         },
         "tv8": {
@@ -466,6 +649,7 @@ class EPGChannelMatcher:
         },
         "cielo": {
             "cielo",
+            "cielotv",
         },
         "skytg24": {
             "skytg24",
@@ -565,7 +749,7 @@ class EPGChannelMatcher:
             list
         )
 
-        alias_index: dict[
+        universal_name_index: dict[
             str,
             list[EPGChannel],
         ] = defaultdict(
@@ -584,26 +768,26 @@ class EPGChannelMatcher:
                 .casefold()
             )
 
-            exact_id_index[
-                exact_id
-            ].append(
-                epg_channel
+            self._append_unique(
+                exact_id_index[
+                    exact_id
+                ],
+                epg_channel,
             )
 
-            normalized_id = (
-                self.normalize_identifier(
+            for normalized_id in (
+                self.identifier_variants(
                     epg_channel.channel_id
                 )
-            )
-
-            if normalized_id:
-                normalized_id_index[
-                    normalized_id
-                ].append(
-                    epg_channel
+            ):
+                self._append_unique(
+                    normalized_id_index[
+                        normalized_id
+                    ],
+                    epg_channel,
                 )
 
-            keys: list[
+            search_keys: list[
                 str
             ] = []
 
@@ -611,45 +795,55 @@ class EPGChannelMatcher:
                 *epg_channel.display_names,
                 epg_channel.channel_id,
             ):
-                normalized_name = (
+                strict_name = (
                     self.normalize_name(
                         name
                     )
                 )
 
-                if (
-                    normalized_name
-                    and normalized_name
-                    not in keys
+                if strict_name:
+                    self._append_unique(
+                        exact_name_index[
+                            strict_name
+                        ],
+                        epg_channel,
+                    )
+
+                for variant in (
+                    self.name_variants(
+                        name
+                    )
                 ):
-                    keys.append(
-                        normalized_name
+                    if variant not in search_keys:
+                        search_keys.append(
+                            variant
+                        )
+
+                    self._append_unique(
+                        universal_name_index[
+                            variant
+                        ],
+                        epg_channel,
                     )
 
-                if normalized_name:
-                    exact_name_index[
-                        normalized_name
-                    ].append(
-                        epg_channel
+                for identifier_key in (
+                    self.identifier_variants(
+                        name
                     )
-
-                canonical = (
-                    self._canonical_alias(
-                        normalized_name
-                    )
-                )
-
-                if canonical:
-                    alias_index[
-                        canonical
-                    ].append(
-                        epg_channel
-                    )
+                ):
+                    if (
+                        identifier_key
+                        and identifier_key
+                        not in search_keys
+                    ):
+                        search_keys.append(
+                            identifier_key
+                        )
 
             epg_search_keys[
                 epg_channel.channel_id
             ] = tuple(
-                keys
+                search_keys
             )
 
         matches: list[
@@ -678,8 +872,8 @@ class EPGChannelMatcher:
                     exact_name_index=(
                         exact_name_index
                     ),
-                    alias_index=(
-                        alias_index
+                    universal_name_index=(
+                        universal_name_index
                     ),
                     epg_search_keys=(
                         epg_search_keys
@@ -742,7 +936,10 @@ class EPGChannelMatcher:
                 candidates[0]
             )
 
-        method_counts = defaultdict(
+        method_counts: dict[
+            str,
+            int,
+        ] = defaultdict(
             int
         )
 
@@ -841,7 +1038,7 @@ class EPGChannelMatcher:
             str,
             list[EPGChannel],
         ],
-        alias_index: dict[
+        universal_name_index: dict[
             str,
             list[EPGChannel],
         ],
@@ -887,13 +1084,11 @@ class EPGChannelMatcher:
                 ),
             )
 
-            normalized_id = (
-                self.normalize_identifier(
+            for normalized_id in (
+                self.identifier_variants(
                     tvg_id
                 )
-            )
-
-            if normalized_id:
+            ):
                 self._add_matches(
                     destination=(
                         matches_by_id
@@ -919,20 +1114,21 @@ class EPGChannelMatcher:
                         normalized_id
                     ),
                     epg_key_getter=(
-                        lambda item: (
-                            self
-                            .normalize_identifier(
-                                item.channel_id
-                            )
-                        )
+                        lambda item, key=(
+                            normalized_id
+                        ): key
                     ),
                 )
 
-        playlist_names = self._playlist_names(
-            channel
+        playlist_strict_names = (
+            self._playlist_strict_names(
+                channel
+            )
         )
 
-        for playlist_name in playlist_names:
+        for playlist_name in (
+            playlist_strict_names
+        ):
             self._add_matches(
                 destination=(
                     matches_by_id
@@ -952,53 +1148,90 @@ class EPGChannelMatcher:
                     playlist_name
                 ),
                 epg_key_getter=(
-                    lambda item: (
+                    lambda item, key=(
                         playlist_name
-                    )
+                    ): key
                 ),
             )
 
+        universal_names = (
+            self._playlist_name_variants(
+                channel
+            )
+        )
+
+        for playlist_name in (
+            universal_names
+        ):
             canonical = (
                 self._canonical_alias(
                     playlist_name
                 )
             )
 
-            if canonical:
-                self._add_matches(
-                    destination=(
-                        matches_by_id
-                    ),
-                    playlist_channel=(
-                        channel
-                    ),
-                    epg_candidates=(
-                        alias_index.get(
-                            canonical,
-                            (),
-                        )
-                    ),
-                    score=(
-                        self.ALIAS_SCORE
-                    ),
-                    method="alias",
-                    playlist_key=(
-                        canonical
-                    ),
-                    epg_key_getter=(
-                        lambda item: (
-                            canonical
-                        )
-                    ),
+            search_key = (
+                canonical
+                or playlist_name
+            )
+
+            candidates = list(
+                universal_name_index.get(
+                    playlist_name,
+                    (),
                 )
+            )
+
+            if canonical:
+                for candidate in (
+                    universal_name_index.get(
+                        canonical,
+                        (),
+                    )
+                ):
+                    self._append_unique(
+                        candidates,
+                        candidate,
+                    )
+
+            self._add_matches(
+                destination=(
+                    matches_by_id
+                ),
+                playlist_channel=(
+                    channel
+                ),
+                epg_candidates=(
+                    candidates
+                ),
+                score=(
+                    self.ALIAS_SCORE
+                ),
+                method="alias",
+                playlist_key=(
+                    search_key
+                ),
+                epg_key_getter=(
+                    lambda item, key=(
+                        search_key
+                    ): key
+                ),
+            )
 
         if matches_by_id:
             return list(
                 matches_by_id.values()
             )
 
+        similarity_playlist_keys = tuple(
+            key
+            for key in universal_names
+            if self._is_informative_key(
+                key
+            )
+        )
+
         for playlist_name in (
-            playlist_names
+            similarity_playlist_keys
         ):
             for epg_channel in (
                 epg_channels
@@ -1010,6 +1243,11 @@ class EPGChannelMatcher:
                         (),
                     )
                 ):
+                    if not self._is_informative_key(
+                        epg_key
+                    ):
+                        continue
+
                     score = (
                         self._similarity_score(
                             playlist_name,
@@ -1063,6 +1301,29 @@ class EPGChannelMatcher:
         )
 
     @staticmethod
+    def _append_unique(
+        destination: list[
+            EPGChannel
+        ],
+        channel: EPGChannel,
+    ) -> None:
+        channel_key = (
+            channel.channel_id
+            .casefold()
+        )
+
+        if any(
+            item.channel_id.casefold()
+            == channel_key
+            for item in destination
+        ):
+            return
+
+        destination.append(
+            channel
+        )
+
+    @staticmethod
     def _add_matches(
         *,
         destination: dict[
@@ -1076,7 +1337,10 @@ class EPGChannelMatcher:
         score: float,
         method: str,
         playlist_key: str,
-        epg_key_getter,
+        epg_key_getter: Callable[
+            [EPGChannel],
+            object,
+        ],
     ) -> None:
         for epg_channel in (
             epg_candidates
@@ -1120,14 +1384,13 @@ class EPGChannelMatcher:
                 ] = candidate
 
     @classmethod
-    def _playlist_names(
+    def _playlist_strict_names(
         cls,
         channel: Channel,
     ) -> tuple[str, ...]:
         values = (
             channel.tvg_name,
             channel.name,
-            channel.tvg_id,
         )
 
         names: list[
@@ -1155,24 +1418,189 @@ class EPGChannelMatcher:
         )
 
     @classmethod
+    def _playlist_name_variants(
+        cls,
+        channel: Channel,
+    ) -> tuple[str, ...]:
+        values = (
+            channel.tvg_name,
+            channel.name,
+        )
+
+        variants: list[
+            str
+        ] = []
+
+        for value in values:
+            for variant in (
+                cls.name_variants(
+                    value
+                )
+            ):
+                if variant not in variants:
+                    variants.append(
+                        variant
+                    )
+
+        if channel.tvg_id:
+            for variant in (
+                cls.identifier_variants(
+                    channel.tvg_id
+                )
+            ):
+                if variant not in variants:
+                    variants.append(
+                        variant
+                    )
+
+        return tuple(
+            variants
+        )
+
+    @classmethod
     def normalize_identifier(
         cls,
         value: object,
     ) -> str:
-        text = str(
-            value
-            if value is not None
-            else ""
-        ).strip().casefold()
-
-        text = re.sub(
-            r"\.(it|com|tv|eu|org)$",
-            "",
-            text,
+        variants = (
+            cls.identifier_variants(
+                value
+            )
         )
 
-        return cls.normalize_name(
-            text
+        return (
+            variants[0]
+            if variants
+            else ""
+        )
+
+    @classmethod
+    def identifier_variants(
+        cls,
+        value: object,
+    ) -> tuple[str, ...]:
+        text = cls._fold_text(
+            value
+        ).strip()
+
+        if not text:
+            return ()
+
+        text = text.split(
+            "?",
+            1,
+        )[0].split(
+            "#",
+            1,
+        )[0].strip()
+
+        raw_candidates = [
+            text,
+        ]
+
+        stripped = text
+
+        while True:
+            updated = re.sub(
+                (
+                    r"@("
+                    + "|".join(
+                        sorted(
+                            (
+                                re.escape(
+                                    item
+                                )
+                                for item
+                                in cls.IDENTIFIER_TAGS
+                            ),
+                            key=len,
+                            reverse=True,
+                        )
+                    )
+                    + r")$"
+                ),
+                "",
+                stripped,
+            )
+
+            if updated == stripped:
+                break
+
+            stripped = updated.rstrip(
+                "._-|:/ "
+            )
+
+        stripped = re.sub(
+            (
+                r"(?:[._|:/-])("
+                + "|".join(
+                    sorted(
+                        (
+                            re.escape(
+                                item
+                            )
+                            for item
+                            in cls.QUALITY_WORDS
+                        ),
+                        key=len,
+                        reverse=True,
+                    )
+                )
+                + r")$"
+            ),
+            "",
+            stripped,
+        ).rstrip(
+            "._-|:/ "
+        )
+
+        # I tvg-id pubblici usano frequentemente il dominio/codice
+        # paese come semplice namespace: Rai1.it, Channel.de@IT.
+        without_namespace = re.sub(
+            r"\.[a-z]{2,3}$",
+            "",
+            stripped,
+        )
+
+        raw_candidates.extend(
+            [
+                stripped,
+                without_namespace,
+            ]
+        )
+
+        variants: list[
+            str
+        ] = []
+
+        for candidate in raw_candidates:
+            normalized = (
+                cls.normalize_name(
+                    candidate
+                )
+            )
+
+            if (
+                normalized
+                and normalized
+                not in variants
+            ):
+                variants.append(
+                    normalized
+                )
+
+            for name_variant in (
+                cls.name_variants(
+                    candidate
+                )
+            ):
+                if name_variant not in variants:
+                    variants.append(
+                        name_variant
+                    )
+
+        return tuple(
+            variants
         )
 
     @classmethod
@@ -1180,50 +1608,332 @@ class EPGChannelMatcher:
         cls,
         value: object,
     ) -> str:
-        text = unicodedata.normalize(
-            "NFKD",
-            str(
-                value
-                if value is not None
-                else ""
-            ),
+        """
+        Normalizzazione stretta.
+
+        I numeri scritti in lettere vengono conservati qui, così
+        "Rai Uno" resta un alias di "Rai 1" e non viene classificato
+        come nome identico. La conversione Uno/1 viene applicata
+        nelle varianti universali.
+        """
+
+        tokens = cls._name_tokens(
+            value,
+            convert_numbers=False,
         )
 
-        text = "".join(
-            character
-            for character in text
-            if not unicodedata.combining(
-                character
+        return "".join(
+            tokens
+        )
+
+    @classmethod
+    def name_variants(
+        cls,
+        value: object,
+    ) -> tuple[str, ...]:
+        strict_tokens = (
+            cls._name_tokens(
+                value,
+                convert_numbers=False,
             )
         )
 
-        text = text.casefold()
+        numeric_tokens = (
+            cls._name_tokens(
+                value,
+                convert_numbers=True,
+            )
+        )
+
+        if not strict_tokens:
+            return ()
+
+        base_variants: list[
+            tuple[str, ...]
+        ] = [
+            strict_tokens,
+        ]
+
+        if (
+            numeric_tokens
+            and numeric_tokens
+            not in base_variants
+        ):
+            base_variants.append(
+                numeric_tokens
+            )
+
+        token_variants: list[
+            tuple[str, ...]
+        ] = []
+
+        for tokens in base_variants:
+            candidates = [
+                tokens,
+                cls._remove_soft_media_tokens(
+                    tokens
+                ),
+                cls._remove_locale_tokens(
+                    tokens
+                ),
+            ]
+
+            locale_relaxed = (
+                cls._remove_locale_tokens(
+                    tokens
+                )
+            )
+
+            if locale_relaxed:
+                candidates.append(
+                    cls._remove_soft_media_tokens(
+                        locale_relaxed
+                    )
+                )
+
+            for candidate in candidates:
+                if (
+                    candidate
+                    and candidate
+                    not in token_variants
+                ):
+                    token_variants.append(
+                        candidate
+                    )
+
+        results: list[
+            str
+        ] = []
+
+        for variant_tokens in (
+            token_variants
+        ):
+            key = "".join(
+                variant_tokens
+            )
+
+            if (
+                key
+                and key not in results
+            ):
+                results.append(
+                    key
+                )
+
+            canonical = (
+                cls._static_alias_key(
+                    key
+                )
+            )
+
+            if (
+                canonical
+                and canonical
+                not in results
+            ):
+                results.append(
+                    canonical
+                )
+
+        return tuple(
+            results
+        )
+
+    @classmethod
+    def _name_tokens(
+        cls,
+        value: object,
+        *,
+        convert_numbers: bool,
+    ) -> tuple[str, ...]:
+        text = cls._fold_text(
+            value
+        )
+
+        if not text:
+            return ()
+
         text = text.replace(
             "&",
             " e ",
         )
 
+        text = text.replace(
+            "+",
+            " plus ",
+        )
+
         text = re.sub(
-            r"[\(\[].*?[\)\]]",
-            " ",
+            r"\bpiu\b",
+            " plus ",
             text,
         )
 
-        tokens = re.findall(
+        text = cls._remove_technical_brackets(
+            text
+        )
+
+        raw_tokens = re.findall(
             r"[a-z0-9]+",
             text,
         )
 
-        tokens = [
+        tokens: list[
+            str
+        ] = []
+
+        for token in raw_tokens:
+            mapped = (
+                cls.NUMBER_WORDS.get(
+                    token,
+                    token,
+                )
+                if convert_numbers
+                else token
+            )
+
+            if mapped in (
+                cls.HARD_TECHNICAL_WORDS
+            ):
+                continue
+
+            tokens.append(
+                mapped
+            )
+
+        return tuple(
+            tokens
+        )
+
+    @classmethod
+    def _remove_technical_brackets(
+        cls,
+        text: str,
+    ) -> str:
+        pattern = re.compile(
+            r"(\([^()]*\)|\[[^\[\]]*\]|\{[^{}]*\})"
+        )
+
+        def replace(
+            match: re.Match[str],
+        ) -> str:
+            content = (
+                match.group(0)[1:-1]
+            )
+
+            tokens = re.findall(
+                r"[a-z0-9]+",
+                content,
+            )
+
+            if (
+                tokens
+                and all(
+                    (
+                        token
+                        in cls
+                        .BRACKET_TECHNICAL_WORDS
+                    )
+                    or bool(
+                        re.fullmatch(
+                            r"\d{3,4}p",
+                            token,
+                        )
+                    )
+                    for token in tokens
+                )
+            ):
+                return " "
+
+            return (
+                " "
+                + content
+                + " "
+            )
+
+        previous = text
+
+        while True:
+            current = pattern.sub(
+                replace,
+                previous,
+            )
+
+            if current == previous:
+                return current
+
+            previous = current
+
+    @classmethod
+    def _remove_soft_media_tokens(
+        cls,
+        tokens: tuple[str, ...],
+    ) -> tuple[str, ...]:
+        if len(tokens) <= 1:
+            return tokens
+
+        remaining = tuple(
             token
             for token in tokens
             if token
-            not in cls.QUALITY_WORDS
-        ]
-
-        return "".join(
-            tokens
+            not in cls.SOFT_MEDIA_WORDS
         )
+
+        if not remaining:
+            return tokens
+
+        # Evita di ridurre Canale 5 a una chiave troppo generica "5".
+        if all(
+            token.isdigit()
+            for token in remaining
+        ):
+            return tokens
+
+        if sum(
+            len(token)
+            for token in remaining
+        ) < 3:
+            return tokens
+
+        return remaining
+
+    @classmethod
+    def _remove_locale_tokens(
+        cls,
+        tokens: tuple[str, ...],
+    ) -> tuple[str, ...]:
+        if len(tokens) <= 1:
+            return tokens
+
+        remaining = tuple(
+            token
+            for token in tokens
+            if token
+            not in cls.LOCALE_WORDS
+        )
+
+        if not remaining:
+            return tokens
+
+        # "Italia 1" e "Radio Italia" non devono diventare "1" o
+        # soltanto "radio": in questi casi Italia è parte del nome.
+        if all(
+            token.isdigit()
+            for token in remaining
+        ):
+            return tokens
+
+        if set(
+            remaining
+        ).issubset(
+            cls.SOFT_MEDIA_WORDS
+            | {
+                "radio",
+            }
+        ):
+            return tokens
+
+        return remaining
 
     def _canonical_alias(
         self,
@@ -1233,9 +1943,42 @@ class EPGChannelMatcher:
             self._alias_to_canonical
             .get(
                 normalized_name,
-                "",
+                ""
             )
         )
+
+    @classmethod
+    def _static_alias_key(
+        cls,
+        normalized_name: str,
+    ) -> str:
+        for (
+            canonical,
+            aliases,
+        ) in cls.ITALIAN_ALIASES.items():
+            canonical_key = (
+                cls.normalize_name(
+                    canonical
+                )
+            )
+
+            for alias in (
+                canonical,
+                *aliases,
+            ):
+                alias_key = (
+                    cls.normalize_name(
+                        alias
+                    )
+                )
+
+                if (
+                    alias_key
+                    == normalized_name
+                ):
+                    return canonical_key
+
+        return ""
 
     @classmethod
     def _build_alias_index(
@@ -1260,18 +2003,52 @@ class EPGChannelMatcher:
                 canonical,
                 *aliases,
             ):
-                normalized = (
-                    cls.normalize_name(
+                for normalized in (
+                    cls.name_variants(
                         alias
                     )
-                )
-
-                if normalized:
-                    result[
-                        normalized
-                    ] = canonical_key
+                ):
+                    if normalized:
+                        result[
+                            normalized
+                        ] = canonical_key
 
         return result
+
+    @staticmethod
+    def _fold_text(
+        value: object,
+    ) -> str:
+        text = unicodedata.normalize(
+            "NFKD",
+            str(
+                value
+                if value is not None
+                else ""
+            ),
+        )
+
+        text = "".join(
+            character
+            for character in text
+            if not unicodedata.combining(
+                character
+            )
+        )
+
+        return text.casefold()
+
+    @staticmethod
+    def _is_informative_key(
+        key: str,
+    ) -> bool:
+        if not key:
+            return False
+
+        if key.isdigit():
+            return len(key) >= 2
+
+        return len(key) >= 4
 
     @staticmethod
     def _similarity_score(
@@ -1283,6 +2060,9 @@ class EPGChannelMatcher:
             or not right
         ):
             return 0.0
+
+        if left == right:
+            return 100.0
 
         ratio = SequenceMatcher(
             None,
@@ -1306,10 +2086,27 @@ class EPGChannelMatcher:
             else 0.0
         )
 
-        if length_ratio < 0.72:
+        if length_ratio < 0.75:
             return 0.0
 
+        prefix_bonus = (
+            0.02
+            if (
+                left.startswith(
+                    right
+                )
+                or right.startswith(
+                    left
+                )
+            )
+            else 0.0
+        )
+
         return round(
-            ratio * 100.0,
+            min(
+                1.0,
+                ratio + prefix_bonus,
+            )
+            * 100.0,
             2,
         )
