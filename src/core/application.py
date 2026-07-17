@@ -120,6 +120,9 @@ class Application:
                 self.settings.health_max_workers
             ),
             user_agent=self.settings.user_agent,
+            deep_hls_check=True,
+            expected_country="IT",
+            max_variants=2,
         )
 
     def run(self) -> int:
