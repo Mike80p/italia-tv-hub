@@ -8,5 +8,11 @@
   "health_enabled": true,
   "health_timeout_seconds": 12,
   "health_max_workers": 10,
-  "publish_only_online": true
+  "publish_only_online": true,
+  "epg_enabled": true,
+  "epg_file": "output/epg.xml",
+  "epg_report_file": "output/epg-report.json",
+  "epg_public_url": "https://raw.githubusercontent.com/Mike80p/italia-tv-hub/main/output/epg.xml",
+  "epg_timeout_seconds": 30,
+  "epg_sources": []
 }
