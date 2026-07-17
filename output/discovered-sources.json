@@ -1,25 +1,31 @@
 {
   "project": "Italia TV Hub",
   "version": "0.8.0",
-  "generated_at": "2026-07-17T18:47:27.063351+00:00",
+  "generated_at": "2026-07-17T19:35:02.090046+00:00",
   "stats": {
     "curated_sources": 2,
     "github_queries": 5,
-    "github_items": 5,
-    "accepted_sources": 7,
+    "github_items": 0,
+    "accepted_sources": 2,
     "duplicates_skipped": 0,
     "rejected_items": 0,
-    "errors": 4,
+    "errors": 5,
     "github_token_used": true
   },
   "registration": {
-    "inserted": 6,
+    "inserted": 1,
     "replaced": 0,
     "skipped": 1,
     "invalid": 0,
     "errors": []
   },
   "errors": [
+    {
+      "provider": "github",
+      "query": "\"tvg-country=\\\"IT\\\"\" extension:m3u",
+      "message": "GitHub HTTP 429",
+      "status_code": 429
+    },
     {
       "provider": "github",
       "query": "\"tvg-language=\\\"Italian\\\"\" extension:m3u",
@@ -99,141 +105,6 @@
       "trust_score": 85,
       "refresh_hours": 6,
       "origin": "iptv-org/iptv"
-    },
-    {
-      "id": "discovery_github_262d94aa12c6128d",
-      "name": "GitHub hirotomasato/msplayiptv/static/msplay_music.m3u",
-      "url": "https://raw.githubusercontent.com/hirotomasato/msplayiptv/80841d8a823ef5f4f7480779776b2e37248f7263/static/msplay_music.m3u",
-      "enabled": true,
-      "priority": 200,
-      "kind": "playlist",
-      "country": "IT",
-      "language": "it",
-      "tags": [
-        "it",
-        "italia",
-        "italian",
-        "rai",
-        "mediaset",
-        "dmax",
-        "focus",
-        "nove",
-        "github",
-        "discovered"
-      ],
-      "discovery_enabled": true,
-      "discovery_mode": "search",
-      "trust_score": 35,
-      "refresh_hours": 24,
-      "origin": "hirotomasato/msplayiptv"
-    },
-    {
-      "id": "discovery_github_5ba56b11b9de490d",
-      "name": "GitHub eklins/FDTV/zz/IPTV202206 Kids.m3u",
-      "url": "https://raw.githubusercontent.com/eklins/FDTV/5cbd39cf37fbb01ac00ab20b81080cfe5bf696a8/zz/IPTV202206%20Kids.m3u",
-      "enabled": true,
-      "priority": 200,
-      "kind": "playlist",
-      "country": "IT",
-      "language": "it",
-      "tags": [
-        "it",
-        "italia",
-        "italian",
-        "rai",
-        "mediaset",
-        "dmax",
-        "focus",
-        "nove",
-        "github",
-        "discovered"
-      ],
-      "discovery_enabled": true,
-      "discovery_mode": "search",
-      "trust_score": 35,
-      "refresh_hours": 24,
-      "origin": "eklins/FDTV"
-    },
-    {
-      "id": "discovery_github_6632d39731d1fa40",
-      "name": "GitHub Paradise-91/ParaTV/playlists/samsungtvplus/group/it/filter/logo_off.m3u",
-      "url": "https://raw.githubusercontent.com/Paradise-91/ParaTV/71ead55f87747acf7f10c46581ebf9af32753bc4/playlists/samsungtvplus/group/it/filter/logo_off.m3u",
-      "enabled": true,
-      "priority": 200,
-      "kind": "playlist",
-      "country": "IT",
-      "language": "it",
-      "tags": [
-        "it",
-        "italia",
-        "italian",
-        "rai",
-        "mediaset",
-        "dmax",
-        "focus",
-        "nove",
-        "github",
-        "discovered"
-      ],
-      "discovery_enabled": true,
-      "discovery_mode": "search",
-      "trust_score": 35,
-      "refresh_hours": 24,
-      "origin": "Paradise-91/ParaTV"
-    },
-    {
-      "id": "discovery_github_7b7e5ffbba2ab2be",
-      "name": "GitHub kilirushi/iptv/cate/history.m3u",
-      "url": "https://raw.githubusercontent.com/kilirushi/iptv/f8765b54e7b66080201e07d168418e302c672c7d/cate/history.m3u",
-      "enabled": true,
-      "priority": 200,
-      "kind": "playlist",
-      "country": "IT",
-      "language": "it",
-      "tags": [
-        "it",
-        "italia",
-        "italian",
-        "rai",
-        "mediaset",
-        "dmax",
-        "focus",
-        "nove",
-        "github",
-        "discovered"
-      ],
-      "discovery_enabled": true,
-      "discovery_mode": "search",
-      "trust_score": 35,
-      "refresh_hours": 24,
-      "origin": "kilirushi/iptv"
-    },
-    {
-      "id": "discovery_github_8f39bbc3cd5fc0ca",
-      "name": "GitHub jromero88/iptv/channels/es.m3u",
-      "url": "https://raw.githubusercontent.com/jromero88/iptv/05dd564889456167acde7e06330c9b343b068f1c/channels/es.m3u",
-      "enabled": true,
-      "priority": 200,
-      "kind": "playlist",
-      "country": "IT",
-      "language": "it",
-      "tags": [
-        "it",
-        "italia",
-        "italian",
-        "rai",
-        "mediaset",
-        "dmax",
-        "focus",
-        "nove",
-        "github",
-        "discovered"
-      ],
-      "discovery_enabled": true,
-      "discovery_mode": "search",
-      "trust_score": 35,
-      "refresh_hours": 24,
-      "origin": "jromero88/iptv"
     }
   ]
 }
