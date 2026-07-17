@@ -1,3 +1,9 @@
+from src.epg.downloader import (
+    EPGDownloadAttempt,
+    EPGDownloadError,
+    EPGDownloadResult,
+    EPGDownloader,
+)
 from src.epg.matcher import (
     EPGAmbiguousMatch,
     EPGChannel,
@@ -19,6 +25,10 @@ __all__ = [
     "EPGAmbiguousMatch",
     "EPGChannel",
     "EPGChannelMatcher",
+    "EPGDownloadAttempt",
+    "EPGDownloadError",
+    "EPGDownloadResult",
+    "EPGDownloader",
     "EPGMatch",
     "EPGMatchBatchResult",
     "EPGMatchStats",
