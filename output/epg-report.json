@@ -1,22 +1,22 @@
 {
   "project": "Italia TV Hub",
   "version": "0.8.0",
-  "generated_at": "2026-07-17T18:19:05.740184+00:00",
+  "generated_at": "2026-07-17T18:51:23.115705+00:00",
   "enabled": true,
   "status": "generated",
   "sources_total": 5,
   "sources_successful": 5,
   "sources_failed": 0,
-  "channels_matched": 23,
-  "channels_unmatched": 293,
-  "channels_ambiguous": 20,
-  "programmes": 3270,
-  "coverage_percent": 6.85,
-  "metadata_updated": 23,
-  "channels_without_programmes": 1,
+  "channels_matched": 28,
+  "channels_unmatched": 568,
+  "channels_ambiguous": 30,
+  "programmes": 3813,
+  "coverage_percent": 4.47,
+  "metadata_updated": 28,
+  "channels_without_programmes": 2,
   "programme_duplicates_removed": 1546,
   "file_exists": true,
-  "file_bytes": 954105,
+  "file_bytes": 1066733,
   "output_file": "output/epg.xml",
   "report_file": "output/epg-report.json",
   "public_url": "https://raw.githubusercontent.com/Mike80p/italia-tv-hub/main/output/epg.xml",
@@ -31,14 +31,14 @@
         "content_type": "application/octet-stream",
         "compressed": true,
         "attempt_count": 1,
-        "total_elapsed_ms": 340,
+        "total_elapsed_ms": 137,
         "bytes_downloaded": 270388,
         "http_status": 200,
         "attempts": [
           {
             "attempt_number": 1,
             "status": "ok",
-            "elapsed_ms": 340,
+            "elapsed_ms": 137,
             "bytes_read": 270388,
             "http_status": 200,
             "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz",
@@ -73,14 +73,14 @@
         "content_type": "application/octet-stream",
         "compressed": true,
         "attempt_count": 1,
-        "total_elapsed_ms": 346,
+        "total_elapsed_ms": 171,
         "bytes_downloaded": 133294,
         "http_status": 200,
         "attempts": [
           {
             "attempt_number": 1,
             "status": "ok",
-            "elapsed_ms": 346,
+            "elapsed_ms": 171,
             "bytes_read": 133294,
             "http_status": 200,
             "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy2.xml.gz",
@@ -115,14 +115,14 @@
         "content_type": "application/octet-stream",
         "compressed": true,
         "attempt_count": 1,
-        "total_elapsed_ms": 262,
+        "total_elapsed_ms": 85,
         "bytes_downloaded": 232842,
         "http_status": 200,
         "attempts": [
           {
             "attempt_number": 1,
             "status": "ok",
-            "elapsed_ms": 262,
+            "elapsed_ms": 85,
             "bytes_read": 232842,
             "http_status": 200,
             "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy3.xml.gz",
@@ -157,14 +157,14 @@
         "content_type": "application/octet-stream",
         "compressed": true,
         "attempt_count": 1,
-        "total_elapsed_ms": 186,
+        "total_elapsed_ms": 161,
         "bytes_downloaded": 148556,
         "http_status": 200,
         "attempts": [
           {
             "attempt_number": 1,
             "status": "ok",
-            "elapsed_ms": 186,
+            "elapsed_ms": 161,
             "bytes_read": 148556,
             "http_status": 200,
             "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy4.xml.gz",
@@ -199,14 +199,14 @@
         "content_type": "application/octet-stream",
         "compressed": true,
         "attempt_count": 1,
-        "total_elapsed_ms": 202,
+        "total_elapsed_ms": 133,
         "bytes_downloaded": 146194,
         "http_status": 200,
         "attempts": [
           {
             "attempt_number": 1,
             "status": "ok",
-            "elapsed_ms": 202,
+            "elapsed_ms": 133,
             "bytes_read": 146194,
             "http_status": 200,
             "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy5.xml.gz",
@@ -240,28 +240,28 @@
       "input_programmes": 19583,
       "merged_epg_channels": 214,
       "merged_programmes": 18037,
-      "playlist_channels": 336,
-      "matched_playlist_channels": 23,
-      "unmatched_playlist_channels": 293,
-      "ambiguous_playlist_channels": 20,
-      "output_channels": 22,
-      "output_programmes": 3270,
+      "playlist_channels": 626,
+      "matched_playlist_channels": 28,
+      "unmatched_playlist_channels": 568,
+      "ambiguous_playlist_channels": 30,
+      "output_channels": 24,
+      "output_programmes": 3813,
       "programme_duplicates_removed": 1546,
-      "channels_without_programmes": 1,
-      "coverage_percent": 6.85
+      "channels_without_programmes": 2,
+      "coverage_percent": 4.47
     },
     "matching": {
       "stats": {
-        "playlist_channels": 336,
+        "playlist_channels": 626,
         "epg_channels": 214,
-        "matched": 23,
-        "unmatched": 293,
-        "ambiguous": 20,
-        "matched_by_tvg_id": 17,
-        "matched_by_name": 3,
+        "matched": 28,
+        "unmatched": 568,
+        "ambiguous": 30,
+        "matched_by_tvg_id": 18,
+        "matched_by_name": 0,
         "matched_by_alias": 0,
-        "matched_by_similarity": 3,
-        "coverage_percent": 6.85
+        "matched_by_similarity": 10,
+        "coverage_percent": 4.47
       },
       "matches": [
         {
@@ -282,8 +282,8 @@
           },
           "score": 97.0,
           "method": "normalized_tvg_id",
-          "playlist_key": "classcnbc",
-          "epg_key": "classcnbc"
+          "playlist_key": "classcnbcit",
+          "epg_key": "classcnbcit"
         },
         {
           "playlist_channel": {
@@ -303,50 +303,8 @@
           },
           "score": 97.0,
           "method": "normalized_tvg_id",
-          "playlist_key": "raiscuola",
-          "epg_key": "raiscuola"
-        },
-        {
-          "playlist_channel": {
-            "name": "20",
-            "tvg_id": "20.it",
-            "tvg_name": "20.it",
-            "stream_url": "http://91.146.94.234:10001/play/a08s",
-            "source_id": "discovery_iptv_org_language_ita"
-          },
-          "epg_channel": {
-            "channel_id": "20.it",
-            "display_names": [
-              "20.it"
-            ],
-            "icon_url": "",
-            "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy3.xml.gz"
-          },
-          "score": 97.0,
-          "method": "normalized_tvg_id",
-          "playlist_key": "20",
-          "epg_key": "20"
-        },
-        {
-          "playlist_channel": {
-            "name": "Italia 2 (480p) [Geo-blocked]",
-            "tvg_id": "Italia 2.it",
-            "tvg_name": "Italia 2.it",
-            "stream_url": "https://59d7d6f47d7fc.streamlock.net/italia2/italia2/playlist.m3u8",
-            "source_id": "discovery_iptv_org_language_ita"
-          },
-          "epg_channel": {
-            "channel_id": "Italia 2.it",
-            "display_names": [
-              "Italia 2.it"
-            ],
-            "icon_url": "",
-            "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy2.xml.gz"
-          },
-          "score": 92.0,
-          "method": "exact_name",
-          "playlist_key": "2",
-          "epg_key": "2"
+          "playlist_key": "raiscuolait",
+          "epg_key": "raiscuolait"
         },
         {
           "playlist_channel": {
@@ -366,8 +324,8 @@
           },
           "score": 97.0,
           "method": "normalized_tvg_id",
-          "playlist_key": "deejaytv",
-          "epg_key": "deejaytv"
+          "playlist_key": "deejaytvit",
+          "epg_key": "deejaytvit"
         },
         {
           "playlist_channel": {
@@ -385,7 +343,7 @@
             "icon_url": "",
             "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz"
           },
-          "score": 96.55,
+          "score": 98.55,
           "method": "similarity",
           "playlist_key": "mediasetitalia",
           "epg_key": "mediasetitalia2"
@@ -406,9 +364,9 @@
             "icon_url": "",
             "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz"
           },
-          "score": 87.5,
+          "score": 98.55,
           "method": "similarity",
-          "playlist_key": "mediasetitaliausa",
+          "playlist_key": "mediasetitalia",
           "epg_key": "mediasetitalia2"
         },
         {
@@ -422,16 +380,15 @@
           "epg_channel": {
             "channel_id": "RADIONORBA TV.it",
             "display_names": [
-              "RADIONORBA TV.it",
-              "Radionorba TV.it"
+              "RADIONORBA TV.it"
             ],
             "icon_url": "",
             "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz"
           },
           "score": 97.0,
           "method": "normalized_tvg_id",
-          "playlist_key": "radionorbatv",
-          "epg_key": "radionorbatv"
+          "playlist_key": "radionorbatvit",
+          "epg_key": "radionorbatvit"
         },
         {
           "playlist_channel": {
@@ -451,8 +408,134 @@
           },
           "score": 97.0,
           "method": "normalized_tvg_id",
-          "playlist_key": "value24tv",
-          "epg_key": "value24tv"
+          "playlist_key": "value24tvit",
+          "epg_key": "value24tvit"
+        },
+        {
+          "playlist_channel": {
+            "name": "Super TV (720p)",
+            "tvg_id": "Super!.it",
+            "tvg_name": "Super!.it",
+            "stream_url": "http://wms.shared.streamshow.it/supertv/mp4:supertv/playlist.m3u8",
+            "source_id": "discovery_iptv_org_language_ita"
+          },
+          "epg_channel": {
+            "channel_id": "Super!.it",
+            "display_names": [
+              "Super!.it"
+            ],
+            "icon_url": "",
+            "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz"
+          },
+          "score": 100.0,
+          "method": "similarity",
+          "playlist_key": "super",
+          "epg_key": "super"
+        },
+        {
+          "playlist_channel": {
+            "name": "Canale 10",
+            "tvg_id": "Canale 20.it",
+            "tvg_name": "Canale 10",
+            "stream_url": "https://nrvideo1.newradio.it:1936/desxcerbht/desxcerbht/playlist.m3u8",
+            "source_id": "discovery_github_262d94aa12c6128d"
+          },
+          "epg_channel": {
+            "channel_id": "Canale 20.it",
+            "display_names": [
+              "Canale 20.it"
+            ],
+            "icon_url": "",
+            "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy2.xml.gz"
+          },
+          "score": 87.5,
+          "method": "similarity",
+          "playlist_key": "canale10",
+          "epg_key": "canale20"
+        },
+        {
+          "playlist_channel": {
+            "name": "Radio Montecarlo TV G",
+            "tvg_id": "Radio Monte Carlo.it",
+            "tvg_name": "Radio Montecarlo TV G",
+            "stream_url": "https://live02-seg.msr.cdn.mediaset.net/live/ch-bb/bb-clr.isml/index.m3u8",
+            "source_id": "discovery_github_262d94aa12c6128d"
+          },
+          "epg_channel": {
+            "channel_id": "Radio Monte Carlo.it",
+            "display_names": [
+              "Radio Monte Carlo.it"
+            ],
+            "icon_url": "",
+            "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz"
+          },
+          "score": 98.77,
+          "method": "similarity",
+          "playlist_key": "radiomontecarlog",
+          "epg_key": "radiomontecarlo"
+        },
+        {
+          "playlist_channel": {
+            "name": "Virgin Radio TV G",
+            "tvg_id": "Virgin Radio.it",
+            "tvg_name": "Virgin Radio TV G",
+            "stream_url": "https://live02-seg.msr.cdn.mediaset.net/live/ch-ew/ew-clr.isml/index.m3u8",
+            "source_id": "discovery_github_262d94aa12c6128d"
+          },
+          "epg_channel": {
+            "channel_id": "Virgin Radio.it",
+            "display_names": [
+              "Virgin Radio.it"
+            ],
+            "icon_url": "",
+            "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz"
+          },
+          "score": 97.65,
+          "method": "similarity",
+          "playlist_key": "virginradiog",
+          "epg_key": "virginradio"
+        },
+        {
+          "playlist_channel": {
+            "name": "Cartoon Network Arabic (1080p)",
+            "tvg_id": "Cartoon Network.it",
+            "tvg_name": "Cartoon Network Arabic",
+            "stream_url": "https://shls-cartoon-net-prod-dub.shahid.net/out/v1/dc4aa87372374325a66be458f29eab0f/index.m3u8",
+            "source_id": "discovery_github_5ba56b11b9de490d"
+          },
+          "epg_channel": {
+            "channel_id": "Cartoon Network.it",
+            "display_names": [
+              "Cartoon Network.it"
+            ],
+            "icon_url": "",
+            "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz"
+          },
+          "score": 97.0,
+          "method": "normalized_tvg_id",
+          "playlist_key": "cartoonnetwork",
+          "epg_key": "cartoonnetwork"
+        },
+        {
+          "playlist_channel": {
+            "name": "Nickelodeon HD",
+            "tvg_id": "Nickelodeon.it",
+            "tvg_name": "Nickelodeon HD",
+            "stream_url": "http://c0.cdn.trinity-tv.net/stream/7tsewn83ddjifz69us9je7eftbm5nuausb4dsvz9g5aydin9672n734qbb9jgcfpiqtpwudvs9dpi2udjc3eh4h462eie5azjmfbfgfjeqfuhjmmgx9zuj736ijg7nffhf8rviq5svkgxbp639y9nfgc.m3u8",
+            "source_id": "discovery_github_5ba56b11b9de490d"
+          },
+          "epg_channel": {
+            "channel_id": "Nickelodeon.it",
+            "display_names": [
+              "Nickelodeon.it"
+            ],
+            "icon_url": "",
+            "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz"
+          },
+          "score": 100.0,
+          "method": "similarity",
+          "playlist_key": "nickelodeon",
+          "epg_key": "nickelodeon"
         },
         {
           "playlist_channel": {
@@ -472,8 +555,8 @@
           },
           "score": 97.0,
           "method": "normalized_tvg_id",
-          "playlist_key": "raiyoyo",
-          "epg_key": "raiyoyo"
+          "playlist_key": "raiyoyoit",
+          "epg_key": "raiyoyoit"
         },
         {
           "playlist_channel": {
@@ -493,29 +576,29 @@
           },
           "score": 97.0,
           "method": "normalized_tvg_id",
-          "playlist_key": "raimovie",
-          "epg_key": "raimovie"
+          "playlist_key": "raimovieit",
+          "epg_key": "raimovieit"
         },
         {
           "playlist_channel": {
-            "name": "Rai News 24 HD",
-            "tvg_id": "Rai News 24.it",
-            "tvg_name": "Rai News 24.it",
-            "stream_url": "http://91.146.94.234:10001/play/a135",
+            "name": "Euronews Italian (720p)",
+            "tvg_id": "Euronews.it",
+            "tvg_name": "Euronews.it",
+            "stream_url": "https://acb6ca89.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmxheHhUVi1ldV9FdXJvbmV3c0l0YWxpYW5vX0hMUw/playlist.m3u8",
             "source_id": "discovery_iptv_org_language_ita"
           },
           "epg_channel": {
-            "channel_id": "Rai News 24.it",
+            "channel_id": "Euronews.it",
             "display_names": [
-              "Rai News 24.it"
+              "Euronews.it"
             ],
             "icon_url": "",
             "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz"
           },
-          "score": 97.0,
-          "method": "normalized_tvg_id",
-          "playlist_key": "rainews24",
-          "epg_key": "rainews24"
+          "score": 100.0,
+          "method": "similarity",
+          "playlist_key": "euronews",
+          "epg_key": "euronews"
         },
         {
           "playlist_channel": {
@@ -533,8 +616,8 @@
             "icon_url": "",
             "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz"
           },
-          "score": 92.0,
-          "method": "exact_name",
+          "score": 100.0,
+          "method": "similarity",
           "playlist_key": "euronews",
           "epg_key": "euronews"
         },
@@ -556,8 +639,8 @@
           },
           "score": 97.0,
           "method": "normalized_tvg_id",
-          "playlist_key": "qvc",
-          "epg_key": "qvc"
+          "playlist_key": "qvcit",
+          "epg_key": "qvcit"
         },
         {
           "playlist_channel": {
@@ -577,8 +660,8 @@
           },
           "score": 97.0,
           "method": "normalized_tvg_id",
-          "playlist_key": "acisporttv",
-          "epg_key": "acisporttv"
+          "playlist_key": "acisporttvit",
+          "epg_key": "acisporttvit"
         },
         {
           "playlist_channel": {
@@ -598,8 +681,8 @@
           },
           "score": 97.0,
           "method": "normalized_tvg_id",
-          "playlist_key": "horsetv",
-          "epg_key": "horsetv"
+          "playlist_key": "horsetvit",
+          "epg_key": "horsetvit"
         },
         {
           "playlist_channel": {
@@ -617,9 +700,9 @@
             "icon_url": "",
             "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz"
           },
-          "score": 93.75,
+          "score": 100.0,
           "method": "similarity",
-          "playlist_key": "radiomontecarlotv",
+          "playlist_key": "radiomontecarlo",
           "epg_key": "radiomontecarlo"
         },
         {
@@ -640,8 +723,8 @@
           },
           "score": 97.0,
           "method": "normalized_tvg_id",
-          "playlist_key": "rai4",
-          "epg_key": "rai4"
+          "playlist_key": "rai4it",
+          "epg_key": "rai4it"
         },
         {
           "playlist_channel": {
@@ -661,8 +744,8 @@
           },
           "score": 97.0,
           "method": "normalized_tvg_id",
-          "playlist_key": "raigulp",
-          "epg_key": "raigulp"
+          "playlist_key": "raigulpit",
+          "epg_key": "raigulpit"
         },
         {
           "playlist_channel": {
@@ -682,8 +765,8 @@
           },
           "score": 97.0,
           "method": "normalized_tvg_id",
-          "playlist_key": "raipremium",
-          "epg_key": "raipremium"
+          "playlist_key": "raipremiumit",
+          "epg_key": "raipremiumit"
         },
         {
           "playlist_channel": {
@@ -703,8 +786,8 @@
           },
           "score": 97.0,
           "method": "normalized_tvg_id",
-          "playlist_key": "raistoria",
-          "epg_key": "raistoria"
+          "playlist_key": "raistoriait",
+          "epg_key": "raistoriait"
         },
         {
           "playlist_channel": {
@@ -722,8 +805,8 @@
             "icon_url": "",
             "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz"
           },
-          "score": 92.0,
-          "method": "exact_name",
+          "score": 97.0,
+          "method": "normalized_tvg_id",
           "playlist_key": "sanmarinortv",
           "epg_key": "sanmarinortv"
         },
@@ -745,11 +828,186 @@
           },
           "score": 97.0,
           "method": "normalized_tvg_id",
-          "playlist_key": "super",
-          "epg_key": "super"
+          "playlist_key": "superit",
+          "epg_key": "superit"
+        },
+        {
+          "playlist_channel": {
+            "name": "Radio Italia Trend",
+            "tvg_id": "Radio Italia Trend Tv HD.it",
+            "tvg_name": "Radio Italia Trend",
+            "stream_url": "https://radioitalia-samsungitaly.amagi.tv/playlist.m3u8",
+            "source_id": "discovery_github_262d94aa12c6128d"
+          },
+          "epg_channel": {
+            "channel_id": "Radio Italia Trend Tv HD.it",
+            "display_names": [
+              "Radio Italia Trend Tv HD.it"
+            ],
+            "icon_url": "",
+            "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz"
+          },
+          "score": 97.0,
+          "method": "normalized_tvg_id",
+          "playlist_key": "radioitaliatrendtvit",
+          "epg_key": "radioitaliatrendtvit"
         }
       ],
       "unmatched": [
+        {
+          "name": "8 TV Cádiz (360p) [Not 24/7]",
+          "tvg_id": "8TVCadiz.es",
+          "tvg_name": "8 TV Cádiz",
+          "stream_url": "https://5940924978228.streamlock.net/8289/smil:8289.smil/master.m3u8",
+          "source_id": "discovery_github_8f39bbc3cd5fc0ca"
+        },
+        {
+          "name": "Alacantí TV (576p)",
+          "tvg_id": "AlacantiTV.es",
+          "tvg_name": "Alacantí TV",
+          "stream_url": "https://streaming01.gestec-video.com/hls/artequatreAlacanti.m3u8",
+          "source_id": "discovery_github_8f39bbc3cd5fc0ca"
+        },
+        {
+          "name": "Alcarria TV (576p)",
+          "tvg_id": "AlcarriaTV.es",
+          "tvg_name": "Alcarria TV",
+          "stream_url": "http://217.182.77.27/live/alcarriatv-livestream.m3u8",
+          "source_id": "discovery_github_8f39bbc3cd5fc0ca"
+        },
+        {
+          "name": "Aragón Radio (Zaragoza)",
+          "tvg_id": "AragonRadioZaragoza.es",
+          "tvg_name": "Aragón Radio (Zaragoza)",
+          "stream_url": "https://cartv.streaming.aranova.es/hls/live/aragonradio_aragonradio1.m3u8",
+          "source_id": "discovery_github_8f39bbc3cd5fc0ca"
+        },
+        {
+          "name": "Aragón TV (720p)",
+          "tvg_id": "AragonTV.es",
+          "tvg_name": "Aragón TV",
+          "stream_url": "https://cartv.streaming.aranova.es/hls/live/aragontv_canal1.m3u8",
+          "source_id": "discovery_github_8f39bbc3cd5fc0ca"
+        },
+        {
+          "name": "Cadena Elite (720p) [Not 24/7]",
+          "tvg_id": "CadenaElite.es",
+          "tvg_name": "Cadena Elite",
+          "stream_url": "https://cloudvideo.servers10.com:8081/8004/index.m3u8",
+          "source_id": "discovery_github_8f39bbc3cd5fc0ca"
+        },
+        {
+          "name": "Canal 2000 La Solana (720p)",
+          "tvg_id": "Canal2000LaSolana.es",
+          "tvg_name": "Canal 2000 La Solana",
+          "stream_url": "http://canal2000.berkano-systems.net/streaming/streams/canal2000.m3u8",
+          "source_id": "discovery_github_8f39bbc3cd5fc0ca"
+        },
+        {
+          "name": "Canal 4 Mancha Centro (720p)",
+          "tvg_id": "Canal4ManchaCentro.es",
+          "tvg_name": "Canal 4 Mancha Centro",
+          "stream_url": "https://5924d3ad0efcf.streamlock.net/canal4/canal4live/playlist.m3u8",
+          "source_id": "discovery_github_8f39bbc3cd5fc0ca"
+        },
+        {
+          "name": "Canal 56 (576p)",
+          "tvg_id": "Canal56.es",
+          "tvg_name": "Canal 56",
+          "stream_url": "https://videos.canal56.com/directe/stream/index.m3u8",
+          "source_id": "discovery_github_8f39bbc3cd5fc0ca"
+        },
+        {
+          "name": "Canal Doñana [Not 24/7]",
+          "tvg_id": "CanalDonana.es",
+          "tvg_name": "Canal Doñana",
+          "stream_url": "https://secure5.todostreaming.es/live/division-alm.m3u8",
+          "source_id": "discovery_github_8f39bbc3cd5fc0ca"
+        },
+        {
+          "name": "Costa Noroeste TV [Not 24/7]",
+          "tvg_id": "CostaNoroesteTV.es",
+          "tvg_name": "Costa Noroeste TV",
+          "stream_url": "https://limited31.todostreaming.es/live/noroestetv-livestream.m3u8",
+          "source_id": "discovery_github_8f39bbc3cd5fc0ca"
+        },
+        {
+          "name": "Diez TV (1080p)",
+          "tvg_id": "DiezTV.es",
+          "tvg_name": "Diez TV",
+          "stream_url": "https://streaming.cloud.innovasur.es/mmj/index.m3u8",
+          "source_id": "discovery_github_8f39bbc3cd5fc0ca"
+        },
+        {
+          "name": "Interalmeria TV (1080p)",
+          "tvg_id": "InteralmeriaTV.es",
+          "tvg_name": "Interalmeria TV",
+          "stream_url": "https://interalmeria.tv/directo/live.m3u8",
+          "source_id": "discovery_github_8f39bbc3cd5fc0ca"
+        },
+        {
+          "name": "Noroeste TV (720p)",
+          "tvg_id": "NoroesteTV.es",
+          "tvg_name": "Noroeste TV",
+          "stream_url": "https://cloudvideo.servers10.com:8081/8032/index.m3u8",
+          "source_id": "discovery_github_8f39bbc3cd5fc0ca"
+        },
+        {
+          "name": "Popular TV Cantabria (512p)",
+          "tvg_id": "PopularTVCantabria.es",
+          "tvg_name": "Popular TV Cantabria",
+          "stream_url": "https://limited12.todostreaming.es/live/ptvcantabria-livestream.m3u8",
+          "source_id": "discovery_github_8f39bbc3cd5fc0ca"
+        },
+        {
+          "name": "Punt 3 Vall Uixó (1080p)",
+          "tvg_id": "Punt3VallUixo.es",
+          "tvg_name": "Punt 3 Vall Uixó",
+          "stream_url": "https://bit.controlstreams.com:5443/LiveApp/streams/punt3.m3u8",
+          "source_id": "discovery_github_8f39bbc3cd5fc0ca"
+        },
+        {
+          "name": "RTV Vida (1080p)",
+          "tvg_id": "RTVVida.es",
+          "tvg_name": "RTV Vida",
+          "stream_url": "https://vidartv2.todostreaming.es/live/radiovida-emisiontvhd.m3u8",
+          "source_id": "discovery_github_8f39bbc3cd5fc0ca"
+        },
+        {
+          "name": "Sal Televisión [Not 24/7]",
+          "tvg_id": "SalTelevision.es",
+          "tvg_name": "Sal Televisión",
+          "stream_url": "https://www.tdtchannels.com/stream/saltv.m3u8",
+          "source_id": "discovery_github_8f39bbc3cd5fc0ca"
+        },
+        {
+          "name": "Sevilla FC TV (360p)",
+          "tvg_id": "SevillaFCTV.es",
+          "tvg_name": "Sevilla FC TV",
+          "stream_url": "https://open.http.mp.streamamg.com/p/3001314/sp/300131400/playManifest/entryId/0_ye0b8tc0/format/applehttp/protocol/https/uiConfId/30026292/a.m3u8",
+          "source_id": "discovery_github_8f39bbc3cd5fc0ca"
+        },
+        {
+          "name": "Solidaria TV (720p)",
+          "tvg_id": "SolidariaTV.es",
+          "tvg_name": "Solidaria TV",
+          "stream_url": "https://canadaremar2.todostreaming.es/live/solidariatv-webhd.m3u8",
+          "source_id": "discovery_github_8f39bbc3cd5fc0ca"
+        },
+        {
+          "name": "Tele Safor (720p) [Not 24/7]",
+          "tvg_id": "TeleSafor.es",
+          "tvg_name": "Tele Safor",
+          "stream_url": "https://video.telesafor.com/hls/video.m3u8",
+          "source_id": "discovery_github_8f39bbc3cd5fc0ca"
+        },
+        {
+          "name": "Trece TV (576p) [Not 24/7]",
+          "tvg_id": "TreceTV.es",
+          "tvg_name": "Trece TV",
+          "stream_url": "https://play.cdn.enetres.net/091DB7AFBD77442B9BA2F141DCC182F5021/live.smil/playlist.m3u8",
+          "source_id": "discovery_github_8f39bbc3cd5fc0ca"
+        },
         {
           "name": "Mr. Bean Anime Italy (1080p)",
           "tvg_id": "MrBeanAnimated.uk@IT",
@@ -777,6 +1035,111 @@
           "tvg_name": "Yu-Gi-Oh!",
           "stream_url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/63eb82e24e83e70008ab735f/master.m3u8?jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImMzYjk4NjViLTFiYjItNGZlMy1hYzA3LWU2YWE0N2U3N2MzNiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiIwYjc1NmRiZC04MWU3LTExZjEtYThhNC0yMjQ2Yjc3ZDFlOGUiLCJjbGllbnRJUCI6IjUuMTMzLjQ4LjAiLCJjaXR5IjoiU2FsYSIsInBvc3RhbENvZGUiOiI0NzA0MiIsImNvdW50cnkiOiJJVCIsImRtYSI6MCwiYWN0aXZlUmVnaW9uIjoiSVQiLCJkZXZpY2VMYXQiOjQ0LjE4MDAwMDMwNTE3NTc4LCJkZXZpY2VMb24iOjEyLjM4MDAwMDExNDQ0MDkxOCwicHJlZmVycmVkTGFuZ3VhZ2UiOiJpdCIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTIyLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4wLjAtMTExYjJiOWRjMDBiZDBiZWE5MDMwYjMwNjYyMTU5ZWQ5ZTdjOGJjNiIsImNsaWVudElEIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkV1cm9wZS9Sb21lIiwic2VydmVyU2lkZUFkcyI6ZmFsc2UsImUyZUJlYWNvbnMiOmZhbHNlLCJmZWF0dXJlcyI6eyJtdWx0aVBvZEFkcyI6eyJjb2hvcnQiOiIiLCJlbmFibGVkIjp0cnVlfSwic3RpdGNoZXJIbHNOZyI6eyJkZW11eGVkQXVkaW8iOiJqaXQifX0sImZtc1BhcmFtcyI6eyJmd1ZjSUQyIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiZndWY0lEMkNvcHBhIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY3VzdG9tUGFyYW1zIjp7ImZtc19saXZlcmFtcF9pZGwiOiIiLCJmbXNfZW1haWxoYXNoIjoiIiwiZm1zX3N1YnNjcmliZXJpZCI6IiIsImZtc19pZmEiOiIiLCJmbXNfaWRmdiI6IiIsImZtc191c2VyaWQiOiIzM2RiYTAzNi1jZmU4LTQ2NmYtYjI1MC05Y2M3ZmY3MGRjYzYiLCJmbXNfdmNpZDJ0eXBlIjoidXNlcmlkIiwiZm1zX3JhbXBfaWQiOiIiLCJmbXNfaGhfcmFtcF9pZCI6IiIsImZtc19iaWRpZHR5cGUiOiIiLCJfZndfM1BfVUlEIjoiIiwiZm1zX3J1bGVpZCI6IjEwMDAwLDEwMDA5LDEwMDEzLDEwMDE0LDEwMDE2LDEwMDIwLDEwMDIzLDEwMDE1LDEwMDIxIn19LCJkcm0iOnsibmFtZSI6IndpZGV2aW5lIiwibGV2ZWwiOiJMMyJ9LCJzZXNzaW9uU3RhcnRUaW1lIjoxNzg0Mjk2NDc1NDg2LCJpc3MiOiJib290LnBsdXRvLnR2Iiwic3ViIjoicHJpOnYxOnBsdXRvOmRldmljZXM6SVQ6TXpOa1ltRXdNell0WTJabE9DMDBOalptTFdJeU5UQXRPV05qTjJabU56QmtZMk0yIiwiYXVkIjoiKi5wbHV0by50diIsImV4cCI6MTc4NDM4Mjg3NSwiaWF0IjoxNzg0Mjk2NDc1LCJqdGkiOiI3N2NkYWZiMC02NWFmLTQxNjItYTA4MC00ODM2ODMyOTY3NzQifQ.IgHHJHxkCpiK1qwj0ASrWcMQZYGy9u59vsKA1ADYsF8&masterJWTPassthrough=true&audioLanguage=it",
           "source_id": "pluto_it"
+        },
+        {
+          "name": "1171. Inuyasha",
+          "tvg_id": "IT800001SW",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT800001SW",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1172. Teen Vee",
+          "tvg_id": "ITBC3500002SJ",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBC3500002SJ",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1175. Inazuma Eleven Collection",
+          "tvg_id": "IT3200005F4",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT3200005F4",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1983. Yu-Gi-Oh!",
+          "tvg_id": "IT700007M3",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT700007M3",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1177. CAR CITY ADVENTURES",
+          "tvg_id": "IT2000002D1",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT2000002D1",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1178. duckTV",
+          "tvg_id": "ITBC4700001E6",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBC4700001E6",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1179. DeAPlaneta Kids",
+          "tvg_id": "ITBD3200007SZ",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBD3200007SZ",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1180. Pocoyo",
+          "tvg_id": "IT700004X4",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT700004X4",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1184. SuperToons TV",
+          "tvg_id": "ITBD51000010V",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBD51000010V",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1186. Video Game Heroes",
+          "tvg_id": "IT34000016N",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT34000016N",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1187. Sonic The Hedgehog",
+          "tvg_id": "IT3900001EN",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT3900001EN",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1188. Super! Pop",
+          "tvg_id": "ITAJ3800010RX",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITAJ3800010RX",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1189. Super! iCarly",
+          "tvg_id": "ITAJ3800002PN",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITAJ3800002PN",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1190. Super! Spongebob",
+          "tvg_id": "ITAJ380000343",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITAJ380000343",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1877. Teletubbies",
+          "tvg_id": "IT480000143",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT480000143",
+          "source_id": "discovery_github_6632d39731d1fa40"
         },
         {
           "name": "Barbie & Friends",
@@ -835,6 +1198,41 @@
           "source_id": "pluto_it"
         },
         {
+          "name": "1192. FIFA+",
+          "tvg_id": "ITBD1000002HF",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBD1000002HF",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1193. Solocalcio",
+          "tvg_id": "ITBC4700002CO",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBC4700002CO",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1195. RBN",
+          "tvg_id": "ITBD2300001MT",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBD2300001MT",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2403. INTER 24/7",
+          "tvg_id": "IT3100001FT",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT3100001FT",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2810. Sportitalia",
+          "tvg_id": "IT1000002TG",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT1000002TG",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
           "name": "Failarmy",
           "tvg_id": "FailArmy.us@Italy",
           "tvg_name": "",
@@ -877,6 +1275,111 @@
           "source_id": "pluto_it"
         },
         {
+          "name": "1197. Serie Crime - Rakuten TV",
+          "tvg_id": "IT2600008RA",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT2600008RA",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1199. True Crime",
+          "tvg_id": "ITBD1000006RD",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBD1000006RD",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1200. Storie Criminali",
+          "tvg_id": "IT1200001Q8",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT1200001Q8",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1201. DATELINE 24/7",
+          "tvg_id": "ITBD3700001TM",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBD3700001TM",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2384. Guardia Costiera",
+          "tvg_id": "IT3800003GX",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT3800003GX",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2385. Forensic Files",
+          "tvg_id": "IT3700001R9",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT3700001R9",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2404. Squadra Speciale",
+          "tvg_id": "IT3800005HI",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT3800005HI",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2442. Squadra Speciale Cobra 11",
+          "tvg_id": "IT4500001L4",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT4500001L4",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1206. Hell's Kitchen",
+          "tvg_id": "IT3900003FE",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT3900003FE",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1207. A Tavola",
+          "tvg_id": "ITBD4100007LO",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBD4100007LO",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1208. Viaggi & Sapori",
+          "tvg_id": "IT12000029J",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT12000029J",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1211. Brindiamo!",
+          "tvg_id": "ITBC400003Y7",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBC400003Y7",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1319. SportOutdoor.tv",
+          "tvg_id": "ITBA3300022EA",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBA3300022EA",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2041. Gambero Rosso",
+          "tvg_id": "IT500011RG",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT500011RG",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2117. Per Caso TV",
+          "tvg_id": "IT2200009F9",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT2200009F9",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
           "name": "Aurora Arte (480p)",
           "tvg_id": "AuroraArte.it@SD",
           "tvg_name": "",
@@ -903,6 +1406,62 @@
           "tvg_name": "",
           "stream_url": "https://zkpywrbgdbeg-hls-live.mariatvcdn.it/teleradiopace2/254c9b5c52a73a94ef0f6169cbd05dc2.sdp/playlist.m3u8",
           "source_id": "discovery_iptv_org_language_ita"
+        },
+        {
+          "name": "Retro Music TV S",
+          "tvg_id": "RetroMusicTV.cz",
+          "tvg_name": "Retro Music TV S",
+          "stream_url": "https://stream.mediawork.cz/retrotv/smil:retrotv2.smil/playlist.m3u8",
+          "source_id": "discovery_github_262d94aa12c6128d"
+        },
+        {
+          "name": "1212. wedotv Big Stories",
+          "tvg_id": "ITBC35000016T",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBC35000016T",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1214. BBC Earth",
+          "tvg_id": "IT3200002L5",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT3200002L5",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1215. WildEarth",
+          "tvg_id": "ITBA3300046KE",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBA3300046KE",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1216. Love the Planet",
+          "tvg_id": "ITBC4700003GR",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBC4700003GR",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1217. WaterBear",
+          "tvg_id": "ITBA33000478X",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBA33000478X",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1994. II Guerra Mondiale - La Storia",
+          "tvg_id": "IT9000023T",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT9000023T",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2386. NatureTime",
+          "tvg_id": "IT2100001EZ",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT2100001EZ",
+          "source_id": "discovery_github_6632d39731d1fa40"
         },
         {
           "name": "Naturescape",
@@ -975,6 +1534,279 @@
           "source_id": "discovery_iptv_org_language_ita"
         },
         {
+          "name": "1191. Family - Rakuten TV",
+          "tvg_id": "IT2600010E0",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT2600010E0",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1213. Gli immortali – Van Damme vs Lundgren",
+          "tvg_id": "ITBD1100001B7",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBD1100001B7",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1219. Film Top - Rakuten TV",
+          "tvg_id": "IT2600002F6",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT2600002F6",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1220. CG Cine Mania",
+          "tvg_id": "ITBD140000119",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBD140000119",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1221. Cinemadame - Summer Christmas",
+          "tvg_id": "ITBD1400003D0",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBD1400003D0",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1222. Cinema italiano",
+          "tvg_id": "ITBA33000238E",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBA33000238E",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1223. Alberto Sordi & Co",
+          "tvg_id": "ITBC1100008L4",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBC1100008L4",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1224. Grandi Nomi",
+          "tvg_id": "ITBC1100003KC",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBC1100003KC",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1225. Pluto TV Film",
+          "tvg_id": "ITAJ38000055E",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITAJ38000055E",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1226. Brividy Cinema",
+          "tvg_id": "ITBD600001CL",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBD600001CL",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1227. Film Al Femminile - Wedo Movies",
+          "tvg_id": "ITBC4700004EQ",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBC4700004EQ",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1228. Romance - Rakuten TV",
+          "tvg_id": "IT2600004K9",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT2600004K9",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1229. Pluto TV Film Romantici",
+          "tvg_id": "ITAJ3800009J1",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITAJ3800009J1",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1230. Romantica",
+          "tvg_id": "IT500004JK",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT500004JK",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1231. Velvet",
+          "tvg_id": "ITBC11000047F",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBC11000047F",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1232. Smile",
+          "tvg_id": "ITBC1100002ZU",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBC1100002ZU",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1233. Cine Paura",
+          "tvg_id": "IT3600005AL",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT3600005AL",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1234. Commedia - Rakuten TV",
+          "tvg_id": "IT2600007WQ",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT2600007WQ",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1235. Pluto TV Film Commedia",
+          "tvg_id": "ITBC3000002WL",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBC3000002WL",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1236. CineWestern",
+          "tvg_id": "ITBB20000072M",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBB20000072M",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1237. Grjngo- Film Western",
+          "tvg_id": "ITBD10000019E",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBD10000019E",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1238. Western Time",
+          "tvg_id": "IT3600004TW",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT3600004TW",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1239. CG Grandi Film",
+          "tvg_id": "ITBA14000093A",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBA14000093A",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1240. Trailers",
+          "tvg_id": "ITBA3300048YJ",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBA3300048YJ",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1241. Cine Thriller",
+          "tvg_id": "ITBD3200002DU",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBD3200002DU",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1243. Supercinema",
+          "tvg_id": "ITBD3200001VR",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBD3200001VR",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1245. Action Movie Channel",
+          "tvg_id": "ITBC400001LX",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBC400001LX",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1246. Bizzarro Movies",
+          "tvg_id": "ITBA3300024IU",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBA3300024IU",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1247. Alta Tensione",
+          "tvg_id": "ITBC1100001G5",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBC1100001G5",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1248. Crime Time",
+          "tvg_id": "IT3600001Q1",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT3600001Q1",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1249. Duri a morire",
+          "tvg_id": "IT500002FD",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT500002FD",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1250. Adrenaline Movies",
+          "tvg_id": "ITBC11000050E",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBC11000050E",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1251. Pluto TV Film Azione",
+          "tvg_id": "ITBC3000003CT",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBC3000003CT",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1252. Dramma - Rakuten TV",
+          "tvg_id": "IT2600005ZN",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT2600005ZN",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1253. Film d'azione - Rakuten TV",
+          "tvg_id": "IT2600003FM",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT2600003FM",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1878. Film Asiatici - Rakuten TV",
+          "tvg_id": "IT2600006JG",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT2600006JG",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1879. Fantascienza - Rakuten TV",
+          "tvg_id": "IT260000131",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT260000131",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1930. Cinemalizia",
+          "tvg_id": "IT300029U3",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT300029U3",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2325. Cine Amore",
+          "tvg_id": "IT3800001XM",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT3800001XM",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
           "name": "Cinema Poliziottesco",
           "tvg_id": "671754d8e482950008962aaf",
           "tvg_name": "Cinema Poliziottesco",
@@ -1024,6 +1856,13 @@
           "source_id": "pluto_it"
         },
         {
+          "name": "Pluto TV Cinema Italiano",
+          "tvg_id": "608aa7d8359b270007861489",
+          "tvg_name": "Pluto TV Cinema Italiano",
+          "stream_url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/608aa7d8359b270007861489/master.m3u8?jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImMzYjk4NjViLTFiYjItNGZlMy1hYzA3LWU2YWE0N2U3N2MzNiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiIwYjc1NmRiZC04MWU3LTExZjEtYThhNC0yMjQ2Yjc3ZDFlOGUiLCJjbGllbnRJUCI6IjUuMTMzLjQ4LjAiLCJjaXR5IjoiU2FsYSIsInBvc3RhbENvZGUiOiI0NzA0MiIsImNvdW50cnkiOiJJVCIsImRtYSI6MCwiYWN0aXZlUmVnaW9uIjoiSVQiLCJkZXZpY2VMYXQiOjQ0LjE4MDAwMDMwNTE3NTc4LCJkZXZpY2VMb24iOjEyLjM4MDAwMDExNDQ0MDkxOCwicHJlZmVycmVkTGFuZ3VhZ2UiOiJpdCIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTIyLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4wLjAtMTExYjJiOWRjMDBiZDBiZWE5MDMwYjMwNjYyMTU5ZWQ5ZTdjOGJjNiIsImNsaWVudElEIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkV1cm9wZS9Sb21lIiwic2VydmVyU2lkZUFkcyI6ZmFsc2UsImUyZUJlYWNvbnMiOmZhbHNlLCJmZWF0dXJlcyI6eyJtdWx0aVBvZEFkcyI6eyJjb2hvcnQiOiIiLCJlbmFibGVkIjp0cnVlfSwic3RpdGNoZXJIbHNOZyI6eyJkZW11eGVkQXVkaW8iOiJqaXQifX0sImZtc1BhcmFtcyI6eyJmd1ZjSUQyIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiZndWY0lEMkNvcHBhIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY3VzdG9tUGFyYW1zIjp7ImZtc19saXZlcmFtcF9pZGwiOiIiLCJmbXNfZW1haWxoYXNoIjoiIiwiZm1zX3N1YnNjcmliZXJpZCI6IiIsImZtc19pZmEiOiIiLCJmbXNfaWRmdiI6IiIsImZtc191c2VyaWQiOiIzM2RiYTAzNi1jZmU4LTQ2NmYtYjI1MC05Y2M3ZmY3MGRjYzYiLCJmbXNfdmNpZDJ0eXBlIjoidXNlcmlkIiwiZm1zX3JhbXBfaWQiOiIiLCJmbXNfaGhfcmFtcF9pZCI6IiIsImZtc19iaWRpZHR5cGUiOiIiLCJfZndfM1BfVUlEIjoiIiwiZm1zX3J1bGVpZCI6IjEwMDAwLDEwMDA5LDEwMDEzLDEwMDE0LDEwMDE2LDEwMDIwLDEwMDIzLDEwMDE1LDEwMDIxIn19LCJkcm0iOnsibmFtZSI6IndpZGV2aW5lIiwibGV2ZWwiOiJMMyJ9LCJzZXNzaW9uU3RhcnRUaW1lIjoxNzg0Mjk2NDc1NDg2LCJpc3MiOiJib290LnBsdXRvLnR2Iiwic3ViIjoicHJpOnYxOnBsdXRvOmRldmljZXM6SVQ6TXpOa1ltRXdNell0WTJabE9DMDBOalptTFdJeU5UQXRPV05qTjJabU56QmtZMk0yIiwiYXVkIjoiKi5wbHV0by50diIsImV4cCI6MTc4NDM4Mjg3NSwiaWF0IjoxNzg0Mjk2NDc1LCJqdGkiOiI3N2NkYWZiMC02NWFmLTQxNjItYTA4MC00ODM2ODMyOTY3NzQifQ.IgHHJHxkCpiK1qwj0ASrWcMQZYGy9u59vsKA1ADYsF8&masterJWTPassthrough=true&audioLanguage=it",
+          "source_id": "pluto_it"
+        },
+        {
           "name": "Pluto TV Cinema Orientale",
           "tvg_id": "6786235bd648bf0008c2780a",
           "tvg_name": "Pluto TV Cinema Orientale",
@@ -1063,6 +1902,13 @@
           "tvg_id": "608aa512d67fd900072323db",
           "tvg_name": "Pluto TV Film Commedia",
           "stream_url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/608aa512d67fd900072323db/master.m3u8?jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImMzYjk4NjViLTFiYjItNGZlMy1hYzA3LWU2YWE0N2U3N2MzNiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiIwYjc1NmRiZC04MWU3LTExZjEtYThhNC0yMjQ2Yjc3ZDFlOGUiLCJjbGllbnRJUCI6IjUuMTMzLjQ4LjAiLCJjaXR5IjoiU2FsYSIsInBvc3RhbENvZGUiOiI0NzA0MiIsImNvdW50cnkiOiJJVCIsImRtYSI6MCwiYWN0aXZlUmVnaW9uIjoiSVQiLCJkZXZpY2VMYXQiOjQ0LjE4MDAwMDMwNTE3NTc4LCJkZXZpY2VMb24iOjEyLjM4MDAwMDExNDQ0MDkxOCwicHJlZmVycmVkTGFuZ3VhZ2UiOiJpdCIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTIyLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4wLjAtMTExYjJiOWRjMDBiZDBiZWE5MDMwYjMwNjYyMTU5ZWQ5ZTdjOGJjNiIsImNsaWVudElEIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkV1cm9wZS9Sb21lIiwic2VydmVyU2lkZUFkcyI6ZmFsc2UsImUyZUJlYWNvbnMiOmZhbHNlLCJmZWF0dXJlcyI6eyJtdWx0aVBvZEFkcyI6eyJjb2hvcnQiOiIiLCJlbmFibGVkIjp0cnVlfSwic3RpdGNoZXJIbHNOZyI6eyJkZW11eGVkQXVkaW8iOiJqaXQifX0sImZtc1BhcmFtcyI6eyJmd1ZjSUQyIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiZndWY0lEMkNvcHBhIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY3VzdG9tUGFyYW1zIjp7ImZtc19saXZlcmFtcF9pZGwiOiIiLCJmbXNfZW1haWxoYXNoIjoiIiwiZm1zX3N1YnNjcmliZXJpZCI6IiIsImZtc19pZmEiOiIiLCJmbXNfaWRmdiI6IiIsImZtc191c2VyaWQiOiIzM2RiYTAzNi1jZmU4LTQ2NmYtYjI1MC05Y2M3ZmY3MGRjYzYiLCJmbXNfdmNpZDJ0eXBlIjoidXNlcmlkIiwiZm1zX3JhbXBfaWQiOiIiLCJmbXNfaGhfcmFtcF9pZCI6IiIsImZtc19iaWRpZHR5cGUiOiIiLCJfZndfM1BfVUlEIjoiIiwiZm1zX3J1bGVpZCI6IjEwMDAwLDEwMDA5LDEwMDEzLDEwMDE0LDEwMDE2LDEwMDIwLDEwMDIzLDEwMDE1LDEwMDIxIn19LCJkcm0iOnsibmFtZSI6IndpZGV2aW5lIiwibGV2ZWwiOiJMMyJ9LCJzZXNzaW9uU3RhcnRUaW1lIjoxNzg0Mjk2NDc1NDg2LCJpc3MiOiJib290LnBsdXRvLnR2Iiwic3ViIjoicHJpOnYxOnBsdXRvOmRldmljZXM6SVQ6TXpOa1ltRXdNell0WTJabE9DMDBOalptTFdJeU5UQXRPV05qTjJabU56QmtZMk0yIiwiYXVkIjoiKi5wbHV0by50diIsImV4cCI6MTc4NDM4Mjg3NSwiaWF0IjoxNzg0Mjk2NDc1LCJqdGkiOiI3N2NkYWZiMC02NWFmLTQxNjItYTA4MC00ODM2ODMyOTY3NzQifQ.IgHHJHxkCpiK1qwj0ASrWcMQZYGy9u59vsKA1ADYsF8&masterJWTPassthrough=true&audioLanguage=it",
+          "source_id": "pluto_it"
+        },
+        {
+          "name": "Pluto TV Film Romantici",
+          "tvg_id": "608aa4a4cc92820007b663af",
+          "tvg_name": "Pluto TV Film Romantici",
+          "stream_url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/608aa4a4cc92820007b663af/master.m3u8?jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImMzYjk4NjViLTFiYjItNGZlMy1hYzA3LWU2YWE0N2U3N2MzNiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiIwYjc1NmRiZC04MWU3LTExZjEtYThhNC0yMjQ2Yjc3ZDFlOGUiLCJjbGllbnRJUCI6IjUuMTMzLjQ4LjAiLCJjaXR5IjoiU2FsYSIsInBvc3RhbENvZGUiOiI0NzA0MiIsImNvdW50cnkiOiJJVCIsImRtYSI6MCwiYWN0aXZlUmVnaW9uIjoiSVQiLCJkZXZpY2VMYXQiOjQ0LjE4MDAwMDMwNTE3NTc4LCJkZXZpY2VMb24iOjEyLjM4MDAwMDExNDQ0MDkxOCwicHJlZmVycmVkTGFuZ3VhZ2UiOiJpdCIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTIyLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4wLjAtMTExYjJiOWRjMDBiZDBiZWE5MDMwYjMwNjYyMTU5ZWQ5ZTdjOGJjNiIsImNsaWVudElEIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkV1cm9wZS9Sb21lIiwic2VydmVyU2lkZUFkcyI6ZmFsc2UsImUyZUJlYWNvbnMiOmZhbHNlLCJmZWF0dXJlcyI6eyJtdWx0aVBvZEFkcyI6eyJjb2hvcnQiOiIiLCJlbmFibGVkIjp0cnVlfSwic3RpdGNoZXJIbHNOZyI6eyJkZW11eGVkQXVkaW8iOiJqaXQifX0sImZtc1BhcmFtcyI6eyJmd1ZjSUQyIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiZndWY0lEMkNvcHBhIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY3VzdG9tUGFyYW1zIjp7ImZtc19saXZlcmFtcF9pZGwiOiIiLCJmbXNfZW1haWxoYXNoIjoiIiwiZm1zX3N1YnNjcmliZXJpZCI6IiIsImZtc19pZmEiOiIiLCJmbXNfaWRmdiI6IiIsImZtc191c2VyaWQiOiIzM2RiYTAzNi1jZmU4LTQ2NmYtYjI1MC05Y2M3ZmY3MGRjYzYiLCJmbXNfdmNpZDJ0eXBlIjoidXNlcmlkIiwiZm1zX3JhbXBfaWQiOiIiLCJmbXNfaGhfcmFtcF9pZCI6IiIsImZtc19iaWRpZHR5cGUiOiIiLCJfZndfM1BfVUlEIjoiIiwiZm1zX3J1bGVpZCI6IjEwMDAwLDEwMDA5LDEwMDEzLDEwMDE0LDEwMDE2LDEwMDIwLDEwMDIzLDEwMDE1LDEwMDIxIn19LCJkcm0iOnsibmFtZSI6IndpZGV2aW5lIiwibGV2ZWwiOiJMMyJ9LCJzZXNzaW9uU3RhcnRUaW1lIjoxNzg0Mjk2NDc1NDg2LCJpc3MiOiJib290LnBsdXRvLnR2Iiwic3ViIjoicHJpOnYxOnBsdXRvOmRldmljZXM6SVQ6TXpOa1ltRXdNell0WTJabE9DMDBOalptTFdJeU5UQXRPV05qTjJabU56QmtZMk0yIiwiYXVkIjoiKi5wbHV0by50diIsImV4cCI6MTc4NDM4Mjg3NSwiaWF0IjoxNzg0Mjk2NDc1LCJqdGkiOiI3N2NkYWZiMC02NWFmLTQxNjItYTA4MC00ODM2ODMyOTY3NzQifQ.IgHHJHxkCpiK1qwj0ASrWcMQZYGy9u59vsKA1ADYsF8&masterJWTPassthrough=true&audioLanguage=it",
           "source_id": "pluto_it"
         },
         {
@@ -1106,6 +1952,41 @@
           "tvg_name": "Pluto TV Western",
           "stream_url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/62e7fb67478a5b0007e6c50c/master.m3u8?jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImMzYjk4NjViLTFiYjItNGZlMy1hYzA3LWU2YWE0N2U3N2MzNiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiIwYjc1NmRiZC04MWU3LTExZjEtYThhNC0yMjQ2Yjc3ZDFlOGUiLCJjbGllbnRJUCI6IjUuMTMzLjQ4LjAiLCJjaXR5IjoiU2FsYSIsInBvc3RhbENvZGUiOiI0NzA0MiIsImNvdW50cnkiOiJJVCIsImRtYSI6MCwiYWN0aXZlUmVnaW9uIjoiSVQiLCJkZXZpY2VMYXQiOjQ0LjE4MDAwMDMwNTE3NTc4LCJkZXZpY2VMb24iOjEyLjM4MDAwMDExNDQ0MDkxOCwicHJlZmVycmVkTGFuZ3VhZ2UiOiJpdCIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTIyLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4wLjAtMTExYjJiOWRjMDBiZDBiZWE5MDMwYjMwNjYyMTU5ZWQ5ZTdjOGJjNiIsImNsaWVudElEIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkV1cm9wZS9Sb21lIiwic2VydmVyU2lkZUFkcyI6ZmFsc2UsImUyZUJlYWNvbnMiOmZhbHNlLCJmZWF0dXJlcyI6eyJtdWx0aVBvZEFkcyI6eyJjb2hvcnQiOiIiLCJlbmFibGVkIjp0cnVlfSwic3RpdGNoZXJIbHNOZyI6eyJkZW11eGVkQXVkaW8iOiJqaXQifX0sImZtc1BhcmFtcyI6eyJmd1ZjSUQyIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiZndWY0lEMkNvcHBhIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY3VzdG9tUGFyYW1zIjp7ImZtc19saXZlcmFtcF9pZGwiOiIiLCJmbXNfZW1haWxoYXNoIjoiIiwiZm1zX3N1YnNjcmliZXJpZCI6IiIsImZtc19pZmEiOiIiLCJmbXNfaWRmdiI6IiIsImZtc191c2VyaWQiOiIzM2RiYTAzNi1jZmU4LTQ2NmYtYjI1MC05Y2M3ZmY3MGRjYzYiLCJmbXNfdmNpZDJ0eXBlIjoidXNlcmlkIiwiZm1zX3JhbXBfaWQiOiIiLCJmbXNfaGhfcmFtcF9pZCI6IiIsImZtc19iaWRpZHR5cGUiOiIiLCJfZndfM1BfVUlEIjoiIiwiZm1zX3J1bGVpZCI6IjEwMDAwLDEwMDA5LDEwMDEzLDEwMDE0LDEwMDE2LDEwMDIwLDEwMDIzLDEwMDE1LDEwMDIxIn19LCJkcm0iOnsibmFtZSI6IndpZGV2aW5lIiwibGV2ZWwiOiJMMyJ9LCJzZXNzaW9uU3RhcnRUaW1lIjoxNzg0Mjk2NDc1NDg2LCJpc3MiOiJib290LnBsdXRvLnR2Iiwic3ViIjoicHJpOnYxOnBsdXRvOmRldmljZXM6SVQ6TXpOa1ltRXdNell0WTJabE9DMDBOalptTFdJeU5UQXRPV05qTjJabU56QmtZMk0yIiwiYXVkIjoiKi5wbHV0by50diIsImV4cCI6MTc4NDM4Mjg3NSwiaWF0IjoxNzg0Mjk2NDc1LCJqdGkiOiI3N2NkYWZiMC02NWFmLTQxNjItYTA4MC00ODM2ODMyOTY3NzQifQ.IgHHJHxkCpiK1qwj0ASrWcMQZYGy9u59vsKA1ADYsF8&masterJWTPassthrough=true&audioLanguage=it",
           "source_id": "pluto_it"
+        },
+        {
+          "name": "MTV Ava",
+          "tvg_id": "AVA.fi",
+          "tvg_name": "MTV Ava",
+          "stream_url": "https://live-fi.tvkaista.net/ava/live.m3u8?src=freetv",
+          "source_id": "discovery_github_262d94aa12c6128d"
+        },
+        {
+          "name": "MTV Sub",
+          "tvg_id": "Sub.fi",
+          "tvg_name": "MTV Sub",
+          "stream_url": "https://live-fi.tvkaista.net/sub/live.m3u8?src=freetv",
+          "source_id": "discovery_github_262d94aa12c6128d"
+        },
+        {
+          "name": "MTV Uutiset Live",
+          "tvg_id": "MTVUutiset.fi",
+          "tvg_name": "MTV Uutiset Live",
+          "stream_url": "https://live.streaming.a2d.tv/asset/20025962.isml/.m3u8",
+          "source_id": "discovery_github_262d94aa12c6128d"
+        },
+        {
+          "name": "MTV3",
+          "tvg_id": "MTV3.fi",
+          "tvg_name": "MTV3",
+          "stream_url": "https://live-fi.tvkaista.net/mtv3/live.m3u8?src=freetv",
+          "source_id": "discovery_github_262d94aa12c6128d"
+        },
+        {
+          "name": "Sundom TV Y",
+          "tvg_id": "SundomTV.fi",
+          "tvg_name": "Sundom TV Y",
+          "stream_url": "https://www.youtube.com/@SundomTV/live",
+          "source_id": "discovery_github_262d94aa12c6128d"
         },
         {
           "name": "111 TV (720p)",
@@ -1189,13 +2070,6 @@
           "tvg_id": "Canale21Extra.it@SD",
           "tvg_name": "",
           "stream_url": "https://0ff9dd7fe9b64bc08a5fc4ed525454c3.msvdn.net/live/S42170132/sT6C3LFaD1iA/playlist.m3u8",
-          "source_id": "discovery_iptv_org_language_ita"
-        },
-        {
-          "name": "Canale 7 (480p)",
-          "tvg_id": "Canale7.it@SD",
-          "tvg_name": "",
-          "stream_url": "http://wms.shared.streamshow.it/canale7/canale7/playlist.m3u8",
           "source_id": "discovery_iptv_org_language_ita"
         },
         {
@@ -1367,13 +2241,6 @@
           "source_id": "discovery_iptv_org_language_ita"
         },
         {
-          "name": "Rete TV Italia (1080p)",
-          "tvg_id": "ReteTVItalia.it@SD",
-          "tvg_name": "",
-          "stream_url": "https://57068da1deb21.streamlock.net/retetvitalia/retetvitalia/playlist.m3u8",
-          "source_id": "discovery_iptv_org_language_ita"
-        },
-        {
           "name": "RTM TV (1080p)",
           "tvg_id": "RTMTV.it@SD",
           "tvg_name": "",
@@ -1458,11 +2325,25 @@
           "source_id": "discovery_iptv_org_language_ita"
         },
         {
-          "name": "Super TV (720p)",
-          "tvg_id": "SuperTV.it@SD",
-          "tvg_name": "",
-          "stream_url": "http://wms.shared.streamshow.it/supertv/mp4:supertv/playlist.m3u8",
-          "source_id": "discovery_iptv_org_language_ita"
+          "name": "DELUXE MUSIC",
+          "tvg_id": "DeluxeMusic.de",
+          "tvg_name": "DELUXE MUSIC",
+          "stream_url": "https://sdn-global-live-streaming-packager-cache.3qsdn.com/13456/13456_264_live.m3u8",
+          "source_id": "discovery_github_262d94aa12c6128d"
+        },
+        {
+          "name": "DELUXE MUSIC DANCE BY KONTOR",
+          "tvg_id": "DeluxeMusicDanceByKontor.de",
+          "tvg_name": "DELUXE MUSIC DANCE BY KONTOR",
+          "stream_url": "https://sdn-global-live-streaming-packager-cache.3qsdn.com/64733/64733_264_live.m3u8",
+          "source_id": "discovery_github_262d94aa12c6128d"
+        },
+        {
+          "name": "DELUXE MUSIC RAP",
+          "tvg_id": "DeLuxeMusicRap.de",
+          "tvg_name": "DELUXE MUSIC RAP",
+          "stream_url": "https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.m3u8",
+          "source_id": "discovery_github_262d94aa12c6128d"
         },
         {
           "name": "Horror Club",
@@ -1477,6 +2358,97 @@
           "tvg_name": "Pluto TV Paranormal",
           "stream_url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/66c70033b1a34600087bb09a/master.m3u8?jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImMzYjk4NjViLTFiYjItNGZlMy1hYzA3LWU2YWE0N2U3N2MzNiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiIwYjc1NmRiZC04MWU3LTExZjEtYThhNC0yMjQ2Yjc3ZDFlOGUiLCJjbGllbnRJUCI6IjUuMTMzLjQ4LjAiLCJjaXR5IjoiU2FsYSIsInBvc3RhbENvZGUiOiI0NzA0MiIsImNvdW50cnkiOiJJVCIsImRtYSI6MCwiYWN0aXZlUmVnaW9uIjoiSVQiLCJkZXZpY2VMYXQiOjQ0LjE4MDAwMDMwNTE3NTc4LCJkZXZpY2VMb24iOjEyLjM4MDAwMDExNDQ0MDkxOCwicHJlZmVycmVkTGFuZ3VhZ2UiOiJpdCIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTIyLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4wLjAtMTExYjJiOWRjMDBiZDBiZWE5MDMwYjMwNjYyMTU5ZWQ5ZTdjOGJjNiIsImNsaWVudElEIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkV1cm9wZS9Sb21lIiwic2VydmVyU2lkZUFkcyI6ZmFsc2UsImUyZUJlYWNvbnMiOmZhbHNlLCJmZWF0dXJlcyI6eyJtdWx0aVBvZEFkcyI6eyJjb2hvcnQiOiIiLCJlbmFibGVkIjp0cnVlfSwic3RpdGNoZXJIbHNOZyI6eyJkZW11eGVkQXVkaW8iOiJqaXQifX0sImZtc1BhcmFtcyI6eyJmd1ZjSUQyIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiZndWY0lEMkNvcHBhIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY3VzdG9tUGFyYW1zIjp7ImZtc19saXZlcmFtcF9pZGwiOiIiLCJmbXNfZW1haWxoYXNoIjoiIiwiZm1zX3N1YnNjcmliZXJpZCI6IiIsImZtc19pZmEiOiIiLCJmbXNfaWRmdiI6IiIsImZtc191c2VyaWQiOiIzM2RiYTAzNi1jZmU4LTQ2NmYtYjI1MC05Y2M3ZmY3MGRjYzYiLCJmbXNfdmNpZDJ0eXBlIjoidXNlcmlkIiwiZm1zX3JhbXBfaWQiOiIiLCJmbXNfaGhfcmFtcF9pZCI6IiIsImZtc19iaWRpZHR5cGUiOiIiLCJfZndfM1BfVUlEIjoiIiwiZm1zX3J1bGVpZCI6IjEwMDAwLDEwMDA5LDEwMDEzLDEwMDE0LDEwMDE2LDEwMDIwLDEwMDIzLDEwMDE1LDEwMDIxIn19LCJkcm0iOnsibmFtZSI6IndpZGV2aW5lIiwibGV2ZWwiOiJMMyJ9LCJzZXNzaW9uU3RhcnRUaW1lIjoxNzg0Mjk2NDc1NDg2LCJpc3MiOiJib290LnBsdXRvLnR2Iiwic3ViIjoicHJpOnYxOnBsdXRvOmRldmljZXM6SVQ6TXpOa1ltRXdNell0WTJabE9DMDBOalptTFdJeU5UQXRPV05qTjJabU56QmtZMk0yIiwiYXVkIjoiKi5wbHV0by50diIsImV4cCI6MTc4NDM4Mjg3NSwiaWF0IjoxNzg0Mjk2NDc1LCJqdGkiOiI3N2NkYWZiMC02NWFmLTQxNjItYTA4MC00ODM2ODMyOTY3NzQifQ.IgHHJHxkCpiK1qwj0ASrWcMQZYGy9u59vsKA1ADYsF8&masterJWTPassthrough=true&audioLanguage=it",
           "source_id": "pluto_it"
+        },
+        {
+          "name": "Oxygen Music",
+          "tvg_id": "",
+          "tvg_name": "Oxygen Music",
+          "stream_url": "https://oxygenmusic.hu:2443/hls/oxygenmusic.m3u8",
+          "source_id": "discovery_github_262d94aa12c6128d"
+        },
+        {
+          "name": "1256. Catfish",
+          "tvg_id": "ITAJ3800001Z4",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITAJ3800001Z4",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1259. Pluto TV Real Life",
+          "tvg_id": "ITAJ3800006UB",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITAJ3800006UB",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1261. Mudù - Risate dal Sud",
+          "tvg_id": "IT3200006YF",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT3200006YF",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1263. FailArmy",
+          "tvg_id": "ITBA1400001QN",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBA1400001QN",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1264. The Pet Collective",
+          "tvg_id": "ITAJ4500016FM",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITAJ4500016FM",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1265. People Are Awesome",
+          "tvg_id": "ITAJ4500022GD",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITAJ4500022GD",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1266. Just For Laughs",
+          "tvg_id": "ITBD600002HT",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBD600002HT",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1268. 5-Minuti Creativi",
+          "tvg_id": "ITBA33000374G",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBA33000374G",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2405. Class TV Moda",
+          "tvg_id": "IT500010AQ",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT500010AQ",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2551. BEAUTY CHANNEL",
+          "tvg_id": "IT5100003XM",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT5100003XM",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2680. A tu per tu",
+          "tvg_id": "IT900013AJ",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT900013AJ",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2811. Quantum Makers",
+          "tvg_id": "IT1200003NR",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT1200003NR",
+          "source_id": "discovery_github_6632d39731d1fa40"
         },
         {
           "name": "Affare Fatto",
@@ -1521,6 +2493,160 @@
           "source_id": "pluto_it"
         },
         {
+          "name": "Classic Hits",
+          "tvg_id": "classichits.ie",
+          "tvg_name": "Classic Hits",
+          "stream_url": "https://stream.audioxi.com/CLASSIC",
+          "source_id": "discovery_github_262d94aa12c6128d"
+        },
+        {
+          "name": "Radio Nova",
+          "tvg_id": "www.nova.ie",
+          "tvg_name": "Radio Nova",
+          "stream_url": "https://stream.audioxi.com/NOVA",
+          "source_id": "discovery_github_262d94aa12c6128d"
+        },
+        {
+          "name": "Globo Tv",
+          "tvg_id": "",
+          "tvg_name": "Globo Tv",
+          "stream_url": "https://nrvideo1.newradio.it:1936/awrgaebshj/awrgaebshj/playlist.m3u8",
+          "source_id": "discovery_github_262d94aa12c6128d"
+        },
+        {
+          "name": "Onda Web Radio",
+          "tvg_id": "",
+          "tvg_name": "Onda Web Radio",
+          "stream_url": "http://178.33.224.197:1935/ondaradioweb/ondaradioweb/playlist.m3u8",
+          "source_id": "discovery_github_262d94aa12c6128d"
+        },
+        {
+          "name": "Radio 105 TV G",
+          "tvg_id": "Radio105TV.it",
+          "tvg_name": "Radio 105 TV G",
+          "stream_url": "https://live02-seg.msr.cdn.mediaset.net/live/ch-ec/ec-clr.isml/index.m3u8",
+          "source_id": "discovery_github_262d94aa12c6128d"
+        },
+        {
+          "name": "Radio 3M InBlu",
+          "tvg_id": "",
+          "tvg_name": "Radio 3M InBlu",
+          "stream_url": "https://stream.mariatvcdn.com/telemistrettaradio/900bfcc0f9012ea272584fd5ff5281b8.sdp/playlist.m3u8",
+          "source_id": "discovery_github_262d94aa12c6128d"
+        },
+        {
+          "name": "Radio 51 Tv",
+          "tvg_id": "",
+          "tvg_name": "Radio 51 Tv",
+          "stream_url": "https://59d7d6f47d7fc.streamlock.net/canale51/canale51/chunklist_w1193883900.m3u8",
+          "source_id": "discovery_github_262d94aa12c6128d"
+        },
+        {
+          "name": "Radio Birikina Tv",
+          "tvg_id": "",
+          "tvg_name": "Radio Birikina Tv",
+          "stream_url": "https://tvd-bk.fluid.stream/RadioBirikinaTV/livestream/chunklist_w84398277.m3u8",
+          "source_id": "discovery_github_262d94aa12c6128d"
+        },
+        {
+          "name": "Radio Bruno Tv",
+          "tvg_id": "",
+          "tvg_name": "Radio Bruno Tv",
+          "stream_url": "https://router.xdevel.com/video0s975758-473/stream/playlist.m3u8",
+          "source_id": "discovery_github_262d94aa12c6128d"
+        },
+        {
+          "name": "Radio Colonna Tv Y",
+          "tvg_id": "",
+          "tvg_name": "Radio Colonna Tv Y",
+          "stream_url": "https://www.youtube.com/radiocolonna/live",
+          "source_id": "discovery_github_262d94aa12c6128d"
+        },
+        {
+          "name": "Radio Ibiza",
+          "tvg_id": "",
+          "tvg_name": "Radio Ibiza",
+          "stream_url": "https://str48.fluid.stream/RadioIbizaTV/livestream/playlist.m3u8",
+          "source_id": "discovery_github_262d94aa12c6128d"
+        },
+        {
+          "name": "Radio KISS KISS TV",
+          "tvg_id": "KissKissTV.it",
+          "tvg_name": "Radio KISS KISS TV",
+          "stream_url": "https://kk.fluid.stream/KKMulti/smil:KissKissTV.smil/playlist.m3u8",
+          "source_id": "discovery_github_262d94aa12c6128d"
+        },
+        {
+          "name": "Radio Monte Kronio Tv (R.M.K.)",
+          "tvg_id": "",
+          "tvg_name": "Radio Monte Kronio Tv (R.M.K.)",
+          "stream_url": "https://648026e87a75e.streamlock.net/rmktv/rmktv/playlist.m3u8",
+          "source_id": "discovery_github_262d94aa12c6128d"
+        },
+        {
+          "name": "Radio Piter Pan Tv",
+          "tvg_id": "",
+          "tvg_name": "Radio Piter Pan Tv",
+          "stream_url": "https://tvd-piter.fluid.stream/RadioPiterpanTV/livestream/chunklist_w1866496033.m3u8",
+          "source_id": "discovery_github_262d94aa12c6128d"
+        },
+        {
+          "name": "Radio Radio Tv",
+          "tvg_id": "RadioRadioTV.it",
+          "tvg_name": "Radio Radio Tv",
+          "stream_url": "https://200912.global.ssl.fastly.net/646b335e2291a2022444bb7c/live_22f84390fe1411ed919df3da85a483cc/rewind-14400.m3u8",
+          "source_id": "discovery_github_262d94aa12c6128d"
+        },
+        {
+          "name": "Radio Radiosa Tv",
+          "tvg_id": "",
+          "tvg_name": "Radio Radiosa Tv",
+          "stream_url": "https://stream7.zivoli.it/radiosatv/radiosatv/playlist.m3u8",
+          "source_id": "discovery_github_262d94aa12c6128d"
+        },
+        {
+          "name": "Radio ZETA",
+          "tvg_id": "RadioZetaTV.it",
+          "tvg_name": "Radio ZETA",
+          "stream_url": "https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S9346184/XEx1LqlYbNic/playlist.m3u8",
+          "source_id": "discovery_github_262d94aa12c6128d"
+        },
+        {
+          "name": "Rai Radio 2 Visual Radio",
+          "tvg_id": "RaiRadio2Visual.it",
+          "tvg_name": "Rai Radio 2 Visual Radio",
+          "stream_url": "https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=5674080&output=7&forceUserAgent=rainet/4.0.5",
+          "source_id": "discovery_github_262d94aa12c6128d"
+        },
+        {
+          "name": "RDS Social TV",
+          "tvg_id": "RDSSocialTV.it",
+          "tvg_name": "RDS Social TV",
+          "stream_url": "https://stream.rdstv.radio/index.m3u8",
+          "source_id": "discovery_github_262d94aa12c6128d"
+        },
+        {
+          "name": "TeleRadioStereo T",
+          "tvg_id": "",
+          "tvg_name": "TeleRadioStereo T",
+          "stream_url": "https://www.twitch.tv/teleradiostereo",
+          "source_id": "discovery_github_262d94aa12c6128d"
+        },
+        {
+          "name": "TRL Tele Radio Leo",
+          "tvg_id": "",
+          "tvg_name": "TRL Tele Radio Leo",
+          "stream_url": "https://5db313b643fd8.streamlock.net/TRL/TRL/playlist.m3u8",
+          "source_id": "discovery_github_262d94aa12c6128d"
+        },
+        {
+          "name": "Atfal Wa Mawaheb",
+          "tvg_id": "AtfalWaMawaheb.sa",
+          "tvg_name": "Atfal Wa Mawaheb",
+          "stream_url": "https://5d658d7e9f562.streamlock.net/atfal1.com/atfal2/playlist.m3u8",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
           "name": "BeJoy.kids (1080p)",
           "tvg_id": "BeJoykids.it@HD",
           "tvg_name": "",
@@ -1528,11 +2654,375 @@
           "source_id": "discovery_iptv_org_language_ita"
         },
         {
+          "name": "Bob l'éponge+",
+          "tvg_id": "Boblepongeplus.us",
+          "tvg_name": "Bob l'éponge+",
+          "stream_url": "http://service-stitcher.clusters.pluto.tv/stitch/hls/channel/609a33d06972da0007748ecf/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=35fc9fd0-e986-11eb-a0af-c3b401f46211&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&sid=195dd54b-932b-4f28-be70-7e736585335a&serverSideAds=false",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Camp Spoopy",
+          "tvg_id": "CampSpoopy.us",
+          "tvg_name": "Camp Spoopy",
+          "stream_url": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=269",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "EBS Kids (360p)",
+          "tvg_id": "EBSKids.kr",
+          "tvg_name": "EBS Kids",
+          "stream_url": "http://ebsonairios.ebs.co.kr/ebsutablet500k/_definst_/tablet500k/playlist.m3u8",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
           "name": "Iunior TV (1080p)",
           "tvg_id": "IuniorTV.it@SD",
           "tvg_name": "",
           "stream_url": "https://5f22d76e220e1.streamlock.net/iuniortv/iuniortv/chunklist_w774879328.m3u8",
           "source_id": "discovery_iptv_org_language_ita"
+        },
+        {
+          "name": "KidsFlix",
+          "tvg_id": "KidsFlix.us",
+          "tvg_name": "KidsFlix",
+          "stream_url": "https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=50",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "MBC 3 (1080p)",
+          "tvg_id": "MBC3.ae",
+          "tvg_name": "MBC 3",
+          "stream_url": "https://shls-mbc3-prod-dub.shahid.net/out/v1/d5bbe570e1514d3d9a142657d33d85e6/index.m3u8",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "MBC 3 EUR (1080p)",
+          "tvg_id": "MBC3EUR.ae",
+          "tvg_name": "MBC 3 EUR",
+          "stream_url": "https://shls-mbc3-eur-prod-dub.shahid.net/out/v1/fce09dd6a967431a871efb3b8dec9f82/index.m3u8",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Moonbug Kids",
+          "tvg_id": "MoonbugKids.uk",
+          "tvg_name": "Moonbug Kids",
+          "stream_url": "https://moonbug-rokuus.amagi.tv/playlist.m3u8",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "PBS Kids 68.2 (KETKY)",
+          "tvg_id": "KETKY.us",
+          "tvg_name": "PBS Kids 68.2 (KETKY)",
+          "stream_url": "https://2-fss-2.streamhoster.com/pl_140/amlst:200914-1298290/playlist.m3u8",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Pluto TV After School Cartoons",
+          "tvg_id": "PlutoTVAfterSchoolCartoons.us",
+          "tvg_name": "Pluto TV After School Cartoons",
+          "stream_url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/56171fafada51f8004c4b40f/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Pluto TV Animakids",
+          "tvg_id": "PlutoTVAnimakids.us",
+          "tvg_name": "Pluto TV Animakids",
+          "stream_url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f1aabee6f4a2c00076a322c/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&content_rating=ROKU_ADS_CONTENT_RATING",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Pluto TV Animakids (Spain)",
+          "tvg_id": "PlutoTVAnimakidsSpain.us",
+          "tvg_name": "Pluto TV Animakids (Spain)",
+          "stream_url": "https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f1aabee6f4a2c00076a322c/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=905&deviceId=5f1aabee6f4a2c00076a322c&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=41.1167&deviceLon=1.2500&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=ES&serverSideAds=false",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Pluto TV Animakids Plus",
+          "tvg_id": "PlutoTVAnimakidsPlus.us",
+          "tvg_name": "Pluto TV Animakids Plus",
+          "stream_url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f5a0b44cc331900075e7769/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&content_rating=ROKU_ADS_CONTENT_RATING",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Pluto TV Beyblade Burst Nick",
+          "tvg_id": "PlutoTVBeybladeBurstNick.us",
+          "tvg_name": "Pluto TV Beyblade Burst Nick",
+          "stream_url": "https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5e8b551ddcd25500072c4dad/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=a38b88ed-0712-11eb-8b9f-0242ac110002&deviceId=5e8b551ddcd25500072c4dad&deviceVersion=DNT&appVersion=DNT&deviceDNT=1&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=DE&serverSideAds=false",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Pluto TV Blaze Nick",
+          "tvg_id": "PlutoTVBlazeNick.us",
+          "tvg_name": "Pluto TV Blaze Nick",
+          "stream_url": "https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5e8b60419becf60008c841fd/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=ebc579c0-0712-11eb-97af-0242ac110002&deviceId=5e8b60419becf60008c841fd&deviceVersion=DNT&appVersion=DNT&deviceDNT=1&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=DE&serverSideAds=false",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Pluto TV Blue's Clues Nick",
+          "tvg_id": "PlutoTVBluesCluesNick.us",
+          "tvg_name": "Pluto TV Blue's Clues Nick",
+          "stream_url": "https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5e8b564ff59d130007363823/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=29e99f3f-0713-11eb-a59f-0242ac110002&deviceId=5e8b564ff59d130007363823&deviceVersion=DNT&appVersion=DNT&deviceDNT=1&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=DE&serverSideAds=false",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Pluto TV Bob Esponja",
+          "tvg_id": "PlutoTVBobEsponja.us",
+          "tvg_name": "Pluto TV Bob Esponja",
+          "stream_url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f1aca0b4e448e00075e7c5e/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&content_rating=ROKU_ADS_CONTENT_RATING",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Pluto TV Bob Esponja Plus",
+          "tvg_id": "PlutoTVBobEsponjaPlus.us",
+          "tvg_name": "Pluto TV Bob Esponja Plus",
+          "stream_url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5fd87d882574170007fac022/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&content_rating=ROKU_ADS_CONTENT_RATING",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Pluto TV Bob l'éponge",
+          "tvg_id": "PlutoTVBobleponge.us",
+          "tvg_name": "Pluto TV Bob l'éponge",
+          "stream_url": "https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5ffc8c345822750007e167de/master.m3u8?advertisingId=&appName=web&appVersion=5.14.0-0f5ca04c21649b8c8aad4e56266a23b96d73b83a&app_name=web&clientDeviceType=0&clientID=6fbead95-26b1-415d-998f-1bdef62d10be&clientModelNumber=na&deviceDNT=false&deviceId=6fbead95-26b1-415d-998f-1bdef62d10be&deviceLat=48.8582&deviceLon=2.3387&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=88.0.4324.150&marketingRegion=FR&serverSideAds=false&sessionID=cc7dc550-6be3-11eb-9c02-0242ac110002&sid=cc7dc550-6be3-11eb-9c02-0242ac110002&userId=",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Pluto TV Bubble Guppies",
+          "tvg_id": "PlutoTVBubbleGuppies.us",
+          "tvg_name": "Pluto TV Bubble Guppies",
+          "stream_url": "https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5e8b5a4bb7da5c0007e5c9e9/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=5c631817-0713-11eb-9df2-0242ac110002&deviceId=5e8b5a4bb7da5c0007e5c9e9&deviceVersion=DNT&appVersion=DNT&deviceDNT=1&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=DE&serverSideAds=false",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Pluto TV Classic Toons TV",
+          "tvg_id": "PlutoTVClassicToonsTV.us",
+          "tvg_name": "Pluto TV Classic Toons TV",
+          "stream_url": "https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/562ea53fa9060c5a7d463e74/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=548&deviceId=562ea53fa9060c5a7d463e74&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Pluto TV Dora TV (720p)",
+          "tvg_id": "PlutoTVDoraTV.us",
+          "tvg_name": "Pluto TV Dora TV",
+          "stream_url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5d14fb6c84dd37df3b4290c5/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Pluto TV Garfield",
+          "tvg_id": "PlutoTVGarfield.us",
+          "tvg_name": "Pluto TV Garfield",
+          "stream_url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/6054ab20a365c70007e4fd44/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Pluto TV Junior",
+          "tvg_id": "PlutoTVJunior.us",
+          "tvg_name": "Pluto TV Junior",
+          "stream_url": "https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5dcde2ac4bc6c500094ab45b/master.m3u8?advertisingId=&appName=web&appVersion=5.14.0-0f5ca04c21649b8c8aad4e56266a23b96d73b83a&app_name=web&clientDeviceType=0&clientID=6fbead95-26b1-415d-998f-1bdef62d10be&clientModelNumber=na&deviceDNT=false&deviceId=6fbead95-26b1-415d-998f-1bdef62d10be&deviceLat=19.4358&deviceLon=-99.1441&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=88.0.4324.150&marketingRegion=VE&serverSideAds=false&sessionID=b8e5a857-714a-11eb-b532-0242ac110002&sid=b8e5a857-714a-11eb-b532-0242ac110002&userId=",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Pluto TV Kids",
+          "tvg_id": "PlutoTVKids.us",
+          "tvg_name": "Pluto TV Kids",
+          "stream_url": "https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/51c75f7bb6f26ba1cd00002f/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=989&deviceId=51c75f7bb6f26ba1cd00002f&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Pluto TV Kids (Spain)",
+          "tvg_id": "PlutoTVKidsSpain.us",
+          "tvg_name": "Pluto TV Kids (Spain)",
+          "stream_url": "https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f1aab1d29b39600073e243f/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=910&deviceId=5f1aab1d29b39600073e243f&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=41.1167&deviceLon=1.2500&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=ES&serverSideAds=false",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Pluto TV Kids Animation",
+          "tvg_id": "PlutoTVKidsAnimation.us",
+          "tvg_name": "Pluto TV Kids Animation",
+          "stream_url": "https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5db0ad56edc89300090d2ebb/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=976&deviceId=5db0ad56edc89300090d2ebb&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Pluto TV Kids Collection",
+          "tvg_id": "PlutoTVKidsCollection.us",
+          "tvg_name": "Pluto TV Kids Collection",
+          "stream_url": "https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f92b625c1ffbc0007e60c37/master.m3u8?advertisingId=&appName=web&appVersion=5.14.0-0f5ca04c21649b8c8aad4e56266a23b96d73b83a&app_name=web&clientDeviceType=0&clientID=6fbead95-26b1-415d-998f-1bdef62d10be&clientModelNumber=na&deviceDNT=false&deviceId=6fbead95-26b1-415d-998f-1bdef62d10be&deviceLat=48.8582&deviceLon=2.3387&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=88.0.4324.150&marketingRegion=FR&serverSideAds=false&sessionID=cc7dc550-6be3-11eb-9c02-0242ac110002&sid=cc7dc550-6be3-11eb-9c02-0242ac110002&userId=",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Pluto TV Kids Séries",
+          "tvg_id": "PlutoTVKidsSeries.us",
+          "tvg_name": "Pluto TV Kids Séries",
+          "stream_url": "https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f8eb99ff17815000784a3b0/master.m3u8?advertisingId=&appName=web&appVersion=5.14.0-0f5ca04c21649b8c8aad4e56266a23b96d73b83a&app_name=web&clientDeviceType=0&clientID=6fbead95-26b1-415d-998f-1bdef62d10be&clientModelNumber=na&deviceDNT=false&deviceId=6fbead95-26b1-415d-998f-1bdef62d10be&deviceLat=48.8582&deviceLon=2.3387&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=88.0.4324.150&marketingRegion=FR&serverSideAds=false&sessionID=cc7dc550-6be3-11eb-9c02-0242ac110002&sid=cc7dc550-6be3-11eb-9c02-0242ac110002&userId=",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Pluto TV Mario vs Sonic",
+          "tvg_id": "PlutoTVMariovsSonic.us",
+          "tvg_name": "Pluto TV Mario vs Sonic",
+          "stream_url": "https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5dc02ece31f6050009de4b39/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=7ecc4d45-0714-11eb-9b92-0242ac110002&deviceId=5dc02ece31f6050009de4b39&deviceVersion=DNT&appVersion=DNT&deviceDNT=1&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=DE&serverSideAds=false",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Pluto TV Nick (720p)",
+          "tvg_id": "PlutoTVNick.us",
+          "tvg_name": "Pluto TV Nick",
+          "stream_url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5ca673e0d0bd6c2689c94ce3/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Pluto TV Nick (Germany)",
+          "tvg_id": "PlutoTVNickGermany.us",
+          "tvg_name": "Pluto TV Nick (Germany)",
+          "stream_url": "https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5ede448d3d50590007a4419e/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=261&deviceId=5ede448d3d50590007a4419e&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=51.2993&deviceLon=9.4910&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=DE&serverSideAds=false",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Pluto TV Nick Clásico",
+          "tvg_id": "PlutoTVNickClasico.us",
+          "tvg_name": "Pluto TV Nick Clásico",
+          "stream_url": "https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5ddd7c348520b40009c347e2/master.m3u8?advertisingId=&appName=web&appVersion=5.14.0-0f5ca04c21649b8c8aad4e56266a23b96d73b83a&app_name=web&clientDeviceType=0&clientID=6fbead95-26b1-415d-998f-1bdef62d10be&clientModelNumber=na&deviceDNT=false&deviceId=6fbead95-26b1-415d-998f-1bdef62d10be&deviceLat=19.4358&deviceLon=-99.1441&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=88.0.4324.150&marketingRegion=VE&serverSideAds=false&sessionID=b8e5a857-714a-11eb-b532-0242ac110002&sid=b8e5a857-714a-11eb-b532-0242ac110002&userId=",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Pluto TV Nick Emma einfach magisch!",
+          "tvg_id": "PlutoTVNickEmmaeinfachmagisch.us",
+          "tvg_name": "Pluto TV Nick Emma einfach magisch!",
+          "stream_url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f4796368174910007756454/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Pluto TV Nick Jr. (720p)",
+          "tvg_id": "PlutoTVNickJr.us",
+          "tvg_name": "Pluto TV Nick Jr.",
+          "stream_url": "http://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5ca6748a37b88b269472dad9/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=978&deviceId=5ca6748a37b88b269472dad9&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Pluto TV Nick Jr. Club",
+          "tvg_id": "PlutoTVNickJrClub.us",
+          "tvg_name": "Pluto TV Nick Jr. Club",
+          "stream_url": "https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5ddd7cb2cbb9010009b4fe32/master.m3u8?advertisingId=&appName=web&appVersion=5.14.0-0f5ca04c21649b8c8aad4e56266a23b96d73b83a&app_name=web&clientDeviceType=0&clientID=6fbead95-26b1-415d-998f-1bdef62d10be&clientModelNumber=na&deviceDNT=false&deviceId=6fbead95-26b1-415d-998f-1bdef62d10be&deviceLat=19.4358&deviceLon=-99.1441&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=88.0.4324.150&marketingRegion=VE&serverSideAds=false&sessionID=b8e5a857-714a-11eb-b532-0242ac110002&sid=b8e5a857-714a-11eb-b532-0242ac110002&userId=",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Pluto TV Nick Jr. Club (Brazil)",
+          "tvg_id": "PlutoTVNickJuniorClubBrazil.us",
+          "tvg_name": "Pluto TV Nick Jr. Club (Brazil)",
+          "stream_url": "https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f121460b73ac6000719fbaf/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=706&deviceId=5f121460b73ac6000719fbaf&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=-23.5475&deviceLon=-46.6361&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=BR&serverSideAds=false",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Pluto TV Nick Jr. Latino",
+          "tvg_id": "PlutoTVNickJrLatino.us",
+          "tvg_name": "Pluto TV Nick Jr. Latino",
+          "stream_url": "https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5d8d0ec7b0f7015fbe0a3bf7/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=998&deviceId=5d8d0ec7b0f7015fbe0a3bf7&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Pluto TV Nick Latino",
+          "tvg_id": "PlutoTVNickLatino.us",
+          "tvg_name": "Pluto TV Nick Latino",
+          "stream_url": "https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5d8d08395f39465da6fb3ec4/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=997&deviceId=5d8d08395f39465da6fb3ec4&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Pluto TV Nick Rewind",
+          "tvg_id": "PlutoTVNickRewind.us",
+          "tvg_name": "Pluto TV Nick Rewind",
+          "stream_url": "https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5ed106ce4bf2e80007700bb3/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=1f8c3bd8-0715-11eb-97af-0242ac110002&deviceId=5ed106ce4bf2e80007700bb3&deviceVersion=DNT&appVersion=DNT&deviceDNT=1&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=DE&serverSideAds=false",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Pluto TV Pluto After School Cartoons",
+          "tvg_id": "PlutoTVPlutoAfterSchoolCartoons.us",
+          "tvg_name": "Pluto TV Pluto After School Cartoons",
+          "stream_url": "https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/56171fafada51f8004c4b40f/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=990&deviceId=56171fafada51f8004c4b40f&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Pluto TV Retro Toons",
+          "tvg_id": "PlutoTVRetroToons.us",
+          "tvg_name": "Pluto TV Retro Toons",
+          "stream_url": "https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5e1c669094e0e80009b22ab8/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=886c7aee-0585-11eb-8b9f-0242ac110002&deviceId=5e1c669094e0e80009b22ab8&deviceVersion=DNT&appVersion=DNT&deviceDNT=1&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=DE&serverSideAds=false",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Pluto TV Rugrats Crecidos",
+          "tvg_id": "PlutoTVRugratsCrecidos.us",
+          "tvg_name": "Pluto TV Rugrats Crecidos",
+          "stream_url": "https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5ea7215005d66d0007e8128a/master.m3u8?advertisingId=&appName=web&appVersion=5.14.0-0f5ca04c21649b8c8aad4e56266a23b96d73b83a&app_name=web&clientDeviceType=0&clientID=6fbead95-26b1-415d-998f-1bdef62d10be&clientModelNumber=na&deviceDNT=false&deviceId=6fbead95-26b1-415d-998f-1bdef62d10be&deviceLat=19.4358&deviceLon=-99.1441&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=88.0.4324.150&marketingRegion=VE&serverSideAds=false&sessionID=b8e5a857-714a-11eb-b532-0242ac110002&sid=b8e5a857-714a-11eb-b532-0242ac110002&userId=",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Pluto TV Sam & Cat",
+          "tvg_id": "PlutoTVSamCat.us",
+          "tvg_name": "Pluto TV Sam & Cat",
+          "stream_url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5e8b5ba20af628000707cee3/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Pluto TV SpongeBob Schwammkopf",
+          "tvg_id": "PlutoTVSpongeBobSchwammkopf.us",
+          "tvg_name": "Pluto TV SpongeBob Schwammkopf",
+          "stream_url": "https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5d00e8adaab96b5635b2a005/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=715c465f-0715-11eb-a18c-0242ac110002&deviceId=5d00e8adaab96b5635b2a005&deviceVersion=DNT&appVersion=DNT&deviceDNT=1&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=DE&serverSideAds=false",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Pluto TV TEEN SERIES",
+          "tvg_id": "PlutoTVTEENSERIES.us",
+          "tvg_name": "Pluto TV TEEN SERIES",
+          "stream_url": "https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f8eb7e3d2ed18000746d09a/master.m3u8?advertisingId=&appName=web&appVersion=5.14.0-0f5ca04c21649b8c8aad4e56266a23b96d73b83a&app_name=web&clientDeviceType=0&clientID=6fbead95-26b1-415d-998f-1bdef62d10be&clientModelNumber=na&deviceDNT=false&deviceId=6fbead95-26b1-415d-998f-1bdef62d10be&deviceLat=48.8582&deviceLon=2.3387&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=88.0.4324.150&marketingRegion=FR&serverSideAds=false&sessionID=cc7dc550-6be3-11eb-9c02-0242ac110002&sid=cc7dc550-6be3-11eb-9c02-0242ac110002&userId=",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Pluto TV Teen Stars",
+          "tvg_id": "PlutoTVTeenStars.us",
+          "tvg_name": "Pluto TV Teen Stars",
+          "stream_url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/60016a60a8e3520008e0d331/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&content_rating=ROKU_ADS_CONTENT_RATING",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Pluto TV Toons Clásico",
+          "tvg_id": "PlutoTVToonsClasico.us",
+          "tvg_name": "Pluto TV Toons Clásico",
+          "stream_url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/609e7e423e9173000706a681/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Pluto TV Totally Turtles (720p)",
+          "tvg_id": "PlutoTVTotallyTurtles.us",
+          "tvg_name": "Pluto TV Totally Turtles",
+          "stream_url": "https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5d0c16d686454ead733d08f8/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Pluto TV Tween",
+          "tvg_id": "PlutoTVTween.us",
+          "tvg_name": "Pluto TV Tween",
+          "stream_url": "https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5db0ae5af8797b00095c0794/master.m3u8?terminate=false&deviceType=web&deviceMake=web&deviceModel=web&sid=991&deviceId=5db0ae5af8797b00095c0794&deviceVersion=DNT&appVersion=DNT&deviceDNT=0&userId=&advertisingId=&deviceLat=&deviceLon=&app_name=&appName=web&buildVersion=&appStoreUrl=&architecture=&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "SAT-7 KIDS (720p)",
+          "tvg_id": "SAT7KIDS.cy",
+          "tvg_name": "SAT-7 KIDS",
+          "stream_url": "https://svs.itworkscdn.net/sat7kidslive/sat7kids.smil/playlist_dvr.m3u8",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "SKWAD (720p)",
+          "tvg_id": "Skwad.us",
+          "tvg_name": "SKWAD",
+          "stream_url": "https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=71",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Spacetoon (1080p)",
+          "tvg_id": "Spacetoon.sy",
+          "tvg_name": "Spacetoon",
+          "stream_url": "https://shls-spacetoon-prod-dub.shahid.net/out/v1/6240b773a3f34cca95d119f9e76aec02/index.m3u8",
+          "source_id": "discovery_github_5ba56b11b9de490d"
         },
         {
           "name": "Super! iCarly",
@@ -1554,6 +3044,34 @@
           "tvg_name": "",
           "stream_url": "https://jmp2.uk/plu-6093f9281db477000759fce0.m3u8",
           "source_id": "discovery_iptv_org_language_ita"
+        },
+        {
+          "name": "Toon Goggles (720p)",
+          "tvg_id": "ToonGoggles.us",
+          "tvg_name": "Toon Goggles",
+          "stream_url": "https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=37",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Zoo Moo (Australia)",
+          "tvg_id": "ZooMooAustralia.nz",
+          "tvg_name": "Zoo Moo (Australia)",
+          "stream_url": "https://zoomoo-samsungau.amagi.tv/playlist.m3u8",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "Тамыр (576p)",
+          "tvg_id": "Tamyr.ru",
+          "tvg_name": "Тамыр",
+          "stream_url": "https://bsttv.bonus-tv.ru/cdn/tamyr/playlist.m3u8",
+          "source_id": "discovery_github_5ba56b11b9de490d"
+        },
+        {
+          "name": "All the K-Pop Y",
+          "tvg_id": "AlltheKPop.kr",
+          "tvg_name": "All the K-Pop Y",
+          "stream_url": "https://www.youtube.com/c/ALLTHEKPOP/live",
+          "source_id": "discovery_github_262d94aa12c6128d"
         },
         {
           "name": "Camera dei Deputati (via RR) (240p)",
@@ -1617,6 +3135,20 @@
           "tvg_name": "Pluto TV Viaggi",
           "stream_url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/63c923944207be0007fd0887/master.m3u8?jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImMzYjk4NjViLTFiYjItNGZlMy1hYzA3LWU2YWE0N2U3N2MzNiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiIwYjc1NmRiZC04MWU3LTExZjEtYThhNC0yMjQ2Yjc3ZDFlOGUiLCJjbGllbnRJUCI6IjUuMTMzLjQ4LjAiLCJjaXR5IjoiU2FsYSIsInBvc3RhbENvZGUiOiI0NzA0MiIsImNvdW50cnkiOiJJVCIsImRtYSI6MCwiYWN0aXZlUmVnaW9uIjoiSVQiLCJkZXZpY2VMYXQiOjQ0LjE4MDAwMDMwNTE3NTc4LCJkZXZpY2VMb24iOjEyLjM4MDAwMDExNDQ0MDkxOCwicHJlZmVycmVkTGFuZ3VhZ2UiOiJpdCIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTIyLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4wLjAtMTExYjJiOWRjMDBiZDBiZWE5MDMwYjMwNjYyMTU5ZWQ5ZTdjOGJjNiIsImNsaWVudElEIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkV1cm9wZS9Sb21lIiwic2VydmVyU2lkZUFkcyI6ZmFsc2UsImUyZUJlYWNvbnMiOmZhbHNlLCJmZWF0dXJlcyI6eyJtdWx0aVBvZEFkcyI6eyJjb2hvcnQiOiIiLCJlbmFibGVkIjp0cnVlfSwic3RpdGNoZXJIbHNOZyI6eyJkZW11eGVkQXVkaW8iOiJqaXQifX0sImZtc1BhcmFtcyI6eyJmd1ZjSUQyIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiZndWY0lEMkNvcHBhIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY3VzdG9tUGFyYW1zIjp7ImZtc19saXZlcmFtcF9pZGwiOiIiLCJmbXNfZW1haWxoYXNoIjoiIiwiZm1zX3N1YnNjcmliZXJpZCI6IiIsImZtc19pZmEiOiIiLCJmbXNfaWRmdiI6IiIsImZtc191c2VyaWQiOiIzM2RiYTAzNi1jZmU4LTQ2NmYtYjI1MC05Y2M3ZmY3MGRjYzYiLCJmbXNfdmNpZDJ0eXBlIjoidXNlcmlkIiwiZm1zX3JhbXBfaWQiOiIiLCJmbXNfaGhfcmFtcF9pZCI6IiIsImZtc19iaWRpZHR5cGUiOiIiLCJfZndfM1BfVUlEIjoiIiwiZm1zX3J1bGVpZCI6IjEwMDAwLDEwMDA5LDEwMDEzLDEwMDE0LDEwMDE2LDEwMDIwLDEwMDIzLDEwMDE1LDEwMDIxIn19LCJkcm0iOnsibmFtZSI6IndpZGV2aW5lIiwibGV2ZWwiOiJMMyJ9LCJzZXNzaW9uU3RhcnRUaW1lIjoxNzg0Mjk2NDc1NDg2LCJpc3MiOiJib290LnBsdXRvLnR2Iiwic3ViIjoicHJpOnYxOnBsdXRvOmRldmljZXM6SVQ6TXpOa1ltRXdNell0WTJabE9DMDBOalptTFdJeU5UQXRPV05qTjJabU56QmtZMk0yIiwiYXVkIjoiKi5wbHV0by50diIsImV4cCI6MTc4NDM4Mjg3NSwiaWF0IjoxNzg0Mjk2NDc1LCJqdGkiOiI3N2NkYWZiMC02NWFmLTQxNjItYTA4MC00ODM2ODMyOTY3NzQifQ.IgHHJHxkCpiK1qwj0ASrWcMQZYGy9u59vsKA1ADYsF8&masterJWTPassthrough=true&audioLanguage=it",
           "source_id": "pluto_it"
+        },
+        {
+          "name": "Canal Málaga RTV (720p) [Not 24/7]",
+          "tvg_id": "CanalMalagaRTV.es",
+          "tvg_name": "Canal Málaga RTV",
+          "stream_url": "https://canalmalaga-tv-live.flumotion.com/playlist.m3u8",
+          "source_id": "discovery_github_8f39bbc3cd5fc0ca"
+        },
+        {
+          "name": "M95 Televisión Marbella (576p) [Not 24/7]",
+          "tvg_id": "M95TelevisionMarbella.es",
+          "tvg_name": "M95 Televisión Marbella",
+          "stream_url": "https://limited2.todostreaming.es/live/m95-livestream.m3u8",
+          "source_id": "discovery_github_8f39bbc3cd5fc0ca"
         },
         {
           "name": "Automoto",
@@ -1689,20 +3221,6 @@
           "source_id": "pluto_it"
         },
         {
-          "name": "Pluto TV Cinema Italiano",
-          "tvg_id": "PlutoTVCinemaItaliano.de@IT",
-          "tvg_name": "",
-          "stream_url": "https://jmp2.uk/plu-608aa7d8359b270007861489.m3u8",
-          "source_id": "discovery_iptv_org_language_ita"
-        },
-        {
-          "name": "Pluto TV Film Romantici",
-          "tvg_id": "PlutoTVFilmRomantici.de@IT",
-          "tvg_name": "",
-          "stream_url": "https://jmp2.uk/plu-608aa4a4cc92820007b663af.m3u8",
-          "source_id": "discovery_iptv_org_language_ita"
-        },
-        {
           "name": "Rakuten TV Action Movies Italy (1080p)",
           "tvg_id": "RakutenTVActionMovies.es@Italy",
           "tvg_name": "",
@@ -1750,6 +3268,13 @@
           "tvg_name": "",
           "stream_url": "https://585b674743bbb.streamlock.net/9050/9050/playlist.m3u8",
           "source_id": "discovery_iptv_org_language_ita"
+        },
+        {
+          "name": "Activa TV (720p) [Not 24/7]",
+          "tvg_id": "ActivaTV.es",
+          "tvg_name": "Activa TV",
+          "stream_url": "https://streamtv.mediasector.es/hls/activatv/.m3u8",
+          "source_id": "discovery_github_8f39bbc3cd5fc0ca"
         },
         {
           "name": "Company TV (720p)",
@@ -1885,17 +3410,297 @@
           "source_id": "pluto_it"
         },
         {
+          "name": "1270. Vevo Pop",
+          "tvg_id": "ITBC2100001G9",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBC2100001G9",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1271. Vevo '70s & '80s",
+          "tvg_id": "ITBD1900010JL",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBD1900010JL",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1272. Vevo '90s & '00s",
+          "tvg_id": "ITBC210000200",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBC210000200",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1276. Trace Urban",
+          "tvg_id": "ITBA3300041LY",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBA3300041LY",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1277. Trace Latina",
+          "tvg_id": "ITBA3300042HE",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBA3300042HE",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1278. K-POP by CJ ENM",
+          "tvg_id": "IT39000028R",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT39000028R",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1279. Cool Summer Channel",
+          "tvg_id": "IT2500001IF",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT2500001IF",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1280. Radio Italia Live",
+          "tvg_id": "ITBA2200008IM",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBA2200008IM",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1281. 70-80.it",
+          "tvg_id": "IT500006GE",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT500006GE",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1282. Rock TV",
+          "tvg_id": "ITBC1100011RK",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBC1100011RK",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1283. Hip Hop TV",
+          "tvg_id": "ITBC11000108G",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBC11000108G",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1285. Deluxe Lounge HD",
+          "tvg_id": "ITBA1500001R6",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBA1500001R6",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2118. Fireplace Vibes",
+          "tvg_id": "IT2200001FW",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT2200001FW",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2276. NEW KPOP",
+          "tvg_id": "IT1700002R5",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT1700002R5",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2657. Space Live",
+          "tvg_id": "IT700009BQ",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT700009BQ",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2754. Rolling Stones Takeover",
+          "tvg_id": "IT700008NG",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT700008NG",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2755. Cozy Vibes",
+          "tvg_id": "IT1900005OP",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT1900005OP",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2756. Storm Vibes",
+          "tvg_id": "IT1900006GN",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT1900006GN",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2757. Rainy Day Vibes",
+          "tvg_id": "IT18000058K",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT18000058K",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2758. Spring Vibes",
+          "tvg_id": "IT1800008RR",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT1800008RR",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2759. Island Vibes",
+          "tvg_id": "IT1800006P9",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT1800006P9",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2760. Ocean Vibes",
+          "tvg_id": "IT18000076Y",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT18000076Y",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2786. Metal.Rocks",
+          "tvg_id": "IT3300004VU",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT3300004VU",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2812. RTL 102.5",
+          "tvg_id": "IT3000010NB",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT3000010NB",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2813. RTL 102.5 Caliente",
+          "tvg_id": "IT30000132N",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT30000132N",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1287. La 7",
+          "tvg_id": "ITBD1500002NL",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBD1500002NL",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1288. Giornale Radio TV",
+          "tvg_id": "ITBB5000002N0",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBB5000002N0",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1289. FRANCE 24 FAST",
+          "tvg_id": "ITBD1100002WX",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBD1100002WX",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1290. TV5 Monde Info",
+          "tvg_id": "IT18000033C",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT18000033C",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1291. CNN Headlines International",
+          "tvg_id": "ITBD19000097D",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBD19000097D",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1292. CNBC",
+          "tvg_id": "ITBD3600002PA",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBD3600002PA",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1293. NBC News NOW",
+          "tvg_id": "ITBC4000028E",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBC4000028E",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1294. Bloomberg TV+",
+          "tvg_id": "ITBA3300025F5",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBA3300025F5",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1880. Euronews IN DIRETTA",
+          "tvg_id": "IT2600009QD",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT2600009QD",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1995. 3BMeteo",
+          "tvg_id": "IT500008CB",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT500008CB",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2042. Urania News",
+          "tvg_id": "IT50001295",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT50001295",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2068. Rai News 24",
+          "tvg_id": "IT3200004WU",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT3200004WU",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2081. Sky News International",
+          "tvg_id": "IT3400003D6",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT3400003D6",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2387. Al Jazeera",
+          "tvg_id": "IT23000034W",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT23000034W",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2406. Class CNBC",
+          "tvg_id": "IT2700002ZN",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT2700002ZN",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2425. Il Sole 24 Ore TV",
+          "tvg_id": "IT3300001G3",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT3300001G3",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
           "name": "Etna Espresso Channel (720p)",
           "tvg_id": "EtnaEspressoChannel.it@SD",
           "tvg_name": "",
           "stream_url": "https://5db313b643fd8.streamlock.net/Etnachannelponte/Etnachannelponte/playlist.m3u8",
-          "source_id": "discovery_iptv_org_language_ita"
-        },
-        {
-          "name": "Euronews Italian (720p)",
-          "tvg_id": "EuronewsItalian.fr@SD",
-          "tvg_name": "",
-          "stream_url": "https://acb6ca89.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmxheHhUVi1ldV9FdXJvbmV3c0l0YWxpYW5vX0hMUw/playlist.m3u8",
           "source_id": "discovery_iptv_org_language_ita"
         },
         {
@@ -1974,6 +3779,20 @@
           "tvg_name": "Il Sole24Ore TV",
           "stream_url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/6971fc932c004063166ac8fd/master.m3u8?jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImMzYjk4NjViLTFiYjItNGZlMy1hYzA3LWU2YWE0N2U3N2MzNiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiIwYjc1NmRiZC04MWU3LTExZjEtYThhNC0yMjQ2Yjc3ZDFlOGUiLCJjbGllbnRJUCI6IjUuMTMzLjQ4LjAiLCJjaXR5IjoiU2FsYSIsInBvc3RhbENvZGUiOiI0NzA0MiIsImNvdW50cnkiOiJJVCIsImRtYSI6MCwiYWN0aXZlUmVnaW9uIjoiSVQiLCJkZXZpY2VMYXQiOjQ0LjE4MDAwMDMwNTE3NTc4LCJkZXZpY2VMb24iOjEyLjM4MDAwMDExNDQ0MDkxOCwicHJlZmVycmVkTGFuZ3VhZ2UiOiJpdCIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTIyLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4wLjAtMTExYjJiOWRjMDBiZDBiZWE5MDMwYjMwNjYyMTU5ZWQ5ZTdjOGJjNiIsImNsaWVudElEIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkV1cm9wZS9Sb21lIiwic2VydmVyU2lkZUFkcyI6ZmFsc2UsImUyZUJlYWNvbnMiOmZhbHNlLCJmZWF0dXJlcyI6eyJtdWx0aVBvZEFkcyI6eyJjb2hvcnQiOiIiLCJlbmFibGVkIjp0cnVlfSwic3RpdGNoZXJIbHNOZyI6eyJkZW11eGVkQXVkaW8iOiJqaXQifX0sImZtc1BhcmFtcyI6eyJmd1ZjSUQyIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiZndWY0lEMkNvcHBhIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY3VzdG9tUGFyYW1zIjp7ImZtc19saXZlcmFtcF9pZGwiOiIiLCJmbXNfZW1haWxoYXNoIjoiIiwiZm1zX3N1YnNjcmliZXJpZCI6IiIsImZtc19pZmEiOiIiLCJmbXNfaWRmdiI6IiIsImZtc191c2VyaWQiOiIzM2RiYTAzNi1jZmU4LTQ2NmYtYjI1MC05Y2M3ZmY3MGRjYzYiLCJmbXNfdmNpZDJ0eXBlIjoidXNlcmlkIiwiZm1zX3JhbXBfaWQiOiIiLCJmbXNfaGhfcmFtcF9pZCI6IiIsImZtc19iaWRpZHR5cGUiOiIiLCJfZndfM1BfVUlEIjoiIiwiZm1zX3J1bGVpZCI6IjEwMDAwLDEwMDA5LDEwMDEzLDEwMDE0LDEwMDE2LDEwMDIwLDEwMDIzLDEwMDE1LDEwMDIxIn19LCJkcm0iOnsibmFtZSI6IndpZGV2aW5lIiwibGV2ZWwiOiJMMyJ9LCJzZXNzaW9uU3RhcnRUaW1lIjoxNzg0Mjk2NDc1NDg2LCJpc3MiOiJib290LnBsdXRvLnR2Iiwic3ViIjoicHJpOnYxOnBsdXRvOmRldmljZXM6SVQ6TXpOa1ltRXdNell0WTJabE9DMDBOalptTFdJeU5UQXRPV05qTjJabU56QmtZMk0yIiwiYXVkIjoiKi5wbHV0by50diIsImV4cCI6MTc4NDM4Mjg3NSwiaWF0IjoxNzg0Mjk2NDc1LCJqdGkiOiI3N2NkYWZiMC02NWFmLTQxNjItYTA4MC00ODM2ODMyOTY3NzQifQ.IgHHJHxkCpiK1qwj0ASrWcMQZYGy9u59vsKA1ADYsF8&masterJWTPassthrough=true&audioLanguage=it",
           "source_id": "pluto_it"
+        },
+        {
+          "name": "Jazz TV",
+          "tvg_id": "JazzTV.mk",
+          "tvg_name": "Jazz TV",
+          "stream_url": "https://stream.nasatv.com.mk/jazztv/hls/jazztv_live.m3u8",
+          "source_id": "discovery_github_262d94aa12c6128d"
+        },
+        {
+          "name": "Rock TV",
+          "tvg_id": "RockTV.mk",
+          "tvg_name": "Rock TV",
+          "stream_url": "https://stream.nasatv.com.mk/rocktv/hls/rocktv_live.m3u8",
+          "source_id": "discovery_github_262d94aa12c6128d"
         },
         {
           "name": "Pluto TV Notti di Passione",
@@ -2340,6 +4159,111 @@
           "source_id": "pluto_it"
         },
         {
+          "name": "1185. Mr Bean Animated",
+          "tvg_id": "IT900001A7",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT900001A7",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1203. Elisa di Rivombrosa",
+          "tvg_id": "ITBD4100001MG",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBD4100001MG",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1297. BBC Series",
+          "tvg_id": "IT2900001B5",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT2900001B5",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1298. Pluto TV Serie",
+          "tvg_id": "ITAJ3800007P8",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITAJ3800007P8",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1300. Andromeda",
+          "tvg_id": "ITBD3200003HL",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBD3200003HL",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1303. Mutant X",
+          "tvg_id": "ITBD3200005YA",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBD3200005YA",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1304. Autostop per il Cielo",
+          "tvg_id": "ITBD3200004KN",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBD3200004KN",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1305. Martial Universe - La Serie Completa",
+          "tvg_id": "ITBD1900001R7",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBD1900001R7",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1306. Soap Latino",
+          "tvg_id": "IT4600001JQ",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT4600001JQ",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1307. Soap Turco",
+          "tvg_id": "IT3600007QQ",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT3600007QQ",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1308. Anche i ricchi piangono",
+          "tvg_id": "ITBA14000026G",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBA14000026G",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1935. Relic Hunter",
+          "tvg_id": "ITBD3200006F0",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBD3200006F0",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2277. K-Drama+",
+          "tvg_id": "ITBD41000054B",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBD41000054B",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2537. Un medico in famiglia",
+          "tvg_id": "IT4000061Q",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT4000061Q",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2696. H2O & Friends",
+          "tvg_id": "IT1200004E6",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT1200004E6",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
           "name": "Andromeda Italy (720p)",
           "tvg_id": "Andromeda.us@Italy",
           "tvg_name": "",
@@ -2359,6 +4283,111 @@
           "tvg_name": "",
           "stream_url": "https://sdn-global-live-streaming-packager-cache.3qsdn.com/7841/7841_264_live.m3u8",
           "source_id": "italy_public"
+        },
+        {
+          "name": "1309. Salto Ostacoli",
+          "tvg_id": "ITBC3000007XK",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBC3000007XK",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1310. Italian Fishing TV",
+          "tvg_id": "IT600001L6",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT600001L6",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1313. Top Gear",
+          "tvg_id": "IT2400001AE",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT2400001AE",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1315. The Boat Show",
+          "tvg_id": "ITBD10000040W",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBD10000040W",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1316. World Poker Tour",
+          "tvg_id": "ITBD29000015E",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBD29000015E",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1317. Move - Sportivi in Viaggio",
+          "tvg_id": "ITBD300001GI",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBD300001GI",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "1318. Adventure Sports TV",
+          "tvg_id": "ITBC400005TF",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-ITBC400005TF",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2043. Golf Television",
+          "tvg_id": "IT4200001D8",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT4200001D8",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2044. Motoretrò",
+          "tvg_id": "IT800002CE",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT800002CE",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2443. Red Bull TV",
+          "tvg_id": "IT38000070T",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT38000070T",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2526. Automoto",
+          "tvg_id": "IT2900003UK",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT2900003UK",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2527. Rally.TV FAST+",
+          "tvg_id": "IT510000124",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT510000124",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2538. SuperTennis",
+          "tvg_id": "IT800003V4",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT800003V4",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2761. Sportface",
+          "tvg_id": "IT16000070D",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT16000070D",
+          "source_id": "discovery_github_6632d39731d1fa40"
+        },
+        {
+          "name": "2796. LBA Classics",
+          "tvg_id": "IT4000089R",
+          "tvg_name": "",
+          "stream_url": "https://jmp2.uk/stvp-IT4000089R",
+          "source_id": "discovery_github_6632d39731d1fa40"
         },
         {
           "name": "FIFA+ Italy (720p)",
@@ -2445,17 +4474,17 @@
           "source_id": "pluto_it"
         },
         {
+          "name": "Now Rock",
+          "tvg_id": "NowRock.uk",
+          "tvg_name": "Now Rock",
+          "stream_url": "https://lightning-now90s-samsungnz.amagi.tv/playlist.m3u8",
+          "source_id": "discovery_github_262d94aa12c6128d"
+        },
+        {
           "name": "CafeTV24 (720p)",
           "tvg_id": "CafeTV24.it@SD",
           "tvg_name": "",
           "stream_url": "https://srvx1.selftv.video/cafe/live/playlist.m3u8",
-          "source_id": "discovery_iptv_org_language_ita"
-        },
-        {
-          "name": "Canale 8 (480p)",
-          "tvg_id": "Canale8.it@SD",
-          "tvg_name": "",
-          "stream_url": "http://wms.shared.streamshow.it/canale8/canale8/playlist.m3u8",
           "source_id": "discovery_iptv_org_language_ita"
         },
         {
@@ -2470,13 +4499,6 @@
           "tvg_id": "EuroTV.it@SD",
           "tvg_name": "",
           "stream_url": "https://5f22d76e220e1.streamlock.net/eurotv/eurotv/playlist.m3u8",
-          "source_id": "discovery_iptv_org_language_ita"
-        },
-        {
-          "name": "Italia 2 TV (480p) [Geo-blocked]",
-          "tvg_id": "Italia2TV.it@SD",
-          "tvg_name": "",
-          "stream_url": "http://wms.shared.streamshow.it/italia2/mp4:italia2/playlist.m3u8",
           "source_id": "discovery_iptv_org_language_ita"
         },
         {
@@ -2561,13 +4583,6 @@
           "tvg_id": "RaiWorldPremium.it@SD",
           "tvg_name": "",
           "stream_url": "https://d3k8wzt41aflvx.cloudfront.net/RAIP/Live.m3u8",
-          "source_id": "discovery_iptv_org_language_ita"
-        },
-        {
-          "name": "RDS Social TV (720p)",
-          "tvg_id": "RDSSocialTV.it@SD",
-          "tvg_name": "",
-          "stream_url": "https://stream.rdstv.radio/out/v1/ec85f72b87f04555aa41d616d5be41dc/index.m3u8",
           "source_id": "discovery_iptv_org_language_ita"
         },
         {
@@ -2800,9 +4815,96 @@
           "tvg_name": "",
           "stream_url": "http://wms.shared.streamshow.it:1935/visualradio/visualradio/live.m3u8",
           "source_id": "discovery_iptv_org_language_ita"
+        },
+        {
+          "name": "Music Channel",
+          "tvg_id": "Boni-Records.com.us",
+          "tvg_name": "Music Channel",
+          "stream_url": "http://media.boni-records.com/index.m3u8",
+          "source_id": "discovery_github_262d94aa12c6128d"
+        },
+        {
+          "name": "Latina TV",
+          "tvg_id": "LatinaTV.ve",
+          "tvg_name": "Latina TV",
+          "stream_url": "https://streamtv.latinamedios.com:3413/live/latinatvlive.m3u8",
+          "source_id": "discovery_github_262d94aa12c6128d"
         }
       ],
       "ambiguous": [
+        {
+          "playlist_channel": {
+            "name": "20",
+            "tvg_id": "20.it@SD",
+            "tvg_name": "",
+            "stream_url": "http://91.146.94.234:10001/play/a08s"
+          },
+          "candidates": [
+            {
+              "playlist_channel": {
+                "name": "20",
+                "tvg_id": "20.it@SD",
+                "tvg_name": "",
+                "stream_url": "http://91.146.94.234:10001/play/a08s",
+                "source_id": "discovery_iptv_org_language_ita"
+              },
+              "epg_channel": {
+                "channel_id": "20.it",
+                "display_names": [
+                  "20.it"
+                ],
+                "icon_url": "",
+                "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy3.xml.gz"
+              },
+              "score": 97.0,
+              "method": "normalized_tvg_id",
+              "playlist_key": "20it",
+              "epg_key": "20it"
+            },
+            {
+              "playlist_channel": {
+                "name": "20",
+                "tvg_id": "20.it@SD",
+                "tvg_name": "",
+                "stream_url": "http://91.146.94.234:10001/play/a08s",
+                "source_id": "discovery_iptv_org_language_ita"
+              },
+              "epg_channel": {
+                "channel_id": "20Mediaset HD.it",
+                "display_names": [
+                  "20Mediaset HD.it"
+                ],
+                "icon_url": "",
+                "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz"
+              },
+              "score": 97.0,
+              "method": "normalized_tvg_id",
+              "playlist_key": "mediaset20",
+              "epg_key": "mediaset20"
+            },
+            {
+              "playlist_channel": {
+                "name": "20",
+                "tvg_id": "20.it@SD",
+                "tvg_name": "",
+                "stream_url": "http://91.146.94.234:10001/play/a08s",
+                "source_id": "discovery_iptv_org_language_ita"
+              },
+              "epg_channel": {
+                "channel_id": "Canale 20.it",
+                "display_names": [
+                  "Canale 20.it"
+                ],
+                "icon_url": "",
+                "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy2.xml.gz"
+              },
+              "score": 97.0,
+              "method": "normalized_tvg_id",
+              "playlist_key": "20it",
+              "epg_key": "20it"
+            }
+          ]
+        },
         {
           "playlist_channel": {
             "name": "Canale 5",
@@ -2829,8 +4931,8 @@
               },
               "score": 97.0,
               "method": "normalized_tvg_id",
-              "playlist_key": "canale5",
-              "epg_key": "canale5"
+              "playlist_key": "canale5it",
+              "epg_key": "canale5it"
             },
             {
               "playlist_channel": {
@@ -2850,8 +4952,8 @@
               },
               "score": 97.0,
               "method": "normalized_tvg_id",
-              "playlist_key": "canale5",
-              "epg_key": "canale5"
+              "playlist_key": "canale5it",
+              "epg_key": "canale5it"
             }
           ]
         },
@@ -2881,8 +4983,8 @@
               },
               "score": 97.0,
               "method": "normalized_tvg_id",
-              "playlist_key": "iris",
-              "epg_key": "iris"
+              "playlist_key": "irisit",
+              "epg_key": "irisit"
             },
             {
               "playlist_channel": {
@@ -2902,8 +5004,60 @@
               },
               "score": 97.0,
               "method": "normalized_tvg_id",
-              "playlist_key": "iris",
-              "epg_key": "iris"
+              "playlist_key": "irisit",
+              "epg_key": "irisit"
+            }
+          ]
+        },
+        {
+          "playlist_channel": {
+            "name": "Italia 2 (480p) [Geo-blocked]",
+            "tvg_id": "Italia2.it@SD",
+            "tvg_name": "",
+            "stream_url": "https://59d7d6f47d7fc.streamlock.net/italia2/italia2/playlist.m3u8"
+          },
+          "candidates": [
+            {
+              "playlist_channel": {
+                "name": "Italia 2 (480p) [Geo-blocked]",
+                "tvg_id": "Italia2.it@SD",
+                "tvg_name": "",
+                "stream_url": "https://59d7d6f47d7fc.streamlock.net/italia2/italia2/playlist.m3u8",
+                "source_id": "discovery_iptv_org_language_ita"
+              },
+              "epg_channel": {
+                "channel_id": "Italia 2.it",
+                "display_names": [
+                  "Italia 2.it"
+                ],
+                "icon_url": "",
+                "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy2.xml.gz"
+              },
+              "score": 97.0,
+              "method": "normalized_tvg_id",
+              "playlist_key": "italia2it",
+              "epg_key": "italia2it"
+            },
+            {
+              "playlist_channel": {
+                "name": "Italia 2 (480p) [Geo-blocked]",
+                "tvg_id": "Italia2.it@SD",
+                "tvg_name": "",
+                "stream_url": "https://59d7d6f47d7fc.streamlock.net/italia2/italia2/playlist.m3u8",
+                "source_id": "discovery_iptv_org_language_ita"
+              },
+              "epg_channel": {
+                "channel_id": "Mediaset Italia2 HD.it",
+                "display_names": [
+                  "Mediaset Italia2 HD.it"
+                ],
+                "icon_url": "",
+                "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz"
+              },
+              "score": 97.0,
+              "method": "normalized_tvg_id",
+              "playlist_key": "italia2",
+              "epg_key": "italia2"
             }
           ]
         },
@@ -2933,8 +5087,8 @@
               },
               "score": 97.0,
               "method": "normalized_tvg_id",
-              "playlist_key": "la5",
-              "epg_key": "la5"
+              "playlist_key": "la5it",
+              "epg_key": "la5it"
             },
             {
               "playlist_channel": {
@@ -2954,8 +5108,8 @@
               },
               "score": 97.0,
               "method": "normalized_tvg_id",
-              "playlist_key": "la5",
-              "epg_key": "la5"
+              "playlist_key": "la5it",
+              "epg_key": "la5it"
             },
             {
               "playlist_channel": {
@@ -2975,8 +5129,60 @@
               },
               "score": 97.0,
               "method": "normalized_tvg_id",
-              "playlist_key": "la5",
-              "epg_key": "la5"
+              "playlist_key": "la5it",
+              "epg_key": "la5it"
+            }
+          ]
+        },
+        {
+          "playlist_channel": {
+            "name": "Canale 7 (480p)",
+            "tvg_id": "Canale7.it@SD",
+            "tvg_name": "",
+            "stream_url": "http://wms.shared.streamshow.it/canale7/canale7/playlist.m3u8"
+          },
+          "candidates": [
+            {
+              "playlist_channel": {
+                "name": "Canale 7 (480p)",
+                "tvg_id": "Canale7.it@SD",
+                "tvg_name": "",
+                "stream_url": "http://wms.shared.streamshow.it/canale7/canale7/playlist.m3u8",
+                "source_id": "discovery_iptv_org_language_ita"
+              },
+              "epg_channel": {
+                "channel_id": "Canale 5 HD.it",
+                "display_names": [
+                  "Canale 5 HD.it"
+                ],
+                "icon_url": "",
+                "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz"
+              },
+              "score": 88.89,
+              "method": "similarity",
+              "playlist_key": "canale7it",
+              "epg_key": "canale5it"
+            },
+            {
+              "playlist_channel": {
+                "name": "Canale 7 (480p)",
+                "tvg_id": "Canale7.it@SD",
+                "tvg_name": "",
+                "stream_url": "http://wms.shared.streamshow.it/canale7/canale7/playlist.m3u8",
+                "source_id": "discovery_iptv_org_language_ita"
+              },
+              "epg_channel": {
+                "channel_id": "Canale 5.it",
+                "display_names": [
+                  "Canale 5.it"
+                ],
+                "icon_url": "",
+                "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy2.xml.gz"
+              },
+              "score": 88.89,
+              "method": "similarity",
+              "playlist_key": "canale7it",
+              "epg_key": "canale5it"
             }
           ]
         },
@@ -3004,10 +5210,10 @@
                 "icon_url": "",
                 "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz"
               },
-              "score": 92.0,
-              "method": "exact_name",
-              "playlist_key": "1",
-              "epg_key": "1"
+              "score": 97.0,
+              "method": "normalized_tvg_id",
+              "playlist_key": "italia1it",
+              "epg_key": "italia1it"
             },
             {
               "playlist_channel": {
@@ -3025,10 +5231,10 @@
                 "icon_url": "",
                 "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy2.xml.gz"
               },
-              "score": 92.0,
-              "method": "exact_name",
-              "playlist_key": "1",
-              "epg_key": "1"
+              "score": 97.0,
+              "method": "normalized_tvg_id",
+              "playlist_key": "italia1it",
+              "epg_key": "italia1it"
             }
           ]
         },
@@ -3058,8 +5264,8 @@
               },
               "score": 97.0,
               "method": "normalized_tvg_id",
-              "playlist_key": "mediasetextra",
-              "epg_key": "mediasetextra"
+              "playlist_key": "mediasetextrait",
+              "epg_key": "mediasetextrait"
             },
             {
               "playlist_channel": {
@@ -3079,8 +5285,310 @@
               },
               "score": 97.0,
               "method": "normalized_tvg_id",
-              "playlist_key": "mediasetextra",
-              "epg_key": "mediasetextra"
+              "playlist_key": "mediasetextrait",
+              "epg_key": "mediasetextrait"
+            }
+          ]
+        },
+        {
+          "playlist_channel": {
+            "name": "Rete TV Italia (1080p)",
+            "tvg_id": "ReteTVItalia.it@SD",
+            "tvg_name": "",
+            "stream_url": "https://57068da1deb21.streamlock.net/retetvitalia/retetvitalia/playlist.m3u8"
+          },
+          "candidates": [
+            {
+              "playlist_channel": {
+                "name": "Rete TV Italia (1080p)",
+                "tvg_id": "ReteTVItalia.it@SD",
+                "tvg_name": "",
+                "stream_url": "https://57068da1deb21.streamlock.net/retetvitalia/retetvitalia/playlist.m3u8",
+                "source_id": "discovery_iptv_org_language_ita"
+              },
+              "epg_channel": {
+                "channel_id": "Italia 1 HD.it",
+                "display_names": [
+                  "Italia 1 HD.it"
+                ],
+                "icon_url": "",
+                "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz"
+              },
+              "score": 94.31,
+              "method": "similarity",
+              "playlist_key": "italia",
+              "epg_key": "italia1"
+            },
+            {
+              "playlist_channel": {
+                "name": "Rete TV Italia (1080p)",
+                "tvg_id": "ReteTVItalia.it@SD",
+                "tvg_name": "",
+                "stream_url": "https://57068da1deb21.streamlock.net/retetvitalia/retetvitalia/playlist.m3u8",
+                "source_id": "discovery_iptv_org_language_ita"
+              },
+              "epg_channel": {
+                "channel_id": "Italia 1.it",
+                "display_names": [
+                  "Italia 1.it"
+                ],
+                "icon_url": "",
+                "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy2.xml.gz"
+              },
+              "score": 94.31,
+              "method": "similarity",
+              "playlist_key": "italia",
+              "epg_key": "italia1"
+            },
+            {
+              "playlist_channel": {
+                "name": "Rete TV Italia (1080p)",
+                "tvg_id": "ReteTVItalia.it@SD",
+                "tvg_name": "",
+                "stream_url": "https://57068da1deb21.streamlock.net/retetvitalia/retetvitalia/playlist.m3u8",
+                "source_id": "discovery_iptv_org_language_ita"
+              },
+              "epg_channel": {
+                "channel_id": "Italia 2.it",
+                "display_names": [
+                  "Italia 2.it"
+                ],
+                "icon_url": "",
+                "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy2.xml.gz"
+              },
+              "score": 94.31,
+              "method": "similarity",
+              "playlist_key": "italia",
+              "epg_key": "italia2"
+            },
+            {
+              "playlist_channel": {
+                "name": "Rete TV Italia (1080p)",
+                "tvg_id": "ReteTVItalia.it@SD",
+                "tvg_name": "",
+                "stream_url": "https://57068da1deb21.streamlock.net/retetvitalia/retetvitalia/playlist.m3u8",
+                "source_id": "discovery_iptv_org_language_ita"
+              },
+              "epg_channel": {
+                "channel_id": "Mediaset Italia2 HD.it",
+                "display_names": [
+                  "Mediaset Italia2 HD.it"
+                ],
+                "icon_url": "",
+                "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz"
+              },
+              "score": 94.31,
+              "method": "similarity",
+              "playlist_key": "italia",
+              "epg_key": "italia2"
+            }
+          ]
+        },
+        {
+          "playlist_channel": {
+            "name": "Radio Italia Cina Tv",
+            "tvg_id": "",
+            "tvg_name": "Radio Italia Cina Tv",
+            "stream_url": "https://585b674743bbb.streamlock.net/9054/9054/playlist.m3u8"
+          },
+          "candidates": [
+            {
+              "playlist_channel": {
+                "name": "Radio Italia Cina Tv",
+                "tvg_id": "",
+                "tvg_name": "Radio Italia Cina Tv",
+                "stream_url": "https://585b674743bbb.streamlock.net/9054/9054/playlist.m3u8",
+                "source_id": "discovery_github_262d94aa12c6128d"
+              },
+              "epg_channel": {
+                "channel_id": "Radio Italia TV HD.it",
+                "display_names": [
+                  "Radio Italia TV HD.it"
+                ],
+                "icon_url": "",
+                "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz"
+              },
+              "score": 86.67,
+              "method": "similarity",
+              "playlist_key": "radioitaliacinatv",
+              "epg_key": "radioitaliait"
+            },
+            {
+              "playlist_channel": {
+                "name": "Radio Italia Cina Tv",
+                "tvg_id": "",
+                "tvg_name": "Radio Italia Cina Tv",
+                "stream_url": "https://585b674743bbb.streamlock.net/9054/9054/playlist.m3u8",
+                "source_id": "discovery_github_262d94aa12c6128d"
+              },
+              "epg_channel": {
+                "channel_id": "Radio Italia Tv.it",
+                "display_names": [
+                  "Radio Italia Tv.it"
+                ],
+                "icon_url": "",
+                "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy2.xml.gz"
+              },
+              "score": 86.67,
+              "method": "similarity",
+              "playlist_key": "radioitaliacinatv",
+              "epg_key": "radioitaliait"
+            }
+          ]
+        },
+        {
+          "playlist_channel": {
+            "name": "Radio24-IlSole24OreTV",
+            "tvg_id": "Radio24TV.it",
+            "tvg_name": "Radio24-IlSole24OreTV",
+            "stream_url": "https://ilsole24ore-radiovisual.akamaized.net/hls/live/2035302/persidera/master.m3u8"
+          },
+          "candidates": [
+            {
+              "playlist_channel": {
+                "name": "Radio24-IlSole24OreTV",
+                "tvg_id": "Radio24TV.it",
+                "tvg_name": "Radio24-IlSole24OreTV",
+                "stream_url": "https://ilsole24ore-radiovisual.akamaized.net/hls/live/2035302/persidera/master.m3u8",
+                "source_id": "discovery_github_262d94aa12c6128d"
+              },
+              "epg_channel": {
+                "channel_id": "Radio Italia TV HD.it",
+                "display_names": [
+                  "Radio Italia TV HD.it"
+                ],
+                "icon_url": "",
+                "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz"
+              },
+              "score": 90.0,
+              "method": "similarity",
+              "playlist_key": "radio24tvit",
+              "epg_key": "radiotvit"
+            },
+            {
+              "playlist_channel": {
+                "name": "Radio24-IlSole24OreTV",
+                "tvg_id": "Radio24TV.it",
+                "tvg_name": "Radio24-IlSole24OreTV",
+                "stream_url": "https://ilsole24ore-radiovisual.akamaized.net/hls/live/2035302/persidera/master.m3u8",
+                "source_id": "discovery_github_262d94aa12c6128d"
+              },
+              "epg_channel": {
+                "channel_id": "Radio Italia Tv.it",
+                "display_names": [
+                  "Radio Italia Tv.it"
+                ],
+                "icon_url": "",
+                "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy2.xml.gz"
+              },
+              "score": 90.0,
+              "method": "similarity",
+              "playlist_key": "radio24tvit",
+              "epg_key": "radiotvit"
+            }
+          ]
+        },
+        {
+          "playlist_channel": {
+            "name": "RadioFreccia",
+            "tvg_id": "RadioFrecciaTV.it",
+            "tvg_name": "RadioFreccia",
+            "stream_url": "https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S3160845/0tuSetc8UFkF/playlist.m3u8"
+          },
+          "candidates": [
+            {
+              "playlist_channel": {
+                "name": "RadioFreccia",
+                "tvg_id": "RadioFrecciaTV.it",
+                "tvg_name": "RadioFreccia",
+                "stream_url": "https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S3160845/0tuSetc8UFkF/playlist.m3u8",
+                "source_id": "discovery_github_262d94aa12c6128d"
+              },
+              "epg_channel": {
+                "channel_id": "Radio Freccia.it",
+                "display_names": [
+                  "Radio Freccia.it"
+                ],
+                "icon_url": "",
+                "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy2.xml.gz"
+              },
+              "score": 100.0,
+              "method": "similarity",
+              "playlist_key": "radiofreccia",
+              "epg_key": "radiofreccia"
+            },
+            {
+              "playlist_channel": {
+                "name": "RadioFreccia",
+                "tvg_id": "RadioFrecciaTV.it",
+                "tvg_name": "RadioFreccia",
+                "stream_url": "https://dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S3160845/0tuSetc8UFkF/playlist.m3u8",
+                "source_id": "discovery_github_262d94aa12c6128d"
+              },
+              "epg_channel": {
+                "channel_id": "RADIOFRECCIA HD.it",
+                "display_names": [
+                  "RADIOFRECCIA HD.it"
+                ],
+                "icon_url": "",
+                "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz"
+              },
+              "score": 100.0,
+              "method": "similarity",
+              "playlist_key": "radiofreccia",
+              "epg_key": "radiofreccia"
+            }
+          ]
+        },
+        {
+          "playlist_channel": {
+            "name": "RadioItaliaTV",
+            "tvg_id": "RadioItaliaTV.it",
+            "tvg_name": "RadioItaliaTV",
+            "stream_url": "https://radioitaliatv.akamaized.net/hls/live/2093117/RadioitaliaTV/master.m3u8"
+          },
+          "candidates": [
+            {
+              "playlist_channel": {
+                "name": "RadioItaliaTV",
+                "tvg_id": "RadioItaliaTV.it",
+                "tvg_name": "RadioItaliaTV",
+                "stream_url": "https://radioitaliatv.akamaized.net/hls/live/2093117/RadioitaliaTV/master.m3u8",
+                "source_id": "discovery_github_262d94aa12c6128d"
+              },
+              "epg_channel": {
+                "channel_id": "Radio Italia TV HD.it",
+                "display_names": [
+                  "Radio Italia TV HD.it"
+                ],
+                "icon_url": "",
+                "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz"
+              },
+              "score": 97.0,
+              "method": "normalized_tvg_id",
+              "playlist_key": "radioitaliatvit",
+              "epg_key": "radioitaliatvit"
+            },
+            {
+              "playlist_channel": {
+                "name": "RadioItaliaTV",
+                "tvg_id": "RadioItaliaTV.it",
+                "tvg_name": "RadioItaliaTV",
+                "stream_url": "https://radioitaliatv.akamaized.net/hls/live/2093117/RadioitaliaTV/master.m3u8",
+                "source_id": "discovery_github_262d94aa12c6128d"
+              },
+              "epg_channel": {
+                "channel_id": "Radio Italia Tv.it",
+                "display_names": [
+                  "Radio Italia Tv.it"
+                ],
+                "icon_url": "",
+                "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy2.xml.gz"
+              },
+              "score": 97.0,
+              "method": "normalized_tvg_id",
+              "playlist_key": "radioitaliatvit",
+              "epg_key": "radioitaliatvit"
             }
           ]
         },
@@ -3108,8 +5616,8 @@
                 "icon_url": "",
                 "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz"
               },
-              "score": 92.0,
-              "method": "exact_name",
+              "score": 100.0,
+              "method": "similarity",
               "playlist_key": "gamberorosso",
               "epg_key": "gamberorosso"
             },
@@ -3129,8 +5637,8 @@
                 "icon_url": "",
                 "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy2.xml.gz"
               },
-              "score": 92.0,
-              "method": "exact_name",
+              "score": 100.0,
+              "method": "similarity",
               "playlist_key": "gamberorosso",
               "epg_key": "gamberorosso"
             }
@@ -3162,8 +5670,8 @@
               },
               "score": 97.0,
               "method": "normalized_tvg_id",
-              "playlist_key": "cine34",
-              "epg_key": "cine34"
+              "playlist_key": "cine34it",
+              "epg_key": "cine34it"
             },
             {
               "playlist_channel": {
@@ -3183,8 +5691,8 @@
               },
               "score": 97.0,
               "method": "normalized_tvg_id",
-              "playlist_key": "cine34",
-              "epg_key": "cine34"
+              "playlist_key": "cine34it",
+              "epg_key": "cine34it"
             }
           ]
         },
@@ -3214,8 +5722,8 @@
               },
               "score": 97.0,
               "method": "normalized_tvg_id",
-              "playlist_key": "twentyseven",
-              "epg_key": "twentyseven"
+              "playlist_key": "twentysevenit",
+              "epg_key": "twentysevenit"
             },
             {
               "playlist_channel": {
@@ -3235,8 +5743,8 @@
               },
               "score": 97.0,
               "method": "normalized_tvg_id",
-              "playlist_key": "twentyseven",
-              "epg_key": "twentyseven"
+              "playlist_key": "twentysevenit",
+              "epg_key": "twentysevenit"
             }
           ]
         },
@@ -3264,10 +5772,10 @@
                 "icon_url": "",
                 "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz"
               },
-              "score": 87.5,
+              "score": 90.0,
               "method": "similarity",
-              "playlist_key": "51radiotv",
-              "epg_key": "radiotv"
+              "playlist_key": "51radiotvit",
+              "epg_key": "radiotvit"
             },
             {
               "playlist_channel": {
@@ -3285,10 +5793,10 @@
                 "icon_url": "",
                 "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy2.xml.gz"
               },
-              "score": 87.5,
+              "score": 90.0,
               "method": "similarity",
-              "playlist_key": "51radiotv",
-              "epg_key": "radiotv"
+              "playlist_key": "51radiotvit",
+              "epg_key": "radiotvit"
             }
           ]
         },
@@ -3318,8 +5826,8 @@
               },
               "score": 97.0,
               "method": "normalized_tvg_id",
-              "playlist_key": "radiofreccia",
-              "epg_key": "radiofreccia"
+              "playlist_key": "radiofrecciait",
+              "epg_key": "radiofrecciait"
             },
             {
               "playlist_channel": {
@@ -3339,8 +5847,8 @@
               },
               "score": 97.0,
               "method": "normalized_tvg_id",
-              "playlist_key": "radiofreccia",
-              "epg_key": "radiofreccia"
+              "playlist_key": "radiofrecciait",
+              "epg_key": "radiofrecciait"
             }
           ]
         },
@@ -3368,9 +5876,9 @@
                 "icon_url": "",
                 "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz"
               },
-              "score": 87.5,
+              "score": 100.0,
               "method": "similarity",
-              "playlist_key": "rtl1025tv",
+              "playlist_key": "rtl1025",
               "epg_key": "rtl1025"
             },
             {
@@ -3389,9 +5897,9 @@
                 "icon_url": "",
                 "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy2.xml.gz"
               },
-              "score": 87.5,
+              "score": 100.0,
               "method": "similarity",
-              "playlist_key": "rtl1025tv",
+              "playlist_key": "rtl1025",
               "epg_key": "rtl1025"
             }
           ]
@@ -3422,8 +5930,8 @@
               },
               "score": 97.0,
               "method": "normalized_tvg_id",
-              "playlist_key": "tgcom24",
-              "epg_key": "tgcom24"
+              "playlist_key": "tgcom24it",
+              "epg_key": "tgcom24it"
             },
             {
               "playlist_channel": {
@@ -3443,8 +5951,8 @@
               },
               "score": 97.0,
               "method": "normalized_tvg_id",
-              "playlist_key": "tgcom24",
-              "epg_key": "tgcom24"
+              "playlist_key": "tgcom24it",
+              "epg_key": "tgcom24it"
             }
           ]
         },
@@ -3474,8 +5982,8 @@
               },
               "score": 97.0,
               "method": "normalized_tvg_id",
-              "playlist_key": "tv2000",
-              "epg_key": "tv2000"
+              "playlist_key": "tv2000it",
+              "epg_key": "tv2000it"
             },
             {
               "playlist_channel": {
@@ -3495,8 +6003,8 @@
               },
               "score": 97.0,
               "method": "normalized_tvg_id",
-              "playlist_key": "tv2000",
-              "epg_key": "tv2000"
+              "playlist_key": "tv2000it",
+              "epg_key": "tv2000it"
             },
             {
               "playlist_channel": {
@@ -3516,8 +6024,8 @@
               },
               "score": 97.0,
               "method": "normalized_tvg_id",
-              "playlist_key": "tv2000",
-              "epg_key": "tv2000"
+              "playlist_key": "tv2000it",
+              "epg_key": "tv2000it"
             }
           ]
         },
@@ -3540,16 +6048,15 @@
               "epg_channel": {
                 "channel_id": "Top Crime.it",
                 "display_names": [
-                  "Top Crime.it",
-                  "TOP Crime.it"
+                  "Top Crime.it"
                 ],
                 "icon_url": "",
                 "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy2.xml.gz"
               },
               "score": 97.0,
               "method": "normalized_tvg_id",
-              "playlist_key": "topcrime",
-              "epg_key": "topcrime"
+              "playlist_key": "topcrimeit",
+              "epg_key": "topcrimeit"
             },
             {
               "playlist_channel": {
@@ -3569,8 +6076,8 @@
               },
               "score": 97.0,
               "method": "normalized_tvg_id",
-              "playlist_key": "topcrime",
-              "epg_key": "topcrime"
+              "playlist_key": "topcrimeit",
+              "epg_key": "topcrimeit"
             }
           ]
         },
@@ -3600,8 +6107,8 @@
               },
               "score": 97.0,
               "method": "normalized_tvg_id",
-              "playlist_key": "supertennis",
-              "epg_key": "supertennis"
+              "playlist_key": "supertennisit",
+              "epg_key": "supertennisit"
             },
             {
               "playlist_channel": {
@@ -3621,8 +6128,112 @@
               },
               "score": 97.0,
               "method": "normalized_tvg_id",
-              "playlist_key": "supertennis",
-              "epg_key": "supertennis"
+              "playlist_key": "supertennisit",
+              "epg_key": "supertennisit"
+            }
+          ]
+        },
+        {
+          "playlist_channel": {
+            "name": "Canale 8 (480p)",
+            "tvg_id": "Canale8.it@SD",
+            "tvg_name": "",
+            "stream_url": "http://wms.shared.streamshow.it/canale8/canale8/playlist.m3u8"
+          },
+          "candidates": [
+            {
+              "playlist_channel": {
+                "name": "Canale 8 (480p)",
+                "tvg_id": "Canale8.it@SD",
+                "tvg_name": "",
+                "stream_url": "http://wms.shared.streamshow.it/canale8/canale8/playlist.m3u8",
+                "source_id": "discovery_iptv_org_language_ita"
+              },
+              "epg_channel": {
+                "channel_id": "Canale 5 HD.it",
+                "display_names": [
+                  "Canale 5 HD.it"
+                ],
+                "icon_url": "",
+                "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz"
+              },
+              "score": 88.89,
+              "method": "similarity",
+              "playlist_key": "canale8it",
+              "epg_key": "canale5it"
+            },
+            {
+              "playlist_channel": {
+                "name": "Canale 8 (480p)",
+                "tvg_id": "Canale8.it@SD",
+                "tvg_name": "",
+                "stream_url": "http://wms.shared.streamshow.it/canale8/canale8/playlist.m3u8",
+                "source_id": "discovery_iptv_org_language_ita"
+              },
+              "epg_channel": {
+                "channel_id": "Canale 5.it",
+                "display_names": [
+                  "Canale 5.it"
+                ],
+                "icon_url": "",
+                "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy2.xml.gz"
+              },
+              "score": 88.89,
+              "method": "similarity",
+              "playlist_key": "canale8it",
+              "epg_key": "canale5it"
+            }
+          ]
+        },
+        {
+          "playlist_channel": {
+            "name": "Italia 2 TV (480p) [Geo-blocked]",
+            "tvg_id": "Italia2TV.it@SD",
+            "tvg_name": "",
+            "stream_url": "http://wms.shared.streamshow.it/italia2/mp4:italia2/playlist.m3u8"
+          },
+          "candidates": [
+            {
+              "playlist_channel": {
+                "name": "Italia 2 TV (480p) [Geo-blocked]",
+                "tvg_id": "Italia2TV.it@SD",
+                "tvg_name": "",
+                "stream_url": "http://wms.shared.streamshow.it/italia2/mp4:italia2/playlist.m3u8",
+                "source_id": "discovery_iptv_org_language_ita"
+              },
+              "epg_channel": {
+                "channel_id": "Italia 2.it",
+                "display_names": [
+                  "Italia 2.it"
+                ],
+                "icon_url": "",
+                "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy2.xml.gz"
+              },
+              "score": 100.0,
+              "method": "similarity",
+              "playlist_key": "italia2",
+              "epg_key": "italia2"
+            },
+            {
+              "playlist_channel": {
+                "name": "Italia 2 TV (480p) [Geo-blocked]",
+                "tvg_id": "Italia2TV.it@SD",
+                "tvg_name": "",
+                "stream_url": "http://wms.shared.streamshow.it/italia2/mp4:italia2/playlist.m3u8",
+                "source_id": "discovery_iptv_org_language_ita"
+              },
+              "epg_channel": {
+                "channel_id": "Mediaset Italia2 HD.it",
+                "display_names": [
+                  "Mediaset Italia2 HD.it"
+                ],
+                "icon_url": "",
+                "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz"
+              },
+              "score": 100.0,
+              "method": "similarity",
+              "playlist_key": "italia2",
+              "epg_key": "italia2"
             }
           ]
         },
@@ -3650,10 +6261,10 @@
                 "icon_url": "",
                 "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz"
               },
-              "score": 87.5,
+              "score": 90.0,
               "method": "similarity",
-              "playlist_key": "radio51tv",
-              "epg_key": "radiotv"
+              "playlist_key": "radio51tvit",
+              "epg_key": "radiotvit"
             },
             {
               "playlist_channel": {
@@ -3671,10 +6282,10 @@
                 "icon_url": "",
                 "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy2.xml.gz"
               },
-              "score": 87.5,
+              "score": 90.0,
               "method": "similarity",
-              "playlist_key": "radio51tv",
-              "epg_key": "radiotv"
+              "playlist_key": "radio51tvit",
+              "epg_key": "radiotvit"
             }
           ]
         },
@@ -3704,8 +6315,8 @@
               },
               "score": 97.0,
               "method": "normalized_tvg_id",
-              "playlist_key": "rai1",
-              "epg_key": "rai1"
+              "playlist_key": "rai1it",
+              "epg_key": "rai1it"
             },
             {
               "playlist_channel": {
@@ -3725,8 +6336,8 @@
               },
               "score": 97.0,
               "method": "normalized_tvg_id",
-              "playlist_key": "rai1",
-              "epg_key": "rai1"
+              "playlist_key": "rai1it",
+              "epg_key": "rai1it"
             }
           ]
         },
@@ -3756,8 +6367,8 @@
               },
               "score": 97.0,
               "method": "normalized_tvg_id",
-              "playlist_key": "rai2",
-              "epg_key": "rai2"
+              "playlist_key": "rai2it",
+              "epg_key": "rai2it"
             },
             {
               "playlist_channel": {
@@ -3777,8 +6388,8 @@
               },
               "score": 97.0,
               "method": "normalized_tvg_id",
-              "playlist_key": "rai2",
-              "epg_key": "rai2"
+              "playlist_key": "rai2it",
+              "epg_key": "rai2it"
             }
           ]
         },
@@ -3808,8 +6419,8 @@
               },
               "score": 97.0,
               "method": "normalized_tvg_id",
-              "playlist_key": "rai3",
-              "epg_key": "rai3"
+              "playlist_key": "rai3it",
+              "epg_key": "rai3it"
             },
             {
               "playlist_channel": {
@@ -3829,8 +6440,8 @@
               },
               "score": 97.0,
               "method": "normalized_tvg_id",
-              "playlist_key": "rai3",
-              "epg_key": "rai3"
+              "playlist_key": "rai3it",
+              "epg_key": "rai3it"
             }
           ]
         },
@@ -3860,8 +6471,8 @@
               },
               "score": 97.0,
               "method": "normalized_tvg_id",
-              "playlist_key": "rete4",
-              "epg_key": "rete4"
+              "playlist_key": "rete4it",
+              "epg_key": "rete4it"
             },
             {
               "playlist_channel": {
@@ -3881,8 +6492,8 @@
               },
               "score": 97.0,
               "method": "normalized_tvg_id",
-              "playlist_key": "rete4",
-              "epg_key": "rete4"
+              "playlist_key": "rete4it",
+              "epg_key": "rete4it"
             }
           ]
         }
@@ -3976,28 +6587,30 @@
       }
     ],
     "output_channel_ids": [
-      "20.it",
       "ACI Sport Tv.it",
+      "Canale 20.it",
+      "Cartoon Network.it",
       "Class CNBC.it",
       "Deejay TV.it",
       "Euronews.it",
       "Horse TV HD.it",
-      "Italia 2.it",
       "Mediaset Italia2 HD.it",
+      "Nickelodeon.it",
       "QVC.it",
+      "Radio Italia Trend Tv HD.it",
       "Radio Monte Carlo.it",
       "RADIONORBA TV.it",
       "Rai 4.it",
       "Rai Gulp.it",
       "Rai Movie.it",
-      "Rai News 24.it",
       "Rai Premium.it",
       "Rai Scuola.it",
       "Rai Storia.it",
       "Rai Yoyo.it",
       "San Marino RTV.it",
       "Super!.it",
-      "VALUE 24 TV.it"
+      "VALUE 24 TV.it",
+      "Virgin Radio.it"
     ]
   }
 }
