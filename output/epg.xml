@@ -3,6 +3,9 @@
   <channel id="ACI Sport Tv.it">
     <display-name>ACI Sport Tv.it</display-name>
   </channel>
+  <channel id="Canale 20.it">
+    <display-name>Canale 20.it</display-name>
+  </channel>
   <channel id="Class CNBC.it">
     <display-name>Class CNBC.it</display-name>
   </channel>
@@ -21,6 +24,9 @@
   <channel id="QVC.it">
     <display-name>QVC.it</display-name>
   </channel>
+  <channel id="Radio Italia Trend Tv HD.it">
+    <display-name>Radio Italia Trend Tv HD.it</display-name>
+  </channel>
   <channel id="Radio Monte Carlo.it">
     <display-name>Radio Monte Carlo.it</display-name>
   </channel>
@@ -33,11 +39,11 @@
   <channel id="Rai Gulp.it">
     <display-name>Rai Gulp.it</display-name>
   </channel>
-  <channel id="Rai Movie.it">
-    <display-name>Rai Movie.it</display-name>
-  </channel>
   <channel id="Rai News 24.it">
     <display-name>Rai News 24.it</display-name>
+  </channel>
+  <channel id="Rai Premium.it">
+    <display-name>Rai Premium.it</display-name>
   </channel>
   <channel id="Rai Scuola.it">
     <display-name>Rai Scuola.it</display-name>
@@ -45,14 +51,14 @@
   <channel id="Rai Storia.it">
     <display-name>Rai Storia.it</display-name>
   </channel>
-  <channel id="San Marino RTV.it">
-    <display-name>San Marino RTV.it</display-name>
-  </channel>
   <channel id="Super!.it">
     <display-name>Super!.it</display-name>
   </channel>
   <channel id="VALUE 24 TV.it">
     <display-name>VALUE 24 TV.it</display-name>
+  </channel>
+  <channel id="Virgin Radio.it">
+    <display-name>Virgin Radio.it</display-name>
   </channel>
   <programme channel="ACI Sport Tv.it" start="20251231031041 +0000" stop="20251231033141 +0000">
     <title>Ruote nella Storia</title>
@@ -197,6 +203,446 @@
     <title>ELMS - 4 h of Imola</title>
     <sub-title>4 h of Imola</sub-title>
     <desc>Round 3 - Il classico circuito di 4,909 km dellAutodromo Internazionale Enzo e Dino Ferrari ospita team e piloti ELMS</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251202050500 +0000" stop="20251202053000 +0000">
+    <title>Show Reel</title>
+    <desc>Trailer e anticipazioni in onda sulla rete.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251202053000 +0000" stop="20251202061000 +0000">
+    <title>Manifest</title>
+    <sub-title>La Piuma</sub-title>
+    <desc>Dopo ore dinterrogatorio, tutte le accuse contro Vance vengono ritirate e gli viene proposto di rientrare nellNSA: inizialmente titubante, alla fine Vance accetta. Glen muore per un attacco cardiaco e lascia un DVD in cui annuncia di aver dato disposizioni per far si che Beverly vada in una struttura privata e Michaela erediti la loro casa. Lei pero non se la sente di mandare via Beverly, percio decide di trasferirsi li con Zeke e di prendersene cura.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251202061000 +0000" stop="20251202065500 +0000">
+    <title>Manifest</title>
+    <sub-title>Countdown</sub-title>
+    <desc>Ben vuole scoprire lorigine dello strano fenomeno che fa brillare la sua mano da quando ha toccato la deriva del volo 828. In compagnia di Saanvi, si reca al centro di ricerca diretto da Vance dove e conservata la carcassa dellaereo che un gruppo di scienziati sta analizzando.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251202065500 +0000" stop="20251202075000 +0000">
+    <title>The Cleaning Lady</title>
+    <sub-title>La Ghiacciaia</sub-title>
+    <desc>Durante la pulizia di un party bus, la situazione volge al peggio e Garrett mette Thony in una posizione pericolosa. Thony deve scegliere tra restare fedele a Arman e salvare Fiona dallespulsione. Intanto Arman, dopo tutta la fatica per garantire a Hayak nuovi affari, viene messo allangolo quando il capo gli preferisce sua figlia.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251202075000 +0000" stop="20251202085000 +0000">
+    <title>The Cleaning Lady</title>
+    <sub-title>La Missione Della Madre</sub-title>
+    <desc>Dopo la retata dellimmigrazione, a causa delle bugie di Thony i rapporti tra lei e Fiona restano tesi. Arman sfrutta il rapporto di Thony con Garrett per fornire informazioni allFBI. Intanto le condizioni di Luca peggiorano e Thony deve decidere se lavorare per Madre Donna (guest star Betty Buckley), che potrebbe essere una potenziale risorsa per un trapianto di fegato.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251202085000 +0000" stop="20251202091500 +0000">
+    <title>The Big Bang Theory</title>
+    <sub-title>Lapprossimazione di Einstein</sub-title>
+    <desc>Per risolvere un problema di fisica, Sheldon finisce per lavorare alla Cheescake Factory con Penny.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251202091500 +0000" stop="20251202094500 +0000">
+    <title>The Big Bang Theory</title>
+    <sub-title>La grande collisione degli Adroni</sub-title>
+    <desc>Leonard deve fare una scelta difficile tra Penny e Sheldon per decidere chi dei due lo accompagnerà in Svizzera per una mostra scientifica il giorno di San Valentino.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251202094500 +0000" stop="20251202104500 +0000">
+    <title>The Flash</title>
+    <sub-title>I nuovi nemici</sub-title>
+    <desc>Tre anni prima: Leonard Snart è alle prese con Sam Scudder, un suo complice che però gli è dintralcio dato che con il suo modo di fare attira troppo lattenzione, quindi Snart decide di uccidere sia lui che la fidanzata Rosalind. Dopo una colluttazione Snart spinge Scudder contro uno specchio frantumandolo ma in quel momento lacceleratore di particelle degli S.T.A.R. Labs esplode e la materia oscura colpisce Rosalind e Scudder: questultimo scompare mentre Snart scappa. Dopo tre anni lo specchio viene riaggiustato e Scudder ne esce, infatti era intrappolato lì.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251202104500 +0000" stop="20251202113500 +0000">
+    <title>The Flash</title>
+    <sub-title>Il Mostro</sub-title>
+    <desc>Barry, che non ha ancora trovato casa, si sistema temporaneamente da Cisco, inoltre ha un richiamo disciplinare da parte di Julian per via dei suoi ritardi, dei lavori lasciati a metà, e delle continue violazioni ai regolamenti, ma il capitano Singh decide di passarci sopra facendo però tenere presente a Barry che deve rispettare anche lui le regole. Un mostro gigante si aggira per le strade di Central City, poi ad un tratto scompare. Barry e la squadra indagano sulla faccenda e scoprono che al passaggio della creatura i trasformatori esplodevano, ciò significa che si nutre di elettricità.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251202113500 +0000" stop="20251202123500 +0000">
+    <title>Chicago Fire</title>
+    <sub-title>Dove Finiremo</sub-title>
+    <desc>A causa di uninfestazione di cimici, l?intera Caserma deve trasferirsi alla Venti e la situazione si fa subito esplosiva.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251202123500 +0000" stop="20251202133500 +0000">
+    <title>Manifest</title>
+    <sub-title>La Piuma</sub-title>
+    <desc>Dopo ore dinterrogatorio, tutte le accuse contro Vance vengono ritirate e gli viene proposto di rientrare nellNSA: inizialmente titubante, alla fine Vance accetta. Glen muore per un attacco cardiaco e lascia un DVD in cui annuncia di aver dato disposizioni per far si che Beverly vada in una struttura privata e Michaela erediti la loro casa. Lei pero non se la sente di mandare via Beverly, percio decide di trasferirsi li con Zeke e di prendersene cura.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251202133500 +0000" stop="20251202143500 +0000">
+    <title>Manifest</title>
+    <sub-title>Countdown</sub-title>
+    <desc>Ben vuole scoprire lorigine dello strano fenomeno che fa brillare la sua mano da quando ha toccato la deriva del volo 828. In compagnia di Saanvi, si reca al centro di ricerca diretto da Vance dove e conservata la carcassa dellaereo che un gruppo di scienziati sta analizzando.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251202143500 +0000" stop="20251202153500 +0000">
+    <title>The Cleaning Lady</title>
+    <sub-title>La Ghiacciaia</sub-title>
+    <desc>Durante la pulizia di un party bus, la situazione volge al peggio e Garrett mette Thony in una posizione pericolosa. Thony deve scegliere tra restare fedele a Arman e salvare Fiona dallespulsione. Intanto Arman, dopo tutta la fatica per garantire a Hayak nuovi affari, viene messo allangolo quando il capo gli preferisce sua figlia.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251202153500 +0000" stop="20251202163500 +0000">
+    <title>The Cleaning Lady</title>
+    <sub-title>La Missione Della Madre</sub-title>
+    <desc>Dopo la retata dellimmigrazione, a causa delle bugie di Thony i rapporti tra lei e Fiona restano tesi. Arman sfrutta il rapporto di Thony con Garrett per fornire informazioni allFBI. Intanto le condizioni di Luca peggiorano e Thony deve decidere se lavorare per Madre Donna (guest star Betty Buckley), che potrebbe essere una potenziale risorsa per un trapianto di fegato.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251202163500 +0000" stop="20251202173000 +0000">
+    <title>The Flash</title>
+    <sub-title>I nuovi nemici</sub-title>
+    <desc>Tre anni prima: Leonard Snart è alle prese con Sam Scudder, un suo complice che però gli è dintralcio dato che con il suo modo di fare attira troppo lattenzione, quindi Snart decide di uccidere sia lui che la fidanzata Rosalind. Dopo una colluttazione Snart spinge Scudder contro uno specchio frantumandolo ma in quel momento lacceleratore di particelle degli S.T.A.R. Labs esplode e la materia oscura colpisce Rosalind e Scudder: questultimo scompare mentre Snart scappa. Dopo tre anni lo specchio viene riaggiustato e Scudder ne esce, infatti era intrappolato lì.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251202173000 +0000" stop="20251202182500 +0000">
+    <title>The Flash</title>
+    <sub-title>Il Mostro</sub-title>
+    <desc>Barry, che non ha ancora trovato casa, si sistema temporaneamente da Cisco, inoltre ha un richiamo disciplinare da parte di Julian per via dei suoi ritardi, dei lavori lasciati a metà, e delle continue violazioni ai regolamenti, ma il capitano Singh decide di passarci sopra facendo però tenere presente a Barry che deve rispettare anche lui le regole. Un mostro gigante si aggira per le strade di Central City, poi ad un tratto scompare. Barry e la squadra indagano sulla faccenda e scoprono che al passaggio della creatura i trasformatori esplodevano, ciò significa che si nutre di elettricità.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251202182500 +0000" stop="20251202191500 +0000">
+    <title>Chicago Fire</title>
+    <sub-title>Dove Finiremo</sub-title>
+    <desc>A causa di uninfestazione di cimici, l?intera Caserma deve trasferirsi alla Venti e la situazione si fa subito esplosiva.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251202191500 +0000" stop="20251202194000 +0000">
+    <title>The Big Bang Theory</title>
+    <sub-title>Lapprossimazione di Einstein</sub-title>
+    <desc>Per risolvere un problema di fisica, Sheldon finisce per lavorare alla Cheescake Factory con Penny.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251202194000 +0000" stop="20251202201000 +0000">
+    <title>The Big Bang Theory</title>
+    <sub-title>La grande collisione degli Adroni</sub-title>
+    <desc>Leonard deve fare una scelta difficile tra Penny e Sheldon per decidere chi dei due lo accompagnerà in Svizzera per una mostra scientifica il giorno di San Valentino.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251202201000 +0000" stop="20251202230000 +0000">
+    <title>Red Sparrow</title>
+    <desc>La prima ballerina del Bolshoi, Dominika Egorova ha una madre sola e ammalata, di cui si prende cura con affetto e devozione. Un brutto incidente interrompe improvvisamente la sua carriera sulle punte, minacciando la sussistenza economica della madre. Dominika, incalzata dallo zio Vanja, potente vicedirettore del SVR, diventa una Sparrow: unagente pronta a tutto, unarma di seduzione letale. Dentro di se, però, la ragazza disprezza i metodi del governo e coltiva un piano segreto.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251202230000 +0000" stop="20251203013000 +0000">
+    <title>Attacco al potere</title>
+    <desc>Nellindagare su una serie di sanguinosi attentati terroristici, eseguiti da fondamentalisti islamici negli Stati Uniti, Hubbard, vicedirettore dellFBI, scopre che hanno lo scopo di far liberare un capo religioso della setta, rapito in Medio Oriente dalla CIA per ordine del generale Deveraux. Intanto il panico si diffonde, lo stato demergenza è dichiarato, lesercito ha pieni potere e perseguita tutti gli islamici, internandoli in campi. Contro la dittatura militare insorgono le forze liberal del paese.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251203013000 +0000" stop="20251203021000 +0000">
+    <title>Supergirl</title>
+    <sub-title>Gli ultimi figli di Krypton</sub-title>
+    <desc>Kara e Clark continuano a lavorare insieme a National City, divertendosi, fino a che Clark rivela alla cugina che adesso deve tornare a Metropolis; Kara ci rimane male visto che Clark è lunico con cui si sente a casa.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251203021000 +0000" stop="20251203025000 +0000">
+    <title>Supergirl</title>
+    <sub-title>Benvenuti sulla terra</sub-title>
+    <desc>Il misterioso kryptoniano, dopo essersi risvegliato, aggredisce Kara e gli agenti del DEO, per poi scappare via. National City aspetta con emozione larrivo della presidentessa degli Stati Uniti, giunta per firmare un decreto di amnistia per gli alieni visitatori.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251203025000 +0000" stop="20251203034000 +0000">
+    <title>Show Reel</title>
+    <desc>Trailer e anticipazioni in onda sulla rete.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251203034000 +0000" stop="20251203042000 +0000">
+    <title>Arrow</title>
+    <sub-title>Le colpe del padre</sub-title>
+    <desc>Nyssa consegnerà a Oliver lelisir per salvare Thea a una condizione: che lui uccida Malcolm Merlyn. Oliver cerca di risolvere la questione diplomaticamente, ma Merlyn non vuole scendere a compromessi. A questo punto Oliver è costretto a ricorrere a uno stratagemma: convince Malcolm a duellare contro Nyssa, ma alla fine sarà lui a combattere al posto della donna. Così, dopo aver sconfitto Malcolm, consegna a Nyssa lanello del Demonio e ottiene il Loto. Ma Malcolm ha intenzione di vendicarsi di questo tradimento.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251203042000 +0000" stop="20251203050000 +0000">
+    <title>Arrow</title>
+    <sub-title>Il codice del silenzio</sub-title>
+    <desc>Il team Arrow scopre il piano dellH.I.V.E. per eliminarli una volta per tutte. Lance pensa che forse Donna starebbe meglio senza di lui. Oliver considera la possibilità di dire a Felicity la verità su suo figlio.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251228051500 +0000" stop="20251228055500 +0000">
+    <title>The Flash</title>
+    <sub-title>Luomo nucleare</sub-title>
+    <desc>Quando Ronnie attacca un fisico, il team di Barry decide di fermare il fidanzato di Caitlin, soprattutto ora che è un metaumano. Per rintracciarlo Allen indaga sul dottor Martin Stein e sul suo progetto segreto, Firestorm, sforzandosi di dividere il tempo come Flash con la sua relazione con Linda Park. Martin Stein, nel corpo di Ronny, decide di farsi aiutare; dopo alcuni test il dottor Wells capisce che gli atomi di Stein stanno lottando contro quelli di Ronny, in pochissimo tempo i due causeranno unesplosione termonucleare che distruggerà la città.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251228055500 +0000" stop="20251228064000 +0000">
+    <title>The Flash</title>
+    <sub-title>Gorilla Grodd</sub-title>
+    <desc>Dopo che lesplosione nucleare separa Ronnie e il dottor Stein, Barry e la squadra credono che entrambi gli uomini siano al sicuro. Caitlin è entusiasta di avere il suo fidanzato indietro e si prepara a riprendere la loro vita insieme, mentre il dottor Stein ritorna da sua moglie. Quando il generale Eiling rivolge le sue attenzioni su Firestorm, Ronnie e il dottor Stein devono decidere se sono più al sicuro insieme o separatamente.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251228064000 +0000" stop="20251228073500 +0000">
+    <title>The Flash</title>
+    <sub-title>Il mago del tempo</sub-title>
+    <desc>Lepisodio comincia con un evento di un anno prima, alla fattoria quando Clyde Mardon spara al collega di Joe West. Si scopre che a pilotare laereo era il fratello Mark Mardon, e si vede che entrambi vengono colpiti dalla nuvola generata dallacceleratore di particelle. Oggi. Barry e Linda sono al bowling per un appuntamento quando incontrano Iris e Eddie, i quali chiedono di restare e di fare una partita tutti assieme, durante la partita Eddie e Linda si accorgono che tra Barry e Iris cè qualcosa ma non dicono nulla.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251228073500 +0000" stop="20251228083500 +0000">
+    <title>Manifest</title>
+    <sub-title>Orizzonte Artificiale</sub-title>
+    <desc>Ben e Vance non hanno detto a Saanvi che viene spiata perche vogliono scoprire chi sia la talpa. Ma Ben glielo confessa.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251228083500 +0000" stop="20251228092500 +0000">
+    <title>Manifest</title>
+    <sub-title>Nelle Pieghe Del Tempo</sub-title>
+    <desc>La seconda stagione della serie televisiva Manifest, la serie che racconta di un misterioso volo scomparso per cinque anni e tornato improvvisamente senza che i passeggeri siano invecchiati. Una volta tornati, questi ultimi sono tormentati da delle cosiddette "chiamate", che operano a fin di bene attraverso di loro. In questo peisodio: Saanvi cerca in tutti i modi di mantenere segreta la sua particolare ricerca, nonostante venga controllata e spiata costantemente dal Maggiore.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251228092500 +0000" stop="20251228102500 +0000">
+    <title>Manifest</title>
+    <sub-title>Volo Coordinato</sub-title>
+    <desc>Un gruppo di teppisti fa irruzione nella chiesa di Adrian e distrugge tutto, mentre un camion va di proposito addosso allauto di Grace, che finisce in ospedale.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251228102500 +0000" stop="20251228112000 +0000">
+    <title>Manifest</title>
+    <sub-title>Viaggio Di Ritorno</sub-title>
+    <desc>TJ e Olive fanno ricerche approfondite sui tarocchi nella speranza di scoprire qualcosa di utile sulla data di morte; tra loro laffiatamento e lattrazione crescono.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251228112000 +0000" stop="20251228122000 +0000">
+    <title>Manifest</title>
+    <sub-title>Uscita DEmergenza</sub-title>
+    <desc>Olive e TJ vanno in un locale a divertirsi. Ben, per comprendere il significato di una chiamata che hanno avuto numerosi passeggeri, chiede ad Adrian dincontrarlo.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251228122000 +0000" stop="20251228132000 +0000">
+    <title>Manifest</title>
+    <sub-title>Il Canto Zen</sub-title>
+    <desc>Olive è ancora sconvolta dagli eventi avvenuti in discoteca. Dopo una riunione degli Xiani, Simon consiglia a Jared di tenere docchio Billy. Michaela e Drea spiano Jared mentre lascia il bar e bacia Tamara. Dopo che Drea si è infiltrata nel bar e ha parlato con Billy, Michaela scopre che Billy ha avuto dei precedenti. Ben sente una chiamata che lo porta in un centro di mediazione zen. Più tardi quando ritorna con Olive per tentare di farle superare la morte di TJ, un canto li conduce sottoterra..</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251228132000 +0000" stop="20251228142000 +0000">
+    <title>Manifest</title>
+    <sub-title>Il Drago DArgento</sub-title>
+    <desc>Zeke si rivolge a Saanvi che dice di aver trovato una cura per cancellare le chiamate e annullare la Data di Morte, ma la trova in uno stato confusionale.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251228142000 +0000" stop="20251228151500 +0000">
+    <title>Manifest</title>
+    <sub-title>Cambio Di Rotta</sub-title>
+    <desc>Con unoperazione tanto coraggiosa quanto rischiosa, Jared riesce a smascherare il gruppo di fanatici che vogliono eliminare i passeggeri dell828, e a salvare Zeke.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251228151500 +0000" stop="20251228161500 +0000">
+    <title>Manifest</title>
+    <sub-title>La Fenice</sub-title>
+    <desc>Zeke si cura con la terapia sperimentale di Saanvi, ma senza grossi risultati. Michela scopre per caso un grosso traffico di anfetamina.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251228161500 +0000" stop="20251228171500 +0000">
+    <title>Manifest</title>
+    <sub-title>Il Grande Giorno</sub-title>
+    <desc>Nel 2013 il volo 828 della Montego Air decolla dalla Jamaica, e, dopo un viaggio turbolento, ma di routine, atterra a New York. Per loro sono passate ore, ma nella realtà sono passati cinque anni e si ritrovano nel 2018. E tutto ciò che conoscevano è cambiato. ll resto del mondo li ha considerati dispersi - e presunti morti - per oltre cinque anni.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251228171500 +0000" stop="20251228181500 +0000">
+    <title>Manifest</title>
+    <sub-title>Il Lago Ghiacciato</sub-title>
+    <desc>Dopo il rapimento di Cal, Michaela decide di restituire la droga agli spacciatori perche venga liberato, ma qualcosa va storto.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251228181500 +0000" stop="20251228201000 +0000">
+    <title>Trespass - Sequestrati</title>
+    <desc>Quattro criminali si introducono nellabitazione del commerciante di diamanti Kyle Miller e la moglie Sarah. Il piano di Jonah con la complicità del fratello, della cognata e di un amico, è semplice: rubare in meno di un quarto dora tutto il denaro in contanti che trovano e fuggire subito via. Niente va come previsto e i coniugi e la figlia si ritrovano ostaggi. Le cose continuano a complicarsi man mano che vengono a galla una serie di conflitti familiari e i profondi dissapori che dividono i membri della banda...</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251228201000 +0000" stop="20251228223500 +0000">
+    <title>Bumblebee</title>
+    <desc>Sul pianeta Cybertron imperversa una cruenta guerra tra Decepticons e Autobots. I primi hanno la meglio e il leader dei secondi, Optimus Prime, organizza una missione di fuga verso la Terra, dove manda in avanscoperta Bumblebee. Latterraggio di Bumblebee sul nostro pianeta avviene nel 1987, riesce a sfuggire ai militari americani e si batte con un Decepticon. Ferito si trasforma in un maggiolino Volkswagen giallo e in questo stato finisce in unofficina, dove incontra Charlie, una ragazzina che ha perso il suo papà.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251228223500 +0000" stop="20251229005500 +0000">
+    <title>2 Fast 2 Furious</title>
+    <desc>Lagente Brian OConnor è un driver veloce come nessun altro in circolazione. La sua passione esasperata ha fatto sì che gli venisse ritirato il distintivo ma poi viene reclutato dallFBI per infiltrarsi in un giro clandestino di corsa automobilistiche organizzato dal boss di Miami, Carter Verone. Brian, supportato dallaltra infiltrata Monica, agisce sotto copertura fingendosi un criminale e per sventare anche un traffico di denaro sporco dovrà impegnarsi in duelli automobilistici mozzafiato, ad altissima velocità...</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251229005500 +0000" stop="20251229013500 +0000">
+    <title>Supergirl</title>
+    <sub-title>Pensiero Magico</sub-title>
+    <desc>Nyxly recupera il Totem dellUmanià ma viene inondata di sentimenti ed emozioni, che il totem ha sottratto alle persone circostanti. Queste, private della loro umanita, cominciano ad aggredire e devastare la citta indiscriminatamente. Lunica che puo contrastare leffetto del totem e Lena con la sua magia, ma lincantesimo scelto aumenta leffetto, peggiorando la situazione.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251229013500 +0000" stop="20251229021500 +0000">
+    <title>Supergirl</title>
+    <sub-title>Speranza Per Il Domani</sub-title>
+    <desc>La piccola Esmè è stata adottata da Kelly e Alex che la vogliono abituare da subito ad esplorare i suoi poteri, ma la bambina si sente sotto pressione e ha problemi ad accettare la sua nuova famiglia. Non potendo superare la sfida del Totem della Speranza, Nyxly rapisce William così da poter ricattare Supergirl, ma anche Supergirl non riesce a soddisfare la richiesta del Totem di portare speranza a tutto il mondo.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251229021500 +0000" stop="20251229025500 +0000">
+    <title>Show Reel</title>
+    <desc>Trailer e anticipazioni in onda sulla rete.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251229025500 +0000" stop="20251229033500 +0000">
+    <title>The Flash</title>
+    <sub-title>Lisa Snart</sub-title>
+    <desc>Lepisodio riprende con la scena in cui Barry era tornato indietro nel tempo. Cisco parla con Barry tramite lauricolare e gli dice di andare allobitorio, dove era stato ucciso il medico legale. Mentre è sulla scena del crimine, il ragazzo si rende conto di aver già vissuto quegli avvenimenti. Barry è confuso e solo il dottor Wells capisce che si comporta in modo strano. Il ragazzo gli spiega tutto e il dottore gli dice di rivivere la giornata esattamente come quella che aveva già vissuto.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251229033500 +0000" stop="20251229041500 +0000">
+    <title>The Flash</title>
+    <sub-title>Trickster</sub-title>
+    <desc>Lepisodio inizia con Barry e Joe che parlano di Wells. Joe, a causa del DNA che non corrisponde, è certo che non sia lAnti-Flash, ma è anche certo che sappia cosa accadde la notte dellomicidio di Nora Allen. Intanto, in un parco della città iniziano a piovere dei pacchetti regalo che, a contatto col suolo, esplodono. Poco dopo viene postato su internet il video di un uomo mascherato che si fa chiamare Trickster, il quale rivela di essere lautore dellattacco con le bombe.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251229041500 +0000" stop="20251229050000 +0000">
+    <title>The Flash</title>
+    <sub-title>Bug-eyed bandit</sub-title>
+    <desc>Una ragazza di nome Brie Larvin è stata cacciata dalla sua azienda per avere prodotto api tecnologiche a scopo militare. Barry la ferma grazie allaiuto di Felicity mentre Ray Palmer chiede aiuto a Cisco per modificare la propria tuta e renderla stabile. In un altro momento Iris litiga con il suo ragazzo perche lei crede che lui la tradisca, mentre la sta invece tenendo allo scuro dal segreto di Barry, così lei ritorna a vivere a casa del padre.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251229050000 +0000" stop="20251229053000 +0000">
+    <title>Show Reel</title>
+    <desc>Trailer e anticipazioni in onda sulla rete.</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251231050000 +0000" stop="20251231055000 +0000">
+    <title>Gennaio</title>
+    <desc>Show reel 26</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251231055045 +0000" stop="20251231060745 +0000">
+    <title>Sulla panchina di un defunto</title>
+    <desc>S2 Ep1 Sulla panchina...</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251231060839 +0000" stop="20251231065239 +0000">
+    <title>Ep. 20 - Kara</title>
+    <desc>Kara - S6 Ep20 Kara</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251231065332 +0000" stop="20251231074032 +0000">
+    <title>Nascita di una leggenda</title>
+    <desc>S1 Ep1 Nascita di una...</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251231074118 +0000" stop="20251231083218 +0000">
+    <title>Ep. 2 - La tana del coniglio</title>
+    <desc>La tana del coniglio - S1 Ep2 La tana...</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251231083254 +0000" stop="20251231091954 +0000">
+    <title>Ep. 1 - Un vuoto da colmare</title>
+    <desc>Un vuoto da colmare - S1 Ep1 Un vuoto...</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251231092040 +0000" stop="20251231101240 +0000">
+    <title>Ep. 2 - Di nuovo in sella</title>
+    <desc>Di nuovo in sella - S1 Ep2 Di nuovo in...</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251231101251 +0000" stop="20251231103451 +0000">
+    <title>La riproposizione del bullismo</title>
+    <desc>S5 Ep11 La riproposizione...</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251231103523 +0000" stop="20251231105923 +0000">
+    <title>La manovra del diadema</title>
+    <desc>S5 Ep12 La manovra del...</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251231110009 +0000" stop="20251231115309 +0000">
+    <title>Central City e forte</title>
+    <desc>S7 Ep4 Central City e...</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251231115343 +0000" stop="20251231124243 +0000">
+    <title>Abbi paura di me!</title>
+    <desc>S7 Ep5 Abbi paura di me!</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251231124244 +0000" stop="20251231133344 +0000">
+    <title>Non riagganciare</title>
+    <desc>S9 Ep13 Non riattaccare</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251231133437 +0000" stop="20251231142237 +0000">
+    <title>Nascita di una leggenda</title>
+    <desc>S1 Ep1 Nascita di una...</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251231142255 +0000" stop="20251231151355 +0000">
+    <title>Ep. 2 - La tana del coniglio</title>
+    <desc>La tana del coniglio - S1 Ep2 La tana...</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251231151418 +0000" stop="20251231160018 +0000">
+    <title>Ep. 1 - Un vuoto da colmare</title>
+    <desc>Un vuoto da colmare - S1 Ep1 Un vuoto...</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251231160051 +0000" stop="20251231165251 +0000">
+    <title>Ep. 2 - Di nuovo in sella</title>
+    <desc>Di nuovo in sella - S1 Ep2 Di nuovo in...</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251231165327 +0000" stop="20251231174027 +0000">
+    <title>Central City e forte</title>
+    <desc>S7 Ep4 Central City e...</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251231174116 +0000" stop="20251231183216 +0000">
+    <title>Abbi paura di me!</title>
+    <desc>S7 Ep5 Abbi paura di me!</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251231183250 +0000" stop="20251231191850 +0000">
+    <title>Non riagganciare</title>
+    <desc>S9 Ep13 Non riattaccare</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251231201000 +0000" stop="20251231215900 +0000">
+    <title>Lara Croft: Tomb Raider</title>
+    <desc>Lara Croft e alla ricerca...</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251231215926 +0000" stop="20251231235026 +0000">
+    <title>Lara Croft: Tomb Raider - La culla..</title>
+    <desc>La culla.. - .. della...</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20251231235045 +0000" stop="20260101012945 +0000">
+    <title>Birds of Prey (e la fantasmagorica rinascita di Harley Quinn)</title>
+  </programme>
+  <programme channel="Canale 20.it" start="20260101013015 +0000" stop="20260101031415 +0000">
+    <title>Atomica bionda</title>
+    <desc>Berlino, 1989. Vigilia del crollo...</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20260101031446 +0000" stop="20260101043746 +0000">
+    <title>Knockout - Resa dei conti</title>
+    <desc>Resa dei conti - Il premio Oscar S....</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20260101043843 +0000" stop="20260101045943 +0000">
+    <title>Gennaio</title>
+    <desc>Show reel 26</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20260101050000 +0000" stop="20260101051300 +0000">
+    <title>Gennaio</title>
+    <desc>Show reel 26</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20260101051313 +0000" stop="20260101060213 +0000">
+    <title>Episodio 6 - 2012</title>
+    <desc>2012 - S2 Ep6 2012</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20260101060251 +0000" stop="20260101064251 +0000">
+    <title>Lincidente</title>
+    <desc>S1 Ep1 Lincidente</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20260101064328 +0000" stop="20260101073028 +0000">
+    <title>Ep. 3 - Giu, giu, giu</title>
+    <desc>Giu, giu, giu - S1 Ep3 Giu, giu,...</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20260101073051 +0000" stop="20260101081851 +0000">
+    <title>Ep. 4 - Chi sei tu?</title>
+    <desc>Chi sei tu? - S1 Ep4 Chi sei tu?</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20260101081909 +0000" stop="20260101091209 +0000">
+    <title>Il portafortuna</title>
+    <desc>S1 Ep3 Il portafortuna</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20260101091225 +0000" stop="20260101100125 +0000">
+    <title>Ep. 4 - Il fiore cadavere</title>
+    <desc>Il fiore cadavere - S1 Ep4 Il fiore cadavere</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20260101100220 +0000" stop="20260101102620 +0000">
+    <title>Lipotesi della ricomposizione</title>
+    <desc>S5 Ep13 Lipotesi...</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20260101102623 +0000" stop="20260101105523 +0000">
+    <title>La riconversione del beta test</title>
+    <desc>S5 Ep14 La riconversione...</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20260101105532 +0000" stop="20260101114732 +0000">
+    <title>E tempo di anni 90</title>
+    <desc>S7 Ep6 E tempo di anni...</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20260101114814 +0000" stop="20260101123614 +0000">
+    <title>Difficolta iniziali</title>
+    <desc>S7 Ep7 Difficolta iniziali</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20260101123633 +0000" stop="20260101132633 +0000">
+    <title>Quello che viene dopo</title>
+    <desc>S9 Ep14 Lattesa</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20260101132728 +0000" stop="20260101141328 +0000">
+    <title>Ep. 3 - Giu, giu, giu</title>
+    <desc>Giu, giu, giu - S1 Ep3 Giu, giu,...</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20260101141351 +0000" stop="20260101150751 +0000">
+    <title>Ep. 4 - Chi sei tu?</title>
+    <desc>Chi sei tu? - S1 Ep4 Chi sei tu?</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20260101150818 +0000" stop="20260101155718 +0000">
+    <title>Il portafortuna</title>
+    <desc>S1 Ep3 Il portafortuna</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20260101155759 +0000" stop="20260101164959 +0000">
+    <title>Ep. 4 - Il fiore cadavere</title>
+    <desc>Il fiore cadavere - S1 Ep4 Il fiore cadavere</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20260101165024 +0000" stop="20260101173724 +0000">
+    <title>E tempo di anni 90</title>
+    <desc>S7 Ep6 E tempo di anni...</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20260101173806 +0000" stop="20260101182906 +0000">
+    <title>Difficolta iniziali</title>
+    <desc>S7 Ep7 Difficolta iniziali</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20260101182909 +0000" stop="20260101191709 +0000">
+    <title>Quello che viene dopo</title>
+    <desc>S9 Ep14 Lattesa</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20260101201146 +0000" stop="20260101220146 +0000">
+    <title>Quello che non ti uccide</title>
+    <desc>Intrappolato in un...</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20260101220224 +0000" stop="20260101234824 +0000">
+    <title>Lara Croft: Tomb Raider</title>
+    <desc>Lara Croft e alla ricerca...</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20260101234916 +0000" stop="20260102002916 +0000">
+    <title>Lincidente</title>
+    <desc>S1 Ep1 Lincidente</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20260102002953 +0000" stop="20260102010753 +0000">
+    <title>Una madre</title>
+    <desc>S1 Ep2 Una madre</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20260102010828 +0000" stop="20260102014728 +0000">
+    <title>Piano di riserva</title>
+    <desc>S1 Ep3 Piano di riserva</desc>
+  </programme>
+  <programme channel="Canale 20.it" start="20260102014749 +0000" stop="20260102022649 +0000">
+    <title>Gennaio</title>
+    <desc>Show reel 26</desc>
   </programme>
   <programme channel="Class CNBC.it" start="20251231060000 +0000" stop="20251231062000 +0000">
     <title>Star Italia</title>
@@ -1724,6 +2170,22 @@
   <programme channel="QVC.it" start="20260102020000 +0000" stop="20260102030000 +0000">
     <title>Replica</title>
     <desc>Replica</desc>
+  </programme>
+  <programme channel="Radio Italia Trend Tv HD.it" start="20251231050000 +0000" stop="20251231170000 +0000">
+    <title>Radio Italia Live</title>
+    <desc>Musica live - Radio Italia Live: il primo canale TV interamente dedicato al meglio della musica italiana dal vivo.</desc>
+  </programme>
+  <programme channel="Radio Italia Trend Tv HD.it" start="20251231170000 +0000" stop="20260101050000 +0000">
+    <title>Radio Italia Live</title>
+    <desc>Musica live - Radio Italia Live: il primo canale TV interamente dedicato al meglio della musica italiana dal vivo.</desc>
+  </programme>
+  <programme channel="Radio Italia Trend Tv HD.it" start="20260101050000 +0000" stop="20260101170000 +0000">
+    <title>Radio Italia Live</title>
+    <desc>Musica live - Radio Italia Live: il primo canale TV interamente dedicato al meglio della musica italiana dal vivo.</desc>
+  </programme>
+  <programme channel="Radio Italia Trend Tv HD.it" start="20260101170000 +0000" stop="20260102050000 +0000">
+    <title>Radio Italia Live</title>
+    <desc>Musica live - Radio Italia Live: il primo canale TV interamente dedicato al meglio della musica italiana dal vivo.</desc>
   </programme>
   <programme channel="RADIONORBA TV.it" start="20251231000000 +0000" stop="20251231040000 +0000">
     <title>NO STOP MUSIC.</title>
@@ -4688,391 +5150,6 @@
   <programme channel="Rai Gulp.it" start="20260102032000 +0000" stop="20260102033500 +0000">
     <title>The Coop Troop</title>
   </programme>
-  <programme channel="Rai Movie.it" start="20251203051500 +0000" stop="20251203074000 +0000">
-    <title>Ammore e malavita</title>
-    <desc>Don Vincenzo Strozzalone, re del pesce e boss camorrista, scampa a un attentato e decide di cambiare vita. Stressato e braccato da criminali e polizia, si finge morto per ricominciare altrove con donna Maria, la consorte cinephile che trova la risoluzione a tutto nelle trame dei film. Ma il suo segreto, condiviso dalla moglie e dai fedeli Ciro e Rosario, ha il fiato corto. Fatima, una giovane infermiera, ha visto quello che non doveva vedere. Lordine adesso è di eliminarla. Ciro è il primo a trovarla ma...</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251203074000 +0000" stop="20251203074500 +0000">
-    <title>Anica - Appuntamento al cinema</title>
-    <desc>Rubrica per la promozione della cultura cinematografica in Italia.</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251203074500 +0000" stop="20251203094000 +0000">
-    <title>Luomo di paglia</title>
-    <desc>Andrea, operaio specializzato in una grande officina, è un uomo vicino ai quarantanni, che ama la propria famiglia, composta della moglie Luisa e da un figliolo di otto anni, Giulio. Dopo una grave malattia, Giulio, per rimettersi del tutto deve passare qualche tempo al mare, e Luisa si reca con lui a Fiumicino, presso certi parenti. Rimasto solo in casa, Andrea cerca di distrarsi con gli amici, ma in realtà egli aspetta con impazienza la domenica per raggiungere la famiglia al mare. Il caso gli fa incontrare per la prima volta Rita, una ragazza che abita, in città, nello stesso caseggiato che ospita la famiglia di Andrea. Questi sulle prime non da alcuna importanza allincontro, ma poi saccorge che Rita gli ha fatto una profonda impressione, ed anche Luisa, durante la visita domenicale, nota il cambiamento dumore del marito. A Roma Andrea rivede Rita, la quale dapprima lo tratta quasi con ostilità; ma quandegli va a cercarla nella copisteria dove lavora, i due sono travolti dalla passione. Limprovviso ritorno di Luisa e Giulio in città mette i due adulteri di fronte alla necessità della separazione, Andrea prova come un senso di sollievo nel riprendere la solita vita; ma Rita non sa rassegnarsi. Quando apprende che Andrea ha deciso di troncare la relazione, ella succide. La sua morte sconvolge profondamente lo animo di Andrea, già tormentato dal rimorso del tradimento fatto alla moglie, ed egli confessa tutto a Luisa. Questa non può sopportare lamara verità e se ne va con il piccolo Giulio. Andrea sente di essere un uomo finito e la sua disperazione, giunta allestremo, lo fa vagare senza meta. La notte dellultimo dellanno, al suo ritorno a casa, trova la moglie e il bambino. Luisa ha perdonato, ma il dramma che entrambi hanno vissuto non può non lasciare una traccia incancellabile nella loro vita</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251203094000 +0000" stop="20251203111000 +0000">
-    <title>Sai tenere un segreto?</title>
-    <desc>Emma Corrigan lavora come assistente marketing per unimportante azienda. Durante un viaggio, laereo sul quale stava viaggiando rischia di precipitare e, senza rendersene conto, Emma inizia a raccontare tutti i suoi segreti, anche quelli più intimi, alluomo che le è seduto accanto. Quando scoprirà che si tratta del fondatore della sua stessa azienda le cose prenderanno una piega del tutto diversa...</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251203111000 +0000" stop="20251203125500 +0000">
-    <title>Manto nero</title>
-    <desc>Nel Quebec del Diciassettesimo secolo, il missionario gesuita Laforgue, inviato per convertire gli Algonchini e imporre loro il cristianesimo, lotta contro gli elementi della natura e le reazioni dei nativi.</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251203125500 +0000" stop="20251203151000 +0000">
-    <title>Khartoum</title>
-    <desc>Siamo nel 1884. Quando un gruppo di ribelli capitanati da Muhammad Ahmad, che si crede il Mahdi, cioè linviato di Maometto, massacra un esercito egiziano di diecimila soldati, sotto il comando inglese, il generale Gordon viene inviato Al Cairo per negoziare con il nemico, dopo avere tentato di allearsi con un capo indigeno. Non riesce, però, nel suo intento e, arrivato a Khartoum, fa il possibile per proteggere la città dallassedio.</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251203151000 +0000" stop="20251203164500 +0000">
-    <title>Sandokan contro il leopardo di Sarawak</title>
-    <desc>Per vendicare la morte del padre, avvenuta per mano di Sandokan, Charles Drook, chiamato per la sua ferocia il Leopardo di Sarawak, fa rapire Samoa, moglie di Sandokan, che sottopone ai suoi ordini facendola ipnotizzare. Priva di volontà, Samoa viene indotta a scrivere una lettera a Sandokan, il quale cade nel tranello e viene così fatto prigioniero da Charles Drook. Sandokan riesce però a fuggire e, con laiuto dei suoi uomini, penetra nellaccampamento di Drook liberando Samoa. Vistosi ormai perduto, Charles Drook fugge, ma è inseguito da Sandokan che in duello, ai margini della palude, lo uccide. Sandokan può quindi riunirsi a Samoa che intanto ha riacquistato la sua volontà.</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251203164500 +0000" stop="20251203181500 +0000">
-    <title>Pecos è qui: prega e muori!</title>
-    <desc>Tre suonatori ambulanti arrivano in un villaggio messicano saccheggiato dagli uomini di El Supremo e scoprono una mappa per un tesoro. per arrivarci lunico modo è chiamare Pecos, un pistolero.</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251203181500 +0000" stop="20251203201000 +0000">
-    <title>Wonder</title>
-    <desc>Auggie Pullman ha dieci anni, gioca alla playstation e adora Halloween. Perche è lunico giorno dellanno in cui si sente normale. Affetto dalla nascita da una grave anomalia cranio-facciale, Auggie ha subito ventisette interventi e nasconde il suo segreto sotto un casco da cosmonauta. Educato dalla madre e protetto dalla sua famiglia, Auggie non è mai andato a scuola per evitare un confronto troppo doloroso con gli altri. Ma è tempo per lui di affrontare il mondo e gli sguardi sconcertati o sorpresi...</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251203201000 +0000" stop="20251203215500 +0000">
-    <title>Riabbracciare Parigi</title>
-    <desc>Sopravvissuta a un attentato, Mia cerca di ripartire riavvolgendo il nastro dei tragici momenti vissuti.</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251203215500 +0000" stop="20251203222500 +0000">
-    <title>Movie Mag (Copia)</title>
-    <desc>Movie Mag è il settimanale di attualità cinematografica di Rai Movie. Film in uscita, curiosità, backstage e materiale darchivio per raccontare le trasformazioni e il fascino della settima arte. Ogni settimana lopinione di un protagonista del panorama cinematografico. Speciale Il cinema dellestate 2024</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251203222500 +0000" stop="20251204003000 +0000">
-    <title>La furia di un uomo - Wrath of Man</title>
-    <desc>Alcuni mesi dopo una rapina a un furgone blindato portavalori, in cui perdono la vita due agenti di sicurezza e un civile, Patrick Hill si fa assumere presso la compagnia di trasporti Fortico. Nei test non eccelle, ma sul campo dimostra invece capacità straordinarie, sgominando da solo una banda di rapinatori diversa però da quella che aveva fatto il colpo mesi prima. Patrick ha chiaramente un secondo fine e indaga sulla compagnia dallinterno, convinto che ci sia una talpa che ha aiutato i rapinatori mesi prima.</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251204003000 +0000" stop="20251204021500 +0000">
-    <title>88 Minuti</title>
-    <desc>Nel 1997 il dottor Jack Gramm, professore universitario che collabora con lFbi come psicologo forense, inchiodò con una sua perizia il serial killer Jon Forster, che come modus operandi era solito seviziare le sue giovani vittime, tutte ragazze, ucciderle e poi appenderle a testa in giù. Adesso, sono passati dieci anni. Forster sta per essere giustiziato, ma, la sera prima dellesecuzione, unaltra ragazza, studentessa di Gramm, viene trovata morta nello stesso identico modo. Il dottore pensa subito sia un caso di emulazione, ma nonostante ciò il caso viene riaperto e tutta la sua perizia rimessa in discussione. Come se non bastasse, la stessa sera, Gramm riceve una strana telefonata: una voce lo informa che gli restano solo 88 minuti di vita.</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251204021500 +0000" stop="20251204040000 +0000">
-    <title>Antebellum</title>
-    <desc>Veronica Henley, scrittrice di successo, è di ritorno dal tour promozionale del suo ultimo libro quando si ritrova suo malgrado intrappolata in una realtà orribile che la costringe a confrontarsi con il suo passato.</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251204040000 +0000" stop="20251204050000 +0000">
-    <title>I dieci giorni che sconvolsero il mondo</title>
-    <desc>Nel 1917 il giornalista americano John Reed si ritrova immerso insieme alla sua donna Louise Bryant negli ultimi dieci giorni della rivoluzione russa dottobre.</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251228052500 +0000" stop="20251228065500 +0000">
-    <title>Secondo amore</title>
-    <desc>Una ricca vedova si innamora del suo giardiniere provocando uno scandalo. I figli si oppongono ma, davanti allamore, dovranno arrendersi.</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251228065500 +0000" stop="20251228070000 +0000">
-    <title>Anica - Appuntamento al cinema</title>
-    <desc>Rubrica per la promozione della cultura cinematografica in Italia.</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251228070000 +0000" stop="20251228095000 +0000">
-    <title>Il ponte sul fiume Kwai</title>
-    <desc>Nella giungla birmana degli ufficiali e soldati inglesi sono prigionieri dei giapponesi, che impongono agli inglesi di costruire un ponte, fondamentale per i loro trasporti di guerra. I prigionieri si rifiutano di farlo. Ma in un secondo tempo, il colonnello comandante degli inglesi Nicholson, per dimostrare la propria superiorità, si dedica con i suoi alla costruzione di un ponte imponente, sul fiume Kwai, mettendosi per così dire in competizione con gli avversari in una specie di paradossale fanatismo patriottico.</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251228095000 +0000" stop="20251228112500 +0000">
-    <title>Totò Tarzan</title>
-    <desc>Vive nella giungla un essere misterioso, di etnia bianca, che gli indigeni chiamano "la scimmia bianca". Figlio di un ricchissimo esploratore, che lha lasciato nella giungla quandera ancora bambino. Ora il padre è morto e a questessere semi-selvaggio spetta un patrimonio valutato miliardi.</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251228112500 +0000" stop="20251228130000 +0000">
-    <title>Torna a casa, Lassie!</title>
-    <desc>Un operaio disoccupato è costretto a vendere il suo cane, Lassie, amatissimo soprattutto dal figlio Joe. Anche Lassie, però, non si rassegna a questo destino...</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251228130000 +0000" stop="20251228150000 +0000">
-    <title>Non così vicino</title>
-    <desc>Il film segue la storia di Otto (Tom Hanks), un uomo vedevo e in pensione dal carattere rigido e facilmente irritabile. A causa del suo temperamento tiene sotto scacco lintero vicinato, costringendo tutti a seguire le sue severe regole. In verità, luomo non ha più interesse nella vita da quando ha perso sua moglie, ritirandosi a vivere in solitaria e lontano da ogni contatto umano positivo. Quando si trasferisce di fronte a casa sua una famiglia composta dai due genitori e due bambine, nonostante sia restio, ben presto si avvicinerà a loro, aiutandoli inconsapevolmente.</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251228150000 +0000" stop="20251228165500 +0000">
-    <title>Si accettano miracoli</title>
-    <desc>Cera una volta Fulvio, tagliatore di teste senza scrupoli di una nota multinazionale, che dopo aver fatto piazza pulita dei rami secchi dellazienda viene a sua volta licenziato. La sua reazione non esattamente composta gli costa cara: un mese di servizi sociali da scontare nella casa famiglia di suo fratello Don Germano, parroco di un piccolo borgo del sud dItalia. Da manager consumato e scaltro qual è, Fulvio non ci mette molto a capire che per aiutare il paese cè bisogno di un vero e proprio "miracolo"...</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251228165500 +0000" stop="20251228183000 +0000">
-    <title>Belle and Sebastien - Amici per sempre</title>
-    <desc>La famiglia di Sebastien vorrebbe trasferirsi in Canada, ma lui è contrario e non vuole lasciare il nonno. Questi, però, lo spinge ad allontanarsi e a scoprire il mondo.</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251228183000 +0000" stop="20251228201000 +0000">
-    <title>The Rebound - Ricomincio dallamore</title>
-    <desc>Quando Sandy, una bella e intelligente donna di 40 anni, scopre che il marito la tradisce, si trasferisce a New York insieme ai suoi due bambini decisa a ricominciare da zero la sua vita. Trova un nuovo lavoro e un nuovo appartamento, e su consiglio di unamica, comincia a cercare di frequentare altri uomini. Ma la vera sorpresa sarà Aram, il babysitter di 25 anni e vicino di casa che ha assunto per occuparsi dei suoi bambini: nascerà con lui unattrazione così forte da superare anche la differenza di età...</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251228201000 +0000" stop="20251228215500 +0000">
-    <title>Poly</title>
-    <desc>Dal regista di "Belle and Sebastien", unavventura con la star francese Francois Cluzet. Cecile, 10 anni, durante lestate del 1964 è costretta da sua madre Louise a lasciare Parigi per trasferirsi in un piccolo villaggio. La ragazzina non è contenta della sua nuova realtà: la casa non le piace, i bambini del posto si prendono gioco di lei e in più sente la mancanza del papà, in viaggio per lItalia. La sua situazione cambia quando un circo di passaggio si ferma nel paesino.</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251228215500 +0000" stop="20251228235000 +0000">
-    <title>Remi</title>
-    <desc>Adattamento cinematografico del romanzo Senza Famiglia di Hector Malot. Un piccolo orfano, Remi, è stato allevato dalla dolce signora Barberin. Alletà di dieci anni viene però affidato al signor Vitalis, un misterioso musicista itinerante, si esibisce in giro per la Francia. Con lui imparerà quanto dura sia la vita di un saltimbanco. Il suo viaggio lungo la Francia, accompagnato dal cane Capi e dalla scimmietta Joli-Coeur, lo porterà a scoprire anche il segreto delle sue origini.</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251228235000 +0000" stop="20251229013000 +0000">
-    <title>Segni particolari: bellissimo</title>
-    <desc>Mattia è un affermato scrittore. Dopo una vita scapestrata decide di cambiare strada; si rivolge perciò a un suo amico prete al quale confessa tutte le sue avventure amorose. Per iniziare secondo i nuovi propositi vorrebbe sposare una delle sue ultime conquiste, ma la donna mira solo ai soldi. Alla fine la spunta Michaela, una vicina di casa, che tutti credono essere la figlia illegittima dello scrittore.</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251229013000 +0000" stop="20251229040000 +0000">
-    <title>I cannoni di Navarone</title>
-    <desc>Durante la seconda Guerra Mondiale, la piccola isola di Keros, nelle acque della Grecia, è presidiata da duemila soldati inglesi. I tedeschi decidono di attaccarla. Gli alleati vogliono inviare navi di rinforzo ma è un compito arduo, perche la flotta deve passare davanti allisola di Navarone, controllata da due micidiali cannoni nazisti che laviazione non è riuscita a distruggere. Il comandante Jensen, della marina britannica, è a capo di questa missione allapparenza impossibile...</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251229040000 +0000" stop="20251229050000 +0000">
-    <title>Non puoi impedirmi damare</title>
-    <desc>Alec è sposato con Maida, ma per lei è solamente un matrimonio dinteresse. Ma quando Alec si innamora a sua volta di una vedova madre di una bimba di cinque anni, Maida non acconsente al divorzio, e minaccia di denunciare il marito per adulterio. Ha così inizio una lunga battaglia di ripicche.</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251231033000 +0000" stop="20251231040000 +0000">
-    <title>Stanlio e Ollio - Il circo e fallito</title>
-    <sub-title>Il circo e fallito</sub-title>
-    <desc>Stanlio e Ollio lavorano in un circo, ma distruggono il tendone, mettendo sul lastrico il padrone. Cosi, luomo, impossibilitato a tenere in piedi lo spettacolo, scioglie la compagnia e affida a c...</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251231052500 +0000" stop="20251231072500 +0000">
-    <title>Passione ribelle</title>
-    <desc>Passione ribelle, film diretto da Billy Bob Thornton, racconta la storia di John Grady Cole (Matt Damon), un giovane cowboy del Texas che parte all’avventura verso il Messico assieme all’amico Lacey Rawlins (Henry Thomas). In sella sui loro cavalli, i due ragazzi intraprendono il lungo viaggio verso il confine, durante il quale incontrano Jimmy Blevins (Lucas Black) - un tredicenne molto intraprendente e pronto a tutto - con cui condividono parte del tragitto.Più tardi, John e Lacey vengono assunti nel ranch dellaristocratico Don Hector de la Rocha y Villarreal (Ruben Blades), dove vive anche Alejandra (Penelope Cruz), la bella figlia del proprietario. Sebbene la ricca zia metta in guardia la nipote, tra John e la ragazza nasce un amore travolgente. Le cose precipitano quando il padre scopre la loro relazione: Don Hector fa arrestare immediatamente i due cowboy, che vengono sbattuti in una prigione messicana.Lì i ragazzi incontrano di nuovo Jimmy, accusato di furto e omicidio, crimini di cui vengono imputati in qualità di complici. Mentre John e Lacey cercano di difendersi e sopravvivere nella pericolosa galera, finalmente vengono liberati grazie alla zia di Alejandra, la quale ha fatto giurare alla nipote che non incontrerà mai più il suo amato, in nome della reputazione della famiglia. Tuttavia John cercherà in ogni modo di ricongiungersi alla donna che ama... Serie tv, Show e Film su NOW!</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251231055500 +0000" stop="20251231075000 +0000">
-    <title>Voglia di ricominciare</title>
-    <desc>Washington, 1957. Caroline e una donna divorziata con un figlio adolescente, Toby. Dopo varie storie deludenti, si risposa con Dwight, un uomo dai modi galanti e attento, in particolar modo, alle...</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251231060000 +0000" stop="20251231080000 +0000">
-    <title>Voglia di ricominciare</title>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251231072500 +0000" stop="20251231091000 +0000">
-    <title>Pane, amore e gelosia</title>
-    <desc>Pane, amore e gelosia è un film del 1954 di genere commedia, diretto da Luigi Comencini, con Vittorio De Sica, Gina Lollobrigida e Roberto Risso, della durata di 97 minuti, è disponibile in streaming. Il film ha vinto ai Nastri dArgento.</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251231075000 +0000" stop="20251231075500 +0000">
-    <title>Appuntamento al cinema</title>
-    <desc>Rubrica per la promozione della cultura cinematografica in Italia.</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251231075500 +0000" stop="20251231093500 +0000">
-    <title>Pane, amore e...</title>
-    <desc>Lasciata lArma, il maresciallo Carotenuto torna nella natia Sorrento come capo dei vigili urbani. Terzo capitolo della serie</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251231080000 +0000" stop="20251231080500 +0000">
-    <title>Anica - Appuntamento al cinema</title>
-    <desc>Appuntamento al cinema</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251231080500 +0000" stop="20251231094500 +0000">
-    <title>Pane, amore e...</title>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251231091000 +0000" stop="20251231111500 +0000">
-    <title>Non Così Vicino</title>
-    <desc>Non Così Vicino, il film diretto da Marc Forster, racconta la storia di Otto (Tom Hanks), un uomo vedevo e in pensione dal carattere rigido e facilmente irritabile. A causa del suo temperamento tiene sotto scacco lintero vicinato, costringendo tutti a seguire le sue severe regole. In verità, luomo non ha più interesse nella vita da quando ha perso sua moglie, ritirandosi a vivere in solitaria e lontano da ogni contatto umano positivo.Quando si trasferisce di fronte la sua casa una famiglia composta dai due genitori e due bambine, nonostante sia restio, ben presto fa la conoscenza dei suoi nuovi vicini. Otto stringe con loro un forte legame di amicizia, fino a ritrovarsi sempre più coinvolto nelle loro vite. Il burbero aiuterà i vari componenti della famiglia a superare le loro sfide quotidiane, cosa che lo porterà con il tempo a cambiare. Sebbene sia restio ad abbandonare le sue vecchie abitudini si rivelerà arduo, Otto si renderà conto che aiutare gli altri non è poi così male. Serie tv, Show e Film su NOW!</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251231093500 +0000" stop="20251231113000 +0000">
-    <title>Unavventura</title>
-    <desc>Puglia, anni 70. Matteo e innamorato di Francesca, ma lei vuole abbandonare la vita di provincia e conoscere il mondo. Dopo quattro anni passati a viaggiare per il mondo, Francesca torna al paese...</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251231094500 +0000" stop="20251231113000 +0000">
-    <title>Unavventura</title>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251231111500 +0000" stop="20251231130500 +0000">
-    <title>La parola di un fuorilegge... È legge!</title>
-    <desc>La parola di un fuorilegge... È legge! è un film del 1975 di genere western, diretto da Antonio Margheriti, con Dana Andrews, Jim Brown e Robert Donner, della durata di 100 minuti.</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251231113000 +0000" stop="20251231130500 +0000">
-    <title>Navigator</title>
-    <desc>Florida, 1978. Il dodicenne David, attraversando un bosco, cade in una buca. Stordito ma illeso, prosegue la strada verso casa. Giunto sulla porta, si rende conto che ce qualcosa di strano: sono...</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251231130500 +0000" stop="20251231145000 +0000">
-    <title>Poly</title>
-    <desc>Estate 1964. Cecile, 10 anni, lascia Parigi controvoglia per un piccolo villaggio. Tra solitudine e nostalgia, la sua vita cambia quando conosce Poly, un pony del circo ingiustamente maltrattato. D...</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251231130500 +0000" stop="20251231152500 +0000">
-    <title>Silverado</title>
-    <desc>Silverado, film western diretto da Lawrence Kasdan, segue le vicende del pistolero Emmett (Scott Glenn) che ha appena liberato suo fratello Jake (Kevin Costner), incarcerato e condannato allimpiccagione ingiustamente. Ai due si aggiungono Paden (Kevin Kline), ex ladro ora redento, e Mal (Danny Glover), bandito afroamericano. Sulle loro tracce cè lo sceriffo del luogo, dal quale riescono a scappare per raggiungere Silverado. Qui lambiente è ostile e gli abitanti sono soggiogati da una banda di delinquenti solita operare delle razzie per tutto il paese spargendo panico e paura. A capo della gang cè McKendrick (Ray Baker), conosciuto per essere un avvelenatore di bestiame seriale. Al suo fianco cè lo sceriffo Cobb (Brian Dennehy), titolare del saloon centrale ed ex boss di Paden. Dopo aver superato strade impervie e numerosi ostacoli, riescono ad arrivare a Silverado, dove si ritrovano ad affrontare qualcosa a cui non erano affatto pronti: lo sterminio della famiglia di Mal. Oltre a questo si aggiunge anche il grave ferimento del cognato di Emmet e Jake, e il sequestro del loro nipotino. Non gli resta dunque che unire le forze e cercare di ripulire la città dal crimine. Riusciranno a fronteggiare la terribile banda di McKendrick e il corrotto sceriffo? Serie tv, Show e Film su NOW!</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251231145000 +0000" stop="20251231164500 +0000">
-    <title>Il pianeta delle scimmie (1968)</title>
-    <desc>Lastronauta George Taylor, insieme ai colleghi Landon e Dodge, parte per esplorare un nuovo mondo. La missione fallisce quando lastronave Icarus precipita su un pianeta sconosciuto. Qui scoprono ...</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251231145000 +0000" stop="20251231165000 +0000">
-    <title>Il pianeta delle scimmie</title>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251231152500 +0000" stop="20251231171500 +0000">
-    <title>Blue Hawaii</title>
-    <desc>Blue Hawaii è un film del 1961 di genere sentimentale, diretto da Norman Taurog, con Elvis Presley, Joan Blackman e Angela Lansbury, della durata di 102 minuti.</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251231165000 +0000" stop="20251231190500 +0000">
-    <title>Silverado</title>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251231171500 +0000" stop="20251231185000 +0000">
-    <title>Mister Felicità</title>
-    <desc>Mister Felicità è una commedia del 2017 diretta da Alessandro Siani, con Alessandro Siani e Diego Abatantuono.Martino (Alessandro Siani) è un ragazzo di origini napoletane pigro e indolente che vive sulle spalle della sorella Caterina (Cristiana DellAnna) nella sua casa in Svizzera.Quando questa rimane coinvolta in un incidente stradale ed è impossibilitata a lavorare, Martino la sostituisce diventando uomo delle pulizie presso il Dottor Guglielmo Gioia (Diego Abatantuono), un uomo che svolge la professione di mental coach.Approfittando dellassenza del padrone di casa e cercando un modo per aiutare economicamente sua sorella a sostenere le costose cure di riabilitazione, il ragazzo si finge assistente del dottore, tale Mister Felicità, aiutando alcuni pazienti tra cui Arianna Croft (Elena Cucci), pattinatrice professionista e più volte campionessa che ha perso la motivazione e lautostima a causa di una caduta.Martino, nonostante le sue improvvisazioni, riesce ad aiutare la ragazza ed il rapporto tra di loro diventa più profondo, tanto che intraprende con lei una relazione amorosa. A complicare le cose però interverranno la madre di Arianna, Augusta (Carla Signoris) e il Dottor Gioia, legati sentimentalmente e separatisi molti anni prima. Serie tv, Show e Film su NOW!</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251231185000 +0000" stop="20251231201000 +0000">
-    <title>Noi e... La gonna</title>
-    <desc>Noi e... La gonna è un film del 1938 di genere commedia, diretto da John G. Blystone, Hal Roach, con Eric Blore, Oliver Hardy e Della Lind, della durata di 72 minuti.</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251231190500 +0000" stop="20251231201000 +0000">
-    <title>Stanlio e Ollio - Teste dure (Venti anni dopo)</title>
-    <desc>Teste dure (Venti anni dopo)...</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251231190500 +0000" stop="20251231201000 +0000">
-    <title>Stanlio e Ollio - Teste dure (Venti anni dopo) - Stanlio e Ollio - Teste dure (Venti anni dopo)</title>
-    <sub-title>Teste dure (Venti anni dopo)</sub-title>
-    <desc>La prima guerra mondiale e ormai finita da ventanni ma Stanlio e ancora in trincea convinto di dover combattere. Versione completa, restaurata con doppio audio.</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251231201000 +0000" stop="20251231215000 +0000">
-    <title>Suburban Girl</title>
-    <desc>Suburban girl, il film scritto e diretto da Marc Klein e tratto dal libro di Melissa Bank "The Girls Guide to Hunting and Fishing", è la storia di Brett Eisenberg (Sarah Michelle Gellar), scrittrice newyorkese che lavora in una casa editrice di Manhattan in qualità di correttrice di bozze. Giovane e ambiziosa, Brett sogna il successo lavorativo più di ogni altra cosa e cerca di farsi spazio come può nel difficile mondo della scrittura. Quando poi, a un importante convegno per luscita di un nuovo romanzo, incontra il gigante delleditoria Archie Knox (Alec Baldwin), la sua vita prende in men che non si dica una piega del tutto inaspettata.Tra i due nasce unimmediata sintonia, destinata a trasformarsi presto in un vero e proprio flirt amoroso. Ma una serie di spiacevoli difficoltà familiari e professionali si intromettono nello sviluppo della loro storia damore. Archie è infatti alcolizzato, pluridivorziato e con un rapporto conflittuale con sua figlia, mentre Brett, dopo aver rotto da poco con il suo ex fidanzato, sta affrontando la terribile malattia di suo padre. I due dunque, afflitti dai loro problemi personali, finiranno per prendere delle ardue decisioni sulla loro vita e il loro futuro... Serie tv, Show e Film su NOW!</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251231201000 +0000" stop="20251231231000 +0000">
-    <title>Nuovo Cinema Paradiso</title>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251231201000 +0000" stop="20251231231500 +0000">
-    <title>Nuovo Cinema Paradiso</title>
-    <sub-title>Nuovo cinema paralitico</sub-title>
-    <desc>In un paesino siciliano del dopoguerra, un bambino passa le giornate nella sala cinematografica del proiezionista Alfredo e, cosi, si innamora del cinema. Oscar 1990 per il miglior film straniero...</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251231215000 +0000" stop="20251231233500 +0000">
-    <title>Il principe abusivo</title>
-    <desc>Il Principe abusivo è un film del 2013 di genere commedia, diretto da Alessandro Siani, con Alessandro Siani, Sarah Felberbaum e Christian De Sica, della durata di 97 minuti, è disponibile in streaming. Il film è stato candidato ai David di Donatello.</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251231231000 +0000" stop="20260101011500 +0000">
-    <title>Tootsie</title>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251231231500 +0000" stop="20260101012000 +0000">
-    <title>Tootsie</title>
-    <desc>New York, anni 80. Per trovare lavoro, lattore disoccupato Michael si traveste da donna e ottiene un grande successo in TV. Le cose si complicano quando si innamora di una collega e corteggiato a...</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251231233500 +0000" stop="20251231234000 +0000">
-    <title>Anica</title>
-  </programme>
-  <programme channel="Rai Movie.it" start="20251231234000 +0000" stop="20260101014500 +0000">
-    <title>La via del male</title>
-    <desc>La via del male è un film del 1958 di genere drammatico, musicale, diretto da Michael Curtiz, con Elvis Presley, Carolyn Jones e Walter Matthau, della durata di 109 minuti.</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20260101011500 +0000" stop="20260101025000 +0000">
-    <title>2061: un anno eccezionale</title>
-  </programme>
-  <programme channel="Rai Movie.it" start="20260101014500 +0000" stop="20260101040000 +0000">
-    <title>Forza 10 da Navarone</title>
-    <desc>Forza 10 da Navarone è un film del 1978 di genere guerra, diretto da Guy Hamilton, con Robert Shaw, Harrison Ford e Barbara Bach, della durata di 123 minuti, è disponibile in streaming.</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20260101025000 +0000" stop="20260101032000 +0000">
-    <title>Stanlio e Ollio - Polli, tornate a casa</title>
-    <desc>Polli, tornate a casa</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20260101030000 +0000" stop="20260101033000 +0000">
-    <title>Stanlio e Ollio - Polli, tornate a casa</title>
-    <sub-title>Polli, tornate a casa</sub-title>
-    <desc>Ollio, ricco commerciante di fertilizzanti, sta preparando la sua campagna elettorale come sindaco, quando gli si presenta in ufficio una vecchia fiamma, che gli chiede del denaro se non vuole che ...</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20260101032000 +0000" stop="20260101040000 +0000">
-    <title>Stanlio e Ollio - Leredità</title>
-    <desc>Leredità</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20260101033000 +0000" stop="20260101040000 +0000">
-    <title>Stanlio e Ollio - Leredita</title>
-    <sub-title>Leredita</sub-title>
-    <desc>Stanlio e Ollio apprendono dal giornale che il ricco zio Belisario e morto. Per la lettura del testamento, i parenti vengono riuniti nella casa del defunto dove pero spariscono uno dopo laltro.</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20260101040000 +0000" stop="20260101055500 +0000">
-    <title>I professionisti</title>
-    <desc>I professionisti è un film del 1966 di genere drammatico, western, diretto da Richard Brooks, con Burt Lancaster, Lee Marvin e Robert Ryan, della durata di 120 minuti, è disponibile in streaming. Il film è stato candidato agli Oscar, Golden Globe.</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20260101040000 +0000" stop="20260101061500 +0000">
-    <title>Il flauto magico (Film)</title>
-    <desc>Europa, Prima guerra mondiale. Il soldato Tamino viene inviato dalla Regina della Notte per salvare la figlia Pamina dalle grinfie del malvagio Sarastro. Primo adattamento per il cinema dellopera ...</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20260101055500 +0000" stop="20260101075000 +0000">
-    <title>Voglia di ricominciare</title>
-    <desc>Voglia di ricominciare, è un film drammatico del 1993 diretto da Michael Caton-Jones. La vicenda si svolge negli Stati Uniti negli anni ’50. Toby Wolff (Leonardo DiCaprio), un ragazzino inquieto e ribelle, vive con sua madre Caroline (Ellen Barkin) in seguito all’abbandono del padre, che è andato a vivere con un’altra donna. I due cambiano continuamente città, stabilendosi ovunque li conduca una nuova relazione della madre o il miraggio di un nuovo lavoro. A causa della natura nomade della loro esistenza, a Toby manca la stabilità di una vita familiare tradizionale e questo influenza la sua condotta e il suo rendimento scolastico.Decisa a cambiare vita Caroline si trasferisce a Seattle con il figlio. Qui la donna sembra trovare la serenità accanto al meccanico Dwight Hansen (Robert De Niro), che vive nella cittadina di Concrete con i suoi tre figli. Caroline pensa che Dwight possa offrire una stabilità economica a lei e una figura paterna a suo figlio.Un giorno Toby viene sospeso da scuola a causa di frequentazioni poco rispettabili e di azioni irrispettose e indisciplinate. Disperata e con pochi soldi, Caroline accetta il suggerimento di Dwight di trasferire Toby per un pò di tempo a casa sua a Concrete. Ma già durante il viaggio, Dwight mostra per la prima volta la sua vera natura, minacciando Toby di punirlo severamente se non si comporterà bene.Nei tre mesi in cui Toby sta da lui, Dwight si rivela un uomo prepotente e autoritario, che cerca di far filare dritto il ragazzo arrivando a maltrattarlo verbalmente e fisicamente. Presto Caroline e Dwight si sposano. Subito dopo il matrimonio, però, la donna scopre che l’uomo in realtà è un alcolista violento e irragionevole, ma è costretta a rimanere con lui a causa della sua precarietà economica. Durante questo periodo, Toby fa amicizia con Arthur Gayle (Jonah Blechman), un compagno di classe omosessuale.Gli anni passano e Toby cresce con il proposito di lasciare Concrete con ogni mezzo possibile. L’occasione propizia arriva l’ultimo anno di liceo, quando Toby progetta di andare all’università sull’East Coast, dove vive suo padre, pur di allontanarsi da quella vita. Poiche i suoi voti sono scarsi, Arthur lo aiuta a falsificare i documenti scolastici. Dopo numerosi rifiuti, Toby viene annesso con una borsa di studio da un college di Philadelphia.Ma Dwight, che è sempre stato geloso del figliastro, non accoglie bene la notizia. Serie tv, Show e Film su NOW!</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20260101061500 +0000" stop="20260101075500 +0000">
-    <title>La volpe e la bambina</title>
-    <desc>In una fattoria tra le montagne del massiccio del Giura, nel sudest della Francia, una bambina curiosa esplora la natura. Un mattino dautunno, lungo un sentiero, incontra una volpe che la affascin...</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20260101075000 +0000" stop="20260101075500 +0000">
-    <title>Anica</title>
-  </programme>
-  <programme channel="Rai Movie.it" start="20260101075500 +0000" stop="20260101093500 +0000">
-    <title>Pane, amore e...</title>
-    <desc>Pane, amore e... è un film del 1955 di genere commedia, diretto da Dino Risi, con Vittorio De Sica, Sophia Loren e Lea Padovani, della durata di 100 minuti, è disponibile in streaming e in onda in TV MER.31 su Rai Movie alle 08:55. Il film ha vinto ai Festival di Berlino, David di Donatello.</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20260101075500 +0000" stop="20260101094500 +0000">
-    <title>I soliti ignoti</title>
-    <desc>Uno scalcagnato gruppo di ladri tenta di organizzare un colpo in un banco dei pegni romano, ma il piano non va come previsto. Caposaldo della commedia allitaliana, candidato allOscar 1959.</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20260101093500 +0000" stop="20260101113000 +0000">
-    <title>UnAvventura</title>
-    <desc>UnAvventura è un film del 2019 diretto da Marco Danieli. Sulle note delle splendide canzoni di Lucio Battisti e Mogol (tra cui Unavventura, da cui prende nome il film), si sviluppa la storia di Francesca (Laura Chiatti) e Matteo (Michele Riondino), due ragazzini vicini di casa in un paesello della Puglia.Siamo negli anni 70, Matteo è innamorato della sua amica, ma alla ragazza la vita di paese sta stretta, ha un animo ribelle e vuole inseguire il suo sogno fatto di libertà ed emancipazione in giro per il mondo.Dopo quattro anni di lontananza Francesca torna a casa, ma è cambiata, non è più la bambina che Matteo ricordava; ormai è una donna indipendente e bellissima, e il ragazzo, che non ha mai smesso di pensare a lei, vuole riconquistarla ad ogni costo e stare per sempre con lei; ma Francesca, sfuggente ed irrequieta, non gli renderà facile limpresa. Serie tv, Show e Film su NOW!</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20260101094500 +0000" stop="20260101111500 +0000">
-    <title>Wasabi</title>
-    <desc>Hubert Fiorentini e un poliziotto francese che ricorre spesso alle maniere forti. Inaspettatamente scopre di esser padre di una giovane ragazza giapponese, Yumi, avuta da una vecchia storia damor...</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20260101111500 +0000" stop="20260101130500 +0000">
-    <title>I ponti di Toko Ri</title>
-    <desc>Corea, 1952. Il pilota Brubaker saluta la moglie a Tokyo prima di una missione quasi suicida. In cielo, tra coraggio e paura, dovra affrontare il destino in un volo che potrebbe essere lultimo. D...</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20260101111500 +0000" stop="20260101130500 +0000">
-    <title>I ponti di Toko-Ri</title>
-  </programme>
-  <programme channel="Rai Movie.it" start="20260101113000 +0000" stop="20260101130500 +0000">
-    <title>Navigator</title>
-    <desc>Navigator è un film del 1986 diretto da Randal Kleiser.Nella notte del 4 luglio 1978, in una città sulla costa della Florida, il dodicenne David Freman (Joey Cramer) cammina attraverso il bosco per andare incontro al fratellino Jeff. Durante il tragitto, David cade in un anfratto e sviene. Quando riacquista conoscenza, corre subito a casa, ma scopre che questa ora è abitata da sconosciuti.Allertata la polizia, David viene condotto al distretto. Un agente, consultando l’archivio delle persone scomparse, rintraccia i genitori che ne avevano denunciato la scomparsa otto anni prima. Nonostante sia il 1986, l’aspetto del bambino è inspiegabilmente rimasto uguale.Nel frattempo viene trovata dalla NASA unastronave schiantatasi contro un traliccio dell’alta tensione e viene portata in un hangar per essere studiata. Durante un test effettuato in ospedale su David, il suo cervello comunica in modo inconscio con il computer che effettua lesame, mostrando immagini riguardanti lastronave trovata dalla NASA.Contattati gli scienziati di quest’ultima, David viene convinto a trascorrere due giorni nel centro di ricerca spaziale per essere esaminato. Si scopre che il bambino è stato trasportato a velocità della luce sul pianeta Phaelon per essere analizzato dagli alieni. Intanto la navicella contatta David mentalmente richiedendo il suo aiuto: dopo l’incidente con il traliccio ha perso le mappe stellari per ritornare a Phaelon e ha bisogno di recuperarle dal suo cervello. Con l’aiuto dell’inserviente Carolyn (Sarah Jessica Parker), David riesce a eludere la sorveglianza e a raggiungere la navicella spaziale. Salito a bordo fa la conoscenza di Max, l’intelligenza artificiale. Evasi dallhangar, inizia il viaggio di ritorno a casa, ma David non è convinto in quale realtà continuare a vivere... Serie tv, Show e Film su NOW!</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20260101130500 +0000" stop="20260101145000 +0000">
-    <title>Poly</title>
-    <desc>Poly, il film diretto da Nicolas Vanier, segue la storia di Cecile (Elisa de Lambert), una ragazzina di 10 anni, che durante lestate del 1964, è costretta dalla madre Louise (Julie Gayet) a lasciare Parigi per trasferirsi in un piccolo villaggio nel sud della Francia.Una volta arrivata sul posto, Cecile non è contenta: la nuova casa non le piace, lintegrazione con gli altri bambini del villaggio è difficile, e le manca suo padre, in viaggio per lItalia. Cecile si sente sola e annoiata fino a quando un circo di passaggio si ferma vicino casa. La star dello spettacolo è un pony di nome Poly, che purtroppo viene maltrattato dal mostruoso proprietario del circo, Brancalou (Patrick Timsit). Determinata a salvarlo, Cecile decide di proteggerlo e organizzare la sua fuga. Inseguiti da Brancalou e dal misterioso Victor (François Cluzet), Cecile e Poly intraprendono una fuga ricca di imprevisti, che diventerà un vero viaggio di crescita e una straordinaria avventura di amicizia. Serie tv, Show e Film su NOW!</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20260101130500 +0000" stop="20260101162500 +0000">
-    <title>Gandhi</title>
-    <desc>In questaffascinante bibliografia di Richard Attenborough, Sir Ben Kingsley e Mohandas Ghandi, luomo che da semplice avvocato si trasforma nel simbolo mondiale di pace e comprensione.</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20260101145000 +0000" stop="20260101164500 +0000">
-    <title>Il pianeta delle scimmie</title>
-    <desc>Il pianeta delle scimmie è un film del 1968 diretto da Franklin J. Schaffner, tratto dallomonimo romanzo di Pierre Boulle.L’astronauta George Taylor (Charlton Heston) assieme ai colleghi Landon e Dodge parte per lo spazio, alla ricerca di un nuovo mondo da popolare. La missione tuttavia non viene portata a termine perche l’orbita di Icarus, l’astronave sulla quale viaggiano, viene accidentalmente deviata.I tre precipitano su un pianeta sconosciuto e vedendo il calendario segnare il 3978, realizzano di aver attraversato un arco temporale di millenni. Più che nel futuro, però, il viaggio sembra averli catapultati in un arcaico passato: gli uomini del posto vivono in uno stato selvaggio, incapaci di parlare e privi di doti intellettive sviluppate. Una forma di civiltà, tuttavia, esiste ed è più evoluta di quanto possa sembrare: strani scimmioni antropomorfi e intelligenti, che sottomettono gli esseri umani e li utilizzano per meri esperimenti scientifici.Rimasto da solo e imprigionato insieme a una ragazza che chiama Nova (Linda Harrison), Taylor tenta di spiegare allorango Zaius (Maurice Evans) che proviene da un altro pianeta e che è diverso dagli uomini primitivi. Tuttavia quest’ultimo, sospettando che Taylor faccia parte di una tribù segreta di umani intelligenti, minaccia di castrarlo e lobotomizzarlo. Gli unici a non condividere questa drastica decisione sono la veterinaria Zira (Kim Hunter) e l’archeologo Cornelius (Roddy McDowall), due scimpanze che soprannominano l’uomo “Occhi Vivi”. Aiutati da Lucius, l’insubordinato nipote di Zira, i due sono pronti a contravvenire agli ordini del Professor Zaius. In cambio vorrebbero l’appoggio di Taylor per un delicato compito… Guardalo subito su Disney+</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20260101162500 +0000" stop="20260101185000 +0000">
-    <title>Il piccolo grande uomo</title>
-    <desc>Jack Crabb, 121 anni, ex pioniere, soldato, pistolero e alleato degli indiani, racconta lepoca dei bianchi in territorio indiano. Tra finzione e realta, ricordi e bugie si confondono.</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20260101164500 +0000" stop="20260101190500 +0000">
-    <title>Silverado</title>
-    <desc>Silverado, film western diretto da Lawrence Kasdan, segue le vicende del pistolero Emmett (Scott Glenn) che ha appena liberato suo fratello Jake (Kevin Costner), incarcerato e condannato allimpiccagione ingiustamente. Ai due si aggiungono Paden (Kevin Kline), ex ladro ora redento, e Mal (Danny Glover), bandito afroamericano. Sulle loro tracce cè lo sceriffo del luogo, dal quale riescono a scappare per raggiungere Silverado. Qui lambiente è ostile e gli abitanti sono soggiogati da una banda di delinquenti solita operare delle razzie per tutto il paese spargendo panico e paura. A capo della gang cè McKendrick (Ray Baker), conosciuto per essere un avvelenatore di bestiame seriale. Al suo fianco cè lo sceriffo Cobb (Brian Dennehy), titolare del saloon centrale ed ex boss di Paden. Dopo aver superato strade impervie e numerosi ostacoli, riescono ad arrivare a Silverado, dove si ritrovano ad affrontare qualcosa a cui non erano affatto pronti: lo sterminio della famiglia di Mal. Oltre a questo si aggiunge anche il grave ferimento del cognato di Emmet e Jake, e il sequestro del loro nipotino. Non gli resta dunque che unire le forze e cercare di ripulire la città dal crimine. Riusciranno a fronteggiare la terribile banda di McKendrick e il corrotto sceriffo? Serie tv, Show e Film su NOW!</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20260101185000 +0000" stop="20260101201000 +0000">
-    <title>Stanlio e Ollio - Ollio sposo mattacchione</title>
-    <desc>Ollio sposo mattacchione</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20260101185000 +0000" stop="20260101201000 +0000">
-    <title>Stanlio e Ollio - Ollio sposo mattacchione - Stanlio e Ollio - Ollio sposo mattacchione</title>
-    <sub-title>Ollio sposo mattacchione - Stanlio e Ollio - Ollio sposo mattacchione</sub-title>
-    <desc>Un medico di campagna cura una elefantessa che gli si affeziona al punto da non volersene piu staccare. Una divertente commedia con Oliver Hardy nel suo unico film da protagonista senza Stan Laure...</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20260101190500 +0000" stop="20260101201000 +0000">
-    <title>Venti anni dopo</title>
-    <desc>Venti anni dopo è un film del 1938 di genere comico, diretto da John G. Blystone, con Minna Campbell, James Finlayson e Patricia Ellis, della durata di 58 minuti in onda in TV MER.31 su Rai Movie alle 20:05. Il film è stato candidato agli Oscar.</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20260101201000 +0000" stop="20260101215500 +0000">
-    <title>Matrimonio allitaliana</title>
-    <desc>Filumena Marturano, ex prostituta, e stata per anni la serva-amante di Domenico. Stanca di questa sua condizione, decide di farsi sposare. Per riuscirci, finge di essere in punto di morte. Lo stra...</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20260101201000 +0000" stop="20260101231500 +0000">
-    <title>Nuovo cinema Paradiso</title>
-    <desc>Nuovo Cinema Paradiso e un film drammatico del 1988 scritto e diretto da Giuseppe Tornatore e racconta la storia di unamicizia, quella di Totò e Alfredo (Philipe Noiret), un legame cementato dalla una comune passione per il cinema.Salvatore de Vita (Jacques Perrin, Salvatore adulto) affermato regista da trentanni vive a Roma dopo aver lasciato la Sicilia. Apprende dalla madre la notizia della morte di Alfredo: in una notte rivive tutti i suoi ricordi dinfanzia.Dopo la fine della Seconda guerra mondiale in un piccolo paese siciliano, il cinema è lunico divertimento. La sala parrocchiale, controllata dallinflessibile parroco censore, è il crocevia in cui si incontrano i paesani. È qui che lintraprendente Totò (Salvatore Cascio, Salvatore bambino) si innamora del cinema e stringe amicizia con Alfredo, il proiezionista del Cinema Paradiso che lo inizia ai misteri della macchina da proiezione, insegnandogli minuziosamente tutte le abilità che diventeranno un trampolino di lancio per il giovane nel mondo del cinema. A seguito di un incidente dove Totò riesce a salvare il suo amico, Alfredo rimane cieco. Il suo posto andrà a Totò, diventato espertissimo. Ormai adolescente, si innamora di Elena, ma il rapporto, ostacolato dalla famiglia, si interrompe. Nel frattempo il ragazzo è chiamato al servizio di leva e parte per Roma. Tornato in Sicilia si incontra con Alfredo che gli consiglia di abbandonare per sempre lamato paesino e inseguire i suoi sogni altrove.Con questo ultimo ricordo, Salvatore torna alla realtà e decide di tornare a Ciancaldo e di prendere parte al funerale di Alfredo. Sarà loccasione di confrontarsi con il passato e con le persone che hanno interagito con la sua infanzia.</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20260101215500 +0000" stop="20260101235500 +0000">
-    <title>9 Settimane e - 9 Settimane e</title>
-    <sub-title>9 Settimane e</sub-title>
-    <desc>La bella gallerista Elizabeth si invaghisce dellaffascinante e ambiguo agente di borsa John, che la trascina in un vortice di esperienze sessuali proibite. Di fronte a richieste sempre piu ardite...</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20260101215500 +0000" stop="20260101235500 +0000">
-    <title>9 Settimane e ½</title>
-  </programme>
-  <programme channel="Rai Movie.it" start="20260101231500 +0000" stop="20260102012000 +0000">
-    <title>Tootsie</title>
-    <desc>Tootsie è una commedia del 1982 diretta da Sidney Pollack.Michael Dorsey (Dustin Hoffman) è un bravo attore di teatro, ma nonostante il suo talento non riesce a trovare una scrittura. Per potersi mantenere lavora come cameriere in un ristorante insieme allamico Jeff Slater (Bill Murray), un commediografo che non riesce a produrre la sua opera, con cui condivide anche l’appartamento.Un giorno Michael accompagna la sua cara amica Sandy Lester (Teri Garr), anche lei aspirante attrice, a un’audizione per una parte in una serie televisiva. Lì viene a sapere che il ruolo che gli era stato promesso dal suo agente, George Fields, è stato assegnato a un altro.Sandy viene scartata e a Michael viene in mente un’idea stramba, ma che si rivelerà estremamente efficace: decide di fingersi donna e sostenere il provino per la parte della Direttrice dell’ospedale. Inaspettatamente viene preso.Inizia così la carriera di Dorothy-Michael che riscuote un grande successo e fa alzare gli ascolti della serie. Ma Michael deve fare i conti con le conseguenze della sua doppia vita, per esempio quando inizia a provare dei sentimenti per la collega Julie Nichols (Jessica Lange), che ignara della vera identità di Dorothy, le presenta il padre, il quale s’innamora di “lei”. Serie tv, Show e Film su NOW!</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20260101235500 +0000" stop="20260102000000 +0000">
-    <title>Anica - Appuntamento al cinema</title>
-    <desc>Appuntamento al cinema</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20260101235500 +0000" stop="20260102000000 +0000">
-    <title>Appuntamento al cinema</title>
-    <desc>Rubrica per la promozione della cultura cinematografica in Italia.</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20260102000000 +0000" stop="20260102021000 +0000">
-    <title>10 in amore</title>
-  </programme>
-  <programme channel="Rai Movie.it" start="20260102012000 +0000" stop="20260102030000 +0000">
-    <title>2061</title>
-    <desc>2061, film diretto da Carlo Vanzina, racconta di un futuro distopico: tutto il mondo è piombato in una sorta di nuovo Medioevo, per colpa di una disastrosa crisi energetica dovuta all’esaurimento del petrolio. In questo contesto l’Italia non è più una nazione unita, ma disgregata, come prima del Risorgimento.Un gruppo di avventurosi e bizzarri patrioti - capitanati dal Professore (Diego Abatantuono) - intraprende un viaggio verso Torino per riunificare l’Italia. Attraversando il paese dalla Sicilia alle Alpi, lo sgangherato gruppetto si ritrova in autostrada, tra le macchine abbandonate, ricordo di un epico ingorgo dovuto all’improvvisa chiusura delle pompe di benzina.Dopo aver salvato la vita alla bella concorrente di un reality mortale, i patrioti prendono possesso di un auto al metano e giungono a Roma, dove sfortunatamente vengono arrestati. Imprigionati dentro Castel Sant’Angelo, gli eroi sono condannati alla fucilazione da Cardinal Bonifacio (Michele Placido), capo della Santa Inquisizione, ma riusciranno a fuggire grazie all’intervento dellaffascinante Mara (Sabrina Impacciatore), che si unirà a loro. Tra colpi di scena e avventure esilaranti, gli eroi giungeranno a Torino, dove li attende la prova finale.</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20260102021000 +0000" stop="20260102040000 +0000">
-    <title>Il giorno in più</title>
-    <desc>Giacomo ha quarantanni, molte donne e poca voglia di impegnarsi in una relazione seria nonostante tutti cerchino di convincerlo ad accasarsi. Fino a quando non incontra una ragazza sul tram. Tratt...</desc>
-  </programme>
-  <programme channel="Rai Movie.it" start="20260102030000 +0000" stop="20260102033000 +0000">
-    <title>Stanlio e Ollio</title>
-  </programme>
   <programme channel="Rai News 24.it" start="20251231000000 +0000" stop="20251231003000 +0000">
     <title>Rassegna Stampa</title>
     <desc>Intrattenimento</desc>
@@ -5697,6 +5774,690 @@
   <programme channel="Rai News 24.it" start="20260102023000 +0000" stop="20260102030000 +0000">
     <title>Documentario</title>
     <desc>Documentario</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251202050500 +0000" stop="20251202055000 +0000">
+    <title>Incantesimo</title>
+    <desc>Vera capisce di provare solo amicizia per Max. Rassicurata dalla notizia, Giovanna chiede al giovane anestesista di riprendere il suo posto. Uninfermiera della Life testimonia che la De Marchis era perfettamente in grado dintendere e di volere.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251202055000 +0000" stop="20251202073000 +0000">
+    <title>Terapia durgenza</title>
+    <sub-title>Milano ore 6</sub-title>
+    <desc>I feriti di un incidente in un cantiere vengono ricoverati al Morandini. Tra questi, cè il senegalese Mamadou. Ettore prende a cuore il suo caso.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251202073000 +0000" stop="20251202075500 +0000">
+    <title>Un posto al sole</title>
+    <sub-title>P.70</sub-title>
+    <desc>Come in un vero e proprio condominio gli abitanti di Palazzo Palladini non sono semplici vicini di casa, ma amici, nemici e talvolta amanti.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251202075500 +0000" stop="20251202082000 +0000">
+    <title>Un posto al sole</title>
+    <sub-title>P.71</sub-title>
+    <desc>Come in un vero e proprio condominio gli abitanti di Palazzo Palladini non sono semplici vicini di casa, ma amici, nemici e talvolta amanti.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251202082000 +0000" stop="20251202084500 +0000">
+    <title>Un posto al sole</title>
+    <sub-title>P.72</sub-title>
+    <desc>Nuovi avvincenti intrighi attendono i protagonisti di "Un posto al sole". Gli episodi ci proporranno le nuove storie di Angela, Michele, Franco, Raffaele, Roberto e di tutti gli altri personaggi che interagiscono come di consueto a Posillipo, suggestivo quartiere di Napoli.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251202084500 +0000" stop="20251202094500 +0000">
+    <title>Un passo dal cielo</title>
+    <desc>Pietro, è un ispettore forestale che lavora nel paese alpino di San Candido assieme al collega "Roccia", collaborando inoltre con il commissario di polizia Nappi appena arrivato in paese, per risolvere delitti o misteri.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251202094500 +0000" stop="20251202104500 +0000">
+    <title>Un passo dal cielo</title>
+    <desc>Pietro, è un ispettore forestale che lavora nel paese alpino di San Candido assieme al collega "Roccia", collaborando inoltre con il commissario di polizia Nappi appena arrivato in paese, per risolvere delitti o misteri.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251202104500 +0000" stop="20251202120000 +0000">
+    <title>Velvet</title>
+    <sub-title>Affari di famiglia</sub-title>
+    <desc>Durante la cena di fidanzamento, a cui sono presenti anche i genitori di Clara, arriva inaspettato il padre di Mateo. Suo figlio non vuole perdonargli il fatto di averlo abbandonato da bambino e pertanto gli dice chiaramente di non gradirlo alle sue nozze. Intanto, il nuovo direttore della Velvet fa subito intendere di voler mettere in atto diversi cambiamenti allinterno della Galleria provocando il malumore dei dipendenti. Dovrà vedersela anche con Cristina che, saputo della gravidanza di Anna, la va a cercare aggredendola con violenza spingendola per le scale...</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251202120000 +0000" stop="20251202124500 +0000">
+    <title>Ritorno a Las Sabinas</title>
+    <sub-title>Veleno</sub-title>
+    <desc>Gracia e Paloma Molina ritornano dopo anni a Las Sabinas per le gravi condizioni di salute del padre, Don Emilio. Gracia si ritrova con Miguel, il suo primo amore; Miguel, però, ora è fidanzato con Esther, la figlia della ricca possidente Donna Paca Utrera.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251202124500 +0000" stop="20251202134000 +0000">
+    <title>Tutti pazzi per amore</title>
+    <sub-title>Giovedì, 29 dicembre</sub-title>
+    <desc>Paolo, per aiutare Raoul (che non trova lavoro), lo assume nel suo vivaio, ma il ragazzo non è bravo a far niente, nonostante si impegni, e Giorgi lo rimprovera. Inoltre Paolo inizia nella sua testa a fare tanti progetti di ingrandimento per il vivaio, sicuro che Raul possa esserne contento, senza pensare invece che il ragazzo ha ben altri progetti come atleta, ma non sa come farlo capire a Paolo senza offenderlo; in tutto ciò non gli sono per nulla daiuto gli altri tre operai ragazzi che lavorano al vivaio. Laura scopre che qualcuno ha usato il computer di Monica, e sospetta che Elisa abbia scoperto tutto, e che la sua gravidanza sia una finzione. Intanto, la Liverani promette di dimenticare Gianpaolo, facendogli in un certo senso che lei non lo ami abbastanza. Le cose tra giulio e Stefania non vanno per niente bene per cui Clelia prende in mano la situazione! Decide infatti di difendere legalmente il genero nella pratica di separazione, nonostante Stefania la volesse al suo fianco come avvocato divorzista; Clelia sostiene di potercela fare in quanto chi come lei sa dividere sa anche come unire. E nel frattempo, suo malgrado si affeziona molto ai suoi nipoti. Arrivano a Roma i genitori di Roberta, la fidanzata di Eva, i quali però non sono a conoscenza dellomosessualità della figlia e credono che le ragazze siano soltanto due amiche che condividono la casa. E per non dare sospetti Roberta dice ai suoi genitori che Eva ha una storia con Paolo.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251202134000 +0000" stop="20251202144000 +0000">
+    <title>Tutti pazzi per amore</title>
+    <sub-title>Venerdì, 30 dicembre</sub-title>
+    <desc>Laura sogna di cucire una scarpa da bambino, mentre fuori nevica. E se Raoul cerca di impergnarsi al vivaio, con Paolo che gli sta alle calcagna, Maya, Rosa e Bea credono che Elisa non stia decendo la verità, e avvertono Monica. Intanto Laura, a seguito del suo sogno, va dal medico per unecografia.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251202144000 +0000" stop="20251202144500 +0000">
+    <title>Anica Appuntamento Al Cinema</title>
+    <desc>Rubrica per la promozione della cultura cinematografica in Italia.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251202144500 +0000" stop="20251202153500 +0000">
+    <title>Medici in corsia</title>
+    <sub-title>Due mani sinistre</sub-title>
+    <desc>Una ragazza arriva in ospedale con una mano amputata durante un lavoro effettuato nella falegnameria del nonno. Si presenta anche un ragazzo convinto di essere perseguitato dalla sfortuna.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251202153500 +0000" stop="20251202163000 +0000">
+    <title>Medici in corsia</title>
+    <sub-title>Tormenti del cuore</sub-title>
+    <desc>Una sera, al Pronto Soccorso si presentano Gero e Christine Herbst che sono stati aggrediti. Gero deve recarsi in sala operatoria a causa della gravità delle sue ferite e Christine teme per la sua vita.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251202163000 +0000" stop="20251202173000 +0000">
+    <title>Un passo dal cielo</title>
+    <desc>Pietro, è un ispettore forestale che lavora nel paese alpino di San Candido assieme al collega "Roccia", collaborando inoltre con il commissario di polizia Nappi appena arrivato in paese, per risolvere delitti o misteri.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251202173000 +0000" stop="20251202182500 +0000">
+    <title>Un passo dal cielo</title>
+    <desc>Pietro, è un ispettore forestale che lavora nel paese alpino di San Candido assieme al collega "Roccia", collaborando inoltre con il commissario di polizia Nappi appena arrivato in paese, per risolvere delitti o misteri.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251202182500 +0000" stop="20251202202000 +0000">
+    <title>Don Matteo</title>
+    <sub-title>Non rubare</sub-title>
+    <desc>Don Matteo trova il cadavere di una donna, rimanendone sconvolto. Durante i funerali della povera donna, compare la figlia di sedici anni, Alice. La ragazza sostiene che la mamma era in cerca della propria gemella, sottratta al momento della nascita..La Capitana intanto sta cercando di fare chiarezza sui suoi sentimenti per Sergio, Nino ed Elisa stanno discutendo a causa dellarrivo di Eugenio Nardi, il padre di Marco, un uomo affascinante ed acculturato... ma soprattutto interessato alla madre di Anna.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251202202000 +0000" stop="20251202215000 +0000">
+    <title>Una renna sotto lalbero</title>
+    <desc>Un gruppo di persone che hanno deciso di non festeggiare il Natale, tra cui Molly e Jared, decidono di prenotare in un ranch isolato, lontano dal caos e dalla frenesia delle festività.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251202215000 +0000" stop="20251202235000 +0000">
+    <title>Vostro Onore</title>
+    <desc>Ludovica riferisce a Vittorio la nuova posizione dì Nino. Vittorio e Salvatore si muovono nellillegalità per far sparire unatra macchina che smaschererebbe la loro messa in scena. Danti decide di smuovere un po le acque utilizzando degli informatori tra i Silva, mentre Miguel scopre un giro di droga segreto, gestito dal fratello Diego e da uno dei suoi, Carlos, che finisce in carcere. Nonostante la forte contrarietà di Vittorio, Matteo non può fare a meno di legarsi sempre di più a Camilla.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251202235000 +0000" stop="20251203003500 +0000">
+    <title>Storie italiane</title>
+    <desc>"Storie Italiane" sarà interamente dedicato al 75esimo Festival della canzone italiana. In studio Eleonora Daniele racconterà e commenterà le cinque serate, i protagonisti e le canzoni in gara con giornalisti, esperti, critici, e gli artisti che hanno calcato in passato il palco dell`Ariston. Talk sanremesi che saranno accompagnati da servizi filmati, interviste, anticipazioni e immagini che hanno fatto la storia del Festival. E poi collegamenti in diretta dalla "Città dei fiori" con gli inviati, Mario Acampa e Vittorio Introcaso per vivere l`atmosfera, gli ospiti e gli artisti di questa edizione.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251203003500 +0000" stop="20251203014000 +0000">
+    <title>Velvet</title>
+    <sub-title>Affari di famiglia</sub-title>
+    <desc>Durante la cena di fidanzamento, a cui sono presenti anche i genitori di Clara, arriva inaspettato il padre di Mateo. Suo figlio non vuole perdonargli il fatto di averlo abbandonato da bambino e pertanto gli dice chiaramente di non gradirlo alle sue nozze. Intanto, il nuovo direttore della Velvet fa subito intendere di voler mettere in atto diversi cambiamenti allinterno della Galleria provocando il malumore dei dipendenti. Dovrà vedersela anche con Cristina che, saputo della gravidanza di Anna, la va a cercare aggredendola con violenza spingendola per le scale...</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251203014000 +0000" stop="20251203030000 +0000">
+    <title>Una renna sotto lalbero</title>
+    <desc>Un gruppo di persone che hanno deciso di non festeggiare il Natale, tra cui Molly e Jared, decidono di prenotare in un ranch isolato, lontano dal caos e dalla frenesia delle festività.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251203030000 +0000" stop="20251203040000 +0000">
+    <title>Medici in corsia</title>
+    <sub-title>Tormenti del cuore</sub-title>
+    <desc>Una sera, al Pronto Soccorso si presentano Gero e Christine Herbst che sono stati aggrediti. Gero deve recarsi in sala operatoria a causa della gravità delle sue ferite e Christine teme per la sua vita.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251203040000 +0000" stop="20251203045500 +0000">
+    <title>Incantesimo</title>
+    <desc>Mentre Paola confida a Giudici che vuole sposare Michele, Vittorio Ajello ha un incidente automobilistico. Appresa la notizia dal telegiornale, Paola si precipita dal padre in ospedale, rischiando così dincontrare Tony.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251203045500 +0000" stop="20251203050000 +0000">
+    <title>Incantesimo</title>
+    <desc>Alla Life arriva un nuovo chirurgo, John Senesi, sposato con Cora, ex signora Dupre nonche amante di Diego. Paola scopre di essere incinta e la notizia rende particolarmente felice Michele.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251228062500 +0000" stop="20251228080000 +0000">
+    <title>La fuga degli innocenti</title>
+    <desc>Alla stazione di Verona le SS del colonnello Krieg cercano di dirottare il convoglio con i ragazzi ebrei verso il territorio del Reich. Solo la prontezza di Joseph e un nuovo intervento dellavvocato Levi riescono a bloccare questa manovra. Il nuovo rifugio del gruppo è Villa lris, nella campagna modenese, la cui rigida disciplina è nulla rispetto alla ben più agghiacciante realtà esterna, che una volta emersa, finirà per sconvolgere Joseph. E non risparmia neanche i piccoli ospiti di Villa lris...</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251228080000 +0000" stop="20251228094000 +0000">
+    <title>Il giro del mondo in 80 giorni</title>
+    <desc>Phileas Fogg, sfidato da una cartolina, scommette di girare il mondo in 80 giorni. Con il maggiordomo Passepartout e la giornalista Abigail Fix cominciano lavventura partendo per Parigi.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251228094000 +0000" stop="20251228112000 +0000">
+    <title>Il giro del mondo in 80 giorni</title>
+    <desc>Quando il terzetto si ritrova sulle coste dello Yemen, Fogg decide di correre il rischio di attraversare il deserto del "quarto vuoto", lasciando indietro Fix. Ma quando la loro guida si rivela essere un ladro, Fogg e Passepartout si ritrovano soli nel deserto, nel bel mezzo di una tempesta di sabbia. Fix è furibonda per essere stata lasciata indietro e per cercare aiuto si rivolge alla nobildonna inglese Jane Digby e a suo marito, lo sceicco Medjuel el Mezrab. Poi Jane rivela a Fix delle scomode verità e..</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251228112000 +0000" stop="20251228130000 +0000">
+    <title>Il giro del mondo in 80 giorni</title>
+    <desc>Arrivati alla fine di un binario morto in India, il nostro terzetto si ritrova nello sperduto villaggio di Narupani, dove tutti sono impegnati nei preparativi di un matrimonio, fino a che i soldati inglesi non arrestano lo sposo, un sepoy che aveva disertato. Fogg è determinato a proseguire il suo viaggio, ciononostante tenta di intercedere in favore del soldato indiano arrestato.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251228130000 +0000" stop="20251228145000 +0000">
+    <title>Sorelle</title>
+    <desc>Chiara brillante avvocato single, vive a Roma dopo aver chiuso i contatti con la città dovè cresciuta, Matera, per le incomprensioni con la sorella minore Elena e con la madre Antonia, La misteriosa sparizione di Elena, insegnante al liceo artistico, costringe Chiara a tornare a casa dove nota strani accadimenti che la convincono a restate. Una sera sente qualcuno nel cortile: intravede un ragazzo che poi scappa. Inoltre scopre che i nipoti le hanno mentito: non vedono e non sentono la madre da una settimana. Infine, un presagio di sua madre anticipa ben più gravi eventi...</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251228145000 +0000" stop="20251228151500 +0000">
+    <title>Pellegrini Nel Tempo</title>
+    <desc>La conduttrice Francesca Barolini e il teologo mons. Walter Insero approfondiscono il rapporto fra la Rai e il Giubileo, a partire proprio dal primissimo che la Rai stessa ha raccontato, e cioè quello del 1975.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251228151500 +0000" stop="20251228152000 +0000">
+    <title>Anica Appuntamento Al Cinema</title>
+    <desc>Rubrica per la promozione della cultura cinematografica in Italia.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251228152000 +0000" stop="20251228165500 +0000">
+    <title>La nave dei sogni: Palau</title>
+    <desc>La nave dei sogni parte alla volta di Palau, il paradiso dei mari del sud. A bordo viaggia Tobias Reiter, un edonista che vizia la sua amata Mia con una crociera che a stento riesce a permettersi. Il passato di Mia come escort viene a galla quando si imbattono in Gunther Strobel, un ex cliente in viaggio con la poco amata moglie Angelika. Lequipaggio del capitano Victor Burger, che non vede lora di trascorrere qualche momento spensierato con lamico documentarista Dirk Steffens, è preoccupato del fatto che a bordo vi sia Hieronymus Claasen, il fondatore della crociera.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251228165500 +0000" stop="20251228184000 +0000">
+    <title>I fantasmi di Portopalo</title>
+    <desc>Saro Ferro (Giuseppe Fiorello) un pescatore, la mattina del 24 dicembre 1996 salva un adolescente dai tratti indiani nel mare in tempesta. Il ragazzo è sotto shock e non parla italiano. Nei giorni successivi altri pescatori di Portopalo trovano cadaveri impigliati nelle reti, il rischio è che la stagione di pesca possa essere bloccata. Allunanimità i pescatori decidono di rigettare i cadaveri in mare. Passano cinque anni e la notizia dei morti in mare è rimasta un segreto fra i pescatori. Ma un giorno quel ragazzo indiano ripescato da Saro comincerà a ricordare...</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251228184000 +0000" stop="20251228202000 +0000">
+    <title>I fantasmi di Portopalo</title>
+    <desc>Un giorno, mentre Saro torna a casa in vespa, si salva per miracolo dallaggressione di due motociclisti. Fosse per lui, continuerebbe ad andare avanti, ma il prezzo lo sta pagando anche la sua famiglia. E, per la prima volta, è sul punto di mollare, ma la moglie non ha alcuna intenzione di darla vinta ai compaesani: andranno avanti fino a che non avranno vinto quella battaglia. Il modo più diretto per spuntarla è quello di ritrovare il relitto della nave fantasma, Quando si scopre che cè un altro testimone di quel naufragio, Shakoot, che vive nel centro Italia e ricorda tutto, la verità comincia faticosamente a emergere, ma le tante, troppe ingiustizie e omertà lasciano un forte amaro in bocca...</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251228202000 +0000" stop="20251228224000 +0000">
+    <title>Le Mille e una Notte - Aladino e Sherazade</title>
+    <desc>Una dama entra nel palazzo di un signore sanguinario e, per impedirgli di ucciderla, lo convince ad ascoltare la storia dellamore tra il calzolaio Aladino e la principessa ShahrazÄd.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251228224000 +0000" stop="20251228232500 +0000">
+    <title>Il paradiso delle signore 4 - Daily</title>
+    <sub-title>Il paradiso delle signore Daily</sub-title>
+    <desc>Manca poco al Natale e le Veneri decidono di adottare un metodo molto pratico per potersi fare regali a vicenda, mentre Botteri non sa cosa scegliere per il figlio Teo.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251228232500 +0000" stop="20251229001000 +0000">
+    <title>Il paradiso delle signore 4 - Daily</title>
+    <sub-title>Il paradiso delle signore Daily</sub-title>
+    <desc>Teo si è integrato nella famiglia del Paradiso, tanto da far venire unidea a Ciro per festeggiare il Natale. Fulvio coglie, così, loccasione per fare una sorpresa a Caterina.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251229001000 +0000" stop="20251229021500 +0000">
+    <title>Cenerentola</title>
+    <desc>Aurora vive con la matrigna e le sorellastre. Pur subendo i soprusi della famiglia acquisita, la ragazza non smette di sognare, grazie alla musica e al suo amore per un principe lontano...</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251229021500 +0000" stop="20251229034500 +0000">
+    <title>La nave dei sogni: Palau</title>
+    <desc>La nave dei sogni parte alla volta di Palau, il paradiso dei mari del sud. A bordo viaggia Tobias Reiter, un edonista che vizia la sua amata Mia con una crociera che a stento riesce a permettersi. Il passato di Mia come escort viene a galla quando si imbattono in Gunther Strobel, un ex cliente in viaggio con la poco amata moglie Angelika. Lequipaggio del capitano Victor Burger, che non vede lora di trascorrere qualche momento spensierato con lamico documentarista Dirk Steffens, è preoccupato del fatto che a bordo vi sia Hieronymus Claasen, il fondatore della crociera.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251229034500 +0000" stop="20251229040000 +0000">
+    <title>Piloti</title>
+    <desc>Max Tortora e Enrico Bertolino sono i due piloti della "Piccione Airlines" nella sitcom ambientata in un aereo in volo.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251229040000 +0000" stop="20251229041500 +0000">
+    <title>Piloti</title>
+    <desc>Max Tortora e Enrico Bertolino sono i due piloti della "Piccione Airlines" nella sitcom ambientata in un aereo in volo.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251229041500 +0000" stop="20251229050000 +0000">
+    <title>Incantesimo</title>
+    <desc>Il diabolico piano messo in atto da Vera per allontanare Diego da Giovanna è riuscito in pieno. Per chiarire lequivoco che si è creato, Hans va a trovare Diego in albergo. Michele viene a sapere che sua sorella Elena è la vera responsabile della morte dei loro genitori.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231002000 +0000" stop="20251231012500 +0000">
+    <title>Storie italiane</title>
+    <sub-title>Storie italiane 2025</sub-title>
+    <desc>St2025 Puntata del Eleonora Daniele approfondisce i temi di stretta attualita e i principali casi di cronaca con i protagonisti che raccontano in prima persona le loro esperienze.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231012500 +0000" stop="20251231020500 +0000">
+    <title>Sea Patrol</title>
+    <sub-title>La nave fantasma</sub-title>
+    <desc>St1 Ep3 La nave fantasma - Dopo essere stata colpita da una tempesta tropicale, la HMAS Hammersley trova un catamarano al largo: chi era a bordo e stato ucciso o e caduto in mare?</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231020500 +0000" stop="20251231025000 +0000">
+    <title>Sea Patrol</title>
+    <sub-title>La medusa killer</sub-title>
+    <desc>St1 Ep4 La medusa killer - La Hammersley raccoglie una famiglia afgana in difficolta. Due uomini dellequipaggio vengono punti da una medusa e versano per questo in gravi condizioni e non potendo essere trasportati immediat...</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231025000 +0000" stop="20251231034000 +0000">
+    <title>Medici in corsia</title>
+    <sub-title>Stag. 4 Ep. 13 - La strada sbagliata</sub-title>
+    <desc>St4 Ep13 La strada sbagliata - Eva sta per lasciare la clinica e Niklas e molto preoccupato. Come se non bastasse, Gero Dellbruck, un carissimo amico di Niklas, viene ricoverato dopo un incidente stradale.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231040000 +0000" stop="20251231043000 +0000">
+    <title>Ricominciare</title>
+    <sub-title>Stag. 1 Ep. 5 - Episodio 5</sub-title>
+    <desc>St1 Ep5 Episodio 5 - I Vallesi sono una ricca e potente famiglia proprietaria di una prestigiosa casa editrice perugina, mentre i Ruggeri sono una famiglia molto meno abbiente il cui destino pero sintreccia a quello...</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231052000 +0000" stop="20251231061500 +0000">
+    <title>Incantesimo - S5E4</title>
+    <desc>S5E4</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231054000 +0000" stop="20251231063000 +0000">
+    <title>Incantesimo</title>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231061500 +0000" stop="20251231075500 +0000">
+    <title>Uno di noi</title>
+    <sub-title>Stag. 1 Ep. 4 - I due amori</sub-title>
+    <desc>St1 Ep4 I due amori - Ercole, brillante architetto, alla morte del padre adottivo abbandona il lavoro e inizia a dirigere lo stesso orfanotrofio nel quale lui stesso ha trascorso dodici anni. Qui ritrova Vito, il suo am...</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231061500 +0000" stop="20251231075500 +0000">
+    <title>Uno di noi - S1E4 - I due amori</title>
+    <desc>S1E4 - I due amori</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231063000 +0000" stop="20251231080500 +0000">
+    <title>Uno di noi</title>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231075500 +0000" stop="20251231082000 +0000">
+    <title>Un posto al sole</title>
+    <sub-title>Stag. 29 Ep. 6715 - Puntata del 06/06/2025</sub-title>
+    <desc>St29 Ep6715 Puntata del La telefonata di Gianluca porta Giulia a prendere una decisione importante che pero preoccupa Niko. Serena cerca di sbarazzarsi di Micaela, ma la ragazza si mostrera piu combattiva che mai anch...</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231075500 +0000" stop="20251231082000 +0000">
+    <title>Un posto al sole - Puntata del 06/06/2025 EP6715</title>
+    <desc>Puntata del 06/06/2025 EP6715...</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231080500 +0000" stop="20251231083000 +0000">
+    <title>Un posto al sole</title>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231082000 +0000" stop="20251231084500 +0000">
+    <title>Un posto al sole</title>
+    <sub-title>Stag. 2024 Ep. 6716 - Puntata del 09/06/2025</sub-title>
+    <desc>St29 Ep6716 Puntata del Dopo una pericolosa azione di polizia che mettera a rischio lincolumita degli agenti, la tensione fra Damiano e il suo superiore rischia di esplodere.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231082000 +0000" stop="20251231084500 +0000">
+    <title>Un posto al sole - Puntata del 09/06/2025 EP6716</title>
+    <desc>Puntata del 09/06/2025 EP6716...</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231083000 +0000" stop="20251231085500 +0000">
+    <title>Un posto al sole</title>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231084500 +0000" stop="20251231091000 +0000">
+    <title>Un posto al sole</title>
+    <sub-title>Stag. 2024 Ep. 6717 - Puntata del 10/06/2025</sub-title>
+    <desc>St29 Ep6717 Puntata del Niko e in difficolta nel tacere ad Alberto di Gianluca, Giulia si confrontera con Luca rispetto alle reali e recondite intenzioni. Il consiglio di classe non si rivelera facile per Viola.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231084500 +0000" stop="20251231091000 +0000">
+    <title>Un posto al sole - Puntata del 10/06/2025 EP6717</title>
+    <desc>Puntata del 10/06/2025 EP6717...</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231085500 +0000" stop="20251231092000 +0000">
+    <title>Un posto al sole</title>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231091000 +0000" stop="20251231100500 +0000">
+    <title>Un passo dal cielo S3E14 - Aliloke</title>
+    <desc>Aliloke</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231091000 +0000" stop="20251231101000 +0000">
+    <title>Un passo dal cielo</title>
+    <sub-title>Stag. 3 Ep. 14 - Aliloke</sub-title>
+    <desc>St3 Ep14 Aliloke - Una telefonata anonima in commissariato denuncia la sparizione di un ragazzo ad Aliloke, comunita autogestita di contadini, che Pietro conosce molto bene.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231092000 +0000" stop="20251231102000 +0000">
+    <title>Un passo dal cielo</title>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231100500 +0000" stop="20251231110000 +0000">
+    <title>Un passo dal cielo S3E15 - Il castello di Monguelfo</title>
+    <desc>Il castello di Monguelfo...</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231101000 +0000" stop="20251231110500 +0000">
+    <title>Un passo dal cielo</title>
+    <sub-title>Stag. 3 Ep. 15 - Il castello di Monguelfo</sub-title>
+    <desc>St3 Ep15 Il castello di Monguelfo - Un uomo viene trovato morto castello di Monguelfo. E il proprietario della fortezza. Il 21 giugno di ogni anno qualcuno li muore. Pietro spiega a Nappi che su quel luogo girano voci di una maledi...</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231102000 +0000" stop="20251231112000 +0000">
+    <title>Un passo dal cielo</title>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231110000 +0000" stop="20251231114500 +0000">
+    <title>Sea Patrol S1E5 - Controllo radar</title>
+    <desc>Controllo radar</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231110500 +0000" stop="20251231115000 +0000">
+    <title>Sea Patrol</title>
+    <sub-title>Controllo radar</sub-title>
+    <desc>St1 Ep5 Controllo radar - La Hammersley e sulle tracce di un peschereccio che sta catturando squali. Ma un gruppo di ecologisti manda a monte i piani</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231112000 +0000" stop="20251231120500 +0000">
+    <title>Sea Patrol</title>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231114500 +0000" stop="20251231123500 +0000">
+    <title>Sea Patrol S1E6 - Un prezioso carico</title>
+    <desc>Un prezioso carico</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231115000 +0000" stop="20251231124000 +0000">
+    <title>Sea Patrol</title>
+    <sub-title>Un prezioso carico</sub-title>
+    <desc>St1 Ep6 Un prezioso carico - Nel nuovo episodio la Hammersley incrocia in mare un container abbandonato, al cui interno si trovano dei clandestini nordcoreani</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231120500 +0000" stop="20251231125500 +0000">
+    <title>Sea Patrol</title>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231123500 +0000" stop="20251231134000 +0000">
+    <title>È arrivata la felicità S2E15 - Quando abbiamo avuto paura</title>
+    <desc>Quando abbiamo...</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231125500 +0000" stop="20251231135000 +0000">
+    <title>È arrivata la felicità</title>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231134000 +0000" stop="20251231144500 +0000">
+    <title>È arrivata la felicità S2E16 - Quando ci siamo stretti</title>
+    <desc>Quando ci siamo...</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231134500 +0000" stop="20251231144500 +0000">
+    <title>E arrivata la felicita</title>
+    <sub-title>Stag. 2 Ep. 16 - Quando ci siamo stretti</sub-title>
+    <desc>St2 Ep16 Quando ci siamo stretti - In ospedale, Angelica riceve la visita della sua famiglia: la abbracciano forte, tutti insieme, tanto che la dottoressa e costretta a farli uscire e annullare le visite fino a nuovo ordine. Luca c...</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231135000 +0000" stop="20251231144500 +0000">
+    <title>È arrivata la felicità</title>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231144500 +0000" stop="20251231145000 +0000">
+    <title>Anica</title>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231144500 +0000" stop="20251231145000 +0000">
+    <title>Anica Appuntamento al Cinema</title>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231144500 +0000" stop="20251231145000 +0000">
+    <title>Appuntamento al cinema</title>
+    <desc>Rubrica per la promozione della cultura cinematografica in Italia.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231145000 +0000" stop="20251231154000 +0000">
+    <title>Medici in corsia S4E14 - Noi ci apparteniamo</title>
+    <desc>Noi ci apparteniamo</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231145000 +0000" stop="20251231154500 +0000">
+    <title>Medici in corsia</title>
+    <sub-title>Stag. 4 Ep. 14 - Noi ci apparteniamo</sub-title>
+    <desc>St4 Ep14 Noi ci apparteniamo - Niklas ha lasciato la clinica da una settimana. Marc ha assunto la gestione degli specializzandi. Ben ha qualche difficolta in sala operatoria a causa della sua vecchia protesi alla gamba.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231154000 +0000" stop="20251231163500 +0000">
+    <title>Medici in corsia S4E15 - La prova del fuoco</title>
+    <desc>La prova del fuoco</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231154500 +0000" stop="20251231163500 +0000">
+    <title>Medici in corsia</title>
+    <sub-title>Stag. 4 Ep. 15 - La prova del fuoco</sub-title>
+    <desc>St4 Ep15 La prova del fuoco - Ce bisogno di designare il nuovo medico di reparto per Chirurgia e Matteo si occupa della selezione con il suo spirito un po perfido. Sara un esame in parte pratico e la cosa sconvolge molti.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231163500 +0000" stop="20251231173500 +0000">
+    <title>Un passo dal cielo</title>
+    <sub-title>Stag. 3 Ep. 9A - Richiami lontani</sub-title>
+    <desc>St3 Ep16 Richiami lontani - Una coppia denuncia il rapimento della figlia: il padre teme che centri un amico ossessionato dagli alieni. E Pietro trova degli strani cerchi nel bosco accanto al cellulare della ragazza</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231163500 +0000" stop="20251231173500 +0000">
+    <title>Un passo dal cielo S3E16 - Richiami lontani</title>
+    <desc>Richiami lontani</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231173500 +0000" stop="20251231183000 +0000">
+    <title>Un passo dal cielo</title>
+    <sub-title>Stag. 3 Ep. 17 - La leggenda vivente</sub-title>
+    <desc>St3 Ep17 La leggenda vivente - Pietro e Nappi indagano sullomicidio di un famoso ex scalatore che da tempo si dedicava alla scrittura. Intanto Natasha prepara la sua fuga con il figlio e Pietro sembra volerla aiutare.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231173500 +0000" stop="20251231183000 +0000">
+    <title>Un passo dal cielo S3E17 - La leggenda vivente</title>
+    <desc>La leggenda vivente...</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231182500 +0000" stop="20251231202000 +0000">
+    <title>Sorelle - S1E4</title>
+    <desc>S1E4</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231183000 +0000" stop="20251231202000 +0000">
+    <title>Sorelle</title>
+    <sub-title>Stag. 1 Ep. 4</sub-title>
+    <desc>St1 Ep4 Episodio 4 - Convinta dellinnocenza di Roberto, Chiara decide di restare a Matera per dedicarsi alla sua difesa e per far luce sulla morte di sua sorella Elena. Nel frattempo si vanno delineando dei nuovi poss...</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231202000 +0000" stop="20251231220500 +0000">
+    <title>Un Bebè per Natale</title>
+    <desc>Un Bebè per Natale, il film diretto da Eric Summer, vede protagonista Noemie (Laëtitia Milot), una giovane donna rimasta vittima di una brutta caduta. Quando si risveglia in una stanza dospedale, due grandi sorprese lattendono, Noemie scopre contemporaneamente di aver trascorso gli ultimi sei mesi in coma ma anche e di essere incinta.Una situazione resa ancora più traumatica per il fatto che la donna non sa chi sia il padre del bambino che aspetta. Pochi giorni prima del suo terribile incidente, Noemie aveva infatti avuto una violenta discussione con il suo fidanzato Olivier (Alexis Loret), e, per consolarsi e vedicarsi di lui, si era gettata di nuovo tra le braccia del suo ex Yann (Bartholomew Boutellis). Impossibile dunque per lei capire al momento quale dei due sia il padre del nascituro.Olivier e Yann, entrambi ancora innamorati di lei, prendono unimportante decisione: rinunciano a fare il test di paternità, lasciando a Noemie libertà totale di scegliere lei chi di loro due vuole come padre de figlio. Una scelta che si rivelerà particolarmente delicata per Noemie, combattuta tra i suoi sentimenti più profondi e il desiderio di dare al bambino il miglior padre possibile, soprattutto ora che tra i due potenziali papà - ognuno dei quali cerca di dimostrale di essere la scelta giusta - ha fatto la sua comparsa un "terzo incomodo"...</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231202000 +0000" stop="20251231221000 +0000">
+    <title>Giuseppe Moscati - Lamore che guarisce - 1ª Parte</title>
+    <desc>Lamore che guarisce - 1ª...</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231202000 +0000" stop="20251231221500 +0000">
+    <title>Giuseppe Moscati - Lamore che guarisce - 1^ Parte</title>
+    <sub-title>Lamore che guarisce - 1 Parte</sub-title>
+    <desc>1 Parte - La straordinaria vita di Giuseppe Moscati, medico, ricercatore e docente universitario, morto a soli 46 anni e proclamato santo da Papa Giovanni Paolo II nel 1987.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231220500 +0000" stop="20260101002500 +0000">
+    <title>Le mille e una notte</title>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231221000 +0000" stop="20260101000500 +0000">
+    <title>Giuseppe Moscati - Lamore che guarisce - 2ª Parte</title>
+    <desc>Lamore che guarisce - 2ª...</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20251231221500 +0000" stop="20260101000500 +0000">
+    <title>Giuseppe Moscati - Lamore che guarisce - 2 Parte</title>
+    <sub-title>Lamore che guarisce - 2 Parte</sub-title>
+    <desc>2 Parte - La straordinaria vita di Giuseppe Moscati, medico, ricercatore e docente universitario, morto a soli 46 anni e proclamato santo da Papa Giovanni Paolo II nel 1987.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101000500 +0000" stop="20260101020500 +0000">
+    <title>Storie italiane - Puntata del 31/12/2025</title>
+    <desc>Puntata del 31/12/2025</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101000500 +0000" stop="20260101021000 +0000">
+    <title>Storie italiane</title>
+    <sub-title>Storie italiane 2025</sub-title>
+    <desc>St2025 Puntata del Eleonora Daniele approfondisce i temi di stretta attualita e i principali casi di cronaca con i protagonisti che raccontano in prima persona le loro esperienze.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101002500 +0000" stop="20260101022500 +0000">
+    <title>Storie italiane</title>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101020500 +0000" stop="20260101025500 +0000">
+    <title>Medici in corsia S4E14 - Noi ci apparteniamo</title>
+    <desc>Noi ci apparteniamo</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101021000 +0000" stop="20260101030000 +0000">
+    <title>Medici in corsia</title>
+    <sub-title>Stag. 4 Ep. 14 - Noi ci apparteniamo</sub-title>
+    <desc>St4 Ep14 Noi ci apparteniamo - Niklas ha lasciato la clinica da una settimana. Marc ha assunto la gestione degli specializzandi. Ben ha qualche difficolta in sala operatoria a causa della sua vecchia protesi alla gamba.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101022500 +0000" stop="20260101031000 +0000">
+    <title>Sea Patrol</title>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101025500 +0000" stop="20260101034500 +0000">
+    <title>Medici in corsia S4E15 - La prova del fuoco</title>
+    <desc>La prova del fuoco</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101030000 +0000" stop="20260101034500 +0000">
+    <title>Medici in corsia</title>
+    <sub-title>Stag. 4 Ep. 15 - La prova del fuoco</sub-title>
+    <desc>St4 Ep15 La prova del fuoco - Ce bisogno di designare il nuovo medico di reparto per Chirurgia e Matteo si occupa della selezione con il suo spirito un po perfido. Sara un esame in parte pratico e la cosa sconvolge molti.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101031000 +0000" stop="20260101040000 +0000">
+    <title>Medici in corsia</title>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101034500 +0000" stop="20260101040000 +0000">
+    <title>Piloti</title>
+    <desc>Max Tortora e Enrico Bertolino sono i due piloti della</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101040000 +0000" stop="20260101043000 +0000">
+    <title>Ricominciare</title>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101040000 +0000" stop="20260101045000 +0000">
+    <title>Incantesimo - S5E5</title>
+    <desc>S5E5</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101043000 +0000" stop="20260101052500 +0000">
+    <title>Incantesimo</title>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101045000 +0000" stop="20260101054000 +0000">
+    <title>Incantesimo</title>
+    <sub-title>Stag. 5 Ep. 6</sub-title>
+    <desc>St5 Ep6 Episodio 6 - Giancarla si fa ricoverare alla Life per un lifting, ma le analisi di controllo mettono in evidenza una leucemia. Per superare la sua gelosia Renzi chiede a Martina di sposarlo, ma lei e riluttant...</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101045000 +0000" stop="20260101054000 +0000">
+    <title>Incantesimo - S5E6</title>
+    <desc>S5E6</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101052500 +0000" stop="20260101061500 +0000">
+    <title>Incantesimo</title>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101054000 +0000" stop="20260101072000 +0000">
+    <title>Uno di noi</title>
+    <sub-title>Stag. 1 Ep. 5 - Vero come una bugia</sub-title>
+    <desc>St1 Ep5 Vero come una bugia - Ercole, brillante architetto, alla morte del padre adottivo abbandona il lavoro e inizia a dirigere lo stesso orfanotrofio nel quale lui stesso ha trascorso dodici anni. Qui ritrova Vito, il suo am...</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101054000 +0000" stop="20260101072000 +0000">
+    <title>Uno di noi - S1E5 - Vero come una bugia</title>
+    <desc>S1E5 - Vero come una bugia</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101061500 +0000" stop="20260101075500 +0000">
+    <title>Uno di noi</title>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101072000 +0000" stop="20260101075000 +0000">
+    <title>Un posto al sole</title>
+    <sub-title>Stag. 29 Ep. 6718 - Puntata del 11/06/2025</sub-title>
+    <desc>St29 Ep6718 Puntata del La fermezza dei rappresentanti sindacali nella trattiva per la gestione della crisi dei Cantieri amplifica le tensioni tra Marina, Roberto e Gennaro.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101072000 +0000" stop="20260101075000 +0000">
+    <title>Un posto al sole - Puntata del 11/06/2025 EP6718</title>
+    <desc>Puntata del 11/06/2025 EP6718...</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101075000 +0000" stop="20260101081500 +0000">
+    <title>Un posto al sole</title>
+    <sub-title>Stag. 2024 Ep. 6719 - Puntata del 12/06/2025</sub-title>
+    <desc>St29 Ep6719 Puntata del Michele non si da pace per la sparizione di Assane, il comportamento riprovevole di Gennaro portera Marina e Antonietta a uninaspettata vicinanza.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101075000 +0000" stop="20260101081500 +0000">
+    <title>Un posto al sole - Puntata del 12/06/2025 EP6719</title>
+    <desc>Puntata del 12/06/2025 EP6719...</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101075500 +0000" stop="20260101082000 +0000">
+    <title>Un posto al sole</title>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101081500 +0000" stop="20260101091000 +0000">
+    <title>Un passo dal cielo</title>
+    <sub-title>Stag. 3 Ep. 9A - Richiami lontani</sub-title>
+    <desc>St3 Ep16 Richiami lontani - Una coppia denuncia il rapimento della figlia: il padre teme che centri un amico ossessionato dagli alieni. E Pietro trova degli strani cerchi nel bosco accanto al cellulare della ragazza</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101081500 +0000" stop="20260101091000 +0000">
+    <title>Un passo dal cielo S3E16 - Richiami lontani</title>
+    <desc>Richiami lontani</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101082000 +0000" stop="20260101084500 +0000">
+    <title>Un posto al sole</title>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101084500 +0000" stop="20260101091000 +0000">
+    <title>Un posto al sole</title>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101091000 +0000" stop="20260101100500 +0000">
+    <title>Un passo dal cielo</title>
+    <sub-title>Stag. 3 Ep. 17 - La leggenda vivente</sub-title>
+    <desc>St3 Ep17 La leggenda vivente - Pietro e Nappi indagano sullomicidio di un famoso ex scalatore che da tempo si dedicava alla scrittura. Intanto Natasha prepara la sua fuga con il figlio e Pietro sembra volerla aiutare.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101091000 +0000" stop="20260101100500 +0000">
+    <title>Un passo dal cielo S3E17 - La leggenda vivente</title>
+    <desc>La leggenda vivente...</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101091000 +0000" stop="20260101101000 +0000">
+    <title>Un passo dal cielo</title>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101100500 +0000" stop="20260101110500 +0000">
+    <title>Storie di donne al bivio</title>
+    <sub-title>Stag. 2023 - Storie di donne al bivio - Speciale feste - 27/12/2023</sub-title>
+    <desc>St2023 Storie di donne al bivio - Speciale feste - Tre donne della politica, delleconomia o dello spettacolo raccontano il loro momento di svolta e le scelte della loro vita, tra famiglia, carriera, figli e amori.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101100500 +0000" stop="20260101110500 +0000">
+    <title>Storie di donne al bivio - Speciale feste - 27/12/2023</title>
+    <desc>Speciale feste - 27/12/2023...</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101101000 +0000" stop="20260101110500 +0000">
+    <title>Un passo dal cielo</title>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101110500 +0000" stop="20260101115000 +0000">
+    <title>Sea Patrol</title>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101110500 +0000" stop="20260101115500 +0000">
+    <title>Sea Patrol</title>
+    <sub-title>Salvatemi</sub-title>
+    <desc>St1 Ep7 Salvatemi - La Hammersley e subissata da richieste daiuto di Clair Watts, una navigatrice solitaria presa di mira da una banda di pirati</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101110500 +0000" stop="20260101115500 +0000">
+    <title>Sea Patrol S1E7 - Salvatemi</title>
+    <desc>Salvatemi</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101115000 +0000" stop="20260101124000 +0000">
+    <title>Sea Patrol</title>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101115500 +0000" stop="20260101124000 +0000">
+    <title>Sea Patrol S1E8 - La tempesta</title>
+    <desc>La tempesta</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101124000 +0000" stop="20260101133500 +0000">
+    <title>E arrivata la felicita</title>
+    <sub-title>Stag. 2 Ep. 17 - Quando sognavo male</sub-title>
+    <desc>St2 Ep17 Quando sognavo male - Angelica e tornata a casa ma, rendendosi conto del fatto che la famiglia e riuscita ad andare avanti anche senza di lei, si sente inutile. Valeria e Rita combattono una piccola battaglia per fare...</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101124000 +0000" stop="20260101133500 +0000">
+    <title>È arrivata la felicità S2E17 - Quando sognavo male</title>
+    <desc>Quando sognavo...</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101124000 +0000" stop="20260101134500 +0000">
+    <title>È arrivata la felicità</title>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101133500 +0000" stop="20260101143500 +0000">
+    <title>E arrivata la felicita</title>
+    <sub-title>Stag. 2 Ep. 18 - Quando ho fatto bene a lasciarti sola</sub-title>
+    <desc>St2 Ep18 Quando ho fatto bene a lasciarti sola - Dispiaciuto per come si e comportato con Angelica, Orlando decide di simulare uninfluenza, trasferirsi da Pietro e lasciare Angelica sola per qualche giorno, in modo che sua moglie possa capire d...</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101133500 +0000" stop="20260101143500 +0000">
+    <title>È arrivata la felicità S2E18 - Quando ho fatto bene a lasciarti sola</title>
+    <desc>Quando ho fatto...</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101134500 +0000" stop="20260101144500 +0000">
+    <title>È arrivata la felicità</title>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101143500 +0000" stop="20260101144000 +0000">
+    <title>Anica Appuntamento al Cinema</title>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101143500 +0000" stop="20260101144000 +0000">
+    <title>Appuntamento al cinema</title>
+    <desc>Rubrica per la promozione della cultura cinematografica in Italia.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101144000 +0000" stop="20260101153000 +0000">
+    <title>Medici in corsia S4E16 - Seguire listinto</title>
+    <desc>Seguire listinto</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101144500 +0000" stop="20260101145000 +0000">
+    <title>Anica</title>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101145000 +0000" stop="20260101154500 +0000">
+    <title>Medici in corsia</title>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101153000 +0000" stop="20260101162000 +0000">
+    <title>Medici in corsia</title>
+    <sub-title>Stag. 4 Ep. 17 - Fratelli</sub-title>
+    <desc>St4 Ep17 Fratelli - Dennis Sturm cerca di rubare il portafoglio di Moreau, ma viene investito da unambulanza. Dennis dovrebbe sottoporsi ad un intervento chirurgico il prima possibile.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101153000 +0000" stop="20260101162000 +0000">
+    <title>Medici in corsia S4E17 - Fratelli</title>
+    <desc>Fratelli</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101154500 +0000" stop="20260101163500 +0000">
+    <title>Medici in corsia</title>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101162000 +0000" stop="20260101182500 +0000">
+    <title>Un passo dal cielo</title>
+    <sub-title>Stag. 3 Ep. 18 - La vera madre</sub-title>
+    <desc>St3 Ep18 La vera madre - Pietro e lostetrica scampano allincidente, ma la testimonianza della donna non e valida, perche indagata per furto. Natasha intanto e in grave pericolo e tocca a Pietro cercare di salvarla.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101162000 +0000" stop="20260101182500 +0000">
+    <title>Un passo dal cielo S3E18 - La vera madre</title>
+    <desc>La vera madre</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101163500 +0000" stop="20260101173000 +0000">
+    <title>Un passo dal cielo</title>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101173000 +0000" stop="20260101183000 +0000">
+    <title>Un passo dal cielo</title>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101182500 +0000" stop="20260101202000 +0000">
+    <title>Sorelle</title>
+    <sub-title>Stag. 1 Ep. 5</sub-title>
+    <desc>St1 Ep5 Episodio 5 - A causa di un incidente scolastico che gli causa una ferita alla testa, il piccolo Giulio ha bisogno di una trasfusione. E cosi che Chiara e Daniele scoprono che il piccolo della famiglia non e...</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101182500 +0000" stop="20260101202000 +0000">
+    <title>Sorelle - S1E5</title>
+    <desc>S1E5</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101183000 +0000" stop="20260101202000 +0000">
+    <title>Sorelle</title>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101202000 +0000" stop="20260101221000 +0000">
+    <title>Carosello in love</title>
+    <desc>1957. La Tv entra nella vita degli italiani e con lei</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101202000 +0000" stop="20260102000500 +0000">
+    <title>Giuseppe Moscati</title>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101221000 +0000" stop="20260101234000 +0000">
+    <title>Un gioioso Natale</title>
+    <desc>Lauren e la sua migliore amica Colleen pensano di avere un lavoro meraviglioso, perche organizzano eventi ed in particolare sono specializzate nelle decorazioni natalizie. Le due socie e amiche so...</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260101234000 +0000" stop="20260102011500 +0000">
+    <title>Un angelo a New York</title>
+    <desc>Alla vigilia di Natale, Enzo vola a New York per riabbracciare il figlio Antonio e conoscere finalmente la nipotina. Trova pero una famiglia in crisi e il figlio appena licenziato dalla spietata T...</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260102000500 +0000" stop="20260102021000 +0000">
+    <title>Storie italiane</title>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260102011500 +0000" stop="20260102020000 +0000">
+    <title>Sea Patrol S1E8 - La tempesta</title>
+    <desc>La tempesta</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260102020000 +0000" stop="20260102025000 +0000">
+    <title>Medici in corsia S4E16 - Seguire listinto</title>
+    <desc>Seguire listinto</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260102021000 +0000" stop="20260102030000 +0000">
+    <title>Medici in corsia</title>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260102025000 +0000" stop="20260102033500 +0000">
+    <title>Medici in corsia</title>
+    <sub-title>Stag. 4 Ep. 17 - Fratelli</sub-title>
+    <desc>St4 Ep17 Fratelli - Dennis Sturm cerca di rubare il portafoglio di Moreau, ma viene investito da unambulanza. Dennis dovrebbe sottoporsi ad un intervento chirurgico il prima possibile.</desc>
+  </programme>
+  <programme channel="Rai Premium.it" start="20260102030000 +0000" stop="20260102034500 +0000">
+    <title>Medici in corsia</title>
   </programme>
   <programme channel="Rai Scuola.it" start="20251231050000 +0000" stop="20251231060000 +0000">
     <title>Racconti di Scienza Ep. 13 - Disasters E</title>
@@ -6870,282 +7631,6 @@
   </programme>
   <programme channel="Rai Storia.it" start="20260102024500 +0000" stop="20260102032500 +0000">
     <title>Messaggi dei Presidenti</title>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20251231003800 +0000" stop="20251231061500 +0000">
-    <title>SMRTV Notte</title>
-    <desc>Il meglio dei programmi della giornata</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20251231061500 +0000" stop="20251231063000 +0000">
-    <title>Atomic Puppet</title>
-    <desc>Cartoni animati</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20251231063000 +0000" stop="20251231073000 +0000">
-    <title>RTV News</title>
-    <desc>RTV News</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20251231073000 +0000" stop="20251231075700 +0000">
-    <title>La Casa della Salute Anthology</title>
-    <desc>Riviviamo le stagioni passate del programma condotto da Luciano Onder</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20251231075700 +0000" stop="20251231085800 +0000">
-    <title>Radio 2 Happy Family</title>
-    <desc>Stagione 2023-2024. Ema Stokholma e i Gemelli di Guidonia, ci accompagnano in unora allinsegna di musica e divertimento.</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20251231085800 +0000" stop="20251231093000 +0000">
-    <title>Un posto al sole</title>
-    <desc>Un posto al sole DECIMA stagione</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20251231093000 +0000" stop="20251231093700 +0000">
-    <title>TG Flash</title>
-    <desc>TG Flash</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20251231093700 +0000" stop="20251231101900 +0000">
-    <title>La donna del mistero</title>
-    <desc>Telenovela, racconta la storia di Giulia Falconi che si innamora di Michele Ricciardi. Nonostante i due si amino, Michele e obbligato a sposare Elisa, per salvare dalla bancarotta la sua famiglia.</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20251231101900 +0000" stop="20251231110000 +0000">
-    <title>SM RTV STORY</title>
-    <desc>Larchivio della San Marino RTV</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20251231110000 +0000" stop="20251231111100 +0000">
-    <title>Kitchen Montersino</title>
-    <desc>Rubrica dello Chef Luca Montersino</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20251231111100 +0000" stop="20251231120900 +0000">
-    <title>00Verde</title>
-    <desc>Un format itinerante che si snoda tra immagini suggestive e inedite della Repubblica e dei territori limitrofi, interviste ad esperti e personaggi del territorio</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20251231120900 +0000" stop="20251231122600 +0000">
-    <title>Alta Marea</title>
-    <desc>Storie di mare e marinai</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20251231122600 +0000" stop="20251231130000 +0000">
-    <title>Titano - Il segreto della liberta</title>
-    <sub-title>Il segreto della liberta</sub-title>
-    <desc>La storia dell antica Repubblica di San Marino raccontata da Roberto Giacobbo. Episodio 4 di 5</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20251231130000 +0000" stop="20251231131500 +0000">
-    <title>TG SAN MARINO</title>
-    <desc>Notizie sammarinesi e dal mondo</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20251231131500 +0000" stop="20251231132300 +0000">
-    <title>TG SPORT</title>
-    <desc>Notizie sportive</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20251231132300 +0000" stop="20251231135200 +0000">
-    <title>Un posto al sole</title>
-    <desc>Un posto al sole DECIMA stagione</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20251231135200 +0000" stop="20251231144500 +0000">
-    <title>Radio 2 Happy Family</title>
-    <desc>Stagione 2023-2024. Ema Stokholma e i Gemelli di Guidonia, ci accompagnano in unora allinsegna di musica e divertimento.</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20251231144500 +0000" stop="20251231150000 +0000">
-    <title>Genitori si diventa</title>
-    <desc>Rubrica dedicata ai genitori e alle famiglie, che si propone di valorizzare il ruolo del genitore, offrendo un supporto concreto. A cura di Silvia Fabbri ed Eleonora Pozzi</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20251231150000 +0000" stop="20251231160000 +0000">
-    <title>00Verde</title>
-    <desc>Un format itinerante che si snoda tra immagini suggestive e inedite della Repubblica e dei territori limitrofi, interviste ad esperti e personaggi del territorio</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20251231160000 +0000" stop="20251231163000 +0000">
-    <title>Modigliani</title>
-    <desc>Documentario che ricostruisce la vita e le opere dell artista. Di Paolo Mieli con la partecipazione di C.Augias, T.Montanari e R.Scamarcio. Prodotto da Paolo Alberti, a cura di Valentina Antonioli.</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20251231163000 +0000" stop="20251231174200 +0000">
-    <title>Un anno di sport 2025</title>
-    <desc>Speciale a cura di Lorenzo Giardi</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20251231174200 +0000" stop="20251231181500 +0000">
-    <title>Titano - Il segreto della liberta</title>
-    <sub-title>Il segreto della liberta</sub-title>
-    <desc>La storia dell antica Repubblica di San Marino raccontata da Roberto Giacobbo. Episodio 4 di 5</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20251231181500 +0000" stop="20251231183000 +0000">
-    <title>Messaggio fine anno 2025</title>
-    <desc>Messaggio di fine anno 2025 dagli Ecc.mi Capitani Reggenti</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20251231183000 +0000" stop="20251231190000 +0000">
-    <title>TG SAN MARINO</title>
-    <desc>Notizie sammarinesi e dal mondo</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20251231190000 +0000" stop="20251231191300 +0000">
-    <title>TG SPORT</title>
-    <desc>Notizie sportive</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20251231191300 +0000" stop="20251231191500 +0000">
-    <title>Meteo Rtv</title>
-    <desc>3BMeteo</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20251231191500 +0000" stop="20251231193000 +0000">
-    <title>Messaggio fine anno 2025</title>
-    <desc>Messaggio di fine anno 2025 dagli Ecc.mi Capitani Reggenti</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20251231193000 +0000" stop="20251231195000 +0000">
-    <title>Messaggio fine anno 2025</title>
-    <desc>Messaggio di fine anno 2025 dal Presidente Sergio Mattarella</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20251231195000 +0000" stop="20251231223500 +0000">
-    <title>Finale Tour Music Fest 2025</title>
-    <desc>Finale Tour Music Fest San Marino 2025</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20251231223500 +0000" stop="20251231230300 +0000">
-    <title>TG SAN MARINO</title>
-    <desc>Notizie sammarinesi e dal mondo</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20251231230300 +0000" stop="20251231230700 +0000">
-    <title>Meteo Rtv</title>
-    <desc>3BMeteo</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20251231230700 +0000" stop="20251231232400 +0000">
-    <title>La Casa della Salute Anthology</title>
-    <desc>Riviviamo le stagioni passate del programma condotto da Luciano Onder</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20251231232400 +0000" stop="20251231235200 +0000">
-    <title>Un posto al sole</title>
-    <desc>Un posto al sole DECIMA stagione</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20251231235200 +0000" stop="20260101003200 +0000">
-    <title>La donna del mistero</title>
-    <desc>Telenovela, racconta la storia di Giulia Falconi che si innamora di Michele Ricciardi. Nonostante i due si amino, Michele e obbligato a sposare Elisa, per salvare dalla bancarotta la sua famiglia.</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20251231235500 +0000" stop="20260101003500 +0000">
-    <title>La donna del mistero</title>
-    <desc>Telenovela, racconta la storia di Giulia Falconi che si innamora di Michele Ricciardi. Nonostante i due si amino, Michele e obbligato a sposare Elisa, per salvare dalla bancarotta la sua famiglia.</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20260101003200 +0000" stop="20260101061500 +0000">
-    <title>SMRTV Notte</title>
-    <desc>Il meglio dei programmi della giornata</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20260101061500 +0000" stop="20260101062000 +0000">
-    <title>Atomic Puppet</title>
-    <desc>Cartoni animati</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20260101062000 +0000" stop="20260101081500 +0000">
-    <title>Un anno di sport 2025</title>
-    <desc>Speciale a cura di Lorenzo Giardi</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20260101081500 +0000" stop="20260101091000 +0000">
-    <title>Radio 2 Happy Family</title>
-    <desc>Stagione 2023-2024. Ema Stokholma e i Gemelli di Guidonia, ci accompagnano in unora allinsegna di musica e divertimento.</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20260101091000 +0000" stop="20260101093500 +0000">
-    <title>Un posto al sole</title>
-    <desc>Un posto al sole DECIMA stagione</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20260101093500 +0000" stop="20260101101500 +0000">
-    <title>La donna del mistero</title>
-    <desc>Telenovela, racconta la storia di Giulia Falconi che si innamora di Michele Ricciardi. Nonostante i due si amino, Michele e obbligato a sposare Elisa, per salvare dalla bancarotta la sua famiglia.</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20260101101500 +0000" stop="20260101110000 +0000">
-    <title>SM RTV STORY</title>
-    <desc>Larchivio della San Marino RTV</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20260101110000 +0000" stop="20260101111500 +0000">
-    <title>Kitchen Montersino</title>
-    <desc>Rubrica dello Chef Luca Montersino</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20260101111500 +0000" stop="20260101121500 +0000">
-    <title>00Verde</title>
-    <desc>Un format itinerante che si snoda tra immagini suggestive e inedite della Repubblica e dei territori limitrofi, interviste ad esperti e personaggi del territorio</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20260101121500 +0000" stop="20260101122500 +0000">
-    <title>Alta Marea</title>
-    <desc>Storie di mare e marinai</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20260101122500 +0000" stop="20260101130000 +0000">
-    <title>Titano - Il segreto della liberta</title>
-    <sub-title>Il segreto della liberta</sub-title>
-    <desc>La storia dell antica Repubblica di San Marino raccontata da Roberto Giacobbo. Episodio 4 di 5</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20260101130000 +0000" stop="20260101131500 +0000">
-    <title>Clip News</title>
-    <desc>Rubrica notizie</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20260101131500 +0000" stop="20260101132500 +0000">
-    <title>PassioneCalcio Giovanile</title>
-    <desc>Rubrica sul mondo del calcio dei giovani.</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20260101132500 +0000" stop="20260101135500 +0000">
-    <title>Un posto al sole</title>
-    <desc>Un posto al sole DECIMA stagione</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20260101135500 +0000" stop="20260101145000 +0000">
-    <title>Radio 2 Happy Family</title>
-    <desc>Stagione 2023-2024. Ema Stokholma e i Gemelli di Guidonia, ci accompagnano in unora allinsegna di musica e divertimento.</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20260101145000 +0000" stop="20260101150000 +0000">
-    <title>Genitori si diventa</title>
-    <desc>Rubrica dedicata ai genitori e alle famiglie, che si propone di valorizzare il ruolo del genitore, offrendo un supporto concreto. A cura di Silvia Fabbri ed Eleonora Pozzi</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20260101150000 +0000" stop="20260101160000 +0000">
-    <title>00Verde</title>
-    <desc>Un format itinerante che si snoda tra immagini suggestive e inedite della Repubblica e dei territori limitrofi, interviste ad esperti e personaggi del territorio</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20260101160000 +0000" stop="20260101163500 +0000">
-    <title>Le Tre Penne</title>
-    <desc>A cura di Antonio Prenna</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20260101163500 +0000" stop="20260101173000 +0000">
-    <title>Qualcosa di personale</title>
-    <desc>Un programma a cura di Monica Fabbri</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20260101173000 +0000" stop="20260101175500 +0000">
-    <title>SM RTV STORY</title>
-    <desc>Larchivio della San Marino RTV</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20260101175500 +0000" stop="20260101183000 +0000">
-    <title>Titano - Il segreto della liberta</title>
-    <sub-title>Il segreto della liberta</sub-title>
-    <desc>La storia dell antica Repubblica di San Marino raccontata da Roberto Giacobbo. Episodio 4 di 5</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20260101183000 +0000" stop="20260101184500 +0000">
-    <title>TG SAN MARINO</title>
-    <desc>Notizie sammarinesi e dal mondo</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20260101184500 +0000" stop="20260101190000 +0000">
-    <title>12 Minuti Con</title>
-    <desc>12 Minuti Con</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20260101200000 +0000" stop="20260101210000 +0000">
-    <title>Concerto Mozart Quintetto per archi</title>
-    <desc>Concerto Mozart Quintetto per archi in Do maggiore KV</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20260101210000 +0000" stop="20260101220000 +0000">
-    <title>Italiani di carta</title>
-    <desc>In studio Paolo Mieli con Valentina Antonioli e la partecipazione di Dario Vergassola</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20260101220000 +0000" stop="20260101223000 +0000">
-    <title>SM RTV STORY</title>
-    <desc>Larchivio della San Marino RTV</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20260101223000 +0000" stop="20260101224500 +0000">
-    <title>TG SAN MARINO</title>
-    <desc>Notizie sammarinesi e dal mondo</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20260101224500 +0000" stop="20260101225000 +0000">
-    <title>Meteo Rtv</title>
-    <desc>3BMeteo</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20260101225000 +0000" stop="20260101230000 +0000">
-    <title>12 Minuti Con</title>
-    <desc>12 Minuti Con</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20260101230000 +0000" stop="20260101233000 +0000">
-    <title>La Casa della Salute Anthology</title>
-    <desc>Riviviamo le stagioni passate del programma condotto da Luciano Onder</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20260101233000 +0000" stop="20260101235500 +0000">
-    <title>Un posto al sole</title>
-    <desc>Un posto al sole DECIMA stagione</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20260101235500 +0000" stop="20260102003500 +0000">
-    <title>La donna del mistero</title>
-    <desc>Telenovela, racconta la storia di Giulia Falconi che si innamora di Michele Ricciardi. Nonostante i due si amino, Michele e obbligato a sposare Elisa, per salvare dalla bancarotta la sua famiglia.</desc>
-  </programme>
-  <programme channel="San Marino RTV.it" start="20260102003500 +0000" stop="20260102061500 +0000">
-    <title>SMRTV Notte</title>
-    <desc>Il meglio dei programmi della giornata</desc>
   </programme>
   <programme channel="Super!.it" start="20251231000000 +0000" stop="20251231001100 +0000">
     <title>Boy, Girl, Dog, Cat, Mouse, Cheese</title>
