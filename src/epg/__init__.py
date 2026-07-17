@@ -4,6 +4,11 @@ from src.epg.downloader import (
     EPGDownloadResult,
     EPGDownloader,
 )
+from src.epg.generator import (
+    EPGGenerationResult,
+    EPGGenerationStats,
+    EPGGenerator,
+)
 from src.epg.matcher import (
     EPGAmbiguousMatch,
     EPGChannel,
@@ -29,6 +34,9 @@ __all__ = [
     "EPGDownloadError",
     "EPGDownloadResult",
     "EPGDownloader",
+    "EPGGenerationResult",
+    "EPGGenerationStats",
+    "EPGGenerator",
     "EPGMatch",
     "EPGMatchBatchResult",
     "EPGMatchStats",
