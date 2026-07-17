@@ -136,6 +136,8 @@ jobs:
             # File opzionali attuali e futuri del Discovery Engine.
             optional_outputs=(
               "output/health.json"
+              "output/epg.xml"
+              "output/epg-report.json"
               "output/playlist-tizen.m3u"
               "output/discovered-sources.json"
               "output/missing-priority-channels.json"

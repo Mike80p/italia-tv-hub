@@ -5,6 +5,7 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+from urllib.parse import urlsplit
 
 from src.catalog.loader import load_sources
 from src.catalog.source_registry import (
@@ -22,6 +23,19 @@ from src.discovery.client import (
     DiscoveryError,
     DiscoveryStats,
     SourceDiscoveryClient,
+)
+from src.epg.downloader import (
+    EPGDownloadError,
+    EPGDownloader,
+)
+from src.epg.generator import (
+    EPGGenerationResult,
+    EPGGenerator,
+)
+from src.epg.xmltv import (
+    XMLTVDocument,
+    XMLTVParseError,
+    XMLTVParser,
 )
 from src.exporter.m3u import M3UExporter
 from src.health.checker import (
@@ -75,7 +89,28 @@ class Application:
             )
         )
 
-        self.exporter = M3UExporter()
+        self.epg_downloader = EPGDownloader(
+            timeout_seconds=(
+                self.settings.epg_timeout_seconds
+            ),
+            retry_count=(
+                self.settings.retry_count
+            ),
+            user_agent=(
+                self.settings.user_agent
+            ),
+        )
+
+        self.epg_parser = XMLTVParser()
+        self.epg_generator = EPGGenerator()
+
+        self.exporter = M3UExporter(
+            epg_url=(
+                self.settings.epg_public_url
+                if self.settings.epg_enabled
+                else None
+            )
+        )
 
         self.health_checker = StreamHealthChecker(
             timeout_seconds=(
@@ -102,7 +137,9 @@ class Application:
         7. health check di tutti gli URL candidati;
         8. merge guidato dagli Health Score;
         9. filtro dei canali non disponibili;
-        10. esportazione e report JSON.
+        10. download, parsing e generazione EPG;
+        11. applicazione dei tvg-id trovati;
+        12. esportazione playlist e report JSON.
 
         Se il merger installato non espone group_candidates(),
         viene mantenuto il precedente flusso compatibile:
@@ -541,6 +578,12 @@ class Application:
             self.registry.snapshot()
         )
 
+        epg_diagnostics = (
+            self._build_epg_output(
+                output_channels
+            )
+        )
+
         output_path = (
             self.root
             / self.settings.output_file
@@ -870,9 +913,58 @@ class Application:
                 ]
             ),
 
+            # EPG Engine
+            "epg_enabled": (
+                epg_diagnostics[
+                    "enabled"
+                ]
+            ),
+            "epg_status": (
+                epg_diagnostics[
+                    "status"
+                ]
+            ),
+            "epg_sources_total": (
+                epg_diagnostics[
+                    "sources_total"
+                ]
+            ),
+            "epg_sources_successful": (
+                epg_diagnostics[
+                    "sources_successful"
+                ]
+            ),
+            "epg_sources_failed": (
+                epg_diagnostics[
+                    "sources_failed"
+                ]
+            ),
+            "epg_channels_matched": (
+                epg_diagnostics[
+                    "channels_matched"
+                ]
+            ),
+            "epg_programmes": (
+                epg_diagnostics[
+                    "programmes"
+                ]
+            ),
+            "epg_coverage_percent": (
+                epg_diagnostics[
+                    "coverage_percent"
+                ]
+            ),
+            "epg_metadata_updated": (
+                epg_diagnostics[
+                    "metadata_updated"
+                ]
+            ),
+
             "channels": len(
                 output_channels
             ),
+
+            "epg": epg_diagnostics,
 
             "source_registry": {
                 "total": (
@@ -1024,6 +1116,543 @@ class Application:
         )
 
         return 0
+
+
+    def _build_epg_output(
+        self,
+        output_channels: list[Channel],
+    ) -> dict[str, object]:
+        """
+        Scarica e genera l'EPG senza rendere fragile la playlist.
+
+        Se almeno una fonte è valida, viene prodotto un nuovo XMLTV.
+        Se tutte le fonti falliscono:
+
+        - viene conservato il precedente epg.xml, quando disponibile;
+        - al primo avvio viene creato un XMLTV vuoto ma valido, così
+          l'URL pubblico non restituisce più 404.
+        """
+
+        settings = getattr(
+            self,
+            "settings",
+            None,
+        )
+
+        enabled = bool(
+            getattr(
+                settings,
+                "epg_enabled",
+                False,
+            )
+        )
+
+        epg_file = str(
+            getattr(
+                settings,
+                "epg_file",
+                "output/epg.xml",
+            )
+        ).strip() or "output/epg.xml"
+
+        epg_report_file = str(
+            getattr(
+                settings,
+                "epg_report_file",
+                "output/epg-report.json",
+            )
+        ).strip() or (
+            "output/epg-report.json"
+        )
+
+        public_url = str(
+            getattr(
+                settings,
+                "epg_public_url",
+                "",
+            )
+        ).strip()
+
+        epg_path = (
+            self.root
+            / epg_file
+        )
+
+        report_path = (
+            self.root
+            / epg_report_file
+        )
+
+        source_urls = tuple(
+            str(source).strip()
+            for source in (
+                getattr(
+                    settings,
+                    "epg_sources",
+                    (),
+                )
+                or ()
+            )
+            if str(source).strip()
+        )
+
+        diagnostics = (
+            self._empty_epg_diagnostics(
+                enabled=enabled,
+                status=(
+                    "pending"
+                    if enabled
+                    else "disabled"
+                ),
+                sources_total=len(
+                    source_urls
+                ),
+                epg_file=epg_file,
+                epg_report_file=(
+                    epg_report_file
+                ),
+                public_url=public_url,
+            )
+        )
+
+        if not enabled:
+            return diagnostics
+
+        downloader = getattr(
+            self,
+            "epg_downloader",
+            None,
+        )
+
+        parser = getattr(
+            self,
+            "epg_parser",
+            None,
+        )
+
+        generator = getattr(
+            self,
+            "epg_generator",
+            None,
+        )
+
+        if (
+            downloader is None
+            or parser is None
+            or generator is None
+        ):
+            diagnostics[
+                "status"
+            ] = "components_unavailable"
+
+            diagnostics["errors"] = [
+                (
+                    "Componenti EPG non "
+                    "inizializzati"
+                )
+            ]
+
+            self._write_epg_application_report(
+                report_path,
+                diagnostics,
+                generation_result=None,
+            )
+
+            return diagnostics
+
+        documents: list[
+            XMLTVDocument
+        ] = []
+
+        source_results: list[
+            dict[str, object]
+        ] = []
+
+        for source_url in source_urls:
+            try:
+                download_result = (
+                    downloader.fetch(
+                        source_url
+                    )
+                )
+
+                final_url = str(
+                    getattr(
+                        download_result,
+                        "final_url",
+                        source_url,
+                    )
+                ).strip() or source_url
+
+                filename = Path(
+                    urlsplit(
+                        final_url
+                    ).path
+                ).name
+
+                document = parser.parse_bytes(
+                    download_result.data,
+                    source_url=final_url,
+                    filename=filename,
+                )
+
+                documents.append(
+                    document
+                )
+
+                source_results.append(
+                    {
+                        "url": source_url,
+                        "status": "ok",
+                        "final_url": final_url,
+                        "download": (
+                            download_result
+                            .to_dict()
+                        ),
+                        "xmltv": (
+                            document.stats
+                            .to_dict()
+                        ),
+                        "issues_reported": len(
+                            document.issues
+                        ),
+                    }
+                )
+
+            except EPGDownloadError as exc:
+                source_results.append(
+                    {
+                        "url": source_url,
+                        "status": (
+                            "download_error"
+                        ),
+                        "error": str(exc),
+                        "http_status": (
+                            exc.status_code
+                        ),
+                        "retryable": (
+                            exc.retryable
+                        ),
+                        "attempts": [
+                            attempt.to_dict()
+                            for attempt
+                            in exc.attempts
+                        ],
+                    }
+                )
+
+            except XMLTVParseError as exc:
+                source_results.append(
+                    {
+                        "url": source_url,
+                        "status": (
+                            "parse_error"
+                        ),
+                        "error": str(exc),
+                    }
+                )
+
+            except Exception as exc:
+                source_results.append(
+                    {
+                        "url": source_url,
+                        "status": (
+                            "unexpected_error"
+                        ),
+                        "error": str(exc),
+                    }
+                )
+
+        diagnostics[
+            "sources"
+        ] = source_results
+
+        diagnostics[
+            "sources_successful"
+        ] = sum(
+            1
+            for item in source_results
+            if item["status"] == "ok"
+        )
+
+        diagnostics[
+            "sources_failed"
+        ] = (
+            len(source_results)
+            - diagnostics[
+                "sources_successful"
+            ]
+        )
+
+        generation_result: (
+            EPGGenerationResult | None
+        ) = None
+
+        if documents:
+            try:
+                generation_result = (
+                    generator.generate(
+                        output_channels,
+                        documents,
+                    )
+                )
+
+                output_count = (
+                    generation_result
+                    .stats
+                    .output_channels
+                )
+
+                previous_available = (
+                    epg_path.exists()
+                    and epg_path.stat().st_size
+                    > 0
+                )
+
+                if (
+                    output_count == 0
+                    and previous_available
+                ):
+                    diagnostics[
+                        "status"
+                    ] = (
+                        "previous_preserved_"
+                        "zero_matches"
+                    )
+
+                else:
+                    metadata_updated = (
+                        generator.apply_matches(
+                            generation_result
+                        )
+                    )
+
+                    generator.write(
+                        epg_path,
+                        report_path,
+                        generation_result,
+                    )
+
+                    diagnostics[
+                        "status"
+                    ] = "generated"
+
+                    diagnostics[
+                        "metadata_updated"
+                    ] = metadata_updated
+
+                self._apply_generation_stats(
+                    diagnostics,
+                    generation_result,
+                )
+
+            except Exception as exc:
+                diagnostics[
+                    "status"
+                ] = "generation_error"
+
+                diagnostics[
+                    "errors"
+                ].append(
+                    (
+                        "Generazione EPG "
+                        f"non riuscita: {exc}"
+                    )
+                )
+
+        else:
+            previous_available = (
+                epg_path.exists()
+                and epg_path.stat().st_size
+                > 0
+            )
+
+            if previous_available:
+                diagnostics[
+                    "status"
+                ] = "previous_preserved"
+
+            else:
+                try:
+                    generation_result = (
+                        generator.generate(
+                            output_channels,
+                            (),
+                        )
+                    )
+
+                    generator.write(
+                        epg_path,
+                        report_path,
+                        generation_result,
+                    )
+
+                    diagnostics[
+                        "status"
+                    ] = "empty_generated"
+
+                    self._apply_generation_stats(
+                        diagnostics,
+                        generation_result,
+                    )
+
+                except Exception as exc:
+                    diagnostics[
+                        "status"
+                    ] = "empty_generation_error"
+
+                    diagnostics[
+                        "errors"
+                    ].append(
+                        (
+                            "Creazione XMLTV vuoto "
+                            f"non riuscita: {exc}"
+                        )
+                    )
+
+        diagnostics[
+            "file_exists"
+        ] = epg_path.exists()
+
+        diagnostics[
+            "file_bytes"
+        ] = (
+            epg_path.stat().st_size
+            if epg_path.exists()
+            else 0
+        )
+
+        self._write_epg_application_report(
+            report_path,
+            diagnostics,
+            generation_result=(
+                generation_result
+            ),
+        )
+
+        return diagnostics
+
+    @staticmethod
+    def _empty_epg_diagnostics(
+        *,
+        enabled: bool,
+        status: str,
+        sources_total: int,
+        epg_file: str,
+        epg_report_file: str,
+        public_url: str,
+    ) -> dict[str, object]:
+        return {
+            "enabled": enabled,
+            "status": status,
+            "sources_total": (
+                sources_total
+            ),
+            "sources_successful": 0,
+            "sources_failed": 0,
+            "channels_matched": 0,
+            "channels_unmatched": 0,
+            "channels_ambiguous": 0,
+            "programmes": 0,
+            "coverage_percent": 0.0,
+            "metadata_updated": 0,
+            "channels_without_programmes": 0,
+            "programme_duplicates_removed": 0,
+            "file_exists": False,
+            "file_bytes": 0,
+            "output_file": epg_file,
+            "report_file": epg_report_file,
+            "public_url": public_url,
+            "sources": [],
+            "errors": [],
+        }
+
+    @staticmethod
+    def _apply_generation_stats(
+        diagnostics: dict[str, object],
+        result: EPGGenerationResult,
+    ) -> None:
+        stats = result.stats
+
+        diagnostics[
+            "channels_matched"
+        ] = (
+            stats.matched_playlist_channels
+        )
+
+        diagnostics[
+            "channels_unmatched"
+        ] = (
+            stats.unmatched_playlist_channels
+        )
+
+        diagnostics[
+            "channels_ambiguous"
+        ] = (
+            stats.ambiguous_playlist_channels
+        )
+
+        diagnostics[
+            "programmes"
+        ] = stats.output_programmes
+
+        diagnostics[
+            "coverage_percent"
+        ] = stats.coverage_percent
+
+        diagnostics[
+            "channels_without_programmes"
+        ] = (
+            stats.channels_without_programmes
+        )
+
+        diagnostics[
+            "programme_duplicates_removed"
+        ] = (
+            stats.programme_duplicates_removed
+        )
+
+    def _write_epg_application_report(
+        self,
+        path: Path,
+        diagnostics: dict[str, object],
+        *,
+        generation_result: (
+            EPGGenerationResult | None
+        ),
+    ) -> None:
+        path.parent.mkdir(
+            parents=True,
+            exist_ok=True,
+        )
+
+        payload = {
+            "project": "Italia TV Hub",
+            "version": self.VERSION,
+            "generated_at": (
+                datetime.now(
+                    timezone.utc
+                ).isoformat()
+            ),
+            **diagnostics,
+            "generation": (
+                generation_result
+                .to_report_dict()
+                if generation_result
+                is not None
+                else {}
+            ),
+        }
+
+        path.write_text(
+            json.dumps(
+                payload,
+                ensure_ascii=False,
+                indent=2,
+            )
+            + "\n",
+            encoding="utf-8",
+        )
 
     def _discover_sources(
         self,
@@ -2472,7 +3101,7 @@ class Application:
                 "group": value.group,
                 "tvg_id": value.tvg_id,
                 "tvg_name": value.tvg_name,
-                "tvg_logo": value.tvg_logo,
+                "tvg_logo": value.logo,
                 "source_id": (
                     value.source_id
                 ),

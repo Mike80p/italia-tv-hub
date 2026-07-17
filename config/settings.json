@@ -14,5 +14,11 @@
   "epg_report_file": "output/epg-report.json",
   "epg_public_url": "https://raw.githubusercontent.com/Mike80p/italia-tv-hub/main/output/epg.xml",
   "epg_timeout_seconds": 30,
-  "epg_sources": []
+  "epg_sources": [
+    "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz",
+    "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy2.xml.gz",
+    "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy3.xml.gz",
+    "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy4.xml.gz",
+    "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy5.xml.gz"
+  ]
 }
