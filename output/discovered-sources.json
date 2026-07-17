@@ -1,0 +1,110 @@
+{
+  "project": "Italia TV Hub",
+  "version": "0.8.0",
+  "generated_at": "2026-07-17T14:53:52.117622+00:00",
+  "stats": {
+    "curated_sources": 2,
+    "github_queries": 5,
+    "github_items": 0,
+    "accepted_sources": 2,
+    "duplicates_skipped": 0,
+    "rejected_items": 0,
+    "errors": 5,
+    "github_token_used": true
+  },
+  "registration": {
+    "inserted": 1,
+    "replaced": 0,
+    "skipped": 1,
+    "invalid": 0,
+    "errors": []
+  },
+  "errors": [
+    {
+      "provider": "github",
+      "query": "\"tvg-country=\\\"IT\\\"\" extension:m3u",
+      "message": "GitHub HTTP 429",
+      "status_code": 429
+    },
+    {
+      "provider": "github",
+      "query": "\"tvg-language=\\\"Italian\\\"\" extension:m3u",
+      "message": "GitHub HTTP 429",
+      "status_code": 429
+    },
+    {
+      "provider": "github",
+      "query": "\"group-title=\\\"Italy\\\"\" extension:m3u",
+      "message": "GitHub HTTP 429",
+      "status_code": 429
+    },
+    {
+      "provider": "github",
+      "query": "\"Rai 1\" extension:m3u",
+      "message": "GitHub HTTP 429",
+      "status_code": 429
+    },
+    {
+      "provider": "github",
+      "query": "\"Canale 5\" extension:m3u",
+      "message": "GitHub HTTP 429",
+      "status_code": 429
+    }
+  ],
+  "sources": [
+    {
+      "id": "discovery_iptv_org_country_it",
+      "name": "IPTV-org Italia per paese",
+      "url": "https://iptv-org.github.io/iptv/countries/it.m3u",
+      "enabled": true,
+      "priority": 20,
+      "kind": "playlist",
+      "country": "IT",
+      "language": "it",
+      "tags": [
+        "it",
+        "italia",
+        "italian",
+        "rai",
+        "mediaset",
+        "dmax",
+        "focus",
+        "nove",
+        "iptv_org",
+        "public"
+      ],
+      "discovery_enabled": true,
+      "discovery_mode": "country",
+      "trust_score": 90,
+      "refresh_hours": 6,
+      "origin": "iptv-org/iptv"
+    },
+    {
+      "id": "discovery_iptv_org_language_ita",
+      "name": "IPTV-org Italiano per lingua",
+      "url": "https://iptv-org.github.io/iptv/languages/ita.m3u",
+      "enabled": true,
+      "priority": 25,
+      "kind": "playlist",
+      "country": "IT",
+      "language": "it",
+      "tags": [
+        "it",
+        "italia",
+        "italian",
+        "rai",
+        "mediaset",
+        "dmax",
+        "focus",
+        "nove",
+        "iptv_org",
+        "public"
+      ],
+      "discovery_enabled": true,
+      "discovery_mode": "language",
+      "trust_score": 85,
+      "refresh_hours": 6,
+      "origin": "iptv-org/iptv"
+    }
+  ]
+}
