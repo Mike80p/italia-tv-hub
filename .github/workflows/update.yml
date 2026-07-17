@@ -1,6 +1,6 @@
 name: Aggiorna Italia TV Hub
 
-on:
+"on":
   workflow_dispatch:
 
   push:
@@ -31,6 +31,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 60
 
+    env:
+      TARGET_BRANCH: main
+
+      # Token creato automaticamente da GitHub Actions.
+      # Il Source Discovery Client lo legge dalla variabile
+      # d'ambiente GITHUB_TOKEN.
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
     steps:
       - name: Scarica repository
         uses: actions/checkout@v4
@@ -54,10 +62,13 @@ jobs:
 
       - name: Genera e pubblica output
         shell: bash
-        env:
-          TARGET_BRANCH: main
         run: |
           set -euo pipefail
+
+          if [[ -z "${GITHUB_TOKEN:-}" ]]; then
+            echo "Errore: GITHUB_TOKEN non disponibile."
+            exit 1
+          fi
 
           git config user.name "github-actions[bot]"
           git config user.email \
@@ -84,7 +95,7 @@ jobs:
             python -m pytest -q
 
             echo
-            echo "Generazione playlist e report..."
+            echo "Generazione playlist, discovery e report..."
             python -m src.main
 
             echo
@@ -118,12 +129,24 @@ jobs:
 
             echo "Canali generati: ${channel_count}"
 
+            # File obbligatori.
             git add -f output/playlist.m3u
             git add -f output/report.json
 
-            if [[ -f output/health.json ]]; then
-              git add -f output/health.json
-            fi
+            # File opzionali attuali e futuri del Discovery Engine.
+            optional_outputs=(
+              "output/health.json"
+              "output/playlist-tizen.m3u"
+              "output/discovered-sources.json"
+              "output/missing-priority-channels.json"
+              "output/rejected-candidates.json"
+            )
+
+            for generated_file in "${optional_outputs[@]}"; do
+              if [[ -f "${generated_file}" ]]; then
+                git add -f "${generated_file}"
+              fi
+            done
 
             if git diff --cached --quiet; then
               echo
