@@ -1,7 +1,7 @@
 {
   "project": "Italia TV Hub",
   "version": "0.8.0",
-  "generated_at": "2026-07-17T14:25:25.447576+00:00",
+  "generated_at": "2026-07-17T14:29:00.932393+00:00",
   "sources_total": 3,
   "sources_enabled": 2,
   "sources_disabled": 1,
@@ -18,7 +18,7 @@
   "download_attempts_total": 2,
   "download_retries_total": 0,
   "download_bytes_total": 363761,
-  "download_time_ms_total": 554,
+  "download_time_ms_total": 344,
   "parser_sources_processed": 2,
   "parser_extinf_records": 449,
   "parser_channels_created": 449,
@@ -38,8 +38,8 @@
   "duplicates_removed": 141,
   "health_enabled": true,
   "health_checked": 449,
-  "health_online": 361,
-  "health_reachable": 0,
+  "health_online": 359,
+  "health_reachable": 2,
   "health_offline": 88,
   "publish_only_online": true,
   "alternative_recovery_enabled": true,
@@ -47,9 +47,9 @@
   "duplicate_candidate_groups": 58,
   "alternative_candidates": 58,
   "candidate_streams_checked": 449,
-  "selected_primary": 257,
+  "selected_primary": 254,
   "recovered_from_alternative": 3,
-  "upgraded_to_better_alternative": 48,
+  "upgraded_to_better_alternative": 51,
   "all_candidates_failed": 83,
   "channels": 308,
   "source_registry": {
@@ -66,7 +66,7 @@
     "attempts_total": 2,
     "retries_total": 0,
     "bytes_total": 363761,
-    "time_ms_total": 554
+    "time_ms_total": 344
   },
   "parser_summary": {
     "sources_processed": 2,
@@ -108,12 +108,12 @@
     "duplicate_candidate_groups": 58,
     "alternative_candidates": 58,
     "candidate_streams_checked": 449,
-    "selected_primary": 257,
+    "selected_primary": 254,
     "recovered_from_alternative": 3,
-    "upgraded_to_better_alternative": 48,
+    "upgraded_to_better_alternative": 51,
     "all_candidates_failed": 83,
     "decisions_reported": 100,
-    "decisions_truncated": 34,
+    "decisions_truncated": 37,
     "decisions": [
       {
         "group_id": "tvg_id:65b90daed77d450008a43345",
@@ -171,34 +171,12 @@
         "publishable_candidates": 2
       },
       {
-        "group_id": "tvg_id:608014d19a26320007c92ab6",
-        "name": "FailArmy",
-        "outcome": "upgraded_to_better_alternative",
-        "initial_url": "https://failarmy-international-it.samsung.wurl.tv/playlist.m3u8",
-        "initial_status": "online",
-        "selected_url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/608014d19a26320007c92ab6/master.m3u8?jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImMzYjk4NjViLTFiYjItNGZlMy1hYzA3LWU2YWE0N2U3N2MzNiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiIwYjc1NmRiZC04MWU3LTExZjEtYThhNC0yMjQ2Yjc3ZDFlOGUiLCJjbGllbnRJUCI6IjUuMTMzLjQ4LjAiLCJjaXR5IjoiU2FsYSIsInBvc3RhbENvZGUiOiI0NzA0MiIsImNvdW50cnkiOiJJVCIsImRtYSI6MCwiYWN0aXZlUmVnaW9uIjoiSVQiLCJkZXZpY2VMYXQiOjQ0LjE4MDAwMDMwNTE3NTc4LCJkZXZpY2VMb24iOjEyLjM4MDAwMDExNDQ0MDkxOCwicHJlZmVycmVkTGFuZ3VhZ2UiOiJpdCIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTIyLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4wLjAtMTExYjJiOWRjMDBiZDBiZWE5MDMwYjMwNjYyMTU5ZWQ5ZTdjOGJjNiIsImNsaWVudElEIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkV1cm9wZS9Sb21lIiwic2VydmVyU2lkZUFkcyI6ZmFsc2UsImUyZUJlYWNvbnMiOmZhbHNlLCJmZWF0dXJlcyI6eyJtdWx0aVBvZEFkcyI6eyJjb2hvcnQiOiIiLCJlbmFibGVkIjp0cnVlfSwic3RpdGNoZXJIbHNOZyI6eyJkZW11eGVkQXVkaW8iOiJqaXQifX0sImZtc1BhcmFtcyI6eyJmd1ZjSUQyIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiZndWY0lEMkNvcHBhIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY3VzdG9tUGFyYW1zIjp7ImZtc19saXZlcmFtcF9pZGwiOiIiLCJmbXNfZW1haWxoYXNoIjoiIiwiZm1zX3N1YnNjcmliZXJpZCI6IiIsImZtc19pZmEiOiIiLCJmbXNfaWRmdiI6IiIsImZtc191c2VyaWQiOiIzM2RiYTAzNi1jZmU4LTQ2NmYtYjI1MC05Y2M3ZmY3MGRjYzYiLCJmbXNfdmNpZDJ0eXBlIjoidXNlcmlkIiwiZm1zX3JhbXBfaWQiOiIiLCJmbXNfaGhfcmFtcF9pZCI6IiIsImZtc19iaWRpZHR5cGUiOiIiLCJfZndfM1BfVUlEIjoiIiwiZm1zX3J1bGVpZCI6IjEwMDAwLDEwMDA5LDEwMDEzLDEwMDE0LDEwMDE2LDEwMDIwLDEwMDIzLDEwMDE1LDEwMDIxIn19LCJkcm0iOnsibmFtZSI6IndpZGV2aW5lIiwibGV2ZWwiOiJMMyJ9LCJzZXNzaW9uU3RhcnRUaW1lIjoxNzg0Mjk2NDc1NDg2LCJpc3MiOiJib290LnBsdXRvLnR2Iiwic3ViIjoicHJpOnYxOnBsdXRvOmRldmljZXM6SVQ6TXpOa1ltRXdNell0WTJabE9DMDBOalptTFdJeU5UQXRPV05qTjJabU56QmtZMk0yIiwiYXVkIjoiKi5wbHV0by50diIsImV4cCI6MTc4NDM4Mjg3NSwiaWF0IjoxNzg0Mjk2NDc1LCJqdGkiOiI3N2NkYWZiMC02NWFmLTQxNjItYTA4MC00ODM2ODMyOTY3NzQifQ.IgHHJHxkCpiK1qwj0ASrWcMQZYGy9u59vsKA1ADYsF8&masterJWTPassthrough=true&audioLanguage=it",
-        "selected_status": "online",
-        "candidate_count": 2,
-        "publishable_candidates": 2
-      },
-      {
         "group_id": "tvg_id:609404b0a8ec810007d8de9d",
         "name": "Pluto TV Scherzi e risate",
         "outcome": "upgraded_to_better_alternative",
         "initial_url": "https://jmp2.uk/plu-609404b0a8ec810007d8de9d.m3u8",
         "initial_status": "online",
         "selected_url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/609404b0a8ec810007d8de9d/master.m3u8?jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImMzYjk4NjViLTFiYjItNGZlMy1hYzA3LWU2YWE0N2U3N2MzNiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiIwYjc1NmRiZC04MWU3LTExZjEtYThhNC0yMjQ2Yjc3ZDFlOGUiLCJjbGllbnRJUCI6IjUuMTMzLjQ4LjAiLCJjaXR5IjoiU2FsYSIsInBvc3RhbENvZGUiOiI0NzA0MiIsImNvdW50cnkiOiJJVCIsImRtYSI6MCwiYWN0aXZlUmVnaW9uIjoiSVQiLCJkZXZpY2VMYXQiOjQ0LjE4MDAwMDMwNTE3NTc4LCJkZXZpY2VMb24iOjEyLjM4MDAwMDExNDQ0MDkxOCwicHJlZmVycmVkTGFuZ3VhZ2UiOiJpdCIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTIyLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4wLjAtMTExYjJiOWRjMDBiZDBiZWE5MDMwYjMwNjYyMTU5ZWQ5ZTdjOGJjNiIsImNsaWVudElEIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkV1cm9wZS9Sb21lIiwic2VydmVyU2lkZUFkcyI6ZmFsc2UsImUyZUJlYWNvbnMiOmZhbHNlLCJmZWF0dXJlcyI6eyJtdWx0aVBvZEFkcyI6eyJjb2hvcnQiOiIiLCJlbmFibGVkIjp0cnVlfSwic3RpdGNoZXJIbHNOZyI6eyJkZW11eGVkQXVkaW8iOiJqaXQifX0sImZtc1BhcmFtcyI6eyJmd1ZjSUQyIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiZndWY0lEMkNvcHBhIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY3VzdG9tUGFyYW1zIjp7ImZtc19saXZlcmFtcF9pZGwiOiIiLCJmbXNfZW1haWxoYXNoIjoiIiwiZm1zX3N1YnNjcmliZXJpZCI6IiIsImZtc19pZmEiOiIiLCJmbXNfaWRmdiI6IiIsImZtc191c2VyaWQiOiIzM2RiYTAzNi1jZmU4LTQ2NmYtYjI1MC05Y2M3ZmY3MGRjYzYiLCJmbXNfdmNpZDJ0eXBlIjoidXNlcmlkIiwiZm1zX3JhbXBfaWQiOiIiLCJmbXNfaGhfcmFtcF9pZCI6IiIsImZtc19iaWRpZHR5cGUiOiIiLCJfZndfM1BfVUlEIjoiIiwiZm1zX3J1bGVpZCI6IjEwMDAwLDEwMDA5LDEwMDEzLDEwMDE0LDEwMDE2LDEwMDIwLDEwMDIzLDEwMDE1LDEwMDIxIn19LCJkcm0iOnsibmFtZSI6IndpZGV2aW5lIiwibGV2ZWwiOiJMMyJ9LCJzZXNzaW9uU3RhcnRUaW1lIjoxNzg0Mjk2NDc1NDg2LCJpc3MiOiJib290LnBsdXRvLnR2Iiwic3ViIjoicHJpOnYxOnBsdXRvOmRldmljZXM6SVQ6TXpOa1ltRXdNell0WTJabE9DMDBOalptTFdJeU5UQXRPV05qTjJabU56QmtZMk0yIiwiYXVkIjoiKi5wbHV0by50diIsImV4cCI6MTc4NDM4Mjg3NSwiaWF0IjoxNzg0Mjk2NDc1LCJqdGkiOiI3N2NkYWZiMC02NWFmLTQxNjItYTA4MC00ODM2ODMyOTY3NzQifQ.IgHHJHxkCpiK1qwj0ASrWcMQZYGy9u59vsKA1ADYsF8&masterJWTPassthrough=true&audioLanguage=it",
-        "selected_status": "online",
-        "candidate_count": 2,
-        "publishable_candidates": 2
-      },
-      {
-        "group_id": "tvg_id:6971fc07c945e6e4e5bc46bf",
-        "name": "Gambero Rosso",
-        "outcome": "upgraded_to_better_alternative",
-        "initial_url": "https://jmp2.uk/plu-6971fc07c945e6e4e5bc46bf.m3u8",
-        "initial_status": "online",
-        "selected_url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/6971fc07c945e6e4e5bc46bf/master.m3u8?jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImMzYjk4NjViLTFiYjItNGZlMy1hYzA3LWU2YWE0N2U3N2MzNiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiIwYjc1NmRiZC04MWU3LTExZjEtYThhNC0yMjQ2Yjc3ZDFlOGUiLCJjbGllbnRJUCI6IjUuMTMzLjQ4LjAiLCJjaXR5IjoiU2FsYSIsInBvc3RhbENvZGUiOiI0NzA0MiIsImNvdW50cnkiOiJJVCIsImRtYSI6MCwiYWN0aXZlUmVnaW9uIjoiSVQiLCJkZXZpY2VMYXQiOjQ0LjE4MDAwMDMwNTE3NTc4LCJkZXZpY2VMb24iOjEyLjM4MDAwMDExNDQ0MDkxOCwicHJlZmVycmVkTGFuZ3VhZ2UiOiJpdCIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTIyLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4wLjAtMTExYjJiOWRjMDBiZDBiZWE5MDMwYjMwNjYyMTU5ZWQ5ZTdjOGJjNiIsImNsaWVudElEIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkV1cm9wZS9Sb21lIiwic2VydmVyU2lkZUFkcyI6ZmFsc2UsImUyZUJlYWNvbnMiOmZhbHNlLCJmZWF0dXJlcyI6eyJtdWx0aVBvZEFkcyI6eyJjb2hvcnQiOiIiLCJlbmFibGVkIjp0cnVlfSwic3RpdGNoZXJIbHNOZyI6eyJkZW11eGVkQXVkaW8iOiJqaXQifX0sImZtc1BhcmFtcyI6eyJmd1ZjSUQyIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiZndWY0lEMkNvcHBhIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY3VzdG9tUGFyYW1zIjp7ImZtc19saXZlcmFtcF9pZGwiOiIiLCJmbXNfZW1haWxoYXNoIjoiIiwiZm1zX3N1YnNjcmliZXJpZCI6IiIsImZtc19pZmEiOiIiLCJmbXNfaWRmdiI6IiIsImZtc191c2VyaWQiOiIzM2RiYTAzNi1jZmU4LTQ2NmYtYjI1MC05Y2M3ZmY3MGRjYzYiLCJmbXNfdmNpZDJ0eXBlIjoidXNlcmlkIiwiZm1zX3JhbXBfaWQiOiIiLCJmbXNfaGhfcmFtcF9pZCI6IiIsImZtc19iaWRpZHR5cGUiOiIiLCJfZndfM1BfVUlEIjoiIiwiZm1zX3J1bGVpZCI6IjEwMDAwLDEwMDA5LDEwMDEzLDEwMDE0LDEwMDE2LDEwMDIwLDEwMDIzLDEwMDE1LDEwMDIxIn19LCJkcm0iOnsibmFtZSI6IndpZGV2aW5lIiwibGV2ZWwiOiJMMyJ9LCJzZXNzaW9uU3RhcnRUaW1lIjoxNzg0Mjk2NDc1NDg2LCJpc3MiOiJib290LnBsdXRvLnR2Iiwic3ViIjoicHJpOnYxOnBsdXRvOmRldmljZXM6SVQ6TXpOa1ltRXdNell0WTJabE9DMDBOalptTFdJeU5UQXRPV05qTjJabU56QmtZMk0yIiwiYXVkIjoiKi5wbHV0by50diIsImV4cCI6MTc4NDM4Mjg3NSwiaWF0IjoxNzg0Mjk2NDc1LCJqdGkiOiI3N2NkYWZiMC02NWFmLTQxNjItYTA4MC00ODM2ODMyOTY3NzQifQ.IgHHJHxkCpiK1qwj0ASrWcMQZYGy9u59vsKA1ADYsF8&masterJWTPassthrough=true&audioLanguage=it",
         "selected_status": "online",
         "candidate_count": 2,
         "publishable_candidates": 2
@@ -468,6 +446,17 @@
         "publishable_candidates": 2
       },
       {
+        "group_id": "tvg_id:50canale.it@sd",
+        "name": "50 Canale",
+        "outcome": "all_candidates_failed",
+        "initial_url": "https://load-balancer.azotosolutions.com/cdnedge37/canale50/playlist.m3u8",
+        "initial_status": "offline",
+        "selected_url": "https://load-balancer.azotosolutions.com/cdnedge37/canale50/playlist.m3u8",
+        "selected_status": "offline",
+        "candidate_count": 1,
+        "publishable_candidates": 0
+      },
+      {
         "group_id": "tvg_id:agrigentotv.it@sd",
         "name": "Agrigento TV",
         "outcome": "all_candidates_failed",
@@ -518,17 +507,6 @@
         "initial_url": "http://37.187.142.147:1935/ch10live/high.stream/playlist.m3u8",
         "initial_status": "offline",
         "selected_url": "http://37.187.142.147:1935/ch10live/high.stream/playlist.m3u8",
-        "selected_status": "offline",
-        "candidate_count": 1,
-        "publishable_candidates": 0
-      },
-      {
-        "group_id": "tvg_id:dellatv.it@hd",
-        "name": "DellaTV (720p)",
-        "outcome": "all_candidates_failed",
-        "initial_url": "https://live20.bozztv.com/giatvplayout7/giatv-211474/playlist.m3u8",
-        "initial_status": "offline",
-        "selected_url": "https://live20.bozztv.com/giatvplayout7/giatv-211474/playlist.m3u8",
         "selected_status": "offline",
         "candidate_count": 1,
         "publishable_candidates": 0
@@ -721,6 +699,28 @@
         "publishable_candidates": 0
       },
       {
+        "group_id": "tvg_id:60801976f92a750007a0699c",
+        "name": "Pluto TV Real Life",
+        "outcome": "upgraded_to_better_alternative",
+        "initial_url": "https://jmp2.uk/plu-60801976f92a750007a0699c.m3u8",
+        "initial_status": "online",
+        "selected_url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/60801976f92a750007a0699c/master.m3u8?jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImMzYjk4NjViLTFiYjItNGZlMy1hYzA3LWU2YWE0N2U3N2MzNiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiIwYjc1NmRiZC04MWU3LTExZjEtYThhNC0yMjQ2Yjc3ZDFlOGUiLCJjbGllbnRJUCI6IjUuMTMzLjQ4LjAiLCJjaXR5IjoiU2FsYSIsInBvc3RhbENvZGUiOiI0NzA0MiIsImNvdW50cnkiOiJJVCIsImRtYSI6MCwiYWN0aXZlUmVnaW9uIjoiSVQiLCJkZXZpY2VMYXQiOjQ0LjE4MDAwMDMwNTE3NTc4LCJkZXZpY2VMb24iOjEyLjM4MDAwMDExNDQ0MDkxOCwicHJlZmVycmVkTGFuZ3VhZ2UiOiJpdCIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTIyLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4wLjAtMTExYjJiOWRjMDBiZDBiZWE5MDMwYjMwNjYyMTU5ZWQ5ZTdjOGJjNiIsImNsaWVudElEIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkV1cm9wZS9Sb21lIiwic2VydmVyU2lkZUFkcyI6ZmFsc2UsImUyZUJlYWNvbnMiOmZhbHNlLCJmZWF0dXJlcyI6eyJtdWx0aVBvZEFkcyI6eyJjb2hvcnQiOiIiLCJlbmFibGVkIjp0cnVlfSwic3RpdGNoZXJIbHNOZyI6eyJkZW11eGVkQXVkaW8iOiJqaXQifX0sImZtc1BhcmFtcyI6eyJmd1ZjSUQyIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiZndWY0lEMkNvcHBhIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY3VzdG9tUGFyYW1zIjp7ImZtc19saXZlcmFtcF9pZGwiOiIiLCJmbXNfZW1haWxoYXNoIjoiIiwiZm1zX3N1YnNjcmliZXJpZCI6IiIsImZtc19pZmEiOiIiLCJmbXNfaWRmdiI6IiIsImZtc191c2VyaWQiOiIzM2RiYTAzNi1jZmU4LTQ2NmYtYjI1MC05Y2M3ZmY3MGRjYzYiLCJmbXNfdmNpZDJ0eXBlIjoidXNlcmlkIiwiZm1zX3JhbXBfaWQiOiIiLCJmbXNfaGhfcmFtcF9pZCI6IiIsImZtc19iaWRpZHR5cGUiOiIiLCJfZndfM1BfVUlEIjoiIiwiZm1zX3J1bGVpZCI6IjEwMDAwLDEwMDA5LDEwMDEzLDEwMDE0LDEwMDE2LDEwMDIwLDEwMDIzLDEwMDE1LDEwMDIxIn19LCJkcm0iOnsibmFtZSI6IndpZGV2aW5lIiwibGV2ZWwiOiJMMyJ9LCJzZXNzaW9uU3RhcnRUaW1lIjoxNzg0Mjk2NDc1NDg2LCJpc3MiOiJib290LnBsdXRvLnR2Iiwic3ViIjoicHJpOnYxOnBsdXRvOmRldmljZXM6SVQ6TXpOa1ltRXdNell0WTJabE9DMDBOalptTFdJeU5UQXRPV05qTjJabU56QmtZMk0yIiwiYXVkIjoiKi5wbHV0by50diIsImV4cCI6MTc4NDM4Mjg3NSwiaWF0IjoxNzg0Mjk2NDc1LCJqdGkiOiI3N2NkYWZiMC02NWFmLTQxNjItYTA4MC00ODM2ODMyOTY3NzQifQ.IgHHJHxkCpiK1qwj0ASrWcMQZYGy9u59vsKA1ADYsF8&masterJWTPassthrough=true&audioLanguage=it",
+        "selected_status": "online",
+        "candidate_count": 2,
+        "publishable_candidates": 2
+      },
+      {
+        "group_id": "tvg_id:63c923944207be0007fd0887",
+        "name": "Pluto TV Viaggi",
+        "outcome": "upgraded_to_better_alternative",
+        "initial_url": "https://jmp2.uk/plu-63c923944207be0007fd0887.m3u8",
+        "initial_status": "online",
+        "selected_url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/63c923944207be0007fd0887/master.m3u8?jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImMzYjk4NjViLTFiYjItNGZlMy1hYzA3LWU2YWE0N2U3N2MzNiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiIwYjc1NmRiZC04MWU3LTExZjEtYThhNC0yMjQ2Yjc3ZDFlOGUiLCJjbGllbnRJUCI6IjUuMTMzLjQ4LjAiLCJjaXR5IjoiU2FsYSIsInBvc3RhbENvZGUiOiI0NzA0MiIsImNvdW50cnkiOiJJVCIsImRtYSI6MCwiYWN0aXZlUmVnaW9uIjoiSVQiLCJkZXZpY2VMYXQiOjQ0LjE4MDAwMDMwNTE3NTc4LCJkZXZpY2VMb24iOjEyLjM4MDAwMDExNDQ0MDkxOCwicHJlZmVycmVkTGFuZ3VhZ2UiOiJpdCIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTIyLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4wLjAtMTExYjJiOWRjMDBiZDBiZWE5MDMwYjMwNjYyMTU5ZWQ5ZTdjOGJjNiIsImNsaWVudElEIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkV1cm9wZS9Sb21lIiwic2VydmVyU2lkZUFkcyI6ZmFsc2UsImUyZUJlYWNvbnMiOmZhbHNlLCJmZWF0dXJlcyI6eyJtdWx0aVBvZEFkcyI6eyJjb2hvcnQiOiIiLCJlbmFibGVkIjp0cnVlfSwic3RpdGNoZXJIbHNOZyI6eyJkZW11eGVkQXVkaW8iOiJqaXQifX0sImZtc1BhcmFtcyI6eyJmd1ZjSUQyIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiZndWY0lEMkNvcHBhIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY3VzdG9tUGFyYW1zIjp7ImZtc19saXZlcmFtcF9pZGwiOiIiLCJmbXNfZW1haWxoYXNoIjoiIiwiZm1zX3N1YnNjcmliZXJpZCI6IiIsImZtc19pZmEiOiIiLCJmbXNfaWRmdiI6IiIsImZtc191c2VyaWQiOiIzM2RiYTAzNi1jZmU4LTQ2NmYtYjI1MC05Y2M3ZmY3MGRjYzYiLCJmbXNfdmNpZDJ0eXBlIjoidXNlcmlkIiwiZm1zX3JhbXBfaWQiOiIiLCJmbXNfaGhfcmFtcF9pZCI6IiIsImZtc19iaWRpZHR5cGUiOiIiLCJfZndfM1BfVUlEIjoiIiwiZm1zX3J1bGVpZCI6IjEwMDAwLDEwMDA5LDEwMDEzLDEwMDE0LDEwMDE2LDEwMDIwLDEwMDIzLDEwMDE1LDEwMDIxIn19LCJkcm0iOnsibmFtZSI6IndpZGV2aW5lIiwibGV2ZWwiOiJMMyJ9LCJzZXNzaW9uU3RhcnRUaW1lIjoxNzg0Mjk2NDc1NDg2LCJpc3MiOiJib290LnBsdXRvLnR2Iiwic3ViIjoicHJpOnYxOnBsdXRvOmRldmljZXM6SVQ6TXpOa1ltRXdNell0WTJabE9DMDBOalptTFdJeU5UQXRPV05qTjJabU56QmtZMk0yIiwiYXVkIjoiKi5wbHV0by50diIsImV4cCI6MTc4NDM4Mjg3NSwiaWF0IjoxNzg0Mjk2NDc1LCJqdGkiOiI3N2NkYWZiMC02NWFmLTQxNjItYTA4MC00ODM2ODMyOTY3NzQifQ.IgHHJHxkCpiK1qwj0ASrWcMQZYGy9u59vsKA1ADYsF8&masterJWTPassthrough=true&audioLanguage=it",
+        "selected_status": "online",
+        "candidate_count": 2,
+        "publishable_candidates": 2
+      },
+      {
         "group_id": "tvg_id:cine34.it@sd",
         "name": "Cine34",
         "outcome": "all_candidates_failed",
@@ -749,6 +749,17 @@
         "initial_url": "https://jmp2.uk/plu-6994800c470389f33df8e090.m3u8",
         "initial_status": "online",
         "selected_url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/6994800c470389f33df8e090/master.m3u8?jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImMzYjk4NjViLTFiYjItNGZlMy1hYzA3LWU2YWE0N2U3N2MzNiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiIwYjc1NmRiZC04MWU3LTExZjEtYThhNC0yMjQ2Yjc3ZDFlOGUiLCJjbGllbnRJUCI6IjUuMTMzLjQ4LjAiLCJjaXR5IjoiU2FsYSIsInBvc3RhbENvZGUiOiI0NzA0MiIsImNvdW50cnkiOiJJVCIsImRtYSI6MCwiYWN0aXZlUmVnaW9uIjoiSVQiLCJkZXZpY2VMYXQiOjQ0LjE4MDAwMDMwNTE3NTc4LCJkZXZpY2VMb24iOjEyLjM4MDAwMDExNDQ0MDkxOCwicHJlZmVycmVkTGFuZ3VhZ2UiOiJpdCIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTIyLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4wLjAtMTExYjJiOWRjMDBiZDBiZWE5MDMwYjMwNjYyMTU5ZWQ5ZTdjOGJjNiIsImNsaWVudElEIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkV1cm9wZS9Sb21lIiwic2VydmVyU2lkZUFkcyI6ZmFsc2UsImUyZUJlYWNvbnMiOmZhbHNlLCJmZWF0dXJlcyI6eyJtdWx0aVBvZEFkcyI6eyJjb2hvcnQiOiIiLCJlbmFibGVkIjp0cnVlfSwic3RpdGNoZXJIbHNOZyI6eyJkZW11eGVkQXVkaW8iOiJqaXQifX0sImZtc1BhcmFtcyI6eyJmd1ZjSUQyIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiZndWY0lEMkNvcHBhIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY3VzdG9tUGFyYW1zIjp7ImZtc19saXZlcmFtcF9pZGwiOiIiLCJmbXNfZW1haWxoYXNoIjoiIiwiZm1zX3N1YnNjcmliZXJpZCI6IiIsImZtc19pZmEiOiIiLCJmbXNfaWRmdiI6IiIsImZtc191c2VyaWQiOiIzM2RiYTAzNi1jZmU4LTQ2NmYtYjI1MC05Y2M3ZmY3MGRjYzYiLCJmbXNfdmNpZDJ0eXBlIjoidXNlcmlkIiwiZm1zX3JhbXBfaWQiOiIiLCJmbXNfaGhfcmFtcF9pZCI6IiIsImZtc19iaWRpZHR5cGUiOiIiLCJfZndfM1BfVUlEIjoiIiwiZm1zX3J1bGVpZCI6IjEwMDAwLDEwMDA5LDEwMDEzLDEwMDE0LDEwMDE2LDEwMDIwLDEwMDIzLDEwMDE1LDEwMDIxIn19LCJkcm0iOnsibmFtZSI6IndpZGV2aW5lIiwibGV2ZWwiOiJMMyJ9LCJzZXNzaW9uU3RhcnRUaW1lIjoxNzg0Mjk2NDc1NDg2LCJpc3MiOiJib290LnBsdXRvLnR2Iiwic3ViIjoicHJpOnYxOnBsdXRvOmRldmljZXM6SVQ6TXpOa1ltRXdNell0WTJabE9DMDBOalptTFdJeU5UQXRPV05qTjJabU56QmtZMk0yIiwiYXVkIjoiKi5wbHV0by50diIsImV4cCI6MTc4NDM4Mjg3NSwiaWF0IjoxNzg0Mjk2NDc1LCJqdGkiOiI3N2NkYWZiMC02NWFmLTQxNjItYTA4MC00ODM2ODMyOTY3NzQifQ.IgHHJHxkCpiK1qwj0ASrWcMQZYGy9u59vsKA1ADYsF8&masterJWTPassthrough=true&audioLanguage=it",
+        "selected_status": "online",
+        "candidate_count": 2,
+        "publishable_candidates": 2
+      },
+      {
+        "group_id": "tvg_id:612e05b885183d0007958101",
+        "name": "Pluto TV Christmas tutto l'anno",
+        "outcome": "upgraded_to_better_alternative",
+        "initial_url": "https://jmp2.uk/plu-612e05b885183d0007958101.m3u8",
+        "initial_status": "online",
+        "selected_url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/612e05b885183d0007958101/master.m3u8?jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImMzYjk4NjViLTFiYjItNGZlMy1hYzA3LWU2YWE0N2U3N2MzNiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiIwYjc1NmRiZC04MWU3LTExZjEtYThhNC0yMjQ2Yjc3ZDFlOGUiLCJjbGllbnRJUCI6IjUuMTMzLjQ4LjAiLCJjaXR5IjoiU2FsYSIsInBvc3RhbENvZGUiOiI0NzA0MiIsImNvdW50cnkiOiJJVCIsImRtYSI6MCwiYWN0aXZlUmVnaW9uIjoiSVQiLCJkZXZpY2VMYXQiOjQ0LjE4MDAwMDMwNTE3NTc4LCJkZXZpY2VMb24iOjEyLjM4MDAwMDExNDQ0MDkxOCwicHJlZmVycmVkTGFuZ3VhZ2UiOiJpdCIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTIyLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4wLjAtMTExYjJiOWRjMDBiZDBiZWE5MDMwYjMwNjYyMTU5ZWQ5ZTdjOGJjNiIsImNsaWVudElEIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkV1cm9wZS9Sb21lIiwic2VydmVyU2lkZUFkcyI6ZmFsc2UsImUyZUJlYWNvbnMiOmZhbHNlLCJmZWF0dXJlcyI6eyJtdWx0aVBvZEFkcyI6eyJjb2hvcnQiOiIiLCJlbmFibGVkIjp0cnVlfSwic3RpdGNoZXJIbHNOZyI6eyJkZW11eGVkQXVkaW8iOiJqaXQifX0sImZtc1BhcmFtcyI6eyJmd1ZjSUQyIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiZndWY0lEMkNvcHBhIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY3VzdG9tUGFyYW1zIjp7ImZtc19saXZlcmFtcF9pZGwiOiIiLCJmbXNfZW1haWxoYXNoIjoiIiwiZm1zX3N1YnNjcmliZXJpZCI6IiIsImZtc19pZmEiOiIiLCJmbXNfaWRmdiI6IiIsImZtc191c2VyaWQiOiIzM2RiYTAzNi1jZmU4LTQ2NmYtYjI1MC05Y2M3ZmY3MGRjYzYiLCJmbXNfdmNpZDJ0eXBlIjoidXNlcmlkIiwiZm1zX3JhbXBfaWQiOiIiLCJmbXNfaGhfcmFtcF9pZCI6IiIsImZtc19iaWRpZHR5cGUiOiIiLCJfZndfM1BfVUlEIjoiIiwiZm1zX3J1bGVpZCI6IjEwMDAwLDEwMDA5LDEwMDEzLDEwMDE0LDEwMDE2LDEwMDIwLDEwMDIzLDEwMDE1LDEwMDIxIn19LCJkcm0iOnsibmFtZSI6IndpZGV2aW5lIiwibGV2ZWwiOiJMMyJ9LCJzZXNzaW9uU3RhcnRUaW1lIjoxNzg0Mjk2NDc1NDg2LCJpc3MiOiJib290LnBsdXRvLnR2Iiwic3ViIjoicHJpOnYxOnBsdXRvOmRldmljZXM6SVQ6TXpOa1ltRXdNell0WTJabE9DMDBOalptTFdJeU5UQXRPV05qTjJabU56QmtZMk0yIiwiYXVkIjoiKi5wbHV0by50diIsImV4cCI6MTc4NDM4Mjg3NSwiaWF0IjoxNzg0Mjk2NDc1LCJqdGkiOiI3N2NkYWZiMC02NWFmLTQxNjItYTA4MC00ODM2ODMyOTY3NzQifQ.IgHHJHxkCpiK1qwj0ASrWcMQZYGy9u59vsKA1ADYsF8&masterJWTPassthrough=true&audioLanguage=it",
         "selected_status": "online",
         "candidate_count": 2,
         "publishable_candidates": 2
@@ -908,6 +919,17 @@
         "publishable_candidates": 2
       },
       {
+        "group_id": "tvg_id:66c70033b1a34600087bb09a",
+        "name": "Pluto TV Paranormal",
+        "outcome": "upgraded_to_better_alternative",
+        "initial_url": "https://jmp2.uk/plu-66c70033b1a34600087bb09a.m3u8",
+        "initial_status": "online",
+        "selected_url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/66c70033b1a34600087bb09a/master.m3u8?jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImMzYjk4NjViLTFiYjItNGZlMy1hYzA3LWU2YWE0N2U3N2MzNiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiIwYjc1NmRiZC04MWU3LTExZjEtYThhNC0yMjQ2Yjc3ZDFlOGUiLCJjbGllbnRJUCI6IjUuMTMzLjQ4LjAiLCJjaXR5IjoiU2FsYSIsInBvc3RhbENvZGUiOiI0NzA0MiIsImNvdW50cnkiOiJJVCIsImRtYSI6MCwiYWN0aXZlUmVnaW9uIjoiSVQiLCJkZXZpY2VMYXQiOjQ0LjE4MDAwMDMwNTE3NTc4LCJkZXZpY2VMb24iOjEyLjM4MDAwMDExNDQ0MDkxOCwicHJlZmVycmVkTGFuZ3VhZ2UiOiJpdCIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTIyLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4wLjAtMTExYjJiOWRjMDBiZDBiZWE5MDMwYjMwNjYyMTU5ZWQ5ZTdjOGJjNiIsImNsaWVudElEIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkV1cm9wZS9Sb21lIiwic2VydmVyU2lkZUFkcyI6ZmFsc2UsImUyZUJlYWNvbnMiOmZhbHNlLCJmZWF0dXJlcyI6eyJtdWx0aVBvZEFkcyI6eyJjb2hvcnQiOiIiLCJlbmFibGVkIjp0cnVlfSwic3RpdGNoZXJIbHNOZyI6eyJkZW11eGVkQXVkaW8iOiJqaXQifX0sImZtc1BhcmFtcyI6eyJmd1ZjSUQyIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiZndWY0lEMkNvcHBhIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY3VzdG9tUGFyYW1zIjp7ImZtc19saXZlcmFtcF9pZGwiOiIiLCJmbXNfZW1haWxoYXNoIjoiIiwiZm1zX3N1YnNjcmliZXJpZCI6IiIsImZtc19pZmEiOiIiLCJmbXNfaWRmdiI6IiIsImZtc191c2VyaWQiOiIzM2RiYTAzNi1jZmU4LTQ2NmYtYjI1MC05Y2M3ZmY3MGRjYzYiLCJmbXNfdmNpZDJ0eXBlIjoidXNlcmlkIiwiZm1zX3JhbXBfaWQiOiIiLCJmbXNfaGhfcmFtcF9pZCI6IiIsImZtc19iaWRpZHR5cGUiOiIiLCJfZndfM1BfVUlEIjoiIiwiZm1zX3J1bGVpZCI6IjEwMDAwLDEwMDA5LDEwMDEzLDEwMDE0LDEwMDE2LDEwMDIwLDEwMDIzLDEwMDE1LDEwMDIxIn19LCJkcm0iOnsibmFtZSI6IndpZGV2aW5lIiwibGV2ZWwiOiJMMyJ9LCJzZXNzaW9uU3RhcnRUaW1lIjoxNzg0Mjk2NDc1NDg2LCJpc3MiOiJib290LnBsdXRvLnR2Iiwic3ViIjoicHJpOnYxOnBsdXRvOmRldmljZXM6SVQ6TXpOa1ltRXdNell0WTJabE9DMDBOalptTFdJeU5UQXRPV05qTjJabU56QmtZMk0yIiwiYXVkIjoiKi5wbHV0by50diIsImV4cCI6MTc4NDM4Mjg3NSwiaWF0IjoxNzg0Mjk2NDc1LCJqdGkiOiI3N2NkYWZiMC02NWFmLTQxNjItYTA4MC00ODM2ODMyOTY3NzQifQ.IgHHJHxkCpiK1qwj0ASrWcMQZYGy9u59vsKA1ADYsF8&masterJWTPassthrough=true&audioLanguage=it",
+        "selected_status": "online",
+        "candidate_count": 2,
+        "publishable_candidates": 2
+      },
+      {
         "group_id": "tvg_id:67ed14aaf7c5d70b9089c3bf",
         "name": "Pluto TV Serie Sci-Fi",
         "outcome": "upgraded_to_better_alternative",
@@ -925,6 +947,17 @@
         "initial_url": "https://jmp2.uk/plu-65253f9881f942000833ccd5.m3u8",
         "initial_status": "online",
         "selected_url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/65253f9881f942000833ccd5/master.m3u8?jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImMzYjk4NjViLTFiYjItNGZlMy1hYzA3LWU2YWE0N2U3N2MzNiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiIwYjc1NmRiZC04MWU3LTExZjEtYThhNC0yMjQ2Yjc3ZDFlOGUiLCJjbGllbnRJUCI6IjUuMTMzLjQ4LjAiLCJjaXR5IjoiU2FsYSIsInBvc3RhbENvZGUiOiI0NzA0MiIsImNvdW50cnkiOiJJVCIsImRtYSI6MCwiYWN0aXZlUmVnaW9uIjoiSVQiLCJkZXZpY2VMYXQiOjQ0LjE4MDAwMDMwNTE3NTc4LCJkZXZpY2VMb24iOjEyLjM4MDAwMDExNDQ0MDkxOCwicHJlZmVycmVkTGFuZ3VhZ2UiOiJpdCIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTIyLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4wLjAtMTExYjJiOWRjMDBiZDBiZWE5MDMwYjMwNjYyMTU5ZWQ5ZTdjOGJjNiIsImNsaWVudElEIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkV1cm9wZS9Sb21lIiwic2VydmVyU2lkZUFkcyI6ZmFsc2UsImUyZUJlYWNvbnMiOmZhbHNlLCJmZWF0dXJlcyI6eyJtdWx0aVBvZEFkcyI6eyJjb2hvcnQiOiIiLCJlbmFibGVkIjp0cnVlfSwic3RpdGNoZXJIbHNOZyI6eyJkZW11eGVkQXVkaW8iOiJqaXQifX0sImZtc1BhcmFtcyI6eyJmd1ZjSUQyIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiZndWY0lEMkNvcHBhIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY3VzdG9tUGFyYW1zIjp7ImZtc19saXZlcmFtcF9pZGwiOiIiLCJmbXNfZW1haWxoYXNoIjoiIiwiZm1zX3N1YnNjcmliZXJpZCI6IiIsImZtc19pZmEiOiIiLCJmbXNfaWRmdiI6IiIsImZtc191c2VyaWQiOiIzM2RiYTAzNi1jZmU4LTQ2NmYtYjI1MC05Y2M3ZmY3MGRjYzYiLCJmbXNfdmNpZDJ0eXBlIjoidXNlcmlkIiwiZm1zX3JhbXBfaWQiOiIiLCJmbXNfaGhfcmFtcF9pZCI6IiIsImZtc19iaWRpZHR5cGUiOiIiLCJfZndfM1BfVUlEIjoiIiwiZm1zX3J1bGVpZCI6IjEwMDAwLDEwMDA5LDEwMDEzLDEwMDE0LDEwMDE2LDEwMDIwLDEwMDIzLDEwMDE1LDEwMDIxIn19LCJkcm0iOnsibmFtZSI6IndpZGV2aW5lIiwibGV2ZWwiOiJMMyJ9LCJzZXNzaW9uU3RhcnRUaW1lIjoxNzg0Mjk2NDc1NDg2LCJpc3MiOiJib290LnBsdXRvLnR2Iiwic3ViIjoicHJpOnYxOnBsdXRvOmRldmljZXM6SVQ6TXpOa1ltRXdNell0WTJabE9DMDBOalptTFdJeU5UQXRPV05qTjJabU56QmtZMk0yIiwiYXVkIjoiKi5wbHV0by50diIsImV4cCI6MTc4NDM4Mjg3NSwiaWF0IjoxNzg0Mjk2NDc1LCJqdGkiOiI3N2NkYWZiMC02NWFmLTQxNjItYTA4MC00ODM2ODMyOTY3NzQifQ.IgHHJHxkCpiK1qwj0ASrWcMQZYGy9u59vsKA1ADYsF8&masterJWTPassthrough=true&audioLanguage=it",
+        "selected_status": "online",
+        "candidate_count": 2,
+        "publishable_candidates": 2
+      },
+      {
+        "group_id": "tvg_id:62e7fb67478a5b0007e6c50c",
+        "name": "Pluto TV Western",
+        "outcome": "upgraded_to_better_alternative",
+        "initial_url": "https://jmp2.uk/plu-62e7fb67478a5b0007e6c50c.m3u8",
+        "initial_status": "online",
+        "selected_url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/62e7fb67478a5b0007e6c50c/master.m3u8?jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImMzYjk4NjViLTFiYjItNGZlMy1hYzA3LWU2YWE0N2U3N2MzNiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiIwYjc1NmRiZC04MWU3LTExZjEtYThhNC0yMjQ2Yjc3ZDFlOGUiLCJjbGllbnRJUCI6IjUuMTMzLjQ4LjAiLCJjaXR5IjoiU2FsYSIsInBvc3RhbENvZGUiOiI0NzA0MiIsImNvdW50cnkiOiJJVCIsImRtYSI6MCwiYWN0aXZlUmVnaW9uIjoiSVQiLCJkZXZpY2VMYXQiOjQ0LjE4MDAwMDMwNTE3NTc4LCJkZXZpY2VMb24iOjEyLjM4MDAwMDExNDQ0MDkxOCwicHJlZmVycmVkTGFuZ3VhZ2UiOiJpdCIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTIyLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4wLjAtMTExYjJiOWRjMDBiZDBiZWE5MDMwYjMwNjYyMTU5ZWQ5ZTdjOGJjNiIsImNsaWVudElEIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkV1cm9wZS9Sb21lIiwic2VydmVyU2lkZUFkcyI6ZmFsc2UsImUyZUJlYWNvbnMiOmZhbHNlLCJmZWF0dXJlcyI6eyJtdWx0aVBvZEFkcyI6eyJjb2hvcnQiOiIiLCJlbmFibGVkIjp0cnVlfSwic3RpdGNoZXJIbHNOZyI6eyJkZW11eGVkQXVkaW8iOiJqaXQifX0sImZtc1BhcmFtcyI6eyJmd1ZjSUQyIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiZndWY0lEMkNvcHBhIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY3VzdG9tUGFyYW1zIjp7ImZtc19saXZlcmFtcF9pZGwiOiIiLCJmbXNfZW1haWxoYXNoIjoiIiwiZm1zX3N1YnNjcmliZXJpZCI6IiIsImZtc19pZmEiOiIiLCJmbXNfaWRmdiI6IiIsImZtc191c2VyaWQiOiIzM2RiYTAzNi1jZmU4LTQ2NmYtYjI1MC05Y2M3ZmY3MGRjYzYiLCJmbXNfdmNpZDJ0eXBlIjoidXNlcmlkIiwiZm1zX3JhbXBfaWQiOiIiLCJmbXNfaGhfcmFtcF9pZCI6IiIsImZtc19iaWRpZHR5cGUiOiIiLCJfZndfM1BfVUlEIjoiIiwiZm1zX3J1bGVpZCI6IjEwMDAwLDEwMDA5LDEwMDEzLDEwMDE0LDEwMDE2LDEwMDIwLDEwMDIzLDEwMDE1LDEwMDIxIn19LCJkcm0iOnsibmFtZSI6IndpZGV2aW5lIiwibGV2ZWwiOiJMMyJ9LCJzZXNzaW9uU3RhcnRUaW1lIjoxNzg0Mjk2NDc1NDg2LCJpc3MiOiJib290LnBsdXRvLnR2Iiwic3ViIjoicHJpOnYxOnBsdXRvOmRldmljZXM6SVQ6TXpOa1ltRXdNell0WTJabE9DMDBOalptTFdJeU5UQXRPV05qTjJabU56QmtZMk0yIiwiYXVkIjoiKi5wbHV0by50diIsImV4cCI6MTc4NDM4Mjg3NSwiaWF0IjoxNzg0Mjk2NDc1LCJqdGkiOiI3N2NkYWZiMC02NWFmLTQxNjItYTA4MC00ODM2ODMyOTY3NzQifQ.IgHHJHxkCpiK1qwj0ASrWcMQZYGy9u59vsKA1ADYsF8&masterJWTPassthrough=true&audioLanguage=it",
         "selected_status": "online",
         "candidate_count": 2,
         "publishable_candidates": 2
@@ -1181,39 +1214,6 @@
         "selected_status": "online",
         "candidate_count": 2,
         "publishable_candidates": 2
-      },
-      {
-        "group_id": "tvg_id:608030eff4b6f70007e1684c",
-        "name": "Pluto TV Sport",
-        "outcome": "upgraded_to_better_alternative",
-        "initial_url": "https://jmp2.uk/plu-608030eff4b6f70007e1684c.m3u8",
-        "initial_status": "online",
-        "selected_url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/608030eff4b6f70007e1684c/master.m3u8?jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImMzYjk4NjViLTFiYjItNGZlMy1hYzA3LWU2YWE0N2U3N2MzNiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiIwYjc1NmRiZC04MWU3LTExZjEtYThhNC0yMjQ2Yjc3ZDFlOGUiLCJjbGllbnRJUCI6IjUuMTMzLjQ4LjAiLCJjaXR5IjoiU2FsYSIsInBvc3RhbENvZGUiOiI0NzA0MiIsImNvdW50cnkiOiJJVCIsImRtYSI6MCwiYWN0aXZlUmVnaW9uIjoiSVQiLCJkZXZpY2VMYXQiOjQ0LjE4MDAwMDMwNTE3NTc4LCJkZXZpY2VMb24iOjEyLjM4MDAwMDExNDQ0MDkxOCwicHJlZmVycmVkTGFuZ3VhZ2UiOiJpdCIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTIyLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4wLjAtMTExYjJiOWRjMDBiZDBiZWE5MDMwYjMwNjYyMTU5ZWQ5ZTdjOGJjNiIsImNsaWVudElEIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkV1cm9wZS9Sb21lIiwic2VydmVyU2lkZUFkcyI6ZmFsc2UsImUyZUJlYWNvbnMiOmZhbHNlLCJmZWF0dXJlcyI6eyJtdWx0aVBvZEFkcyI6eyJjb2hvcnQiOiIiLCJlbmFibGVkIjp0cnVlfSwic3RpdGNoZXJIbHNOZyI6eyJkZW11eGVkQXVkaW8iOiJqaXQifX0sImZtc1BhcmFtcyI6eyJmd1ZjSUQyIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiZndWY0lEMkNvcHBhIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY3VzdG9tUGFyYW1zIjp7ImZtc19saXZlcmFtcF9pZGwiOiIiLCJmbXNfZW1haWxoYXNoIjoiIiwiZm1zX3N1YnNjcmliZXJpZCI6IiIsImZtc19pZmEiOiIiLCJmbXNfaWRmdiI6IiIsImZtc191c2VyaWQiOiIzM2RiYTAzNi1jZmU4LTQ2NmYtYjI1MC05Y2M3ZmY3MGRjYzYiLCJmbXNfdmNpZDJ0eXBlIjoidXNlcmlkIiwiZm1zX3JhbXBfaWQiOiIiLCJmbXNfaGhfcmFtcF9pZCI6IiIsImZtc19iaWRpZHR5cGUiOiIiLCJfZndfM1BfVUlEIjoiIiwiZm1zX3J1bGVpZCI6IjEwMDAwLDEwMDA5LDEwMDEzLDEwMDE0LDEwMDE2LDEwMDIwLDEwMDIzLDEwMDE1LDEwMDIxIn19LCJkcm0iOnsibmFtZSI6IndpZGV2aW5lIiwibGV2ZWwiOiJMMyJ9LCJzZXNzaW9uU3RhcnRUaW1lIjoxNzg0Mjk2NDc1NDg2LCJpc3MiOiJib290LnBsdXRvLnR2Iiwic3ViIjoicHJpOnYxOnBsdXRvOmRldmljZXM6SVQ6TXpOa1ltRXdNell0WTJabE9DMDBOalptTFdJeU5UQXRPV05qTjJabU56QmtZMk0yIiwiYXVkIjoiKi5wbHV0by50diIsImV4cCI6MTc4NDM4Mjg3NSwiaWF0IjoxNzg0Mjk2NDc1LCJqdGkiOiI3N2NkYWZiMC02NWFmLTQxNjItYTA4MC00ODM2ODMyOTY3NzQifQ.IgHHJHxkCpiK1qwj0ASrWcMQZYGy9u59vsKA1ADYsF8&masterJWTPassthrough=true&audioLanguage=it",
-        "selected_status": "online",
-        "candidate_count": 2,
-        "publishable_candidates": 2
-      },
-      {
-        "group_id": "tvg_id:sportitalia24.it@sd",
-        "name": "Sportitalia 24 (720p) [Geo-blocked]",
-        "outcome": "all_candidates_failed",
-        "initial_url": "https://di-yx2saj20.vo.lswcdn.net/sportitalia/smil:silive24.smil/playlist.m3u8",
-        "initial_status": "offline",
-        "selected_url": "https://di-yx2saj20.vo.lswcdn.net/sportitalia/smil:silive24.smil/playlist.m3u8",
-        "selected_status": "offline",
-        "candidate_count": 1,
-        "publishable_candidates": 0
-      },
-      {
-        "group_id": "tvg_id:sportitaliamotori.it@sd",
-        "name": "Sportitalia Motori (720p) [Geo-blocked]",
-        "outcome": "all_candidates_failed",
-        "initial_url": "https://di-yx2saj20.vo.lswcdn.net/sportitalia/smil:simotori.smil/playlist.m3u8",
-        "initial_status": "offline",
-        "selected_url": "https://di-yx2saj20.vo.lswcdn.net/sportitalia/smil:simotori.smil/playlist.m3u8",
-        "selected_status": "offline",
-        "candidate_count": 1,
-        "publishable_candidates": 0
       }
     ]
   },
@@ -1256,7 +1256,7 @@
             "name": "Pluto TV Anime",
             "stream_url": "https://jmp2.uk/plu-65b90daed77d450008a43345.m3u8",
             "source_id": "italy_public",
-            "health_score": 91.0,
+            "health_score": 95.0,
             "source_priority": 100,
             "quality_score": 0,
             "metadata_score": 68,
@@ -1272,7 +1272,7 @@
           "name": "Teenage Mutant Ninja Turtles",
           "stream_url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/62619405c733e8000732d1fe/master.m3u8?jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImMzYjk4NjViLTFiYjItNGZlMy1hYzA3LWU2YWE0N2U3N2MzNiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiIwYjc1NmRiZC04MWU3LTExZjEtYThhNC0yMjQ2Yjc3ZDFlOGUiLCJjbGllbnRJUCI6IjUuMTMzLjQ4LjAiLCJjaXR5IjoiU2FsYSIsInBvc3RhbENvZGUiOiI0NzA0MiIsImNvdW50cnkiOiJJVCIsImRtYSI6MCwiYWN0aXZlUmVnaW9uIjoiSVQiLCJkZXZpY2VMYXQiOjQ0LjE4MDAwMDMwNTE3NTc4LCJkZXZpY2VMb24iOjEyLjM4MDAwMDExNDQ0MDkxOCwicHJlZmVycmVkTGFuZ3VhZ2UiOiJpdCIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTIyLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4wLjAtMTExYjJiOWRjMDBiZDBiZWE5MDMwYjMwNjYyMTU5ZWQ5ZTdjOGJjNiIsImNsaWVudElEIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkV1cm9wZS9Sb21lIiwic2VydmVyU2lkZUFkcyI6ZmFsc2UsImUyZUJlYWNvbnMiOmZhbHNlLCJmZWF0dXJlcyI6eyJtdWx0aVBvZEFkcyI6eyJjb2hvcnQiOiIiLCJlbmFibGVkIjp0cnVlfSwic3RpdGNoZXJIbHNOZyI6eyJkZW11eGVkQXVkaW8iOiJqaXQifX0sImZtc1BhcmFtcyI6eyJmd1ZjSUQyIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiZndWY0lEMkNvcHBhIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY3VzdG9tUGFyYW1zIjp7ImZtc19saXZlcmFtcF9pZGwiOiIiLCJmbXNfZW1haWxoYXNoIjoiIiwiZm1zX3N1YnNjcmliZXJpZCI6IiIsImZtc19pZmEiOiIiLCJmbXNfaWRmdiI6IiIsImZtc191c2VyaWQiOiIzM2RiYTAzNi1jZmU4LTQ2NmYtYjI1MC05Y2M3ZmY3MGRjYzYiLCJmbXNfdmNpZDJ0eXBlIjoidXNlcmlkIiwiZm1zX3JhbXBfaWQiOiIiLCJmbXNfaGhfcmFtcF9pZCI6IiIsImZtc19iaWRpZHR5cGUiOiIiLCJfZndfM1BfVUlEIjoiIiwiZm1zX3J1bGVpZCI6IjEwMDAwLDEwMDA5LDEwMDEzLDEwMDE0LDEwMDE2LDEwMDIwLDEwMDIzLDEwMDE1LDEwMDIxIn19LCJkcm0iOnsibmFtZSI6IndpZGV2aW5lIiwibGV2ZWwiOiJMMyJ9LCJzZXNzaW9uU3RhcnRUaW1lIjoxNzg0Mjk2NDc1NDg2LCJpc3MiOiJib290LnBsdXRvLnR2Iiwic3ViIjoicHJpOnYxOnBsdXRvOmRldmljZXM6SVQ6TXpOa1ltRXdNell0WTJabE9DMDBOalptTFdJeU5UQXRPV05qTjJabU56QmtZMk0yIiwiYXVkIjoiKi5wbHV0by50diIsImV4cCI6MTc4NDM4Mjg3NSwiaWF0IjoxNzg0Mjk2NDc1LCJqdGkiOiI3N2NkYWZiMC02NWFmLTQxNjItYTA4MC00ODM2ODMyOTY3NzQifQ.IgHHJHxkCpiK1qwj0ASrWcMQZYGy9u59vsKA1ADYsF8&masterJWTPassthrough=true&audioLanguage=it",
           "source_id": "pluto_it",
-          "health_score": 97.0,
+          "health_score": 100.0,
           "source_priority": 110,
           "quality_score": 0,
           "metadata_score": 89,
@@ -1284,7 +1284,7 @@
             "name": "Teenage Mutant Ninja Turtles (720p)",
             "stream_url": "https://jmp2.uk/plu-62619405c733e8000732d1fe.m3u8",
             "source_id": "italy_public",
-            "health_score": 80.0,
+            "health_score": 86.0,
             "source_priority": 100,
             "quality_score": 200,
             "metadata_score": 68,
@@ -1296,30 +1296,30 @@
       },
       {
         "selected": {
-          "index": 340,
-          "name": "FailArmy",
-          "stream_url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/608014d19a26320007c92ab6/master.m3u8?jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImMzYjk4NjViLTFiYjItNGZlMy1hYzA3LWU2YWE0N2U3N2MzNiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiIwYjc1NmRiZC04MWU3LTExZjEtYThhNC0yMjQ2Yjc3ZDFlOGUiLCJjbGllbnRJUCI6IjUuMTMzLjQ4LjAiLCJjaXR5IjoiU2FsYSIsInBvc3RhbENvZGUiOiI0NzA0MiIsImNvdW50cnkiOiJJVCIsImRtYSI6MCwiYWN0aXZlUmVnaW9uIjoiSVQiLCJkZXZpY2VMYXQiOjQ0LjE4MDAwMDMwNTE3NTc4LCJkZXZpY2VMb24iOjEyLjM4MDAwMDExNDQ0MDkxOCwicHJlZmVycmVkTGFuZ3VhZ2UiOiJpdCIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTIyLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4wLjAtMTExYjJiOWRjMDBiZDBiZWE5MDMwYjMwNjYyMTU5ZWQ5ZTdjOGJjNiIsImNsaWVudElEIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkV1cm9wZS9Sb21lIiwic2VydmVyU2lkZUFkcyI6ZmFsc2UsImUyZUJlYWNvbnMiOmZhbHNlLCJmZWF0dXJlcyI6eyJtdWx0aVBvZEFkcyI6eyJjb2hvcnQiOiIiLCJlbmFibGVkIjp0cnVlfSwic3RpdGNoZXJIbHNOZyI6eyJkZW11eGVkQXVkaW8iOiJqaXQifX0sImZtc1BhcmFtcyI6eyJmd1ZjSUQyIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiZndWY0lEMkNvcHBhIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY3VzdG9tUGFyYW1zIjp7ImZtc19saXZlcmFtcF9pZGwiOiIiLCJmbXNfZW1haWxoYXNoIjoiIiwiZm1zX3N1YnNjcmliZXJpZCI6IiIsImZtc19pZmEiOiIiLCJmbXNfaWRmdiI6IiIsImZtc191c2VyaWQiOiIzM2RiYTAzNi1jZmU4LTQ2NmYtYjI1MC05Y2M3ZmY3MGRjYzYiLCJmbXNfdmNpZDJ0eXBlIjoidXNlcmlkIiwiZm1zX3JhbXBfaWQiOiIiLCJmbXNfaGhfcmFtcF9pZCI6IiIsImZtc19iaWRpZHR5cGUiOiIiLCJfZndfM1BfVUlEIjoiIiwiZm1zX3J1bGVpZCI6IjEwMDAwLDEwMDA5LDEwMDEzLDEwMDE0LDEwMDE2LDEwMDIwLDEwMDIzLDEwMDE1LDEwMDIxIn19LCJkcm0iOnsibmFtZSI6IndpZGV2aW5lIiwibGV2ZWwiOiJMMyJ9LCJzZXNzaW9uU3RhcnRUaW1lIjoxNzg0Mjk2NDc1NDg2LCJpc3MiOiJib290LnBsdXRvLnR2Iiwic3ViIjoicHJpOnYxOnBsdXRvOmRldmljZXM6SVQ6TXpOa1ltRXdNell0WTJabE9DMDBOalptTFdJeU5UQXRPV05qTjJabU56QmtZMk0yIiwiYXVkIjoiKi5wbHV0by50diIsImV4cCI6MTc4NDM4Mjg3NSwiaWF0IjoxNzg0Mjk2NDc1LCJqdGkiOiI3N2NkYWZiMC02NWFmLTQxNjItYTA4MC00ODM2ODMyOTY3NzQifQ.IgHHJHxkCpiK1qwj0ASrWcMQZYGy9u59vsKA1ADYsF8&masterJWTPassthrough=true&audioLanguage=it",
-          "source_id": "pluto_it",
+          "index": 56,
+          "name": "Failarmy",
+          "stream_url": "https://failarmy-international-it.samsung.wurl.tv/playlist.m3u8",
+          "source_id": "italy_public",
           "health_score": 100.0,
-          "source_priority": 110,
+          "source_priority": 100,
           "quality_score": 0,
-          "metadata_score": 89,
+          "metadata_score": 68,
           "transport_score": 25
         },
         "discarded": [
           {
-            "index": 56,
-            "name": "Failarmy",
-            "stream_url": "https://failarmy-international-it.samsung.wurl.tv/playlist.m3u8",
-            "source_id": "italy_public",
-            "health_score": 97.0,
-            "source_priority": 100,
+            "index": 340,
+            "name": "FailArmy",
+            "stream_url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/608014d19a26320007c92ab6/master.m3u8?jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImMzYjk4NjViLTFiYjItNGZlMy1hYzA3LWU2YWE0N2U3N2MzNiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiIwYjc1NmRiZC04MWU3LTExZjEtYThhNC0yMjQ2Yjc3ZDFlOGUiLCJjbGllbnRJUCI6IjUuMTMzLjQ4LjAiLCJjaXR5IjoiU2FsYSIsInBvc3RhbENvZGUiOiI0NzA0MiIsImNvdW50cnkiOiJJVCIsImRtYSI6MCwiYWN0aXZlUmVnaW9uIjoiSVQiLCJkZXZpY2VMYXQiOjQ0LjE4MDAwMDMwNTE3NTc4LCJkZXZpY2VMb24iOjEyLjM4MDAwMDExNDQ0MDkxOCwicHJlZmVycmVkTGFuZ3VhZ2UiOiJpdCIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTIyLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4wLjAtMTExYjJiOWRjMDBiZDBiZWE5MDMwYjMwNjYyMTU5ZWQ5ZTdjOGJjNiIsImNsaWVudElEIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkV1cm9wZS9Sb21lIiwic2VydmVyU2lkZUFkcyI6ZmFsc2UsImUyZUJlYWNvbnMiOmZhbHNlLCJmZWF0dXJlcyI6eyJtdWx0aVBvZEFkcyI6eyJjb2hvcnQiOiIiLCJlbmFibGVkIjp0cnVlfSwic3RpdGNoZXJIbHNOZyI6eyJkZW11eGVkQXVkaW8iOiJqaXQifX0sImZtc1BhcmFtcyI6eyJmd1ZjSUQyIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiZndWY0lEMkNvcHBhIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY3VzdG9tUGFyYW1zIjp7ImZtc19saXZlcmFtcF9pZGwiOiIiLCJmbXNfZW1haWxoYXNoIjoiIiwiZm1zX3N1YnNjcmliZXJpZCI6IiIsImZtc19pZmEiOiIiLCJmbXNfaWRmdiI6IiIsImZtc191c2VyaWQiOiIzM2RiYTAzNi1jZmU4LTQ2NmYtYjI1MC05Y2M3ZmY3MGRjYzYiLCJmbXNfdmNpZDJ0eXBlIjoidXNlcmlkIiwiZm1zX3JhbXBfaWQiOiIiLCJmbXNfaGhfcmFtcF9pZCI6IiIsImZtc19iaWRpZHR5cGUiOiIiLCJfZndfM1BfVUlEIjoiIiwiZm1zX3J1bGVpZCI6IjEwMDAwLDEwMDA5LDEwMDEzLDEwMDE0LDEwMDE2LDEwMDIwLDEwMDIzLDEwMDE1LDEwMDIxIn19LCJkcm0iOnsibmFtZSI6IndpZGV2aW5lIiwibGV2ZWwiOiJMMyJ9LCJzZXNzaW9uU3RhcnRUaW1lIjoxNzg0Mjk2NDc1NDg2LCJpc3MiOiJib290LnBsdXRvLnR2Iiwic3ViIjoicHJpOnYxOnBsdXRvOmRldmljZXM6SVQ6TXpOa1ltRXdNell0WTJabE9DMDBOalptTFdJeU5UQXRPV05qTjJabU56QmtZMk0yIiwiYXVkIjoiKi5wbHV0by50diIsImV4cCI6MTc4NDM4Mjg3NSwiaWF0IjoxNzg0Mjk2NDc1LCJqdGkiOiI3N2NkYWZiMC02NWFmLTQxNjItYTA4MC00ODM2ODMyOTY3NzQifQ.IgHHJHxkCpiK1qwj0ASrWcMQZYGy9u59vsKA1ADYsF8&masterJWTPassthrough=true&audioLanguage=it",
+            "source_id": "pluto_it",
+            "health_score": 100.0,
+            "source_priority": 110,
             "quality_score": 0,
-            "metadata_score": 68,
+            "metadata_score": 89,
             "transport_score": 25
           }
         ],
-        "reason": "higher_health_score",
+        "reason": "better_source_priority",
         "duplicates_removed": 1
       },
       {
@@ -1340,7 +1340,7 @@
             "name": "Pluto TV Scherzi e risate",
             "stream_url": "https://jmp2.uk/plu-609404b0a8ec810007d8de9d.m3u8",
             "source_id": "italy_public",
-            "health_score": 80.0,
+            "health_score": 91.0,
             "source_priority": 100,
             "quality_score": 0,
             "metadata_score": 68,
@@ -1380,6 +1380,34 @@
       },
       {
         "selected": {
+          "index": 60,
+          "name": "Gambero Rosso (720p)",
+          "stream_url": "https://jmp2.uk/plu-6971fc07c945e6e4e5bc46bf.m3u8",
+          "source_id": "italy_public",
+          "health_score": 91.0,
+          "source_priority": 100,
+          "quality_score": 200,
+          "metadata_score": 68,
+          "transport_score": 25
+        },
+        "discarded": [
+          {
+            "index": 381,
+            "name": "Gambero Rosso",
+            "stream_url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/6971fc07c945e6e4e5bc46bf/master.m3u8?jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImMzYjk4NjViLTFiYjItNGZlMy1hYzA3LWU2YWE0N2U3N2MzNiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiIwYjc1NmRiZC04MWU3LTExZjEtYThhNC0yMjQ2Yjc3ZDFlOGUiLCJjbGllbnRJUCI6IjUuMTMzLjQ4LjAiLCJjaXR5IjoiU2FsYSIsInBvc3RhbENvZGUiOiI0NzA0MiIsImNvdW50cnkiOiJJVCIsImRtYSI6MCwiYWN0aXZlUmVnaW9uIjoiSVQiLCJkZXZpY2VMYXQiOjQ0LjE4MDAwMDMwNTE3NTc4LCJkZXZpY2VMb24iOjEyLjM4MDAwMDExNDQ0MDkxOCwicHJlZmVycmVkTGFuZ3VhZ2UiOiJpdCIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTIyLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4wLjAtMTExYjJiOWRjMDBiZDBiZWE5MDMwYjMwNjYyMTU5ZWQ5ZTdjOGJjNiIsImNsaWVudElEIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkV1cm9wZS9Sb21lIiwic2VydmVyU2lkZUFkcyI6ZmFsc2UsImUyZUJlYWNvbnMiOmZhbHNlLCJmZWF0dXJlcyI6eyJtdWx0aVBvZEFkcyI6eyJjb2hvcnQiOiIiLCJlbmFibGVkIjp0cnVlfSwic3RpdGNoZXJIbHNOZyI6eyJkZW11eGVkQXVkaW8iOiJqaXQifX0sImZtc1BhcmFtcyI6eyJmd1ZjSUQyIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiZndWY0lEMkNvcHBhIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY3VzdG9tUGFyYW1zIjp7ImZtc19saXZlcmFtcF9pZGwiOiIiLCJmbXNfZW1haWxoYXNoIjoiIiwiZm1zX3N1YnNjcmliZXJpZCI6IiIsImZtc19pZmEiOiIiLCJmbXNfaWRmdiI6IiIsImZtc191c2VyaWQiOiIzM2RiYTAzNi1jZmU4LTQ2NmYtYjI1MC05Y2M3ZmY3MGRjYzYiLCJmbXNfdmNpZDJ0eXBlIjoidXNlcmlkIiwiZm1zX3JhbXBfaWQiOiIiLCJmbXNfaGhfcmFtcF9pZCI6IiIsImZtc19iaWRpZHR5cGUiOiIiLCJfZndfM1BfVUlEIjoiIiwiZm1zX3J1bGVpZCI6IjEwMDAwLDEwMDA5LDEwMDEzLDEwMDE0LDEwMDE2LDEwMDIwLDEwMDIzLDEwMDE1LDEwMDIxIn19LCJkcm0iOnsibmFtZSI6IndpZGV2aW5lIiwibGV2ZWwiOiJMMyJ9LCJzZXNzaW9uU3RhcnRUaW1lIjoxNzg0Mjk2NDc1NDg2LCJpc3MiOiJib290LnBsdXRvLnR2Iiwic3ViIjoicHJpOnYxOnBsdXRvOmRldmljZXM6SVQ6TXpOa1ltRXdNell0WTJabE9DMDBOalptTFdJeU5UQXRPV05qTjJabU56QmtZMk0yIiwiYXVkIjoiKi5wbHV0by50diIsImV4cCI6MTc4NDM4Mjg3NSwiaWF0IjoxNzg0Mjk2NDc1LCJqdGkiOiI3N2NkYWZiMC02NWFmLTQxNjItYTA4MC00ODM2ODMyOTY3NzQifQ.IgHHJHxkCpiK1qwj0ASrWcMQZYGy9u59vsKA1ADYsF8&masterJWTPassthrough=true&audioLanguage=it",
+            "source_id": "pluto_it",
+            "health_score": 88.0,
+            "source_priority": 110,
+            "quality_score": 0,
+            "metadata_score": 89,
+            "transport_score": 25
+          }
+        ],
+        "reason": "higher_health_score",
+        "duplicates_removed": 1
+      },
+      {
+        "selected": {
           "index": 347,
           "name": "Pluto TV Documentari",
           "stream_url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/608aa8a5709d6b0007b132fe/master.m3u8?jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImMzYjk4NjViLTFiYjItNGZlMy1hYzA3LWU2YWE0N2U3N2MzNiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiIwYjc1NmRiZC04MWU3LTExZjEtYThhNC0yMjQ2Yjc3ZDFlOGUiLCJjbGllbnRJUCI6IjUuMTMzLjQ4LjAiLCJjaXR5IjoiU2FsYSIsInBvc3RhbENvZGUiOiI0NzA0MiIsImNvdW50cnkiOiJJVCIsImRtYSI6MCwiYWN0aXZlUmVnaW9uIjoiSVQiLCJkZXZpY2VMYXQiOjQ0LjE4MDAwMDMwNTE3NTc4LCJkZXZpY2VMb24iOjEyLjM4MDAwMDExNDQ0MDkxOCwicHJlZmVycmVkTGFuZ3VhZ2UiOiJpdCIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTIyLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4wLjAtMTExYjJiOWRjMDBiZDBiZWE5MDMwYjMwNjYyMTU5ZWQ5ZTdjOGJjNiIsImNsaWVudElEIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkV1cm9wZS9Sb21lIiwic2VydmVyU2lkZUFkcyI6ZmFsc2UsImUyZUJlYWNvbnMiOmZhbHNlLCJmZWF0dXJlcyI6eyJtdWx0aVBvZEFkcyI6eyJjb2hvcnQiOiIiLCJlbmFibGVkIjp0cnVlfSwic3RpdGNoZXJIbHNOZyI6eyJkZW11eGVkQXVkaW8iOiJqaXQifX0sImZtc1BhcmFtcyI6eyJmd1ZjSUQyIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiZndWY0lEMkNvcHBhIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY3VzdG9tUGFyYW1zIjp7ImZtc19saXZlcmFtcF9pZGwiOiIiLCJmbXNfZW1haWxoYXNoIjoiIiwiZm1zX3N1YnNjcmliZXJpZCI6IiIsImZtc19pZmEiOiIiLCJmbXNfaWRmdiI6IiIsImZtc191c2VyaWQiOiIzM2RiYTAzNi1jZmU4LTQ2NmYtYjI1MC05Y2M3ZmY3MGRjYzYiLCJmbXNfdmNpZDJ0eXBlIjoidXNlcmlkIiwiZm1zX3JhbXBfaWQiOiIiLCJmbXNfaGhfcmFtcF9pZCI6IiIsImZtc19iaWRpZHR5cGUiOiIiLCJfZndfM1BfVUlEIjoiIiwiZm1zX3J1bGVpZCI6IjEwMDAwLDEwMDA5LDEwMDEzLDEwMDE0LDEwMDE2LDEwMDIwLDEwMDIzLDEwMDE1LDEwMDIxIn19LCJkcm0iOnsibmFtZSI6IndpZGV2aW5lIiwibGV2ZWwiOiJMMyJ9LCJzZXNzaW9uU3RhcnRUaW1lIjoxNzg0Mjk2NDc1NDg2LCJpc3MiOiJib290LnBsdXRvLnR2Iiwic3ViIjoicHJpOnYxOnBsdXRvOmRldmljZXM6SVQ6TXpOa1ltRXdNell0WTJabE9DMDBOalptTFdJeU5UQXRPV05qTjJabU56QmtZMk0yIiwiYXVkIjoiKi5wbHV0by50diIsImV4cCI6MTc4NDM4Mjg3NSwiaWF0IjoxNzg0Mjk2NDc1LCJqdGkiOiI3N2NkYWZiMC02NWFmLTQxNjItYTA4MC00ODM2ODMyOTY3NzQifQ.IgHHJHxkCpiK1qwj0ASrWcMQZYGy9u59vsKA1ADYsF8&masterJWTPassthrough=true&audioLanguage=it",
@@ -1396,7 +1424,7 @@
             "name": "Pluto TV Documentari",
             "stream_url": "https://jmp2.uk/plu-608aa8a5709d6b0007b132fe.m3u8",
             "source_id": "italy_public",
-            "health_score": 91.0,
+            "health_score": 86.0,
             "source_priority": 100,
             "quality_score": 0,
             "metadata_score": 68,
@@ -1424,7 +1452,7 @@
             "name": "Pluto TV Natura",
             "stream_url": "https://jmp2.uk/plu-60802b37709d6b0007b0c549.m3u8",
             "source_id": "italy_public",
-            "health_score": 95.0,
+            "health_score": 98.0,
             "source_priority": 100,
             "quality_score": 0,
             "metadata_score": 68,
@@ -1440,7 +1468,7 @@
           "name": "Pluto TV Storia",
           "stream_url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/65253fdf3fd33c00080214a3/master.m3u8?jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImMzYjk4NjViLTFiYjItNGZlMy1hYzA3LWU2YWE0N2U3N2MzNiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiIwYjc1NmRiZC04MWU3LTExZjEtYThhNC0yMjQ2Yjc3ZDFlOGUiLCJjbGllbnRJUCI6IjUuMTMzLjQ4LjAiLCJjaXR5IjoiU2FsYSIsInBvc3RhbENvZGUiOiI0NzA0MiIsImNvdW50cnkiOiJJVCIsImRtYSI6MCwiYWN0aXZlUmVnaW9uIjoiSVQiLCJkZXZpY2VMYXQiOjQ0LjE4MDAwMDMwNTE3NTc4LCJkZXZpY2VMb24iOjEyLjM4MDAwMDExNDQ0MDkxOCwicHJlZmVycmVkTGFuZ3VhZ2UiOiJpdCIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTIyLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4wLjAtMTExYjJiOWRjMDBiZDBiZWE5MDMwYjMwNjYyMTU5ZWQ5ZTdjOGJjNiIsImNsaWVudElEIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkV1cm9wZS9Sb21lIiwic2VydmVyU2lkZUFkcyI6ZmFsc2UsImUyZUJlYWNvbnMiOmZhbHNlLCJmZWF0dXJlcyI6eyJtdWx0aVBvZEFkcyI6eyJjb2hvcnQiOiIiLCJlbmFibGVkIjp0cnVlfSwic3RpdGNoZXJIbHNOZyI6eyJkZW11eGVkQXVkaW8iOiJqaXQifX0sImZtc1BhcmFtcyI6eyJmd1ZjSUQyIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiZndWY0lEMkNvcHBhIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY3VzdG9tUGFyYW1zIjp7ImZtc19saXZlcmFtcF9pZGwiOiIiLCJmbXNfZW1haWxoYXNoIjoiIiwiZm1zX3N1YnNjcmliZXJpZCI6IiIsImZtc19pZmEiOiIiLCJmbXNfaWRmdiI6IiIsImZtc191c2VyaWQiOiIzM2RiYTAzNi1jZmU4LTQ2NmYtYjI1MC05Y2M3ZmY3MGRjYzYiLCJmbXNfdmNpZDJ0eXBlIjoidXNlcmlkIiwiZm1zX3JhbXBfaWQiOiIiLCJmbXNfaGhfcmFtcF9pZCI6IiIsImZtc19iaWRpZHR5cGUiOiIiLCJfZndfM1BfVUlEIjoiIiwiZm1zX3J1bGVpZCI6IjEwMDAwLDEwMDA5LDEwMDEzLDEwMDE0LDEwMDE2LDEwMDIwLDEwMDIzLDEwMDE1LDEwMDIxIn19LCJkcm0iOnsibmFtZSI6IndpZGV2aW5lIiwibGV2ZWwiOiJMMyJ9LCJzZXNzaW9uU3RhcnRUaW1lIjoxNzg0Mjk2NDc1NDg2LCJpc3MiOiJib290LnBsdXRvLnR2Iiwic3ViIjoicHJpOnYxOnBsdXRvOmRldmljZXM6SVQ6TXpOa1ltRXdNell0WTJabE9DMDBOalptTFdJeU5UQXRPV05qTjJabU56QmtZMk0yIiwiYXVkIjoiKi5wbHV0by50diIsImV4cCI6MTc4NDM4Mjg3NSwiaWF0IjoxNzg0Mjk2NDc1LCJqdGkiOiI3N2NkYWZiMC02NWFmLTQxNjItYTA4MC00ODM2ODMyOTY3NzQifQ.IgHHJHxkCpiK1qwj0ASrWcMQZYGy9u59vsKA1ADYsF8&masterJWTPassthrough=true&audioLanguage=it",
           "source_id": "pluto_it",
-          "health_score": 100.0,
+          "health_score": 93.0,
           "source_priority": 110,
           "quality_score": 0,
           "metadata_score": 89,
@@ -1452,7 +1480,7 @@
             "name": "Pluto TV Storia",
             "stream_url": "https://jmp2.uk/plu-65253fdf3fd33c00080214a3.m3u8",
             "source_id": "italy_public",
-            "health_score": 95.0,
+            "health_score": 86.0,
             "source_priority": 100,
             "quality_score": 0,
             "metadata_score": 68,
@@ -1507,6 +1535,34 @@
             "index": 123,
             "name": "Pluto TV Azione Cult",
             "stream_url": "https://jmp2.uk/plu-6994800c470389f33df8e090.m3u8",
+            "source_id": "italy_public",
+            "health_score": 91.0,
+            "source_priority": 100,
+            "quality_score": 0,
+            "metadata_score": 68,
+            "transport_score": 25
+          }
+        ],
+        "reason": "higher_health_score",
+        "duplicates_removed": 1
+      },
+      {
+        "selected": {
+          "index": 357,
+          "name": "Pluto TV Christmas tutto l'anno",
+          "stream_url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/612e05b885183d0007958101/master.m3u8?jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImMzYjk4NjViLTFiYjItNGZlMy1hYzA3LWU2YWE0N2U3N2MzNiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiIwYjc1NmRiZC04MWU3LTExZjEtYThhNC0yMjQ2Yjc3ZDFlOGUiLCJjbGllbnRJUCI6IjUuMTMzLjQ4LjAiLCJjaXR5IjoiU2FsYSIsInBvc3RhbENvZGUiOiI0NzA0MiIsImNvdW50cnkiOiJJVCIsImRtYSI6MCwiYWN0aXZlUmVnaW9uIjoiSVQiLCJkZXZpY2VMYXQiOjQ0LjE4MDAwMDMwNTE3NTc4LCJkZXZpY2VMb24iOjEyLjM4MDAwMDExNDQ0MDkxOCwicHJlZmVycmVkTGFuZ3VhZ2UiOiJpdCIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTIyLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4wLjAtMTExYjJiOWRjMDBiZDBiZWE5MDMwYjMwNjYyMTU5ZWQ5ZTdjOGJjNiIsImNsaWVudElEIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkV1cm9wZS9Sb21lIiwic2VydmVyU2lkZUFkcyI6ZmFsc2UsImUyZUJlYWNvbnMiOmZhbHNlLCJmZWF0dXJlcyI6eyJtdWx0aVBvZEFkcyI6eyJjb2hvcnQiOiIiLCJlbmFibGVkIjp0cnVlfSwic3RpdGNoZXJIbHNOZyI6eyJkZW11eGVkQXVkaW8iOiJqaXQifX0sImZtc1BhcmFtcyI6eyJmd1ZjSUQyIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiZndWY0lEMkNvcHBhIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY3VzdG9tUGFyYW1zIjp7ImZtc19saXZlcmFtcF9pZGwiOiIiLCJmbXNfZW1haWxoYXNoIjoiIiwiZm1zX3N1YnNjcmliZXJpZCI6IiIsImZtc19pZmEiOiIiLCJmbXNfaWRmdiI6IiIsImZtc191c2VyaWQiOiIzM2RiYTAzNi1jZmU4LTQ2NmYtYjI1MC05Y2M3ZmY3MGRjYzYiLCJmbXNfdmNpZDJ0eXBlIjoidXNlcmlkIiwiZm1zX3JhbXBfaWQiOiIiLCJmbXNfaGhfcmFtcF9pZCI6IiIsImZtc19iaWRpZHR5cGUiOiIiLCJfZndfM1BfVUlEIjoiIiwiZm1zX3J1bGVpZCI6IjEwMDAwLDEwMDA5LDEwMDEzLDEwMDE0LDEwMDE2LDEwMDIwLDEwMDIzLDEwMDE1LDEwMDIxIn19LCJkcm0iOnsibmFtZSI6IndpZGV2aW5lIiwibGV2ZWwiOiJMMyJ9LCJzZXNzaW9uU3RhcnRUaW1lIjoxNzg0Mjk2NDc1NDg2LCJpc3MiOiJib290LnBsdXRvLnR2Iiwic3ViIjoicHJpOnYxOnBsdXRvOmRldmljZXM6SVQ6TXpOa1ltRXdNell0WTJabE9DMDBOalptTFdJeU5UQXRPV05qTjJabU56QmtZMk0yIiwiYXVkIjoiKi5wbHV0by50diIsImV4cCI6MTc4NDM4Mjg3NSwiaWF0IjoxNzg0Mjk2NDc1LCJqdGkiOiI3N2NkYWZiMC02NWFmLTQxNjItYTA4MC00ODM2ODMyOTY3NzQifQ.IgHHJHxkCpiK1qwj0ASrWcMQZYGy9u59vsKA1ADYsF8&masterJWTPassthrough=true&audioLanguage=it",
+          "source_id": "pluto_it",
+          "health_score": 100.0,
+          "source_priority": 110,
+          "quality_score": 0,
+          "metadata_score": 89,
+          "transport_score": 25
+        },
+        "discarded": [
+          {
+            "index": 124,
+            "name": "Pluto TV Christmas tutto l'anno",
+            "stream_url": "https://jmp2.uk/plu-612e05b885183d0007958101.m3u8",
             "source_id": "italy_public",
             "health_score": 95.0,
             "source_priority": 100,
@@ -1564,7 +1620,7 @@
             "name": "Pluto TV Cinema Orientale",
             "stream_url": "https://jmp2.uk/plu-6786235bd648bf0008c2780a.m3u8",
             "source_id": "italy_public",
-            "health_score": 95.0,
+            "health_score": 91.0,
             "source_priority": 100,
             "quality_score": 0,
             "metadata_score": 68,
@@ -1592,7 +1648,7 @@
             "name": "Pluto TV Film",
             "stream_url": "https://jmp2.uk/plu-608aa17fb9f4490007e6419a.m3u8",
             "source_id": "italy_public",
-            "health_score": 95.0,
+            "health_score": 91.0,
             "source_priority": 100,
             "quality_score": 0,
             "metadata_score": 68,
@@ -1620,7 +1676,7 @@
             "name": "Pluto TV Film Ancora Più Romantici",
             "stream_url": "https://jmp2.uk/plu-699d87093d5dba980705cca8.m3u8",
             "source_id": "italy_public",
-            "health_score": 95.0,
+            "health_score": 91.0,
             "source_priority": 100,
             "quality_score": 0,
             "metadata_score": 68,
@@ -1704,7 +1760,7 @@
             "name": "Pluto TV Film Romantici",
             "stream_url": "https://jmp2.uk/plu-608aa4a4cc92820007b663af.m3u8",
             "source_id": "italy_public",
-            "health_score": 95.0,
+            "health_score": 91.0,
             "source_priority": 100,
             "quality_score": 0,
             "metadata_score": 68,
@@ -1816,7 +1872,7 @@
             "name": "Pluto TV Legami Letali",
             "stream_url": "https://jmp2.uk/plu-64808a8c536e0c0008a276d1.m3u8",
             "source_id": "italy_public",
-            "health_score": 95.0,
+            "health_score": 98.0,
             "source_priority": 100,
             "quality_score": 0,
             "metadata_score": 68,
@@ -1844,7 +1900,63 @@
             "name": "Pluto TV Totò",
             "stream_url": "https://jmp2.uk/plu-65253f9881f942000833ccd5.m3u8",
             "source_id": "italy_public",
-            "health_score": 91.0,
+            "health_score": 98.0,
+            "source_priority": 100,
+            "quality_score": 0,
+            "metadata_score": 68,
+            "transport_score": 25
+          }
+        ],
+        "reason": "higher_health_score",
+        "duplicates_removed": 1
+      },
+      {
+        "selected": {
+          "index": 371,
+          "name": "Pluto TV Western",
+          "stream_url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/62e7fb67478a5b0007e6c50c/master.m3u8?jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImMzYjk4NjViLTFiYjItNGZlMy1hYzA3LWU2YWE0N2U3N2MzNiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiIwYjc1NmRiZC04MWU3LTExZjEtYThhNC0yMjQ2Yjc3ZDFlOGUiLCJjbGllbnRJUCI6IjUuMTMzLjQ4LjAiLCJjaXR5IjoiU2FsYSIsInBvc3RhbENvZGUiOiI0NzA0MiIsImNvdW50cnkiOiJJVCIsImRtYSI6MCwiYWN0aXZlUmVnaW9uIjoiSVQiLCJkZXZpY2VMYXQiOjQ0LjE4MDAwMDMwNTE3NTc4LCJkZXZpY2VMb24iOjEyLjM4MDAwMDExNDQ0MDkxOCwicHJlZmVycmVkTGFuZ3VhZ2UiOiJpdCIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTIyLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4wLjAtMTExYjJiOWRjMDBiZDBiZWE5MDMwYjMwNjYyMTU5ZWQ5ZTdjOGJjNiIsImNsaWVudElEIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkV1cm9wZS9Sb21lIiwic2VydmVyU2lkZUFkcyI6ZmFsc2UsImUyZUJlYWNvbnMiOmZhbHNlLCJmZWF0dXJlcyI6eyJtdWx0aVBvZEFkcyI6eyJjb2hvcnQiOiIiLCJlbmFibGVkIjp0cnVlfSwic3RpdGNoZXJIbHNOZyI6eyJkZW11eGVkQXVkaW8iOiJqaXQifX0sImZtc1BhcmFtcyI6eyJmd1ZjSUQyIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiZndWY0lEMkNvcHBhIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY3VzdG9tUGFyYW1zIjp7ImZtc19saXZlcmFtcF9pZGwiOiIiLCJmbXNfZW1haWxoYXNoIjoiIiwiZm1zX3N1YnNjcmliZXJpZCI6IiIsImZtc19pZmEiOiIiLCJmbXNfaWRmdiI6IiIsImZtc191c2VyaWQiOiIzM2RiYTAzNi1jZmU4LTQ2NmYtYjI1MC05Y2M3ZmY3MGRjYzYiLCJmbXNfdmNpZDJ0eXBlIjoidXNlcmlkIiwiZm1zX3JhbXBfaWQiOiIiLCJmbXNfaGhfcmFtcF9pZCI6IiIsImZtc19iaWRpZHR5cGUiOiIiLCJfZndfM1BfVUlEIjoiIiwiZm1zX3J1bGVpZCI6IjEwMDAwLDEwMDA5LDEwMDEzLDEwMDE0LDEwMDE2LDEwMDIwLDEwMDIzLDEwMDE1LDEwMDIxIn19LCJkcm0iOnsibmFtZSI6IndpZGV2aW5lIiwibGV2ZWwiOiJMMyJ9LCJzZXNzaW9uU3RhcnRUaW1lIjoxNzg0Mjk2NDc1NDg2LCJpc3MiOiJib290LnBsdXRvLnR2Iiwic3ViIjoicHJpOnYxOnBsdXRvOmRldmljZXM6SVQ6TXpOa1ltRXdNell0WTJabE9DMDBOalptTFdJeU5UQXRPV05qTjJabU56QmtZMk0yIiwiYXVkIjoiKi5wbHV0by50diIsImV4cCI6MTc4NDM4Mjg3NSwiaWF0IjoxNzg0Mjk2NDc1LCJqdGkiOiI3N2NkYWZiMC02NWFmLTQxNjItYTA4MC00ODM2ODMyOTY3NzQifQ.IgHHJHxkCpiK1qwj0ASrWcMQZYGy9u59vsKA1ADYsF8&masterJWTPassthrough=true&audioLanguage=it",
+          "source_id": "pluto_it",
+          "health_score": 100.0,
+          "source_priority": 110,
+          "quality_score": 0,
+          "metadata_score": 89,
+          "transport_score": 25
+        },
+        "discarded": [
+          {
+            "index": 158,
+            "name": "Pluto TV Western",
+            "stream_url": "https://jmp2.uk/plu-62e7fb67478a5b0007e6c50c.m3u8",
+            "source_id": "italy_public",
+            "health_score": 98.0,
+            "source_priority": 100,
+            "quality_score": 0,
+            "metadata_score": 68,
+            "transport_score": 25
+          }
+        ],
+        "reason": "higher_health_score",
+        "duplicates_removed": 1
+      },
+      {
+        "selected": {
+          "index": 373,
+          "name": "Pluto TV Paranormal",
+          "stream_url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/66c70033b1a34600087bb09a/master.m3u8?jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImMzYjk4NjViLTFiYjItNGZlMy1hYzA3LWU2YWE0N2U3N2MzNiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiIwYjc1NmRiZC04MWU3LTExZjEtYThhNC0yMjQ2Yjc3ZDFlOGUiLCJjbGllbnRJUCI6IjUuMTMzLjQ4LjAiLCJjaXR5IjoiU2FsYSIsInBvc3RhbENvZGUiOiI0NzA0MiIsImNvdW50cnkiOiJJVCIsImRtYSI6MCwiYWN0aXZlUmVnaW9uIjoiSVQiLCJkZXZpY2VMYXQiOjQ0LjE4MDAwMDMwNTE3NTc4LCJkZXZpY2VMb24iOjEyLjM4MDAwMDExNDQ0MDkxOCwicHJlZmVycmVkTGFuZ3VhZ2UiOiJpdCIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTIyLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4wLjAtMTExYjJiOWRjMDBiZDBiZWE5MDMwYjMwNjYyMTU5ZWQ5ZTdjOGJjNiIsImNsaWVudElEIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkV1cm9wZS9Sb21lIiwic2VydmVyU2lkZUFkcyI6ZmFsc2UsImUyZUJlYWNvbnMiOmZhbHNlLCJmZWF0dXJlcyI6eyJtdWx0aVBvZEFkcyI6eyJjb2hvcnQiOiIiLCJlbmFibGVkIjp0cnVlfSwic3RpdGNoZXJIbHNOZyI6eyJkZW11eGVkQXVkaW8iOiJqaXQifX0sImZtc1BhcmFtcyI6eyJmd1ZjSUQyIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiZndWY0lEMkNvcHBhIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY3VzdG9tUGFyYW1zIjp7ImZtc19saXZlcmFtcF9pZGwiOiIiLCJmbXNfZW1haWxoYXNoIjoiIiwiZm1zX3N1YnNjcmliZXJpZCI6IiIsImZtc19pZmEiOiIiLCJmbXNfaWRmdiI6IiIsImZtc191c2VyaWQiOiIzM2RiYTAzNi1jZmU4LTQ2NmYtYjI1MC05Y2M3ZmY3MGRjYzYiLCJmbXNfdmNpZDJ0eXBlIjoidXNlcmlkIiwiZm1zX3JhbXBfaWQiOiIiLCJmbXNfaGhfcmFtcF9pZCI6IiIsImZtc19iaWRpZHR5cGUiOiIiLCJfZndfM1BfVUlEIjoiIiwiZm1zX3J1bGVpZCI6IjEwMDAwLDEwMDA5LDEwMDEzLDEwMDE0LDEwMDE2LDEwMDIwLDEwMDIzLDEwMDE1LDEwMDIxIn19LCJkcm0iOnsibmFtZSI6IndpZGV2aW5lIiwibGV2ZWwiOiJMMyJ9LCJzZXNzaW9uU3RhcnRUaW1lIjoxNzg0Mjk2NDc1NDg2LCJpc3MiOiJib290LnBsdXRvLnR2Iiwic3ViIjoicHJpOnYxOnBsdXRvOmRldmljZXM6SVQ6TXpOa1ltRXdNell0WTJabE9DMDBOalptTFdJeU5UQXRPV05qTjJabU56QmtZMk0yIiwiYXVkIjoiKi5wbHV0by50diIsImV4cCI6MTc4NDM4Mjg3NSwiaWF0IjoxNzg0Mjk2NDc1LCJqdGkiOiI3N2NkYWZiMC02NWFmLTQxNjItYTA4MC00ODM2ODMyOTY3NzQifQ.IgHHJHxkCpiK1qwj0ASrWcMQZYGy9u59vsKA1ADYsF8&masterJWTPassthrough=true&audioLanguage=it",
+          "source_id": "pluto_it",
+          "health_score": 100.0,
+          "source_priority": 110,
+          "quality_score": 0,
+          "metadata_score": 89,
+          "transport_score": 25
+        },
+        "discarded": [
+          {
+            "index": 143,
+            "name": "Pluto TV Paranormal",
+            "stream_url": "https://jmp2.uk/plu-66c70033b1a34600087bb09a.m3u8",
+            "source_id": "italy_public",
+            "health_score": 98.0,
             "source_priority": 100,
             "quality_score": 0,
             "metadata_score": 68,
@@ -1872,7 +1984,7 @@
             "name": "Catfish",
             "stream_url": "https://jmp2.uk/plu-6093f9ed2c75660007322bb7.m3u8",
             "source_id": "italy_public",
-            "health_score": 91.0,
+            "health_score": 95.0,
             "source_priority": 100,
             "quality_score": 0,
             "metadata_score": 68,
@@ -1916,7 +2028,7 @@
           "name": "Il Testimone",
           "stream_url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/61fbd3f0733df400076c9a2d/master.m3u8?jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImMzYjk4NjViLTFiYjItNGZlMy1hYzA3LWU2YWE0N2U3N2MzNiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiIwYjc1NmRiZC04MWU3LTExZjEtYThhNC0yMjQ2Yjc3ZDFlOGUiLCJjbGllbnRJUCI6IjUuMTMzLjQ4LjAiLCJjaXR5IjoiU2FsYSIsInBvc3RhbENvZGUiOiI0NzA0MiIsImNvdW50cnkiOiJJVCIsImRtYSI6MCwiYWN0aXZlUmVnaW9uIjoiSVQiLCJkZXZpY2VMYXQiOjQ0LjE4MDAwMDMwNTE3NTc4LCJkZXZpY2VMb24iOjEyLjM4MDAwMDExNDQ0MDkxOCwicHJlZmVycmVkTGFuZ3VhZ2UiOiJpdCIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTIyLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4wLjAtMTExYjJiOWRjMDBiZDBiZWE5MDMwYjMwNjYyMTU5ZWQ5ZTdjOGJjNiIsImNsaWVudElEIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkV1cm9wZS9Sb21lIiwic2VydmVyU2lkZUFkcyI6ZmFsc2UsImUyZUJlYWNvbnMiOmZhbHNlLCJmZWF0dXJlcyI6eyJtdWx0aVBvZEFkcyI6eyJjb2hvcnQiOiIiLCJlbmFibGVkIjp0cnVlfSwic3RpdGNoZXJIbHNOZyI6eyJkZW11eGVkQXVkaW8iOiJqaXQifX0sImZtc1BhcmFtcyI6eyJmd1ZjSUQyIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiZndWY0lEMkNvcHBhIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY3VzdG9tUGFyYW1zIjp7ImZtc19saXZlcmFtcF9pZGwiOiIiLCJmbXNfZW1haWxoYXNoIjoiIiwiZm1zX3N1YnNjcmliZXJpZCI6IiIsImZtc19pZmEiOiIiLCJmbXNfaWRmdiI6IiIsImZtc191c2VyaWQiOiIzM2RiYTAzNi1jZmU4LTQ2NmYtYjI1MC05Y2M3ZmY3MGRjYzYiLCJmbXNfdmNpZDJ0eXBlIjoidXNlcmlkIiwiZm1zX3JhbXBfaWQiOiIiLCJmbXNfaGhfcmFtcF9pZCI6IiIsImZtc19iaWRpZHR5cGUiOiIiLCJfZndfM1BfVUlEIjoiIiwiZm1zX3J1bGVpZCI6IjEwMDAwLDEwMDA5LDEwMDEzLDEwMDE0LDEwMDE2LDEwMDIwLDEwMDIzLDEwMDE1LDEwMDIxIn19LCJkcm0iOnsibmFtZSI6IndpZGV2aW5lIiwibGV2ZWwiOiJMMyJ9LCJzZXNzaW9uU3RhcnRUaW1lIjoxNzg0Mjk2NDc1NDg2LCJpc3MiOiJib290LnBsdXRvLnR2Iiwic3ViIjoicHJpOnYxOnBsdXRvOmRldmljZXM6SVQ6TXpOa1ltRXdNell0WTJabE9DMDBOalptTFdJeU5UQXRPV05qTjJabU56QmtZMk0yIiwiYXVkIjoiKi5wbHV0by50diIsImV4cCI6MTc4NDM4Mjg3NSwiaWF0IjoxNzg0Mjk2NDc1LCJqdGkiOiI3N2NkYWZiMC02NWFmLTQxNjItYTA4MC00ODM2ODMyOTY3NzQifQ.IgHHJHxkCpiK1qwj0ASrWcMQZYGy9u59vsKA1ADYsF8&masterJWTPassthrough=true&audioLanguage=it",
           "source_id": "pluto_it",
-          "health_score": 100.0,
+          "health_score": 88.0,
           "source_priority": 110,
           "quality_score": 0,
           "metadata_score": 89,
@@ -1928,37 +2040,9 @@
             "name": "Il Testimone",
             "stream_url": "https://jmp2.uk/plu-61fbd3f0733df400076c9a2d.m3u8",
             "source_id": "italy_public",
-            "health_score": 95.0,
+            "health_score": 80.0,
             "source_priority": 100,
             "quality_score": 0,
-            "metadata_score": 68,
-            "transport_score": 25
-          }
-        ],
-        "reason": "higher_health_score",
-        "duplicates_removed": 1
-      },
-      {
-        "selected": {
-          "index": 381,
-          "name": "Gambero Rosso",
-          "stream_url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/6971fc07c945e6e4e5bc46bf/master.m3u8?jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImMzYjk4NjViLTFiYjItNGZlMy1hYzA3LWU2YWE0N2U3N2MzNiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiIwYjc1NmRiZC04MWU3LTExZjEtYThhNC0yMjQ2Yjc3ZDFlOGUiLCJjbGllbnRJUCI6IjUuMTMzLjQ4LjAiLCJjaXR5IjoiU2FsYSIsInBvc3RhbENvZGUiOiI0NzA0MiIsImNvdW50cnkiOiJJVCIsImRtYSI6MCwiYWN0aXZlUmVnaW9uIjoiSVQiLCJkZXZpY2VMYXQiOjQ0LjE4MDAwMDMwNTE3NTc4LCJkZXZpY2VMb24iOjEyLjM4MDAwMDExNDQ0MDkxOCwicHJlZmVycmVkTGFuZ3VhZ2UiOiJpdCIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTIyLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4wLjAtMTExYjJiOWRjMDBiZDBiZWE5MDMwYjMwNjYyMTU5ZWQ5ZTdjOGJjNiIsImNsaWVudElEIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkV1cm9wZS9Sb21lIiwic2VydmVyU2lkZUFkcyI6ZmFsc2UsImUyZUJlYWNvbnMiOmZhbHNlLCJmZWF0dXJlcyI6eyJtdWx0aVBvZEFkcyI6eyJjb2hvcnQiOiIiLCJlbmFibGVkIjp0cnVlfSwic3RpdGNoZXJIbHNOZyI6eyJkZW11eGVkQXVkaW8iOiJqaXQifX0sImZtc1BhcmFtcyI6eyJmd1ZjSUQyIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiZndWY0lEMkNvcHBhIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY3VzdG9tUGFyYW1zIjp7ImZtc19saXZlcmFtcF9pZGwiOiIiLCJmbXNfZW1haWxoYXNoIjoiIiwiZm1zX3N1YnNjcmliZXJpZCI6IiIsImZtc19pZmEiOiIiLCJmbXNfaWRmdiI6IiIsImZtc191c2VyaWQiOiIzM2RiYTAzNi1jZmU4LTQ2NmYtYjI1MC05Y2M3ZmY3MGRjYzYiLCJmbXNfdmNpZDJ0eXBlIjoidXNlcmlkIiwiZm1zX3JhbXBfaWQiOiIiLCJmbXNfaGhfcmFtcF9pZCI6IiIsImZtc19iaWRpZHR5cGUiOiIiLCJfZndfM1BfVUlEIjoiIiwiZm1zX3J1bGVpZCI6IjEwMDAwLDEwMDA5LDEwMDEzLDEwMDE0LDEwMDE2LDEwMDIwLDEwMDIzLDEwMDE1LDEwMDIxIn19LCJkcm0iOnsibmFtZSI6IndpZGV2aW5lIiwibGV2ZWwiOiJMMyJ9LCJzZXNzaW9uU3RhcnRUaW1lIjoxNzg0Mjk2NDc1NDg2LCJpc3MiOiJib290LnBsdXRvLnR2Iiwic3ViIjoicHJpOnYxOnBsdXRvOmRldmljZXM6SVQ6TXpOa1ltRXdNell0WTJabE9DMDBOalptTFdJeU5UQXRPV05qTjJabU56QmtZMk0yIiwiYXVkIjoiKi5wbHV0by50diIsImV4cCI6MTc4NDM4Mjg3NSwiaWF0IjoxNzg0Mjk2NDc1LCJqdGkiOiI3N2NkYWZiMC02NWFmLTQxNjItYTA4MC00ODM2ODMyOTY3NzQifQ.IgHHJHxkCpiK1qwj0ASrWcMQZYGy9u59vsKA1ADYsF8&masterJWTPassthrough=true&audioLanguage=it",
-          "source_id": "pluto_it",
-          "health_score": 100.0,
-          "source_priority": 110,
-          "quality_score": 0,
-          "metadata_score": 89,
-          "transport_score": 25
-        },
-        "discarded": [
-          {
-            "index": 60,
-            "name": "Gambero Rosso (720p)",
-            "stream_url": "https://jmp2.uk/plu-6971fc07c945e6e4e5bc46bf.m3u8",
-            "source_id": "italy_public",
-            "health_score": 95.0,
-            "source_priority": 100,
-            "quality_score": 200,
             "metadata_score": 68,
             "transport_score": 25
           }
@@ -1984,7 +2068,7 @@
             "name": "Pluto TV Cucina",
             "stream_url": "https://jmp2.uk/plu-608aa718a8ec810007d87fee.m3u8",
             "source_id": "italy_public",
-            "health_score": 95.0,
+            "health_score": 86.0,
             "source_priority": 100,
             "quality_score": 0,
             "metadata_score": 68,
@@ -1996,26 +2080,26 @@
       },
       {
         "selected": {
-          "index": 144,
+          "index": 384,
           "name": "Pluto TV Real Life",
-          "stream_url": "https://jmp2.uk/plu-60801976f92a750007a0699c.m3u8",
-          "source_id": "italy_public",
-          "health_score": 91.0,
-          "source_priority": 100,
+          "stream_url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/60801976f92a750007a0699c/master.m3u8?jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImMzYjk4NjViLTFiYjItNGZlMy1hYzA3LWU2YWE0N2U3N2MzNiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiIwYjc1NmRiZC04MWU3LTExZjEtYThhNC0yMjQ2Yjc3ZDFlOGUiLCJjbGllbnRJUCI6IjUuMTMzLjQ4LjAiLCJjaXR5IjoiU2FsYSIsInBvc3RhbENvZGUiOiI0NzA0MiIsImNvdW50cnkiOiJJVCIsImRtYSI6MCwiYWN0aXZlUmVnaW9uIjoiSVQiLCJkZXZpY2VMYXQiOjQ0LjE4MDAwMDMwNTE3NTc4LCJkZXZpY2VMb24iOjEyLjM4MDAwMDExNDQ0MDkxOCwicHJlZmVycmVkTGFuZ3VhZ2UiOiJpdCIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTIyLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4wLjAtMTExYjJiOWRjMDBiZDBiZWE5MDMwYjMwNjYyMTU5ZWQ5ZTdjOGJjNiIsImNsaWVudElEIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkV1cm9wZS9Sb21lIiwic2VydmVyU2lkZUFkcyI6ZmFsc2UsImUyZUJlYWNvbnMiOmZhbHNlLCJmZWF0dXJlcyI6eyJtdWx0aVBvZEFkcyI6eyJjb2hvcnQiOiIiLCJlbmFibGVkIjp0cnVlfSwic3RpdGNoZXJIbHNOZyI6eyJkZW11eGVkQXVkaW8iOiJqaXQifX0sImZtc1BhcmFtcyI6eyJmd1ZjSUQyIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiZndWY0lEMkNvcHBhIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY3VzdG9tUGFyYW1zIjp7ImZtc19saXZlcmFtcF9pZGwiOiIiLCJmbXNfZW1haWxoYXNoIjoiIiwiZm1zX3N1YnNjcmliZXJpZCI6IiIsImZtc19pZmEiOiIiLCJmbXNfaWRmdiI6IiIsImZtc191c2VyaWQiOiIzM2RiYTAzNi1jZmU4LTQ2NmYtYjI1MC05Y2M3ZmY3MGRjYzYiLCJmbXNfdmNpZDJ0eXBlIjoidXNlcmlkIiwiZm1zX3JhbXBfaWQiOiIiLCJmbXNfaGhfcmFtcF9pZCI6IiIsImZtc19iaWRpZHR5cGUiOiIiLCJfZndfM1BfVUlEIjoiIiwiZm1zX3J1bGVpZCI6IjEwMDAwLDEwMDA5LDEwMDEzLDEwMDE0LDEwMDE2LDEwMDIwLDEwMDIzLDEwMDE1LDEwMDIxIn19LCJkcm0iOnsibmFtZSI6IndpZGV2aW5lIiwibGV2ZWwiOiJMMyJ9LCJzZXNzaW9uU3RhcnRUaW1lIjoxNzg0Mjk2NDc1NDg2LCJpc3MiOiJib290LnBsdXRvLnR2Iiwic3ViIjoicHJpOnYxOnBsdXRvOmRldmljZXM6SVQ6TXpOa1ltRXdNell0WTJabE9DMDBOalptTFdJeU5UQXRPV05qTjJabU56QmtZMk0yIiwiYXVkIjoiKi5wbHV0by50diIsImV4cCI6MTc4NDM4Mjg3NSwiaWF0IjoxNzg0Mjk2NDc1LCJqdGkiOiI3N2NkYWZiMC02NWFmLTQxNjItYTA4MC00ODM2ODMyOTY3NzQifQ.IgHHJHxkCpiK1qwj0ASrWcMQZYGy9u59vsKA1ADYsF8&masterJWTPassthrough=true&audioLanguage=it",
+          "source_id": "pluto_it",
+          "health_score": 100.0,
+          "source_priority": 110,
           "quality_score": 0,
-          "metadata_score": 68,
+          "metadata_score": 89,
           "transport_score": 25
         },
         "discarded": [
           {
-            "index": 384,
+            "index": 144,
             "name": "Pluto TV Real Life",
-            "stream_url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/60801976f92a750007a0699c/master.m3u8?jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImMzYjk4NjViLTFiYjItNGZlMy1hYzA3LWU2YWE0N2U3N2MzNiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiIwYjc1NmRiZC04MWU3LTExZjEtYThhNC0yMjQ2Yjc3ZDFlOGUiLCJjbGllbnRJUCI6IjUuMTMzLjQ4LjAiLCJjaXR5IjoiU2FsYSIsInBvc3RhbENvZGUiOiI0NzA0MiIsImNvdW50cnkiOiJJVCIsImRtYSI6MCwiYWN0aXZlUmVnaW9uIjoiSVQiLCJkZXZpY2VMYXQiOjQ0LjE4MDAwMDMwNTE3NTc4LCJkZXZpY2VMb24iOjEyLjM4MDAwMDExNDQ0MDkxOCwicHJlZmVycmVkTGFuZ3VhZ2UiOiJpdCIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTIyLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4wLjAtMTExYjJiOWRjMDBiZDBiZWE5MDMwYjMwNjYyMTU5ZWQ5ZTdjOGJjNiIsImNsaWVudElEIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkV1cm9wZS9Sb21lIiwic2VydmVyU2lkZUFkcyI6ZmFsc2UsImUyZUJlYWNvbnMiOmZhbHNlLCJmZWF0dXJlcyI6eyJtdWx0aVBvZEFkcyI6eyJjb2hvcnQiOiIiLCJlbmFibGVkIjp0cnVlfSwic3RpdGNoZXJIbHNOZyI6eyJkZW11eGVkQXVkaW8iOiJqaXQifX0sImZtc1BhcmFtcyI6eyJmd1ZjSUQyIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiZndWY0lEMkNvcHBhIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY3VzdG9tUGFyYW1zIjp7ImZtc19saXZlcmFtcF9pZGwiOiIiLCJmbXNfZW1haWxoYXNoIjoiIiwiZm1zX3N1YnNjcmliZXJpZCI6IiIsImZtc19pZmEiOiIiLCJmbXNfaWRmdiI6IiIsImZtc191c2VyaWQiOiIzM2RiYTAzNi1jZmU4LTQ2NmYtYjI1MC05Y2M3ZmY3MGRjYzYiLCJmbXNfdmNpZDJ0eXBlIjoidXNlcmlkIiwiZm1zX3JhbXBfaWQiOiIiLCJmbXNfaGhfcmFtcF9pZCI6IiIsImZtc19iaWRpZHR5cGUiOiIiLCJfZndfM1BfVUlEIjoiIiwiZm1zX3J1bGVpZCI6IjEwMDAwLDEwMDA5LDEwMDEzLDEwMDE0LDEwMDE2LDEwMDIwLDEwMDIzLDEwMDE1LDEwMDIxIn19LCJkcm0iOnsibmFtZSI6IndpZGV2aW5lIiwibGV2ZWwiOiJMMyJ9LCJzZXNzaW9uU3RhcnRUaW1lIjoxNzg0Mjk2NDc1NDg2LCJpc3MiOiJib290LnBsdXRvLnR2Iiwic3ViIjoicHJpOnYxOnBsdXRvOmRldmljZXM6SVQ6TXpOa1ltRXdNell0WTJabE9DMDBOalptTFdJeU5UQXRPV05qTjJabU56QmtZMk0yIiwiYXVkIjoiKi5wbHV0by50diIsImV4cCI6MTc4NDM4Mjg3NSwiaWF0IjoxNzg0Mjk2NDc1LCJqdGkiOiI3N2NkYWZiMC02NWFmLTQxNjItYTA4MC00ODM2ODMyOTY3NzQifQ.IgHHJHxkCpiK1qwj0ASrWcMQZYGy9u59vsKA1ADYsF8&masterJWTPassthrough=true&audioLanguage=it",
-            "source_id": "pluto_it",
-            "health_score": 88.0,
-            "source_priority": 110,
+            "stream_url": "https://jmp2.uk/plu-60801976f92a750007a0699c.m3u8",
+            "source_id": "italy_public",
+            "health_score": 91.0,
+            "source_priority": 100,
             "quality_score": 0,
-            "metadata_score": 89,
+            "metadata_score": 68,
             "transport_score": 25
           }
         ],
@@ -2024,26 +2108,26 @@
       },
       {
         "selected": {
-          "index": 157,
+          "index": 385,
           "name": "Pluto TV Viaggi",
-          "stream_url": "https://jmp2.uk/plu-63c923944207be0007fd0887.m3u8",
-          "source_id": "italy_public",
-          "health_score": 95.0,
-          "source_priority": 100,
+          "stream_url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/63c923944207be0007fd0887/master.m3u8?jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImMzYjk4NjViLTFiYjItNGZlMy1hYzA3LWU2YWE0N2U3N2MzNiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiIwYjc1NmRiZC04MWU3LTExZjEtYThhNC0yMjQ2Yjc3ZDFlOGUiLCJjbGllbnRJUCI6IjUuMTMzLjQ4LjAiLCJjaXR5IjoiU2FsYSIsInBvc3RhbENvZGUiOiI0NzA0MiIsImNvdW50cnkiOiJJVCIsImRtYSI6MCwiYWN0aXZlUmVnaW9uIjoiSVQiLCJkZXZpY2VMYXQiOjQ0LjE4MDAwMDMwNTE3NTc4LCJkZXZpY2VMb24iOjEyLjM4MDAwMDExNDQ0MDkxOCwicHJlZmVycmVkTGFuZ3VhZ2UiOiJpdCIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTIyLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4wLjAtMTExYjJiOWRjMDBiZDBiZWE5MDMwYjMwNjYyMTU5ZWQ5ZTdjOGJjNiIsImNsaWVudElEIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkV1cm9wZS9Sb21lIiwic2VydmVyU2lkZUFkcyI6ZmFsc2UsImUyZUJlYWNvbnMiOmZhbHNlLCJmZWF0dXJlcyI6eyJtdWx0aVBvZEFkcyI6eyJjb2hvcnQiOiIiLCJlbmFibGVkIjp0cnVlfSwic3RpdGNoZXJIbHNOZyI6eyJkZW11eGVkQXVkaW8iOiJqaXQifX0sImZtc1BhcmFtcyI6eyJmd1ZjSUQyIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiZndWY0lEMkNvcHBhIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY3VzdG9tUGFyYW1zIjp7ImZtc19saXZlcmFtcF9pZGwiOiIiLCJmbXNfZW1haWxoYXNoIjoiIiwiZm1zX3N1YnNjcmliZXJpZCI6IiIsImZtc19pZmEiOiIiLCJmbXNfaWRmdiI6IiIsImZtc191c2VyaWQiOiIzM2RiYTAzNi1jZmU4LTQ2NmYtYjI1MC05Y2M3ZmY3MGRjYzYiLCJmbXNfdmNpZDJ0eXBlIjoidXNlcmlkIiwiZm1zX3JhbXBfaWQiOiIiLCJmbXNfaGhfcmFtcF9pZCI6IiIsImZtc19iaWRpZHR5cGUiOiIiLCJfZndfM1BfVUlEIjoiIiwiZm1zX3J1bGVpZCI6IjEwMDAwLDEwMDA5LDEwMDEzLDEwMDE0LDEwMDE2LDEwMDIwLDEwMDIzLDEwMDE1LDEwMDIxIn19LCJkcm0iOnsibmFtZSI6IndpZGV2aW5lIiwibGV2ZWwiOiJMMyJ9LCJzZXNzaW9uU3RhcnRUaW1lIjoxNzg0Mjk2NDc1NDg2LCJpc3MiOiJib290LnBsdXRvLnR2Iiwic3ViIjoicHJpOnYxOnBsdXRvOmRldmljZXM6SVQ6TXpOa1ltRXdNell0WTJabE9DMDBOalptTFdJeU5UQXRPV05qTjJabU56QmtZMk0yIiwiYXVkIjoiKi5wbHV0by50diIsImV4cCI6MTc4NDM4Mjg3NSwiaWF0IjoxNzg0Mjk2NDc1LCJqdGkiOiI3N2NkYWZiMC02NWFmLTQxNjItYTA4MC00ODM2ODMyOTY3NzQifQ.IgHHJHxkCpiK1qwj0ASrWcMQZYGy9u59vsKA1ADYsF8&masterJWTPassthrough=true&audioLanguage=it",
+          "source_id": "pluto_it",
+          "health_score": 100.0,
+          "source_priority": 110,
           "quality_score": 0,
-          "metadata_score": 68,
+          "metadata_score": 89,
           "transport_score": 25
         },
         "discarded": [
           {
-            "index": 385,
+            "index": 157,
             "name": "Pluto TV Viaggi",
-            "stream_url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/63c923944207be0007fd0887/master.m3u8?jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImMzYjk4NjViLTFiYjItNGZlMy1hYzA3LWU2YWE0N2U3N2MzNiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiIwYjc1NmRiZC04MWU3LTExZjEtYThhNC0yMjQ2Yjc3ZDFlOGUiLCJjbGllbnRJUCI6IjUuMTMzLjQ4LjAiLCJjaXR5IjoiU2FsYSIsInBvc3RhbENvZGUiOiI0NzA0MiIsImNvdW50cnkiOiJJVCIsImRtYSI6MCwiYWN0aXZlUmVnaW9uIjoiSVQiLCJkZXZpY2VMYXQiOjQ0LjE4MDAwMDMwNTE3NTc4LCJkZXZpY2VMb24iOjEyLjM4MDAwMDExNDQ0MDkxOCwicHJlZmVycmVkTGFuZ3VhZ2UiOiJpdCIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTIyLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4wLjAtMTExYjJiOWRjMDBiZDBiZWE5MDMwYjMwNjYyMTU5ZWQ5ZTdjOGJjNiIsImNsaWVudElEIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkV1cm9wZS9Sb21lIiwic2VydmVyU2lkZUFkcyI6ZmFsc2UsImUyZUJlYWNvbnMiOmZhbHNlLCJmZWF0dXJlcyI6eyJtdWx0aVBvZEFkcyI6eyJjb2hvcnQiOiIiLCJlbmFibGVkIjp0cnVlfSwic3RpdGNoZXJIbHNOZyI6eyJkZW11eGVkQXVkaW8iOiJqaXQifX0sImZtc1BhcmFtcyI6eyJmd1ZjSUQyIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiZndWY0lEMkNvcHBhIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY3VzdG9tUGFyYW1zIjp7ImZtc19saXZlcmFtcF9pZGwiOiIiLCJmbXNfZW1haWxoYXNoIjoiIiwiZm1zX3N1YnNjcmliZXJpZCI6IiIsImZtc19pZmEiOiIiLCJmbXNfaWRmdiI6IiIsImZtc191c2VyaWQiOiIzM2RiYTAzNi1jZmU4LTQ2NmYtYjI1MC05Y2M3ZmY3MGRjYzYiLCJmbXNfdmNpZDJ0eXBlIjoidXNlcmlkIiwiZm1zX3JhbXBfaWQiOiIiLCJmbXNfaGhfcmFtcF9pZCI6IiIsImZtc19iaWRpZHR5cGUiOiIiLCJfZndfM1BfVUlEIjoiIiwiZm1zX3J1bGVpZCI6IjEwMDAwLDEwMDA5LDEwMDEzLDEwMDE0LDEwMDE2LDEwMDIwLDEwMDIzLDEwMDE1LDEwMDIxIn19LCJkcm0iOnsibmFtZSI6IndpZGV2aW5lIiwibGV2ZWwiOiJMMyJ9LCJzZXNzaW9uU3RhcnRUaW1lIjoxNzg0Mjk2NDc1NDg2LCJpc3MiOiJib290LnBsdXRvLnR2Iiwic3ViIjoicHJpOnYxOnBsdXRvOmRldmljZXM6SVQ6TXpOa1ltRXdNell0WTJabE9DMDBOalptTFdJeU5UQXRPV05qTjJabU56QmtZMk0yIiwiYXVkIjoiKi5wbHV0by50diIsImV4cCI6MTc4NDM4Mjg3NSwiaWF0IjoxNzg0Mjk2NDc1LCJqdGkiOiI3N2NkYWZiMC02NWFmLTQxNjItYTA4MC00ODM2ODMyOTY3NzQifQ.IgHHJHxkCpiK1qwj0ASrWcMQZYGy9u59vsKA1ADYsF8&masterJWTPassthrough=true&audioLanguage=it",
-            "source_id": "pluto_it",
-            "health_score": 93.0,
-            "source_priority": 110,
+            "stream_url": "https://jmp2.uk/plu-63c923944207be0007fd0887.m3u8",
+            "source_id": "italy_public",
+            "health_score": 98.0,
+            "source_priority": 100,
             "quality_score": 0,
-            "metadata_score": 89,
+            "metadata_score": 68,
             "transport_score": 25
           }
         ],
@@ -2108,90 +2192,6 @@
       },
       {
         "selected": {
-          "index": 124,
-          "name": "Pluto TV Christmas tutto l'anno",
-          "stream_url": "https://jmp2.uk/plu-612e05b885183d0007958101.m3u8",
-          "source_id": "italy_public",
-          "health_score": 95.0,
-          "source_priority": 100,
-          "quality_score": 0,
-          "metadata_score": 68,
-          "transport_score": 25
-        },
-        "discarded": [
-          {
-            "index": 357,
-            "name": "Pluto TV Christmas tutto l'anno",
-            "stream_url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/612e05b885183d0007958101/master.m3u8?jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImMzYjk4NjViLTFiYjItNGZlMy1hYzA3LWU2YWE0N2U3N2MzNiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiIwYjc1NmRiZC04MWU3LTExZjEtYThhNC0yMjQ2Yjc3ZDFlOGUiLCJjbGllbnRJUCI6IjUuMTMzLjQ4LjAiLCJjaXR5IjoiU2FsYSIsInBvc3RhbENvZGUiOiI0NzA0MiIsImNvdW50cnkiOiJJVCIsImRtYSI6MCwiYWN0aXZlUmVnaW9uIjoiSVQiLCJkZXZpY2VMYXQiOjQ0LjE4MDAwMDMwNTE3NTc4LCJkZXZpY2VMb24iOjEyLjM4MDAwMDExNDQ0MDkxOCwicHJlZmVycmVkTGFuZ3VhZ2UiOiJpdCIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTIyLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4wLjAtMTExYjJiOWRjMDBiZDBiZWE5MDMwYjMwNjYyMTU5ZWQ5ZTdjOGJjNiIsImNsaWVudElEIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkV1cm9wZS9Sb21lIiwic2VydmVyU2lkZUFkcyI6ZmFsc2UsImUyZUJlYWNvbnMiOmZhbHNlLCJmZWF0dXJlcyI6eyJtdWx0aVBvZEFkcyI6eyJjb2hvcnQiOiIiLCJlbmFibGVkIjp0cnVlfSwic3RpdGNoZXJIbHNOZyI6eyJkZW11eGVkQXVkaW8iOiJqaXQifX0sImZtc1BhcmFtcyI6eyJmd1ZjSUQyIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiZndWY0lEMkNvcHBhIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY3VzdG9tUGFyYW1zIjp7ImZtc19saXZlcmFtcF9pZGwiOiIiLCJmbXNfZW1haWxoYXNoIjoiIiwiZm1zX3N1YnNjcmliZXJpZCI6IiIsImZtc19pZmEiOiIiLCJmbXNfaWRmdiI6IiIsImZtc191c2VyaWQiOiIzM2RiYTAzNi1jZmU4LTQ2NmYtYjI1MC05Y2M3ZmY3MGRjYzYiLCJmbXNfdmNpZDJ0eXBlIjoidXNlcmlkIiwiZm1zX3JhbXBfaWQiOiIiLCJmbXNfaGhfcmFtcF9pZCI6IiIsImZtc19iaWRpZHR5cGUiOiIiLCJfZndfM1BfVUlEIjoiIiwiZm1zX3J1bGVpZCI6IjEwMDAwLDEwMDA5LDEwMDEzLDEwMDE0LDEwMDE2LDEwMDIwLDEwMDIzLDEwMDE1LDEwMDIxIn19LCJkcm0iOnsibmFtZSI6IndpZGV2aW5lIiwibGV2ZWwiOiJMMyJ9LCJzZXNzaW9uU3RhcnRUaW1lIjoxNzg0Mjk2NDc1NDg2LCJpc3MiOiJib290LnBsdXRvLnR2Iiwic3ViIjoicHJpOnYxOnBsdXRvOmRldmljZXM6SVQ6TXpOa1ltRXdNell0WTJabE9DMDBOalptTFdJeU5UQXRPV05qTjJabU56QmtZMk0yIiwiYXVkIjoiKi5wbHV0by50diIsImV4cCI6MTc4NDM4Mjg3NSwiaWF0IjoxNzg0Mjk2NDc1LCJqdGkiOiI3N2NkYWZiMC02NWFmLTQxNjItYTA4MC00ODM2ODMyOTY3NzQifQ.IgHHJHxkCpiK1qwj0ASrWcMQZYGy9u59vsKA1ADYsF8&masterJWTPassthrough=true&audioLanguage=it",
-            "source_id": "pluto_it",
-            "health_score": 93.0,
-            "source_priority": 110,
-            "quality_score": 0,
-            "metadata_score": 89,
-            "transport_score": 25
-          }
-        ],
-        "reason": "higher_health_score",
-        "duplicates_removed": 1
-      },
-      {
-        "selected": {
-          "index": 143,
-          "name": "Pluto TV Paranormal",
-          "stream_url": "https://jmp2.uk/plu-66c70033b1a34600087bb09a.m3u8",
-          "source_id": "italy_public",
-          "health_score": 91.0,
-          "source_priority": 100,
-          "quality_score": 0,
-          "metadata_score": 68,
-          "transport_score": 25
-        },
-        "discarded": [
-          {
-            "index": 373,
-            "name": "Pluto TV Paranormal",
-            "stream_url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/66c70033b1a34600087bb09a/master.m3u8?jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImMzYjk4NjViLTFiYjItNGZlMy1hYzA3LWU2YWE0N2U3N2MzNiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiIwYjc1NmRiZC04MWU3LTExZjEtYThhNC0yMjQ2Yjc3ZDFlOGUiLCJjbGllbnRJUCI6IjUuMTMzLjQ4LjAiLCJjaXR5IjoiU2FsYSIsInBvc3RhbENvZGUiOiI0NzA0MiIsImNvdW50cnkiOiJJVCIsImRtYSI6MCwiYWN0aXZlUmVnaW9uIjoiSVQiLCJkZXZpY2VMYXQiOjQ0LjE4MDAwMDMwNTE3NTc4LCJkZXZpY2VMb24iOjEyLjM4MDAwMDExNDQ0MDkxOCwicHJlZmVycmVkTGFuZ3VhZ2UiOiJpdCIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTIyLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4wLjAtMTExYjJiOWRjMDBiZDBiZWE5MDMwYjMwNjYyMTU5ZWQ5ZTdjOGJjNiIsImNsaWVudElEIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkV1cm9wZS9Sb21lIiwic2VydmVyU2lkZUFkcyI6ZmFsc2UsImUyZUJlYWNvbnMiOmZhbHNlLCJmZWF0dXJlcyI6eyJtdWx0aVBvZEFkcyI6eyJjb2hvcnQiOiIiLCJlbmFibGVkIjp0cnVlfSwic3RpdGNoZXJIbHNOZyI6eyJkZW11eGVkQXVkaW8iOiJqaXQifX0sImZtc1BhcmFtcyI6eyJmd1ZjSUQyIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiZndWY0lEMkNvcHBhIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY3VzdG9tUGFyYW1zIjp7ImZtc19saXZlcmFtcF9pZGwiOiIiLCJmbXNfZW1haWxoYXNoIjoiIiwiZm1zX3N1YnNjcmliZXJpZCI6IiIsImZtc19pZmEiOiIiLCJmbXNfaWRmdiI6IiIsImZtc191c2VyaWQiOiIzM2RiYTAzNi1jZmU4LTQ2NmYtYjI1MC05Y2M3ZmY3MGRjYzYiLCJmbXNfdmNpZDJ0eXBlIjoidXNlcmlkIiwiZm1zX3JhbXBfaWQiOiIiLCJmbXNfaGhfcmFtcF9pZCI6IiIsImZtc19iaWRpZHR5cGUiOiIiLCJfZndfM1BfVUlEIjoiIiwiZm1zX3J1bGVpZCI6IjEwMDAwLDEwMDA5LDEwMDEzLDEwMDE0LDEwMDE2LDEwMDIwLDEwMDIzLDEwMDE1LDEwMDIxIn19LCJkcm0iOnsibmFtZSI6IndpZGV2aW5lIiwibGV2ZWwiOiJMMyJ9LCJzZXNzaW9uU3RhcnRUaW1lIjoxNzg0Mjk2NDc1NDg2LCJpc3MiOiJib290LnBsdXRvLnR2Iiwic3ViIjoicHJpOnYxOnBsdXRvOmRldmljZXM6SVQ6TXpOa1ltRXdNell0WTJabE9DMDBOalptTFdJeU5UQXRPV05qTjJabU56QmtZMk0yIiwiYXVkIjoiKi5wbHV0by50diIsImV4cCI6MTc4NDM4Mjg3NSwiaWF0IjoxNzg0Mjk2NDc1LCJqdGkiOiI3N2NkYWZiMC02NWFmLTQxNjItYTA4MC00ODM2ODMyOTY3NzQifQ.IgHHJHxkCpiK1qwj0ASrWcMQZYGy9u59vsKA1ADYsF8&masterJWTPassthrough=true&audioLanguage=it",
-            "source_id": "pluto_it",
-            "health_score": 88.0,
-            "source_priority": 110,
-            "quality_score": 0,
-            "metadata_score": 89,
-            "transport_score": 25
-          }
-        ],
-        "reason": "higher_health_score",
-        "duplicates_removed": 1
-      },
-      {
-        "selected": {
-          "index": 158,
-          "name": "Pluto TV Western",
-          "stream_url": "https://jmp2.uk/plu-62e7fb67478a5b0007e6c50c.m3u8",
-          "source_id": "italy_public",
-          "health_score": 95.0,
-          "source_priority": 100,
-          "quality_score": 0,
-          "metadata_score": 68,
-          "transport_score": 25
-        },
-        "discarded": [
-          {
-            "index": 371,
-            "name": "Pluto TV Western",
-            "stream_url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/62e7fb67478a5b0007e6c50c/master.m3u8?jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImMzYjk4NjViLTFiYjItNGZlMy1hYzA3LWU2YWE0N2U3N2MzNiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiIwYjc1NmRiZC04MWU3LTExZjEtYThhNC0yMjQ2Yjc3ZDFlOGUiLCJjbGllbnRJUCI6IjUuMTMzLjQ4LjAiLCJjaXR5IjoiU2FsYSIsInBvc3RhbENvZGUiOiI0NzA0MiIsImNvdW50cnkiOiJJVCIsImRtYSI6MCwiYWN0aXZlUmVnaW9uIjoiSVQiLCJkZXZpY2VMYXQiOjQ0LjE4MDAwMDMwNTE3NTc4LCJkZXZpY2VMb24iOjEyLjM4MDAwMDExNDQ0MDkxOCwicHJlZmVycmVkTGFuZ3VhZ2UiOiJpdCIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTIyLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4wLjAtMTExYjJiOWRjMDBiZDBiZWE5MDMwYjMwNjYyMTU5ZWQ5ZTdjOGJjNiIsImNsaWVudElEIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkV1cm9wZS9Sb21lIiwic2VydmVyU2lkZUFkcyI6ZmFsc2UsImUyZUJlYWNvbnMiOmZhbHNlLCJmZWF0dXJlcyI6eyJtdWx0aVBvZEFkcyI6eyJjb2hvcnQiOiIiLCJlbmFibGVkIjp0cnVlfSwic3RpdGNoZXJIbHNOZyI6eyJkZW11eGVkQXVkaW8iOiJqaXQifX0sImZtc1BhcmFtcyI6eyJmd1ZjSUQyIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiZndWY0lEMkNvcHBhIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY3VzdG9tUGFyYW1zIjp7ImZtc19saXZlcmFtcF9pZGwiOiIiLCJmbXNfZW1haWxoYXNoIjoiIiwiZm1zX3N1YnNjcmliZXJpZCI6IiIsImZtc19pZmEiOiIiLCJmbXNfaWRmdiI6IiIsImZtc191c2VyaWQiOiIzM2RiYTAzNi1jZmU4LTQ2NmYtYjI1MC05Y2M3ZmY3MGRjYzYiLCJmbXNfdmNpZDJ0eXBlIjoidXNlcmlkIiwiZm1zX3JhbXBfaWQiOiIiLCJmbXNfaGhfcmFtcF9pZCI6IiIsImZtc19iaWRpZHR5cGUiOiIiLCJfZndfM1BfVUlEIjoiIiwiZm1zX3J1bGVpZCI6IjEwMDAwLDEwMDA5LDEwMDEzLDEwMDE0LDEwMDE2LDEwMDIwLDEwMDIzLDEwMDE1LDEwMDIxIn19LCJkcm0iOnsibmFtZSI6IndpZGV2aW5lIiwibGV2ZWwiOiJMMyJ9LCJzZXNzaW9uU3RhcnRUaW1lIjoxNzg0Mjk2NDc1NDg2LCJpc3MiOiJib290LnBsdXRvLnR2Iiwic3ViIjoicHJpOnYxOnBsdXRvOmRldmljZXM6SVQ6TXpOa1ltRXdNell0WTJabE9DMDBOalptTFdJeU5UQXRPV05qTjJabU56QmtZMk0yIiwiYXVkIjoiKi5wbHV0by50diIsImV4cCI6MTc4NDM4Mjg3NSwiaWF0IjoxNzg0Mjk2NDc1LCJqdGkiOiI3N2NkYWZiMC02NWFmLTQxNjItYTA4MC00ODM2ODMyOTY3NzQifQ.IgHHJHxkCpiK1qwj0ASrWcMQZYGy9u59vsKA1ADYsF8&masterJWTPassthrough=true&audioLanguage=it",
-            "source_id": "pluto_it",
-            "health_score": 93.0,
-            "source_priority": 110,
-            "quality_score": 0,
-            "metadata_score": 89,
-            "transport_score": 25
-          }
-        ],
-        "reason": "higher_health_score",
-        "duplicates_removed": 1
-      },
-      {
-        "selected": {
           "index": 194,
           "name": "Rai News 24 HD",
           "stream_url": "http://91.146.94.234:10001/play/a135",
@@ -2236,7 +2236,7 @@
             "name": "Pluto TV Notti di Passione",
             "stream_url": "https://jmp2.uk/plu-6911c9704316999535eb21cf.m3u8",
             "source_id": "italy_public",
-            "health_score": 95.0,
+            "health_score": 98.0,
             "source_priority": 100,
             "quality_score": 0,
             "metadata_score": 68,
@@ -2264,7 +2264,7 @@
             "name": "Pluto TV Notti di Sangue",
             "stream_url": "https://jmp2.uk/plu-6911c92b4316999535eb1e08.m3u8",
             "source_id": "italy_public",
-            "health_score": 95.0,
+            "health_score": 98.0,
             "source_priority": 100,
             "quality_score": 0,
             "metadata_score": 68,
@@ -2292,7 +2292,7 @@
             "name": "Pluto TV Notti di Terrore",
             "stream_url": "https://jmp2.uk/plu-6911c8dd8caba6f046c5c5d5.m3u8",
             "source_id": "italy_public",
-            "health_score": 95.0,
+            "health_score": 98.0,
             "source_priority": 100,
             "quality_score": 0,
             "metadata_score": 68,
@@ -2308,7 +2308,7 @@
           "name": "16 Anni e Incinta",
           "stream_url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/60940a07d88ba90007b9cb71/master.m3u8?jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImMzYjk4NjViLTFiYjItNGZlMy1hYzA3LWU2YWE0N2U3N2MzNiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiIwYjc1NmRiZC04MWU3LTExZjEtYThhNC0yMjQ2Yjc3ZDFlOGUiLCJjbGllbnRJUCI6IjUuMTMzLjQ4LjAiLCJjaXR5IjoiU2FsYSIsInBvc3RhbENvZGUiOiI0NzA0MiIsImNvdW50cnkiOiJJVCIsImRtYSI6MCwiYWN0aXZlUmVnaW9uIjoiSVQiLCJkZXZpY2VMYXQiOjQ0LjE4MDAwMDMwNTE3NTc4LCJkZXZpY2VMb24iOjEyLjM4MDAwMDExNDQ0MDkxOCwicHJlZmVycmVkTGFuZ3VhZ2UiOiJpdCIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTIyLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4wLjAtMTExYjJiOWRjMDBiZDBiZWE5MDMwYjMwNjYyMTU5ZWQ5ZTdjOGJjNiIsImNsaWVudElEIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkV1cm9wZS9Sb21lIiwic2VydmVyU2lkZUFkcyI6ZmFsc2UsImUyZUJlYWNvbnMiOmZhbHNlLCJmZWF0dXJlcyI6eyJtdWx0aVBvZEFkcyI6eyJjb2hvcnQiOiIiLCJlbmFibGVkIjp0cnVlfSwic3RpdGNoZXJIbHNOZyI6eyJkZW11eGVkQXVkaW8iOiJqaXQifX0sImZtc1BhcmFtcyI6eyJmd1ZjSUQyIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiZndWY0lEMkNvcHBhIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY3VzdG9tUGFyYW1zIjp7ImZtc19saXZlcmFtcF9pZGwiOiIiLCJmbXNfZW1haWxoYXNoIjoiIiwiZm1zX3N1YnNjcmliZXJpZCI6IiIsImZtc19pZmEiOiIiLCJmbXNfaWRmdiI6IiIsImZtc191c2VyaWQiOiIzM2RiYTAzNi1jZmU4LTQ2NmYtYjI1MC05Y2M3ZmY3MGRjYzYiLCJmbXNfdmNpZDJ0eXBlIjoidXNlcmlkIiwiZm1zX3JhbXBfaWQiOiIiLCJmbXNfaGhfcmFtcF9pZCI6IiIsImZtc19iaWRpZHR5cGUiOiIiLCJfZndfM1BfVUlEIjoiIiwiZm1zX3J1bGVpZCI6IjEwMDAwLDEwMDA5LDEwMDEzLDEwMDE0LDEwMDE2LDEwMDIwLDEwMDIzLDEwMDE1LDEwMDIxIn19LCJkcm0iOnsibmFtZSI6IndpZGV2aW5lIiwibGV2ZWwiOiJMMyJ9LCJzZXNzaW9uU3RhcnRUaW1lIjoxNzg0Mjk2NDc1NDg2LCJpc3MiOiJib290LnBsdXRvLnR2Iiwic3ViIjoicHJpOnYxOnBsdXRvOmRldmljZXM6SVQ6TXpOa1ltRXdNell0WTJabE9DMDBOalptTFdJeU5UQXRPV05qTjJabU56QmtZMk0yIiwiYXVkIjoiKi5wbHV0by50diIsImV4cCI6MTc4NDM4Mjg3NSwiaWF0IjoxNzg0Mjk2NDc1LCJqdGkiOiI3N2NkYWZiMC02NWFmLTQxNjItYTA4MC00ODM2ODMyOTY3NzQifQ.IgHHJHxkCpiK1qwj0ASrWcMQZYGy9u59vsKA1ADYsF8&masterJWTPassthrough=true&audioLanguage=it",
           "source_id": "pluto_it",
-          "health_score": 93.0,
+          "health_score": 100.0,
           "source_priority": 110,
           "quality_score": 0,
           "metadata_score": 89,
@@ -2320,7 +2320,7 @@
             "name": "16 Anni e Incinta",
             "stream_url": "https://jmp2.uk/plu-60940a07d88ba90007b9cb71.m3u8",
             "source_id": "italy_public",
-            "health_score": 91.0,
+            "health_score": 98.0,
             "source_priority": 100,
             "quality_score": 0,
             "metadata_score": 68,
@@ -2376,7 +2376,7 @@
             "name": "Pluto TV Shore",
             "stream_url": "https://jmp2.uk/plu-67e3b0d2443f0671bc8a1297.m3u8",
             "source_id": "italy_public",
-            "health_score": 91.0,
+            "health_score": 98.0,
             "source_priority": 100,
             "quality_score": 0,
             "metadata_score": 68,
@@ -2404,7 +2404,7 @@
             "name": "Teen Mom",
             "stream_url": "https://jmp2.uk/plu-62e7fc8c0d061100083946a9.m3u8",
             "source_id": "italy_public",
-            "health_score": 95.0,
+            "health_score": 91.0,
             "source_priority": 100,
             "quality_score": 0,
             "metadata_score": 68,
@@ -2432,7 +2432,7 @@
             "name": "Pluto TV Sci-Fi",
             "stream_url": "https://jmp2.uk/plu-61728bb9ee3773000840c1fa.m3u8",
             "source_id": "italy_public",
-            "health_score": 95.0,
+            "health_score": 98.0,
             "source_priority": 100,
             "quality_score": 0,
             "metadata_score": 68,
@@ -2460,7 +2460,7 @@
             "name": "Pluto TV Serie Sci-Fi",
             "stream_url": "https://jmp2.uk/plu-67ed14aaf7c5d70b9089c3bf.m3u8",
             "source_id": "italy_public",
-            "health_score": 95.0,
+            "health_score": 98.0,
             "source_priority": 100,
             "quality_score": 0,
             "metadata_score": 68,
@@ -2516,7 +2516,7 @@
             "name": "Le sorelle McLeod",
             "stream_url": "https://jmp2.uk/plu-60a2837f8154ab0007c4dcdf.m3u8",
             "source_id": "italy_public",
-            "health_score": 95.0,
+            "health_score": 91.0,
             "source_priority": 100,
             "quality_score": 0,
             "metadata_score": 68,
@@ -2544,7 +2544,7 @@
             "name": "Pluto TV Serie",
             "stream_url": "https://jmp2.uk/plu-60b9ff2722bfa400072676ef.m3u8",
             "source_id": "italy_public",
-            "health_score": 95.0,
+            "health_score": 98.0,
             "source_priority": 100,
             "quality_score": 0,
             "metadata_score": 68,
@@ -2560,7 +2560,7 @@
           "name": "Cin Cin",
           "stream_url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/65cb78b83a116800079e2e35/master.m3u8?jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImMzYjk4NjViLTFiYjItNGZlMy1hYzA3LWU2YWE0N2U3N2MzNiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiIwYjc1NmRiZC04MWU3LTExZjEtYThhNC0yMjQ2Yjc3ZDFlOGUiLCJjbGllbnRJUCI6IjUuMTMzLjQ4LjAiLCJjaXR5IjoiU2FsYSIsInBvc3RhbENvZGUiOiI0NzA0MiIsImNvdW50cnkiOiJJVCIsImRtYSI6MCwiYWN0aXZlUmVnaW9uIjoiSVQiLCJkZXZpY2VMYXQiOjQ0LjE4MDAwMDMwNTE3NTc4LCJkZXZpY2VMb24iOjEyLjM4MDAwMDExNDQ0MDkxOCwicHJlZmVycmVkTGFuZ3VhZ2UiOiJpdCIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTIyLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4wLjAtMTExYjJiOWRjMDBiZDBiZWE5MDMwYjMwNjYyMTU5ZWQ5ZTdjOGJjNiIsImNsaWVudElEIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkV1cm9wZS9Sb21lIiwic2VydmVyU2lkZUFkcyI6ZmFsc2UsImUyZUJlYWNvbnMiOmZhbHNlLCJmZWF0dXJlcyI6eyJtdWx0aVBvZEFkcyI6eyJjb2hvcnQiOiIiLCJlbmFibGVkIjp0cnVlfSwic3RpdGNoZXJIbHNOZyI6eyJkZW11eGVkQXVkaW8iOiJqaXQifX0sImZtc1BhcmFtcyI6eyJmd1ZjSUQyIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiZndWY0lEMkNvcHBhIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY3VzdG9tUGFyYW1zIjp7ImZtc19saXZlcmFtcF9pZGwiOiIiLCJmbXNfZW1haWxoYXNoIjoiIiwiZm1zX3N1YnNjcmliZXJpZCI6IiIsImZtc19pZmEiOiIiLCJmbXNfaWRmdiI6IiIsImZtc191c2VyaWQiOiIzM2RiYTAzNi1jZmU4LTQ2NmYtYjI1MC05Y2M3ZmY3MGRjYzYiLCJmbXNfdmNpZDJ0eXBlIjoidXNlcmlkIiwiZm1zX3JhbXBfaWQiOiIiLCJmbXNfaGhfcmFtcF9pZCI6IiIsImZtc19iaWRpZHR5cGUiOiIiLCJfZndfM1BfVUlEIjoiIiwiZm1zX3J1bGVpZCI6IjEwMDAwLDEwMDA5LDEwMDEzLDEwMDE0LDEwMDE2LDEwMDIwLDEwMDIzLDEwMDE1LDEwMDIxIn19LCJkcm0iOnsibmFtZSI6IndpZGV2aW5lIiwibGV2ZWwiOiJMMyJ9LCJzZXNzaW9uU3RhcnRUaW1lIjoxNzg0Mjk2NDc1NDg2LCJpc3MiOiJib290LnBsdXRvLnR2Iiwic3ViIjoicHJpOnYxOnBsdXRvOmRldmljZXM6SVQ6TXpOa1ltRXdNell0WTJabE9DMDBOalptTFdJeU5UQXRPV05qTjJabU56QmtZMk0yIiwiYXVkIjoiKi5wbHV0by50diIsImV4cCI6MTc4NDM4Mjg3NSwiaWF0IjoxNzg0Mjk2NDc1LCJqdGkiOiI3N2NkYWZiMC02NWFmLTQxNjItYTA4MC00ODM2ODMyOTY3NzQifQ.IgHHJHxkCpiK1qwj0ASrWcMQZYGy9u59vsKA1ADYsF8&masterJWTPassthrough=true&audioLanguage=it",
           "source_id": "pluto_it",
-          "health_score": 100.0,
+          "health_score": 88.0,
           "source_priority": 110,
           "quality_score": 0,
           "metadata_score": 89,
@@ -2572,7 +2572,7 @@
             "name": "Cin Cin",
             "stream_url": "https://jmp2.uk/plu-65cb78b83a116800079e2e35.m3u8",
             "source_id": "italy_public",
-            "health_score": 95.0,
+            "health_score": 86.0,
             "source_priority": 100,
             "quality_score": 0,
             "metadata_score": 68,
@@ -2588,7 +2588,7 @@
           "name": "Dynasty",
           "stream_url": "https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/65cb76ea11ced70008206b66/master.m3u8?jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6ImMzYjk4NjViLTFiYjItNGZlMy1hYzA3LWU2YWE0N2U3N2MzNiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiIwYjc1NmRiZC04MWU3LTExZjEtYThhNC0yMjQ2Yjc3ZDFlOGUiLCJjbGllbnRJUCI6IjUuMTMzLjQ4LjAiLCJjaXR5IjoiU2FsYSIsInBvc3RhbENvZGUiOiI0NzA0MiIsImNvdW50cnkiOiJJVCIsImRtYSI6MCwiYWN0aXZlUmVnaW9uIjoiSVQiLCJkZXZpY2VMYXQiOjQ0LjE4MDAwMDMwNTE3NTc4LCJkZXZpY2VMb24iOjEyLjM4MDAwMDExNDQ0MDkxOCwicHJlZmVycmVkTGFuZ3VhZ2UiOiJpdCIsImRldmljZVR5cGUiOiJ3ZWIiLCJkZXZpY2VWZXJzaW9uIjoiMTIyLjAuMCIsImRldmljZU1ha2UiOiJjaHJvbWUiLCJkZXZpY2VNb2RlbCI6IndlYiIsImFwcE5hbWUiOiJ3ZWIiLCJhcHBWZXJzaW9uIjoiOC4wLjAtMTExYjJiOWRjMDBiZDBiZWE5MDMwYjMwNjYyMTU5ZWQ5ZTdjOGJjNiIsImNsaWVudElEIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkV1cm9wZS9Sb21lIiwic2VydmVyU2lkZUFkcyI6ZmFsc2UsImUyZUJlYWNvbnMiOmZhbHNlLCJmZWF0dXJlcyI6eyJtdWx0aVBvZEFkcyI6eyJjb2hvcnQiOiIiLCJlbmFibGVkIjp0cnVlfSwic3RpdGNoZXJIbHNOZyI6eyJkZW11eGVkQXVkaW8iOiJqaXQifX0sImZtc1BhcmFtcyI6eyJmd1ZjSUQyIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiZndWY0lEMkNvcHBhIjoiMzNkYmEwMzYtY2ZlOC00NjZmLWIyNTAtOWNjN2ZmNzBkY2M2IiwiY3VzdG9tUGFyYW1zIjp7ImZtc19saXZlcmFtcF9pZGwiOiIiLCJmbXNfZW1haWxoYXNoIjoiIiwiZm1zX3N1YnNjcmliZXJpZCI6IiIsImZtc19pZmEiOiIiLCJmbXNfaWRmdiI6IiIsImZtc191c2VyaWQiOiIzM2RiYTAzNi1jZmU4LTQ2NmYtYjI1MC05Y2M3ZmY3MGRjYzYiLCJmbXNfdmNpZDJ0eXBlIjoidXNlcmlkIiwiZm1zX3JhbXBfaWQiOiIiLCJmbXNfaGhfcmFtcF9pZCI6IiIsImZtc19iaWRpZHR5cGUiOiIiLCJfZndfM1BfVUlEIjoiIiwiZm1zX3J1bGVpZCI6IjEwMDAwLDEwMDA5LDEwMDEzLDEwMDE0LDEwMDE2LDEwMDIwLDEwMDIzLDEwMDE1LDEwMDIxIn19LCJkcm0iOnsibmFtZSI6IndpZGV2aW5lIiwibGV2ZWwiOiJMMyJ9LCJzZXNzaW9uU3RhcnRUaW1lIjoxNzg0Mjk2NDc1NDg2LCJpc3MiOiJib290LnBsdXRvLnR2Iiwic3ViIjoicHJpOnYxOnBsdXRvOmRldmljZXM6SVQ6TXpOa1ltRXdNell0WTJabE9DMDBOalptTFdJeU5UQXRPV05qTjJabU56QmtZMk0yIiwiYXVkIjoiKi5wbHV0by50diIsImV4cCI6MTc4NDM4Mjg3NSwiaWF0IjoxNzg0Mjk2NDc1LCJqdGkiOiI3N2NkYWZiMC02NWFmLTQxNjItYTA4MC00ODM2ODMyOTY3NzQifQ.IgHHJHxkCpiK1qwj0ASrWcMQZYGy9u59vsKA1ADYsF8&masterJWTPassthrough=true&audioLanguage=it",
           "source_id": "pluto_it",
-          "health_score": 100.0,
+          "health_score": 93.0,
           "source_priority": 110,
           "quality_score": 0,
           "metadata_score": 89,
@@ -2600,7 +2600,7 @@
             "name": "Dynasty",
             "stream_url": "https://jmp2.uk/plu-65cb76ea11ced70008206b66.m3u8",
             "source_id": "italy_public",
-            "health_score": 91.0,
+            "health_score": 80.0,
             "source_priority": 100,
             "quality_score": 0,
             "metadata_score": 68,
@@ -2628,7 +2628,7 @@
             "name": "Mission Impossible",
             "stream_url": "https://jmp2.uk/plu-65cb77853ba51e00084cba02.m3u8",
             "source_id": "italy_public",
-            "health_score": 91.0,
+            "health_score": 95.0,
             "source_priority": 100,
             "quality_score": 0,
             "metadata_score": 68,
@@ -2656,7 +2656,7 @@
             "name": "Pluto TV Serie Crime",
             "stream_url": "https://jmp2.uk/plu-608aa777b907770007e5d05d.m3u8",
             "source_id": "italy_public",
-            "health_score": 95.0,
+            "health_score": 98.0,
             "source_priority": 100,
             "quality_score": 0,
             "metadata_score": 68,
@@ -2684,7 +2684,7 @@
             "name": "Pluto TV Teen (720p)",
             "stream_url": "https://jmp2.uk/plu-63eb573ba99571000897135b.m3u8",
             "source_id": "italy_public",
-            "health_score": 95.0,
+            "health_score": 91.0,
             "source_priority": 100,
             "quality_score": 200,
             "metadata_score": 68,
@@ -2712,7 +2712,7 @@
             "name": "Pluto TV True Crime",
             "stream_url": "https://jmp2.uk/plu-66d9ab4bf0f17500084e9b7e.m3u8",
             "source_id": "italy_public",
-            "health_score": 95.0,
+            "health_score": 98.0,
             "source_priority": 100,
             "quality_score": 0,
             "metadata_score": 68,
@@ -2740,7 +2740,7 @@
             "name": "Storie Criminali",
             "stream_url": "https://jmp2.uk/plu-66177d18c8311c0008d077d0.m3u8",
             "source_id": "italy_public",
-            "health_score": 95.0,
+            "health_score": 91.0,
             "source_priority": 100,
             "quality_score": 0,
             "metadata_score": 68,
@@ -2784,7 +2784,7 @@
           "name": "Rai 2 (1080p)",
           "stream_url": "https://d3k8wzt41aflvx.cloudfront.net/RAI2/Live.m3u8",
           "source_id": "italy_public",
-          "health_score": 97.0,
+          "health_score": 100.0,
           "source_priority": 100,
           "quality_score": 300,
           "metadata_score": 70,
@@ -2812,7 +2812,7 @@
           "name": "Rai 4 (576p)",
           "stream_url": "https://mediapolisevent.rai.it/relinker/relinkerServlet.htm?cont=746966",
           "source_id": "italy_public",
-          "health_score": 81.0,
+          "health_score": 47.0,
           "source_priority": 100,
           "quality_score": 100,
           "metadata_score": 68,
@@ -2840,7 +2840,7 @@
           "name": "Rai Gulp (576p)",
           "stream_url": "https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746953",
           "source_id": "italy_public",
-          "health_score": 81.0,
+          "health_score": 47.0,
           "source_priority": 100,
           "quality_score": 100,
           "metadata_score": 68,
@@ -2867,7 +2867,7 @@
   "registry": {
     "channels": 308,
     "sources": 2,
-    "groups": 45,
+    "groups": 46,
     "tvg_ids": 308
   },
   "output_file": "output/playlist.m3u",
@@ -2888,7 +2888,7 @@
       "registered": 329,
       "duplicates_skipped": 0,
       "attempt_count": 1,
-      "download_ms": 119,
+      "download_ms": 60,
       "bytes_downloaded": 76322,
       "http_status": 200,
       "final_url": "https://iptv-org.github.io/iptv/countries/it.m3u",
@@ -2900,7 +2900,7 @@
         {
           "number": 1,
           "status": "success",
-          "elapsed_ms": 119,
+          "elapsed_ms": 60,
           "http_status": 200,
           "error_type": null,
           "error_message": null
@@ -2933,7 +2933,7 @@
       "registered": 120,
       "duplicates_skipped": 0,
       "attempt_count": 1,
-      "download_ms": 435,
+      "download_ms": 284,
       "bytes_downloaded": 287439,
       "http_status": 200,
       "final_url": "https://raw.githubusercontent.com/OwnerPlugins/pluto-tv-m3u/main/pluto-live-IT.m3u",
@@ -2945,7 +2945,7 @@
         {
           "number": 1,
           "status": "success",
-          "elapsed_ms": 435,
+          "elapsed_ms": 284,
           "http_status": 200,
           "error_type": null,
           "error_message": null
