@@ -6,6 +6,14 @@ from src.epg.matcher import (
     EPGMatchBatchResult,
     EPGMatchStats,
 )
+from src.epg.xmltv import (
+    XMLTVDocument,
+    XMLTVIssue,
+    XMLTVParseError,
+    XMLTVParser,
+    XMLTVProgramme,
+    XMLTVStats,
+)
 
 __all__ = [
     "EPGAmbiguousMatch",
@@ -14,4 +22,10 @@ __all__ = [
     "EPGMatch",
     "EPGMatchBatchResult",
     "EPGMatchStats",
+    "XMLTVDocument",
+    "XMLTVIssue",
+    "XMLTVParseError",
+    "XMLTVParser",
+    "XMLTVProgramme",
+    "XMLTVStats",
 ]
