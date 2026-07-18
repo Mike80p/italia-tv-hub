@@ -9,6 +9,9 @@
   <channel id="Deejay TV.it">
     <display-name>Deejay TV.it</display-name>
   </channel>
+  <channel id="Euronews.it">
+    <display-name>Euronews.it</display-name>
+  </channel>
   <channel id="Horse TV HD.it">
     <display-name>Horse TV HD.it</display-name>
   </channel>
@@ -737,6 +740,38 @@
   <programme channel="Deejay TV.it" start="20260101230000 +0000" stop="20260102090000 +0000">
     <title>La musica di Radio Deejay</title>
     <desc>I videoclip piu belli, 100% Radio Deejay</desc>
+  </programme>
+  <programme channel="Euronews.it" start="20251231050000 +0000" stop="20251231110000 +0000">
+    <title>Euronews 508</title>
+    <desc>Euronews 508</desc>
+  </programme>
+  <programme channel="Euronews.it" start="20251231110000 +0000" stop="20251231170000 +0000">
+    <title>Euronews 508</title>
+    <desc>Euronews 508</desc>
+  </programme>
+  <programme channel="Euronews.it" start="20251231170000 +0000" stop="20251231230000 +0000">
+    <title>Euronews 508</title>
+    <desc>Euronews 508</desc>
+  </programme>
+  <programme channel="Euronews.it" start="20251231230000 +0000" stop="20260101050000 +0000">
+    <title>Euronews 508</title>
+    <desc>Euronews 508</desc>
+  </programme>
+  <programme channel="Euronews.it" start="20260101050000 +0000" stop="20260101110000 +0000">
+    <title>Euronews 508</title>
+    <desc>Euronews 508</desc>
+  </programme>
+  <programme channel="Euronews.it" start="20260101110000 +0000" stop="20260101170000 +0000">
+    <title>Euronews 508</title>
+    <desc>Euronews 508</desc>
+  </programme>
+  <programme channel="Euronews.it" start="20260101170000 +0000" stop="20260101230000 +0000">
+    <title>Euronews 508</title>
+    <desc>Euronews 508</desc>
+  </programme>
+  <programme channel="Euronews.it" start="20260101230000 +0000" stop="20260102050000 +0000">
+    <title>Euronews 508</title>
+    <desc>Euronews 508</desc>
   </programme>
   <programme channel="Horse TV HD.it" start="20251231000000 +0000" stop="20251231003000 +0000">
     <title>The Polo Show 2020 2021</title>
