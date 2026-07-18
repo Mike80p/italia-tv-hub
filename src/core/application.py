@@ -86,6 +86,7 @@ class Application:
                     self.settings
                     .request_timeout_seconds
                 ),
+                strict_country_only=True,
             )
         )
 
@@ -1663,8 +1664,9 @@ class Application:
         """
         Esegue la discovery senza rendere fragile la pipeline.
 
-        Le istanze create normalmente da __init__ possiedono il
-        SourceDiscoveryClient e possono usare GITHUB_TOKEN. Le vecchie
+        Le istanze create normalmente da __init__ usano il
+        SourceDiscoveryClient in modalità solo-paese Italia, senza
+        ricerca GitHub automatica. Le vecchie
         fixture di test che costruiscono Application con __new__ non
         eseguono richieste di rete e ricevono un risultato vuoto.
         """

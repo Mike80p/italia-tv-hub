@@ -152,7 +152,13 @@ class SourceDiscoveryClient:
     """
     Ricerca controllata di playlist italiane pubbliche.
 
-    Provider iniziali:
+    Con `strict_country_only=True`:
+
+    - usa soltanto la playlist per paese Italia;
+    - esclude la raccolta basata unicamente sulla lingua;
+    - disattiva la ricerca GitHub anche quando GITHUB_TOKEN è presente.
+
+    Provider disponibili in modalità normale:
 
     - playlist IPTV-org per paese Italia;
     - playlist IPTV-org per lingua italiana;
@@ -186,6 +192,7 @@ class SourceDiscoveryClient:
             JsonFetcher
             | None
         ) = None,
+        strict_country_only: bool = False,
     ) -> None:
         if timeout_seconds <= 0:
             raise ValueError(
@@ -201,6 +208,19 @@ class SourceDiscoveryClient:
                 "max_results_per_query deve "
                 "essere compreso tra 1 e 30"
             )
+
+        if not isinstance(
+            strict_country_only,
+            bool,
+        ):
+            raise TypeError(
+                "strict_country_only deve "
+                "essere booleano"
+            )
+
+        self.strict_country_only = (
+            strict_country_only
+        )
 
         self.github_token = (
             github_token
@@ -239,7 +259,7 @@ class SourceDiscoveryClient:
             | str
             | None
         ) = None,
-        include_github: bool = True,
+        include_github: bool | None = None,
         github_queries: (
             Iterable[str]
             | None
@@ -252,14 +272,27 @@ class SourceDiscoveryClient:
         è facoltativa e non blocca il risultato in caso di errore.
         """
 
-        if not isinstance(
-            include_github,
-            bool,
+        if (
+            include_github is not None
+            and not isinstance(
+                include_github,
+                bool,
+            )
         ):
             raise TypeError(
                 "include_github deve essere "
-                "booleano"
+                "booleano oppure None"
             )
+
+        effective_include_github = (
+            False
+            if self.strict_country_only
+            else (
+                True
+                if include_github is None
+                else include_github
+            )
+        )
 
         normalized_tags = (
             self._normalize_tags(
@@ -271,7 +304,10 @@ class SourceDiscoveryClient:
 
         curated = list(
             self._curated_italian_sources(
-                normalized_tags
+                normalized_tags,
+                strict_country_only=(
+                    self.strict_country_only
+                ),
             )
         )
 
@@ -312,7 +348,7 @@ class SourceDiscoveryClient:
         github_items = 0
         rejected_items = 0
 
-        if include_github:
+        if effective_include_github:
             queries = (
                 tuple(
                     query.strip()
@@ -471,6 +507,7 @@ class SourceDiscoveryClient:
                 ),
                 github_token_used=bool(
                     self.github_token
+                    and effective_include_github
                 ),
             ),
         )
@@ -478,6 +515,8 @@ class SourceDiscoveryClient:
     @staticmethod
     def _curated_italian_sources(
         tags: tuple[str, ...],
+        *,
+        strict_country_only: bool = False,
     ) -> tuple[
         Source,
         ...,
@@ -493,8 +532,7 @@ class SourceDiscoveryClient:
             )
         )
 
-        return (
-            Source(
+        country_source = Source(
                 id=(
                     "discovery_iptv_org_"
                     "country_it"
@@ -520,8 +558,9 @@ class SourceDiscoveryClient:
                 trust_score=90,
                 refresh_hours=6,
                 origin="iptv-org/iptv",
-            ),
-            Source(
+            )
+
+        language_source = Source(
                 id=(
                     "discovery_iptv_org_"
                     "language_ita"
@@ -547,7 +586,16 @@ class SourceDiscoveryClient:
                 trust_score=85,
                 refresh_hours=6,
                 origin="iptv-org/iptv",
-            ),
+            )
+
+        if strict_country_only:
+            return (
+                country_source,
+            )
+
+        return (
+            country_source,
+            language_source,
         )
 
     def _search_github(
