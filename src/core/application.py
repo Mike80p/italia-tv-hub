@@ -46,6 +46,10 @@ from src.merger.merger import ChannelMerger
 from src.models.channel import Channel
 from src.models.source import Source
 from src.parser.m3u import M3UParser, ParseResult
+from src.pluto.alternatives import (
+    PlutoAlternativeGenerator,
+    PlutoAlternativeResult,
+)
 from src.registry.channel_registry import ChannelRegistry
 
 
@@ -73,6 +77,10 @@ class Application:
 
         self.parser = M3UParser()
         self.merger = ChannelMerger()
+
+        self.pluto_alternative_generator = (
+            PlutoAlternativeGenerator()
+        )
 
         self.source_registry = SourceRegistry()
         self.registry = ChannelRegistry()
@@ -137,13 +145,14 @@ class Application:
         3. registrazione e deduplicazione delle sorgenti;
         4. download con diagnostica;
         5. parsing normalizzato con diagnostica;
-        6. conservazione dei candidati alternativi;
-        7. health check di tutti gli URL candidati;
-        8. merge guidato dagli Health Score;
-        9. filtro dei canali non disponibili;
-        10. download, parsing e generazione EPG;
-        11. applicazione dei tvg-id trovati;
-        12. esportazione playlist e report JSON.
+        6. generazione delle alternative Pluto jmp2;
+        7. conservazione dei candidati alternativi;
+        8. health check di tutti gli URL candidati;
+        9. merge guidato dagli Health Score;
+        10. filtro dei canali non disponibili;
+        11. download, parsing e generazione EPG;
+        12. applicazione dei tvg-id trovati;
+        13. esportazione playlist e report JSON.
 
         Se il merger installato non espone group_candidates(),
         viene mantenuto il precedente flusso compatibile:
@@ -336,6 +345,30 @@ class Application:
                 source_results.append(
                     source_result
                 )
+
+        pluto_alternative_result = (
+            self._expand_pluto_alternatives(
+                parsed_candidates
+            )
+        )
+
+        parsed_candidates = list(
+            pluto_alternative_result.channels
+        )
+
+        if (
+            pluto_alternative_result
+            .stats
+            .generated_alternatives
+            > 0
+        ):
+            source_priorities[
+                PlutoAlternativeGenerator
+                .SOURCE_ID
+            ] = (
+                PlutoAlternativeGenerator
+                .SOURCE_PRIORITY
+            )
 
         registered_channels = list(
             self.registry.snapshot()
@@ -802,6 +835,37 @@ class Application:
                 parser_summary[
                     "issues_truncated"
                 ]
+            ),
+
+            # Pluto Alternative Engine
+            "pluto_direct_candidates": (
+                pluto_alternative_result
+                .stats
+                .direct_pluto_channels
+            ),
+            "pluto_existing_resolvers": (
+                pluto_alternative_result
+                .stats
+                .existing_resolver_channels
+            ),
+            "pluto_alternatives_generated": (
+                pluto_alternative_result
+                .stats
+                .generated_alternatives
+            ),
+            "pluto_alternative_duplicates_skipped": (
+                pluto_alternative_result
+                .stats
+                .skipped_duplicate_urls
+            ),
+            "pluto_missing_channel_id": (
+                pluto_alternative_result
+                .stats
+                .missing_channel_id
+            ),
+            "pluto_alternatives": (
+                pluto_alternative_result
+                .to_dict()
             ),
 
             # Channel Registry / Merger Engine
@@ -1657,6 +1721,44 @@ class Application:
             + "\n",
             encoding="utf-8",
         )
+
+
+    def _expand_pluto_alternatives(
+        self,
+        channels: list[Channel],
+    ) -> PlutoAlternativeResult:
+        """
+        Aggiunge le alternative jmp2 in modo non distruttivo.
+
+        Le vecchie fixture che costruiscono Application tramite
+        __new__ ricevono automaticamente un generatore valido.
+        """
+
+        generator = getattr(
+            self,
+            "pluto_alternative_generator",
+            None,
+        )
+
+        if generator is None:
+            generator = (
+                PlutoAlternativeGenerator()
+            )
+
+        result = generator.expand(
+            channels
+        )
+
+        if not isinstance(
+            result,
+            PlutoAlternativeResult,
+        ):
+            raise TypeError(
+                "Il generatore Pluto deve "
+                "restituire PlutoAlternativeResult"
+            )
+
+        return result
 
     def _discover_sources(
         self,
