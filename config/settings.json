@@ -2,13 +2,13 @@
   "output_file": "output/playlist.m3u",
   "report_file": "output/report.json",
   "health_file": "output/health.json",
-  "request_timeout_seconds": 25,
-  "retry_count": 2,
+  "request_timeout_seconds": 30,
+  "retry_count": 3,
   "user_agent": "Mozilla/5.0 (SMART-TV; LINUX; Tizen 4.0) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 TV Safari/537.36",
-  "health_enabled": true,
-  "health_timeout_seconds": 12,
-  "health_max_workers": 10,
-  "publish_only_online": true,
+  "health_enabled": false,
+  "health_timeout_seconds": 15,
+  "health_max_workers": 8,
+  "publish_only_online": false,
   "epg_enabled": true,
   "epg_file": "output/epg.xml",
   "epg_report_file": "output/epg-report.json",
@@ -20,5 +20,11 @@
     "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy3.xml.gz",
     "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy4.xml.gz",
     "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy5.xml.gz"
-  ]
+  ],
+  "pluto_playback_enabled": true,
+  "pluto_minimum_score": 70,
+  "pluto_timeout_seconds": 8,
+  "pluto_max_workers": 16,
+  "samsung_output_file": "output/playlist_samsung.m3u",
+  "pluto_report_file": "output/pluto-report.json"
 }

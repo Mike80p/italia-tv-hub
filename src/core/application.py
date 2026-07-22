@@ -50,6 +50,10 @@ from src.pluto.alternatives import (
     PlutoAlternativeGenerator,
     PlutoAlternativeResult,
 )
+from src.pluto.playback import (
+    PlutoPlaybackEngine,
+    PlutoPlaybackResult,
+)
 from src.registry.channel_registry import ChannelRegistry
 
 
@@ -132,6 +136,25 @@ class Application:
             deep_hls_check=True,
             expected_country="IT",
             max_variants=2,
+        )
+
+        self.pluto_playback_engine = PlutoPlaybackEngine(
+            StreamHealthChecker(
+                timeout_seconds=(
+                    self.settings.pluto_timeout_seconds
+                ),
+                max_workers=(
+                    self.settings.pluto_max_workers
+                ),
+                user_agent=self.settings.user_agent,
+                deep_hls_check=True,
+                expected_country="IT",
+                max_variants=2,
+            ),
+            minimum_score=(
+                self.settings.pluto_minimum_score
+            ),
+            accept_reachable=True,
         )
 
     def run(self) -> int:
@@ -553,6 +576,35 @@ class Application:
                     channels_to_check
                 )
 
+        pluto_playback_result = PlutoPlaybackResult((), (), (), ())
+        pluto_playback_enabled = bool(
+            getattr(
+                self.settings,
+                "pluto_playback_enabled",
+                False,
+            )
+        )
+
+        if pluto_playback_enabled:
+            playback_engine = getattr(
+                self,
+                "pluto_playback_engine",
+                None,
+            )
+            if playback_engine is not None:
+                pluto_playback_result = playback_engine.verify(
+                    merged_channels
+                )
+                playback_engine.write_report(
+                    self.root
+                    / getattr(
+                        self.settings,
+                        "pluto_report_file",
+                        "output/pluto-report.json",
+                    ),
+                    pluto_playback_result,
+                )
+
         merger_duplicates_removed = max(
             0,
             channels_before_merge
@@ -630,6 +682,28 @@ class Application:
             output_path,
             output_channels,
         )
+
+        samsung_output_path = output_path
+        if pluto_playback_enabled:
+            samsung_output_path = (
+                self.root
+                / getattr(
+                    self.settings,
+                    "samsung_output_file",
+                    "output/playlist_samsung.m3u",
+                )
+            )
+            samsung_channels = (
+                self.pluto_playback_engine
+                .build_samsung_playlist_channels(
+                    output_channels,
+                    pluto_playback_result,
+                )
+            )
+            self.exporter.write(
+                samsung_output_path,
+                samsung_channels,
+            )
 
         channel_registry_stats = (
             self.registry.stats()
@@ -932,6 +1006,25 @@ class Application:
             "publish_only_online": (
                 self.settings
                 .publish_only_online
+            ),
+
+            # Pluto Playback Engine / Samsung Tizen
+            "pluto_playback_enabled": (
+                pluto_playback_enabled
+            ),
+            "pluto_checked": (
+                pluto_playback_result.checked
+            ),
+            "pluto_samsung_accepted": (
+                pluto_playback_result.accepted
+            ),
+            "pluto_samsung_rejected": (
+                pluto_playback_result.rejected
+            ),
+            "samsung_output_file": str(
+                samsung_output_path.relative_to(
+                    self.root
+                )
             ),
 
             # Alternative Stream Recovery Engine

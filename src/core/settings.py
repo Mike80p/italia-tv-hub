@@ -20,6 +20,14 @@ class Settings:
     health_max_workers: int
     publish_only_online: bool
 
+    # Controllo Pluto dedicato e playlist Samsung/Tizen.
+    pluto_playback_enabled: bool = True
+    pluto_minimum_score: float = 70.0
+    pluto_timeout_seconds: int = 8
+    pluto_max_workers: int = 16
+    samsung_output_file: str = "output/playlist_samsung.m3u"
+    pluto_report_file: str = "output/pluto-report.json"
+
     # Impostazioni EPG.
     #
     # I valori predefiniti mantengono compatibilità con i test e con
@@ -107,6 +115,30 @@ class Settings:
                 "publish_only_online",
                 False,
             ),
+            pluto_playback_enabled=cls._read_bool(
+                data,
+                "pluto_playback_enabled",
+                True,
+            ),
+            pluto_minimum_score=float(
+                data.get("pluto_minimum_score", 70)
+            ),
+            pluto_timeout_seconds=int(
+                data.get("pluto_timeout_seconds", 8)
+            ),
+            pluto_max_workers=int(
+                data.get("pluto_max_workers", 16)
+            ),
+            samsung_output_file=cls._read_text(
+                data,
+                "samsung_output_file",
+                "output/playlist_samsung.m3u",
+            ),
+            pluto_report_file=cls._read_text(
+                data,
+                "pluto_report_file",
+                "output/pluto-report.json",
+            ),
             epg_enabled=cls._read_bool(
                 data,
                 "epg_enabled",
@@ -152,6 +184,8 @@ class Settings:
             "output_file": self.output_file,
             "report_file": self.report_file,
             "health_file": self.health_file,
+            "samsung_output_file": self.samsung_output_file,
+            "pluto_report_file": self.pluto_report_file,
             "epg_file": self.epg_file,
             "epg_report_file": (
                 self.epg_report_file
@@ -195,6 +229,21 @@ class Settings:
             raise ValueError(
                 "health_max_workers deve "
                 "essere maggiore di zero"
+            )
+
+        if not 0 <= self.pluto_minimum_score <= 100:
+            raise ValueError(
+                "pluto_minimum_score deve essere tra 0 e 100"
+            )
+
+        if self.pluto_timeout_seconds <= 0:
+            raise ValueError(
+                "pluto_timeout_seconds deve essere maggiore di zero"
+            )
+
+        if self.pluto_max_workers <= 0:
+            raise ValueError(
+                "pluto_max_workers deve essere maggiore di zero"
             )
 
         if self.epg_timeout_seconds <= 0:

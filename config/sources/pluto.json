@@ -1,11 +1,13 @@
 {
   "sources": [
     {
-      "id": "pluto_it",
+      "id": "plutotv_it",
       "name": "Pluto TV Italia",
-      "url": "https://raw.githubusercontent.com/OwnerPlugins/pluto-tv-m3u/main/pluto-live-IT.m3u",
+      "url": "https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/plutotv_it.m3u",
       "enabled": true,
-      "priority": 110
+      "priority": 20,
+      "country": "IT",
+      "type": "m3u"
     }
   ]
 }
