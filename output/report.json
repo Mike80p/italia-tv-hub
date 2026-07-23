@@ -1,7 +1,7 @@
 {
   "project": "Italia TV Hub",
   "version": "0.8.0",
-  "generated_at": "2026-07-23T14:35:38.079880+00:00",
+  "generated_at": "2026-07-23T19:48:44.055135+00:00",
   "sources_total": 3,
   "sources_enabled": 2,
   "sources_disabled": 1,
@@ -32,7 +32,7 @@
   "download_attempts_total": 2,
   "download_retries_total": 0,
   "download_bytes_total": 113713,
-  "download_time_ms_total": 361,
+  "download_time_ms_total": 360,
   "parser_sources_processed": 2,
   "parser_extinf_records": 450,
   "parser_channels_created": 450,
@@ -126,14 +126,14 @@
           "content_type": "application/octet-stream",
           "compressed": true,
           "attempt_count": 1,
-          "total_elapsed_ms": 264,
+          "total_elapsed_ms": 327,
           "bytes_downloaded": 270388,
           "http_status": 200,
           "attempts": [
             {
               "attempt_number": 1,
               "status": "ok",
-              "elapsed_ms": 264,
+              "elapsed_ms": 327,
               "bytes_read": 270388,
               "http_status": 200,
               "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz",
@@ -168,14 +168,14 @@
           "content_type": "application/octet-stream",
           "compressed": true,
           "attempt_count": 1,
-          "total_elapsed_ms": 282,
+          "total_elapsed_ms": 226,
           "bytes_downloaded": 133294,
           "http_status": 200,
           "attempts": [
             {
               "attempt_number": 1,
               "status": "ok",
-              "elapsed_ms": 282,
+              "elapsed_ms": 226,
               "bytes_read": 133294,
               "http_status": 200,
               "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy2.xml.gz",
@@ -210,14 +210,14 @@
           "content_type": "application/octet-stream",
           "compressed": true,
           "attempt_count": 1,
-          "total_elapsed_ms": 224,
+          "total_elapsed_ms": 379,
           "bytes_downloaded": 232842,
           "http_status": 200,
           "attempts": [
             {
               "attempt_number": 1,
               "status": "ok",
-              "elapsed_ms": 224,
+              "elapsed_ms": 379,
               "bytes_read": 232842,
               "http_status": 200,
               "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy3.xml.gz",
@@ -252,14 +252,14 @@
           "content_type": "application/octet-stream",
           "compressed": true,
           "attempt_count": 1,
-          "total_elapsed_ms": 319,
+          "total_elapsed_ms": 371,
           "bytes_downloaded": 148556,
           "http_status": 200,
           "attempts": [
             {
               "attempt_number": 1,
               "status": "ok",
-              "elapsed_ms": 319,
+              "elapsed_ms": 371,
               "bytes_read": 148556,
               "http_status": 200,
               "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy4.xml.gz",
@@ -294,14 +294,14 @@
           "content_type": "application/octet-stream",
           "compressed": true,
           "attempt_count": 1,
-          "total_elapsed_ms": 295,
+          "total_elapsed_ms": 376,
           "bytes_downloaded": 146194,
           "http_status": 200,
           "attempts": [
             {
               "attempt_number": 1,
               "status": "ok",
-              "elapsed_ms": 295,
+              "elapsed_ms": 376,
               "bytes_read": 146194,
               "http_status": 200,
               "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy5.xml.gz",
@@ -369,7 +369,7 @@
     "attempts_total": 2,
     "retries_total": 0,
     "bytes_total": 113713,
-    "time_ms_total": 361
+    "time_ms_total": 360
   },
   "parser_summary": {
     "sources_processed": 2,
@@ -2202,7 +2202,7 @@
       "registered": 121,
       "duplicates_skipped": 0,
       "attempt_count": 1,
-      "download_ms": 180,
+      "download_ms": 182,
       "bytes_downloaded": 37359,
       "http_status": 200,
       "final_url": "https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/plutotv_it.m3u",
@@ -2214,7 +2214,7 @@
         {
           "number": 1,
           "status": "success",
-          "elapsed_ms": 180,
+          "elapsed_ms": 182,
           "http_status": 200,
           "error_type": null,
           "error_message": null
@@ -2247,7 +2247,7 @@
       "registered": 273,
       "duplicates_skipped": 56,
       "attempt_count": 1,
-      "download_ms": 181,
+      "download_ms": 178,
       "bytes_downloaded": 76354,
       "http_status": 200,
       "final_url": "https://iptv-org.github.io/iptv/countries/it.m3u",
@@ -2259,7 +2259,7 @@
         {
           "number": 1,
           "status": "success",
-          "elapsed_ms": 181,
+          "elapsed_ms": 178,
           "http_status": 200,
           "error_type": null,
           "error_message": null
