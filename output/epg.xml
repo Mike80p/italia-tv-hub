@@ -48,6 +48,9 @@
   <channel id="Rai Scuola.it">
     <display-name>Rai Scuola.it</display-name>
   </channel>
+  <channel id="RAI Sport.it">
+    <display-name>RAI Sport.it</display-name>
+  </channel>
   <channel id="Rai Storia.it">
     <display-name>Rai Storia.it</display-name>
   </channel>
@@ -7424,6 +7427,477 @@
   </programme>
   <programme channel="Rai Scuola.it" start="20260102021500 +0000" stop="20260102024500 +0000">
     <title>Progetto Scienza 2023 Speciale Progetto</title>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251203050000 +0000" stop="20251203053000 +0000">
+    <title>Coppa del Mondo</title>
+    <sub-title>Ruka- gara 1</sub-title>
+    <desc>Dal Lysgårdsbakken alle finali di Planica, passando per il Gross-Titlis-Schanze e i Quattro Trampolini, occhi puntati sulla 48ª stagione di Coppa del Mondo di salto.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251203053000 +0000" stop="20251203060000 +0000">
+    <title>Coppa del Mondo</title>
+    <sub-title>Ruka - gara 2</sub-title>
+    <desc>Dal Lysgårdsbakken alle finali di Planica, passando per il Gross-Titlis-Schanze e i Quattro Trampolini, occhi puntati sulla 48ª stagione di Coppa del Mondo di salto.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251203060000 +0000" stop="20251203063000 +0000">
+    <title>TG Sport Mattina</title>
+    <desc>Lappuntamento con linformazione sportiva: le news, le immagini e tutte le curiosità sul mondo dello sport.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251203063000 +0000" stop="20251203085500 +0000">
+    <title>Amichevole Nazionale Femminile: USA-Italia</title>
+    <desc>Amichevole Nazionale Femminile: USA-Italia.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251203085500 +0000" stop="20251203110000 +0000">
+    <title>Campionati Europei</title>
+    <sub-title>25m Lublino: Batterie 2a giornata</sub-title>
+    <desc>I Campionati europei di Nuoto, Tuffi, Nuoto sincronizzato e Nuoto in acque libere, comunemente noti come Campionati europei di nuoto, sono la più prestigiosa e longeva manifestazione organizzata dalla LEN, la federazione che sovrintende gli sport acquatici in Europa.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251203110000 +0000" stop="20251203121500 +0000">
+    <title>Coppa del Mondo</title>
+    <sub-title>Flamanville: Elite Donne</sub-title>
+    <desc>12 tappe di Coppa del Mondo da novembre 2025 a febbraio 2026: da Tabor a Hoogerheide. Spicca lappuntamento italiano del 7 dicembre a Cabras in Sardegna.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251203121500 +0000" stop="20251203140000 +0000">
+    <title>Coppa del Mondo</title>
+    <sub-title>Flamanville: Elite Uomini</sub-title>
+    <desc>12 tappe di Coppa del Mondo da novembre 2025 a febbraio 2026: da Tabor a Hoogerheide. Spicca lappuntamento italiano del 7 dicembre a Cabras in Sardegna.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251203140000 +0000" stop="20251203160000 +0000">
+    <title>Coppa del Mondo</title>
+    <sub-title>Bob a Due: Discesa Maschile - 1a manche</sub-title>
+    <desc>La Coppa del mondo di bob è una competizione sportiva internazionale organizzata dalla Federazione Internazionale di Bob e Skeleton e rappresenta il circuito annuale di più alto livello nello sport del bob.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251203160000 +0000" stop="20251203162500 +0000">
+    <title>Memory</title>
+    <sub-title>Deborah Compagnoni</sub-title>
+    <desc>Riviviamo insieme le gesta dei grandi campioni che hanno reso indimenticabili grandi momenti di sport.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251203162500 +0000" stop="20251203165500 +0000">
+    <title>Coppa del Mondo</title>
+    <sub-title>Ruka - gara 1</sub-title>
+    <desc>Da Ruka a Oslo, dal 28 novembre al 15 marzo: la Coppa del Mondo di combinata nordica propone 11 imperdibili tappe e la caccia al detentore della sfera di cristallo Vinzenz Geiger.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251203165500 +0000" stop="20251203172500 +0000">
+    <title>Coppa del Mondo</title>
+    <sub-title>Ruka - gara 2</sub-title>
+    <desc>Da Ruka a Oslo, dal 28 novembre al 15 marzo: la Coppa del Mondo di combinata nordica propone 11 imperdibili tappe e la caccia al detentore della sfera di cristallo Vinzenz Geiger.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251203172500 +0000" stop="20251203175500 +0000">
+    <title>Coppa del Mondo</title>
+    <sub-title>Ruka - gara 3</sub-title>
+    <desc>Da Ruka a Oslo, dal 28 novembre al 15 marzo: la Coppa del Mondo di combinata nordica propone 11 imperdibili tappe e la caccia al detentore della sfera di cristallo Vinzenz Geiger.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251203175500 +0000" stop="20251203194000 +0000">
+    <title>Campionati Europei</title>
+    <sub-title>25m Lublino: Finali 2a giornata</sub-title>
+    <desc>I Campionati europei di Nuoto, Tuffi, Nuoto sincronizzato e Nuoto in acque libere, comunemente noti come Campionati europei di nuoto, sono la più prestigiosa e longeva manifestazione organizzata dalla LEN, la federazione che sovrintende gli sport acquatici in Europa.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251203194000 +0000" stop="20251203221500 +0000">
+    <title>SuperLega Credem Banca</title>
+    <sub-title>Monza-Civitanova - 9a g.ta</sub-title>
+    <desc>Le partite di SuperLega Credem Banca. 13 squadre della serie A1.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251203221500 +0000" stop="20251203224500 +0000">
+    <title>World Rally Raid Championship</title>
+    <sub-title>Arabia Saudita</sub-title>
+    <desc>Nuova edizione per il World Rally-Raid Championship (W2RC) che si svolge su 5 tappe: Rally Dakar Arabia Saudita, Abu Dhabi, Messico, Argentina e Marocco.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251203224500 +0000" stop="20251203230000 +0000">
+    <title>TG Sport Mattina</title>
+    <desc>Lappuntamento con linformazione sportiva: le news, le immagini e tutte le curiosità sul mondo dello sport.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251203230000 +0000" stop="20251204010000 +0000">
+    <title>Campionati Europei</title>
+    <sub-title>25m Lublino: Finali 2a giornata</sub-title>
+    <desc>I Campionati europei di Nuoto, Tuffi, Nuoto sincronizzato e Nuoto in acque libere, comunemente noti come Campionati europei di nuoto, sono la più prestigiosa e longeva manifestazione organizzata dalla LEN, la federazione che sovrintende gli sport acquatici in Europa.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251204010000 +0000" stop="20251204023000 +0000">
+    <title>Stecca NBC 2a prova S.Vincent: 45 Grand Prix Goriziana</title>
+    <desc>Stecca NBC 2a prova S.Vincent: 45 Grand Prix Goriziana.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251204023000 +0000" stop="20251204040000 +0000">
+    <title>Memory</title>
+    <sub-title>Deborah Compagnoni</sub-title>
+    <desc>Riviviamo insieme le gesta dei grandi campioni che hanno reso indimenticabili grandi momenti di sport.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251204040000 +0000" stop="20251204050000 +0000">
+    <title>SuperLega Credem Banca</title>
+    <sub-title>Monza-Civitanova - 9a g.ta</sub-title>
+    <desc>Le partite di SuperLega Credem Banca. 13 squadre della serie A1.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251204050000 +0000" stop="20251204053000 +0000">
+    <title>SuperLega Credem Banca</title>
+    <sub-title>Monza-Civitanova - 9a g.ta</sub-title>
+    <desc>Le partite di SuperLega Credem Banca. 13 squadre della serie A1.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251228050000 +0000" stop="20251228060000 +0000">
+    <title>C.to Italiani Assoluti</title>
+    <desc>C.to Italiani Assoluti.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251228060000 +0000" stop="20251228063000 +0000">
+    <title>TG Sport Mattina</title>
+    <desc>Lappuntamento con linformazione sportiva: le news, le immagini e tutte le curiosità sul mondo dello sport.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251228063000 +0000" stop="20251228091000 +0000">
+    <title>Campionato Italiano Femminile Serie A1</title>
+    <sub-title>Milano-Conegliano - 17a g.ta</sub-title>
+    <desc>Seguiamo gli avvincenti match del campionato femminile di pallavolo di Serie A1.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251228091000 +0000" stop="20251228103000 +0000">
+    <title>Coppa del Mondo</title>
+    <sub-title>Gavere: Elite Donne</sub-title>
+    <desc>12 tappe di Coppa del Mondo da novembre 2025 a febbraio 2026: da Tabor a Hoogerheide. Spicca lappuntamento italiano del 7 dicembre a Cabras in Sardegna.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251228103000 +0000" stop="20251228120000 +0000">
+    <title>Coppa del Mondo</title>
+    <sub-title>Gavere: Elite Uomini</sub-title>
+    <desc>12 tappe di Coppa del Mondo da novembre 2025 a febbraio 2026: da Tabor a Hoogerheide. Spicca lappuntamento italiano del 7 dicembre a Cabras in Sardegna.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251228120000 +0000" stop="20251228130000 +0000">
+    <title>Coppa del Mondo</title>
+    <sub-title>Secret Garden: Aerials a Squadre</sub-title>
+    <desc>La Coppa del Mondo di freestyle si preannuncia più spettacolare che mai: viviamola insieme dai campi di gara più belli e impegnativi.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251228130000 +0000" stop="20251228142500 +0000">
+    <title>Coppa del Mondo</title>
+    <sub-title>Semmering: Slalom femminile - 1a manche</sub-title>
+    <desc>Lo sci alpino torna protagonista con la 60ª Coppa del Mondo FIS: da Solden a Lillehammer, oltre 30 tappe di pura adrenalina alla conquista delle Sfere di Cristallo.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251228142500 +0000" stop="20251228150500 +0000">
+    <title>Memory</title>
+    <sub-title>Nestor Gomez</sub-title>
+    <desc>Riviviamo insieme le gesta dei grandi campioni che hanno reso indimenticabili grandi momenti di sport.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251228150500 +0000" stop="20251228163000 +0000">
+    <title>Coppa del Mondo</title>
+    <sub-title>Dobbiaco: Sprint - t. Libera</sub-title>
+    <desc>Dalla tradizionale apertura in Finlandia al gran finale negli Stati Uniti, passando per le tappe di capodanno in Val Pusteria e Val di Fiemme, i migliori fondisti si sfidano per la Coppa del Mondo.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251228163000 +0000" stop="20251228175500 +0000">
+    <title>Coppa del Mondo</title>
+    <sub-title>Semmering: Slalom femminile - 2a manche</sub-title>
+    <desc>Lo sci alpino torna protagonista con la 60ª Coppa del Mondo FIS: da Solden a Lillehammer, oltre 30 tappe di pura adrenalina alla conquista delle Sfere di Cristallo.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251228175500 +0000" stop="20251228190000 +0000">
+    <title>Serie A2</title>
+    <sub-title>19a giornata</sub-title>
+    <desc>La Serie A2 è il secondo livello del campionato italiano di pallacanestro, ed è il massimo livello dilettantistico. In passato il campionato è stato di livello professionistico dal 1994 al 2001.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251228190000 +0000" stop="20251228202000 +0000">
+    <title>Coppa del Mondo</title>
+    <sub-title>Dendermonde: Elite Donne</sub-title>
+    <desc>12 tappe di Coppa del Mondo da novembre 2025 a febbraio 2026: da Tabor a Hoogerheide. Spicca lappuntamento italiano del 7 dicembre a Cabras in Sardegna.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251228202000 +0000" stop="20251228215000 +0000">
+    <title>Coppa del Mondo</title>
+    <sub-title>Dendermonde: Elite Uomini</sub-title>
+    <desc>12 tappe di Coppa del Mondo da novembre 2025 a febbraio 2026: da Tabor a Hoogerheide. Spicca lappuntamento italiano del 7 dicembre a Cabras in Sardegna.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251228215000 +0000" stop="20251228222000 +0000">
+    <title>Sognando Milano Cortina 2026. Sulle spalle dei giganti</title>
+    <desc>Sei grandi atleti italiani in gara ai prossimi Giochi Olimpici Invernali ci portano dentro unesperienza eccezionale.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251228222000 +0000" stop="20251228234500 +0000">
+    <title>Coppa del Mondo</title>
+    <sub-title>Dobbiaco: Sprint - t. Libera</sub-title>
+    <desc>Dalla tradizionale apertura in Finlandia al gran finale negli Stati Uniti, passando per le tappe di capodanno in Val Pusteria e Val di Fiemme, i migliori fondisti si sfidano per la Coppa del Mondo.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251228234500 +0000" stop="20251229001000 +0000">
+    <title>Memory</title>
+    <sub-title>Deborah Compagnoni</sub-title>
+    <desc>Riviviamo insieme le gesta dei grandi campioni che hanno reso indimenticabili grandi momenti di sport.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251229001000 +0000" stop="20251229012500 +0000">
+    <title>Coppa del Mondo</title>
+    <sub-title>Semmering: Slalom femminile - 1a manche</sub-title>
+    <desc>Lo sci alpino torna protagonista con la 60ª Coppa del Mondo FIS: da Solden a Lillehammer, oltre 30 tappe di pura adrenalina alla conquista delle Sfere di Cristallo.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251229012500 +0000" stop="20251229023500 +0000">
+    <title>Coppa del Mondo</title>
+    <sub-title>Val dIsere: Slalom Gigante maschile - 2a manche</sub-title>
+    <desc>Lo sci alpino torna protagonista con la 60ª Coppa del Mondo FIS: da Solden a Lillehammer, oltre 30 tappe di pura adrenalina alla conquista delle Sfere di Cristallo.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251229023500 +0000" stop="20251229033500 +0000">
+    <title>C.to Italiani Assoluti</title>
+    <desc>C.to Italiani Assoluti.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251229033500 +0000" stop="20251229050000 +0000">
+    <title>Coppa del Mondo</title>
+    <sub-title>Dobbiaco: Sprint - t. Libera</sub-title>
+    <desc>Dalla tradizionale apertura in Finlandia al gran finale negli Stati Uniti, passando per le tappe di capodanno in Val Pusteria e Val di Fiemme, i migliori fondisti si sfidano per la Coppa del Mondo.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251229050000 +0000" stop="20251229060000 +0000">
+    <title>Coppa del Mondo</title>
+    <sub-title>Secret Garden: Aerials a Squadre</sub-title>
+    <desc>La Coppa del Mondo di freestyle si preannuncia più spettacolare che mai: viviamola insieme dai campi di gara più belli e impegnativi.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251231010500 +0000" stop="20251231013000 +0000">
+    <title>Memory - Rai Sport</title>
+    <sub-title>Rai Sport</sub-title>
+    <desc>Memory: Deborah Compagnoni</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251231013000 +0000" stop="20251231040000 +0000">
+    <title>Pallavolo: Serie A Maschile 2025</title>
+    <sub-title>Stag. 2025 - Quarti: Perugia - Civitanova</sub-title>
+    <desc>St2025 Quarti: Perugia - Civitanova - I Block Devils di Perugia affrontano tra le mura di casa i cucinieri della Lube in una sfida dentro-fuori che vale laccesso alle Final Four di Bologna.</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251231040000 +0000" stop="20251231050000 +0000">
+    <title>Judo</title>
+    <sub-title>Judo 2025</sub-title>
+    <desc>St2025 Campionati Italiani individuali - Campionati Italiani individuali</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251231050000 +0000" stop="20251231053000 +0000">
+    <title>Combinata Nordica</title>
+    <desc>Combinata Nordica. Coppa del Mondo Ramsau - gara 1</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251231050000 +0000" stop="20251231053000 +0000">
+    <title>Combinata Nordica. Coppa del Mondo Ramsau - gara 1</title>
+    <desc>gara...</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251231053000 +0000" stop="20251231060000 +0000">
+    <title>Combinata Nordica</title>
+    <desc>Combinata Nordica. Coppa del Mondo Ramsau - gara 2</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251231053000 +0000" stop="20251231060000 +0000">
+    <title>Combinata Nordica. Coppa del Mondo Ramsau - gara 2</title>
+    <desc>gara...</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251231060000 +0000" stop="20251231063000 +0000">
+    <title>Tg Sport</title>
+    <desc>TG Sport Mattina</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251231060000 +0000" stop="20251231063000 +0000">
+    <title>TG Sport Mattina</title>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251231063000 +0000" stop="20251231075000 +0000">
+    <title>Ciclocross</title>
+    <desc>Ciclocross. Coppa del Mondo Dendermonde: Elite Donne</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251231063000 +0000" stop="20251231075000 +0000">
+    <title>Ciclocross. Coppa del Mondo Dendermonde: Elite Donne</title>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251231075000 +0000" stop="20251231091500 +0000">
+    <title>Ciclocross</title>
+    <desc>Ciclocross. Coppa del Mondo Dendermonde: Elite Uomini</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251231075000 +0000" stop="20251231091500 +0000">
+    <title>Ciclocross. Coppa del Mondo Dendermonde: Elite Uomini</title>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251231091500 +0000" stop="20251231102500 +0000">
+    <title>Pallanuoto</title>
+    <desc>Intrattenimento</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251231102500 +0000" stop="20251231114500 +0000">
+    <title>Sci di Fondo</title>
+    <desc>Sci di Fondo. Coppa del Mondo Dobbiaco: Mass Start maschile</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251231102500 +0000" stop="20251231114500 +0000">
+    <title>Sci di Fondo. Coppa del Mondo Dobbiaco: Mass Start maschile</title>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251231114500 +0000" stop="20251231130000 +0000">
+    <title>Atletica</title>
+    <desc>Atletica. BOclassic Bolzano</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251231114500 +0000" stop="20251231130000 +0000">
+    <title>Atletica. BOclassic Bolzano</title>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251231130000 +0000" stop="20251231132500 +0000">
+    <title>Memory - Rai Sport</title>
+    <sub-title>Rai Sport</sub-title>
+    <desc>Memory: Deborah Compagnoni</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251231130000 +0000" stop="20251231132500 +0000">
+    <title>Memory: Deborah Compagnoni</title>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251231132500 +0000" stop="20251231150000 +0000">
+    <title>Sci di Fondo</title>
+    <desc>Sci di Fondo. Coppa del Mondo Dobbiaco: Mass Start femminile</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251231132500 +0000" stop="20251231150000 +0000">
+    <title>Sci di Fondo. Coppa del Mondo Dobbiaco: Mass Start femminile</title>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251231150000 +0000" stop="20251231180000 +0000">
+    <title>Tennis ATP Finals: Musetti-De Minaur</title>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251231150000 +0000" stop="20251231180000 +0000">
+    <title>Tennis: Nitto ATP Finals</title>
+    <desc>Tennis ATP Finals: Musetti-De Minaur</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251231180000 +0000" stop="20251231184500 +0000">
+    <title>Sollevamento Pesi</title>
+    <desc>Sollevamento Pesi. C.ti Italiani Roma</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251231180000 +0000" stop="20251231184500 +0000">
+    <title>Sollevamento Pesi. C.ti Italiani Roma</title>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251231184500 +0000" stop="20251231200000 +0000">
+    <title>Sci di Fondo</title>
+    <desc>Sci di Fondo. Coppa del Mondo Dobbiaco: Mass Start maschile</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251231184500 +0000" stop="20251231200000 +0000">
+    <title>Sci di Fondo. Coppa del Mondo Dobbiaco: Mass Start maschile</title>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251231200000 +0000" stop="20251231211500 +0000">
+    <title>Atletica</title>
+    <desc>Atletica. BOclassic</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251231200000 +0000" stop="20251231211500 +0000">
+    <title>Atletica. BOclassic</title>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251231211500 +0000" stop="20251231214500 +0000">
+    <title>Combinata Nordica</title>
+    <desc>Combinata Nordica. Coppa del Mondo Ramsau - gara 1</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251231211500 +0000" stop="20251231214500 +0000">
+    <title>Combinata Nordica. Coppa del Mondo Ramsau - gara 1</title>
+    <desc>gara...</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251231214500 +0000" stop="20251231221500 +0000">
+    <title>Combinata Nordica</title>
+    <desc>Combinata Nordica. Coppa del Mondo Ramsau - gara 2</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251231214500 +0000" stop="20251231221500 +0000">
+    <title>Combinata Nordica. Coppa del Mondo Ramsau - gara 2</title>
+    <desc>gara...</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251231221500 +0000" stop="20251231224500 +0000">
+    <title>Sognando Milano Cortina</title>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251231221500 +0000" stop="20251231224500 +0000">
+    <title>Sognando Milano Cortina 2026. Sulle spalle dei giganti</title>
+    <sub-title>Sognando Milano Cortina 2026. Sulle s...</sub-title>
+    <desc>Sara Conti e Niccolo Macii, Giuseppe Romele, Martina Valcepina, Martina Vozza, Nicolaj Memola sono gli Ambassador Allianz che ci portano dentro unesperienza eccezionale, che parte da un racconto...</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251231224500 +0000" stop="20260101001500 +0000">
+    <title>Sci di Fondo</title>
+    <desc>Sci di Fondo. Coppa del Mondo Dobbiaco: Mass Start femminile</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20251231224500 +0000" stop="20260101001500 +0000">
+    <title>Sci di Fondo. Coppa del Mondo Dobbiaco: Mass Start femminile</title>
+  </programme>
+  <programme channel="RAI Sport.it" start="20260101001500 +0000" stop="20260101022000 +0000">
+    <title>Salto con gli Sci</title>
+    <desc>Salto con gli Sci. Coppa del Mondo Oberstdorf</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20260101001500 +0000" stop="20260101022000 +0000">
+    <title>Salto con gli Sci. Coppa del Mondo Oberstdorf "4 Trampolini"</title>
+  </programme>
+  <programme channel="RAI Sport.it" start="20260101022000 +0000" stop="20260101033500 +0000">
+    <title>Ciclocross</title>
+    <desc>Ciclocross. Coppa del Mondo Dendermonde: Elite Donne</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20260101022000 +0000" stop="20260101033500 +0000">
+    <title>Ciclocross. Coppa del Mondo Dendermonde: Elite Donne</title>
+  </programme>
+  <programme channel="RAI Sport.it" start="20260101033500 +0000" stop="20260101050000 +0000">
+    <title>Ciclocross</title>
+    <desc>Ciclocross. Coppa del Mondo Dendermonde: Elite Uomini</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20260101033500 +0000" stop="20260101050000 +0000">
+    <title>Ciclocross. Coppa del Mondo Dendermonde: Elite Uomini</title>
+  </programme>
+  <programme channel="RAI Sport.it" start="20260101050000 +0000" stop="20260101070000 +0000">
+    <title>Mondiali di Pallavolo femminile</title>
+    <desc>Pallavolo. Mondiali Femminili: Quarto di Finale Italia-Polonia</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20260101050000 +0000" stop="20260101070000 +0000">
+    <title>Pallavolo. Mondiali Femminili: Quarto di Finale Italia-Polonia</title>
+  </programme>
+  <programme channel="RAI Sport.it" start="20260101070000 +0000" stop="20260101092500 +0000">
+    <title>Mondiali di Pallavolo femminile</title>
+    <desc>Pallavolo. Mondiali Femminili: Seminale Italia-Brasile</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20260101070000 +0000" stop="20260101092500 +0000">
+    <title>Pallavolo. Mondiali Femminili: Seminale Italia-Brasile</title>
+  </programme>
+  <programme channel="RAI Sport.it" start="20260101092500 +0000" stop="20260101103000 +0000">
+    <title>Sci di Fondo</title>
+    <desc>Sci di Fondo. Coppa del Mondo Dobbiaco Tour de Ski: 20 km Inseguimento masch. - t. Classica</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20260101092500 +0000" stop="20260101103000 +0000">
+    <title>Sci di Fondo. Coppa del Mondo Dobbiaco Tour de Ski: 20 km Inseguimento masch. - t. Classica</title>
+  </programme>
+  <programme channel="RAI Sport.it" start="20260101103000 +0000" stop="20260101112500 +0000">
+    <title>Arti Marziali. Judo C.ti Italiani individuali</title>
+  </programme>
+  <programme channel="RAI Sport.it" start="20260101103000 +0000" stop="20260101112500 +0000">
+    <title>Judo</title>
+    <desc>Arti Marziali. Judo C.ti Italiani individuali</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20260101112500 +0000" stop="20260101124000 +0000">
+    <title>Sci di Fondo</title>
+    <desc>Sci di Fondo. Coppa del Mondo Dobbiaco Tour de Ski: 20 km Inseguimento femm. - t. Classica</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20260101112500 +0000" stop="20260101124000 +0000">
+    <title>Sci di Fondo. Coppa del Mondo Dobbiaco Tour de Ski: 20 km Inseguimento femm. - t. Classica</title>
+  </programme>
+  <programme channel="RAI Sport.it" start="20260101124000 +0000" stop="20260101125500 +0000">
+    <title>Perle di Sport</title>
+    <desc>Intrattenimento</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20260101125500 +0000" stop="20260101150000 +0000">
+    <title>Salto con gli Sci</title>
+    <desc>Salto con gli Sci. Coppa del Mondo Garmisch</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20260101125500 +0000" stop="20260101150000 +0000">
+    <title>Salto con gli Sci. Coppa del Mondo Garmisch "4 Trampolini"</title>
+  </programme>
+  <programme channel="RAI Sport.it" start="20260101150000 +0000" stop="20260101163500 +0000">
+    <title>Tennis ATP Finals: Musetti-Alcaraz</title>
+  </programme>
+  <programme channel="RAI Sport.it" start="20260101150000 +0000" stop="20260101163500 +0000">
+    <title>Tennis: Nitto ATP Finals</title>
+    <desc>Tennis ATP Finals: Musetti-Alcaraz</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20260101163500 +0000" stop="20260101191000 +0000">
+    <title>Pallavolo. Coppa Italia Del Monte SuperLega: Quarto di Finale Perugia-Civitanova</title>
+  </programme>
+  <programme channel="RAI Sport.it" start="20260101163500 +0000" stop="20260101191000 +0000">
+    <title>Pallavolo: Serie A Maschile</title>
+    <desc>Pallavolo. Coppa Italia Del Monte SuperLega: Quarto di Finale Perugia-Civitanova</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20260101191000 +0000" stop="20260101201500 +0000">
+    <title>Sci di Fondo</title>
+    <desc>Sci di Fondo. Coppa del Mondo Dobbiaco Tour de Ski: 20 km Inseguimento masch. - t. Classica</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20260101191000 +0000" stop="20260101201500 +0000">
+    <title>Sci di Fondo. Coppa del Mondo Dobbiaco Tour de Ski: 20 km Inseguimento masch. - t. Classica</title>
+  </programme>
+  <programme channel="RAI Sport.it" start="20260101201500 +0000" stop="20260101213000 +0000">
+    <title>Sci di Fondo</title>
+    <desc>Sci di Fondo. Coppa del Mondo Dobbiaco Tour de Ski: 20 km Inseguimento femm. - t. Classica</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20260101201500 +0000" stop="20260101213000 +0000">
+    <title>Sci di Fondo. Coppa del Mondo Dobbiaco Tour de Ski: 20 km Inseguimento femm. - t. Classica</title>
+  </programme>
+  <programme channel="RAI Sport.it" start="20260101213000 +0000" stop="20260101221500 +0000">
+    <title>Memory - Rai Sport</title>
+    <sub-title>Rai Sport</sub-title>
+    <desc>Memory: Nestor Gomez</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20260101213000 +0000" stop="20260101221500 +0000">
+    <title>Memory: Nestor Gomez</title>
+  </programme>
+  <programme channel="RAI Sport.it" start="20260101221500 +0000" stop="20260101224500 +0000">
+    <title>Sognando Milano Cortina</title>
+  </programme>
+  <programme channel="RAI Sport.it" start="20260101221500 +0000" stop="20260101224500 +0000">
+    <title>Sognando Milano Cortina 2026. Sulle spalle dei giganti</title>
+    <sub-title>Sognando Milano Cortina 2026. Sulle s...</sub-title>
+    <desc>Sara Conti e Niccolo Macii, Giuseppe Romele, Martina Valcepina, Martina Vozza, Nicolaj Memola sono gli Ambassador Allianz che ci portano dentro unesperienza eccezionale, che parte da un racconto...</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20260101224500 +0000" stop="20260102005000 +0000">
+    <title>Salto con gli Sci</title>
+    <desc>Salto con gli Sci. Coppa del Mondo Garmisch</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20260101224500 +0000" stop="20260102005000 +0000">
+    <title>Salto con gli Sci. Coppa del Mondo Garmisch "4 Trampolini"</title>
+  </programme>
+  <programme channel="RAI Sport.it" start="20260102005000 +0000" stop="20260102025500 +0000">
+    <title>Basket: Serie A2 Old Wild West</title>
+    <desc>Pallacanestro. Serie A2 Old Wild West: 19a giornata</desc>
+  </programme>
+  <programme channel="RAI Sport.it" start="20260102005000 +0000" stop="20260102025500 +0000">
+    <title>Pallacanestro. Serie A2 Old Wild West: 19a giornata</title>
   </programme>
   <programme channel="Rai Storia.it" start="20251203050000 +0000" stop="20251203053500 +0000">
     <title>Passato e Presente</title>

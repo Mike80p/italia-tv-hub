@@ -1,22 +1,22 @@
 {
   "project": "Italia TV Hub",
   "version": "0.8.0",
-  "generated_at": "2026-07-24T19:49:44.298631+00:00",
+  "generated_at": "2026-07-25T03:42:02.185354+00:00",
   "enabled": true,
   "status": "generated",
   "sources_total": 5,
   "sources_successful": 5,
   "sources_failed": 0,
-  "channels_matched": 24,
+  "channels_matched": 25,
   "channels_unmatched": 334,
   "channels_ambiguous": 30,
-  "programmes": 3135,
-  "coverage_percent": 6.19,
-  "metadata_updated": 24,
+  "programmes": 3250,
+  "coverage_percent": 6.43,
+  "metadata_updated": 25,
   "channels_without_programmes": 2,
   "programme_duplicates_removed": 1546,
   "file_exists": true,
-  "file_bytes": 891149,
+  "file_bytes": 921271,
   "output_file": "output/epg.xml",
   "report_file": "output/epg-report.json",
   "public_url": "https://raw.githubusercontent.com/Mike80p/italia-tv-hub/main/output/epg.xml",
@@ -31,14 +31,14 @@
         "content_type": "application/octet-stream",
         "compressed": true,
         "attempt_count": 1,
-        "total_elapsed_ms": 274,
+        "total_elapsed_ms": 252,
         "bytes_downloaded": 270388,
         "http_status": 200,
         "attempts": [
           {
             "attempt_number": 1,
             "status": "ok",
-            "elapsed_ms": 274,
+            "elapsed_ms": 252,
             "bytes_read": 270388,
             "http_status": 200,
             "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz",
@@ -73,14 +73,14 @@
         "content_type": "application/octet-stream",
         "compressed": true,
         "attempt_count": 1,
-        "total_elapsed_ms": 593,
+        "total_elapsed_ms": 507,
         "bytes_downloaded": 133294,
         "http_status": 200,
         "attempts": [
           {
             "attempt_number": 1,
             "status": "ok",
-            "elapsed_ms": 593,
+            "elapsed_ms": 507,
             "bytes_read": 133294,
             "http_status": 200,
             "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy2.xml.gz",
@@ -115,14 +115,14 @@
         "content_type": "application/octet-stream",
         "compressed": true,
         "attempt_count": 1,
-        "total_elapsed_ms": 598,
+        "total_elapsed_ms": 332,
         "bytes_downloaded": 232842,
         "http_status": 200,
         "attempts": [
           {
             "attempt_number": 1,
             "status": "ok",
-            "elapsed_ms": 598,
+            "elapsed_ms": 332,
             "bytes_read": 232842,
             "http_status": 200,
             "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy3.xml.gz",
@@ -157,14 +157,14 @@
         "content_type": "application/octet-stream",
         "compressed": true,
         "attempt_count": 1,
-        "total_elapsed_ms": 220,
+        "total_elapsed_ms": 215,
         "bytes_downloaded": 148556,
         "http_status": 200,
         "attempts": [
           {
             "attempt_number": 1,
             "status": "ok",
-            "elapsed_ms": 220,
+            "elapsed_ms": 215,
             "bytes_read": 148556,
             "http_status": 200,
             "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy4.xml.gz",
@@ -199,14 +199,14 @@
         "content_type": "application/octet-stream",
         "compressed": true,
         "attempt_count": 1,
-        "total_elapsed_ms": 176,
+        "total_elapsed_ms": 256,
         "bytes_downloaded": 146194,
         "http_status": 200,
         "attempts": [
           {
             "attempt_number": 1,
             "status": "ok",
-            "elapsed_ms": 176,
+            "elapsed_ms": 256,
             "bytes_read": 146194,
             "http_status": 200,
             "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy5.xml.gz",
@@ -240,28 +240,28 @@
       "input_programmes": 19583,
       "merged_epg_channels": 214,
       "merged_programmes": 18037,
-      "playlist_channels": 388,
-      "matched_playlist_channels": 24,
+      "playlist_channels": 389,
+      "matched_playlist_channels": 25,
       "unmatched_playlist_channels": 334,
       "ambiguous_playlist_channels": 30,
-      "output_channels": 22,
-      "output_programmes": 3135,
+      "output_channels": 23,
+      "output_programmes": 3250,
       "programme_duplicates_removed": 1546,
       "channels_without_programmes": 2,
-      "coverage_percent": 6.19
+      "coverage_percent": 6.43
     },
     "matching": {
       "stats": {
-        "playlist_channels": 388,
+        "playlist_channels": 389,
         "epg_channels": 214,
-        "matched": 24,
+        "matched": 25,
         "unmatched": 334,
         "ambiguous": 30,
-        "matched_by_tvg_id": 19,
+        "matched_by_tvg_id": 20,
         "matched_by_name": 0,
         "matched_by_alias": 0,
         "matched_by_similarity": 5,
-        "coverage_percent": 6.19
+        "coverage_percent": 6.43
       },
       "matches": [
         {
@@ -557,6 +557,27 @@
           "method": "normalized_tvg_id",
           "playlist_key": "horsetvit",
           "epg_key": "horsetvit"
+        },
+        {
+          "playlist_channel": {
+            "name": "Rai Sport",
+            "tvg_id": "RAI Sport.it",
+            "tvg_name": "RAI Sport.it",
+            "stream_url": "http://zpkcjms4.zyntras.top/iptv/BL5QFD5266596A/19106/index.m3u8",
+            "source_id": "italy_public"
+          },
+          "epg_channel": {
+            "channel_id": "RAI Sport.it",
+            "display_names": [
+              "RAI Sport.it"
+            ],
+            "icon_url": "",
+            "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz"
+          },
+          "score": 97.0,
+          "method": "normalized_tvg_id",
+          "playlist_key": "raisportit",
+          "epg_key": "raisportit"
         },
         {
           "playlist_channel": {
@@ -4923,6 +4944,7 @@
       "Rai News 24.it",
       "Rai Premium.it",
       "Rai Scuola.it",
+      "RAI Sport.it",
       "Rai Storia.it",
       "Rai Yoyo.it",
       "San Marino RTV.it",
