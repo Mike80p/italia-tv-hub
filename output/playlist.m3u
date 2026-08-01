@@ -544,6 +544,8 @@ http://151.0.207.99:1935/live/LAZIOTV12/playlist.m3u8
 http://77.68.40.210:8888/hls/cronache.m3u8
 #EXTINF:-1 tvg-id="65d7211d0d45610008ffcf92" tvg-name="LOL Just For Laughs" tvg-logo="https://images.pluto.tv/channels/65d7211d0d45610008ffcf92/colorLogoPNG_1758784569061.png" group-title="INTRATTENIMENTO" channel-id="65d7211d0d45610008ffcf92" tvg-chno="635",LOL Just For Laughs
 https://jmp2.uk/plu-65d7211d0d45610008ffcf92.m3u8
+#EXTINF:-1 tvg-id="LombardiaTV.it@SD" tvg-logo="https://i.imgur.com/frVhm9q.png" group-title="INTRATTENIMENTO",Lombardia TV
+https://5db313b643fd8.streamlock.net/lmbiatv/lmbiatv/playlist.m3u8
 #EXTINF:-1 tvg-id="LunaTV.it@SD" tvg-logo="" group-title="INTRATTENIMENTO",Luna TV
 https://5f22d76e220e1.streamlock.net/lunatv/lunatv/playlist.m3u8
 #EXTINF:-1 tvg-id="690cb9140d121b44ad925ac9" tvg-name="Mayday: Disastro Aereo" tvg-logo="https://images.pluto.tv/channels/690cb9140d121b44ad925ac9/colorLogoPNG_1762957819953.png" group-title="INTRATTENIMENTO" channel-id="690cb9140d121b44ad925ac9" tvg-chno="425",Mayday: Disastro Aereo
