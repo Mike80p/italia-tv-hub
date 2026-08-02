@@ -1,17 +1,17 @@
 {
   "project": "Italia TV Hub",
   "version": "0.8.0",
-  "generated_at": "2026-08-01T19:36:57.041753+00:00",
+  "generated_at": "2026-08-02T03:56:26.974870+00:00",
   "enabled": true,
   "status": "generated",
   "sources_total": 5,
   "sources_successful": 5,
   "sources_failed": 0,
   "channels_matched": 24,
-  "channels_unmatched": 338,
+  "channels_unmatched": 339,
   "channels_ambiguous": 30,
   "programmes": 3135,
-  "coverage_percent": 6.12,
+  "coverage_percent": 6.11,
   "metadata_updated": 24,
   "channels_without_programmes": 2,
   "programme_duplicates_removed": 1546,
@@ -31,14 +31,14 @@
         "content_type": "application/octet-stream",
         "compressed": true,
         "attempt_count": 1,
-        "total_elapsed_ms": 91,
+        "total_elapsed_ms": 185,
         "bytes_downloaded": 270388,
         "http_status": 200,
         "attempts": [
           {
             "attempt_number": 1,
             "status": "ok",
-            "elapsed_ms": 91,
+            "elapsed_ms": 185,
             "bytes_read": 270388,
             "http_status": 200,
             "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz",
@@ -73,14 +73,14 @@
         "content_type": "application/octet-stream",
         "compressed": true,
         "attempt_count": 1,
-        "total_elapsed_ms": 91,
+        "total_elapsed_ms": 330,
         "bytes_downloaded": 133294,
         "http_status": 200,
         "attempts": [
           {
             "attempt_number": 1,
             "status": "ok",
-            "elapsed_ms": 91,
+            "elapsed_ms": 330,
             "bytes_read": 133294,
             "http_status": 200,
             "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy2.xml.gz",
@@ -115,14 +115,14 @@
         "content_type": "application/octet-stream",
         "compressed": true,
         "attempt_count": 1,
-        "total_elapsed_ms": 90,
+        "total_elapsed_ms": 187,
         "bytes_downloaded": 232842,
         "http_status": 200,
         "attempts": [
           {
             "attempt_number": 1,
             "status": "ok",
-            "elapsed_ms": 90,
+            "elapsed_ms": 187,
             "bytes_read": 232842,
             "http_status": 200,
             "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy3.xml.gz",
@@ -157,14 +157,14 @@
         "content_type": "application/octet-stream",
         "compressed": true,
         "attempt_count": 1,
-        "total_elapsed_ms": 331,
+        "total_elapsed_ms": 176,
         "bytes_downloaded": 148556,
         "http_status": 200,
         "attempts": [
           {
             "attempt_number": 1,
             "status": "ok",
-            "elapsed_ms": 331,
+            "elapsed_ms": 176,
             "bytes_read": 148556,
             "http_status": 200,
             "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy4.xml.gz",
@@ -199,14 +199,14 @@
         "content_type": "application/octet-stream",
         "compressed": true,
         "attempt_count": 1,
-        "total_elapsed_ms": 104,
+        "total_elapsed_ms": 355,
         "bytes_downloaded": 146194,
         "http_status": 200,
         "attempts": [
           {
             "attempt_number": 1,
             "status": "ok",
-            "elapsed_ms": 104,
+            "elapsed_ms": 355,
             "bytes_read": 146194,
             "http_status": 200,
             "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy5.xml.gz",
@@ -240,28 +240,28 @@
       "input_programmes": 19583,
       "merged_epg_channels": 214,
       "merged_programmes": 18037,
-      "playlist_channels": 392,
+      "playlist_channels": 393,
       "matched_playlist_channels": 24,
-      "unmatched_playlist_channels": 338,
+      "unmatched_playlist_channels": 339,
       "ambiguous_playlist_channels": 30,
       "output_channels": 22,
       "output_programmes": 3135,
       "programme_duplicates_removed": 1546,
       "channels_without_programmes": 2,
-      "coverage_percent": 6.12
+      "coverage_percent": 6.11
     },
     "matching": {
       "stats": {
-        "playlist_channels": 392,
+        "playlist_channels": 393,
         "epg_channels": 214,
         "matched": 24,
-        "unmatched": 338,
+        "unmatched": 339,
         "ambiguous": 30,
         "matched_by_tvg_id": 19,
         "matched_by_name": 0,
         "matched_by_alias": 0,
         "matched_by_similarity": 5,
-        "coverage_percent": 6.12
+        "coverage_percent": 6.11
       },
       "matches": [
         {
@@ -1517,6 +1517,13 @@
           "tvg_id": "Rete8.it@SD",
           "tvg_name": "",
           "stream_url": "https://64b16f23efbee.streamlock.net/rete8/rete8/playlist.m3u8",
+          "source_id": "italy_public"
+        },
+        {
+          "name": "Romantica TV",
+          "tvg_id": "RomanticaTV.it@SD",
+          "tvg_name": "",
+          "stream_url": "https://stream10.xdevel.com/video0s977363-1901/stream/playlist_dvr.m3u8",
           "source_id": "italy_public"
         },
         {
