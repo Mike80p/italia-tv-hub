@@ -57,6 +57,9 @@
   <channel id="San Marino RTV.it">
     <display-name>San Marino RTV.it</display-name>
   </channel>
+  <channel id="Sky Sport F1.it">
+    <display-name>Sky Sport F1.it</display-name>
+  </channel>
   <channel id="Super!.it">
     <display-name>Super!.it</display-name>
   </channel>
@@ -11025,6 +11028,340 @@
   <programme channel="San Marino RTV.it" start="20260102003500 +0000" stop="20260102061500 +0000">
     <title>SMRTV Notte</title>
     <desc>Il meglio dei programmi della giornata</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20251231000000 +0000" stop="20251231010000 +0000">
+    <title>Motori Formula 1 - Ep. 10 - Motori F1 2025 Gp Cina Gara 23/03/2025</title>
+    <sub-title>Gara: GP Cina</sub-title>
+    <desc>Gara: GP Cina - Seconda gara del mondiale: dopo il dominio di Norris in Australia, riusciranno gli avversari a insidiare la supremazia McLaren? Telecronaca di Carlo Vanzini, Marc Gene e Roberto Chinchero.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20251231010000 +0000" stop="20251231012500 +0000">
+    <title>Highlights F1 Academy</title>
+    <sub-title>Arabia Saudita</sub-title>
+    <desc>Arabia Saudita - Riviviamo il weekend del campionato femminile a Jeddah: due gare molto divertenti con una grande protagonista, la ferrarista Maya Weug. Con Andrea Sillitti</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20251231012500 +0000" stop="20251231014000 +0000">
+    <title>MondiaLando</title>
+    <desc>MondiaLando</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20251231014000 +0000" stop="20251231015500 +0000">
+    <title>F2rnaroli - Leo Campione - Ep. 33 - F2rnaroli - Leo Campione 01/12/2025</title>
+    <sub-title>Leo Campione</sub-title>
+    <desc>F2rnaroli - Leo Campione (ITA 2025) (ITA 2025) (ITA 2025)</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20251231015500 +0000" stop="20251231030000 +0000">
+    <title>Motori F1 Race Anatomy - Stag. Motori Race Anatomy F1 2025 - Motori Race Anatomy F1 2025 Ep.25 Speciale Natale 2025 22/12/2025</title>
+    <sub-title>Speciale Natale</sub-title>
+    <desc>Speciale Natale - Lanalisi del Gran Premio disputato per commentare la gara insieme agli ospiti in studio. Riviviamo i brividi della corsa attraverso le immagini piu spettacolari e ascoltiamo i commenti a caldo dei protagonisti.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20251231030000 +0000" stop="20251231040000 +0000">
+    <title>Gara: GP Giappone</title>
+    <sub-title>GP Giappone: Gara</sub-title>
+    <desc>GP Giappone: Gara - Terza gara della stagione: dopo i successi di Norris in Australia e Piastri in Cina, chi trionfera sulla pista iconica di Suzuka? Telecronaca di Carlo Vanzini, Marc Gene e Roberto Chinchero.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20251231040000 +0000" stop="20251231050000 +0000">
+    <title>F.Race: GP Bahrain</title>
+    <sub-title>Bahrain: Feature Race</sub-title>
+    <desc>Bahrain: Feature Race - F.Race: GP Bahrain</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20251231050000 +0000" stop="20251231053000 +0000">
+    <title>Aldo e Massimo</title>
+    <desc>Aldo e Massimo - Dalle ricette dellingegner Aldo Costa, dal passato vincente in Ferrari e Mercedes, a quelle dello chef Massimo Bottura, grande appassionato di F1. Con Carlo Vanzini e Roberto Chinchero.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20251231053000 +0000" stop="20251231060000 +0000">
+    <title>Inside Kimi</title>
+    <desc>Carlo Vanzini e Roberto Chinchero in giro per Bologna con Andrea Kimi Antonelli, per scoprire tutti i segreti del giovane rookie a casa sua.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20251231060000 +0000" stop="20251231070000 +0000">
+    <title>Motori Formula 1 - Ep. 10 - Motori F1 2025 Gp Cina Gara 23/03/2025</title>
+    <sub-title>Gara: GP Cina</sub-title>
+    <desc>Gara: GP Cina - Seconda gara del mondiale: dopo il dominio di Norris in Australia, riusciranno gli avversari a insidiare la supremazia McLaren? Telecronaca di Carlo Vanzini, Marc Gene e Roberto Chinchero.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20251231070000 +0000" stop="20251231073000 +0000">
+    <title>Arabia Saudita</title>
+    <desc>Arabia Saudita</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20251231070000 +0000" stop="20251231073000 +0000">
+    <title>Highlights F1 Academy</title>
+    <sub-title>Arabia Saudita</sub-title>
+    <desc>Arabia Saudita - Riviviamo il weekend del campionato femminile a Jeddah: due gare molto divertenti con una grande protagonista, la ferrarista Maya Weug. Con Andrea Sillitti</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20251231073000 +0000" stop="20251231074500 +0000">
+    <title>MondiaLando</title>
+    <desc>MondiaLando</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20251231074500 +0000" stop="20251231080000 +0000">
+    <title>F2rnaroli - Leo Campione - Ep. 33 - F2rnaroli - Leo Campione 01/12/2025</title>
+    <sub-title>Leo Campione</sub-title>
+    <desc>F2rnaroli - Leo Campione (ITA 2025) (ITA 2025) (ITA 2025)</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20251231080000 +0000" stop="20251231090000 +0000">
+    <title>Motori F1 Race Anatomy - Stag. Motori Race Anatomy F1 2025 - Motori Race Anatomy F1 2025 Ep.25 Speciale Natale 2025 22/12/2025</title>
+    <sub-title>Speciale Natale</sub-title>
+    <desc>Speciale Natale - Lanalisi del Gran Premio disputato per commentare la gara insieme agli ospiti in studio. Riviviamo i brividi della corsa attraverso le immagini piu spettacolari e ascoltiamo i commenti a caldo dei protagonisti.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20251231090000 +0000" stop="20251231100000 +0000">
+    <title>Gara: GP Giappone</title>
+    <sub-title>GP Giappone: Gara</sub-title>
+    <desc>GP Giappone: Gara - Terza gara della stagione: dopo i successi di Norris in Australia e Piastri in Cina, chi trionfera sulla pista iconica di Suzuka? Telecronaca di Carlo Vanzini, Marc Gene e Roberto Chinchero.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20251231100000 +0000" stop="20251231105500 +0000">
+    <title>F.Race: GP Bahrain</title>
+    <sub-title>Bahrain: Feature Race</sub-title>
+    <desc>Bahrain: Feature Race - F.Race: GP Bahrain</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20251231105500 +0000" stop="20251231113000 +0000">
+    <title>Aldo e Massimo</title>
+    <desc>Aldo e Massimo - Dalle ricette dellingegner Aldo Costa, dal passato vincente in Ferrari e Mercedes, a quelle dello chef Massimo Bottura, grande appassionato di F1. Con Carlo Vanzini e Roberto Chinchero.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20251231113000 +0000" stop="20251231115500 +0000">
+    <title>Inside Kimi</title>
+    <desc>Carlo Vanzini e Roberto Chinchero in giro per Bologna con Andrea Kimi Antonelli, per scoprire tutti i segreti del giovane rookie a casa sua.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20251231115500 +0000" stop="20251231130000 +0000">
+    <title>Motori Formula 1 - Ep. 10 - Motori F1 2025 Gp Cina Gara 23/03/2025</title>
+    <sub-title>Gara: GP Cina</sub-title>
+    <desc>Gara: GP Cina - Seconda gara del mondiale: dopo il dominio di Norris in Australia, riusciranno gli avversari a insidiare la supremazia McLaren? Telecronaca di Carlo Vanzini, Marc Gene e Roberto Chinchero.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20251231130000 +0000" stop="20251231132500 +0000">
+    <title>Arabia Saudita</title>
+    <desc>Arabia Saudita</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20251231130000 +0000" stop="20251231132500 +0000">
+    <title>Highlights F1 Academy</title>
+    <sub-title>Arabia Saudita</sub-title>
+    <desc>Arabia Saudita - Riviviamo il weekend del campionato femminile a Jeddah: due gare molto divertenti con una grande protagonista, la ferrarista Maya Weug. Con Andrea Sillitti</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20251231132500 +0000" stop="20251231134500 +0000">
+    <title>MondiaLando</title>
+    <desc>MondiaLando</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20251231134500 +0000" stop="20251231140000 +0000">
+    <title>F2rnaroli - Leo Campione - Ep. 33 - F2rnaroli - Leo Campione 01/12/2025</title>
+    <sub-title>Leo Campione</sub-title>
+    <desc>F2rnaroli - Leo Campione (ITA 2025) (ITA 2025) (ITA 2025)</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20251231140000 +0000" stop="20251231145500 +0000">
+    <title>Motori F1 Race Anatomy - Stag. Motori Race Anatomy F1 2025 - Motori Race Anatomy F1 2025 Ep.25 Speciale Natale 2025 22/12/2025</title>
+    <sub-title>Speciale Natale</sub-title>
+    <desc>Speciale Natale - Lanalisi del Gran Premio disputato per commentare la gara insieme agli ospiti in studio. Riviviamo i brividi della corsa attraverso le immagini piu spettacolari e ascoltiamo i commenti a caldo dei protagonisti.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20251231145500 +0000" stop="20251231155500 +0000">
+    <title>Gara: GP Giappone</title>
+    <sub-title>GP Giappone: Gara</sub-title>
+    <desc>GP Giappone: Gara - Terza gara della stagione: dopo i successi di Norris in Australia e Piastri in Cina, chi trionfera sulla pista iconica di Suzuka? Telecronaca di Carlo Vanzini, Marc Gene e Roberto Chinchero.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20251231155500 +0000" stop="20251231170000 +0000">
+    <title>F.Race: GP Bahrain</title>
+    <sub-title>Bahrain: Feature Race</sub-title>
+    <desc>Bahrain: Feature Race - F.Race: GP Bahrain</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20251231170000 +0000" stop="20251231180000 +0000">
+    <title>Gara: GP Bahrain</title>
+    <sub-title>GP Bahrein: Gara</sub-title>
+    <desc>GP Bahrein: Gara - Tre vincitori diversi nei primi tre Gran Premi: chi trionfera nella quarta gara stagionale sul circuito di Sakhir? Telecronaca di Carlo Vanzini, Marc Gene e Roberto Chinchero.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20251231180000 +0000" stop="20251231181500 +0000">
+    <title>Rivoluzione 2026</title>
+    <desc>Prepariamoci al cambio piu radicale della storia della F1. Macchina, motore, carburante, gomme: sara tutto nuovo. Matteo Bobbi ci spiega limminente rivoluzione.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20251231181500 +0000" stop="20251231183000 +0000">
+    <title>In pista con Jannik</title>
+    <desc>In pista con Jannik - Tutta la passione di Jannik Sinner per la F1 nellintervista con Stefano Domenicali e nel giro in macchina con Kimi Antonelli</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20251231183000 +0000" stop="20251231190000 +0000">
+    <title>Luomo Contro La Macchina</title>
+    <desc>Max Verstappen nel 2025 ha perso il trono ma ha conquistato la definitiva consacrazione sfidando i piloti McLaren con un mezzo inferiore: riviviamo la sua stagione spettacolare.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20251231190000 +0000" stop="20251231200000 +0000">
+    <title>Motori F1 Race Anatomy - Stag. Motori Race Anatomy F1 2025 - Motori Race Anatomy F1 2025 Ep.25 Speciale Natale 2025 22/12/2025</title>
+    <desc>Stag. Motori Race Anatomy...</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20251231200000 +0000" stop="20251231210000 +0000">
+    <title>F.Race: GP Monaco</title>
+    <sub-title>GP Monaco: Feature Race</sub-title>
+    <desc>GP Monaco: Feature Race - F.Race: GP Monaco</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20251231210000 +0000" stop="20251231220000 +0000">
+    <title>Sprint: GP Miami</title>
+    <sub-title>GP Miami: Sprint Race</sub-title>
+    <desc>GP Miami: Sprint Race - Prima gara del weekend sulla distanza di 100km: chi conquistera gli 8 punti in palio per il vincitore? Telecronaca di Carlo Vanzini, Marc Gene e Roberto Chinchero.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20251231220000 +0000" stop="20251231230000 +0000">
+    <title>Gara: GP Miami</title>
+    <sub-title>GP Miami: Gara</sub-title>
+    <desc>GP Miami: Gara - In Florida sesta gara stagionale: finora 4 successi McLaren e 1 vittoria di Max Verstappen. Chi trionfera nella Magic City? Telecronaca di Carlo Vanzini, Marc Gene e Roberto Chinchero.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20251231230000 +0000" stop="20260101000000 +0000">
+    <title>Gara: GP Bahrain</title>
+    <sub-title>GP Bahrein: Gara</sub-title>
+    <desc>GP Bahrein: Gara - Tre vincitori diversi nei primi tre Gran Premi: chi trionfera nella quarta gara stagionale sul circuito di Sakhir? Telecronaca di Carlo Vanzini, Marc Gene e Roberto Chinchero.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20260101000000 +0000" stop="20260101001500 +0000">
+    <title>Rivoluzione 2026</title>
+    <desc>Prepariamoci al cambio piu radicale della storia della F1. Macchina, motore, carburante, gomme: sara tutto nuovo. Matteo Bobbi ci spiega limminente rivoluzione.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20260101001500 +0000" stop="20260101003000 +0000">
+    <title>In pista con Jannik</title>
+    <desc>In pista con Jannik - Tutta la passione di Jannik Sinner per la F1 nellintervista con Stefano Domenicali e nel giro in macchina con Kimi Antonelli</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20260101003000 +0000" stop="20260101010000 +0000">
+    <title>Luomo Contro La Macchina</title>
+    <desc>Max Verstappen nel 2025 ha perso il trono ma ha conquistato la definitiva consacrazione sfidando i piloti McLaren con un mezzo inferiore: riviviamo la sua stagione spettacolare.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20260101010000 +0000" stop="20260101020000 +0000">
+    <title>Motori F1 Race Anatomy - Stag. Motori Race Anatomy F1 2025 - Motori Race Anatomy F1 2025 Ep.25 Speciale Natale 2025 22/12/2025</title>
+    <sub-title>Speciale Natale</sub-title>
+    <desc>Speciale Natale - Lanalisi del Gran Premio disputato per commentare la gara insieme agli ospiti in studio. Riviviamo i brividi della corsa attraverso le immagini piu spettacolari e ascoltiamo i commenti a caldo dei protagonisti.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20260101020000 +0000" stop="20260101030000 +0000">
+    <title>F.Race: GP Monaco</title>
+    <sub-title>GP Monaco: Feature Race</sub-title>
+    <desc>GP Monaco: Feature Race - F.Race: GP Monaco</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20260101030000 +0000" stop="20260101040000 +0000">
+    <title>Sprint: GP Miami</title>
+    <sub-title>GP Miami: Sprint Race</sub-title>
+    <desc>GP Miami: Sprint Race - Prima gara del weekend sulla distanza di 100km: chi conquistera gli 8 punti in palio per il vincitore? Telecronaca di Carlo Vanzini, Marc Gene e Roberto Chinchero.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20260101040000 +0000" stop="20260101050000 +0000">
+    <title>Gara: GP Miami</title>
+    <sub-title>GP Miami: Gara</sub-title>
+    <desc>GP Miami: Gara - In Florida sesta gara stagionale: finora 4 successi McLaren e 1 vittoria di Max Verstappen. Chi trionfera nella Magic City? Telecronaca di Carlo Vanzini, Marc Gene e Roberto Chinchero.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20260101050000 +0000" stop="20260101060000 +0000">
+    <title>Gara: GP Bahrain</title>
+    <sub-title>GP Bahrein: Gara</sub-title>
+    <desc>GP Bahrein: Gara - Tre vincitori diversi nei primi tre Gran Premi: chi trionfera nella quarta gara stagionale sul circuito di Sakhir? Telecronaca di Carlo Vanzini, Marc Gene e Roberto Chinchero.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20260101060000 +0000" stop="20260101061500 +0000">
+    <title>Rivoluzione 2026</title>
+    <desc>Prepariamoci al cambio piu radicale della storia della F1. Macchina, motore, carburante, gomme: sara tutto nuovo. Matteo Bobbi ci spiega limminente rivoluzione.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20260101061500 +0000" stop="20260101063000 +0000">
+    <title>In pista con Jannik</title>
+    <desc>In pista con Jannik - Tutta la passione di Jannik Sinner per la F1 nellintervista con Stefano Domenicali e nel giro in macchina con Kimi Antonelli</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20260101063000 +0000" stop="20260101070000 +0000">
+    <title>Luomo Contro La Macchina</title>
+    <desc>Max Verstappen nel 2025 ha perso il trono ma ha conquistato la definitiva consacrazione sfidando i piloti McLaren con un mezzo inferiore: riviviamo la sua stagione spettacolare.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20260101070000 +0000" stop="20260101080000 +0000">
+    <title>Motori F1 Race Anatomy - Stag. Motori Race Anatomy F1 2025 - Motori Race Anatomy F1 2025 Ep.25 Speciale Natale 2025 22/12/2025</title>
+    <sub-title>Speciale Natale</sub-title>
+    <desc>Speciale Natale - Lanalisi del Gran Premio disputato per commentare la gara insieme agli ospiti in studio. Riviviamo i brividi della corsa attraverso le immagini piu spettacolari e ascoltiamo i commenti a caldo dei protagonisti.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20260101080000 +0000" stop="20260101090000 +0000">
+    <title>F.Race: GP Monaco</title>
+    <sub-title>GP Monaco: Feature Race</sub-title>
+    <desc>GP Monaco: Feature Race - F.Race: GP Monaco</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20260101090000 +0000" stop="20260101100000 +0000">
+    <title>Sprint: GP Miami</title>
+    <sub-title>GP Miami: Sprint Race</sub-title>
+    <desc>GP Miami: Sprint Race - Prima gara del weekend sulla distanza di 100km: chi conquistera gli 8 punti in palio per il vincitore? Telecronaca di Carlo Vanzini, Marc Gene e Roberto Chinchero.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20260101100000 +0000" stop="20260101110000 +0000">
+    <title>Gara: GP Miami</title>
+    <sub-title>GP Miami: Gara</sub-title>
+    <desc>GP Miami: Gara - In Florida sesta gara stagionale: finora 4 successi McLaren e 1 vittoria di Max Verstappen. Chi trionfera nella Magic City? Telecronaca di Carlo Vanzini, Marc Gene e Roberto Chinchero.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20260101110000 +0000" stop="20260101120000 +0000">
+    <title>Gara: GP Bahrain</title>
+    <sub-title>GP Bahrein: Gara</sub-title>
+    <desc>GP Bahrein: Gara - Tre vincitori diversi nei primi tre Gran Premi: chi trionfera nella quarta gara stagionale sul circuito di Sakhir? Telecronaca di Carlo Vanzini, Marc Gene e Roberto Chinchero.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20260101120000 +0000" stop="20260101121500 +0000">
+    <title>Rivoluzione 2026</title>
+    <desc>Prepariamoci al cambio piu radicale della storia della F1. Macchina, motore, carburante, gomme: sara tutto nuovo. Matteo Bobbi ci spiega limminente rivoluzione.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20260101121500 +0000" stop="20260101123000 +0000">
+    <title>In pista con Jannik</title>
+    <desc>In pista con Jannik - Tutta la passione di Jannik Sinner per la F1 nellintervista con Stefano Domenicali e nel giro in macchina con Kimi Antonelli</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20260101123000 +0000" stop="20260101130000 +0000">
+    <title>Luomo Contro La Macchina</title>
+    <desc>Max Verstappen nel 2025 ha perso il trono ma ha conquistato la definitiva consacrazione sfidando i piloti McLaren con un mezzo inferiore: riviviamo la sua stagione spettacolare.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20260101130000 +0000" stop="20260101140000 +0000">
+    <title>Motori F1 Race Anatomy - Stag. Motori Race Anatomy F1 2025 - Motori Race Anatomy F1 2025 Ep.25 Speciale Natale 2025 22/12/2025</title>
+    <sub-title>Speciale Natale</sub-title>
+    <desc>Speciale Natale - Lanalisi del Gran Premio disputato per commentare la gara insieme agli ospiti in studio. Riviviamo i brividi della corsa attraverso le immagini piu spettacolari e ascoltiamo i commenti a caldo dei protagonisti.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20260101140000 +0000" stop="20260101150000 +0000">
+    <title>F.Race: GP Monaco</title>
+    <sub-title>GP Monaco: Feature Race</sub-title>
+    <desc>GP Monaco: Feature Race - F.Race: GP Monaco</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20260101150000 +0000" stop="20260101160000 +0000">
+    <title>Sprint: GP Miami</title>
+    <sub-title>GP Miami: Sprint Race</sub-title>
+    <desc>GP Miami: Sprint Race - Prima gara del weekend sulla distanza di 100km: chi conquistera gli 8 punti in palio per il vincitore? Telecronaca di Carlo Vanzini, Marc Gene e Roberto Chinchero.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20260101160000 +0000" stop="20260101170000 +0000">
+    <title>Gara: GP Miami</title>
+    <sub-title>GP Miami: Gara</sub-title>
+    <desc>GP Miami: Gara - In Florida sesta gara stagionale: finora 4 successi McLaren e 1 vittoria di Max Verstappen. Chi trionfera nella Magic City? Telecronaca di Carlo Vanzini, Marc Gene e Roberto Chinchero.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20260101170000 +0000" stop="20260101171500 +0000">
+    <title>Il Caso Hamilton</title>
+    <desc>Il Caso Hamilton</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20260101175500 +0000" stop="20260101190000 +0000">
+    <title>Gara: GP del Made In Italy e dellEmilia Romagna</title>
+    <desc>Gara: GP del Made In Italy e dellEmilia Romagna - Primo appuntamento europeo della stagione sul circuito di Imola: la gara di casa per Kimi Antonelli e per la Ferrari. Telecronaca di Carlo Vanzini, Marc Gene e Roberto Chinchero.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20260101180000 +0000" stop="20260101190000 +0000">
+    <title>Gara: GP del Made In Italy e dellEmilia Romagna</title>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20260101190000 +0000" stop="20260101193000 +0000">
+    <title>Luomo Contro La Macchina</title>
+    <desc>Max Verstappen nel 2025 ha perso il trono ma ha conquistato la definitiva consacrazione sfidando i piloti McLaren con un mezzo inferiore: riviviamo la sua stagione spettacolare.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20260101203000 +0000" stop="20260101204500 +0000">
+    <title>F2rnaroli - Leo Campione - Ep. 33 - F2rnaroli - Leo Campione 01/12/2025</title>
+    <sub-title>Leo Campione</sub-title>
+    <desc>F2rnaroli - Leo Campione (ITA 2025) (ITA 2025) (ITA 2025)</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20260101204500 +0000" stop="20260101210000 +0000">
+    <title>MondiaLando</title>
+    <desc>MondiaLando</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20260101210000 +0000" stop="20260101220000 +0000">
+    <title>Austria: Feature Race</title>
+    <desc>Austria: Feature Race - From Red Bull Ring in Austria.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20260101220000 +0000" stop="20260101230000 +0000">
+    <title>Gara: GP Monaco</title>
+    <desc>Gara: GP Monaco - Il Gran Premio piu iconico del mondiale questanno presenta unincognita in piu: due soste ai box obbligatorie. Chi vincera la roulette? Telecronaca di Carlo Vanzini, Marc Gene e Roberto Chinchero.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20260101230000 +0000" stop="20260101231500 +0000">
+    <title>Il Caso Hamilton</title>
+    <desc>Il Caso Hamilton</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20260101235500 +0000" stop="20260102010000 +0000">
+    <title>Gara: GP del Made In Italy e dellEmilia Romagna</title>
+    <desc>Gara: GP del Made In Italy e dellEmilia Romagna - Primo appuntamento europeo della stagione sul circuito di Imola: la gara di casa per Kimi Antonelli e per la Ferrari. Telecronaca di Carlo Vanzini, Marc Gene e Roberto Chinchero.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20260102000000 +0000" stop="20260102010000 +0000">
+    <title>Gara: GP del Made In Italy e dellEmilia Romagna</title>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20260102010000 +0000" stop="20260102013000 +0000">
+    <title>Luomo Contro La Macchina</title>
+    <desc>Max Verstappen nel 2025 ha perso il trono ma ha conquistato la definitiva consacrazione sfidando i piloti McLaren con un mezzo inferiore: riviviamo la sua stagione spettacolare.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20260102013000 +0000" stop="20260102023000 +0000">
+    <title>Motori F1 Race Anatomy - Stag. Motori Race Anatomy F1 2025 - Motori Race Anatomy F1 2025 Ep.25 Speciale Natale 2025 22/12/2025</title>
+    <sub-title>Speciale Natale</sub-title>
+    <desc>Speciale Natale - Lanalisi del Gran Premio disputato per commentare la gara insieme agli ospiti in studio. Riviviamo i brividi della corsa attraverso le immagini piu spettacolari e ascoltiamo i commenti a caldo dei protagonisti.</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20260102023000 +0000" stop="20260102024500 +0000">
+    <title>F2rnaroli - Leo Campione - Ep. 33 - F2rnaroli - Leo Campione 01/12/2025</title>
+    <sub-title>Leo Campione</sub-title>
+    <desc>F2rnaroli - Leo Campione (ITA 2025) (ITA 2025) (ITA 2025)</desc>
+  </programme>
+  <programme channel="Sky Sport F1.it" start="20260102024500 +0000" stop="20260102030000 +0000">
+    <title>MondiaLando</title>
+    <desc>MondiaLando</desc>
   </programme>
   <programme channel="Super!.it" start="20251231000000 +0000" stop="20251231001100 +0000">
     <title>Boy, Girl, Dog, Cat, Mouse, Cheese</title>

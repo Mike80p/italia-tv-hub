@@ -1,22 +1,22 @@
 {
   "project": "Italia TV Hub",
   "version": "0.8.0",
-  "generated_at": "2026-08-03T20:01:11.628810+00:00",
+  "generated_at": "2026-08-04T03:41:49.714560+00:00",
   "enabled": true,
   "status": "generated",
   "sources_total": 5,
   "sources_successful": 5,
   "sources_failed": 0,
-  "channels_matched": 24,
+  "channels_matched": 25,
   "channels_unmatched": 339,
   "channels_ambiguous": 30,
-  "programmes": 3135,
-  "coverage_percent": 6.11,
-  "metadata_updated": 24,
+  "programmes": 3209,
+  "coverage_percent": 6.35,
+  "metadata_updated": 25,
   "channels_without_programmes": 2,
   "programme_duplicates_removed": 1546,
   "file_exists": true,
-  "file_bytes": 891149,
+  "file_bytes": 916839,
   "output_file": "output/epg.xml",
   "report_file": "output/epg-report.json",
   "public_url": "https://raw.githubusercontent.com/Mike80p/italia-tv-hub/main/output/epg.xml",
@@ -31,14 +31,14 @@
         "content_type": "application/octet-stream",
         "compressed": true,
         "attempt_count": 1,
-        "total_elapsed_ms": 236,
+        "total_elapsed_ms": 249,
         "bytes_downloaded": 270388,
         "http_status": 200,
         "attempts": [
           {
             "attempt_number": 1,
             "status": "ok",
-            "elapsed_ms": 236,
+            "elapsed_ms": 249,
             "bytes_read": 270388,
             "http_status": 200,
             "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz",
@@ -73,14 +73,14 @@
         "content_type": "application/octet-stream",
         "compressed": true,
         "attempt_count": 1,
-        "total_elapsed_ms": 227,
+        "total_elapsed_ms": 353,
         "bytes_downloaded": 133294,
         "http_status": 200,
         "attempts": [
           {
             "attempt_number": 1,
             "status": "ok",
-            "elapsed_ms": 227,
+            "elapsed_ms": 353,
             "bytes_read": 133294,
             "http_status": 200,
             "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy2.xml.gz",
@@ -115,14 +115,14 @@
         "content_type": "application/octet-stream",
         "compressed": true,
         "attempt_count": 1,
-        "total_elapsed_ms": 485,
+        "total_elapsed_ms": 201,
         "bytes_downloaded": 232842,
         "http_status": 200,
         "attempts": [
           {
             "attempt_number": 1,
             "status": "ok",
-            "elapsed_ms": 485,
+            "elapsed_ms": 201,
             "bytes_read": 232842,
             "http_status": 200,
             "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy3.xml.gz",
@@ -157,14 +157,14 @@
         "content_type": "application/octet-stream",
         "compressed": true,
         "attempt_count": 1,
-        "total_elapsed_ms": 449,
+        "total_elapsed_ms": 192,
         "bytes_downloaded": 148556,
         "http_status": 200,
         "attempts": [
           {
             "attempt_number": 1,
             "status": "ok",
-            "elapsed_ms": 449,
+            "elapsed_ms": 192,
             "bytes_read": 148556,
             "http_status": 200,
             "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy4.xml.gz",
@@ -199,14 +199,14 @@
         "content_type": "application/octet-stream",
         "compressed": true,
         "attempt_count": 1,
-        "total_elapsed_ms": 313,
+        "total_elapsed_ms": 188,
         "bytes_downloaded": 146194,
         "http_status": 200,
         "attempts": [
           {
             "attempt_number": 1,
             "status": "ok",
-            "elapsed_ms": 313,
+            "elapsed_ms": 188,
             "bytes_read": 146194,
             "http_status": 200,
             "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy5.xml.gz",
@@ -240,28 +240,28 @@
       "input_programmes": 19583,
       "merged_epg_channels": 214,
       "merged_programmes": 18037,
-      "playlist_channels": 393,
-      "matched_playlist_channels": 24,
+      "playlist_channels": 394,
+      "matched_playlist_channels": 25,
       "unmatched_playlist_channels": 339,
       "ambiguous_playlist_channels": 30,
-      "output_channels": 22,
-      "output_programmes": 3135,
+      "output_channels": 23,
+      "output_programmes": 3209,
       "programme_duplicates_removed": 1546,
       "channels_without_programmes": 2,
-      "coverage_percent": 6.11
+      "coverage_percent": 6.35
     },
     "matching": {
       "stats": {
-        "playlist_channels": 393,
+        "playlist_channels": 394,
         "epg_channels": 214,
-        "matched": 24,
+        "matched": 25,
         "unmatched": 339,
         "ambiguous": 30,
-        "matched_by_tvg_id": 19,
+        "matched_by_tvg_id": 20,
         "matched_by_name": 0,
         "matched_by_alias": 0,
         "matched_by_similarity": 5,
-        "coverage_percent": 6.11
+        "coverage_percent": 6.35
       },
       "matches": [
         {
@@ -557,6 +557,27 @@
           "method": "normalized_tvg_id",
           "playlist_key": "horsetvit",
           "epg_key": "horsetvit"
+        },
+        {
+          "playlist_channel": {
+            "name": "Sky Sport F1",
+            "tvg_id": "Sky Sport F1.it",
+            "tvg_name": "Sky Sport F1.it",
+            "stream_url": "https://7nyaler.streamhostingcdn.top/stream/8/index.m3u8",
+            "source_id": "italy_public"
+          },
+          "epg_channel": {
+            "channel_id": "Sky Sport F1.it",
+            "display_names": [
+              "Sky Sport F1.it"
+            ],
+            "icon_url": "",
+            "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz"
+          },
+          "score": 97.0,
+          "method": "normalized_tvg_id",
+          "playlist_key": "skysportf1it",
+          "epg_key": "skysportf1it"
         },
         {
           "playlist_channel": {
@@ -4961,6 +4982,7 @@
       "Rai Storia.it",
       "Rai Yoyo.it",
       "San Marino RTV.it",
+      "Sky Sport F1.it",
       "Super!.it",
       "TG NORBA 24.it",
       "VALUE 24 TV.it"
