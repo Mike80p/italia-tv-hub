@@ -770,7 +770,7 @@ https://59d7d6f47d7fc.streamlock.net/rs2/rs2/playlist.m3u8
 http://ts2000tv.streaming.nextware.it:8081/ts2000tv/ts2000tv/playlist.m3u8
 #EXTINF:-1 tvg-id="TeleVenezia.it@SD" tvg-logo="https://i.imgur.com/RG4o4Ni.png" group-title="ALTRO",TeleVenezia (576p)
 https://59d8c0cee6f3d.streamlock.net/televenezia/televenezia/playlist.m3u8
-#EXTINF:-1 tvg-id="69ef572280ef8232ceef596b" tvg-name="That's 60s" tvg-logo="https://images.pluto.tv/channels/69ef572280ef8232ceef596b/colorLogoPNG_1779270729947.png" group-title="ALTRO" channel-id="69ef572280ef8232ceef596b" tvg-chno="47",That's 60s
+#EXTINF:-1 tvg-id="69ef572280ef8232ceef596b" tvg-name="That's 60s" tvg-logo="https://images.pluto.tv/channels/69ef572280ef8232ceef596b/colorLogoPNG_1779270729947.png" group-title="ALTRO" channel-id="69ef572280ef8232ceef596b" tvg-chno="52",That's 60s
 https://jmp2.uk/plu-69ef572280ef8232ceef596b.m3u8
 #EXTINF:-1 tvg-id="62e8d5369e48940007fc1dc1" tvg-name="The Asylum" tvg-logo="https://images.pluto.tv/channels/62e8d5369e48940007fc1dc1/colorLogoPNG.png" group-title="ALTRO" channel-id="62e8d5369e48940007fc1dc1" tvg-chno="340",The Asylum
 https://jmp2.uk/plu-62e8d5369e48940007fc1dc1.m3u8
