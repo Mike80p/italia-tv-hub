@@ -1,17 +1,17 @@
 {
   "project": "Italia TV Hub",
   "version": "0.8.0",
-  "generated_at": "2026-08-08T02:24:04.392547+00:00",
+  "generated_at": "2026-08-08T07:18:09.816571+00:00",
   "enabled": true,
   "status": "generated",
   "sources_total": 5,
   "sources_successful": 5,
   "sources_failed": 0,
   "channels_matched": 25,
-  "channels_unmatched": 339,
+  "channels_unmatched": 340,
   "channels_ambiguous": 30,
   "programmes": 3209,
-  "coverage_percent": 6.35,
+  "coverage_percent": 6.33,
   "metadata_updated": 25,
   "channels_without_programmes": 2,
   "programme_duplicates_removed": 1546,
@@ -31,14 +31,14 @@
         "content_type": "application/octet-stream",
         "compressed": true,
         "attempt_count": 1,
-        "total_elapsed_ms": 188,
+        "total_elapsed_ms": 221,
         "bytes_downloaded": 270388,
         "http_status": 200,
         "attempts": [
           {
             "attempt_number": 1,
             "status": "ok",
-            "elapsed_ms": 188,
+            "elapsed_ms": 221,
             "bytes_read": 270388,
             "http_status": 200,
             "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz",
@@ -73,14 +73,14 @@
         "content_type": "application/octet-stream",
         "compressed": true,
         "attempt_count": 1,
-        "total_elapsed_ms": 164,
+        "total_elapsed_ms": 312,
         "bytes_downloaded": 133294,
         "http_status": 200,
         "attempts": [
           {
             "attempt_number": 1,
             "status": "ok",
-            "elapsed_ms": 164,
+            "elapsed_ms": 312,
             "bytes_read": 133294,
             "http_status": 200,
             "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy2.xml.gz",
@@ -115,14 +115,14 @@
         "content_type": "application/octet-stream",
         "compressed": true,
         "attempt_count": 1,
-        "total_elapsed_ms": 297,
+        "total_elapsed_ms": 335,
         "bytes_downloaded": 232842,
         "http_status": 200,
         "attempts": [
           {
             "attempt_number": 1,
             "status": "ok",
-            "elapsed_ms": 297,
+            "elapsed_ms": 335,
             "bytes_read": 232842,
             "http_status": 200,
             "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy3.xml.gz",
@@ -157,14 +157,14 @@
         "content_type": "application/octet-stream",
         "compressed": true,
         "attempt_count": 1,
-        "total_elapsed_ms": 170,
+        "total_elapsed_ms": 291,
         "bytes_downloaded": 148556,
         "http_status": 200,
         "attempts": [
           {
             "attempt_number": 1,
             "status": "ok",
-            "elapsed_ms": 170,
+            "elapsed_ms": 291,
             "bytes_read": 148556,
             "http_status": 200,
             "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy4.xml.gz",
@@ -199,14 +199,14 @@
         "content_type": "application/octet-stream",
         "compressed": true,
         "attempt_count": 1,
-        "total_elapsed_ms": 399,
+        "total_elapsed_ms": 115,
         "bytes_downloaded": 146194,
         "http_status": 200,
         "attempts": [
           {
             "attempt_number": 1,
             "status": "ok",
-            "elapsed_ms": 399,
+            "elapsed_ms": 115,
             "bytes_read": 146194,
             "http_status": 200,
             "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy5.xml.gz",
@@ -240,28 +240,28 @@
       "input_programmes": 19583,
       "merged_epg_channels": 214,
       "merged_programmes": 18037,
-      "playlist_channels": 394,
+      "playlist_channels": 395,
       "matched_playlist_channels": 25,
-      "unmatched_playlist_channels": 339,
+      "unmatched_playlist_channels": 340,
       "ambiguous_playlist_channels": 30,
       "output_channels": 23,
       "output_programmes": 3209,
       "programme_duplicates_removed": 1546,
       "channels_without_programmes": 2,
-      "coverage_percent": 6.35
+      "coverage_percent": 6.33
     },
     "matching": {
       "stats": {
-        "playlist_channels": 394,
+        "playlist_channels": 395,
         "epg_channels": 214,
         "matched": 25,
-        "unmatched": 339,
+        "unmatched": 340,
         "ambiguous": 30,
         "matched_by_tvg_id": 20,
         "matched_by_name": 0,
         "matched_by_alias": 0,
         "matched_by_similarity": 5,
-        "coverage_percent": 6.35
+        "coverage_percent": 6.33
       },
       "matches": [
         {
@@ -2210,6 +2210,13 @@
           "tvg_id": "6911c8dd8caba6f046c5c5d5",
           "tvg_name": "Pluto TV Notti di Terrore",
           "stream_url": "https://jmp2.uk/plu-6911c8dd8caba6f046c5c5d5.m3u8",
+          "source_id": "plutotv_it"
+        },
+        {
+          "name": "Pluto TV Arte",
+          "tvg_id": "6a439aae539f6cfa9cd04d27",
+          "tvg_name": "Pluto TV Arte",
+          "stream_url": "https://jmp2.uk/plu-6a439aae539f6cfa9cd04d27.m3u8",
           "source_id": "plutotv_it"
         },
         {
