@@ -1,7 +1,7 @@
 {
   "project": "Italia TV Hub",
   "version": "0.8.0",
-  "generated_at": "2026-08-09T19:04:19.200862+00:00",
+  "generated_at": "2026-08-10T02:37:05.485984+00:00",
   "sources_total": 3,
   "sources_enabled": 2,
   "sources_disabled": 1,
@@ -31,11 +31,11 @@
   "downloads_failed": 0,
   "download_attempts_total": 2,
   "download_retries_total": 0,
-  "download_bytes_total": 115723,
-  "download_time_ms_total": 306,
+  "download_bytes_total": 117256,
+  "download_time_ms_total": 613,
   "parser_sources_processed": 2,
-  "parser_extinf_records": 456,
-  "parser_channels_created": 456,
+  "parser_extinf_records": 459,
+  "parser_channels_created": 459,
   "parser_skipped_records": 0,
   "parser_issue_count": 0,
   "parser_issues_reported": 0,
@@ -47,7 +47,7 @@
   "pluto_missing_channel_id": 0,
   "pluto_alternatives": {
     "stats": {
-      "input_channels": 456,
+      "input_channels": 459,
       "direct_pluto_channels": 0,
       "existing_resolver_channels": 181,
       "generated_alternatives": 0,
@@ -56,8 +56,8 @@
     },
     "generated_channels": []
   },
-  "channels_parsed": 456,
-  "channels_before_merge": 456,
+  "channels_parsed": 459,
+  "channels_before_merge": 459,
   "registry_duplicates_removed": 55,
   "merger_duplicates_removed": 61,
   "merger_decision_count": 61,
@@ -78,7 +78,7 @@
   "pluto_samsung_rejected": 2,
   "samsung_output_file": "output/playlist_samsung.m3u",
   "alternative_recovery_enabled": false,
-  "candidate_groups": 395,
+  "candidate_groups": 398,
   "duplicate_candidate_groups": 61,
   "alternative_candidates": 61,
   "candidate_streams_checked": 0,
@@ -91,27 +91,27 @@
   "epg_sources_total": 5,
   "epg_sources_successful": 5,
   "epg_sources_failed": 0,
-  "epg_channels_matched": 25,
-  "epg_programmes": 3209,
-  "epg_coverage_percent": 6.33,
-  "epg_metadata_updated": 25,
-  "channels": 395,
+  "epg_channels_matched": 27,
+  "epg_programmes": 3356,
+  "epg_coverage_percent": 6.78,
+  "epg_metadata_updated": 27,
+  "channels": 398,
   "epg": {
     "enabled": true,
     "status": "generated",
     "sources_total": 5,
     "sources_successful": 5,
     "sources_failed": 0,
-    "channels_matched": 25,
-    "channels_unmatched": 340,
+    "channels_matched": 27,
+    "channels_unmatched": 341,
     "channels_ambiguous": 30,
-    "programmes": 3209,
-    "coverage_percent": 6.33,
-    "metadata_updated": 25,
+    "programmes": 3356,
+    "coverage_percent": 6.78,
+    "metadata_updated": 27,
     "channels_without_programmes": 2,
     "programme_duplicates_removed": 1546,
     "file_exists": true,
-    "file_bytes": 916839,
+    "file_bytes": 953490,
     "output_file": "output/epg.xml",
     "report_file": "output/epg-report.json",
     "public_url": "https://raw.githubusercontent.com/Mike80p/italia-tv-hub/main/output/epg.xml",
@@ -126,14 +126,14 @@
           "content_type": "application/octet-stream",
           "compressed": true,
           "attempt_count": 1,
-          "total_elapsed_ms": 547,
+          "total_elapsed_ms": 225,
           "bytes_downloaded": 270388,
           "http_status": 200,
           "attempts": [
             {
               "attempt_number": 1,
               "status": "ok",
-              "elapsed_ms": 547,
+              "elapsed_ms": 225,
               "bytes_read": 270388,
               "http_status": 200,
               "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz",
@@ -168,14 +168,14 @@
           "content_type": "application/octet-stream",
           "compressed": true,
           "attempt_count": 1,
-          "total_elapsed_ms": 392,
+          "total_elapsed_ms": 374,
           "bytes_downloaded": 133294,
           "http_status": 200,
           "attempts": [
             {
               "attempt_number": 1,
               "status": "ok",
-              "elapsed_ms": 392,
+              "elapsed_ms": 374,
               "bytes_read": 133294,
               "http_status": 200,
               "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy2.xml.gz",
@@ -210,14 +210,14 @@
           "content_type": "application/octet-stream",
           "compressed": true,
           "attempt_count": 1,
-          "total_elapsed_ms": 208,
+          "total_elapsed_ms": 418,
           "bytes_downloaded": 232842,
           "http_status": 200,
           "attempts": [
             {
               "attempt_number": 1,
               "status": "ok",
-              "elapsed_ms": 208,
+              "elapsed_ms": 418,
               "bytes_read": 232842,
               "http_status": 200,
               "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy3.xml.gz",
@@ -252,14 +252,14 @@
           "content_type": "application/octet-stream",
           "compressed": true,
           "attempt_count": 1,
-          "total_elapsed_ms": 347,
+          "total_elapsed_ms": 197,
           "bytes_downloaded": 148556,
           "http_status": 200,
           "attempts": [
             {
               "attempt_number": 1,
               "status": "ok",
-              "elapsed_ms": 347,
+              "elapsed_ms": 197,
               "bytes_read": 148556,
               "http_status": 200,
               "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy4.xml.gz",
@@ -294,14 +294,14 @@
           "content_type": "application/octet-stream",
           "compressed": true,
           "attempt_count": 1,
-          "total_elapsed_ms": 418,
+          "total_elapsed_ms": 511,
           "bytes_downloaded": 146194,
           "http_status": 200,
           "attempts": [
             {
               "attempt_number": 1,
               "status": "ok",
-              "elapsed_ms": 418,
+              "elapsed_ms": 511,
               "bytes_read": 146194,
               "http_status": 200,
               "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy5.xml.gz",
@@ -368,15 +368,15 @@
     "failed": 0,
     "attempts_total": 2,
     "retries_total": 0,
-    "bytes_total": 115723,
-    "time_ms_total": 306
+    "bytes_total": 117256,
+    "time_ms_total": 613
   },
   "parser_summary": {
     "sources_processed": 2,
-    "lines_total": 941,
-    "non_empty_lines": 939,
-    "extinf_records": 456,
-    "channels_created": 456,
+    "lines_total": 950,
+    "non_empty_lines": 948,
+    "extinf_records": 459,
+    "channels_created": 459,
     "skipped_records": 0,
     "malformed_extinf": 0,
     "missing_name": 0,
@@ -384,7 +384,7 @@
     "invalid_channel": 0,
     "orphan_lines": 0,
     "abandoned_records": 0,
-    "directives_collected": 25,
+    "directives_collected": 28,
     "issue_count": 0,
     "issues_reported": 0,
     "issues_truncated": 0
@@ -394,9 +394,9 @@
     "supported": true,
     "health_ranking": false,
     "stats": {
-      "input_channels": 456,
-      "groups": 395,
-      "singleton_groups": 334,
+      "input_channels": 459,
+      "groups": 398,
+      "singleton_groups": 337,
       "duplicate_groups": 61,
       "alternative_candidates": 61,
       "url_collisions": 55,
@@ -407,7 +407,7 @@
   "alternative_recovery": {
     "enabled": false,
     "mode": "disabled",
-    "candidate_groups": 395,
+    "candidate_groups": 398,
     "duplicate_candidate_groups": 61,
     "alternative_candidates": 61,
     "candidate_streams_checked": 0,
@@ -428,8 +428,8 @@
       "plutotv_it": 20
     },
     "stats": {
-      "input_channels": 456,
-      "output_channels": 395,
+      "input_channels": 459,
+      "output_channels": 398,
       "duplicate_groups": 61,
       "duplicates_removed": 61,
       "url_collisions": 55,
@@ -482,7 +482,7 @@
         },
         "discarded": [
           {
-            "index": 375,
+            "index": 377,
             "name": "Super! SpongeBob (720p)",
             "stream_url": "https://jmp2.uk/plu-6093f9281db477000759fce0.m3u8",
             "source_id": "italy_public",
@@ -510,7 +510,7 @@
         },
         "discarded": [
           {
-            "index": 382,
+            "index": 384,
             "name": "Teenage Mutant Ninja Turtles (720p)",
             "stream_url": "https://jmp2.uk/plu-62619405c733e8000732d1fe.m3u8",
             "source_id": "italy_public",
@@ -594,7 +594,7 @@
         },
         "discarded": [
           {
-            "index": 360,
+            "index": 362,
             "name": "South Park",
             "stream_url": "https://jmp2.uk/plu-62bc1f502b70e3000706298e.m3u8",
             "source_id": "italy_public",
@@ -1602,7 +1602,7 @@
         },
         "discarded": [
           {
-            "index": 381,
+            "index": 383,
             "name": "Teen Mom",
             "stream_url": "https://jmp2.uk/plu-62e7fc8c0d061100083946a9.m3u8",
             "source_id": "italy_public",
@@ -1714,7 +1714,7 @@
         },
         "discarded": [
           {
-            "index": 366,
+            "index": 368,
             "name": "Star Trek: Voyager",
             "stream_url": "https://jmp2.uk/plu-65cb73d33ba51e00084cabad.m3u8",
             "source_id": "italy_public",
@@ -1910,7 +1910,7 @@
         },
         "discarded": [
           {
-            "index": 373,
+            "index": 375,
             "name": "Super! iCarly",
             "stream_url": "https://jmp2.uk/plu-609401db8cf51c00084b592e.m3u8",
             "source_id": "italy_public",
@@ -1966,7 +1966,7 @@
         },
         "discarded": [
           {
-            "index": 374,
+            "index": 376,
             "name": "Super! Pop",
             "stream_url": "https://jmp2.uk/plu-6093f7b5bb49b90007cecaad.m3u8",
             "source_id": "italy_public",
@@ -2022,7 +2022,7 @@
         },
         "discarded": [
           {
-            "index": 368,
+            "index": 370,
             "name": "Storie Criminali",
             "stream_url": "https://jmp2.uk/plu-66177d18c8311c0008d077d0.m3u8",
             "source_id": "italy_public",
@@ -2151,10 +2151,10 @@
     ]
   },
   "registry": {
-    "channels": 395,
+    "channels": 398,
     "sources": 2,
     "groups": 47,
-    "tvg_ids": 395
+    "tvg_ids": 398
   },
   "output_file": "output/playlist.m3u",
   "sources": [
@@ -2174,7 +2174,7 @@
       "registered": 124,
       "duplicates_skipped": 0,
       "attempt_count": 1,
-      "download_ms": 173,
+      "download_ms": 195,
       "bytes_downloaded": 38341,
       "http_status": 200,
       "final_url": "https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/plutotv_it.m3u",
@@ -2186,7 +2186,7 @@
         {
           "number": 1,
           "status": "success",
-          "elapsed_ms": 173,
+          "elapsed_ms": 195,
           "http_status": 200,
           "error_type": null,
           "error_message": null
@@ -2215,12 +2215,12 @@
       "id": "italy_public",
       "name": "Catalogo italiano pubblico",
       "status": "ok",
-      "channels": 332,
-      "registered": 277,
+      "channels": 335,
+      "registered": 280,
       "duplicates_skipped": 55,
       "attempt_count": 1,
-      "download_ms": 133,
-      "bytes_downloaded": 77382,
+      "download_ms": 418,
+      "bytes_downloaded": 78915,
       "http_status": 200,
       "final_url": "https://iptv-org.github.io/iptv/countries/it.m3u",
       "content_type": "audio/x-mpegurl",
@@ -2231,17 +2231,17 @@
         {
           "number": 1,
           "status": "success",
-          "elapsed_ms": 133,
+          "elapsed_ms": 418,
           "http_status": 200,
           "error_type": null,
           "error_message": null
         }
       ],
       "parser_stats": {
-        "lines_total": 691,
-        "non_empty_lines": 690,
-        "extinf_records": 332,
-        "channels_created": 332,
+        "lines_total": 700,
+        "non_empty_lines": 699,
+        "extinf_records": 335,
+        "channels_created": 335,
         "skipped_records": 0,
         "malformed_extinf": 0,
         "missing_name": 0,
@@ -2249,7 +2249,7 @@
         "invalid_channel": 0,
         "orphan_lines": 0,
         "abandoned_records": 0,
-        "directives_collected": 25
+        "directives_collected": 28
       },
       "parser_issue_count": 0,
       "parser_issues_reported": 0,

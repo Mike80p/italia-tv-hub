@@ -1,22 +1,22 @@
 {
   "project": "Italia TV Hub",
   "version": "0.8.0",
-  "generated_at": "2026-08-09T19:04:19.136018+00:00",
+  "generated_at": "2026-08-10T02:37:05.435053+00:00",
   "enabled": true,
   "status": "generated",
   "sources_total": 5,
   "sources_successful": 5,
   "sources_failed": 0,
-  "channels_matched": 25,
-  "channels_unmatched": 340,
+  "channels_matched": 27,
+  "channels_unmatched": 341,
   "channels_ambiguous": 30,
-  "programmes": 3209,
-  "coverage_percent": 6.33,
-  "metadata_updated": 25,
+  "programmes": 3356,
+  "coverage_percent": 6.78,
+  "metadata_updated": 27,
   "channels_without_programmes": 2,
   "programme_duplicates_removed": 1546,
   "file_exists": true,
-  "file_bytes": 916839,
+  "file_bytes": 953490,
   "output_file": "output/epg.xml",
   "report_file": "output/epg-report.json",
   "public_url": "https://raw.githubusercontent.com/Mike80p/italia-tv-hub/main/output/epg.xml",
@@ -31,14 +31,14 @@
         "content_type": "application/octet-stream",
         "compressed": true,
         "attempt_count": 1,
-        "total_elapsed_ms": 547,
+        "total_elapsed_ms": 225,
         "bytes_downloaded": 270388,
         "http_status": 200,
         "attempts": [
           {
             "attempt_number": 1,
             "status": "ok",
-            "elapsed_ms": 547,
+            "elapsed_ms": 225,
             "bytes_read": 270388,
             "http_status": 200,
             "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz",
@@ -73,14 +73,14 @@
         "content_type": "application/octet-stream",
         "compressed": true,
         "attempt_count": 1,
-        "total_elapsed_ms": 392,
+        "total_elapsed_ms": 374,
         "bytes_downloaded": 133294,
         "http_status": 200,
         "attempts": [
           {
             "attempt_number": 1,
             "status": "ok",
-            "elapsed_ms": 392,
+            "elapsed_ms": 374,
             "bytes_read": 133294,
             "http_status": 200,
             "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy2.xml.gz",
@@ -115,14 +115,14 @@
         "content_type": "application/octet-stream",
         "compressed": true,
         "attempt_count": 1,
-        "total_elapsed_ms": 208,
+        "total_elapsed_ms": 418,
         "bytes_downloaded": 232842,
         "http_status": 200,
         "attempts": [
           {
             "attempt_number": 1,
             "status": "ok",
-            "elapsed_ms": 208,
+            "elapsed_ms": 418,
             "bytes_read": 232842,
             "http_status": 200,
             "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy3.xml.gz",
@@ -157,14 +157,14 @@
         "content_type": "application/octet-stream",
         "compressed": true,
         "attempt_count": 1,
-        "total_elapsed_ms": 347,
+        "total_elapsed_ms": 197,
         "bytes_downloaded": 148556,
         "http_status": 200,
         "attempts": [
           {
             "attempt_number": 1,
             "status": "ok",
-            "elapsed_ms": 347,
+            "elapsed_ms": 197,
             "bytes_read": 148556,
             "http_status": 200,
             "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy4.xml.gz",
@@ -199,14 +199,14 @@
         "content_type": "application/octet-stream",
         "compressed": true,
         "attempt_count": 1,
-        "total_elapsed_ms": 418,
+        "total_elapsed_ms": 511,
         "bytes_downloaded": 146194,
         "http_status": 200,
         "attempts": [
           {
             "attempt_number": 1,
             "status": "ok",
-            "elapsed_ms": 418,
+            "elapsed_ms": 511,
             "bytes_read": 146194,
             "http_status": 200,
             "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy5.xml.gz",
@@ -240,28 +240,28 @@
       "input_programmes": 19583,
       "merged_epg_channels": 214,
       "merged_programmes": 18037,
-      "playlist_channels": 395,
-      "matched_playlist_channels": 25,
-      "unmatched_playlist_channels": 340,
+      "playlist_channels": 398,
+      "matched_playlist_channels": 27,
+      "unmatched_playlist_channels": 341,
       "ambiguous_playlist_channels": 30,
-      "output_channels": 23,
-      "output_programmes": 3209,
+      "output_channels": 25,
+      "output_programmes": 3356,
       "programme_duplicates_removed": 1546,
       "channels_without_programmes": 2,
-      "coverage_percent": 6.33
+      "coverage_percent": 6.78
     },
     "matching": {
       "stats": {
-        "playlist_channels": 395,
+        "playlist_channels": 398,
         "epg_channels": 214,
-        "matched": 25,
-        "unmatched": 340,
+        "matched": 27,
+        "unmatched": 341,
         "ambiguous": 30,
-        "matched_by_tvg_id": 20,
+        "matched_by_tvg_id": 22,
         "matched_by_name": 0,
         "matched_by_alias": 0,
         "matched_by_similarity": 5,
-        "coverage_percent": 6.33
+        "coverage_percent": 6.78
       },
       "matches": [
         {
@@ -560,6 +560,27 @@
         },
         {
           "playlist_channel": {
+            "name": "Rai Sport",
+            "tvg_id": "RAI Sport.it",
+            "tvg_name": "RAI Sport.it",
+            "stream_url": "https://7nyaler.streamhostingcdn.top/stream/2/index.m3u8",
+            "source_id": "italy_public"
+          },
+          "epg_channel": {
+            "channel_id": "RAI Sport.it",
+            "display_names": [
+              "RAI Sport.it"
+            ],
+            "icon_url": "",
+            "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz"
+          },
+          "score": 97.0,
+          "method": "normalized_tvg_id",
+          "playlist_key": "raisportit",
+          "epg_key": "raisportit"
+        },
+        {
+          "playlist_channel": {
             "name": "Sky Sport F1",
             "tvg_id": "Sky Sport F1.it",
             "tvg_name": "Sky Sport F1.it",
@@ -578,6 +599,27 @@
           "method": "normalized_tvg_id",
           "playlist_key": "skysportf1it",
           "epg_key": "skysportf1it"
+        },
+        {
+          "playlist_channel": {
+            "name": "Zona DAZN",
+            "tvg_id": "ZONA DAZN.it",
+            "tvg_name": "ZONA DAZN.it",
+            "stream_url": "https://7nyaler.streamhostingcdn.top/stream/24/index.m3u8",
+            "source_id": "italy_public"
+          },
+          "epg_channel": {
+            "channel_id": "ZONA DAZN.it",
+            "display_names": [
+              "ZONA DAZN.it"
+            ],
+            "icon_url": "",
+            "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy2.xml.gz"
+          },
+          "score": 97.0,
+          "method": "normalized_tvg_id",
+          "playlist_key": "zonadaznit",
+          "epg_key": "zonadaznit"
         },
         {
           "playlist_channel": {
@@ -1733,7 +1775,7 @@
           "name": "BeJoy.kids (1080p)",
           "tvg_id": "BeJoykids.it@HD",
           "tvg_name": "",
-          "stream_url": "https://64b16f23efbee.streamlock.net/bejoy/bejoy/playlist.m3u8",
+          "stream_url": "https://stream.paroledivita.org/bejoy.m3u8",
           "source_id": "italy_public"
         },
         {
@@ -2328,7 +2370,7 @@
           "name": "Parole di Vita (1080p)",
           "tvg_id": "ParolediVita.it@SD",
           "tvg_name": "",
-          "stream_url": "https://64b16f23efbee.streamlock.net/paroledivita/paroledivita/playlist.m3u8",
+          "stream_url": "https://stream.paroledivita.org/paroledivita.m3u8",
           "source_id": "italy_public"
         },
         {
@@ -2623,6 +2665,13 @@
           "tvg_id": "SanMarinoRTVSport.sm@SD",
           "tvg_name": "",
           "stream_url": "https://d2hrvno5bw6tg2.cloudfront.net/smrtv-ch02/smil:ch-02.smil/master.m3u8",
+          "source_id": "italy_public"
+        },
+        {
+          "name": "Sky Sport Basket",
+          "tvg_id": "SkySportBasket.it@SD",
+          "tvg_name": "",
+          "stream_url": "https://7nyaler.streamhostingcdn.top/stream/9/index.m3u8",
           "source_id": "italy_public"
         },
         {
@@ -4986,13 +5035,15 @@
       "Rai News 24.it",
       "Rai Premium.it",
       "Rai Scuola.it",
+      "RAI Sport.it",
       "Rai Storia.it",
       "Rai Yoyo.it",
       "San Marino RTV.it",
       "Sky Sport F1.it",
       "Super!.it",
       "TG NORBA 24.it",
-      "VALUE 24 TV.it"
+      "VALUE 24 TV.it",
+      "ZONA DAZN.it"
     ]
   }
 }
