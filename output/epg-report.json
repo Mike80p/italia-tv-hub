@@ -1,22 +1,22 @@
 {
   "project": "Italia TV Hub",
   "version": "0.8.0",
-  "generated_at": "2026-08-11T13:45:34.810607+00:00",
+  "generated_at": "2026-08-11T19:28:27.206714+00:00",
   "enabled": true,
   "status": "generated",
   "sources_total": 5,
   "sources_successful": 5,
   "sources_failed": 0,
-  "channels_matched": 27,
-  "channels_unmatched": 341,
-  "channels_ambiguous": 30,
-  "programmes": 3356,
-  "coverage_percent": 6.78,
-  "metadata_updated": 27,
-  "channels_without_programmes": 2,
+  "channels_matched": 21,
+  "channels_unmatched": 329,
+  "channels_ambiguous": 28,
+  "programmes": 2202,
+  "coverage_percent": 5.56,
+  "metadata_updated": 21,
+  "channels_without_programmes": 0,
   "programme_duplicates_removed": 1546,
   "file_exists": true,
-  "file_bytes": 953490,
+  "file_bytes": 658030,
   "output_file": "output/epg.xml",
   "report_file": "output/epg-report.json",
   "public_url": "https://raw.githubusercontent.com/Mike80p/italia-tv-hub/main/output/epg.xml",
@@ -31,14 +31,14 @@
         "content_type": "application/octet-stream",
         "compressed": true,
         "attempt_count": 1,
-        "total_elapsed_ms": 204,
+        "total_elapsed_ms": 136,
         "bytes_downloaded": 270388,
         "http_status": 200,
         "attempts": [
           {
             "attempt_number": 1,
             "status": "ok",
-            "elapsed_ms": 204,
+            "elapsed_ms": 136,
             "bytes_read": 270388,
             "http_status": 200,
             "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz",
@@ -115,14 +115,14 @@
         "content_type": "application/octet-stream",
         "compressed": true,
         "attempt_count": 1,
-        "total_elapsed_ms": 189,
+        "total_elapsed_ms": 131,
         "bytes_downloaded": 232842,
         "http_status": 200,
         "attempts": [
           {
             "attempt_number": 1,
             "status": "ok",
-            "elapsed_ms": 189,
+            "elapsed_ms": 131,
             "bytes_read": 232842,
             "http_status": 200,
             "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy3.xml.gz",
@@ -157,14 +157,14 @@
         "content_type": "application/octet-stream",
         "compressed": true,
         "attempt_count": 1,
-        "total_elapsed_ms": 248,
+        "total_elapsed_ms": 365,
         "bytes_downloaded": 148556,
         "http_status": 200,
         "attempts": [
           {
             "attempt_number": 1,
             "status": "ok",
-            "elapsed_ms": 248,
+            "elapsed_ms": 365,
             "bytes_read": 148556,
             "http_status": 200,
             "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy4.xml.gz",
@@ -199,14 +199,14 @@
         "content_type": "application/octet-stream",
         "compressed": true,
         "attempt_count": 1,
-        "total_elapsed_ms": 192,
+        "total_elapsed_ms": 125,
         "bytes_downloaded": 146194,
         "http_status": 200,
         "attempts": [
           {
             "attempt_number": 1,
             "status": "ok",
-            "elapsed_ms": 192,
+            "elapsed_ms": 125,
             "bytes_read": 146194,
             "http_status": 200,
             "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy5.xml.gz",
@@ -240,28 +240,28 @@
       "input_programmes": 19583,
       "merged_epg_channels": 214,
       "merged_programmes": 18037,
-      "playlist_channels": 398,
-      "matched_playlist_channels": 27,
-      "unmatched_playlist_channels": 341,
-      "ambiguous_playlist_channels": 30,
-      "output_channels": 25,
-      "output_programmes": 3356,
+      "playlist_channels": 378,
+      "matched_playlist_channels": 21,
+      "unmatched_playlist_channels": 329,
+      "ambiguous_playlist_channels": 28,
+      "output_channels": 19,
+      "output_programmes": 2202,
       "programme_duplicates_removed": 1546,
-      "channels_without_programmes": 2,
-      "coverage_percent": 6.78
+      "channels_without_programmes": 0,
+      "coverage_percent": 5.56
     },
     "matching": {
       "stats": {
-        "playlist_channels": 398,
+        "playlist_channels": 378,
         "epg_channels": 214,
-        "matched": 27,
-        "unmatched": 341,
-        "ambiguous": 30,
-        "matched_by_tvg_id": 22,
+        "matched": 21,
+        "unmatched": 329,
+        "ambiguous": 28,
+        "matched_by_tvg_id": 17,
         "matched_by_name": 0,
         "matched_by_alias": 0,
-        "matched_by_similarity": 5,
-        "coverage_percent": 6.78
+        "matched_by_similarity": 4,
+        "coverage_percent": 5.56
       },
       "matches": [
         {
@@ -413,52 +413,31 @@
         },
         {
           "playlist_channel": {
-            "name": "Rai Yoyo",
-            "tvg_id": "Rai Yoyo.it",
-            "tvg_name": "Rai Yoyo.it",
-            "stream_url": "http://91.146.94.234:10001/play/a039",
+            "name": "Super!",
+            "tvg_id": "Super!.it",
+            "tvg_name": "Super!.it",
+            "stream_url": "https://495c5a85d9074f29acffeaea9e0215eb.msvdn.net/super/super_main/super_main_hbbtv/playlist.m3u8",
             "source_id": "italy_public"
           },
           "epg_channel": {
-            "channel_id": "Rai Yoyo.it",
+            "channel_id": "Super!.it",
             "display_names": [
-              "Rai Yoyo.it"
+              "Super!.it"
             ],
             "icon_url": "",
             "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz"
           },
           "score": 97.0,
           "method": "normalized_tvg_id",
-          "playlist_key": "raiyoyoit",
-          "epg_key": "raiyoyoit"
+          "playlist_key": "superit",
+          "epg_key": "superit"
         },
         {
           "playlist_channel": {
-            "name": "Rai Movie",
-            "tvg_id": "Rai Movie.it",
-            "tvg_name": "Rai Movie.it",
-            "stream_url": "http://91.146.94.234:10001/play/a02r",
-            "source_id": "italy_public"
-          },
-          "epg_channel": {
-            "channel_id": "Rai Movie.it",
-            "display_names": [
-              "Rai Movie.it"
-            ],
-            "icon_url": "",
-            "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz"
-          },
-          "score": 97.0,
-          "method": "normalized_tvg_id",
-          "playlist_key": "raimovieit",
-          "epg_key": "raimovieit"
-        },
-        {
-          "playlist_channel": {
-            "name": "Rai News 24 HD",
+            "name": "Rai News 24 (720p)",
             "tvg_id": "Rai News 24.it",
             "tvg_name": "Rai News 24.it",
-            "stream_url": "http://91.146.94.234:10001/play/a135",
+            "stream_url": "https://rainews1-live.akamaized.net/hls/live/598326/rainews1/rainews1/playlist.m3u8",
             "source_id": "italy_public"
           },
           "epg_channel": {
@@ -623,31 +602,10 @@
         },
         {
           "playlist_channel": {
-            "name": "Radio Monte Carlo TV",
-            "tvg_id": "Radio Monte Carlo.it",
-            "tvg_name": "Radio Monte Carlo.it",
-            "stream_url": "http://91.146.94.234:10001/play/a04p",
-            "source_id": "italy_public"
-          },
-          "epg_channel": {
-            "channel_id": "Radio Monte Carlo.it",
-            "display_names": [
-              "Radio Monte Carlo.it"
-            ],
-            "icon_url": "",
-            "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz"
-          },
-          "score": 100.0,
-          "method": "similarity",
-          "playlist_key": "radiomontecarlo",
-          "epg_key": "radiomontecarlo"
-        },
-        {
-          "playlist_channel": {
-            "name": "Rai 4 HD",
+            "name": "Rai 4 (576p)",
             "tvg_id": "Rai 4.it",
             "tvg_name": "Rai 4.it",
-            "stream_url": "http://91.146.94.234:10001/play/a02p",
+            "stream_url": "https://mediapolisevent.rai.it/relinker/relinkerServlet.htm?cont=746966",
             "source_id": "italy_public"
           },
           "epg_channel": {
@@ -665,31 +623,10 @@
         },
         {
           "playlist_channel": {
-            "name": "Rai 5",
-            "tvg_id": "Rai 5.it",
-            "tvg_name": "Rai 5.it",
-            "stream_url": "http://91.146.94.234:10001/play/a03a",
-            "source_id": "italy_public"
-          },
-          "epg_channel": {
-            "channel_id": "Rai 5.it",
-            "display_names": [
-              "Rai 5.it"
-            ],
-            "icon_url": "",
-            "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz"
-          },
-          "score": 97.0,
-          "method": "normalized_tvg_id",
-          "playlist_key": "rai5it",
-          "epg_key": "rai5it"
-        },
-        {
-          "playlist_channel": {
-            "name": "Rai Gulp HD",
+            "name": "Rai Gulp (576p)",
             "tvg_id": "Rai Gulp.it",
             "tvg_name": "Rai Gulp.it",
-            "stream_url": "http://91.146.94.234:10001/play/a037",
+            "stream_url": "https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746953",
             "source_id": "italy_public"
           },
           "epg_channel": {
@@ -704,27 +641,6 @@
           "method": "normalized_tvg_id",
           "playlist_key": "raigulpit",
           "epg_key": "raigulpit"
-        },
-        {
-          "playlist_channel": {
-            "name": "Rai Premium",
-            "tvg_id": "Rai Premium.it",
-            "tvg_name": "Rai Premium.it",
-            "stream_url": "http://91.146.94.234:10001/play/a02q",
-            "source_id": "italy_public"
-          },
-          "epg_channel": {
-            "channel_id": "Rai Premium.it",
-            "display_names": [
-              "Rai Premium.it"
-            ],
-            "icon_url": "",
-            "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz"
-          },
-          "score": 97.0,
-          "method": "normalized_tvg_id",
-          "playlist_key": "raipremiumit",
-          "epg_key": "raipremiumit"
         },
         {
           "playlist_channel": {
@@ -788,48 +704,6 @@
           "method": "similarity",
           "playlist_key": "superj",
           "epg_key": "super"
-        },
-        {
-          "playlist_channel": {
-            "name": "Super!",
-            "tvg_id": "Super!.it",
-            "tvg_name": "Super!.it",
-            "stream_url": "https://495c5a85d9074f29acffeaea9e0215eb.msvdn.net/super/super_main/super_main_hbbtv/playlist.m3u8",
-            "source_id": "italy_public"
-          },
-          "epg_channel": {
-            "channel_id": "Super!.it",
-            "display_names": [
-              "Super!.it"
-            ],
-            "icon_url": "",
-            "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz"
-          },
-          "score": 97.0,
-          "method": "normalized_tvg_id",
-          "playlist_key": "superit",
-          "epg_key": "superit"
-        },
-        {
-          "playlist_channel": {
-            "name": "TG Norba 24 (404p)",
-            "tvg_id": "TG NORBA 24.it",
-            "tvg_name": "TG NORBA 24.it",
-            "stream_url": "https://router.xdevel.com/video0s976570-1326/stream/playlist_dvr.m3u8",
-            "source_id": "italy_public"
-          },
-          "epg_channel": {
-            "channel_id": "TG NORBA 24.it",
-            "display_names": [
-              "TG NORBA 24.it"
-            ],
-            "icon_url": "",
-            "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz"
-          },
-          "score": 97.0,
-          "method": "normalized_tvg_id",
-          "playlist_key": "tgnorba24it",
-          "epg_key": "tgnorba24it"
         }
       ],
       "unmatched": [
@@ -1100,13 +974,6 @@
           "source_id": "italy_public"
         },
         {
-          "name": "ST Europe Channel (720p)",
-          "tvg_id": "STEuropeChannel.it@SD",
-          "tvg_name": "",
-          "stream_url": "https://5f22d76e220e1.streamlock.net/steuropetv/steuropetv/playlist.m3u8",
-          "source_id": "italy_public"
-        },
-        {
           "name": "The Pet Collective",
           "tvg_id": "ThePetCollective.us@Italy",
           "tvg_name": "",
@@ -1289,13 +1156,6 @@
           "source_id": "italy_public"
         },
         {
-          "name": "Agrigento TV",
-          "tvg_id": "AgrigentoTV.it@SD",
-          "tvg_name": "",
-          "stream_url": "https://media2021.rtvweb.com/tva/live/playlist.m3u8",
-          "source_id": "italy_public"
-        },
-        {
           "name": "Alto Adige TV (720p)",
           "tvg_id": "AltoAdigeTV.it@SD",
           "tvg_name": "",
@@ -1370,13 +1230,6 @@
           "tvg_id": "Canale2Altamura.it@SD",
           "tvg_name": "",
           "stream_url": "https://59d7d6f47d7fc.streamlock.net/canale2/canale2/playlist.m3u8",
-          "source_id": "italy_public"
-        },
-        {
-          "name": "Canale 21 Extra (576p)",
-          "tvg_id": "Canale21Extra.it@SD",
-          "tvg_name": "",
-          "stream_url": "https://0ff9dd7fe9b64bc08a5fc4ed525454c3.msvdn.net/live/S42170132/sT6C3LFaD1iA/playlist.m3u8",
           "source_id": "italy_public"
         },
         {
@@ -1492,13 +1345,6 @@
           "source_id": "italy_public"
         },
         {
-          "name": "Luna TV",
-          "tvg_id": "LunaTV.it@SD",
-          "tvg_name": "",
-          "stream_url": "https://5f22d76e220e1.streamlock.net/lunatv/lunatv/playlist.m3u8",
-          "source_id": "italy_public"
-        },
-        {
           "name": "MediterraniaTV (1080p)",
           "tvg_id": "MediterraniaTV.it@SD",
           "tvg_name": "",
@@ -1583,7 +1429,7 @@
           "source_id": "italy_public"
         },
         {
-          "name": "Romantica TV",
+          "name": "Romantica TV (1080p)",
           "tvg_id": "RomanticaTV.it@SD",
           "tvg_name": "",
           "stream_url": "https://stream10.xdevel.com/video0s977363-1901/stream/playlist_dvr.m3u8",
@@ -1912,20 +1758,6 @@
           "source_id": "plutotv_it"
         },
         {
-          "name": "Pluto TV Azione Cult",
-          "tvg_id": "PlutoTVAzioneCult.de@IT",
-          "tvg_name": "",
-          "stream_url": "https://jmp2.uk/plu-6994800c470389f33df8e090.m3u8",
-          "source_id": "italy_public"
-        },
-        {
-          "name": "Pluto TV Dive Italiane",
-          "tvg_id": "PlutoTVDiveItaliane.de@IT",
-          "tvg_name": "",
-          "stream_url": "https://jmp2.uk/plu-6875080e3484d607323641f8.m3u8",
-          "source_id": "italy_public"
-        },
-        {
           "name": "Rakuten TV Action Movies Italy (1080p)",
           "tvg_id": "RakutenTVActionMovies.es@Italy",
           "tvg_name": "",
@@ -1958,13 +1790,6 @@
           "tvg_id": "7RadioVisione.it@HD",
           "tvg_name": "",
           "stream_url": "https://stream10.xdevel.com/video1s976543-1932/stream/playlist.m3u8",
-          "source_id": "italy_public"
-        },
-        {
-          "name": "7 YOU & ME (720p)",
-          "tvg_id": "7YOUME.it@HD",
-          "tvg_name": "",
-          "stream_url": "https://stream10.xdevel.com/video0s977798-2239/stream/playlist.m3u8",
           "source_id": "italy_public"
         },
         {
@@ -2066,13 +1891,6 @@
           "source_id": "italy_public"
         },
         {
-          "name": "SL48 TV (576p)",
-          "tvg_id": "SL48TV.it@SD",
-          "tvg_name": "",
-          "stream_url": "http://media.velcom.it:1935/sl48/sl48/playlist.m3u8",
-          "source_id": "italy_public"
-        },
-        {
           "name": "Video Rola (1080p)",
           "tvg_id": "VideoRola.it@SD",
           "tvg_name": "",
@@ -2161,13 +1979,6 @@
           "tvg_id": "MinformoTV.it@SD",
           "tvg_name": "",
           "stream_url": "https://5db313b643fd8.streamlock.net/MinformoTV/MinformoTV/playlist.m3u8",
-          "source_id": "italy_public"
-        },
-        {
-          "name": "Radio Roma News",
-          "tvg_id": "RadioRomaNews.it@SD",
-          "tvg_name": "",
-          "stream_url": "https://raw.githubusercontent.com/Sibprod/streams/main/ressources/dm/py/hls/radioromanews.m3u8",
           "source_id": "italy_public"
         },
         {
@@ -2626,13 +2437,6 @@
           "source_id": "italy_public"
         },
         {
-          "name": "GM24 (480p)",
-          "tvg_id": "GM24.it@SD",
-          "tvg_name": "",
-          "stream_url": "https://streaming.softwarecreation.it/GM24/GM24/playlist.m3u8",
-          "source_id": "italy_public"
-        },
-        {
           "name": "Juwelo Italia (480p)",
           "tvg_id": "Juwelo.it@SD",
           "tvg_name": "",
@@ -2766,13 +2570,6 @@
           "source_id": "italy_public"
         },
         {
-          "name": "CarinaTV",
-          "tvg_id": "CarinaTV.it@SD",
-          "tvg_name": "",
-          "stream_url": "https://samson.streamerr.co:8081/carinatv/tracks-v1a1/playlist.m3u8",
-          "source_id": "italy_public"
-        },
-        {
           "name": "Deluxe 139 (480p)",
           "tvg_id": "Deluxe139.it@SD",
           "tvg_name": "",
@@ -2833,13 +2630,6 @@
           "tvg_id": "RadioNumberOne.it@SD",
           "tvg_name": "",
           "stream_url": "https://56b50ada2d659.streamlock.net/RN1TV/livestream/playlist.m3u8",
-          "source_id": "italy_public"
-        },
-        {
-          "name": "Radio Roma Television",
-          "tvg_id": "RadioRomaTelevision.it@SD",
-          "tvg_name": "",
-          "stream_url": "https://raw.githubusercontent.com/Sibprod/streams/main/ressources/dm/py/hls/radioromatv.m3u8",
           "source_id": "italy_public"
         },
         {
@@ -3224,18 +3014,18 @@
       "ambiguous": [
         {
           "playlist_channel": {
-            "name": "20",
+            "name": "20 Mediaset [Geo-blocked]",
             "tvg_id": "20.it@SD",
             "tvg_name": "",
-            "stream_url": "http://91.146.94.234:10001/play/a08s"
+            "stream_url": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(lb)/index.m3u8"
           },
           "candidates": [
             {
               "playlist_channel": {
-                "name": "20",
+                "name": "20 Mediaset [Geo-blocked]",
                 "tvg_id": "20.it@SD",
                 "tvg_name": "",
-                "stream_url": "http://91.146.94.234:10001/play/a08s",
+                "stream_url": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(lb)/index.m3u8",
                 "source_id": "italy_public"
               },
               "epg_channel": {
@@ -3253,10 +3043,10 @@
             },
             {
               "playlist_channel": {
-                "name": "20",
+                "name": "20 Mediaset [Geo-blocked]",
                 "tvg_id": "20.it@SD",
                 "tvg_name": "",
-                "stream_url": "http://91.146.94.234:10001/play/a08s",
+                "stream_url": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(lb)/index.m3u8",
                 "source_id": "italy_public"
               },
               "epg_channel": {
@@ -3274,10 +3064,10 @@
             },
             {
               "playlist_channel": {
-                "name": "20",
+                "name": "20 Mediaset [Geo-blocked]",
                 "tvg_id": "20.it@SD",
                 "tvg_name": "",
-                "stream_url": "http://91.146.94.234:10001/play/a08s",
+                "stream_url": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(lb)/index.m3u8",
                 "source_id": "italy_public"
               },
               "epg_channel": {
@@ -3297,18 +3087,18 @@
         },
         {
           "playlist_channel": {
-            "name": "Canale 5",
+            "name": "Canale 5 [Geo-blocked]",
             "tvg_id": "Canale5.it@SD",
             "tvg_name": "",
-            "stream_url": "http://91.146.94.234:10001/play/a03g"
+            "stream_url": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(C5)/index.m3u8"
           },
           "candidates": [
             {
               "playlist_channel": {
-                "name": "Canale 5",
+                "name": "Canale 5 [Geo-blocked]",
                 "tvg_id": "Canale5.it@SD",
                 "tvg_name": "",
-                "stream_url": "http://91.146.94.234:10001/play/a03g",
+                "stream_url": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(C5)/index.m3u8",
                 "source_id": "italy_public"
               },
               "epg_channel": {
@@ -3326,10 +3116,10 @@
             },
             {
               "playlist_channel": {
-                "name": "Canale 5",
+                "name": "Canale 5 [Geo-blocked]",
                 "tvg_id": "Canale5.it@SD",
                 "tvg_name": "",
-                "stream_url": "http://91.146.94.234:10001/play/a03g",
+                "stream_url": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(C5)/index.m3u8",
                 "source_id": "italy_public"
               },
               "epg_channel": {
@@ -3349,18 +3139,18 @@
         },
         {
           "playlist_channel": {
-            "name": "Iris",
+            "name": "Iris [Geo-blocked]",
             "tvg_id": "Iris.it@SD",
             "tvg_name": "",
-            "stream_url": "http://91.146.94.234:10001/play/a03i"
+            "stream_url": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(ki)/index.m3u8"
           },
           "candidates": [
             {
               "playlist_channel": {
-                "name": "Iris",
+                "name": "Iris [Geo-blocked]",
                 "tvg_id": "Iris.it@SD",
                 "tvg_name": "",
-                "stream_url": "http://91.146.94.234:10001/play/a03i",
+                "stream_url": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(ki)/index.m3u8",
                 "source_id": "italy_public"
               },
               "epg_channel": {
@@ -3378,10 +3168,10 @@
             },
             {
               "playlist_channel": {
-                "name": "Iris",
+                "name": "Iris [Geo-blocked]",
                 "tvg_id": "Iris.it@SD",
                 "tvg_name": "",
-                "stream_url": "http://91.146.94.234:10001/play/a03i",
+                "stream_url": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(ki)/index.m3u8",
                 "source_id": "italy_public"
               },
               "epg_channel": {
@@ -3453,18 +3243,18 @@
         },
         {
           "playlist_channel": {
-            "name": "La5",
+            "name": "La5 [Geo-blocked]",
             "tvg_id": "La5.it@SD",
             "tvg_name": "",
-            "stream_url": "http://91.146.94.234:10001/play/a03k"
+            "stream_url": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(ka)/index.m3u8"
           },
           "candidates": [
             {
               "playlist_channel": {
-                "name": "La5",
+                "name": "La5 [Geo-blocked]",
                 "tvg_id": "La5.it@SD",
                 "tvg_name": "",
-                "stream_url": "http://91.146.94.234:10001/play/a03k",
+                "stream_url": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(ka)/index.m3u8",
                 "source_id": "italy_public"
               },
               "epg_channel": {
@@ -3482,10 +3272,10 @@
             },
             {
               "playlist_channel": {
-                "name": "La5",
+                "name": "La5 [Geo-blocked]",
                 "tvg_id": "La5.it@SD",
                 "tvg_name": "",
-                "stream_url": "http://91.146.94.234:10001/play/a03k",
+                "stream_url": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(ka)/index.m3u8",
                 "source_id": "italy_public"
               },
               "epg_channel": {
@@ -3503,10 +3293,10 @@
             },
             {
               "playlist_channel": {
-                "name": "La5",
+                "name": "La5 [Geo-blocked]",
                 "tvg_id": "La5.it@SD",
                 "tvg_name": "",
-                "stream_url": "http://91.146.94.234:10001/play/a03k",
+                "stream_url": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(ka)/index.m3u8",
                 "source_id": "italy_public"
               },
               "epg_channel": {
@@ -3578,18 +3368,18 @@
         },
         {
           "playlist_channel": {
-            "name": "Italia 1",
+            "name": "Italia 1 [Geo-blocked]",
             "tvg_id": "Italia1.it@SD",
             "tvg_name": "",
-            "stream_url": "http://91.146.94.234:10001/play/a03f"
+            "stream_url": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(i1)/index.m3u8"
           },
           "candidates": [
             {
               "playlist_channel": {
-                "name": "Italia 1",
+                "name": "Italia 1 [Geo-blocked]",
                 "tvg_id": "Italia1.it@SD",
                 "tvg_name": "",
-                "stream_url": "http://91.146.94.234:10001/play/a03f",
+                "stream_url": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(i1)/index.m3u8",
                 "source_id": "italy_public"
               },
               "epg_channel": {
@@ -3607,10 +3397,10 @@
             },
             {
               "playlist_channel": {
-                "name": "Italia 1",
+                "name": "Italia 1 [Geo-blocked]",
                 "tvg_id": "Italia1.it@SD",
                 "tvg_name": "",
-                "stream_url": "http://91.146.94.234:10001/play/a03f",
+                "stream_url": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(i1)/index.m3u8",
                 "source_id": "italy_public"
               },
               "epg_channel": {
@@ -3682,18 +3472,18 @@
         },
         {
           "playlist_channel": {
-            "name": "Mediaset Extra",
+            "name": "Mediaset Extra [Geo-blocked]",
             "tvg_id": "MediasetExtra.it@SD",
             "tvg_name": "",
-            "stream_url": "http://91.146.94.234:10001/play/a03m"
+            "stream_url": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(kq)/index.m3u8"
           },
           "candidates": [
             {
               "playlist_channel": {
-                "name": "Mediaset Extra",
+                "name": "Mediaset Extra [Geo-blocked]",
                 "tvg_id": "MediasetExtra.it@SD",
                 "tvg_name": "",
-                "stream_url": "http://91.146.94.234:10001/play/a03m",
+                "stream_url": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(kq)/index.m3u8",
                 "source_id": "italy_public"
               },
               "epg_channel": {
@@ -3711,10 +3501,10 @@
             },
             {
               "playlist_channel": {
-                "name": "Mediaset Extra",
+                "name": "Mediaset Extra [Geo-blocked]",
                 "tvg_id": "MediasetExtra.it@SD",
                 "tvg_name": "",
-                "stream_url": "http://91.146.94.234:10001/play/a03m",
+                "stream_url": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(kq)/index.m3u8",
                 "source_id": "italy_public"
               },
               "epg_channel": {
@@ -3880,18 +3670,18 @@
         },
         {
           "playlist_channel": {
-            "name": "Cine34",
+            "name": "Cine 34 [Geo-blocked]",
             "tvg_id": "Cine34.it@SD",
             "tvg_name": "",
-            "stream_url": "http://91.146.94.234:10001/play/a04o"
+            "stream_url": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(b6)/index.m3u8"
           },
           "candidates": [
             {
               "playlist_channel": {
-                "name": "Cine34",
+                "name": "Cine 34 [Geo-blocked]",
                 "tvg_id": "Cine34.it@SD",
                 "tvg_name": "",
-                "stream_url": "http://91.146.94.234:10001/play/a04o",
+                "stream_url": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(b6)/index.m3u8",
                 "source_id": "italy_public"
               },
               "epg_channel": {
@@ -3909,10 +3699,10 @@
             },
             {
               "playlist_channel": {
-                "name": "Cine34",
+                "name": "Cine 34 [Geo-blocked]",
                 "tvg_id": "Cine34.it@SD",
                 "tvg_name": "",
-                "stream_url": "http://91.146.94.234:10001/play/a04o",
+                "stream_url": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(b6)/index.m3u8",
                 "source_id": "italy_public"
               },
               "epg_channel": {
@@ -3932,18 +3722,18 @@
         },
         {
           "playlist_channel": {
-            "name": "Twentyseven",
+            "name": "27 TwentySeven [Geo-blocked]",
             "tvg_id": "Twentyseven.it@SD",
             "tvg_name": "",
-            "stream_url": "http://91.146.94.234:10001/play/a08u"
+            "stream_url": "https://live2.msf.cdn.mediaset.net/content/hls_h0_cls_vos/live/channel(ts)/index.m3u8"
           },
           "candidates": [
             {
               "playlist_channel": {
-                "name": "Twentyseven",
+                "name": "27 TwentySeven [Geo-blocked]",
                 "tvg_id": "Twentyseven.it@SD",
                 "tvg_name": "",
-                "stream_url": "http://91.146.94.234:10001/play/a08u",
+                "stream_url": "https://live2.msf.cdn.mediaset.net/content/hls_h0_cls_vos/live/channel(ts)/index.m3u8",
                 "source_id": "italy_public"
               },
               "epg_channel": {
@@ -3961,10 +3751,10 @@
             },
             {
               "playlist_channel": {
-                "name": "Twentyseven",
+                "name": "27 TwentySeven [Geo-blocked]",
                 "tvg_id": "Twentyseven.it@SD",
                 "tvg_name": "",
-                "stream_url": "http://91.146.94.234:10001/play/a08u",
+                "stream_url": "https://live2.msf.cdn.mediaset.net/content/hls_h0_cls_vos/live/channel(ts)/index.m3u8",
                 "source_id": "italy_public"
               },
               "epg_channel": {
@@ -4192,58 +3982,6 @@
         },
         {
           "playlist_channel": {
-            "name": "TGCom24 HD",
-            "tvg_id": "TGCom24.it@HD",
-            "tvg_name": "",
-            "stream_url": "http://91.146.94.234:10001/play/a08t"
-          },
-          "candidates": [
-            {
-              "playlist_channel": {
-                "name": "TGCom24 HD",
-                "tvg_id": "TGCom24.it@HD",
-                "tvg_name": "",
-                "stream_url": "http://91.146.94.234:10001/play/a08t",
-                "source_id": "italy_public"
-              },
-              "epg_channel": {
-                "channel_id": "TgCom24 HD.it",
-                "display_names": [
-                  "TgCom24 HD.it"
-                ],
-                "icon_url": "",
-                "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz"
-              },
-              "score": 97.0,
-              "method": "normalized_tvg_id",
-              "playlist_key": "tgcom24it",
-              "epg_key": "tgcom24it"
-            },
-            {
-              "playlist_channel": {
-                "name": "TGCom24 HD",
-                "tvg_id": "TGCom24.it@HD",
-                "tvg_name": "",
-                "stream_url": "http://91.146.94.234:10001/play/a08t",
-                "source_id": "italy_public"
-              },
-              "epg_channel": {
-                "channel_id": "Tgcom24.it",
-                "display_names": [
-                  "Tgcom24.it"
-                ],
-                "icon_url": "",
-                "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy2.xml.gz"
-              },
-              "score": 97.0,
-              "method": "normalized_tvg_id",
-              "playlist_key": "tgcom24it",
-              "epg_key": "tgcom24it"
-            }
-          ]
-        },
-        {
-          "playlist_channel": {
             "name": "TV 2000 (720p)",
             "tvg_id": "TV2000.it@SD",
             "tvg_name": "",
@@ -4317,18 +4055,18 @@
         },
         {
           "playlist_channel": {
-            "name": "Top Crime",
+            "name": "Top Crime [Geo-blocked]",
             "tvg_id": "TopCrime.it@SD",
             "tvg_name": "",
-            "stream_url": "http://91.146.94.234:10001/play/a03o"
+            "stream_url": "https://live3-mediaset-it.akamaized.net/content/hls_h0_clr_vos/live/channel(lt)/index.m3u8"
           },
           "candidates": [
             {
               "playlist_channel": {
-                "name": "Top Crime",
+                "name": "Top Crime [Geo-blocked]",
                 "tvg_id": "TopCrime.it@SD",
                 "tvg_name": "",
-                "stream_url": "http://91.146.94.234:10001/play/a03o",
+                "stream_url": "https://live3-mediaset-it.akamaized.net/content/hls_h0_clr_vos/live/channel(lt)/index.m3u8",
                 "source_id": "italy_public"
               },
               "epg_channel": {
@@ -4346,10 +4084,10 @@
             },
             {
               "playlist_channel": {
-                "name": "Top Crime",
+                "name": "Top Crime [Geo-blocked]",
                 "tvg_id": "TopCrime.it@SD",
                 "tvg_name": "",
-                "stream_url": "http://91.146.94.234:10001/play/a03o",
+                "stream_url": "https://live3-mediaset-it.akamaized.net/content/hls_h0_clr_vos/live/channel(lt)/index.m3u8",
                 "source_id": "italy_public"
               },
               "epg_channel": {
@@ -4650,18 +4388,18 @@
         },
         {
           "playlist_channel": {
-            "name": "Rai 1 HD (1080p)",
-            "tvg_id": "Rai1.it@HD",
+            "name": "Rai 1 (720p)",
+            "tvg_id": "Rai1.it@SD",
             "tvg_name": "",
-            "stream_url": "https://srv1.adriatelekom.com/Rai1/index.m3u8"
+            "stream_url": "https://dash2.antik.sk/live/test_rai_uno_tizen/playlist.m3u8"
           },
           "candidates": [
             {
               "playlist_channel": {
-                "name": "Rai 1 HD (1080p)",
-                "tvg_id": "Rai1.it@HD",
+                "name": "Rai 1 (720p)",
+                "tvg_id": "Rai1.it@SD",
                 "tvg_name": "",
-                "stream_url": "https://srv1.adriatelekom.com/Rai1/index.m3u8",
+                "stream_url": "https://dash2.antik.sk/live/test_rai_uno_tizen/playlist.m3u8",
                 "source_id": "italy_public"
               },
               "epg_channel": {
@@ -4679,10 +4417,10 @@
             },
             {
               "playlist_channel": {
-                "name": "Rai 1 HD (1080p)",
-                "tvg_id": "Rai1.it@HD",
+                "name": "Rai 1 (720p)",
+                "tvg_id": "Rai1.it@SD",
                 "tvg_name": "",
-                "stream_url": "https://srv1.adriatelekom.com/Rai1/index.m3u8",
+                "stream_url": "https://dash2.antik.sk/live/test_rai_uno_tizen/playlist.m3u8",
                 "source_id": "italy_public"
               },
               "epg_channel": {
@@ -4806,18 +4544,18 @@
         },
         {
           "playlist_channel": {
-            "name": "Rete 4",
+            "name": "Rete 4 [Geo-blocked]",
             "tvg_id": "Rete4.it@SD",
             "tvg_name": "",
-            "stream_url": "http://91.146.94.234:10001/play/a03h"
+            "stream_url": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(r4)/index.m3u8"
           },
           "candidates": [
             {
               "playlist_channel": {
-                "name": "Rete 4",
+                "name": "Rete 4 [Geo-blocked]",
                 "tvg_id": "Rete4.it@SD",
                 "tvg_name": "",
-                "stream_url": "http://91.146.94.234:10001/play/a03h",
+                "stream_url": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(r4)/index.m3u8",
                 "source_id": "italy_public"
               },
               "epg_channel": {
@@ -4835,10 +4573,10 @@
             },
             {
               "playlist_channel": {
-                "name": "Rete 4",
+                "name": "Rete 4 [Geo-blocked]",
                 "tvg_id": "Rete4.it@SD",
                 "tvg_name": "",
-                "stream_url": "http://91.146.94.234:10001/play/a03h",
+                "stream_url": "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(r4)/index.m3u8",
                 "source_id": "italy_public"
               },
               "epg_channel": {
@@ -4853,79 +4591,6 @@
               "method": "normalized_tvg_id",
               "playlist_key": "rete4it",
               "epg_key": "rete4it"
-            }
-          ]
-        },
-        {
-          "playlist_channel": {
-            "name": "TV8 HD",
-            "tvg_id": "TV8.it@HD",
-            "tvg_name": "",
-            "stream_url": "http://91.146.94.234:10001/play/a03b"
-          },
-          "candidates": [
-            {
-              "playlist_channel": {
-                "name": "TV8 HD",
-                "tvg_id": "TV8.it@HD",
-                "tvg_name": "",
-                "stream_url": "http://91.146.94.234:10001/play/a03b",
-                "source_id": "italy_public"
-              },
-              "epg_channel": {
-                "channel_id": "TV 8.it",
-                "display_names": [
-                  "TV 8.it"
-                ],
-                "icon_url": "",
-                "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy4.xml.gz"
-              },
-              "score": 97.0,
-              "method": "normalized_tvg_id",
-              "playlist_key": "tv8it",
-              "epg_key": "tv8it"
-            },
-            {
-              "playlist_channel": {
-                "name": "TV8 HD",
-                "tvg_id": "TV8.it@HD",
-                "tvg_name": "",
-                "stream_url": "http://91.146.94.234:10001/play/a03b",
-                "source_id": "italy_public"
-              },
-              "epg_channel": {
-                "channel_id": "TV8 HD.it",
-                "display_names": [
-                  "TV8 HD.it"
-                ],
-                "icon_url": "",
-                "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz"
-              },
-              "score": 97.0,
-              "method": "normalized_tvg_id",
-              "playlist_key": "tv8it",
-              "epg_key": "tv8it"
-            },
-            {
-              "playlist_channel": {
-                "name": "TV8 HD",
-                "tvg_id": "TV8.it@HD",
-                "tvg_name": "",
-                "stream_url": "http://91.146.94.234:10001/play/a03b",
-                "source_id": "italy_public"
-              },
-              "epg_channel": {
-                "channel_id": "TV8.it",
-                "display_names": [
-                  "TV8.it"
-                ],
-                "icon_url": "",
-                "source_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy2.xml.gz"
-              },
-              "score": 97.0,
-              "method": "normalized_tvg_id",
-              "playlist_key": "tv8it",
-              "epg_key": "tv8it"
             }
           ]
         }
@@ -5026,22 +4691,16 @@
       "Horse TV HD.it",
       "Mediaset Italia2 HD.it",
       "QVC.it",
-      "Radio Monte Carlo.it",
       "RADIONORBA TV.it",
       "Rai 4.it",
-      "Rai 5.it",
       "Rai Gulp.it",
-      "Rai Movie.it",
       "Rai News 24.it",
-      "Rai Premium.it",
       "Rai Scuola.it",
       "RAI Sport.it",
       "Rai Storia.it",
-      "Rai Yoyo.it",
       "San Marino RTV.it",
       "Sky Sport F1.it",
       "Super!.it",
-      "TG NORBA 24.it",
       "VALUE 24 TV.it",
       "ZONA DAZN.it"
     ]

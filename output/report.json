@@ -1,7 +1,7 @@
 {
   "project": "Italia TV Hub",
   "version": "0.8.0",
-  "generated_at": "2026-08-11T13:45:34.879005+00:00",
+  "generated_at": "2026-08-11T19:28:27.270736+00:00",
   "sources_total": 3,
   "sources_enabled": 2,
   "sources_disabled": 1,
@@ -31,41 +31,41 @@
   "downloads_failed": 0,
   "download_attempts_total": 2,
   "download_retries_total": 0,
-  "download_bytes_total": 117256,
-  "download_time_ms_total": 397,
+  "download_bytes_total": 108068,
+  "download_time_ms_total": 141,
   "parser_sources_processed": 2,
-  "parser_extinf_records": 459,
-  "parser_channels_created": 459,
+  "parser_extinf_records": 434,
+  "parser_channels_created": 434,
   "parser_skipped_records": 0,
   "parser_issue_count": 0,
   "parser_issues_reported": 0,
   "parser_issues_truncated": 0,
   "pluto_direct_candidates": 0,
-  "pluto_existing_resolvers": 181,
+  "pluto_existing_resolvers": 179,
   "pluto_alternatives_generated": 0,
   "pluto_alternative_duplicates_skipped": 0,
   "pluto_missing_channel_id": 0,
   "pluto_alternatives": {
     "stats": {
-      "input_channels": 459,
+      "input_channels": 434,
       "direct_pluto_channels": 0,
-      "existing_resolver_channels": 181,
+      "existing_resolver_channels": 179,
       "generated_alternatives": 0,
       "skipped_duplicate_urls": 0,
       "missing_channel_id": 0
     },
     "generated_channels": []
   },
-  "channels_parsed": 459,
-  "channels_before_merge": 459,
+  "channels_parsed": 434,
+  "channels_before_merge": 434,
   "registry_duplicates_removed": 55,
-  "merger_duplicates_removed": 61,
-  "merger_decision_count": 61,
-  "merger_decisions_reported": 61,
+  "merger_duplicates_removed": 56,
+  "merger_decision_count": 56,
+  "merger_decisions_reported": 56,
   "merger_decisions_truncated": 0,
   "post_merge_duplicates_removed": 0,
   "channels_filtered_unavailable": 0,
-  "duplicates_removed": 61,
+  "duplicates_removed": 56,
   "health_enabled": false,
   "health_checked": 0,
   "health_online": 0,
@@ -73,14 +73,14 @@
   "health_offline": 0,
   "publish_only_online": false,
   "pluto_playback_enabled": true,
-  "pluto_checked": 126,
+  "pluto_checked": 124,
   "pluto_samsung_accepted": 124,
-  "pluto_samsung_rejected": 2,
+  "pluto_samsung_rejected": 0,
   "samsung_output_file": "output/playlist_samsung.m3u",
   "alternative_recovery_enabled": false,
-  "candidate_groups": 398,
-  "duplicate_candidate_groups": 61,
-  "alternative_candidates": 61,
+  "candidate_groups": 378,
+  "duplicate_candidate_groups": 56,
+  "alternative_candidates": 56,
   "candidate_streams_checked": 0,
   "selected_primary": 0,
   "recovered_from_alternative": 0,
@@ -91,27 +91,27 @@
   "epg_sources_total": 5,
   "epg_sources_successful": 5,
   "epg_sources_failed": 0,
-  "epg_channels_matched": 27,
-  "epg_programmes": 3356,
-  "epg_coverage_percent": 6.78,
-  "epg_metadata_updated": 27,
-  "channels": 398,
+  "epg_channels_matched": 21,
+  "epg_programmes": 2202,
+  "epg_coverage_percent": 5.56,
+  "epg_metadata_updated": 21,
+  "channels": 378,
   "epg": {
     "enabled": true,
     "status": "generated",
     "sources_total": 5,
     "sources_successful": 5,
     "sources_failed": 0,
-    "channels_matched": 27,
-    "channels_unmatched": 341,
-    "channels_ambiguous": 30,
-    "programmes": 3356,
-    "coverage_percent": 6.78,
-    "metadata_updated": 27,
-    "channels_without_programmes": 2,
+    "channels_matched": 21,
+    "channels_unmatched": 329,
+    "channels_ambiguous": 28,
+    "programmes": 2202,
+    "coverage_percent": 5.56,
+    "metadata_updated": 21,
+    "channels_without_programmes": 0,
     "programme_duplicates_removed": 1546,
     "file_exists": true,
-    "file_bytes": 953490,
+    "file_bytes": 658030,
     "output_file": "output/epg.xml",
     "report_file": "output/epg-report.json",
     "public_url": "https://raw.githubusercontent.com/Mike80p/italia-tv-hub/main/output/epg.xml",
@@ -126,14 +126,14 @@
           "content_type": "application/octet-stream",
           "compressed": true,
           "attempt_count": 1,
-          "total_elapsed_ms": 204,
+          "total_elapsed_ms": 136,
           "bytes_downloaded": 270388,
           "http_status": 200,
           "attempts": [
             {
               "attempt_number": 1,
               "status": "ok",
-              "elapsed_ms": 204,
+              "elapsed_ms": 136,
               "bytes_read": 270388,
               "http_status": 200,
               "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz",
@@ -210,14 +210,14 @@
           "content_type": "application/octet-stream",
           "compressed": true,
           "attempt_count": 1,
-          "total_elapsed_ms": 189,
+          "total_elapsed_ms": 131,
           "bytes_downloaded": 232842,
           "http_status": 200,
           "attempts": [
             {
               "attempt_number": 1,
               "status": "ok",
-              "elapsed_ms": 189,
+              "elapsed_ms": 131,
               "bytes_read": 232842,
               "http_status": 200,
               "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy3.xml.gz",
@@ -252,14 +252,14 @@
           "content_type": "application/octet-stream",
           "compressed": true,
           "attempt_count": 1,
-          "total_elapsed_ms": 248,
+          "total_elapsed_ms": 365,
           "bytes_downloaded": 148556,
           "http_status": 200,
           "attempts": [
             {
               "attempt_number": 1,
               "status": "ok",
-              "elapsed_ms": 248,
+              "elapsed_ms": 365,
               "bytes_read": 148556,
               "http_status": 200,
               "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy4.xml.gz",
@@ -294,14 +294,14 @@
           "content_type": "application/octet-stream",
           "compressed": true,
           "attempt_count": 1,
-          "total_elapsed_ms": 192,
+          "total_elapsed_ms": 125,
           "bytes_downloaded": 146194,
           "http_status": 200,
           "attempts": [
             {
               "attempt_number": 1,
               "status": "ok",
-              "elapsed_ms": 192,
+              "elapsed_ms": 125,
               "bytes_read": 146194,
               "http_status": 200,
               "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy5.xml.gz",
@@ -368,15 +368,15 @@
     "failed": 0,
     "attempts_total": 2,
     "retries_total": 0,
-    "bytes_total": 117256,
-    "time_ms_total": 397
+    "bytes_total": 108068,
+    "time_ms_total": 141
   },
   "parser_summary": {
     "sources_processed": 2,
-    "lines_total": 950,
-    "non_empty_lines": 948,
-    "extinf_records": 459,
-    "channels_created": 459,
+    "lines_total": 881,
+    "non_empty_lines": 879,
+    "extinf_records": 434,
+    "channels_created": 434,
     "skipped_records": 0,
     "malformed_extinf": 0,
     "missing_name": 0,
@@ -384,7 +384,7 @@
     "invalid_channel": 0,
     "orphan_lines": 0,
     "abandoned_records": 0,
-    "directives_collected": 28,
+    "directives_collected": 9,
     "issue_count": 0,
     "issues_reported": 0,
     "issues_truncated": 0
@@ -394,22 +394,22 @@
     "supported": true,
     "health_ranking": false,
     "stats": {
-      "input_channels": 459,
-      "groups": 398,
-      "singleton_groups": 337,
-      "duplicate_groups": 61,
-      "alternative_candidates": 61,
+      "input_channels": 434,
+      "groups": 378,
+      "singleton_groups": 322,
+      "duplicate_groups": 56,
+      "alternative_candidates": 56,
       "url_collisions": 55,
       "tvg_id_collisions": 0,
-      "name_collisions": 57
+      "name_collisions": 52
     }
   },
   "alternative_recovery": {
     "enabled": false,
     "mode": "disabled",
-    "candidate_groups": 398,
-    "duplicate_candidate_groups": 61,
-    "alternative_candidates": 61,
+    "candidate_groups": 378,
+    "duplicate_candidate_groups": 56,
+    "alternative_candidates": 56,
     "candidate_streams_checked": 0,
     "selected_primary": 0,
     "recovered_from_alternative": 0,
@@ -428,16 +428,16 @@
       "plutotv_it": 20
     },
     "stats": {
-      "input_channels": 459,
-      "output_channels": 398,
-      "duplicate_groups": 61,
-      "duplicates_removed": 61,
+      "input_channels": 434,
+      "output_channels": 378,
+      "duplicate_groups": 56,
+      "duplicates_removed": 56,
       "url_collisions": 55,
       "tvg_id_collisions": 0,
-      "name_collisions": 57
+      "name_collisions": 52
     },
-    "decision_count": 61,
-    "decisions_reported": 61,
+    "decision_count": 56,
+    "decisions_reported": 56,
     "decisions_truncated": 0,
     "decisions": [
       {
@@ -454,7 +454,7 @@
         },
         "discarded": [
           {
-            "index": 247,
+            "index": 242,
             "name": "Pluto TV Anime",
             "stream_url": "https://jmp2.uk/plu-65b90daed77d450008a43345.m3u8",
             "source_id": "italy_public",
@@ -482,7 +482,7 @@
         },
         "discarded": [
           {
-            "index": 377,
+            "index": 356,
             "name": "Super! SpongeBob (720p)",
             "stream_url": "https://jmp2.uk/plu-6093f9281db477000759fce0.m3u8",
             "source_id": "italy_public",
@@ -510,7 +510,7 @@
         },
         "discarded": [
           {
-            "index": 384,
+            "index": 363,
             "name": "Teenage Mutant Ninja Turtles (720p)",
             "stream_url": "https://jmp2.uk/plu-62619405c733e8000732d1fe.m3u8",
             "source_id": "italy_public",
@@ -538,7 +538,7 @@
         },
         "discarded": [
           {
-            "index": 180,
+            "index": 177,
             "name": "Failarmy",
             "stream_url": "https://failarmy-international-it.samsung.wurl.tv/playlist.m3u8",
             "source_id": "italy_public",
@@ -566,7 +566,7 @@
         },
         "discarded": [
           {
-            "index": 270,
+            "index": 263,
             "name": "Pluto TV Scherzi e risate",
             "stream_url": "https://jmp2.uk/plu-609404b0a8ec810007d8de9d.m3u8",
             "source_id": "italy_public",
@@ -594,7 +594,7 @@
         },
         "discarded": [
           {
-            "index": 362,
+            "index": 342,
             "name": "South Park",
             "stream_url": "https://jmp2.uk/plu-62bc1f502b70e3000706298e.m3u8",
             "source_id": "italy_public",
@@ -622,7 +622,7 @@
         },
         "discarded": [
           {
-            "index": 254,
+            "index": 247,
             "name": "Pluto TV Documentari",
             "stream_url": "https://jmp2.uk/plu-608aa8a5709d6b0007b132fe.m3u8",
             "source_id": "italy_public",
@@ -650,7 +650,7 @@
         },
         "discarded": [
           {
-            "index": 264,
+            "index": 257,
             "name": "Pluto TV Natura",
             "stream_url": "https://jmp2.uk/plu-60802b37709d6b0007b0c549.m3u8",
             "source_id": "italy_public",
@@ -678,7 +678,7 @@
         },
         "discarded": [
           {
-            "index": 278,
+            "index": 271,
             "name": "Pluto TV Storia",
             "stream_url": "https://jmp2.uk/plu-65253fdf3fd33c00080214a3.m3u8",
             "source_id": "italy_public",
@@ -706,7 +706,7 @@
         },
         "discarded": [
           {
-            "index": 246,
+            "index": 241,
             "name": "Pluto TV Alberto Sordi",
             "stream_url": "https://jmp2.uk/plu-661f8f01801af800083d9d81.m3u8",
             "source_id": "italy_public",
@@ -734,7 +734,7 @@
         },
         "discarded": [
           {
-            "index": 249,
+            "index": 243,
             "name": "Pluto TV Christmas tutto l'anno",
             "stream_url": "https://jmp2.uk/plu-612e05b885183d0007958101.m3u8",
             "source_id": "italy_public",
@@ -762,7 +762,7 @@
         },
         "discarded": [
           {
-            "index": 250,
+            "index": 244,
             "name": "Pluto TV Cinema Italiano",
             "stream_url": "https://jmp2.uk/plu-608aa7d8359b270007861489.m3u8",
             "source_id": "italy_public",
@@ -790,7 +790,7 @@
         },
         "discarded": [
           {
-            "index": 251,
+            "index": 245,
             "name": "Pluto TV Cinema Orientale",
             "stream_url": "https://jmp2.uk/plu-6786235bd648bf0008c2780a.m3u8",
             "source_id": "italy_public",
@@ -818,7 +818,7 @@
         },
         "discarded": [
           {
-            "index": 255,
+            "index": 248,
             "name": "Pluto TV Film",
             "stream_url": "https://jmp2.uk/plu-608aa17fb9f4490007e6419a.m3u8",
             "source_id": "italy_public",
@@ -846,7 +846,7 @@
         },
         "discarded": [
           {
-            "index": 256,
+            "index": 249,
             "name": "Pluto TV Film Ancora Più Romantici",
             "stream_url": "https://jmp2.uk/plu-699d87093d5dba980705cca8.m3u8",
             "source_id": "italy_public",
@@ -874,7 +874,7 @@
         },
         "discarded": [
           {
-            "index": 257,
+            "index": 250,
             "name": "Pluto TV Film Azione",
             "stream_url": "https://jmp2.uk/plu-608aa20a2e7f270007c4878d.m3u8",
             "source_id": "italy_public",
@@ -902,7 +902,7 @@
         },
         "discarded": [
           {
-            "index": 258,
+            "index": 251,
             "name": "Pluto TV Film Commedia",
             "stream_url": "https://jmp2.uk/plu-608aa512d67fd900072323db.m3u8",
             "source_id": "italy_public",
@@ -930,7 +930,7 @@
         },
         "discarded": [
           {
-            "index": 259,
+            "index": 252,
             "name": "Pluto TV Film Romantici",
             "stream_url": "https://jmp2.uk/plu-608aa4a4cc92820007b663af.m3u8",
             "source_id": "italy_public",
@@ -958,7 +958,7 @@
         },
         "discarded": [
           {
-            "index": 260,
+            "index": 253,
             "name": "Pluto TV Film Storici",
             "stream_url": "https://jmp2.uk/plu-68750875759366af05a151ce.m3u8",
             "source_id": "italy_public",
@@ -986,7 +986,7 @@
         },
         "discarded": [
           {
-            "index": 261,
+            "index": 254,
             "name": "Pluto TV Film Thriller",
             "stream_url": "https://jmp2.uk/plu-608aa5e995132a00075f7005.m3u8",
             "source_id": "italy_public",
@@ -1014,7 +1014,7 @@
         },
         "discarded": [
           {
-            "index": 262,
+            "index": 255,
             "name": "Pluto TV Horror",
             "stream_url": "https://jmp2.uk/plu-61c09e3ac210ed0007606620.m3u8",
             "source_id": "italy_public",
@@ -1042,7 +1042,7 @@
         },
         "discarded": [
           {
-            "index": 263,
+            "index": 256,
             "name": "Pluto TV Legami Letali",
             "stream_url": "https://jmp2.uk/plu-64808a8c536e0c0008a276d1.m3u8",
             "source_id": "italy_public",
@@ -1070,7 +1070,7 @@
         },
         "discarded": [
           {
-            "index": 280,
+            "index": 273,
             "name": "Pluto TV Totò",
             "stream_url": "https://jmp2.uk/plu-65253f9881f942000833ccd5.m3u8",
             "source_id": "italy_public",
@@ -1098,7 +1098,7 @@
         },
         "discarded": [
           {
-            "index": 283,
+            "index": 276,
             "name": "Pluto TV Western",
             "stream_url": "https://jmp2.uk/plu-62e7fb67478a5b0007e6c50c.m3u8",
             "source_id": "italy_public",
@@ -1126,7 +1126,7 @@
         },
         "discarded": [
           {
-            "index": 268,
+            "index": 261,
             "name": "Pluto TV Paranormal",
             "stream_url": "https://jmp2.uk/plu-66c70033b1a34600087bb09a.m3u8",
             "source_id": "italy_public",
@@ -1154,7 +1154,7 @@
         },
         "discarded": [
           {
-            "index": 160,
+            "index": 157,
             "name": "Catfish",
             "stream_url": "https://jmp2.uk/plu-6093f9ed2c75660007322bb7.m3u8",
             "source_id": "italy_public",
@@ -1182,7 +1182,7 @@
         },
         "discarded": [
           {
-            "index": 195,
+            "index": 191,
             "name": "Il Banco dei Pugni",
             "stream_url": "https://jmp2.uk/plu-60e4507a06171800072339a3.m3u8",
             "source_id": "italy_public",
@@ -1210,7 +1210,7 @@
         },
         "discarded": [
           {
-            "index": 196,
+            "index": 192,
             "name": "Il Testimone",
             "stream_url": "https://jmp2.uk/plu-61fbd3f0733df400076c9a2d.m3u8",
             "source_id": "italy_public",
@@ -1238,7 +1238,7 @@
         },
         "discarded": [
           {
-            "index": 184,
+            "index": 181,
             "name": "Gambero Rosso (720p)",
             "stream_url": "https://jmp2.uk/plu-6971fc07c945e6e4e5bc46bf.m3u8",
             "source_id": "italy_public",
@@ -1266,7 +1266,7 @@
         },
         "discarded": [
           {
-            "index": 252,
+            "index": 246,
             "name": "Pluto TV Cucina",
             "stream_url": "https://jmp2.uk/plu-608aa718a8ec810007d87fee.m3u8",
             "source_id": "italy_public",
@@ -1294,7 +1294,7 @@
         },
         "discarded": [
           {
-            "index": 269,
+            "index": 262,
             "name": "Pluto TV Real Life",
             "stream_url": "https://jmp2.uk/plu-60801976f92a750007a0699c.m3u8",
             "source_id": "italy_public",
@@ -1322,7 +1322,7 @@
         },
         "discarded": [
           {
-            "index": 282,
+            "index": 275,
             "name": "Pluto TV Viaggi",
             "stream_url": "https://jmp2.uk/plu-63c923944207be0007fd0887.m3u8",
             "source_id": "italy_public",
@@ -1350,7 +1350,7 @@
         },
         "discarded": [
           {
-            "index": 276,
+            "index": 269,
             "name": "Pluto TV Snooker 900 (720p)",
             "stream_url": "https://jmp2.uk/plu-69148c76e9dec35c9269a16c.m3u8",
             "source_id": "italy_public",
@@ -1378,7 +1378,7 @@
         },
         "discarded": [
           {
-            "index": 277,
+            "index": 270,
             "name": "Pluto TV Sport",
             "stream_url": "https://jmp2.uk/plu-608030eff4b6f70007e1684c.m3u8",
             "source_id": "italy_public",
@@ -1390,34 +1390,6 @@
           }
         ],
         "reason": "better_source_priority",
-        "duplicates_removed": 1
-      },
-      {
-        "selected": {
-          "index": 319,
-          "name": "Rai News 24 HD",
-          "stream_url": "http://91.146.94.234:10001/play/a135",
-          "source_id": "italy_public",
-          "health_score": 0.0,
-          "source_priority": 100,
-          "quality_score": 200,
-          "metadata_score": 70,
-          "transport_score": 10
-        },
-        "discarded": [
-          {
-            "index": 318,
-            "name": "Rai News 24 (720p)",
-            "stream_url": "https://rainews1-live.akamaized.net/hls/live/598326/rainews1/rainews1/playlist.m3u8",
-            "source_id": "italy_public",
-            "health_score": 0.0,
-            "source_priority": 100,
-            "quality_score": 200,
-            "metadata_score": 68,
-            "transport_score": 25
-          }
-        ],
-        "reason": "richer_metadata",
         "duplicates_removed": 1
       },
       {
@@ -1434,7 +1406,7 @@
         },
         "discarded": [
           {
-            "index": 265,
+            "index": 258,
             "name": "Pluto TV Notti di Passione",
             "stream_url": "https://jmp2.uk/plu-6911c9704316999535eb21cf.m3u8",
             "source_id": "italy_public",
@@ -1462,7 +1434,7 @@
         },
         "discarded": [
           {
-            "index": 266,
+            "index": 259,
             "name": "Pluto TV Notti di Sangue",
             "stream_url": "https://jmp2.uk/plu-6911c92b4316999535eb1e08.m3u8",
             "source_id": "italy_public",
@@ -1490,7 +1462,7 @@
         },
         "discarded": [
           {
-            "index": 267,
+            "index": 260,
             "name": "Pluto TV Notti di Terrore",
             "stream_url": "https://jmp2.uk/plu-6911c8dd8caba6f046c5c5d5.m3u8",
             "source_id": "italy_public",
@@ -1518,7 +1490,7 @@
         },
         "discarded": [
           {
-            "index": 127,
+            "index": 126,
             "name": "16 Anni e Incinta",
             "stream_url": "https://jmp2.uk/plu-60940a07d88ba90007b9cb71.m3u8",
             "source_id": "italy_public",
@@ -1546,7 +1518,7 @@
         },
         "discarded": [
           {
-            "index": 185,
+            "index": 182,
             "name": "Geordie Shore",
             "stream_url": "https://jmp2.uk/plu-619263ee9541940007d20d60.m3u8",
             "source_id": "italy_public",
@@ -1574,7 +1546,7 @@
         },
         "discarded": [
           {
-            "index": 275,
+            "index": 268,
             "name": "Pluto TV Shore",
             "stream_url": "https://jmp2.uk/plu-67e3b0d2443f0671bc8a1297.m3u8",
             "source_id": "italy_public",
@@ -1602,7 +1574,7 @@
         },
         "discarded": [
           {
-            "index": 383,
+            "index": 362,
             "name": "Teen Mom",
             "stream_url": "https://jmp2.uk/plu-62e7fc8c0d061100083946a9.m3u8",
             "source_id": "italy_public",
@@ -1630,7 +1602,7 @@
         },
         "discarded": [
           {
-            "index": 139,
+            "index": 138,
             "name": "Andromeda Italy (720p)",
             "stream_url": "https://jmp2.uk/plu-60802d37ee238e0007c94e64.m3u8",
             "source_id": "italy_public",
@@ -1658,7 +1630,7 @@
         },
         "discarded": [
           {
-            "index": 271,
+            "index": 264,
             "name": "Pluto TV Sci-Fi",
             "stream_url": "https://jmp2.uk/plu-61728bb9ee3773000840c1fa.m3u8",
             "source_id": "italy_public",
@@ -1686,7 +1658,7 @@
         },
         "discarded": [
           {
-            "index": 274,
+            "index": 267,
             "name": "Pluto TV Serie Sci-Fi",
             "stream_url": "https://jmp2.uk/plu-67ed14aaf7c5d70b9089c3bf.m3u8",
             "source_id": "italy_public",
@@ -1714,7 +1686,7 @@
         },
         "discarded": [
           {
-            "index": 368,
+            "index": 347,
             "name": "Star Trek: Voyager",
             "stream_url": "https://jmp2.uk/plu-65cb73d33ba51e00084cabad.m3u8",
             "source_id": "italy_public",
@@ -1742,7 +1714,7 @@
         },
         "discarded": [
           {
-            "index": 216,
+            "index": 212,
             "name": "Le sorelle McLeod",
             "stream_url": "https://jmp2.uk/plu-60a2837f8154ab0007c4dcdf.m3u8",
             "source_id": "italy_public",
@@ -1770,7 +1742,7 @@
         },
         "discarded": [
           {
-            "index": 272,
+            "index": 265,
             "name": "Pluto TV Serie",
             "stream_url": "https://jmp2.uk/plu-60b9ff2722bfa400072676ef.m3u8",
             "source_id": "italy_public",
@@ -1798,7 +1770,7 @@
         },
         "discarded": [
           {
-            "index": 162,
+            "index": 159,
             "name": "Cin Cin",
             "stream_url": "https://jmp2.uk/plu-65cb78b83a116800079e2e35.m3u8",
             "source_id": "italy_public",
@@ -1826,7 +1798,7 @@
         },
         "discarded": [
           {
-            "index": 172,
+            "index": 169,
             "name": "Dynasty",
             "stream_url": "https://jmp2.uk/plu-65cb76ea11ced70008206b66.m3u8",
             "source_id": "italy_public",
@@ -1854,7 +1826,7 @@
         },
         "discarded": [
           {
-            "index": 229,
+            "index": 224,
             "name": "Mission Impossible",
             "stream_url": "https://jmp2.uk/plu-65cb77853ba51e00084cba02.m3u8",
             "source_id": "italy_public",
@@ -1882,7 +1854,7 @@
         },
         "discarded": [
           {
-            "index": 273,
+            "index": 266,
             "name": "Pluto TV Serie Crime",
             "stream_url": "https://jmp2.uk/plu-608aa777b907770007e5d05d.m3u8",
             "source_id": "italy_public",
@@ -1910,7 +1882,7 @@
         },
         "discarded": [
           {
-            "index": 375,
+            "index": 354,
             "name": "Super! iCarly",
             "stream_url": "https://jmp2.uk/plu-609401db8cf51c00084b592e.m3u8",
             "source_id": "italy_public",
@@ -1938,7 +1910,7 @@
         },
         "discarded": [
           {
-            "index": 279,
+            "index": 272,
             "name": "Pluto TV Teen (720p)",
             "stream_url": "https://jmp2.uk/plu-63eb573ba99571000897135b.m3u8",
             "source_id": "italy_public",
@@ -1966,7 +1938,7 @@
         },
         "discarded": [
           {
-            "index": 376,
+            "index": 355,
             "name": "Super! Pop",
             "stream_url": "https://jmp2.uk/plu-6093f7b5bb49b90007cecaad.m3u8",
             "source_id": "italy_public",
@@ -1994,7 +1966,7 @@
         },
         "discarded": [
           {
-            "index": 281,
+            "index": 274,
             "name": "Pluto TV True Crime",
             "stream_url": "https://jmp2.uk/plu-66d9ab4bf0f17500084e9b7e.m3u8",
             "source_id": "italy_public",
@@ -2022,7 +1994,7 @@
         },
         "discarded": [
           {
-            "index": 370,
+            "index": 349,
             "name": "Storie Criminali",
             "stream_url": "https://jmp2.uk/plu-66177d18c8311c0008d077d0.m3u8",
             "source_id": "italy_public",
@@ -2035,126 +2007,14 @@
         ],
         "reason": "better_source_priority",
         "duplicates_removed": 1
-      },
-      {
-        "selected": {
-          "index": 308,
-          "name": "Rai 1 HD (1080p)",
-          "stream_url": "https://srv1.adriatelekom.com/Rai1/index.m3u8",
-          "source_id": "italy_public",
-          "health_score": 0.0,
-          "source_priority": 100,
-          "quality_score": 300,
-          "metadata_score": 68,
-          "transport_score": 25
-        },
-        "discarded": [
-          {
-            "index": 307,
-            "name": "Rai 1 (720p)",
-            "stream_url": "https://dash2.antik.sk/live/test_rai_uno_tizen/playlist.m3u8",
-            "source_id": "italy_public",
-            "health_score": 0.0,
-            "source_priority": 100,
-            "quality_score": 200,
-            "metadata_score": 68,
-            "transport_score": 25
-          }
-        ],
-        "reason": "higher_video_quality",
-        "duplicates_removed": 1
-      },
-      {
-        "selected": {
-          "index": 309,
-          "name": "Rai 2 (1080p)",
-          "stream_url": "https://d3k8wzt41aflvx.cloudfront.net/RAI2/Live.m3u8",
-          "source_id": "italy_public",
-          "health_score": 0.0,
-          "source_priority": 100,
-          "quality_score": 300,
-          "metadata_score": 70,
-          "transport_score": 25
-        },
-        "discarded": [
-          {
-            "index": 310,
-            "name": "Rai 2 HD (1080p)",
-            "stream_url": "https://srv1.adriatelekom.com/Rai2/index.m3u8",
-            "source_id": "italy_public",
-            "health_score": 0.0,
-            "source_priority": 100,
-            "quality_score": 300,
-            "metadata_score": 68,
-            "transport_score": 25
-          }
-        ],
-        "reason": "richer_metadata",
-        "duplicates_removed": 1
-      },
-      {
-        "selected": {
-          "index": 313,
-          "name": "Rai 4 HD",
-          "stream_url": "http://91.146.94.234:10001/play/a02p",
-          "source_id": "italy_public",
-          "health_score": 0.0,
-          "source_priority": 100,
-          "quality_score": 200,
-          "metadata_score": 70,
-          "transport_score": 10
-        },
-        "discarded": [
-          {
-            "index": 312,
-            "name": "Rai 4 (576p)",
-            "stream_url": "https://mediapolisevent.rai.it/relinker/relinkerServlet.htm?cont=746966",
-            "source_id": "italy_public",
-            "health_score": 0.0,
-            "source_priority": 100,
-            "quality_score": 100,
-            "metadata_score": 68,
-            "transport_score": 20
-          }
-        ],
-        "reason": "higher_video_quality",
-        "duplicates_removed": 1
-      },
-      {
-        "selected": {
-          "index": 316,
-          "name": "Rai Gulp HD",
-          "stream_url": "http://91.146.94.234:10001/play/a037",
-          "source_id": "italy_public",
-          "health_score": 0.0,
-          "source_priority": 100,
-          "quality_score": 200,
-          "metadata_score": 70,
-          "transport_score": 10
-        },
-        "discarded": [
-          {
-            "index": 315,
-            "name": "Rai Gulp (576p)",
-            "stream_url": "https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746953",
-            "source_id": "italy_public",
-            "health_score": 0.0,
-            "source_priority": 100,
-            "quality_score": 100,
-            "metadata_score": 68,
-            "transport_score": 20
-          }
-        ],
-        "reason": "higher_video_quality",
-        "duplicates_removed": 1
       }
     ]
   },
   "registry": {
-    "channels": 398,
+    "channels": 378,
     "sources": 2,
     "groups": 47,
-    "tvg_ids": 398
+    "tvg_ids": 378
   },
   "output_file": "output/playlist.m3u",
   "sources": [
@@ -2174,7 +2034,7 @@
       "registered": 124,
       "duplicates_skipped": 0,
       "attempt_count": 1,
-      "download_ms": 169,
+      "download_ms": 81,
       "bytes_downloaded": 38341,
       "http_status": 200,
       "final_url": "https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/plutotv_it.m3u",
@@ -2186,7 +2046,7 @@
         {
           "number": 1,
           "status": "success",
-          "elapsed_ms": 169,
+          "elapsed_ms": 81,
           "http_status": 200,
           "error_type": null,
           "error_message": null
@@ -2215,12 +2075,12 @@
       "id": "italy_public",
       "name": "Catalogo italiano pubblico",
       "status": "ok",
-      "channels": 335,
-      "registered": 280,
+      "channels": 310,
+      "registered": 255,
       "duplicates_skipped": 55,
       "attempt_count": 1,
-      "download_ms": 228,
-      "bytes_downloaded": 78915,
+      "download_ms": 60,
+      "bytes_downloaded": 69727,
       "http_status": 200,
       "final_url": "https://iptv-org.github.io/iptv/countries/it.m3u",
       "content_type": "audio/x-mpegurl",
@@ -2231,17 +2091,17 @@
         {
           "number": 1,
           "status": "success",
-          "elapsed_ms": 228,
+          "elapsed_ms": 60,
           "http_status": 200,
           "error_type": null,
           "error_message": null
         }
       ],
       "parser_stats": {
-        "lines_total": 700,
-        "non_empty_lines": 699,
-        "extinf_records": 335,
-        "channels_created": 335,
+        "lines_total": 631,
+        "non_empty_lines": 630,
+        "extinf_records": 310,
+        "channels_created": 310,
         "skipped_records": 0,
         "malformed_extinf": 0,
         "missing_name": 0,
@@ -2249,7 +2109,7 @@
         "invalid_channel": 0,
         "orphan_lines": 0,
         "abandoned_records": 0,
-        "directives_collected": 28
+        "directives_collected": 9
       },
       "parser_issue_count": 0,
       "parser_issues_reported": 0,

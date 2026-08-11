@@ -1,7 +1,7 @@
 {
   "project": "Italia TV Hub",
   "version": "0.8.0",
-  "generated_at": "2026-08-11T13:45:21.311260+00:00",
+  "generated_at": "2026-08-11T19:28:15.201465+00:00",
   "enabled": false,
   "checked": 0,
   "online": 0,
@@ -10,9 +10,9 @@
   "alternative_recovery": {
     "enabled": false,
     "mode": "disabled",
-    "candidate_groups": 398,
-    "duplicate_candidate_groups": 61,
-    "alternative_candidates": 61,
+    "candidate_groups": 378,
+    "duplicate_candidate_groups": 56,
+    "alternative_candidates": 56,
     "candidate_streams_checked": 0,
     "selected_primary": 0,
     "recovered_from_alternative": 0,
