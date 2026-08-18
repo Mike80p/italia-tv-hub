@@ -1,17 +1,17 @@
 {
   "project": "Italia TV Hub",
   "version": "0.8.0",
-  "generated_at": "2026-08-18T01:52:51.031152+00:00",
+  "generated_at": "2026-08-18T07:07:15.948568+00:00",
   "enabled": true,
   "status": "generated",
   "sources_total": 5,
   "sources_successful": 5,
   "sources_failed": 0,
   "channels_matched": 21,
-  "channels_unmatched": 330,
+  "channels_unmatched": 329,
   "channels_ambiguous": 28,
   "programmes": 2202,
-  "coverage_percent": 5.54,
+  "coverage_percent": 5.56,
   "metadata_updated": 21,
   "channels_without_programmes": 0,
   "programme_duplicates_removed": 1546,
@@ -31,14 +31,14 @@
         "content_type": "application/octet-stream",
         "compressed": true,
         "attempt_count": 1,
-        "total_elapsed_ms": 360,
+        "total_elapsed_ms": 118,
         "bytes_downloaded": 270388,
         "http_status": 200,
         "attempts": [
           {
             "attempt_number": 1,
             "status": "ok",
-            "elapsed_ms": 360,
+            "elapsed_ms": 118,
             "bytes_read": 270388,
             "http_status": 200,
             "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz",
@@ -73,14 +73,14 @@
         "content_type": "application/octet-stream",
         "compressed": true,
         "attempt_count": 1,
-        "total_elapsed_ms": 280,
+        "total_elapsed_ms": 107,
         "bytes_downloaded": 133294,
         "http_status": 200,
         "attempts": [
           {
             "attempt_number": 1,
             "status": "ok",
-            "elapsed_ms": 280,
+            "elapsed_ms": 107,
             "bytes_read": 133294,
             "http_status": 200,
             "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy2.xml.gz",
@@ -115,14 +115,14 @@
         "content_type": "application/octet-stream",
         "compressed": true,
         "attempt_count": 1,
-        "total_elapsed_ms": 311,
+        "total_elapsed_ms": 294,
         "bytes_downloaded": 232842,
         "http_status": 200,
         "attempts": [
           {
             "attempt_number": 1,
             "status": "ok",
-            "elapsed_ms": 311,
+            "elapsed_ms": 294,
             "bytes_read": 232842,
             "http_status": 200,
             "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy3.xml.gz",
@@ -157,14 +157,14 @@
         "content_type": "application/octet-stream",
         "compressed": true,
         "attempt_count": 1,
-        "total_elapsed_ms": 192,
+        "total_elapsed_ms": 124,
         "bytes_downloaded": 148556,
         "http_status": 200,
         "attempts": [
           {
             "attempt_number": 1,
             "status": "ok",
-            "elapsed_ms": 192,
+            "elapsed_ms": 124,
             "bytes_read": 148556,
             "http_status": 200,
             "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy4.xml.gz",
@@ -199,14 +199,14 @@
         "content_type": "application/octet-stream",
         "compressed": true,
         "attempt_count": 1,
-        "total_elapsed_ms": 134,
+        "total_elapsed_ms": 344,
         "bytes_downloaded": 146194,
         "http_status": 200,
         "attempts": [
           {
             "attempt_number": 1,
             "status": "ok",
-            "elapsed_ms": 134,
+            "elapsed_ms": 344,
             "bytes_read": 146194,
             "http_status": 200,
             "final_url": "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy5.xml.gz",
@@ -240,28 +240,28 @@
       "input_programmes": 19583,
       "merged_epg_channels": 214,
       "merged_programmes": 18037,
-      "playlist_channels": 379,
+      "playlist_channels": 378,
       "matched_playlist_channels": 21,
-      "unmatched_playlist_channels": 330,
+      "unmatched_playlist_channels": 329,
       "ambiguous_playlist_channels": 28,
       "output_channels": 19,
       "output_programmes": 2202,
       "programme_duplicates_removed": 1546,
       "channels_without_programmes": 0,
-      "coverage_percent": 5.54
+      "coverage_percent": 5.56
     },
     "matching": {
       "stats": {
-        "playlist_channels": 379,
+        "playlist_channels": 378,
         "epg_channels": 214,
         "matched": 21,
-        "unmatched": 330,
+        "unmatched": 329,
         "ambiguous": 28,
         "matched_by_tvg_id": 17,
         "matched_by_name": 0,
         "matched_by_alias": 0,
         "matched_by_similarity": 4,
-        "coverage_percent": 5.54
+        "coverage_percent": 5.56
       },
       "matches": [
         {
@@ -894,13 +894,6 @@
           "tvg_id": "610a9ebe8c2ac2000734776e",
           "tvg_name": "Naturescape",
           "stream_url": "https://jmp2.uk/plu-610a9ebe8c2ac2000734776e.m3u8",
-          "source_id": "plutotv_it"
-        },
-        {
-          "name": "Pluto TV Arte",
-          "tvg_id": "6a439aae539f6cfa9cd04d27",
-          "tvg_name": "Pluto TV Arte",
-          "stream_url": "https://jmp2.uk/plu-6a439aae539f6cfa9cd04d27.m3u8",
           "source_id": "plutotv_it"
         },
         {
@@ -1912,13 +1905,6 @@
           "source_id": "italy_public"
         },
         {
-          "name": "That's 60s",
-          "tvg_id": "69ef572280ef8232ceef596b",
-          "tvg_name": "That's 60s",
-          "stream_url": "https://jmp2.uk/plu-69ef572280ef8232ceef596b.m3u8",
-          "source_id": "plutotv_it"
-        },
-        {
           "name": "That's 70s",
           "tvg_id": "69ef53e12f4d2b4f9c582e76",
           "tvg_name": "That's 70s",
@@ -2080,10 +2066,31 @@
           "source_id": "plutotv_it"
         },
         {
-          "name": "NFL Channel",
-          "tvg_id": "69690bb672db627531285928",
-          "tvg_name": "NFL Channel",
-          "stream_url": "https://jmp2.uk/plu-69690bb672db627531285928.m3u8",
+          "name": "Pluto TV Arte",
+          "tvg_id": "6a439aae539f6cfa9cd04d27",
+          "tvg_name": "Pluto TV Arte",
+          "stream_url": "https://jmp2.uk/plu-6a439aae539f6cfa9cd04d27.m3u8",
+          "source_id": "plutotv_it"
+        },
+        {
+          "name": "That's 60s",
+          "tvg_id": "69ef572280ef8232ceef596b",
+          "tvg_name": "That's 60s",
+          "stream_url": "https://jmp2.uk/plu-69ef572280ef8232ceef596b.m3u8",
+          "source_id": "plutotv_it"
+        },
+        {
+          "name": "ZDF Guardia Costiera",
+          "tvg_id": "69fc8fd109705ebdf782724a",
+          "tvg_name": "ZDF Guardia Costiera",
+          "stream_url": "https://jmp2.uk/plu-69fc8fd109705ebdf782724a.m3u8",
+          "source_id": "plutotv_it"
+        },
+        {
+          "name": "ZDF Squadra Speciale Lipsia",
+          "tvg_id": "69fc9010f6ac24413f520103",
+          "tvg_name": "ZDF Squadra Speciale Lipsia",
+          "stream_url": "https://jmp2.uk/plu-69fc9010f6ac24413f520103.m3u8",
           "source_id": "plutotv_it"
         },
         {
@@ -2413,20 +2420,6 @@
           "tvg_id": "69664afedcbf5c784492e422",
           "tvg_name": "The Intern",
           "stream_url": "https://jmp2.uk/plu-69664afedcbf5c784492e422.m3u8",
-          "source_id": "plutotv_it"
-        },
-        {
-          "name": "ZDF Guardia Costiera",
-          "tvg_id": "69fc8fd109705ebdf782724a",
-          "tvg_name": "ZDF Guardia Costiera",
-          "stream_url": "https://jmp2.uk/plu-69fc8fd109705ebdf782724a.m3u8",
-          "source_id": "plutotv_it"
-        },
-        {
-          "name": "ZDF Squadra Speciale Lipsia",
-          "tvg_id": "69fc9010f6ac24413f520103",
-          "tvg_name": "ZDF Squadra Speciale Lipsia",
-          "stream_url": "https://jmp2.uk/plu-69fc9010f6ac24413f520103.m3u8",
           "source_id": "plutotv_it"
         },
         {
