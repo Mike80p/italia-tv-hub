@@ -168,6 +168,30 @@ def test_duplicate_epg_sources_are_removed(
     )
 
 
+def test_production_settings_include_broadcast_and_pluto_guides() -> None:
+    settings_path = (
+        Path(__file__).resolve().parents[1]
+        / "config"
+        / "settings.json"
+    )
+
+    settings = Settings.load(
+        settings_path
+    )
+
+    assert (
+        "https://epgshare01.online/epgshare01/"
+        "epg_ripper_IT1.xml.gz"
+        in settings.epg_sources
+    )
+
+    assert (
+        "https://raw.githubusercontent.com/"
+        "matthuisman/i.mjh.nz/master/PlutoTV/it.xml.gz"
+        in settings.epg_sources
+    )
+
+
 @pytest.mark.parametrize(
     "value, expected",
     [
