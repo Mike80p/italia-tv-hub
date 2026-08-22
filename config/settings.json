@@ -5,7 +5,7 @@
   "request_timeout_seconds": 30,
   "retry_count": 3,
   "user_agent": "Mozilla/5.0 (SMART-TV; LINUX; Tizen 4.0) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 TV Safari/537.36",
-  "health_enabled": false,
+  "health_enabled": true,
   "health_timeout_seconds": 15,
   "health_max_workers": 8,
   "publish_only_online": false,
