@@ -1,0 +1,13 @@
+{
+  "sources": [
+    {
+      "id": "iptv_org_calabria",
+      "name": "Catalogo pubblico Calabria",
+      "url": "https://iptv-org.github.io/iptv/subdivisions/it-78.m3u",
+      "enabled": true,
+      "priority": 90,
+      "country": "IT",
+      "type": "m3u"
+    }
+  ]
+}
