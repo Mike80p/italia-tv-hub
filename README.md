@@ -1,23 +1,26 @@
 # Italia TV Hub
 
-Versione **v0.2.0 — Core Engine**.
+Motore automatico per aggregare, verificare e pubblicare canali TV italiani con playlist M3U, EPG XMLTV e guida TV web.
 
-Funzioni: catalogo sorgenti JSON, download HTTP/locale, parser M3U, modello Channel, exporter M3U, report JSON e test automatici.
+## Funzioni principali
 
-## Avvio
-```bash
-python -m src.main
-```
+- aggregazione e deduplicazione delle sorgenti;
+- Health/Playback verification degli stream;
+- selezione automatica delle alternative migliori;
+- playlist ottimizzata per Samsung/Tizen;
+- EPG XMLTV multi-sorgente;
+- guida TV web per singolo canale con programma in onda e palinsesto giornaliero;
+- aggiornamento automatico tramite GitHub Actions.
 
-## Test
-```bash
-python -m pip install -r requirements.txt
-pytest -q
-```
+## EPG
 
-Playlist finale prevista:
-```text
-https://raw.githubusercontent.com/Mike80p/italia-tv-hub/main/output/playlist.m3u
-```
+Il motore combina più guide XMLTV italiane. Oltre alle guide GlobeTV, usa:
 
-Le sorgenti Internet reali sono disabilitate in questa release; il motore viene collaudato con una playlist locale.
+- EPGShare IT1 per i canali lineari italiani;
+- Pluto TV Italia XMLTV per i canali FAST Pluto.
+
+L'associazione privilegia `tvg-id` / XMLTV channel ID e usa normalizzazione e fallback controllati senza accettare match ambigui.
+
+## Stato
+
+La release pubblicata su `main` resta invariata finché le modifiche correnti non superano i gate di test e la verifica reale della nuova copertura EPG.
