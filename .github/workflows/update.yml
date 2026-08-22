@@ -133,12 +133,14 @@ jobs:
             git add -f output/playlist.m3u
             git add -f output/report.json
 
-            # File opzionali attuali e futuri del Discovery Engine.
+            # File opzionali attuali e futuri del Discovery/Quality Engine.
             optional_outputs=(
               "output/health.json"
               "output/epg.xml"
               "output/epg-report.json"
               "output/playlist-tizen.m3u"
+              "output/playlist_samsung.m3u"
+              "output/pluto-report.json"
               "output/discovered-sources.json"
               "output/missing-priority-channels.json"
               "output/rejected-candidates.json"
