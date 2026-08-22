@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "timezone": "Europe/Rome",
+  "sources": [
+    {"id":"globetv_it_1","priority":50,"url":"https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz","status":"CURRENT_REPO_SOURCE"},
+    {"id":"globetv_it_2","priority":51,"url":"https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy2.xml.gz","status":"CURRENT_REPO_SOURCE"},
+    {"id":"globetv_it_3","priority":52,"url":"https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy3.xml.gz","status":"CURRENT_REPO_SOURCE"},
+    {"id":"globetv_it_4","priority":53,"url":"https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy4.xml.gz","status":"CURRENT_REPO_SOURCE"},
+    {"id":"globetv_it_5","priority":54,"url":"https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy5.xml.gz","status":"CURRENT_REPO_SOURCE"},
+    {"id":"pluto_it","priority":20,"url":"https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/PlutoTV/it.xml.gz","status":"NATIVE_FAST_SOURCE"},
+    {"id":"samsung_it","priority":20,"url":"https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/SamsungTVPlus/it.xml.gz","status":"NATIVE_FAST_SOURCE"}
+  ],
+  "policy": {
+    "prefer_native_fast_epg_for_matching_fast_provider": true,
+    "never_replace_programme_with_lower_priority_collision": true,
+    "retain_source_provenance": true
+  }
+}
