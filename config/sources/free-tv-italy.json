@@ -1,0 +1,13 @@
+{
+  "sources": [
+    {
+      "id": "free_tv_italy",
+      "name": "Free-TV Italy public catalog",
+      "url": "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlists/playlist_italy.m3u8",
+      "enabled": true,
+      "priority": 80,
+      "country": "IT",
+      "type": "m3u"
+    }
+  ]
+}
