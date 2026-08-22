@@ -21,7 +21,8 @@
     "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy4.xml.gz",
     "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy5.xml.gz",
     "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/PlutoTV/it.xml.gz",
-    "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/SamsungTVPlus/it.xml.gz"
+    "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/SamsungTVPlus/it.xml.gz",
+    "https://iptv-epg.org/files/epg-it.xml.gz"
   ],
   "pluto_playback_enabled": true,
   "pluto_minimum_score": 70,
