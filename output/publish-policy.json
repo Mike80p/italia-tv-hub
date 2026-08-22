@@ -1,0 +1,34 @@
+{
+  "enabled": true,
+  "policy": "remove_only_demonstrated_hard_failures",
+  "hard_failure_reasons": [
+    "country_mismatch",
+    "hls_drm_detected",
+    "hls_invalid_media_segment",
+    "hls_no_media_segment",
+    "hls_segment_token_expired",
+    "hls_unsupported_codec",
+    "non_media_payload",
+    "token_expired"
+  ],
+  "hard_http_statuses": [
+    404,
+    410
+  ],
+  "files": [
+    {
+      "file": "/home/runner/work/italia-tv-hub/italia-tv-hub/output/playlist.m3u",
+      "entries_seen": 781,
+      "entries_published": 688,
+      "hard_failures_removed": 93,
+      "uncertain_kept": 124
+    },
+    {
+      "file": "/home/runner/work/italia-tv-hub/italia-tv-hub/output/playlist_samsung.m3u",
+      "entries_seen": 762,
+      "entries_published": 675,
+      "hard_failures_removed": 87,
+      "uncertain_kept": 111
+    }
+  ]
+}
