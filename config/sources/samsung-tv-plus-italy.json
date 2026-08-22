@@ -1,0 +1,13 @@
+{
+  "sources": [
+    {
+      "id": "samsung_tv_plus_it",
+      "name": "Samsung TV Plus Italy FAST catalog",
+      "url": "https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/samsungtvplus_it.m3u",
+      "enabled": true,
+      "priority": 75,
+      "country": "IT",
+      "type": "m3u"
+    }
+  ]
+}
