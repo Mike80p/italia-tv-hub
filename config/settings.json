@@ -20,7 +20,6 @@
     "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy3.xml.gz",
     "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy4.xml.gz",
     "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy5.xml.gz",
-    "https://epgshare01.online/epgshare01/epg_ripper_IT1.xml.gz",
     "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/PlutoTV/it.xml.gz"
   ],
   "pluto_playback_enabled": true,
