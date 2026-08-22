@@ -1,0 +1,55 @@
+name: Validate Italia TV Hub Runtime
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  runtime:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install -r requirements.txt
+      - name: Unit tests
+        run: python -m pytest -q
+      - name: Generate real runtime outputs
+        run: python -m src.main
+      - name: Runtime summary
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          def read_json(path):
+              p = Path(path)
+              if not p.exists():
+                  return {}
+              return json.loads(p.read_text(encoding="utf-8"))
+
+          report = read_json("output/report.json")
+          health = read_json("output/health.json")
+          epg = read_json("output/epg-report.json")
+          policy = read_json("output/publish-policy.json")
+
+          print("RUNTIME_CHANNELS=", report.get("channels"))
+          print("HEALTH_CHECKED=", health.get("checked"))
+          print("HEALTH_ONLINE=", health.get("online"))
+          print("HEALTH_REACHABLE=", health.get("reachable"))
+          print("HEALTH_OFFLINE=", health.get("offline"))
+          print("EPG_MATCHED=", epg.get("channels_matched"))
+          print("EPG_UNMATCHED=", epg.get("channels_unmatched"))
+          print("EPG_AMBIGUOUS=", epg.get("channels_ambiguous"))
+          print("EPG_COVERAGE_PERCENT=", epg.get("coverage_percent"))
+          print("PUBLISH_POLICY=", policy)
+          PY

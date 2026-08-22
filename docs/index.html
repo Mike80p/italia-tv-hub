@@ -1,1 +1,74 @@
-<!doctype html><html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Italia TV Hub</title><link rel="stylesheet" href="style.css"></head><body><main><h1>Italia TV Hub</h1><p>Core Engine v0.2.0 installato.</p></main></body></html>
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#08111f">
+  <title>Italia TV Hub — Guida TV</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">ITALIA TV HUB</p>
+      <h1>Guida TV</h1>
+    </div>
+    <div class="status" id="status" role="status" aria-live="polite">Caricamento canali…</div>
+  </header>
+
+  <main class="layout">
+    <section class="channels-panel" aria-label="Canali">
+      <label class="search-wrap" for="channel-search">
+        <span class="sr-only">Cerca un canale</span>
+        <input id="channel-search" type="search" placeholder="Cerca canale…" autocomplete="off">
+      </label>
+      <div id="channel-list" class="channel-list" role="list"></div>
+    </section>
+
+    <section class="guide-panel" aria-labelledby="selected-channel-name">
+      <div id="empty-state" class="empty-state">
+        <p>Seleziona un canale per vedere la programmazione completa.</p>
+      </div>
+
+      <div id="guide-content" class="guide-content" hidden>
+        <div class="channel-header">
+          <div class="logo-shell">
+            <img id="selected-channel-logo" alt="" loading="lazy">
+          </div>
+          <div>
+            <p id="selected-channel-group" class="channel-group"></p>
+            <h2 id="selected-channel-name"></h2>
+          </div>
+        </div>
+
+        <article id="now-card" class="now-card" hidden>
+          <div class="now-label">IN ONDA</div>
+          <div class="now-main">
+            <div>
+              <p id="now-time" class="programme-time"></p>
+              <h3 id="now-title"></h3>
+              <p id="now-description" class="programme-description"></p>
+            </div>
+            <div class="progress-wrap" aria-hidden="true">
+              <div id="now-progress" class="progress-bar"></div>
+            </div>
+          </div>
+        </article>
+
+        <nav id="date-tabs" class="date-tabs" aria-label="Giorni della programmazione"></nav>
+
+        <div class="schedule-heading">
+          <h3>Programmazione</h3>
+          <span id="schedule-count"></span>
+        </div>
+        <div id="schedule" class="schedule" role="list"></div>
+        <div id="no-schedule" class="no-schedule" hidden>
+          Programmazione non disponibile per questo canale.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
