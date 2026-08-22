@@ -2,6 +2,7 @@ from pathlib import Path
 
 from src.core.application import Application
 from src.health.publish_policy import apply_publish_policy
+from src.postprocess.m3u_deduper import dedupe_outputs
 
 
 def main() -> int:
@@ -10,6 +11,7 @@ def main() -> int:
 
     if result == 0:
         apply_publish_policy(root)
+        dedupe_outputs(root)
 
     return result
 
