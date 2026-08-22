@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "channels": [
+    {"channel_id":"it.rai.rai1","name":"Rai 1","aliases":["Rai1.it","Rai1.it@SD","Rai 1","Rai 1 G","Rai 1 (720p)"],"category":"RAI"},
+    {"channel_id":"it.rai.rai2","name":"Rai 2","aliases":["Rai2.it","Rai2.it@SD","Rai 2","Rai 2 G","Rai 2 (1080p)"],"category":"RAI"},
+    {"channel_id":"it.rai.rai3","name":"Rai 3","aliases":["Rai3.it","Rai3.it@HD","Rai 3","Rai 3 G","Rai 3 (720p)"],"category":"RAI"},
+    {"channel_id":"it.mediaset.canale5","name":"Canale 5","aliases":["Canale5.it","Canale.5.it","Canale 5","Canale 5 HD"],"category":"MEDIASET"},
+    {"channel_id":"it.mediaset.italia1","name":"Italia 1","aliases":["Italia1.it","Italia.1.it","Italia 1","Italia 1 HD"],"category":"MEDIASET"},
+    {"channel_id":"it.mediaset.rete4","name":"Rete 4","aliases":["Rete4.it","Rete.4.it","Rete 4","Rete 4 HD"],"category":"MEDIASET"},
+    {"channel_id":"it.cairo.la7","name":"LA7","aliases":["LA7.it","LA7.HD.it","LA7","LA7 HD"],"category":"INTRATTENIMENTO"},
+    {"channel_id":"it.sky.tv8","name":"TV8","aliases":["TV8.it","TV8.HD.it","TV8","TV8 HD"],"category":"INTRATTENIMENTO"},
+    {"channel_id":"it.discovery.nove","name":"Nove","aliases":["Nove.it","Nove","NOVE","Nove HD"],"category":"DISCOVERY"}
+  ]
+}
