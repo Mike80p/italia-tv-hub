@@ -2,13 +2,20 @@
   "order": [
     "RAI",
     "MEDIASET",
-    "LA7",
-    "WARNER BROS. DISCOVERY",
-    "SKY FREE",
+    "DISCOVERY",
+    "SKY",
+    "PLUTO TV",
     "NEWS",
     "SPORT",
+    "FILM",
+    "SERIE TV",
+    "DOCUMENTARI E LIFESTYLE",
+    "BAMBINI",
     "MUSICA",
-    "PLUTO TV",
-    "ALTRI"
+    "INTRATTENIMENTO",
+    "REGIONALI E LOCALI",
+    "RADIO E VISUAL RADIO",
+    "RELIGIONE",
+    "ALTRO"
   ]
 }
