@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-08-23 — Cloudflare EPG proxy v2 supersedes prior unverified proxy candidate
+- Current `main` advanced from `934def9e13aae376e417f717cd648b028f59448c` to `5aa4a8d1af9a62a8271635581984c0f61692554b` through two additional material `[skip ci]` commits.
+- `034deb089f563cae712cdf880841acc03b8a5b45` adds Cloudflare `/epg.xml` proxy v2 behavior.
+- `5aa4a8d1af9a62a8271635581984c0f61692554b` adds proxy-v2 test coverage.
+- Exact compare changes `cloudflare/epg-proxy/src/index.js` and `cloudflare/epg-proxy/tests/proxy.test.js` only, but changes are material runtime+test deltas.
+- No GitHub Actions workflow run is associated with exact head `5aa4a8d1...`; the commits use `[skip ci]` and `main` remains without required status checks.
+- Classification: **STATE REGRESSION IN VERIFICATION / CLOUDFLARE EPG PROXY V2 CANDIDATE UNVERIFIED**.
+- Prior PR #1 and `f903edc9...` exact-source PASS evidence is retained historically and is not transferred.
+- Cloudflare deployment, production EPG activation, real-network playback, STABLE and FORGE onboarding remain NOT ESTABLISHED / NOT AUTHORIZED.
+
 ## 2026-08-23 — Cloudflare EPG proxy candidate after local publisher verification
 - Drive read-back established `f903edc9ac35cb9f4202c2c2e7bbba35c03c777a` as **CANDIDATE / LOCAL END-TO-END VERIFIED** for the EPG local publisher, with XML/GZIP/DOCTYPE/ENTITY/alias/merge/freshness/git/idempotence/UTF-8 checks PASS.
 - That Drive evidence explicitly records GitHub Actions = 0 and production EPG not regenerated in that environment; automatic Windows scheduled execution is still not installed/verified.
@@ -7,7 +17,7 @@
 - EPG Live Fallback V1 records config commit `67d3ac1...` with no CI; the published playlist still needed regeneration/patching for the multi-source EPG header to become active.
 - After `f903edc9...`, four further `[skip ci]` commits advanced current `main` to `934def9e13aae376e417f717cd648b028f59448c`, adding a Cloudflare live EPG proxy, Worker config, package metadata and proxy tests.
 - Exact current Cloudflare proxy PASS is NOT ESTABLISHED; prior `f903edc9...` local E2E PASS does not transfer automatically.
-- Classification: **STATE ADVANCE in exact-source local evidence at `f903edc9...`, followed by STATE REGRESSION IN VERIFICATION for current `934def9e...`**.
+- Classification: **STATE ADVANCE in exact-source local evidence at `f903edc9...`, followed by STATE REGRESSION IN VERIFICATION for `934def9e...`**.
 - Cloudflare deployment, production EPG activation, real-network playback, STABLE and FORGE onboarding remain NOT ESTABLISHED / NOT AUTHORIZED.
 
 ## 2026-08-23 — current stream + authoritative EPG publisher candidate
