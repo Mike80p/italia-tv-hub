@@ -1,28 +1,30 @@
 # Changelog
 
+## 2026-08-23 — Cloudflare EPG proxy candidate after local publisher verification
+- Drive read-back established `f903edc9ac35cb9f4202c2c2e7bbba35c03c777a` as **CANDIDATE / LOCAL END-TO-END VERIFIED** for the EPG local publisher, with XML/GZIP/DOCTYPE/ENTITY/alias/merge/freshness/git/idempotence/UTF-8 checks PASS.
+- That Drive evidence explicitly records GitHub Actions = 0 and production EPG not regenerated in that environment; automatic Windows scheduled execution is still not installed/verified.
+- Stream Runtime V1 Drive evidence is **LOCALLY VERIFIED** only; GitHub Actions were not run, production playlist was not modified and real-network playback was not verified.
+- EPG Live Fallback V1 records config commit `67d3ac1...` with no CI; the published playlist still needed regeneration/patching for the multi-source EPG header to become active.
+- After `f903edc9...`, four further `[skip ci]` commits advanced current `main` to `934def9e13aae376e417f717cd648b028f59448c`, adding a Cloudflare live EPG proxy, Worker config, package metadata and proxy tests.
+- Exact current Cloudflare proxy PASS is NOT ESTABLISHED; prior `f903edc9...` local E2E PASS does not transfer automatically.
+- Classification: **STATE ADVANCE in exact-source local evidence at `f903edc9...`, followed by STATE REGRESSION IN VERIFICATION for current `934def9e...`**.
+- Cloudflare deployment, production EPG activation, real-network playback, STABLE and FORGE onboarding remain NOT ESTABLISHED / NOT AUTHORIZED.
+
 ## 2026-08-23 — current stream + authoritative EPG publisher candidate
-- Current material implementation source advanced from `0f212f5d5ec03eac279cb7d44bbbb36d8ea017f8` to `f903edc9ac35cb9f4202c2c2e7bbba35c03c777a` through eight additional material `[skip ci]` commits.
-- New delta adds provider refresh adapters, last-good EPG publication guard, authoritative Italian source configuration, broad-guide settings, standalone authoritative EPG builder, live multi-source fallbacks, local authoritative publisher and publisher test coverage.
-- Exact changed paths include `config/epg_authoritative_sources.json`, `config/settings.json`, `scripts/build_epg_authoritative.py`, `scripts/epg_refresh_publish.py`, `src/epg/last_good_guard.py`, `src/stream/provider_adapters.py` and `tests/test_epg_refresh_publish.py`.
-- GitHub exposes no workflow run for exact head `f903edc9...`; presence of new tests does not establish execution PASS.
-- Previous PR #1 PASS evidence and scoped Drive V2/V2.1 local evidence do not transfer to the current stream+EPG publisher candidate.
-- Classification remains **STATE REGRESSION IN VERIFICATION / GOVERNANCE EVIDENCE GAP**; exact-source PASS and production/runtime promotion are NOT ESTABLISHED.
-- STABLE remains NOT AUTHORIZED; FORGE registry onboarding remains OWNER DECISION REQUIRED.
+- Implementation advanced from `0f212f5d...` to `f903edc9...` through eight material `[skip ci]` commits adding provider refresh adapters, last-good EPG protection, authoritative Italian source configuration, broad-guide settings, standalone builder, multi-source fallbacks, local authoritative publisher and publisher tests.
+- Later Drive read-back supplied exact-source local E2E evidence for the publisher at `f903edc9...`; hosted CI and production regeneration remained absent.
 
 ## 2026-08-23 — post-PR3 playback resolver candidate
 - Implementation had advanced to `0f212f5d5ec03eac279cb7d44bbbb36d8ea017f8` after PR #3 through four `[skip ci]` commits adding playback-time resolver, hourly reliability model, resolver policy and candidate tests.
-- That candidate did not establish exact-head execution PASS before being superseded by the later stream+EPG publisher implementation.
+- That candidate did not establish exact-head hosted PASS before being superseded.
 
 ## 2026-08-23 — Drive evidence classification correction
-- Corrected the prior generic `Drive stale` classification after direct read-back of `ITALIA_TV_HUB_EPG_V2_PROJECT_STATE` and `ITALIA_TV_HUB_EPG_V2_1_PROJECT_STATE`.
-- EPG V2 Drive state is aligned with implementation source `1d27af961fb69816a8c17a0062c0ff34aea38b34` and correctly records local/off-runner evidence plus zero GitHub workflow runs for that source block.
-- EPG V2.1 Drive state is a later local/off-runner candidate with DOCTYPE/GZIP remediation and deterministic local PASS evidence; runtime/promotion is still NOT ESTABLISHED.
-- The remaining issue is an exact-source/runtime promotion evidence gap, not generic Drive staleness.
+- EPG V2 Drive state is aligned with implementation source `1d27af961fb69816a8c17a0062c0ff34aea38b34` and records local/off-runner evidence only.
+- EPG V2.1 remains a local/off-runner candidate with runtime/promotion not established.
 
 ## 2026-08-23 — governance reconciliation candidate
-- PR #1 merge `232ee314146cdf3659ebe7a2e741f06548a5af2c` retained as the last fully evidenced integrated tranche: 280/280 tests PASS, repository test/runtime workflows PASS, 449 streams verified ONLINE, 553 channels published, EPG coverage 8.71%.
-- Added `PROJECT_STATE.md` as repository-owned durable state via PR #2 and corrected Drive evidence semantics via PR #3; both are documentary only.
-- STABLE and FORGE registry onboarding are NOT AUTHORIZED / NOT ESTABLISHED by documentary reconciliation.
+- PR #1 merge `232ee314146cdf3659ebe7a2e741f06548a5af2c` remains the last fully evidenced integrated tranche: 280/280 tests PASS, repository test/runtime workflows PASS, 449 streams verified ONLINE, 553 channels published, EPG coverage 8.71%.
+- Repository-owned `PROJECT_STATE.md`/`CHANGELOG.md` reconciliation is documentary only and never establishes runtime or release state.
 
 ## 0.2.0
 - Core Engine modulare.
