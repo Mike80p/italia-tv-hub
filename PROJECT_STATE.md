@@ -2,9 +2,9 @@
 
 ## Status
 
-Classification: **STATE REGRESSION IN VERIFICATION / GOVERNANCE DRIFT**
+Classification: **STATE REGRESSION IN VERIFICATION / GOVERNANCE EVIDENCE GAP**
 
-This file is a documentary reconciliation candidate. It does not infer PASS, STABLE, production authorization, or release authorization from merges or unverified `main` commits.
+This file does not infer PASS, STABLE, production authorization, or release authorization from merges or unverified implementation commits.
 
 ## Last fully evidenced integrated tranche
 
@@ -28,11 +28,11 @@ Evidence recorded on that PR:
 
 This evidence applies to the PR #1 candidate/merge tranche only.
 
-## Current main
+## Active implementation source
 
-Current `main`: `1d27af961fb69816a8c17a0062c0ff34aea38b34`.
+Last material implementation source head: `1d27af961fb69816a8c17a0062c0ff34aea38b34`.
 
-`main` is 11 commits ahead of the PR #1 merge and contains material runtime/config/output/test deltas, including:
+That implementation is 11 material commits beyond the PR #1 merge and contains runtime/config/output/test deltas, including:
 - final M3U deduplication/post-processing;
 - EPG V2 canonical channel identity registry;
 - deterministic M3U parser;
@@ -41,31 +41,38 @@ Current `main`: `1d27af961fb69816a8c17a0062c0ff34aea38b34`.
 - EPG V2 deterministic candidate tests;
 - regenerated playlist, health, EPG and publication outputs.
 
-Those post-merge commits were committed with `[skip ci]`. The repository `main` branch is currently not protected and has no required status-check enforcement.
+Those implementation commits used `[skip ci]`. The repository branch is not protected and has no required status-check enforcement.
 
-Therefore the PR #1 PASS evidence **does not transfer automatically** to current `main`.
+Therefore PR #1 PASS evidence **does not transfer automatically** to the post-PR1 implementation.
 
-Current classification for the active implementation: **EXACT-CURRENT-MAIN VERIFICATION NOT ESTABLISHED**.
+Current classification for the active implementation: **EXACT-SOURCE VERIFICATION NOT ESTABLISHED**.
 
-## Drive drift
+Repository documentary merge PR #2 (`81fb5256ee45d739580def51d006efef74062aa6`) changed only `PROJECT_STATE.md` / `CHANGELOG.md`; it does not alter or verify the implementation baseline.
 
-Drive control-plane documents `ITALIA_TV_HUB_EPG_V2_PROJECT_STATE` and `ITALIA_TV_HUB_EPG_V2_1_PROJECT_STATE` still describe a pre-runtime-validation candidate where GitHub Actions were not run and production playlists were not modified. That is stale relative to PR #1 and also incomplete relative to the 11 post-merge `main` commits.
+## Drive evidence relationship
 
-Drive must not be promoted ahead of a protected/current-source reconciliation.
+The Drive evidence is not a single stale snapshot and must be interpreted by scope:
+
+- `ITALIA_TV_HUB_EPG_V2_PROJECT_STATE` is aligned with implementation source `1d27af961fb69816a8c17a0062c0ff34aea38b34`. It explicitly records local/off-runner V2 evidence, zero GitHub workflow runs for that source block, and no production promotion by that V2 block. This is **ALIGNED LOCAL CANDIDATE EVIDENCE**, not stale evidence.
+- `ITALIA_TV_HUB_EPG_V2_1_PROJECT_STATE` describes a subsequent **OFF-RUNNER V2.1 CANDIDATE** that addresses DOCTYPE/GZIP XMLTV handling and coverage classification. It records local PASS evidence but explicitly states GitHub Actions were not run and the production playlist was not modified by that candidate. Its promotion/runtime evidence is therefore **NOT ESTABLISHED**.
+
+Accordingly, the cross-source issue is an **EVIDENCE/PROMOTION GAP**, not generic Drive staleness.
 
 ## Authorization boundary
 
-- Current-main PASS: NOT ESTABLISHED.
-- Production playlist/runtime acceptance for the post-PR1 delta: NOT ESTABLISHED.
-- EPG V2/V2.1 promotion: NOT ESTABLISHED.
+- Post-PR1 implementation PASS: NOT ESTABLISHED.
+- Production playlist/runtime acceptance for the post-PR1 implementation delta: NOT ESTABLISHED.
+- EPG V2 runtime/promotion: NOT ESTABLISHED despite aligned local evidence.
+- EPG V2.1 runtime/promotion: NOT ESTABLISHED; local/off-runner candidate only.
 - STABLE: NOT AUTHORIZED.
 - FORGE registry onboarding: NOT ESTABLISHED / OWNER DECISION REQUIRED.
 
 ## Next gate
 
-1. Freeze an exact current candidate SHA.
-2. Run the minimum sufficient deterministic test suite on that exact source.
+1. Freeze the exact implementation candidate SHA to verify (do not use a later documentation-only merge as the runtime source identity).
+2. Run the minimum sufficient deterministic suite on that exact implementation source.
 3. Run runtime validation of stream publishing and EPG generation on the same candidate.
-4. Compare current metrics against the PR #1 evidenced baseline.
-5. Reconcile `CHANGELOG.md` and the Drive project-state documents only after exact-source evidence is available.
-6. Decide explicitly whether Italia TV Hub / Tizen Media Hub should be onboarded into the FORGE product/repository registry; do not invent PRD/REP identifiers automatically.
+4. If V2.1 remediation is to be included, first bind its exact code/artifact to the repository candidate and verify it on the same evidence chain.
+5. Compare runtime metrics against the PR #1 evidenced baseline and the Drive V2/V2.1 local evidence.
+6. Update Drive only if its scoped evidence actually changes; do not rewrite correct historical/local-candidate evidence merely to match a newer Git commit.
+7. Decide explicitly whether Italia TV Hub / Tizen Media Hub should be onboarded into the FORGE product/repository registry; do not invent PRD/REP identifiers automatically.
