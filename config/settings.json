@@ -15,11 +15,12 @@
   "epg_public_url": "https://raw.githubusercontent.com/Mike80p/italia-tv-hub/main/output/epg.xml",
   "epg_timeout_seconds": 30,
   "epg_sources": [
-    "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy1.xml.gz",
-    "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy2.xml.gz",
-    "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy3.xml.gz",
-    "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy4.xml.gz",
-    "https://raw.githubusercontent.com/globetvapp/epg/main/Italy/italy5.xml.gz",
+    "https://iptv-org.github.io/epg/guides/it/raiplay.it.xml",
+    "https://iptv-org.github.io/epg/guides/it/mediaset.it.xml",
+    "https://iptv-org.github.io/epg/guides/it/superguidatv.it.xml",
+    "https://iptv-org.github.io/epg/guides/it/tivu.tv.xml",
+    "https://iptv-org.github.io/epg/guides/it/guidatv.sky.it.xml",
+    "https://iptv-org.github.io/epg/guides/it/tv.blue.ch.xml",
     "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/PlutoTV/it.xml.gz",
     "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/SamsungTVPlus/it.xml.gz"
   ],
