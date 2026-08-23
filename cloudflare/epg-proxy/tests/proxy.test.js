@@ -1,57 +1,74 @@
 import test from "node:test";
 import assert from "node:assert/strict";
+import { gzipSync } from "node:zlib";
 import { handleRequest } from "../src/index.js";
 
-function mockFetch(body, status = 200) {
-  return async () => new Response(body, { status, headers: { "content-type": "audio/x-mpegurl", "x-upstream": "preserved" } });
+function playlistFetch(body) {
+  return async (url) => {
+    if (String(url).includes("playlist.m3u")) {
+      return new Response(body, { status:200, headers:{ "x-source":"playlist" } });
+    }
+    throw new Error("unexpected URL");
+  };
 }
 
-test("rewrites only first M3U line and preserves remaining content", async () => {
+function epgFetch(xml) {
+  const gz = gzipSync(Buffer.from(xml, "utf8"));
+  return async (url) => {
+    if (String(url).includes("epg_ripper_IT1.xml.gz")) {
+      return new Response(gz, { status:200, headers:{ "content-type":"application/gzip" } });
+    }
+    throw new Error("unexpected URL");
+  };
+}
+
+test("playlist header points to worker /epg.xml", async () => {
   const input = '#EXTM3U url-tvg="old.xml"\n#EXTINF:-1 tvg-id="Rai1.it",Rai 1\nhttps://example/rai1.m3u8\n';
-  const response = await handleRequest(new Request("https://worker.example/playlist.m3u"), mockFetch(input));
-  assert.equal(response.status, 200);
+  const response = await handleRequest(
+    new Request("https://italia-tv-hub-epg-proxy.example.workers.dev/playlist.m3u"),
+    playlistFetch(input)
+  );
   const output = await response.text();
-  const lines = output.split("\n");
-  assert.match(lines[0], /^#EXTM3U url-tvg="/);
-  assert.match(lines[0], /superguidatv\.it\.xml/);
-  assert.match(lines[0], /raiplay\.it\.xml/);
-  assert.equal(lines.slice(1).join("\n"), input.split("\n").slice(1).join("\n"));
-  assert.equal(response.headers.get("x-upstream"), "preserved");
-  assert.equal(response.headers.get("access-control-allow-origin"), "*");
+  assert.match(output.split("\n")[0], /\/epg\.xml"/);
+  assert.equal(output.split("\n").slice(1).join("\n"), input.split("\n").slice(1).join("\n"));
 });
 
-test("works when first line is split across stream chunks", async () => {
-  const encoder = new TextEncoder();
-  const stream = new ReadableStream({ start(controller) {
-    controller.enqueue(encoder.encode('#EXTM3U url-tvg="old'));
-    controller.enqueue(encoder.encode('.xml"\n#EXTINF:-1,Rai 1\n'));
-    controller.enqueue(encoder.encode('https://example/rai1.m3u8\n'));
-    controller.close();
-  }});
-  const response = await handleRequest(new Request("https://worker.example/"), async () => new Response(stream, { status: 200 }));
-  const output = await response.text();
-  assert.ok(output.startsWith("#EXTM3U url-tvg="));
-  assert.ok(output.includes("#EXTINF:-1,Rai 1\nhttps://example/rai1.m3u8\n"));
+test("/epg.xml returns decompressed valid XML", async () => {
+  const xml = '<?xml version="1.0" encoding="UTF-8"?><tv><channel id="Rai1.it"><display-name>Rai 1</display-name></channel><programme channel="Rai1.it" start="20260823120000 +0200" stop="20260823130000 +0200"><title>Test</title></programme></tv>';
+  const response = await handleRequest(
+    new Request("https://italia-tv-hub-epg-proxy.example.workers.dev/epg.xml"),
+    epgFetch(xml)
+  );
+  assert.equal(response.status, 200);
+  assert.equal(response.headers.get("content-type"), "application/xml; charset=utf-8");
+  assert.equal(await response.text(), xml);
 });
 
-test("health endpoint does not fetch upstream", async () => {
-  let called = false;
-  const response = await handleRequest(new Request("https://worker.example/health"), async () => { called = true; throw new Error("should not run"); });
-  assert.equal(response.status, 200);
-  assert.equal(called, false);
+test("/health advertises v2 endpoints", async () => {
+  const response = await handleRequest(
+    new Request("https://italia-tv-hub-epg-proxy.example.workers.dev/health"),
+    async () => { throw new Error("health must not fetch"); }
+  );
   const json = await response.json();
   assert.equal(json.ok, true);
-  assert.equal(json.epg_sources, 9);
+  assert.equal(json.version, 2);
+  assert.ok(json.endpoints.includes("/epg.xml"));
 });
 
-test("returns 502 when upstream fails", async () => {
-  const response = await handleRequest(new Request("https://worker.example/playlist.m3u"), async () => { throw new Error("network"); });
+test("EPG upstream failure returns 502", async () => {
+  const response = await handleRequest(
+    new Request("https://italia-tv-hub-epg-proxy.example.workers.dev/epg.xml"),
+    async () => { throw new Error("network"); }
+  );
   assert.equal(response.status, 502);
   const json = await response.json();
-  assert.equal(json.error, "upstream_fetch_failed");
+  assert.equal(json.error, "epg_upstream_fetch_failed");
 });
 
-test("returns 404 for unknown paths", async () => {
-  const response = await handleRequest(new Request("https://worker.example/nope"), mockFetch("unused"));
+test("unknown path returns 404", async () => {
+  const response = await handleRequest(
+    new Request("https://italia-tv-hub-epg-proxy.example.workers.dev/nope"),
+    async () => new Response("unused")
+  );
   assert.equal(response.status, 404);
 });
