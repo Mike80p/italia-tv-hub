@@ -1,0 +1,11 @@
+{
+  "resolve_at_playback": true,
+  "catalog_refresh_minutes": 30,
+  "epg_refresh_minutes": 120,
+  "expiry_safety_seconds": 120,
+  "minimum_playback_score": 60,
+  "retry_same_candidate_after_refresh": true,
+  "fallback_to_alternative_streams": true,
+  "preserve_stable_relinker": true,
+  "hourly_health_history": true
+}
