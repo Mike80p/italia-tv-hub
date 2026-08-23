@@ -1,0 +1,8 @@
+{
+  "name": "italia-tv-hub-epg-proxy",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.js"
+  }
+}
