@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "timezone": "Europe/Rome",
+  "refresh_minutes": 120,
+  "sources": [
+    {"id":"raiplay","priority":10,"url":"https://iptv-org.github.io/epg/guides/it/raiplay.it.xml","role":"official-derived","expected_channels":14},
+    {"id":"mediaset","priority":10,"url":"https://iptv-org.github.io/epg/guides/it/mediaset.it.xml","role":"official-derived","expected_channels":15},
+    {"id":"superguidatv","priority":30,"url":"https://iptv-org.github.io/epg/guides/it/superguidatv.it.xml","role":"broad-coverage","expected_channels":159},
+    {"id":"tivu","priority":25,"url":"https://iptv-org.github.io/epg/guides/it/tivu.tv.xml","role":"national-coverage","expected_channels":71},
+    {"id":"sky","priority":25,"url":"https://iptv-org.github.io/epg/guides/it/guidatv.sky.it.xml","role":"sky-and-partners","expected_channels":163},
+    {"id":"blue","priority":35,"url":"https://iptv-org.github.io/epg/guides/it/tv.blue.ch.xml","role":"supplemental","expected_channels":83},
+    {"id":"pluto","priority":15,"url":"https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/PlutoTV/it.xml.gz","role":"native-fast","requires_doctype_sanitizer":true},
+    {"id":"samsung","priority":15,"url":"https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/SamsungTVPlus/it.xml.gz","role":"native-fast","requires_doctype_sanitizer":true}
+  ],
+  "policy": {
+    "reject_empty": true,
+    "reject_stale": true,
+    "retain_last_good": true,
+    "max_stale_hours": 30
+  }
+}
