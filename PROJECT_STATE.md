@@ -30,38 +30,48 @@ This evidence applies to the PR #1 candidate/merge tranche only.
 
 ## Active implementation source
 
-Last material implementation source head: `1d27af961fb69816a8c17a0062c0ff34aea38b34`.
+Current material implementation source head: `0f212f5d5ec03eac279cb7d44bbbb36d8ea017f8`.
 
-That implementation is 11 material commits beyond the PR #1 merge and contains runtime/config/output/test deltas, including:
-- final M3U deduplication/post-processing;
-- EPG V2 canonical channel identity registry;
-- deterministic M3U parser;
-- JSON/XMLTV unifier;
-- governed EPG source priorities;
-- EPG V2 deterministic candidate tests;
-- regenerated playlist, health, EPG and publication outputs.
+The previously reconciled implementation source `1d27af961fb69816a8c17a0062c0ff34aea38b34` remains the source identity for the aligned Drive EPG V2 evidence, but it is no longer the current repository implementation head.
 
-Those implementation commits used `[skip ci]`. The repository branch is not protected and has no required status-check enforcement.
+After the documentary PR #3 merge `b3d770f733f7bea82d01fe25b53578f6fd8aba4a`, four additional material `[skip ci]` commits landed directly on `main`:
+- `a6fb0e6978c7b2357eb3b26b747eeb0dfa59a32a` — playback-time resolver candidate;
+- `0403812d4014cd5c728a6523a7fe95c42afa623c` — hourly stream reliability model;
+- `3eee240706e3f030fe33586e2a7e288c02c15116` — playback resolver policy configuration;
+- `0f212f5d5ec03eac279cb7d44bbbb36d8ea017f8` — resolver candidate test coverage.
 
-Therefore PR #1 PASS evidence **does not transfer automatically** to the post-PR1 implementation.
+The exact delta from PR #3 merge to current `main` adds:
+- `src/stream_v2/stream_resolver.py`;
+- `src/stream_v2/hourly_health.py`;
+- `config/resolver_policy_v1.json`;
+- `tests/test_stream_v2_candidate.py`.
 
-Current classification for the active implementation: **EXACT-SOURCE VERIFICATION NOT ESTABLISHED**.
+These are runtime/config/test changes, not documentary-only changes. They used `[skip ci]`. The repository `main` remains unprotected and has no required status-check enforcement.
 
-Repository documentary merge PR #2 (`81fb5256ee45d739580def51d006efef74062aa6`) changed only `PROJECT_STATE.md` / `CHANGELOG.md`; it does not alter or verify the implementation baseline.
+Therefore:
+- PR #1 PASS evidence does **not** transfer automatically to the current implementation;
+- the local/off-runner EPG V2/V2.1 evidence does **not** establish the new playback-resolver runtime behavior;
+- adding tests to source is not equivalent to executing those tests on the exact current head.
+
+Current classification for `0f212f5d...`: **EXACT-SOURCE VERIFICATION NOT ESTABLISHED / NEW STREAM-RESOLVER CANDIDATE IN VERIFICATION**.
+
+Repository documentary PR #2 (`81fb5256ee45d739580def51d006efef74062aa6`) and PR #3 (`b3d770f733f7bea82d01fe25b53578f6fd8aba4a`) are documentation/control-plane evidence only; neither verifies the later resolver implementation.
 
 ## Drive evidence relationship
 
-The Drive evidence is not a single stale snapshot and must be interpreted by scope:
+The Drive evidence must be interpreted by exact scope:
 
-- `ITALIA_TV_HUB_EPG_V2_PROJECT_STATE` is aligned with implementation source `1d27af961fb69816a8c17a0062c0ff34aea38b34`. It explicitly records local/off-runner V2 evidence, zero GitHub workflow runs for that source block, and no production promotion by that V2 block. This is **ALIGNED LOCAL CANDIDATE EVIDENCE**, not stale evidence.
-- `ITALIA_TV_HUB_EPG_V2_1_PROJECT_STATE` describes a subsequent **OFF-RUNNER V2.1 CANDIDATE** that addresses DOCTYPE/GZIP XMLTV handling and coverage classification. It records local PASS evidence but explicitly states GitHub Actions were not run and the production playlist was not modified by that candidate. Its promotion/runtime evidence is therefore **NOT ESTABLISHED**.
+- `ITALIA_TV_HUB_EPG_V2_PROJECT_STATE` is aligned with implementation source `1d27af961fb69816a8c17a0062c0ff34aea38b34`. It explicitly records local/off-runner V2 evidence, zero GitHub workflow runs for that source block, and no production promotion by that V2 block. This remains **ALIGNED LOCAL CANDIDATE EVIDENCE** for that exact source, not evidence for `0f212f5d...`.
+- `ITALIA_TV_HUB_EPG_V2_1_PROJECT_STATE` describes a subsequent **OFF-RUNNER V2.1 CANDIDATE** that addresses DOCTYPE/GZIP XMLTV handling and coverage classification. It records local PASS evidence but explicitly states GitHub Actions were not run and the production playlist was not modified by that candidate. Its promotion/runtime evidence remains **NOT ESTABLISHED**.
+- No Drive evidence currently establishes the new playback-time resolver/hourly-health candidate added after PR #3.
 
-Accordingly, the cross-source issue is an **EVIDENCE/PROMOTION GAP**, not generic Drive staleness.
+Accordingly, the cross-source issue remains an **EVIDENCE/PROMOTION GAP**, now widened by a new post-PR3 stream-resolution candidate.
 
 ## Authorization boundary
 
-- Post-PR1 implementation PASS: NOT ESTABLISHED.
-- Production playlist/runtime acceptance for the post-PR1 implementation delta: NOT ESTABLISHED.
+- Current implementation PASS: NOT ESTABLISHED.
+- Playback-time resolver/hourly reliability candidate: IN VERIFICATION / exact-source PASS NOT ESTABLISHED.
+- Production playlist/runtime acceptance for the post-PR1 implementation deltas: NOT ESTABLISHED.
 - EPG V2 runtime/promotion: NOT ESTABLISHED despite aligned local evidence.
 - EPG V2.1 runtime/promotion: NOT ESTABLISHED; local/off-runner candidate only.
 - STABLE: NOT AUTHORIZED.
@@ -69,10 +79,10 @@ Accordingly, the cross-source issue is an **EVIDENCE/PROMOTION GAP**, not generi
 
 ## Next gate
 
-1. Freeze the exact implementation candidate SHA to verify (do not use a later documentation-only merge as the runtime source identity).
-2. Run the minimum sufficient deterministic suite on that exact implementation source.
-3. Run runtime validation of stream publishing and EPG generation on the same candidate.
-4. If V2.1 remediation is to be included, first bind its exact code/artifact to the repository candidate and verify it on the same evidence chain.
-5. Compare runtime metrics against the PR #1 evidenced baseline and the Drive V2/V2.1 local evidence.
-6. Update Drive only if its scoped evidence actually changes; do not rewrite correct historical/local-candidate evidence merely to match a newer Git commit.
+1. Freeze exact implementation candidate `0f212f5d5ec03eac279cb7d44bbbb36d8ea017f8` unless a newer material source commit deliberately supersedes it.
+2. Execute the minimum sufficient deterministic suite on that exact source, including `tests/test_stream_v2_candidate.py`; do not infer PASS from the presence of tests.
+3. Run runtime validation for playback resolution, stream publishing and EPG generation on the same exact candidate.
+4. Compare resolver behavior and runtime metrics against the PR #1 evidenced baseline and scoped Drive V2/V2.1 evidence.
+5. If V2.1 remediation is to be included, bind its exact code/artifact to the repository candidate before promotion.
+6. Update Drive only if its scoped evidence changes; preserve correct historical/local-candidate evidence.
 7. Decide explicitly whether Italia TV Hub / Tizen Media Hub should be onboarded into the FORGE product/repository registry; do not invent PRD/REP identifiers automatically.
