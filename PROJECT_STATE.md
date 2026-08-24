@@ -55,27 +55,24 @@ Drive records **CANDIDATE / CONFIG COMMITTED / NO CI**. Multiple live EPG URLs a
 
 ## Current material implementation source
 
-Current `main`: `78c277a3d8d87cbd2e83fa71fe6726793f4f27fb`.
+Current `main`: `ff4efd227f85ac7f95a043a06bc9c950e78f6185`.
 
-Since the previously reconciled Cloudflare proxy-v2 boundary `5aa4a8d1af9a62a8271635581984c0f61692554b`, `main` advanced by 11 commits. The material current runtime/test delta includes:
-- `53c9101cfa931fba061ef0f23a7d594e17cecf72` — `feat(epg): add Cloudflare proxy v2.2 channel mapping [skip ci]`;
-- `78c277a3d8d87cbd2e83fa71fe6726793f4f27fb` — `test(epg): cover v2.2 canonical tvg-id mapping [skip ci]`.
+Since the previously reconciled proxy-v2.2 boundary `78c277a3d8d87cbd2e83fa71fe6726793f4f27fb`, `main` advanced by one material commit:
+- `ff4efd227f85ac7f95a043a06bc9c950e78f6185` — `feat(tv): add Cloudflare proxy v2.5 cleanup [skip ci]`.
 
-Exact compare `5aa4a8d1... -> 78c277a3...` changes:
-- `PROJECT_STATE.md` and `CHANGELOG.md` documentary history;
-- adds `cloudflare/epg-proxy-v2.2/index.js`;
-- adds `cloudflare/epg-proxy-v2.2/test.js`.
+Exact compare `78c277a3... -> ff4efd22...` adds:
+- `scripts/cloudflare_worker_epg_proxy_v2_5.js` — 326 lines of new Cloudflare EPG proxy runtime.
 
-The new v2.2 source therefore changes Cloudflare EPG runtime behavior and adds test code. The exact head has **no associated GitHub Actions workflow run**. `main` remains unprotected with no required status checks and the two v2.2 commits use `[skip ci]`.
+The exact current head has **no associated GitHub Actions workflow run**. `main` remains unprotected with no required status checks, and the current material commit uses `[skip ci]`.
 
 Therefore:
-- PR #1 PASS does not transfer to `78c277a3...`;
-- `f903edc9...` local E2E PASS does not transfer to `78c277a3...`;
-- test presence is not test execution evidence;
-- EPG Live Fallback V1 is scoped evidence for its own config commit and does not verify proxy v2.2;
-- hosted exact-head PASS, deployed Worker PASS, production EPG activation, canonical tvg-id client compatibility and real-network playback remain NOT ESTABLISHED.
+- PR #1 PASS does not transfer to `ff4efd22...`;
+- `f903edc9...` local E2E PASS does not transfer to `ff4efd22...`;
+- proxy v2.2 test presence does not establish proxy v2.5 execution evidence;
+- EPG Live Fallback V1 remains scoped to its own config commit and does not verify proxy v2.5;
+- hosted exact-head PASS, deployed Worker PASS, production EPG activation, client compatibility and real-network playback remain NOT ESTABLISHED.
 
-Current classification for `78c277a3...`: **STATE REGRESSION IN VERIFICATION / CURRENT CLOUDFLARE EPG PROXY V2.2 CANDIDATE UNVERIFIED** relative to the last exact-source evidence boundaries. This is an evidence/gate regression, not a claim that v2.2 behavior is functionally worse.
+Current classification for `ff4efd22...`: **STATE REGRESSION IN VERIFICATION / CLOUDFLARE EPG PROXY V2.5 CANDIDATE UNVERIFIED / EXACT-SOURCE PASS NOT ESTABLISHED**. This is an evidence/gate regression, not a claim that v2.5 behavior is functionally worse.
 
 ## Historical/scoped Drive evidence
 
@@ -84,7 +81,7 @@ Current classification for `78c277a3...`: **STATE REGRESSION IN VERIFICATION / C
 - Stream Runtime V1: local candidate evidence; real-network playback not verified.
 - EPG Live Fallback V1: config committed/no CI; published playlist activation not established.
 - EPG Local Publisher V1: exact-source local E2E evidence for `f903edc9...`; production regeneration not established.
-- No Drive record currently establishes `78c277a3...` Cloudflare proxy-v2.2 exact-source verification.
+- No Drive record currently establishes `ff4efd22...` Cloudflare proxy-v2.5 exact-source verification.
 
 Scoped historical evidence retains its source identity and is not rewritten to imply verification of newer source.
 
@@ -92,7 +89,7 @@ Scoped historical evidence retains its source identity and is not rewritten to i
 
 - PR #1 integrated tranche: exact evidence retained.
 - `f903edc9...` local publisher: local E2E PASS retained; hosted/production PASS not established.
-- Current `78c277a3...` Cloudflare proxy-v2.2 candidate: exact-source execution PASS NOT ESTABLISHED.
+- Current `ff4efd22...` Cloudflare proxy-v2.5 candidate: exact-source execution PASS NOT ESTABLISHED.
 - Cloudflare Worker deployment: NOT ESTABLISHED / NOT AUTHORIZED by this state record.
 - Real-network playback: NOT VERIFIED in current stream-runtime evidence.
 - Production playlist/EPG promotion: NOT ESTABLISHED.
@@ -102,12 +99,12 @@ Scoped historical evidence retains its source identity and is not rewritten to i
 ## Repository reconciliation
 
 - PR #2, PR #3 and PR #4 are documentary-only merged history.
-- This reconciliation is documentary only and does not verify runtime.
+- PR #5 reconciles the moving exact-source boundary only and does not verify runtime.
 
 ## Next gate
 
-1. Freeze exact candidate `78c277a3d8d87cbd2e83fa71fe6726793f4f27fb` unless deliberately superseded.
-2. Execute the minimum sufficient exact-source suite, including proxy-v2.2 mapping tests plus relevant stream/runtime/publisher regressions.
+1. Freeze exact candidate `ff4efd227f85ac7f95a043a06bc9c950e78f6185` unless deliberately superseded.
+2. Execute the minimum sufficient exact-source suite for proxy v2.5 plus relevant stream/runtime/publisher regressions.
 3. Verify Cloudflare Worker behavior in an authorized non-production deployment or equivalent deterministic execution before any production claim.
 4. Perform one authorized real-network stream validation and verify EPG publication/client compatibility on the same governed source.
 5. Preserve earlier exact-source evidence boundaries instead of transferring their PASS to newer commits.
