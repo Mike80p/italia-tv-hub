@@ -1,14 +1,18 @@
 # Changelog
 
-## 2026-08-24 — Cloudflare EPG proxy v2.2 current candidate remains unverified
-- Current `main` advanced from the previously reconciled `5aa4a8d1af9a62a8271635581984c0f61692554b` boundary to `78c277a3d8d87cbd2e83fa71fe6726793f4f27fb`.
-- The current material runtime/test delta adds `cloudflare/epg-proxy-v2.2/index.js` and `cloudflare/epg-proxy-v2.2/test.js`.
-- `53c9101cfa931fba061ef0f23a7d594e17cecf72` adds v2.2 channel mapping and `78c277a3...` adds canonical tvg-id mapping tests; both use `[skip ci]`.
-- Exact head `78c277a3...` has no associated GitHub Actions workflow run; `main` remains unprotected with no required status checks.
-- Drive EPG Live Fallback V1 supplies scoped `CONFIG COMMITTED / NO CI` evidence for `67d3ac1...`; it does not establish v2.2 PASS or production activation.
-- Classification: **STATE REGRESSION IN VERIFICATION / CLOUDFLARE EPG PROXY V2.2 CANDIDATE UNVERIFIED**.
-- PR #1 and `f903edc9...` PASS evidence remain historical exact-source boundaries and are not transferred.
+## 2026-08-24 — Cloudflare EPG proxy v2.5 current candidate remains unverified
+- Current `main` advanced from the previously reconciled proxy-v2.2 boundary `78c277a3d8d87cbd2e83fa71fe6726793f4f27fb` to `ff4efd227f85ac7f95a043a06bc9c950e78f6185`.
+- The material delta is one `[skip ci]` commit: `feat(tv): add Cloudflare proxy v2.5 cleanup`.
+- Exact compare adds `scripts/cloudflare_worker_epg_proxy_v2_5.js` with 326 lines of new Cloudflare EPG proxy runtime.
+- Exact head `ff4efd22...` has no associated GitHub Actions workflow run; `main` remains unprotected with no required status checks.
+- No v2.5-specific Drive evidence record was found.
+- Classification: **STATE REGRESSION IN VERIFICATION / CLOUDFLARE EPG PROXY V2.5 CANDIDATE UNVERIFIED / EXACT-SOURCE PASS NOT ESTABLISHED**.
+- PR #1 and `f903edc9...` evidence remain historical exact-source boundaries and are not transferred.
 - Cloudflare deployment, production EPG activation, real-network playback, STABLE and FORGE onboarding remain NOT ESTABLISHED / NOT AUTHORIZED.
+
+## 2026-08-24 — Cloudflare EPG proxy v2.2 candidate superseded
+- `78c277a3d8d87cbd2e83fa71fe6726793f4f27fb` added `cloudflare/epg-proxy-v2.2/index.js` and `cloudflare/epg-proxy-v2.2/test.js` through `[skip ci]` commits.
+- No exact-head Actions evidence was established before v2.2 was superseded by v2.5.
 
 ## 2026-08-23 — Cloudflare EPG proxy v2 supersedes prior unverified proxy candidate
 - Current `main` advanced from `934def9e13aae376e417f717cd648b028f59448c` to `5aa4a8d1af9a62a8271635581984c0f61692554b` through two additional material `[skip ci]` commits.
