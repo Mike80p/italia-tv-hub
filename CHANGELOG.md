@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-08-25 — scheduled hosted publication quality FAIL
+- Scheduled workflow `Aggiorna Italia TV Hub` run `32799311600` / #185 executed on current documentary `main` head `a6080a7ea29e8f42b8d4b6f0ed69cb1eae9881c8`.
+- The head contains no runtime/config/test delta after material implementation source `ff4efd227f85ac7f95a043a06bc9c950e78f6185`; later changes are documentary reconciliation only.
+- Hosted test result: **294 PASS / 1 FAIL**.
+- Failure: `tests/test_core.py::test_published_report_matches_playlist` found `output/report.json["channels"] = 781` while the published playlist contains `688` `#EXTINF` entries.
+- The workflow stopped before generation/publication; run conclusion is **FAILURE**.
+- Classification: **STATE REGRESSION / HOSTED SCHEDULED QUALITY FAIL** for current `main`.
+- This evidence does not prove Cloudflare proxy v2.5 is the direct cause; the observed blocker is published report/playlist consistency.
+- Production publication, Cloudflare deployment, real-network playback, release and STABLE remain NOT ESTABLISHED / NOT AUTHORIZED.
+
 ## 2026-08-24 — Cloudflare EPG proxy v2.5 current candidate remains unverified
 - Current `main` advanced from the previously reconciled proxy-v2.2 boundary `78c277a3d8d87cbd2e83fa71fe6726793f4f27fb` to `ff4efd227f85ac7f95a043a06bc9c950e78f6185`.
 - The material delta is one `[skip ci]` commit: `feat(tv): add Cloudflare proxy v2.5 cleanup`.
