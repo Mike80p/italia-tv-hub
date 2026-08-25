@@ -2,7 +2,7 @@
 
 ## Status
 
-Classification: **STATE REGRESSION IN VERIFICATION / GOVERNANCE EVIDENCE GAP**
+Classification: **STATE REGRESSION / HOSTED SCHEDULED QUALITY FAIL / GOVERNANCE EVIDENCE GAP**
 
 This file separates exact-source evidence from later implementation deltas and never infers PASS, STABLE, production authorization, or release authorization from merges or `[skip ci]` commits.
 
@@ -65,16 +65,28 @@ Since the previously reconciled proxy-v2.2 boundary `78c277a3d8d87cbd2e83fa71fe6
 Exact compare `78c277a3... -> ff4efd22...` adds:
 - `scripts/cloudflare_worker_epg_proxy_v2_5.js` — 326 lines of new Cloudflare EPG proxy runtime.
 
-The exact material source has **no associated GitHub Actions workflow run**. Repository `main` was unprotected with no required status checks at this evidence boundary, and the material commit uses `[skip ci]`.
+The material commit itself was introduced with `[skip ci]` and had no workflow run bound directly to that SHA. Repository `main` was unprotected with no required status checks at this evidence boundary.
+
+## New hosted scheduled evidence — 2026-08-25
+
+Scheduled workflow `Aggiorna Italia TV Hub` run `32799311600` / run number `185` executed on current documentary `main` head `a6080a7ea29e8f42b8d4b6f0ed69cb1eae9881c8`. That head contains no runtime/config/test delta after material source `ff4efd22...`; the later changes are documentary reconciliation only.
+
+Hosted evidence:
+- checkout/setup/dependency installation: PASS;
+- `python -m pytest -q`: **294 PASS / 1 FAIL**;
+- failing test: `tests/test_core.py::test_published_report_matches_playlist`;
+- failure: published `output/report.json` reports `channels = 781`, while current `output/playlist.m3u` contains `688` `#EXTINF` entries;
+- generation/publication did not proceed because the test gate failed;
+- workflow conclusion: **FAILURE**.
+
+Classification: **STATE REGRESSION / HOSTED SCHEDULED QUALITY FAIL**. This is stronger evidence than the previous “unverified” state for current `main`: current hosted execution is now known to fail a published-output consistency invariant. It does **not** establish that Cloudflare proxy v2.5 itself is the direct root cause, because the failing assertion concerns repository-published report/playlist consistency and the workflow stops before regeneration.
 
 Therefore:
-- PR #1 PASS does not transfer to `ff4efd22...`;
-- `f903edc9...` local E2E PASS does not transfer to `ff4efd22...`;
-- proxy v2.2 test presence does not establish proxy v2.5 execution evidence;
-- EPG Live Fallback V1 remains scoped to its own config commit and does not verify proxy v2.5;
-- hosted exact-source PASS, deployed Worker PASS, production EPG activation, client compatibility and real-network playback remain NOT ESTABLISHED.
-
-Current classification for material source `ff4efd22...`: **STATE REGRESSION IN VERIFICATION / CLOUDFLARE EPG PROXY V2.5 CANDIDATE UNVERIFIED / EXACT-SOURCE PASS NOT ESTABLISHED**. This is an evidence/gate regression, not a claim that v2.5 behavior is functionally worse.
+- PR #1 PASS does not transfer to current `main`;
+- `f903edc9...` local E2E PASS does not transfer to current `main`;
+- proxy v2.2/v2.5 test presence does not establish proxy v2.5 execution PASS;
+- current published report/playlist consistency is FAIL in hosted execution;
+- deployed Worker PASS, production EPG activation, client compatibility and real-network playback remain NOT ESTABLISHED.
 
 ## Historical/scoped Drive evidence
 
@@ -92,6 +104,7 @@ Scoped historical evidence retains its source identity and is not rewritten to i
 - PR #1 integrated tranche: exact evidence retained.
 - `f903edc9...` local publisher: local E2E PASS retained; hosted/production PASS not established.
 - Material source `ff4efd22...` Cloudflare proxy-v2.5 candidate: exact-source execution PASS NOT ESTABLISHED.
+- Current `main` hosted scheduled quality gate: **FAIL**.
 - Cloudflare Worker deployment: NOT ESTABLISHED / NOT AUTHORIZED by this state record.
 - Real-network playback: NOT VERIFIED in current stream-runtime evidence.
 - Production playlist/EPG promotion: NOT ESTABLISHED.
@@ -101,14 +114,16 @@ Scoped historical evidence retains its source identity and is not rewritten to i
 ## Repository reconciliation
 
 - PR #2, PR #3 and PR #4 are documentary-only merged history.
-- PR #5 reconciles the material exact-source boundary only and does not verify runtime.
+- PR #5 reconciled the material exact-source boundary only and did not verify runtime.
 - A documentary-only merge after `ff4efd22...` does not supersede `ff4efd22...` as the material runtime source.
+- Scheduled run #185 supplies new hosted evidence for current `main` and supersedes the earlier “hosted execution unknown” boundary with a concrete FAIL for report/playlist consistency.
 
 ## Next gate
 
-1. Freeze exact material candidate `ff4efd227f85ac7f95a043a06bc9c950e78f6185` unless deliberately superseded by another material implementation change.
-2. Execute the minimum sufficient exact-source suite for proxy v2.5 plus relevant stream/runtime/publisher regressions.
-3. Verify Cloudflare Worker behavior in an authorized non-production deployment or equivalent deterministic execution before any production claim.
-4. Perform one authorized real-network stream validation and verify EPG publication/client compatibility on the same governed source.
-5. Preserve earlier exact-source evidence boundaries instead of transferring their PASS to newer commits.
-6. Decide explicitly whether Italia TV Hub / Tizen Media Hub should be onboarded into FORGE; do not invent PRD/REP identifiers automatically.
+1. Treat run #185 as authoritative FAIL for current hosted publication quality until superseded by a later exact-current-main GREEN.
+2. Determine why `output/report.json` declares 781 channels while `output/playlist.m3u` contains 688 entries; do not regenerate or publish blindly before identifying whether the drift is stale output, generation order, or source-of-truth logic.
+3. Correct the minimum responsible runtime/output path and obtain full hosted test GREEN before allowing scheduled publication to resume as a trusted path.
+4. Execute the minimum sufficient proxy-v2.5 suite and verify Cloudflare Worker behavior in an authorized non-production deployment or equivalent deterministic execution before any production claim.
+5. Perform one authorized real-network stream validation and verify EPG publication/client compatibility on the same governed source.
+6. Preserve earlier exact-source evidence boundaries instead of transferring their PASS to newer commits.
+7. Decide explicitly whether Italia TV Hub / Tizen Media Hub should be onboarded into FORGE; do not invent PRD/REP identifiers automatically.
